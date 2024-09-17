@@ -1,0 +1,132 @@
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title,content)
+  .post
+    .post_wrap
+      .post_top
+        a(href="").post_img
+          +img(img)
+      .post_bottom
+        .post_box
+          h3.cl-black2.title.fw-5.note-text 
+            a(href="") #{title}
+          p.note-sm.cl-gray3.content #{content}
+        a(href="").note-text.fw-6.cl-pri.link View post
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.current 01
+    li
+      a.page-numbers(href='') 02
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 08
+
+
+mixin boxTitle2(note,title,content)
+  .box-title2
+    .box-title2-box
+      .box-title2-ic
+        +img("ictl.svg")
+      p.note-sm.cl-pri.t-up.t-center #{note}
+    h2.title-md.cl-black.fl-sec.t-up.t-center #{title}
+    p.note-text.t-center.cl-second #{content}
+
+
+mixin room(img,title,note)
+  .room
+    .room_wrap
+      .room_top
+        .room_bg
+          a(href="").room_img
+            +img(img)
+          span.lines
+            span.line
+            span.line
+            span.line
+            span.line
+            span.line
+            span.line
+            span.line
+            span.line
+        .room_btns
+          +btn("Xem chi tiết","","","cl-2")
+          button.btn.popup-btn(data-popup="popup-booking") 
+            p.btn-text Đặt phòng
+      .room_bottom
+        h3.title-sm2.cl-second.fw-6.t-center.fl-sec.title 
+          a(href="") #{title}
+        p.note-text.t-center.cl-gray3 #{note}
+        ul.utilities_lf--list.d-wrap
+          li.utilities_lf--item.d-item.d-3
+            .utilities_lf--item-wrap
+              span.ic
+                +img("tic1.svg")
+              p.note-text.cl-black2 Area 100m2
+          li.utilities_lf--item.d-item.d-3
+            .utilities_lf--item-wrap
+              span.ic
+                +img("tic2.svg")
+              p.note-text.cl-black2 King’s bed
+          li.utilities_lf--item.d-item.d-3
+            .utilities_lf--item-wrap
+              span.ic
+                +img("tic3.svg")
+              p.note-text.cl-black2 2-4 people
+        .room_price 
+          p.room_price--sale 500.000 vnđ/ Đêm
+          p.room_price--normal 900.000 vnđ/ Đêm
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)

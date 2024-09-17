@@ -1,0 +1,75 @@
+/* CORE - MIXINS*/
+@import "imports/core/reset";
+@import "imports/core/variables";
+@import "imports/mixins/breakpoint";
+@import "imports/mixins/responsive";
+@import "imports/mixins/global";
+@import "imports/mixins/container";
+@import "imports/mixins/grid";
+@import "imports/core/colors";
+@import "imports/core/layouts";
+@import "imports/core/animations";
+@import "imports/core/loading";
+
+// VENDORS
+// @import "imports/vendors/bootstrap_mini";
+@import "imports/vendors/aos";
+@import "imports/vendors/fancybox";
+@import "imports/vendors/spliting";
+@import "imports/vendors/swiper";
+@import "../js/libs/import/lightgallery/css/lightgallery.css";
+@import "../libs/fontawesome/fontawesome/fontawesome.css";
+@import "imports/vendors/select2";
+@import "imports/vendors/fullpage";
+@import "imports/vendors/libs";
+
+// UTILITIES
+@import "imports/utilities/grid";
+@import "imports/utilities/spacing";
+@import "imports/utilities/utilities";
+
+// components
+@import "imports/components/global_class";
+@import "imports/components/components";
+@import "imports/components/buttons";
+@import "imports/components/typography";
+@import "imports/components/pagination";
+@import "imports/components/search-screen";
+@import "imports/components/popup";
+@import "imports/components/breadcrumb";
+@import "imports/components/form";
+@import "imports/components/aside";
+@import "imports/components/product-item";
+
+// LAYOUT
+@import "imports/layout/header";
+@import "imports/layout/nav";
+@import "imports/layout/footer";
+// @import "imports/layout/article";
+@import "imports/layout/contact";
+@import "imports/layout/policy";
+@import "imports/layout/news";
+@import "imports/layout/recruit";
+@import "imports/layout/banner";
+@import "imports/layout/news-detail";
+@import "imports/layout/related";
+@import "imports/layout/project";
+@import "imports/layout/docs";
+@import "imports/layout/brand";
+@import "imports/layout/cate-intro";
+@import "imports/layout/cate-list";
+@import "imports/layout/product-list";
+@import "imports/layout/product-detail";
+@import "imports/layout/cart";
+@import "imports/layout/success";
+@import "imports/layout/account";
+@import "imports/layout/intro";
+@import "imports/layout/history";
+@import "imports/layout/mission";
+@import "imports/layout/team";
+@import "imports/layout/factory";
+
+//  Pages
+@import "imports/pages/home";
+@import "imports/pages/contact";
+@import "imports/pages/newsdetail-page";

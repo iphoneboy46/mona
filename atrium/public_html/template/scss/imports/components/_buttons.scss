@@ -1,0 +1,132 @@
+// css button
+button {
+  cursor: pointer;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &-main {
+    @extend .btn;
+    height: var(--height-button);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include border(#ccc);
+    color: #ccc;
+    background-color: transparent;
+    isolation: isolate;
+    position: relative;
+    overflow: hidden;
+
+    .text {
+      pointer-events: none;
+    }
+    .layer {
+      position: absolute;
+      border-radius: 50%;
+      background: $white;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      @include transition(width $t2 $cubic, height $t2 $cubic);
+      display: block;
+      @include size(0rem);
+      z-index: -1;
+    }
+    @include hover {
+      color: $black;
+    }
+  }
+  &-arrow {
+    @extend .btn;
+    height: var(--height-button);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include border(rgba(255, 255, 255, 0.2));
+    column-gap: 1.6rem;
+    position: relative;
+    isolation: isolate;
+    @include transition(border-color $t);
+    &:after {
+      content: " ";
+      @include fullscreen;
+      background-color: $bg-main;
+      @include transition(transform $t2 $cubic);
+      @include transform-origin(right);
+      @include transform(scaleX(0));
+      z-index: -1;
+    }
+    .arrow {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      .arr {
+        &-1 {
+          transform: translateX(-100%);
+        }
+        &-2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+    @include hover {
+      border-color: $white;
+      &:after {
+        @include transform-origin(left);
+        @include transform(scaleX(1));
+      }
+      .arrow {
+        .arr {
+          @include transition(all $t2 $cubic);
+          &-1 {
+            transform: translateX(0%);
+          }
+          &-2 {
+            transform: translate(100%, -50%);
+          }
+        }
+      }
+    }
+  }
+  &-white {
+    @extend .btn;
+    height: var(--height-button);
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    background: #e6e6e6;
+    color: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    @include border(#e6e6e6);
+    @include transition(color $t $cubic);
+    .text {
+      pointer-events: none;
+    }
+    .icon {
+      pointer-events: none;
+    }
+    .layer {
+      position: absolute;
+      border-radius: 50%;
+      background: $bg-main;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      @include transition(width $t $cubic, height $t $cubic);
+      display: block;
+      @include size(0rem);
+      z-index: -1;
+    }
+    @include hover {
+      color: $white;
+    }
+    &.outline {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+}

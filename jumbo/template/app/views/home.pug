@@ -1,0 +1,378 @@
+extends layout/layout
+block vars
+    -title = 'home'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'BnBooking'
+    -jsLibs = [JsJquery,JsAos,JsFancybox, JsSwiper,JsSplide,JsSplideAuto]
+    -jsComponents = ['header',"home","scrollAni","booking","about","splideJS","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper,CssAos,CssSplide]
+    -cssComponents = ['banner']
+    -cssPages = ["home","booking","qc","contact","news","about"]
+
+block container
+    .banner_home 
+        .banner_home--wrap
+            .banner_home--content 
+                p.note-text.cl-white.fw-7 Thời gian hoạt động
+                p.note-text.cl-white 11:00 - 14:00 | 17:00 - 22:00, hằng ngày
+            .banner_home--logo 
+                +img("logoHome.png")
+            .banner_home--list 
+                .swiper.mySwiperBnHome 
+                    .swiper-wrapper 
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--item-wrap 
+                                    .banner_home--item-img 
+                                        +img("bnh1.png")
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--item-wrap 
+                                    .banner_home--item-img 
+                                        +img("bnh2.png")
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--item-wrap 
+                                    .banner_home--item-img 
+                                        +img("bnh3.png")
+                .swiper-pagination.custom
+    section.booking.home 
+        .container 
+            .booking_wrap 
+                .booking_list 
+                    .booking_item.ani 
+                        .booking_item--wrap.d-wrap 
+                            .booking_item--lf.d-item
+                                .booking_item--lf-wrap 
+                                    .booking_item--lf-list 
+                                        .swiper.mySwiperBKLF 
+                                            .swiper-wrapper 
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bmn1.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bmn2.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bmn3.png")
+                                        .swiper-pagination
+                            .booking_item--rt.d-item
+                                .booking_item--rt-wrap
+                                    .booking_item--rt-box
+                                        h2.title-sm3.cl-pri.fl-sec.fw-7 Thực Đơn
+                                        .booking_item--rt-content 
+                                            p Đến với Việt Nam, JUMBO Seafood vẫn giữ được vẹn nguyên công thức bí truyền nguyên bản từ Singapore, với mong muốn nâng tầm trải nghiệm ẩm thực đến với thực khách. Mọi hương vị tuyệt mỹ đều được tái hiện trọn vẹn thông qua bàn tay khéo léo, tài hoa của bếp trưởng người Singapore với hơn 30 năm kinh nghiệm trong nghề.
+                                            br
+                                            ul 
+                                                li 11 phòng VIP
+                                                li Phòng nhỏ nhất có sức chứa 6 Khách/ Phòng
+                                                li Phòng lớn nhất có sức chứa tối đa 60 Khách/ Phòng
+                                        a.btn(href="").trans
+                                            span.btn-text Sơ đồ nhà hàng
+    section.about_imgs.home 
+        .about_imgs--wrap 
+            .about_imgs--top 
+                .container 
+                    .about_imgs--top-wrap
+                        .about_imgs--top-lf(data-aos="fade-right")
+                            h2.title-sm3.fw-7.cl-pri.fl-sec Jumbo Seafood Vietnam
+                        .about_imgs--top-rt(data-aos="fade-left") 
+                            +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+            .about_imgs--bottom 
+                .about_imgs--bottom-wrap(data-aos="fade-up") 
+                    .about_imgs--bottom-list 
+                        .swiper.mySwiperAbImgs 
+                            .swiper-wrapper     
+                                .swiper-slide 
+                                    .about_imgs--bottom-item.vdjs 
+                                        .about_imgs--bottom-item-wrap 
+                                            button.btn-play.vdbtnjs
+                                                .btn-play-tt
+                                                .btn-play-btn
+                                                    i.fas.fa-play
+                                            .about_imgs--bottom-item-bg.vdbgjs
+                                                +img("abi.png")
+                                            .about_imgs--bottom-item-img
+                                                video(width="320" height="240", controls)
+                                                    source(src="./assets/images/food.mp4" type="video/mp4")
+                                            .about_imgs--bottom-item-text 
+                                                p.note-lg.t-center.cl-white 6A Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, TP. HCM
+                                .swiper-slide 
+                                    .about_imgs--bottom-item.ytbjs 
+                                        .about_imgs--bottom-item-wrap 
+                                            button.btn-play.ytbbtnjs
+                                                .btn-play-tt
+                                                .btn-play-btn
+                                                    i.fas.fa-play
+                                            .about_imgs--bottom-item-bg.ytbbgjs
+                                                +img("abi1.png")
+                                            .about_imgs--bottom-item-img
+                                                iframe(width="1280" height="720" id="youtubeIframe" src="https://www.youtube.com/embed/MiMaKBF8Us8?enablejsapi=1" title="Jumbo Seafood Vietnam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                            .about_imgs--bottom-item-text 
+                                                p.note-lg.t-center.cl-white 6A Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, TP. HCM
+    section.qc_alb.free-slide.home 
+        .qc_alb--wrap
+            .qc_alb--title 
+                h2.title-sm3.fw-7.cl-pri.fl-sec.t-center(data-aos="fade-up")  Món Ăn Nổi Bật
+                p.note-text.cl-text2.t-center(data-aos="fade-up" data-aos-delay="500")  Phong cách hải sản Singapore là sự kết hợp hoàn hảo giữa những gia vị cay nồng hoà quyện với hải sản tươi tạo nên một hương vị tuyệt vời và độc đáo mà những thực khách khó tính đều bị chinh phục.
+            .qc_alb--list.d-wrap(data-aos="fade-up" data-aos-delay="1000") 
+                .swiper.mySwiper.--auto 
+                    .swiper-wrapper 
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb1.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb1.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua Sốt Ớt
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb2.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb2.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Mực không biết
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb3.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb3.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua không biết
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb3.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb4.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Chả không biết
+                        .swiper-slide.d-item.d-4
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb1.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb1.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua Sốt Ớt
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb2.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb2.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Mực không biết
+                +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    section.home_ab 
+        .home_ab--wrap 
+            .home_ab--box 
+                .home_ab--box-lf(data-aos="fade-right")  
+                    .home_ab--box-lf-wrap 
+                        .home_ab--box-lf-box 
+                            .about_food--box-rt-logo 
+                                +img("abflogo.png")
+                            .home_ab--box-lf-content 
+                                p.note-text.t-center.cl-white Được thành lập từ năm 1987, JUMBO Seafood bắt đầu từ những nhà hàng nhỏ ở East Coast Seafood Center. Nhà hàng đã sớm giành được sự tin tưởng và dần trở thành nơi cung cấp, phục vụ hải sản tươi sống bật nhất. Một trong những món ăn làm nên thương hiệu nổi tiếng là Cua Sốt Ớt và Cua Sốt Tiêu Đen kiểu Singapore đã chinh phục được người dân bản địa và những thực khách sành ăn nước ngoài.
+                            a.btn(href="")
+                                span.btn-text.fw-7.cl-white Xem thêm
+                .home_ab--box-rt(data-aos="fade-left") 
+                    .home_ab--box-rt-wrap
+                        .home_ab--box-rt-img 
+                            +img("hab.png")
+    section.about_prize.home
+        .about_prize--wrap
+            .about_prize--title(data-aos="fade-in")
+                h2.title-sm3.fw-7.cl-pri.t-center.fl-sec Giải thưởng & Chứng nhận
+            .about_prize--splide.d-wrap(data-aos="fade-in" data-aos-delay="800")
+                .about_prize--splide-wrap
+                    .splide
+                        .splide__slider
+                            .splide__track
+                                .splide__list
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt8.png")
+                                            p.note-text.t-center.cl-text 
+                                                |Superbrands
+                                                br
+                                                |Singapore’s Choice
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gh2.png")
+                                            p.note-text.t-center.cl-text Certificate of Popularity 2019
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt3.png")
+                                            p.note-text.t-center.cl-text Best of Singapore 2018
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt1.png")
+                                            p.note-text.t-center.cl-text    
+                                                |Singapore’sTop Restaurants 
+                                                br
+                                                |2018 - 2019
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt4.png")
+                                            p.note-text.t-center.cl-text Excellent Service Award 2018
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt9.png")
+                                            p.note-text.t-center.cl-text 
+                                                |Chope
+                                                br
+                                                |Diners’ Choice Award 2017
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt5.png")
+                                            p.note-text.t-center.cl-text 
+                                                |TripAdvisor
+                                                br
+                                                |Certificate of Excellence 2017
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt6.png")
+                                            p.note-text.t-center.cl-text Ctrip Food Award 2016
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt7.png")
+                                            p.note-text.t-center.cl-text Championship Series 2006
+    section.home_follow 
+        .container 
+            .home_follow--wrap 
+                .home_follow--box.d-wrap 
+                    .home_follow--box-lf.d-item.d-2(data-aos="fade-right") 
+                        .home_follow--box-lf-wrap 
+                            .home_follow--box-title 
+                                h2.title-mn.cl-text2 
+                                    |Follow 
+                                    a(href="").fw-7.cl-pri.fl-sec.title-sm2 Facebook
+                            .home_follow--fb
+                                .home_follow--fb-list
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb1.png" data-fancybox="galleryFbs") 
+                                            +img("fb1.png")
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb2.png" data-fancybox="galleryFbs") 
+                                            +img("fb2.png")
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb3.png" data-fancybox="galleryFbs") 
+                                            +img("fb3.png")
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb4.png" data-fancybox="galleryFbs") 
+                                            +img("fb4.png")
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb5.png" data-fancybox="galleryFbs") 
+                                            +img("fb5.png")
+                                    .home_follow--fb-item
+                                        a.home_follow--fb-link(href="./assets/images/fb6.png" data-fancybox="galleryFbs") 
+                                            +img("fb6.png")
+                    .home_follow--box-rt.d-item.d-2(data-aos="fade-left") 
+                        .home_follow--box-rt-wrap 
+                            .home_follow--box-title 
+                                h2.title-mn.cl-text2 
+                                    |Follow 
+                                    a(href="").fw-7.cl-pri.fl-sec.title-sm2 TikTok
+                            .home_follow--tk
+                                .home_follow--tk-list
+                                    .home_follow--tk-item
+                                        .home_follow--tk-link
+                                            iframe(height="600" width="400" src="https://www.tiktok.com/player/v1/7405218740159171861?&music_info=1&description=1" allow="fullscreen" title="test")
+                                    .home_follow--tk-item
+                                        .home_follow--tk-link
+                                            iframe(height="600" width="400" src="https://www.tiktok.com/player/v1/7398909005202083090?&music_info=1&description=1" allow="fullscreen" title="test")
+                                    .home_follow--tk-item
+                                        .home_follow--tk-link
+                                            iframe(height="600" width="400" src="https://www.tiktok.com/player/v1/7405218740159171861?&music_info=1&description=1" allow="fullscreen" title="test")
+                                    .home_follow--tk-item
+                                        .home_follow--tk-link
+                                            iframe(height="600" width="400" src="https://www.tiktok.com/player/v1/7398909005202083090?&music_info=1&description=1" allow="fullscreen" title="test")
+    //- section.banner_qc.ani 
+    //-     .banner_qc--wrap 
+    //-         .banner_qc--img 
+    //-             +img("bnqc.png")
+    section.home_news 
+        .container 
+            .home_news--wrap 
+                h2.title-sm3.cl-pri.fl-sec.t-center.fw-7(data-aos="fade-up") Tin tức & Khuyến mãi
+                .news_list.d-wrap(data-aos="zoom-out" data-aos-delay="800") 
+                    .swiper.mySwiperNews
+                        .swiper-wrapper 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n2.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Grab Dine - In
+                                        p.note-text.cl-text2.t-center.content 20% off tổng hoá đơn
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n3.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Gift of the Month
+                                        p.note-text.cl-text2.t-center.content Tặng 1 chai vang trắng 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                    +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    section.banner_code 
+        .container 
+            .banner_code--wrap(data-aos="zoom-out") 
+                .banner_code--box.d-wrap 
+                    .banner_code--lf.d-item 
+                        .banner_code--lf-wrap 
+                            .banner_code--lf-top
+                                .banner_code--lf-img 
+                                    +img("bannerLogoCode.png")
+                                .banner_code--lf-content 
+                                    .banner_code--lf-content-top 
+                                        .banner_code--lf-content-top-lf 
+                                            p.note-text(data-lb="BEYOND") BEYOND
+                                        .banner_code--lf-content-top-rt     
+                                            p.title-sm2.cl-white.fw-7.t-up PRIVILEGE
+                                            p.title-sm2.cl-white.fw-7.t-up EXPECTATION
+                                    .banner_code--lf-content-bottom 
+                                        p.note-text
+                                            |Mở Khóa Lợi Ích Quyền Năng 
+                                            strong.fw-7 IN REWARDS
+                                        p.note-md.fw-7.t-up.cl-white
+                                            |GIẢM NGAY
+                                            strong 10 
+                                            |KHI ĐĂNG KÝ TẠI 13 THƯƠNG HIỆU THUỘC IN DINING
+                            .banner_code--lf-bottom 
+                                .banner_code--lf-btns 
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnApp.png")
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnCh.png")
+                    .banner_code--rt.d-item 
+                        .banner_code--rt-wrap
+                            .banner_code--rt-img   
+                                +img("bgcode.png")
+
+
+

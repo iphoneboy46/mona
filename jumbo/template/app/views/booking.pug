@@ -1,0 +1,138 @@
+extends layout/layout
+block vars
+    -title = 'booking'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'BnBooking'
+    -jsLibs = [JsJquery, JsSwiper,JsAos,JsFancybox]
+    -jsComponents = ['header',"booking","scrollAni","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssSwiper,CssFancybox]
+    -cssComponents = ['banner',"select2"]
+    -cssPages = ["booking","contact"]
+
+block container
+    .booking_banner 
+        .booking_banner--bg 
+            +img("bkbn.png")
+        .container  
+            .booking_banner--wrap
+                .booking_banner--content 
+                    .booking_banner--logo
+                        +img("bklg.png")
+                    .booking_banner--box 
+                        h1.title-lg.cl-white.fl-sec.fw-7.t-center Đặt tiệc
+                        p.note-text.cl-white.t-center JUMBO Seafood mang đến không gian rộng với nhiều phòng tiệc riêng tư, sang trọng cùng sức chứa đa dạng phù hợp với các nhu cầu tổ chức các buổi tiệc gia đình, tiệc công ty hay những buổi chiêu đãi đối tác.
+    section.booking 
+        .container 
+            .booking_wrap 
+                .booking_list 
+                    .booking_item.ani 
+                        .booking_item--wrap.d-wrap 
+                            .booking_item--lf.d-item
+                                .booking_item--lf-wrap 
+                                    .booking_item--lf-list 
+                                        .swiper.mySwiperBKLF 
+                                            .swiper-wrapper 
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk1.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk2.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk3.png")
+                                        .swiper-pagination
+                            .booking_item--rt.d-item
+                                .booking_item--rt-wrap
+                                    .booking_item--rt-box
+                                        h2.title-sm3.cl-pri.fl-sec.fw-7
+                                                |Jumbo Seafood
+                                                br
+                                                |Nguyễn Đình Chiểu
+                                        .booking_item--rt-content 
+                                            p Được ví như "Đảo quốc Singapore thu nhỏ" giữa lòng thành phố với nhiều mảng không gian xanh, JUMBO Seafood Nguyễn Đình Chiểu mang đến cảm giác thư thái, thoải mái như hoà mình vào thiên nhiên. Ngoài ra, nhà hàng còn có không gian lớn với nhiều không gian phòng VIP, bao gồm:
+                                            br
+                                            ul 
+                                                li 11 phòng VIP
+                                                li Phòng nhỏ nhất có sức chứa 6 Khách/ Phòng
+                                                li Phòng lớn nhất có sức chứa tối đa 60 Khách/ Phòng
+                                        a.btn(href="./assets/images/sodo.png").gallery.trans(data-fancybox="sodo1")
+                                            span.btn-text Sơ đồ nhà hàng
+                    .booking_item.ani 
+                        .booking_item--wrap.d-wrap 
+                            .booking_item--lf.d-item
+                                .booking_item--lf-wrap 
+                                    .booking_item--lf-list 
+                                        .swiper.mySwiperBKLF 
+                                            .swiper-wrapper 
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk2.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk1.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk3.png")
+                                        .swiper-pagination
+                            .booking_item--rt.d-item
+                                .booking_item--rt-wrap
+                                    .booking_item--rt-box
+                                        h2.title-sm3.cl-pri.fl-sec.fw-7
+                                                |Jumbo Seafood
+                                                br
+                                                |Trần Hưng Đạo
+                                        .booking_item--rt-content 
+                                            p Được ví như "Đảo quốc Singapore thu nhỏ" giữa lòng thành phố với nhiều mảng không gian xanh, JUMBO Seafood Nguyễn Đình Chiểu mang đến cảm giác thư thái, thoải mái như hoà mình vào thiên nhiên. Ngoài ra, nhà hàng còn có không gian lớn với nhiều không gian phòng VIP, bao gồm:
+                                            br
+                                            ul 
+                                                li 11 phòng VIP
+                                                li Phòng nhỏ nhất có sức chứa 6 Khách/ Phòng
+                                                li Phòng lớn nhất có sức chứa tối đa 60 Khách/ Phòng
+                                        a.btn(href="./assets/images/sodo.png").gallery.trans(data-fancybox="sodo2")
+                                            span.btn-text Sơ đồ nhà hàng
+                    .booking_item.ani 
+                        .booking_item--wrap.d-wrap 
+                            .booking_item--lf.d-item
+                                .booking_item--lf-wrap 
+                                    .booking_item--lf-list 
+                                        .swiper.mySwiperBKLF 
+                                            .swiper-wrapper 
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk3.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk2.png")
+                                                .swiper-slide
+                                                    .booking_item--lf-item 
+                                                        .booking_item--lf-img 
+                                                            +img("bk1.png")
+                                        .swiper-pagination
+                            .booking_item--rt.d-item
+                                .booking_item--rt-wrap
+                                    .booking_item--rt-box
+                                        h2.title-sm3.cl-pri.fl-sec.fw-7
+                                                |Jumbo Seafood
+                                                br
+                                                |Đồng Khởi
+                                        .booking_item--rt-content 
+                                            p Được ví như "Đảo quốc Singapore thu nhỏ" giữa lòng thành phố với nhiều mảng không gian xanh, JUMBO Seafood Nguyễn Đình Chiểu mang đến cảm giác thư thái, thoải mái như hoà mình vào thiên nhiên. Ngoài ra, nhà hàng còn có không gian lớn với nhiều không gian phòng VIP, bao gồm:
+                                            br
+                                            ul 
+                                                li 11 phòng VIP
+                                                li Phòng nhỏ nhất có sức chứa 6 Khách/ Phòng
+                                                li Phòng lớn nhất có sức chứa tối đa 60 Khách/ Phòng
+                                        a.btn(href="./assets/images/sodo.png").gallery.trans(data-fancybox="sodo3")
+                                            span.btn-text Sơ đồ nhà hàng
+
+

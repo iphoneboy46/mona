@@ -1,0 +1,434 @@
+// @import url("../assets/font/IBM Plex Mono/stylesheet.css");
+@import url("../assets/font/IBM_Plex_Sans/stylesheet.css");
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  // font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+  color: $color-pri;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.4rem;
+  }
+  &.actived {
+    overflow: hidden;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  @include transition(0.3s);
+
+  @include min(1200px) {
+    &:hover {
+      color: $color-pri;
+    }
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  background-color: white !important;
+  color: black !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+button,
+select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+select,
+input,
+textarea {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-family: "IBM Plex Sans";
+  color: black;
+  background: transparent;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.main {
+  min-height: 100vh;
+
+  &.pt {
+    padding-top: 9.6rem;
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 7rem;
+    }
+  }
+
+
+ 
+
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 123rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-2 {
+  width: 100%;
+  max-width: 133rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-header     {
+  width: 100%;
+  max-width: 167.8rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.no-scroll {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+iframe {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fsi {
+  font-style: italic;
+}
+
+.t-up {
+  text-transform: uppercase;
+}
+
+.tabBtn {
+  cursor: pointer;
+}
+
+.gItem {
+  cursor: pointer;
+}
+
+.global-title {
+  max-width: 0;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-second;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+  border-radius: 2rem;
+}
+
+.title {
+  &-lg {
+    @include fz-64;
+    font-weight: 600;
+    color: $color-pri;
+    // // font-family: "IBM Plex Mono";
+    &.cl-white {
+      color: $color-white;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 3.6rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.6rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+      font-size: 2.4rem;
+    }
+  }
+
+  &-lg2 {
+    @include fz-48;
+    font-weight: 700;
+    color: $color-pri;
+    // // font-family: "IBM Plex Mono";
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-white {
+      color: $color-white;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+
+  &-lg3 {
+    @include fz-40;
+    font-weight: 700;
+    color: $color-pri;
+    // // font-family: "IBM Plex Mono";
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-white {
+      color: $color-white;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+      font-size: 2.4rem;
+    }
+  }
+
+  &-md {
+    @include fz-32;
+    font-weight: 700;
+    color: $color-pri;
+    // // font-family: "IBM Plex Mono";
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-white {
+      color: $color-white;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
+  }
+
+  &-sm {
+    @include fz-24;
+    font-weight: 700;
+    color: $color-pri;
+    // // font-family: "IBM Plex Mono";
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-white{
+      color: $color-white;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
+}
+}
+
+.note {
+  &-title {
+    color: $color-black;
+    font-weight: 700;
+
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
+
+    &.cl-black {
+      color: $color-black;
+    }
+
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-pri {
+      color: $color-pri;
+    }
+
+    &.cl-white{
+      color: $color-white;
+    }
+
+    &.cl-gray{
+      color: $color-gray;
+    }
+
+    &.cl-gray2{
+      color: $color-gray2;
+    }
+  }
+
+  &-text {
+    color: $color-black;
+    font-weight: 400;
+
+    // @media screen and (max-width:460px) {
+    //   text-align: center;
+    // }
+
+    strong {
+      font-weight: 700;
+    }
+
+    &.cl-gray{
+      color: $color-gray;
+    }
+
+    &.cl-white {
+      color: $color-white;
+    }
+
+    &.cl-black {
+      color: $color-black;
+    }
+
+    &.cl-second {
+      color: $color-second;
+    }
+
+    &.cl-pri {
+      color: $color-pri;
+    }
+
+    &.cl-gray2 {
+      color: $color-gray2;
+    }
+    &.cl-gray3 {
+      color: $color-gray3;
+    }
+  }
+}
+
+.link-text{
+  color: $color-second;
+  font-family: "IBM Plex Sans";
+  display: block;
+}

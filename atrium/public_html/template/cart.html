@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Giỏ hàng</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+
+  <!-- meta facebook -->
+  <meta property="og:locale" content="vi" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="stylesheet" href="dest/style.min.css" />
+  <link rel="stylesheet" href="css/backdoor.css" />
+  <link rel="stylesheet" href="dest/fonts.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container container-lg">
+      <div class="header_left">
+        <div class="header_tg tg-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="header_lang">
+          <div class="lang">
+            <div class="lang-select">
+              <span class="lang-current">
+                <img src="./img/flag-vn.png" alt="" />
+              </span>
+            </div>
+            <div class="lang-list">
+              <div class="lang-item">
+                <img src="./img/usa.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_search tg-search">
+          <div class="icon-search">
+            <img src="./img/icon-search.svg" alt="" />
+          </div>
+          <div class="icon-close">
+            <img src="./img/icon-close.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="header_mid">
+        <div class="header_logo">
+          <div class="logobox">
+            <a href=""><img src="./img/logo-hd.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="header_right">
+        <div class="header_account">
+          <div class="icon"><img src="./img/icon-user.svg" alt="" /></div>
+          <div class="header_account-drop">
+            <div class="drop-list">
+              <div class="drop-item">
+                <a href="" class="drop-link">Đăng ký</a>
+              </div>
+              <div class="drop-item">
+                <a href="" class="drop-link">Đăng nhập</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header_cart">
+          <div class="icon"><img src="./img/icon-cart.svg" alt="" /></div>
+          <span class="badge">01</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU SIDE -->
+  <div class="menu-side">
+    <div class="menu-overlay"></div>
+    <div class="menu-side-main">
+      <div class="menu-side-close close-menu">
+        <span class="icon">
+          <i class="fa-light fa-xmark"></i>
+        </span>
+      </div>
+      <div class="menu-side-list">
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="" class="menu-link">Về chúng tôi</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Thương hiệu</a>
+            </li>
+            <li class="menu-item dropdown current-menu-item">
+              <a href="" class="menu-link">SẢN PHẨM</a>
+              <span class="expand tg-submenu">
+                <i class="fa-light fa-chevron-right"></i>
+              </span>
+              <ul class="submenu">
+                <li class="menu-item dropdown">
+                  <a href="" class="menu-link">Danh mục sản phẩm</a>
+                  <span class="expand tg-submenu">
+                    <i class="fa-light fa-chevron-right"></i>
+                  </span>
+                  <ul class="submenu">
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">Tủ kệ</a>
+                      <span class="expand tg-submenu">
+                        <i class="fa-light fa-chevron-right"></i>
+                      </span>
+                      <ul class="submenu">
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">bàn ghế</a>
+                      <span class="expand tg-submenu">
+                        <i class="fa-light fa-chevron-right"></i>
+                      </span>
+                      <ul class="submenu">
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">Bàn ghê</a>
+                          <span class="expand tg-submenu">
+                            <i class="fa-light fa-chevron-right"></i>
+                          </span>
+                          <ul class="submenu">
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Bàn ghê 2</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Bàn ghê 2</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Bàn ghê 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">bàn ghế</a>
+                        </li>
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">bàn ghế</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">Decor</a>
+                      <span class="expand tg-submenu">
+                        <i class="fa-light fa-chevron-right"></i>
+                      </span>
+                      <ul class="submenu">
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">Decor</a>
+                          <span class="expand tg-submenu">
+                            <i class="fa-light fa-chevron-right"></i>
+                          </span>
+                          <ul class="submenu">
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Decor 2</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Decor 2</a>
+                            </li>
+                            <li class="menu-item">
+                              <a href="" class="menu-link">Decor 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">Decor</a>
+                        </li>
+                        <li class="menu-item dropdown">
+                          <a href="" class="menu-link">Decor</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item dropdown">
+                  <a href="" class="menu-link">Tất cả sản phẩm</a>
+                  <span class="expand tg-submenu">
+                    <i class="fa-light fa-chevron-right"></i>
+                  </span>
+                  <ul class="submenu">
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">Tủ kệ</a>
+                      <span class="expand tg-submenu">
+                        <i class="fa-light fa-chevron-right"></i>
+                      </span>
+                      <ul class="submenu">
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                        <li class="menu-item">
+                          <a href="" class="menu-link">Tủ kệ 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">bàn ghế</a>
+                    </li>
+                    <li class="menu-item dropdown">
+                      <a href="" class="menu-link">Decor</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">DỰ ÁN</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">TIN TỨC & SỰ KIỆN</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Tải về</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-overlay"></div>
+
+  <!-- SEARCH SCREEN -->
+  <div class="search-screen">
+    <div class="container container-lg">
+      <div class="search-screen_main">
+        <div class="search-screen_head">
+          <div class="text">Search</div>
+        </div>
+        <div class="search-screen_form">
+          <form action="">
+            <div class="form-field">
+              <input type="text" class="form-ctr" placeholder="Tìm kiếm" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="" class="breadcrumb-link">Trang chủ </a>
+          </li>
+          <li class="breadcrumb-item current-item">
+            <a href="" class="breadcrumb-link">Giỏ hàng</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- CART -->
+    <section class="s-cart">
+      <div class="cart pt-sm pb-sc">
+        <div class="container">
+          <div class="cart_head">
+            <h2 class="title-sc">Giỏ hàng</h2>
+          </div>
+          <div class="cart_list mt-10">
+            <div class="cart_item">
+              <div class="cart_item-close">
+                <i class="fa-light fa-xmark"></i>
+              </div>
+              <div class="cart_item-thumb">
+                <img src="./img/thumb-24.jpg" alt="" />
+              </div>
+              <div class="cart_item-content">
+                <div class="head">
+                  <div class="title h3">Bàn ăn gia đình dáng tròn</div>
+                  <ul class="parameter-list mt-2">
+                    <li class="parameter-item">
+                      <span class="parameter-label">Mã sản phẩm: </span>
+                      <span class="parameter-dt">D42802B278039</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mid my-4 py-4">
+                  <div class="price-wrap flex">
+                    <ins class="price-new">55.000.000 đ</ins>
+                    <del class="price-old">60.000.000 đ</del>
+                  </div>
+                  <div class="mid-detail">
+                    <div class="detail-item">
+                      <div class="label">Số lượng:</div>
+                      <div class="select-qty select-qty-js">
+                        <button class="btn-select minus">
+                          <i class="fa-light fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="0" class="select-number count" />
+                        <button class="btn-select plus">
+                          <i class="fa-light fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Mã màu:</span>
+                      <div class="color-wrap">
+                        <div class="color-inner">
+                          <img src="./img/color-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Chất liệu:</span>
+                      <span class="text">Gỗ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bot">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur. Et rhon cus
+                    dignissim gravida quam augue in. Pell ente sque quis
+                    adipiscing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cart_item">
+              <div class="cart_item-thumb">
+                <img src="./img/thumb-24.jpg" alt="" />
+              </div>
+              <div class="cart_item-content">
+                <div class="head">
+                  <div class="title h3">Bàn ăn gia đình dáng tròn</div>
+                  <ul class="parameter-list mt-2">
+                    <li class="parameter-item">
+                      <span class="parameter-label">Mã sản phẩm: </span>
+                      <span class="parameter-dt">D42802B278039</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mid my-4 py-4">
+                  <div class="price-wrap flex">
+                    <ins class="price-new">55.000.000 đ</ins>
+                    <del class="price-old">60.000.000 đ</del>
+                  </div>
+                  <div class="mid-detail">
+                    <div class="detail-item">
+                      <div class="label">Số lượng:</div>
+                      <div class="select-qty select-qty-js">
+                        <button class="btn-select minus">
+                          <i class="fa-light fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="0" class="select-number count" />
+                        <button class="btn-select plus">
+                          <i class="fa-light fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Mã màu:</span>
+                      <div class="color-wrap">
+                        <div class="color-inner">
+                          <img src="./img/color-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Chất liệu:</span>
+                      <span class="text">Gỗ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bot">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur. Et rhon cus
+                    dignissim gravida quam augue in. Pell ente sque quis
+                    adipiscing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cart_item">
+              <div class="cart_item-thumb">
+                <img src="./img/thumb-24.jpg" alt="" />
+              </div>
+              <div class="cart_item-content">
+                <div class="head">
+                  <div class="title h3">Bàn ăn gia đình dáng tròn</div>
+                  <ul class="parameter-list mt-2">
+                    <li class="parameter-item">
+                      <span class="parameter-label">Mã sản phẩm: </span>
+                      <span class="parameter-dt">D42802B278039</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mid my-4 py-4">
+                  <div class="price-wrap flex">
+                    <ins class="price-new">55.000.000 đ</ins>
+                    <del class="price-old">60.000.000 đ</del>
+                  </div>
+                  <div class="mid-detail">
+                    <div class="detail-item">
+                      <div class="label">Số lượng:</div>
+                      <div class="select-qty select-qty-js">
+                        <button class="btn-select minus">
+                          <i class="fa-light fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="0" class="select-number count" />
+                        <button class="btn-select plus">
+                          <i class="fa-light fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Mã màu:</span>
+                      <div class="color-wrap">
+                        <div class="color-inner">
+                          <img src="./img/color-1.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="detail-item">
+                      <span class="label">Chất liệu:</span>
+                      <span class="text">Gỗ</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bot">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur. Et rhon cus
+                    dignissim gravida quam augue in. Pell ente sque quis
+                    adipiscing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cart_list-total f-center-between mt-6">
+              <div class="left flex ai-center upper">
+                <span class="total-text">TỔNG GIÁ TRỊ ĐƠN HÀNG:</span>
+                <div class="total-price">550.000.000đ</div>
+              </div>
+              <div class="right">
+                <a href="" class="btn-arrow">
+                  <span class="text">Chi tiết</span>
+                  <span class="arrow">
+                    <img class="arr arr-1" src="./img/arrow-right-long.svg" alt="" />
+                    <img class="arr arr-2" src="./img/arrow-right-long.svg" alt="" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- BACK TO TOP -->
+
+  <!-- POPUP -->
+  <!-- <div class="popup is-show">
+      <div class="popup-success">
+        <div class="popup-content"> 
+          <div class="popup-main py-sc">
+            <div class="popup-close">
+              <i class="fa-light fa-xmark fa-2xl"></i>
+            </div>
+            <div class="title">ATRIUM INTERIOR DESIGN</div>
+            <p class="desc">
+              Bạn đã gửi đơn hàng thành công. Đội ngũ tư vấn viên sẽ liên hệ
+              <br />
+              bạn trong thời gian sớm nhất
+            </p>
+            <a href="" class="btn-white">Trở về Sản phẩm</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <div class="progress-wrap">
+    <i class="fa-solid fa-angle-up"></i>
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="polygon"><img src="./img/polygon-footer.png" alt="" /></div>
+    <div class="container container-lg">
+      <div class="row gy-1">
+        <div class="col col-4-sm col-12">
+          <div class="footer_logo">
+            <a href=""><img src="./img/logo-hd.png" alt="" /></a>
+          </div>
+          <ul class="footer_info">
+            <li class="footer_info-item">
+              Điện thoại:
+              <a href="tel:(+84) 877 850 112" class="text">(+84) 877 850 112</a>
+            </li>
+            <li class="footer_info-item">
+              Email:
+              <a href="mailto:info@atrium.com" class="text">info@atrium.com</a>
+            </li>
+            <li class="footer_info-item">
+              Showroom:
+              <a href="" class="text">2 Lê Thước, Thảo Điền, Quận 2, Tp Hồ Chí Minh</a>
+            </li>
+            <li class="footer_info-item">
+              Office:
+              <a href="" class="text">2 Lê Thước, Thảo Điền, Quận 2, Tp Hồ Chí Minh</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-4-sm col-6-xxs">
+          <div class="footer_col">
+            <div class="footer_title">LIÊN KẾT</div>
+            <ul class="footer_nav">
+              <li class="li current-menu-item">
+                <a href="" class="li-link">Customer Service</a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link">Career</a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link">Chính sách</a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link">Loyalty</a>
+              </li>
+              <li class="li">
+                <a href="" class="li-link">Form CS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-4-sm col-6-xxs">
+          <div class="footer_col">
+            <div class="footer_social">
+              <div class="footer_title">THEO DÕI CHÚNG TÔI</div>
+              <div class="social-list">
+                <a href="" class="social-link">
+                  <img src="./img/icon-fb.svg" alt="" />
+                </a>
+                <a href="" class="social-link">
+                  <img src="./img/icon-ins.svg" alt="" />
+                </a>
+                <a href="" class="social-link">
+                  <img src="./img/icon-ytb.svg" alt="" />
+                </a>
+                <a href="" class="social-link">
+                  <img src="./img/icon-pinterest.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer_newsletter mt-10">
+              <div class="footer_title">ĐĂNG KÝ NHẬN TIN</div>
+              <div class="form-wrapper">
+                <form action="">
+                  <div class="form-field field-js">
+                    <input type="text" class="form-ctr" placeholder="Điền Email của bạn" />
+                    <button type="submit" class="form-submit">
+                      <img src="./img/icon-send.svg" alt="" />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./dest/jsmain.min.js"></script>
+  <script src="./js/libs/import/swiper.min.js"></script>
+  <script type="module" src="./dest/main.js"></script>
+</body>
+
+</html>

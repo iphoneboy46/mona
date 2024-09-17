@@ -1,0 +1,194 @@
+extends layout/layout
+block vars
+    -title = 'newsCt'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery, JsAos, JsSwiper]
+    -jsComponents = ['header',"scrollAni","copyLink","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssSwiper,CssAos]
+    -cssComponents = ['banner']
+    -cssPages = ["news","contact"]
+
+block container
+    +banner-main("bnNews.png","Thực Đơn")
+    section.news_ct 
+        .container  
+            .news_ct--wrap 
+                .news_ct--title 
+                    .news_ct--title-top
+                        h2.title-sm3.fw-7.cl-black2.fl-sec Buying cheap used transmission isn’t as risky as you think 
+                    .news_ct--title-bottom
+                        .evaluate_cmt--info 
+                            .evaluate_cmt--info-lf 
+                                .evaluate_cmt--info-img 
+                                    +img("ava.png")
+                            .evaluate_cmt--info-rt 
+                                .evaluate_cmt--info-name 
+                                    p.note-text.fw-7.cl-text Admin
+                                .evaluate_cmt--info-day 
+                                    p.note-text.cl-gray3 13/10/2023
+                        .social
+                            ul.social_list
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("sic1.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("sic2.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("sic5.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("sic6.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("sic7.png")
+                                li.social_item
+                                    a(href="").social_link.copylink 
+                                        span.social_img
+                                            +img("sic8.png")
+                .news_ct--banner 
+                    +img("nctbn.png")
+                .news_ct--content 
+                    p In the realm of automotive aesthetics, every detail counts. From sleek lines to bold accents, car enthusiasts strive to create a visual statement that reflects their personality and style. One crucial element in this pursuit is the car  front bumper
+                    br
+                    h2.fw-7.title-sm3 The Vital Role of the Front Bumper
+                    br
+                    p A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. Beyond its functional aspect, the front bumper also contributes to the vehicle’s aesthetics, influencing its overall look and feel. Whether it’s a sleek, minimalist design or an aggressive, sporty appearance, the front bumper sets the tone for the car’s visual identity.
+                    br
+                    +img("nct1.png")
+                    br
+                    p.news_ct--note “Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies. Magna sit amet purus gravida quis blandit. Arcu cursus vitae congue.“
+                    br
+                    h2.fw-7.title-sm3 Installation and Fitment
+                    br
+                    p Maxton Design’s front bumper upgrades are designed with ease of installation in mind, allowing car enthusiasts to enhance their vehicles without the need for extensive modifications or professional assistance. Each product comes with comprehensive installation instructions, ensuring a hassle-free fitment process. With a few simple tools and basic mechanical skills, you can transform your car’s front bumper in no time, adding a touch of style and sophistication to your ride.
+                    br
+                    .news_ct--imgs.d-wrap 
+                        .news_ct--img.d-2.d-item 
+                            +img("nct2.png")
+                        .news_ct--img.d-2.d-item 
+                            +img("nct3.png")
+                    br
+                    h2.fw-7.title-sm3 Conclusion
+                    br
+                    p In the world of automotive customization, every detail matters, and the front bumper is no exception. From its crucial role in protecting the vehicle to its impact on aesthetics and performance, the front bumper plays a significant role in defining a car’s identity. With Maxton Design’s front bumper upgrades, car enthusiasts can elevate their vehicles to new heights, combining style, functionality, and performance in perfect harmony. Whether you’re looking to make a bold statement on the road or enhance your driving experience, Maxton Design offers the perfect solution for all your automotive enhancement needs.
+                .news_ct--social
+                    .news_ct--social-wrap 
+                        .news_ct--social-lf 
+                            p.note-text.cl-gray2 Share : 
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic5.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic6.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic7.png")
+                                    li.social_item
+                                        a(href="").social_link.copylink 
+                                            span.social_img
+                                                +img("sic8.png")
+                        .news_ct--social-rt 
+                            ul.box_dm--list
+                                li.box_dm--item
+                                    a.box_dm--link(href="") Furnitures
+                                li.box_dm--item
+                                    a.box_dm--link(href="") Repair
+                                li.box_dm--item
+                                    a.box_dm--link(href="") Accesrories
+    section.news_lq.free-slide 
+        .container 
+            .news_lq--wrap 
+                h2.title-sm3.fw-7.cl-text4.fl-sec Tin tức liên quan
+                .news_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n2.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Grab Dine - In
+                                        p.note-text.cl-text2.t-center.content 20% off tổng hoá đơn
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n3.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Gift of the Month
+                                        p.note-text.cl-text2.t-center.content Tặng 1 chai vang trắng 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                    +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    //- section.banner_qc.ani 
+    //-     .banner_qc--wrap 
+    //-         .banner_qc--img 
+    //-             +img("bnqc.png")
+    section.banner_code 
+        .container 
+            .banner_code--wrap(data-aos="zoom-out") 
+                .banner_code--box.d-wrap 
+                    .banner_code--lf.d-item 
+                        .banner_code--lf-wrap 
+                            .banner_code--lf-top
+                                .banner_code--lf-img 
+                                    +img("bannerLogoCode.png")
+                                .banner_code--lf-content 
+                                    .banner_code--lf-content-top 
+                                        .banner_code--lf-content-top-lf 
+                                            p.note-text(data-lb="BEYOND") BEYOND
+                                        .banner_code--lf-content-top-rt     
+                                            p.title-sm2.cl-white.fw-7.t-up PRIVILEGE
+                                            p.title-sm2.cl-white.fw-7.t-up EXPECTATION
+                                    .banner_code--lf-content-bottom 
+                                        p.note-text
+                                            |Mở Khóa Lợi Ích Quyền Năng 
+                                            strong.fw-7 IN REWARDS
+                                        p.note-md.fw-7.t-up.cl-white
+                                            |GIẢM NGAY 
+                                            strong 10 
+                                            |KHI ĐĂNG KÝ TẠI 13 THƯƠNG HIỆU THUỘC IN DINING
+                            .banner_code--lf-bottom 
+                                .banner_code--lf-btns 
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnApp.png")
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnCh.png")
+                    .banner_code--rt.d-item 
+                        .banner_code--rt-wrap
+                            .banner_code--rt-img   
+                                +img("bgcode.png")

@@ -1,0 +1,406 @@
+extends layout/layout
+block vars
+    -title = 'Hotel chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tin tức 
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') Khách sạn SAM Quảng Bình
+    section.rent_ct.hotel 
+        .container 
+            .rent_ct--wrap.d-wrap 
+                .rent_ct--lf.d-item 
+                    .rent_ct--lf-wrap 
+                        .rent_ct--lf-title
+                            .rent_ct--lf-title-top 
+                                h2.title-sm2.cl-text.fw-6 Khách sạn SAM Quảng Bình
+                            .rent_ct--lf-title-bottom
+                                .box-info 
+                                    .box-info-list 
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-user
+                                            a(href="").note-text.cl-text.fw-6 Admin
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-clock
+                                            p.note-text.cl-text3 12:52 - 20.04.2024
+                                ul.tour_infos
+                                    li.tour_info 
+                                        .tour_star
+                                            span.ic 
+                                                i.fas.fa-star
+                                            p.note-sm.cl-text2.fw-6 5.0
+                                    li.tour_info 
+                                        .tour_dg 
+                                        a(href="").note-sm.cl-text2.fw-6 7 Đánh giá
+                        .rent_ct--lf-content
+                            p.note-text Khách sạn SAM Quảng Bình Hotel là khách sạn tiêu chuẩn 4 sao nằm trong trung tâm thành Phố Đồng Hới tỉnh Quảng Bình. SAM cách sân bay 5 km, cách động Phong Nha – động Thiên Đường 40 km. Chỉ cần 3 phút đi xe là bạn ra bãi biển Quảng Bình. Khách sạn Sam liền kề là tổ hợp trung tâm thương mại và giải trí đa tiện ích.
+                            br
+                            +img("hct.png")
+                            br
+                            br
+                            p.note-text Khách sạn Sam Quảng Bình được đưa vào khai thác du lịch tháng 04 năm 2021. Đây là một trong những khách sạn đạt tiêu chuẩn 4 sao tại thành phố Đồng Hới. Địa điểm thích hợp cho du khách đến du lịch Quảng Bình hay tham gia các hội nghị, hội thảo.
+                            br
+                            +img("hct2.png")
+                            br
+                            br
+                            p.note-text Khách sạn Sam Quảng Bình được đưa vào khai thác du lịch tháng 04 năm 2021. Đây là một trong những khách sạn đạt tiêu chuẩn 4 sao tại thành phố Đồng Hới. Địa điểm thích hợp cho du khách đến du lịch Quảng Bình hay tham gia các hội nghị, hội thảo.
+                            br
+                            +img("hct3.png")
+                            br
+                            br
+                            p.note-text Khách sạn Sam Quảng Bình được đưa vào khai thác du lịch tháng 04 năm 2021. Đây là một trong những khách sạn đạt tiêu chuẩn 4 sao tại thành phố Đồng Hới. Địa điểm thích hợp cho du khách đến du lịch Quảng Bình hay tham gia các hội nghị, hội thảo.
+                        .news_ct--social 
+                            p.note-text Chia sẻ bài viết:
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic3.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic4.png")
+                .rent_ct--rt.d-item 
+                    .rent_ct--rt-wrap
+                        .rent_ct--contact 
+                            .rent_ct--contact-wrap 
+                                .rent_ct--contact-top 
+                                    .rent_ct--contact-title 
+                                        h4.title-mn.cl-text.fw-6 Thuê xe
+                                .rent_ct--contact-bottom 
+                                    .rent_ct--contact-bottom-lf
+                                        .rent_ct--contact-content
+                                            p.note-sm.cl-gray3 Giá
+                                            p.note-lg.fw-6.cl-text Liên hệ
+                                    .rent_ct--contact-bottom-rt
+                                        span.ic 
+                                            +img("phoneLinkMain.svg")
+                                        .rent_ct--contact-content
+                                            p.note-sm.cl-gray3 Hỗ trợ
+                                            a.note-lg.fw-6.cl-pri(href="")  09123 56056
+                        .rent_ct--rt-box
+                            h2.title-mn.cl-text.fw-6 Khách sạn tương tự
+                            .rent_ct--rt-list.hotel 
+                                -
+                                    const ncts = [
+                                        {
+                                            img:"ks1.png",
+                                            title:"Khách sạn Poseido Hotel Quảng Bình"
+                                        },
+                                        {
+                                            img:"ks2.png",
+                                            title:"Khách sạn Manli Resort Quảng Bình"
+                                        },
+                                        {
+                                            img:"ks3.png",
+                                            title:"Khách sạn Mường Thanh Quảng Bình Holiday"
+                                        },
+                                        {
+                                            img:"ks4.png",
+                                            title:"Khách sạn Amanda Quảng Bình hotel"
+                                        },
+                                    ]
+                                each nct , i in ncts 
+                                    .rent_ct--rt-item
+                                        +tour2(nct.img,nct.title)
+    section.evaluate 
+        .container 
+            .evaluate_wrap.d-wrap 
+                .evaluate_lf.d-item.d-2
+                    .evaluate_lf--wrap 
+                        .evaluate_tk 
+                            .evaluate_tk--wrap 
+                                .evaluate_tk--top
+                                    .evaluate_tk--result 
+                                        .evaluate_tk--result-lf 
+                                            p.title-lg.fw-6.cl-text 4.5
+                                        .evaluate_tk--result-rt 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                            a(href="").note-text.title.cl-gray3 860 Đánh giá
+                                .evaluate_tk--bottom 
+                                    .evaluate_tk--list 
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 5 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:89%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 89%
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 4 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:4%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 4%
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 3 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:2%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 2%
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 2 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:0%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 0%
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 2 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:0%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 0%
+                                        .evaluate_tk--item 
+                                            .evaluate_tk--item-lf 
+                                                p.note-text.cl-gray3.fw-5 1 sao
+                                            .evaluate_tk--item-ct 
+                                                .line
+                                                    span.line-color(style="width:4%")
+                                            .evaluate_tk--item-rt 
+                                                p.note-text.cl-gray3.fw-5 4%
+                        .evaluate_cmt 
+                            .evaluate_cmt--wrap
+                                .evaluate_cmt--box
+                                    .evaluate_cmt--list 
+                                        .evaluate_cmt--item 
+                                            .evaluate_cmt--item-top 
+                                                .evaluate_cmt--info 
+                                                    .evaluate_cmt--info-lf 
+                                                        .evaluate_cmt--info-img 
+                                                            +img("ava1.png")
+                                                    .evaluate_cmt--info-rt 
+                                                        .evaluate_cmt--info-name 
+                                                            p.note-text.fw-5.cl-text David - Duc Nguyen
+                                                            span.ic 
+                                                                +img("tikBlue.svg")
+                                                        .evaluate_cmt--info-day 
+                                                            p.note-sm.cl-gray3  2 days ago
+                                            .evaluate_cmt--item-center 
+                                                .star
+                                                    .star-list
+                                                        .star-flex.star-empty
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                        .star-flex.star-filter(style="width: 91%;")
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                            .evaluate_cmt--item-bottom 
+                                                .evaluate_cmt--content 
+                                                    p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        .evaluate_cmt--item 
+                                            .evaluate_cmt--item-top 
+                                                .evaluate_cmt--info 
+                                                    .evaluate_cmt--info-lf 
+                                                        .evaluate_cmt--info-img 
+                                                            +img("ava1.png")
+                                                    .evaluate_cmt--info-rt 
+                                                        .evaluate_cmt--info-name 
+                                                            p.note-text.fw-5.cl-text Louis - Y Hoang
+                                                            span.ic 
+                                                                +img("tikBlue.svg")
+                                                        .evaluate_cmt--info-day 
+                                                            p.note-sm.cl-gray3  2 days ago
+                                            .evaluate_cmt--item-center 
+                                                .star
+                                                    .star-list
+                                                        .star-flex.star-empty
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                        .star-flex.star-filter(style="width: 91%;")
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                            .evaluate_cmt--item-bottom 
+                                                .evaluate_cmt--content 
+                                                    p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        .evaluate_cmt--item 
+                                            .evaluate_cmt--item-top 
+                                                .evaluate_cmt--info 
+                                                    .evaluate_cmt--info-lf 
+                                                        .evaluate_cmt--info-img 
+                                                            +img("ava1.png")
+                                                    .evaluate_cmt--info-rt 
+                                                        .evaluate_cmt--info-name 
+                                                            p.note-text.fw-5.cl-text Việt Việt
+                                                            span.ic 
+                                                                +img("tikBlue.svg")
+                                                        .evaluate_cmt--info-day 
+                                                            p.note-sm.cl-gray3  2 days ago
+                                            .evaluate_cmt--item-center 
+                                                .star
+                                                    .star-list
+                                                        .star-flex.star-empty
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                        .star-flex.star-filter(style="width: 91%;")
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                            .evaluate_cmt--item-bottom 
+                                                .evaluate_cmt--content 
+                                                    p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        .evaluate_cmt--item 
+                                            .evaluate_cmt--item-top 
+                                                .evaluate_cmt--info 
+                                                    .evaluate_cmt--info-lf 
+                                                        .evaluate_cmt--info-img 
+                                                            +img("ava1.png")
+                                                    .evaluate_cmt--info-rt 
+                                                        .evaluate_cmt--info-name 
+                                                            p.note-text.fw-5.cl-text Chí Linh
+                                                            span.ic 
+                                                                +img("tikBlue.svg")
+                                                        .evaluate_cmt--info-day 
+                                                            p.note-sm.cl-gray3  2 days ago
+                                            .evaluate_cmt--item-center 
+                                                .star
+                                                    .star-list
+                                                        .star-flex.star-empty
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                            img.icon(src="./assets/images/star-none.svg", alt)
+                                                        .star-flex.star-filter(style="width: 91%;")
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                                            img.icon(src="./assets/images/star-color.svg", alt)
+                                            .evaluate_cmt--item-bottom 
+                                                .evaluate_cmt--content 
+                                                    p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                    .evaluate_cmt--btn
+                                        button.btn.btn-see-more
+                                            span.btn-text Xem thêm
+                                            span.btn-ic 
+                                                i.far.fa-chevron-down
+                                    .evaluate_cmt--form 
+                                        form(action="") 
+                                            .evaluate_cmt--form-wrap 
+                                                .evaluate_cmt--form-list.d-wrap 
+                                                    .evaluate_cmt--form-item.d-item
+                                                        label.form-item 
+                                                            p.form-item-lb Họ và tên
+                                                            input.form-item-ip(type="text" , placeholder="Nhập họ và tên")
+                                                    .evaluate_cmt--form-item.d-item
+                                                        label.form-item 
+                                                            p.form-item-lb Email
+                                                            input.form-item-ip(type="text" , placeholder="Nhập Email")
+                                                    .evaluate_cmt--form-item.d-item
+                                                        label.form-item
+                                                            .rate-stars
+                                                                input#star-1(type="radio", name="rating", value="5")
+                                                                label(for="star-1")
+                                                                input#star-2(type="radio", name="rating", value="4")
+                                                                label(for="star-2")
+                                                                input#star-3(type="radio", name="rating", value="3")
+                                                                label(for="star-3")
+                                                                input#star-4(type="radio", name="rating", value="2")
+                                                                label(for="star-4")
+                                                                input#star-5(type="radio", name="rating", value="1")
+                                                                label(for="star-5")
+                                                    .evaluate_cmt--form-item.d-item
+                                                        label.form-item 
+                                                            textarea.form-item-tx(type="text" , placeholder="Để lại nhận xét của bạn")
+                                                +btn("Gửi","","fal fa-arrow-right","")
+                .evaluate_rt.d-item.d-2
+                    .evaluate_rt--wrap 
+                        .contact_form 
+                            .contact_form--wrap 
+                                .contact_form--title 
+                                    h2.title-sm2.fw-6.cl-text Liên hệ đặt phòng
+                                    p.note-text.cl-gray3 Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+                                .contact_form--form 
+                                    form(action="")
+                                        .contact_form--form-wrap 
+                                            .contact_form--list.d-wrap 
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Họ và tên
+                                                        input.form-item-ip(type="text" , placeholder="Nhập họ và tên")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Số điện thoại
+                                                        input.form-item-ip(type="text" , placeholder="Nhập số điện thoại")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Email
+                                                        input.form-item-ip(type="text" , placeholder="Nhập Email")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Nội dung trao đổi
+                                                        textarea.form-item-tx(type="text" , placeholder="Để lại lời nhắn của bạn")
+                                            +btn("Liên hệ ngay","","fal fa-arrow-right","")
+    section.content_custom 
+        .container 
+            .content_custom--wrap 
+                .content_custom--content 
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss
+                    br
+                    a(href="") Khách sạn 5 sao Quảng Bình
+                    a(href="") Khách sạn 4 sao Quảng Bình
+                    a(href="") Khách sạn 3 sao Quảng Bình
+                    a(href="") Khách sạn 2 sao Quảng Bình
+                    a(href="") Khách sạn 1 sao Quảng Bình
+                    br
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss

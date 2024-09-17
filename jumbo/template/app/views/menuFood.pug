@@ -1,0 +1,1087 @@
+extends layout/layout
+block vars
+    -title = 'menu'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper]
+    -jsComponents = ['header',"menuFood","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper]
+    -cssComponents = ['banner']
+    -cssPages = ["menuFood","contact"]
+
+block container
+    +banner-main("bnNews.png","Thực Đơn")
+    section.menuFood 
+        .container
+            .menuFood_wrap 
+                .menuFood_box.d-wrap 
+                    .menuFood_box--lf.d-item
+                        .menuFood_box--lf-wrap 
+                            .menuFood_box--lf-box
+                                .menuFood_ex
+                                    i.far.fa-times
+                                .menuFood_box--lf-box-wrap
+                                    .menuFood_logo 
+                                        +img("abflogo.png")
+                                    .menuFood_filter 
+                                        ul.menuFood_filter--list 
+                                            li.menuFood_filter--item.actived 
+                                                a(href="").menuFood_filter--link FOOD
+                                            li.menuFood_filter--item 
+                                                a(href="").menuFood_filter--link SEAFOOD
+                                            li.menuFood_filter--item 
+                                                a(href="").menuFood_filter--link DESSERT
+                                            li.menuFood_filter--item 
+                                                a(href="").menuFood_filter--link BEVERAGE
+                                            li.menuFood_filter--item 
+                                                a(href="").menuFood_filter--link SPIRIT
+                                .menuFood_ref
+                                    p.note-text.cl-text2.fw-5 Menu References
+                                    ul.menuFood_ref--list
+                                        li.menuFood_ref--item 
+                                            .menuFood_ref--item-wrap 
+                                                span.ic 
+                                                    +img("mnfic1.png")
+                                                p.note-sm.cl-text3 Best seller
+                                        li.menuFood_ref--item 
+                                            .menuFood_ref--item-wrap 
+                                                span.ic 
+                                                    +img("mnfic2.png")
+                                                p.note-sm.cl-text3 Hình ảnh món ăn
+                    .menuFood_box--rt.d-item 
+                        .menuFood_box--rt-wrap
+                            .menuFood_box--rt-top
+                                h2.title-sm3.cl-pri.fl-sec.fw-7 Thực Đơn
+                                button.btn.btnFilterFood
+                                    span.btn-ic 
+                                        +img("icFood.png")
+                            .menuFood_box--rt-box 
+                                .menuFood_box--rt-list 
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title Appetiser
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn1 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"yes",
+                                                        linkImgFood1:"mn1.png",
+                                                        linkImgFood2:"mn2.png",
+                                                        index:13,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"yes",
+                                                        linkImgFood1:"mn3.png",
+                                                        linkImgFood2:"mn4.png",
+                                                        index:14,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"mn5.png",
+                                                        linkImgFood2:"mn6.png",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"mn5.png",
+                                                        linkImgFood2:"mn6.png",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"mn7.png",
+                                                        linkImgFood2:"mn8.png",
+                                                        index:52,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"mn9.png",
+                                                        linkImgFood2:"mn10.png",
+                                                        index:62,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"mn11.png",
+                                                        linkImgFood2:"mn12.png",
+                                                        index:72,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"mn13.png",
+                                                        linkImgFood2:"mn14.png",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                ]
+                                            each mn , i in mn1
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title SOUP
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn2 = [
+                                                    {
+                                                        name:"(S-M-L) VI CÁ THỊT CUA TAY CẦM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"3.840 - 5.760 - 7.680",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) CLAYPOT BRAISED SUPERIOR SHARK'S FIN WITH CRAB MEAT"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÚP BÍ ĐỎ HẢI SẢN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"504 - 756 - 1.008",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) SEAFOOD PUMPKIN SOUP"
+                                                    },
+                                                    {
+                                                        name:"(PORTION) VI CÁ THỊT CUA TAY CẦM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"1.280",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(PORTION) CLAYPOT BRAISED SUPERIOR SHARK'S FIN WITH CRAB MEAT"
+                                                    },
+                                                    {
+                                                        name:"(PORTION) SÚP BÍ ĐỎ HẢI SẢN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"1.280",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(PORTION) SEAFOOD PUMPKIN SOUPAW SOUP"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:61,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:71,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:62,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:72,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    }
+                                                ]
+                                            each mn , i in mn2
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title ABALONE
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn3 = [
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:7,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    }
+                                                ]
+                                            each mn , i in mn3
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                .menuFood_box--rt-bg 
+                                    +img("qcbg2.png")
+                                .menuFood_box--rt-list
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title PRAWN
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn4 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"mn7.png",
+                                                        linkImgFood2:"mn8.png",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"mn9.png",
+                                                        linkImgFood2:"mn10.png",
+                                                        index:63,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"mn11.png",
+                                                        linkImgFood2:"mn12.png",
+                                                        index:7,
+                                                    price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"mn13.png",
+                                                        linkImgFood2:"mn14.png",
+                                                        index:82,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                ]
+                                            each mn , i in mn4
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title FRESH PRAWN
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn5 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"mn7.png",
+                                                        linkImgFood2:"mn8.png",
+                                                        index:54,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"mn9.png",
+                                                        linkImgFood2:"mn10.png",
+                                                        index:64,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"mn11.png",
+                                                        linkImgFood2:"mn12.png",
+                                                        index:74,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"mn13.png",
+                                                        linkImgFood2:"mn14.png",
+                                                        index:81,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                ]
+                                            each mn , i in mn5
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title MEAT
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn6 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"mn7.png",
+                                                        linkImgFood2:"mn8.png",
+                                                        index:58,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"mn9.png",
+                                                        linkImgFood2:"mn10.png",
+                                                        index:6,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                ]
+                                            each mn , i in mn6
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title POULTRY
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn7 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    }
+                                                ]
+                                            each mn , i in mn7
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title RICE - NOODLE
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn8 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    }
+                                                ]
+                                            each mn , i in mn8
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                .menuFood_box--rt-bg 
+                                    +img("qcbg3.png")
+                                .menuFood_box--rt-list
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title BEANCURT
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn9 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:6,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:7,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                ]
+                                            each mn , i in mn9
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title VEGETABLE
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn10 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:6,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:7,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:6,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:7,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:1,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:2,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI SỨA",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:5,
+                                                        price:"158 - 236 - 316",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) CHILLED MARINATED JELLYFISH"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) CHẢ GIÒ HẢI SẢN MAYONNAISE",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:6,
+                                                        price:"189 - 285 - 378",
+                                                        lang1:"海鲜酱油甜甜圈",
+                                                        lang2:"(S-M-L) SEAFOOD DOUGH NUT WITH MAYO"
+                                                    },
+                                                    {
+                                                        name:"DA CÁ HOÀNG KIM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:7,
+                                                        price:"128",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"GOLDEN SALTED EGG FISH SKIN"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) SÒ ĐIỆP NHẬT NHỒI KHOAI MÔN CHIÊN",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:8,
+                                                        price:"580 - 870 - 1.160",
+                                                        lang1:"海鲜脆炸莲藕",
+                                                        lang2:"(S-M-L) SCALLOPS WRAPPED IN YAM RING"
+                                                    },
+                                                ]
+                                            each mn , i in mn10
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                                    .menuFood_box--rt-item
+                                        h2.menuFood_box--rt-item-title ADD ON
+                                        .menuFood_box--rt-item-lt.d-wrap
+                                            -
+                                                const mn11 = [
+                                                    {
+                                                        name:"(S-M-L) CHẠO TÔM",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:10,
+                                                        price:"180 - 270 - 360",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) VIETNAMESE SUGARCANE PRAWNS"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI TÔM CHUA CAY ",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:11,
+                                                        price:"198 - 296 - 396",
+                                                        lang1:"越南甘蔗虾",
+                                                        lang2:"(S-M-L) HOT & SOUR PRAWN SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) GỎI VỊT QUAY JUMBO",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:3,
+                                                        price:"195 - 292 -390",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) CHILLED MANGO AND SHREDDED ROAST DUCK SALAD"
+                                                    },
+                                                    {
+                                                        name:"(S-M-L) HẢI SẢN CUỘN BÁNH QUẨY",
+                                                        best:"",
+                                                        linkImgFood1:"",
+                                                        linkImgFood2:"",
+                                                        index:4,
+                                                        price:"338 - 508 - 676",
+                                                        lang1:"凉拌芒果和鸭丝沙拉",
+                                                        lang2:"(S-M-L) DONUT WITH SEAFOOD PASTE"
+                                                    }
+                                                ]
+                                            each mn , i in mn11
+                                                .menuFood_box--rt-item-it.d-item.d-2
+                                                    +menuFoodItem(mn.name,mn.best,mn.linkImgFood1,mn.linkImgFood2,mn.index,mn.price,mn.lang1,mn.lang2)
+                            +pagination()
+    .menuFood_modal

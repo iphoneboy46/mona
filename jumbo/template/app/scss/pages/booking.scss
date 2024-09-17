@@ -1,0 +1,294 @@
+@import "../core";
+
+.booking_banner {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: var(--size-pd);
+
+    @include max(1200px) {
+        margin-top: var(--size-hd);
+    }
+
+    &--bg {
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        height: 100%;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba($color: #000000, $alpha: 0.6);
+            position: absolute;
+            inset: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: phongTo 0.8s linear forwards;
+        }
+    }
+
+    &--wrap {
+        min-height: 100svh;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(var(--size-hd) + 4rem) 0 var(--size-hd) 0;
+
+        @include max(1200px) {
+            min-height: calc(100svh - var(--size-hd));
+        }
+
+    }
+
+    &--logo {
+        max-width: 24rem;
+        width: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width:1200px) {
+            opacity: 0;
+            animation: anHien 0.5s 0.9s linear forwards;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(7465%) hue-rotate(295deg) brightness(105%) contrast(111%);
+        }
+    }
+
+    &--content {
+        max-width: 62rem;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: var(--rowContent12);
+    }
+
+    &--box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: var(--rowContent12);
+
+        @keyframes hienLen {
+            0% {
+                opacity: 0;
+                transform: translateY(20%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+
+        .title-lg {
+            @media screen and (min-width:1200px) {
+                opacity: 0;
+                transform: translateY(20%);
+
+                animation: hienLen 0.5s 1.5s linear forwards;
+            }
+
+        }
+
+        .note-text {
+            @media screen and (min-width:1200px) {
+                opacity: 0;
+                transform: translateY(20%);
+
+                animation: hienLen 0.5s 2s linear forwards;
+            }
+
+
+        }
+    }
+}
+
+.booking {
+    padding-top: var(--size-pd);
+    padding-bottom: var(--size-pd);
+    overflow: hidden;
+
+    &_wrap {}
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent6);
+    }
+
+    &_item {
+
+        &.ani {
+            &.showed {
+                .booking_item--rt {
+                    transform: translateX(0) !important;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .booking_item--wrap {
+                flex-direction: row-reverse;
+            }
+
+            .booking_item--lf {
+                &-wrap {
+                    margin-left: unset;
+                    margin-right: calc((100vw - 120rem) / -2);
+
+
+                    @include max(1230px) {
+                        margin-right: -1.8rem;
+                    }
+
+                }
+            }
+
+            .booking_item--rt {
+                @media screen and (min-width: 1200px) {
+                    transform: translateX(-50%);
+                    transition: 1s ease;
+                    opacity: 0;
+                }
+
+                &-box {
+                    margin-left: unset;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        &--wrap {
+            @include max(800px){
+                flex-direction: column-reverse !important;
+                row-gap: var(--rowContent32);
+
+            }
+        }
+
+        &--lf {
+            width: calc((100% * 6 / 12) + 3.2rem);
+
+            @include max(800px){
+                width: 100%;
+            }
+
+            &-wrap {
+                margin-left: calc((100vw - 120rem) / -2);
+                height: 100%;
+
+                @include max(1230px) {
+                    margin-left: -1.8rem;
+                }
+
+                @include max(800px){
+                    margin-left: -1.6rem;
+                    margin-right: -1.6rem;
+                }
+            }
+
+            &-list {
+                position: relative;
+                height: 100%;
+
+
+                .swiper {
+                    height: 100%;
+                }
+
+                .swiper-slide {
+                    height: auto;
+                }
+
+                .swiper-pagination {
+                    width: fit-content;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    z-index: 2;
+                    bottom: var(--rowContent16);
+                }
+            }
+
+            &-item {
+                height: 100%;
+            }
+
+            &-img {
+                padding-top: calc(100% * 800 / 880);
+                overflow: hidden;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &--rt {
+            flex: 1;
+            width: 100%;
+
+            @media screen and (min-width: 1200px) {
+                transform: translateX(50%);
+                transition: 1s ease;
+                opacity: 0;
+            }
+
+
+            &-wrap {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+            }
+
+            &-box {
+                display: flex;
+                flex-direction: column;
+                row-gap: var(--rowContent24);
+                max-width: 52rem;
+                width: 100%;
+                margin-left: auto;
+
+                @include max(800px){
+                    max-width: unset !important;
+                }
+            }
+
+            &-content {
+                // ul {
+                //     padding-left: 2rem;
+                //     list-style: disc;
+                // }
+            }
+        }
+    }
+}

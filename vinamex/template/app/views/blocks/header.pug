@@ -1,0 +1,135 @@
+block vars
+    -title = 'Template'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+header.header(class=hdClass)
+    .header_wrap
+        .header_top
+            .container
+                .header_top--wrap 
+                    .header_top--lf
+                        .header_info
+                            ul.header_info--list
+                                li.header_info--item 
+                                    a.header_info--link(href="")
+                                        span.header_info--ic 
+                                            +img("hdic1.png")
+                                        span.note-sm.cl-white 0904 840 363
+                                li.header_info--item 
+                                    a.header_info--link(href="")
+                                        span.header_info--ic 
+                                            +img("hdic2.png")
+                                        span.note-sm.cl-white tuyensinh@vinamex.edu.vn
+                    .header_top--rt
+                        .social
+                            ul.social_list
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("hic1.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("hic2.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("hic3.png")
+                        .header_lang 
+                            ul.header_lang--list
+                                li.header_lang--item.actived 
+                                    a.header_lang--link(href="") VI 
+                                li.header_lang--item 
+                                    a.header_lang--link(href="") EN 
+        .header_bottom
+            .container 
+                .header_bottom--wrap
+                    .header_bottom--lf
+                        .header_nav
+                            ul.menu-list
+                                -
+                                    const hd2s = [
+                                        {
+                                            title:"Trang chủ",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Giới thiệu",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học",
+                                            dropdown:true
+                                        },
+                                        {
+                                            title:"Học bổng",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Trại hè",
+                                            dropdown:false
+
+                                        }
+                                    ]
+                                each hd , i in hd2s
+                                    if hd.dropdown === true
+                                        li.menu-item.dropdown
+                                            a(href="#").menu-link #{hd.title}
+                                            ul.menu-list
+                                                li.menu-item
+                                                    a(href="").menu-link Item 1
+                                                li.menu-item
+                                                    a(href="").menu-link Item 2
+                                                li.menu-item
+                                                    a(href="").menu-link Item 3
+                                    else if i == 0
+                                        li.menu-item.current-menu-item
+                                            a(href="#").menu-link #{hd.title}
+                                    else
+                                        li.menu-item
+                                            a(href="#").menu-link #{hd.title}
+                    .header_bottom--ct
+                        a(href="").header_logo
+                            +img("logoHD.png")
+                    .header_bottom--rt
+                        .header_nav
+                            ul.menu-list
+                                -
+                                    const hds = [
+                                        {
+                                            title:"Học ngoại ngữ",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tuyển dụng",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tin tức",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Liên hệ",
+                                            dropdown:false
+                                        }
+                                    ]
+                                each hd , i in hds
+                                    if hd.dropdown === true
+                                        li.menu-item.dropdown
+                                            a(href="#").menu-link #{hd.title}
+                                            ul.menu-list
+                                                li.menu-item
+                                                    a(href="").menu-link Item 1
+                                                li.menu-item
+                                                    a(href="").menu-link Item 2
+                                                li.menu-item
+                                                    a(href="").menu-link Item 3
+                                    else
+                                        li.menu-item
+                                            a(href="#").menu-link #{hd.title}
+                    .header_mobi.btn-mobi
+                        span.line
+                        span.line  
+                        span.line  
+

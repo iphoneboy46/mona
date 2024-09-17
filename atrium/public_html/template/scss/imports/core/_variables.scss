@@ -1,0 +1,167 @@
+//======================================================BOXED LAYOUT=======================================================
+
+$container-max-width: 100%;
+$container-width: calc((120rem + var(--container-padding-x)));
+
+/*GRID - media queries breakpoints*/
+$xxs-min: 375px;
+$xs-min: 576px; // CÓ THỂ TÙY CHỈNH
+$sm-min: 768px; // KHÔNG THAY ĐỔI
+$md-min: 992px; // KHÔNG THAY ĐỔI
+$lg-min: 1200px; // KHÔNG THAY ĐỔI
+$xl-min: 1440px; // CÓ THỂ TÙY CHỈNH
+
+$xxs-max: ($xxs-min - 0.02); // Smallest Mobile
+$xs-max: ($xs-min - 0.02); // Small Mobile
+$sm-max: ($sm-min - 0.02); // Mobile
+$md-max: ($md-min - 0.02); // Tablet
+$lg-max: ($lg-min - 0.02); // Desktop
+$xl-max: ($xl-min - 0.02); // Large Desktop
+
+$grid-columns: 12;
+$grid-breakpoints: (
+  "xxs": $xxs-min,
+  "xs": $xs-min,
+  "sm": $sm-min,
+  "md": $md-min,
+  "lg": $lg-min,
+  "xl": $xl-min,
+);
+//=====================================CÁC BIẾN KHÔNG THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE======================================
+
+// colors - tuỳ chỉnh
+$bg-main: #0b0b0b;
+$white: #fff;
+$black: #000;
+$black-main: #231f20;
+
+$primary: $bg-main;
+$body-text: #fff;
+$line: #ccc;
+
+// theme colors
+$theme-colors: (
+  "white": $white,
+  "black": $black,
+  "primary": $primary,
+);
+// theme background
+$theme-bg: (
+  "white": $white,
+  "black": $black,
+  "primary": $primary,
+);
+// base-radius
+$radius: 0.4rem;
+
+// gradient
+$gradient-cl: linear-gradient(
+  90deg,
+  #110e0a 0%,
+  #110e0a 80.93%,
+  rgba(17, 14, 10, 0) 100%
+);
+
+// timing transition - tuỳ chỉnh
+$t: 0.4s;
+$t2: 0.6s;
+$t3: 1s;
+$cubic: cubic-bezier(0.61, 0.22, 0.23, 1);
+
+// shadow
+$shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+// grid
+$grid-row-columns: 6;
+$grid-gutter-width: 2.4rem;
+$grid-gutter-width-sm: 2rem;
+$grid-gutter-width-xs: 1.6rem;
+$gutters: (
+  1: 2.4rem,
+);
+
+$z-dropdown: 100;
+$z-sticky: 200;
+$z-header: 250;
+$z-fixed: 300;
+$z-modal: 400;
+$z-loading: 500;
+
+$font-primary: "Fahkwang";
+// ========================================CÁC BIẾN CÓ THAY ĐỔI GIÁ TRỊ KHI RESPONSIVE=====================================
+
+:root {
+  // font-size & line-height heading
+
+  --h1-fs: 5.6rem;
+  --h1-lh: 1.2;
+
+  --h2-fs: 4rem;
+  --h2-lh: 1.25;
+
+  --h3-fs: 2.4rem;
+  --h3-lh: 1.3;
+
+  --h4-fs: 2rem;
+  --h4-lh: 1.4;
+
+  --h5-fs: 1.8rem;
+  --h5-lh: 1.4;
+
+  --body16-fs: 1.6rem;
+  --body16-lh: 1.5;
+
+  --body14-fs: 1.4rem;
+  --body14-lh: 1.5;
+
+  // Genaral Variable
+
+  --container-padding-x: 3rem;
+
+  --height-header: 12rem;
+  --height-button: 4.4rem;
+  --ptop: 150px;
+  --padding-section: 8rem;
+  --padding-section-sm: 5rem;
+  --space-value: 0.4rem;
+
+  @media (max-width: $lg-max) {
+  }
+  @media (max-width: $md-max) {
+    // Tablet
+    --padding-section: 6rem;
+    --padding-section-sm: 4rem;
+  }
+  @media (max-width: $sm-max) {
+    // Mobile
+    --h1-fs: 3.6rem;
+
+    --h2-fs: 2.8rem;
+
+    --h3-fs: 2rem;
+
+    --h4-fs: 1.8rem;
+
+    --h5-fs: 1.7rem;
+
+    --container-padding-x: 2rem;
+
+    --height-header: 10rem;
+    --padding-section: 4rem;
+    --padding-section-sm: 3rem;
+
+    --ptop: 120px;
+    --space-value: 0.3rem;
+  }
+  @media (max-width: $xs-max) {
+    --h1-fs: 3rem;
+    --h2-fs: 2.2rem;
+    --h3-fs: 1.8rem;
+    --h4-fs: 1.6rem;
+    --h5-fs: 1.5rem;
+    --body16-fs: 1.4rem;
+    --body14-fs: 1.3rem;
+    --space-value: 0.2rem;
+    --height-header: 7.9rem;
+  }
+}

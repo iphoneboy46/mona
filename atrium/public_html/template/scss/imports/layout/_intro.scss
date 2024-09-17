@@ -1,0 +1,25 @@
+.intro {
+  .desc {
+    opacity: 0.7;
+  }
+
+  &_vision {
+    &-image {
+      .img-wrap {
+        aspect-ratio: 1200 / 588;
+        img {
+          @include img-cover;
+        }
+      }
+    }
+    &-content {
+      padding-top: 6.8rem;
+      @include sm {
+        padding-top: 4rem;
+        .title-sc {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

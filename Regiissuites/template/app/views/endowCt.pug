@@ -1,0 +1,155 @@
+extends layout/layout
+block vars
+    -title = 'Ưu đãi Chi Tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = 'no-bn'
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Home
+                    li.breadcrumbs-item.current
+                        a.breadcrumbs-link(href='') ưU ĐÃi
+    .endowCt
+        section.endowCt_post
+            .container
+                .endowCt_wrap
+                    .endowCt_banner
+                        +img("uct.png")
+                    .endowCt_box.d-wrap
+                        .endowCt_lf.d-item
+                            .endowCt_lf--wrap
+                                .endowCt_content
+                                    h2.title-sm3.cl-black2.fl-sec.fw-7 Savor The Sea At C'est La Vie
+                                    br
+                                    p.note-text Has developed into the world's leading corporation, with the vision of providing environmentally friendly heating and clean water solutions. The desire to protect the green Earth has always been the driving force behind Ariston's constant creativity. From design to production process, all Ariston activities are aimed at saving energy and protecting the environment. With the desire to contribute to the preservation of the green planet through the development and supply of environmentally friendly products.
+                                    br
+                                    p.note-text Has developed into the world's leading corporation, with the vision of providing environmentally friendly heating and clean water solutions
+                                .endowCt_list
+                                    .endowCt_item
+                                        p.title-mn.cl-black2.fl-sec.fw-7 Time
+                                        p.note-text 18/04/2024 - 22/08/2024
+                                    .endowCt_item
+                                        p.title-mn.cl-black2.fl-sec.fw-7 Price
+                                        p.note-text Sale up to 30% all rooms
+                                    .endowCt_item
+                                        p.title-mn.cl-black2.fl-sec.fw-7 Venue
+                                        p.note-text C'est La Vie Restaurant, 2nd Floor
+                                .shareSocial
+                                    .shareSocial_wrap
+                                        p.note-sm Chia sẻ bài viết
+                                        ul.shareSocial_list
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic1.svg")
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic2.svg")
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic3.svg")
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic4.svg")
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic5.svg")
+                                            li.shareSocial_item
+                                                a(href="").shareSocial_link
+                                                    +img("ic6.svg")
+                        .endowCt_rt.d-item
+                            .endowCt_rt--wrap
+                                .find_room
+                                    .find_room--wrap
+                                        .find_room--list.d-wrap
+                                            .find_room--item.d-item
+                                                .find_room--item-wrap.chooseDate1
+                                                    .find_room--item-lf
+                                                        p.note-mn.cl-third.t-up NGÀY BẮT ĐẦU
+                                                        .find_room--item-ip
+                                                            p.note-md.text-date1.fw-5.cl-pri 21/03/2024
+                                                            input(type="text" class="first datepicker")
+                                                    .find_room--item-rt
+                                                        .find_room--item-ic
+                                                            +img("fric1.svg")
+                                            .find_room--item.d-item
+                                                .find_room--item-wrap.chooseDate2
+                                                    .find_room--item-lf
+                                                        p.note-mn.cl-third.t-up NGÀY KẾT THÚC
+                                                        .find_room--item-ip
+                                                            p.note-md.text-date2.fw-5.cl-pri 21/03/2024
+                                                            input(type="text" class="second datepicker" id="")
+                                                    .find_room--item-rt
+                                                        .find_room--item-ic
+                                                            +img("fric1.svg")
+                                            .find_room--item.d-item
+                                                .find_room--item-wrap
+                                                    .find_room--item-lf
+                                                        p.note-mn.cl-third.t-up NGƯỜI LỚN
+                                                        .find_room--item-op
+                                                            select.js-op(data-placeholder="Số lượng")
+                                                                option
+                                                                option(value="option1") 01
+                                                                option(value="option2") 02
+                                                                option(value="option3") 03
+                                                    .find_room--item-rt
+                                                        .find_room--item-ic
+                                                            +img("fric2.svg")
+                                            .find_room--item.d-item
+                                                .find_room--item-wrap
+                                                    .find_room--item-lf
+                                                        p.note-mn.cl-third.t-up TRẺ EM
+                                                        .find_room--item-op
+                                                            select.js-op(data-placeholder="Số lượng")
+                                                                option
+                                                                option(value="option1") 01
+                                                                option(value="option2") 02
+                                                                option(value="option3") 03
+                                                    .find_room--item-rt
+                                                        .find_room--item-ic
+                                                            +img("fric3.svg")
+                                            .find_room--item.d-item
+                                                .find_room--item-wrap
+                                                    +btn("Tìm phòng","","","")
+        section.endowCt_more.free-slide
+            .container
+                .endowCt_more--wrap
+                    .box-title
+                        h2.title-md.fl-sec.fw-4 Chương trình ưu đãi khác
+                        a(href="").link-text2 Xem tất cả
+                    .endowCt_more--list.d-wrap
+                        .swiper.mySwiper
+                            .swiper-wrapper
+                                -
+                                    const ms = [
+                                        {
+                                            img:"p1.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"p2.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"p3.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"p4.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        }
+                                    ]
+                                each m , i in ms
+                                    .swiper-slide.d-item.d-3
+                                        +post(m.img,m.title,m.content)
+                        .swiper-pagination
+
+                

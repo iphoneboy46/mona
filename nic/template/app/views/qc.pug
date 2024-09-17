@@ -1,0 +1,230 @@
+extends layout/layout
+block vars
+    -title = 'quảng cáo'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.qc_bg
+        .qc_bg--wrap 
+            .qc_bg--img(data-aos="zoom-out")  
+                +img("qc1.png")
+    section.qc_said 
+        .container 
+            .qc_said--wrap 
+                .qc_said--box 
+                    .qc_said--box-content(data-aos="fade-up")  
+                        p.note-lg.cl-white.t-center A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. 
+                    ul.qc_said--ics(data-aos="fade-up" data-aos-delay="500")  
+                        li.qc_said--ic 
+                            +img("qcic1.png")
+                        li.qc_said--ic 
+                            +img("qcic2.png")
+                        li.qc_said--ic 
+                            +img("qcic3.png")
+                        li.qc_said--ic 
+                            +img("qcic4.png")
+    section.qc_bg 
+        .qc_bg--wrap 
+            .qc_bg--img(data-aos="zoom-out")   
+                +img("qc2.png")
+    section.home_qc.qc 
+        .home_qc--wrap 
+            .home_qc--list 
+                .home_qc--item.ani 
+                    .home_qc--item-bg 
+                        +img("hqc1.png")
+                    .container 
+                        .home_qc--item-wrap
+                            .home_qc--item-box 
+                                .home_qc--item-title 
+                                    h3.title-sm3.cl-white.fw-8.fw-i.t-up.fl-sec CÔNG NGHỆ 
+                                    h2.title-lg2.cl-white.fw-8.fw-i.t-up.fl-sec NANO
+                                .home_qc--item-content 
+                                    p.note-lg.fw-4.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                                .home_qc--item-btn 
+                                    +btn("TÌM HIỂU THÊM","","","cl-2")
+    section.qc_mate.free-slide
+        .container 
+            .qc_mate--wrap 
+                .qc_title.ani 
+                    h2.title-sm3.fw-8.cl-white.t-up(data-aos="fade-right") MATERIALES
+                .qc_mate--list.d-wrap(data-aos="fade-up") 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-4 
+                                .qc_mate--item 
+                                    .qc_mate--item-wrap 
+                                        span.ic 
+                                            +img("mtic1.png")
+                                        .qc_mate--item-box 
+                                            h3.title-mn.fw-8.t-up.cl-white FIBRA DE CARBONO
+                                            p.note-text.cl-white.fw-5 You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                            .swiper-slide.d-item.d-4 
+                                .qc_mate--item 
+                                    .qc_mate--item-wrap 
+                                        span.ic 
+                                            +img("mtic2.png")
+                                        .qc_mate--item-box 
+                                            h3.title-mn.fw-8.t-up.cl-white FIBRA DE CARBONO
+                                            p.note-text.cl-white.fw-5 You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                            .swiper-slide.d-item.d-4 
+                                .qc_mate--item 
+                                    .qc_mate--item-wrap 
+                                        span.ic 
+                                            +img("mtic3.png")
+                                        .qc_mate--item-box 
+                                            h3.title-mn.fw-8.t-up.cl-white FIBRA DE CARBONO
+                                            p.note-text.cl-white.fw-5 You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                            .swiper-slide.d-item.d-4 
+                                .qc_mate--item 
+                                    .qc_mate--item-wrap 
+                                        span.ic 
+                                            +img("mtic4.png")
+                                        .qc_mate--item-box 
+                                            h3.title-mn.fw-8.t-up.cl-white FIBRA DE CARBONO
+                                            p.note-text.cl-white.fw-5 You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                    .swiper-pagination
+    section.qc_confor 
+        .container 
+            .qc_confor--wrap
+                .qc_title.ani 
+                    h2.title-sm3.fw-8.cl-white.t-up(data-aos="fade-right") CONFORT Y SEGURIDAD
+                .qc_confor--box
+                    .qc_confor--list.d-wrap(data-aos="fade-up") 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                        .qc_confor--item.d-item.d-3 
+                            .qc_confor--item-wrap 
+                                .qc_confor--item-img 
+                                    +img("n.png")
+                                .qc_confor--item-box 
+                                    span.ic 
+                                        i.fa-regular.fa-angle-down
+                                    .qc_confor--item-content 
+                                        h3.note-lg.fw-8.cl-white.t-up.fl-sec INTERIORES DESMONTABLES Y LAVABLES
+                                        p.note-text.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+    section.qc_video
+        .container 
+            .qc_video--wrap 
+                .qc_title.ani 
+                    h2.title-sm3.fw-8.cl-white.t-up(data-aos="fade-right") VIDEO
+                .qc_video--box 
+                    .qc_video--list 
+                        .qc_video--item(data-aos="fade-up") 
+                            .qc_video--item-wrap.d-wrap 
+                                .qc_video--item-lf.d-item 
+                                    .qc_video--item-lf-wrap
+                                        .qc_video--item-lf-ytb 
+                                            iframe(width="1280" height="720" src="https://www.youtube.com/embed/oOnL10J312M" title="Những điều chưa biết về siêu phẩm Fullface BELL QUALIFIER ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                .qc_video--item-rt.d-item 
+                                    .qc_video--item-rt-wrap
+                                        .qc_video--item-rt-content 
+                                            h3.title-mn.cl-white.fw-7.t-up INTERIORES DESMONTABLES Y LAVABLES
+                                            p.note-text.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. 
+                                        ul.qc_said--ics 
+                                            li.qc_said--ic 
+                                                +img("qcic1.png")
+                                            li.qc_said--ic 
+                                                +img("qcic2.png")
+                                            li.qc_said--ic 
+                                                +img("qcic3.png")
+                                            li.qc_said--ic 
+                                                +img("qcic4.png")
+                        .qc_video--item(data-aos="fade-up") 
+                            .qc_video--item-wrap.d-wrap 
+                                .qc_video--item-lf.d-item 
+                                    .qc_video--item-lf-wrap
+                                        .qc_video--item-lf-ytb 
+                                            iframe(width="1280" height="720" src="https://www.youtube.com/embed/oOnL10J312M" title="Những điều chưa biết về siêu phẩm Fullface BELL QUALIFIER ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                .qc_video--item-rt.d-item 
+                                    .qc_video--item-rt-wrap
+                                        .qc_video--item-rt-content 
+                                            h3.title-mn.cl-white.fw-7.t-up INTERIORES DESMONTABLES Y LAVABLES
+                                            p.note-text.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. 
+                                        ul.qc_said--ics 
+                                            li.qc_said--ic 
+                                                +img("qcic1.png")
+                                            li.qc_said--ic 
+                                                +img("qcic2.png")
+                                            li.qc_said--ic 
+                                                +img("qcic3.png")
+                                            li.qc_said--ic 
+                                                +img("qcic4.png")
+                        .qc_video--item(data-aos="fade-up") 
+                            .qc_video--item-wrap.d-wrap 
+                                .qc_video--item-lf.d-item 
+                                    .qc_video--item-lf-wrap
+                                        .qc_video--item-lf-ytb 
+                                            iframe(width="1280" height="720" src="https://www.youtube.com/embed/oOnL10J312M" title="Những điều chưa biết về siêu phẩm Fullface BELL QUALIFIER ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                .qc_video--item-rt.d-item 
+                                    .qc_video--item-rt-wrap
+                                        .qc_video--item-rt-content 
+                                            h3.title-mn.cl-white.fw-7.t-up INTERIORES DESMONTABLES Y LAVABLES
+                                            p.note-text.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. 
+                                        ul.qc_said--ics 
+                                            li.qc_said--ic 
+                                                +img("qcic1.png")
+                                            li.qc_said--ic 
+                                                +img("qcic2.png")
+                                            li.qc_said--ic 
+                                                +img("qcic3.png")
+                                            li.qc_said--ic 
+                                                +img("qcic4.png")
+    section.qc_said2 
+        .container 
+            .qc_said2--wrap 
+                .qc_said2--box 
+                    .qc_said--box2-content(data-aos="fade-down")  
+                        p.title-sm2.cl-white.t-center.fw-6 A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision
+                    span.ic(data-aos="fade-up")  
+                        i.fa-regular.fa-angle-down

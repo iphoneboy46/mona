@@ -1,0 +1,155 @@
+extends layout/layout
+block vars
+    -title = 'contact'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery, JsSelect2,JsAos,JsSwiper]
+    -jsComponents = ['header',"select2","popup","tab","contact"]
+    -cssLibs = [fontAWS,fontAWS2,CssSelect2,CssAos,CssSwiper]
+    -cssComponents = ['banner',"select2"]
+    -cssPages = ["contact"]
+
+block container
+    +banner-main("bnNews.png","Liên Hệ")
+    section.contact_map.tab-box 
+        .container
+            .contact_map-wrap(data-aos="zoom-out")  
+                .contact_map--box 
+                    .contact_map--lf
+                        .contact_map--lf-wrap 
+                            .contact_map--lf-list 
+                                .contact_map--lf-item.tab-btn.actived 
+                                    .contact_map--lf-item-wrap 
+                                        h2.title-mn.fw-4.cl-white.fl-sec Jumbo Seafood Trần Hưng Đạo
+                                        .address
+                                            ul.address_list                
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic1.png")
+                                                        a.address_link(href="") 1900 292977
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic2.png")
+                                                        a.address_link(href="") 10:00 - 22:00, hằng ngày
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic3.png")
+                                                        a.address_link(href="") 6A Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1
+                                .contact_map--lf-item.tab-btn 
+                                    .contact_map--lf-item-wrap 
+                                        h2.title-mn.fw-4.cl-white.fl-sec Jumbo Seafood Đồng Khởi
+                                        .address
+                                            ul.address_list                
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic1.png")
+                                                        a.address_link(href="") 1900 292977
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic2.png")
+                                                        a.address_link(href="") 10:00 - 22:00, hằng ngày
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic3.png")
+                                                        a.address_link(href="") Lầu 1, 2-4-6 Đồng Khởi, Phường Bến Nghé, Quận 1
+                                .contact_map--lf-item.tab-btn 
+                                    .contact_map--lf-item-wrap 
+                                        h2.title-mn.fw-4.cl-white.fl-sec Jumbo Seafood Nguyễn Đình Chiểu
+                                        .address
+                                            ul.address_list                
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic1.png")
+                                                        a.address_link(href="") 1900 292977
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic2.png")
+                                                        a.address_link(href="") 10:00 - 22:00, hằng ngày
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic3.png")
+                                                        a.address_link(href="") 172 Nguyễn Đình Chiểu, Phường 6, Quận 3
+                                .contact_map--lf-item.tab-btn 
+                                    .contact_map--lf-item-wrap 
+                                        h2.title-mn.fw-4.cl-white.fl-sec Jumbo Seafood Nguyễn Đình Chiểu
+                                        .address
+                                            ul.address_list                
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic1.png")
+                                                        a.address_link(href="") 1900 292977
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic2.png")
+                                                        a.address_link(href="") 10:00 - 22:00, hằng ngày
+                                                li.address_item
+                                                    .address_item--content
+                                                        span.address_item--ic 
+                                                            +img("mic3.png")
+                                                        a.address_link(href="") 172 Nguyễn Đình Chiểu, Phường 6, Quận 3
+                    .contact_map--rt
+                        .contact_map--rt-wrap
+                            .contact_map--rt-iframes(id="map")
+                                .contact_map--rt-iframe.tab-content.showed 
+                                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.580723165725!2d106.68176456115765!3d10.781014727146903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f141eb1b395%3A0x9eba5ee70a966333!2sJUMBO%20Seafood%20Vietnam%203!5e0!3m2!1svi!2s!4v1726456855775!5m2!1svi!2s", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+                                .contact_map--rt-iframe.tab-content 
+                                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.580723165725!2d106.68176456115765!3d10.781014727146903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fe73bd8c7f3%3A0x9149b2be16202815!2zSlVNQk8gU2VhZm9vZCBWaWV0bmFtIChOZ3V54buFbiDEkMOsbmggQ2hp4buDdSk!5e0!3m2!1svi!2s!4v1726456880905!5m2!1svi!2s", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+                                .contact_map--rt-iframe.tab-content 
+                                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.395521648548!2d106.68948937583839!3d10.780988559107945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fe73bd8c7f3%3A0x9149b2be16202815!2zSlVNQk8gU2VhZm9vZCBWaWV0bmFtIChOZ3V54buFbiDEkMOsbmggQ2hp4buDdSk!5e0!3m2!1svi!2s!4v1726456527790!5m2!1svi!2s" width="600" height="450" style="border:0;", allowfullscreen, loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                                .contact_map--rt-iframe.tab-content 
+                                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.395521648548!2d106.68948937583839!3d10.780988559107945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fe73bd8c7f3%3A0x9149b2be16202815!2zSlVNQk8gU2VhZm9vZCBWaWV0bmFtIChOZ3V54buFbiDEkMOsbmggQ2hp4buDdSk!5e0!3m2!1svi!2s!4v1726456527790!5m2!1svi!2s" width="600" height="450" style="border:0;", allowfullscreen, loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+
+    section.contact 
+        .container 
+            .contact_wrap.d-wrap 
+                .contact_lf.d-item.d-2(data-aos="fade-right") 
+                    .contact_lf--wrap 
+                        .contact_lf--img 
+                            +img("contactBg.png")
+                .contact_rt.d-item.d-2(data-aos="fade-left") 
+                    .contact_rt--wrap
+                        .contact_rt--title 
+                            h2.title-sm3.fw-7.cl-pri.fl-sec Liên Hệ Với Chúng Tôi
+                            p.note-text.cl-gray6 Liên hệ ngay với chúng tôi để cùng hợp tác và phát triển, nơi mang đến những trải nghiệm ẩm thực tuyệt vời và dịch vụ chất lượng hàng đầu!
+                        .contact_form
+                            form
+                                .contact_form--list.d-wrap
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            input(type="text" placeholder="Họ và tên").form-item-ip
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            input(type="text" placeholder="Số điện thoại").form-item-ip
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            input(type="text" placeholder="Email").form-item-ip
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            select.js-op.form-item-op(data-placeholder="Chi nhánh")
+                                                option(value="")
+                                                option(value="option1") demo 1
+                                                option(value="option2") demo 2
+                                                option(value="option3") demo 3
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            select.js-op.form-item-op(data-placeholder="Nhu cầu")
+                                                option(value="")
+                                                option(value="option1") demo 1
+                                                option(value="option2") demo 2
+                                                option(value="option3") demo 3
+                                    .contact_form--item.d-item
+                                        label.form-item
+                                            textarea(type="text" placeholder="Lời nhắn").form-item-tx
+                                +btn("Gửi thông tin","","","trans")

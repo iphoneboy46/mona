@@ -1,0 +1,113 @@
+.aside {
+  &_item {
+    background: #1a1a1a;
+    border: 0.1rem solid #1f1f1f;
+    &:not(:first-child) {
+      margin-top: 2.4rem;
+    }
+  }
+  &_title {
+    font-size: var(--h4-fs);
+    line-height: var(--h4-lh);
+    margin-bottom: 2.4rem;
+  }
+  &_search {
+    .form-field {
+      position: relative;
+    }
+    .form-submit {
+      @include center(y);
+      right: 1.6rem;
+      background-color: transparent;
+      padding: 0;
+      outline: none;
+      border: none;
+      img {
+        width: 1.6rem;
+      }
+    }
+    .form-ctr {
+      height: 4.8rem;
+      padding-left: 2.6rem;
+      padding-right: 4rem;
+      width: 100%;
+      background-color: transparent;
+      font-size: var(--body14-fs);
+      line-height: var(--body14-lh);
+      outline: none;
+      border: none;
+      @include border(#1a1a1a);
+      @include transition(all $t);
+      &:focus {
+        border-color: $white;
+      }
+      @include input-placeholder {
+        color: #ffffff;
+        opacity: 0.8;
+      }
+      @include lg {
+        padding-left: 1.6rem;
+      }
+    }
+  }
+  &_contact {
+    &-list {
+      .li {
+        display: flex;
+        column-gap: 1.4rem;
+        font-size: var(--body14-fs);
+        line-height: var(--body14-lh);
+        &:not(:first-child) {
+          margin-top: 2.8rem;
+        }
+
+        &-icon {
+          flex-shrink: 0;
+          @include size(3.2rem);
+          @include center(flex);
+          margin-top: -0.6rem;
+          img {
+            width: 50%;
+          }
+        }
+        &-link {
+          opacity: 0.7;
+          @include transition(all $t);
+          @include hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    @include lg {
+      padding: 2.4rem 1.6rem;
+    }
+  }
+  &_recruit {
+    padding: 3.2rem 2.8rem;
+    &-list {
+      .li {
+        display: flex;
+        column-gap: 1.2rem;
+        font-size: var(--body14-fs);
+        line-height: var(--body14-lh);
+        &:not(:first-child) {
+          margin-top: 1.2rem;
+        }
+
+        &-icon {
+          @include size(3.2rem);
+          img {
+            width: 50%;
+          }
+        }
+        &-text {
+          color: #cccccc;
+        }
+      }
+    }
+    @include lg {
+      padding: 2.4rem 1.6rem;
+    }
+  }
+}

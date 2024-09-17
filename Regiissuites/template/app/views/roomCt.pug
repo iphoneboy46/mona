@@ -1,0 +1,227 @@
+extends layout/layout
+block vars
+    -title = 'Chi tiết phòng'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main.room
+        .banner_main--bg
+            .banner_main--img
+                +img("bnrct.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up jUNIOR SUITE
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","GIÁ TRỊ")
+                .find_room
+                    .find_room--wrap
+                        .find_room--list.d-wrap
+                            .find_room--item.d-item
+                                .find_room--item-wrap.chooseDate1
+                                    .find_room--item-lf
+                                        p.note-mn.cl-third.t-up NGÀY BẮT ĐẦU
+                                        .find_room--item-ip
+                                            p.note-md.text-date1.fw-5.cl-pri 21/03/2024
+                                            input(type="text" class="first datepicker")
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric1.svg")
+                            .find_room--item.d-item
+                                .find_room--item-wrap.chooseDate2
+                                    .find_room--item-lf
+                                        p.note-mn.cl-third.t-up NGÀY KẾT THÚC
+                                        .find_room--item-ip
+                                            p.note-md.text-date2.fw-5.cl-pri 21/03/2024
+                                            input(type="text" class="second datepicker" id="")
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric1.svg")
+                            .find_room--item.d-item
+                                .find_room--item-wrap
+                                    .find_room--item-lf
+                                        p.note-mn.cl-third.t-up NGƯỜI LỚN
+                                        .find_room--item-op
+                                            select.js-op(data-placeholder="Số lượng")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric2.svg")
+                            .find_room--item.d-item
+                                .find_room--item-wrap
+                                    .find_room--item-lf
+                                        p.note-mn.cl-third.t-up TRẺ EM
+                                        .find_room--item-op
+                                            select.js-op(data-placeholder="Số lượng")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric3.svg")
+                            .find_room--item.d-item
+                                .find_room--item-wrap
+                                    +btn("Tìm phòng","","","")
+    section.utilities.free-slide
+        .container
+            .utilities_wrap
+                +boxTitle2("giới thiệu sơ lược","jUNIOR SUITE","Là lựa chọn thông minh và tiện lợi, kết hợp 3 trong 1 nhu cầu: Nghỉ ngơi – Nghỉ dưỡng – Làm việc, lí tưởng cho các chuyến công tác hoặc du lịch ngắn ngày.")
+                .utilities_imgs
+                    .swiper.mySwiper.--center.--loop.--auto
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u1.png" data-fancybox="gallery").utilities_img
+                                    +img("u1.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u2.png" data-fancybox="gallery").utilities_img
+                                    +img("u2.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u3.png" data-fancybox="gallery").utilities_img
+                                    +img("u3.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u4.png" data-fancybox="gallery").utilities_img
+                                    +img("u4.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u5.png" data-fancybox="gallery").utilities_img
+                                    +img("u5.png")
+                    .swiper-pagination
+                .utilities_content
+                    .utilities_content--wrap.d-wrap
+                        .utilities_lf.d-item.d-2
+                            .utilities_lf--wrap
+                                .utilities_lf--top
+                                    h3.title-md.fl-sec.cl-black.t-up.fw-7 tIỆN ÍCH PHÒNG
+                                    p.note-text.cl-black2 Our newly built homestay contains 8 units with shared spaces on the ground floor. Located in the quiet Tan Dinh neighborhood of District 1, one of the few walkable areas in Saigon. The area is bustling with hip cafes and restaurants, and cool local businesses.
+                                .utilities_lf--center
+                                    ul.utilities_lf--list.d-wrap
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic1.svg")
+                                                p.note-text.cl-black2 Area 100m2
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic2.svg")
+                                                p.note-text.cl-black2 King’s bed
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic3.svg")
+                                                p.note-text.cl-black2 2-4 people
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic1.svg")
+                                                p.note-text.cl-black2 Area 100m2
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic2.svg")
+                                                p.note-text.cl-black2 King’s bed
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic3.svg")
+                                                p.note-text.cl-black2 2-4 people
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic1.svg")
+                                                p.note-text.cl-black2 Area 100m2
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic2.svg")
+                                                p.note-text.cl-black2 King’s bed
+                                        li.utilities_lf--item.d-item.d-3
+                                            .utilities_lf--item-wrap
+                                                span.ic
+                                                    +img("tic3.svg")
+                                                p.note-text.cl-black2 2-4 people
+                                .utilities_lf--bottom
+                                    +btn("đặt phòng","","","")
+                        .utilities_rt.d-item.d-2
+                            .utilities_rt--wrap.tab-box
+                                .utilities_rt--tabs
+                                    .utilities_rt--tab.tab-btn.actived GIỚI THIỆU
+                                    .utilities_rt--tab.tab-btn Dịch vụ
+                                .utilities_rt--list
+                                    .utilities_rt--item.tab-content.showed
+                                        .utilities_rt--content
+                                            p.note-text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    .utilities_rt--item.tab-content
+                                        .utilities_rt--content
+                                            ul
+                                                li.note-text Complimentary WIFI, everywhere for unlimited devices
+                                                li.note-text Complimentary Minibar
+                                                li.note-text Dreamy Pillow-topped Mattress
+                                                li.note-text Two Types of Heavenly Pillows
+                                                li.note-text Rain Shower & Hand Shower
+                                                li.note-text Air Conditioning
+                                                li.note-text 42" Smart TV
+                                                li.note-text Alarm Clock & Landline
+                                                li.note-text Bathrobe & Slippers
+                                                li.note-text Luxurious Bathroom Amenities
+                                                li.note-text Electric Weighing Scale
+                                                li.note-text Hairdryer 1600W
+                                                li.note-text Electronic Safe
+                                                li.note-text Kettle
+                                                li.note-text Iron & Ironing Board
+                                                li.note-text Smoke Detectors
+                                                li.note-text Non-smoking Rooms
+    section.room_more.free-slide
+        .container
+            .room_more--wrap
+                +boxTitle2("giới thiệu sơ lược","niềm vui của sự sang trọng","Là lựa chọn thông minh và tiện lợi, kết hợp 3 trong 1 nhu cầu: Nghỉ ngơi – Nghỉ dưỡng – Làm việc, lí tưởng cho các chuyến công tác hoặc du lịch ngắn ngày.")
+                .room_more--box
+                    .room_more--list.d-wrap
+                        .swiper.mySwiper.--auto
+                            .swiper-wrapper
+                                -
+                                    const rms = [
+                                        {
+                                            img:"rm1.png",
+                                            title:"Senior Suite",
+                                            note:"At Circadian, we are committed to providing our  "
+                                        },
+                                        {
+                                            img:"rm2.png",
+                                            title:"Senior Suite",
+                                            note:"At Circadian, we are committed to providing our  "
+                                        },
+                                        {
+                                            img:"rm1.png",
+                                            title:"Senior Suite",
+                                            note:"At Circadian, we are committed to providing our  "
+                                        },
+                                        {
+                                            img:"rm2.png",
+                                            title:"Senior Suite",
+                                            note:"At Circadian, we are committed to providing our  "
+                                        }
+                                    ]
+                                each rm , i in rms
+                                    .swiper-slide.d-item.d-2
+                                        +room(rm.img,rm.title,rm.note)
+                        .swiper-pagination
+                    +btn("xem thêm")
+
+
+
+

@@ -1,0 +1,141 @@
+// css footer
+.footer {
+  position: relative;
+  isolation: isolate;
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  overflow: hidden;
+  background: #1a1a1a;
+  .polygon {
+    @include center(x);
+    top: 0;
+    z-index: -1;
+    @include size(100%);
+    img {
+      @include size(100%);
+    }
+  }
+  &_logo {
+    margin-bottom: 5.3rem;
+    img {
+      width: 11.3rem;
+    }
+  }
+  &_info {
+    @include sm-min {
+      max-width: 23.2rem;
+    }
+    &-item {
+      opacity: 0.7;
+      letter-spacing: 0.005em;
+      font-size: var(--body14-fs);
+      line-height: var(--body14-lh);
+      &:not(:first-child) {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  .col {
+    &:not(:first-child) {
+      .footer_col {
+        @include sm-min {
+          padding-top: 6rem;
+        }
+        @include lg-min {
+          padding-left: 6.4rem;
+        }
+      }
+    }
+  }
+  &_title {
+    font-size: var(--body14-fs);
+    line-height: var(--body14-lh);
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  &_nav {
+    .li {
+      &-link {
+        opacity: 0.4;
+        @include transition(all $t);
+      }
+      &.current-menu-item {
+        .li-link {
+          opacity: 1;
+        }
+      }
+      @include hover {
+        .li-link {
+          opacity: 1;
+        }
+      }
+      &:not(:first-child) {
+        margin-top: 1.6rem;
+      }
+    }
+  }
+  &_social {
+    .social-list {
+      display: flex;
+      align-items: center;
+      column-gap: 1.6rem;
+    }
+    .social-link {
+      @include circle(4.2rem);
+      @include center(flex);
+      border: 0.1rem solid rgba(255, 255, 255, 0.2);
+      @include transition(all $t);
+      flex-shrink: 0;
+      img {
+        max-width: 1.2rem;
+      }
+      @include hover {
+        opacity: 0.5;
+      }
+    }
+    @include xs {
+      .social-list {
+        column-gap: 0.8rem;
+      }
+      .social-link {
+        @include size(3.6rem);
+      }
+    }
+  }
+  &_newsletter {
+    .footer_title {
+      margin-bottom: 1rem;
+    }
+    .form-field {
+      position: relative;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 0.1rem solid #808080;
+    }
+    .form-ctr {
+      height: 2.4rem;
+      padding-right: 2.4rem;
+      font-size: var(--body14-fs);
+      line-height: var(--body14-lh);
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      color: $white;
+      @include input-placeholder {
+        color: #808080;
+      }
+    }
+    .form-submit {
+      @include center(y);
+      right: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      img {
+        width: 1.6rem;
+      }
+    }
+  }
+}

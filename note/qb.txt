@@ -1,0 +1,112 @@
+.tourCt_infos--book-item.showed
+                                            .tourCt_infos--book-item-wrap 
+                                                .tourCt_infos--top 
+                                                    .tourCt_infos--title 
+                                                        .tourCt_infos--title-lf
+                                                            p.note-lg.fw-6.cl-text Đặt lịch chuyến đi
+                                                        .tourCt_infos--title-rt 
+                                                            .tourCt_infos--title-op 
+                                                                select.js-op(data-placeholder="Tháng")
+                                                                    option
+                                                                    option(value="option1") Tháng 7
+                                                                    option(value="option2") Tháng 8
+                                                                    option(value="option3") Tháng 9
+                                                                    option(value="option4") Tháng 10
+                                                            .tourCt_infos--title-op 
+                                                                select.js-op(data-placeholder="Năm")
+                                                                    option
+                                                                    option(value="year1") 2024
+                                                                    option(value="year2") 2025
+                                                                    option(value="year3") 2026
+                                                                    option(value="year4") 2027
+                                                    .tourCt_infos--rds
+                                                        label.tourCt_infos--rd
+                                                            input(type="radio", name="date" checked="checked")
+                                                            .tourCt_infos--rd-lf 
+                                                                .tourCt_infos--rd-lf-lf
+                                                                    span.box
+                                                                .tourCt_infos--rd-lf-rt 
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                                        p.note-sm.cl-gray9.fw-5 07/07/2024
+                                                                    span.line
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                                        p.note-sm.cl-gray9.fw-5 09/07/2024
+                                                            .tourCt_infos--rd-rt
+                                                                .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up GIÁ
+                                                                        p.note-sm.cl-pri.fw-7 1.199.000đ
+                                                        label.tourCt_infos--rd
+                                                            input(type="radio", name="date")
+                                                            .tourCt_infos--rd-lf 
+                                                                .tourCt_infos--rd-lf-lf
+                                                                    span.box
+                                                                .tourCt_infos--rd-lf-rt 
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                                        p.note-sm.cl-gray9.fw-5 09/07/2024
+                                                                    span.line
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                                        p.note-sm.cl-gray9.fw-5 11/07/2024
+                                                            .tourCt_infos--rd-rt
+                                                                .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up GIÁ
+                                                                        p.note-sm.cl-pri.fw-7 1.199.000đ
+                                                        label.tourCt_infos--rd
+                                                            input(type="radio", name="date")
+                                                            .tourCt_infos--rd-lf 
+                                                                .tourCt_infos--rd-lf-lf
+                                                                    span.box
+                                                                .tourCt_infos--rd-lf-rt 
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                                        p.note-sm.cl-gray9.fw-5 12/07/2024
+                                                                    span.line
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                                        p.note-sm.cl-gray9.fw-5 14/07/2024
+                                                            .tourCt_infos--rd-rt
+                                                                .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up GIÁ
+                                                                        p.note-sm.cl-pri.fw-7 1.199.000đ
+                                                        label.tourCt_infos--rd
+                                                            input(type="radio", name="date")
+                                                            .tourCt_infos--rd-lf 
+                                                                .tourCt_infos--rd-lf-lf
+                                                                    span.box
+                                                                .tourCt_infos--rd-lf-rt 
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                                        p.note-sm.cl-gray9.fw-5 12/07/2024
+                                                                    span.line
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                                        p.note-sm.cl-gray9.fw-5 14/07/2024
+                                                            .tourCt_infos--rd-rt
+                                                                .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up GIÁ
+                                                                        p.note-sm.cl-pri.fw-7 1.199.000đ
+                                                        label.tourCt_infos--rd
+                                                            input(type="radio", name="date")
+                                                            .tourCt_infos--rd-lf 
+                                                                .tourCt_infos--rd-lf-lf
+                                                                    span.box
+                                                                .tourCt_infos--rd-lf-rt 
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                                        p.note-sm.cl-gray9.fw-5 12/07/2024
+                                                                    span.line
+                                                                    .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                                        p.note-sm.cl-gray9.fw-5 14/07/2024
+                                                            .tourCt_infos--rd-rt
+                                                                .tourCt_infos--form
+                                                                        label.note-smn.fw-7.t-up GIÁ
+                                                                        p.note-sm.cl-pri.fw-7 1.199.000đ
+                                                        
+                                                .tourCt_infos--bottom
+                                                    .tourCt_infos--btns
+                                                        +btn("Quay lại","","","cl-7 btn-back")
+                                                        +btn("Đặt Tour Ngay","","","")

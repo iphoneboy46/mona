@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/js/library/aos/aos.css">
+    <link rel="stylesheet" href="./assets/js/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/js/library/select2/select2.min.css">
+    <link rel="stylesheet" href="./assets/js/library/gallery/lightgallery.min.css">
+    <link rel="stylesheet" href="./assets/js/library/fancybox/fancybox.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/mona.png">
+    <title>Template</title>
+  </head>
+  <body class="whole-sale">
+    <div class="container">
+      <header class="m-header">
+        <div class="m-header_top is-pc">
+          <div class="wrapper">
+            <div class="header_swiper">
+              <div class="js-header-swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p>Join the crowd and grab our fantastic products now!</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>Join the crowd and grab our fantastic products now! 2</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>Join the crowd and grab our fantastic products now! 3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="m-header_main"> 
+          <div class="wrapper">
+            <div class="header_logo"><a class="trans" href="./"><img src="./assets/images/common/header_logo.svg" alt="G"></a></div>
+            <div class="header_control is-sp"><a class="header_user trans" href="#"><img src="./assets/images/common/ico_user.svg" alt=""></a><a class="header_cart trans" href="#js-modal-cart" rel="modal:open"><img src="./assets/images/common/ico_cart.svg" alt=""></a></div>
+            <div class="btn-menu js-btn-menu is-sp"> <span></span><span></span><span></span></div>
+            <nav class="header_navbar js-menu">
+              <ul class="list_navbar" id="menu-menu-main">
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown"><a class="menu-link trans" href="#">HAIR EXTENSIONS</a><span class="js-acorrdion-menu icon-menu"><span></span></span>
+                  <div class="m-menu_list header_menu js-sub-menu">
+                    <div class="icon-back is-sp js-btn-back"></div>
+                    <div class="m-header_service">
+                      <div class="wrapper">
+                        <ul class="font-helvetica">
+                          <li>
+                            <div class="service_icon"><img src="./assets/images/common/ico_shipping.svg" alt=""></div>
+                            <p>Fast shipping</p>
+                          </li>
+                          <li>
+                            <div class="service_icon"><img src="./assets/images/common/ico_quality.svg" alt=""></div>
+                            <p>Superior Quality</p>
+                          </li>
+                          <li>
+                            <div class="service_icon"><img src="./assets/images/common/ico_secure.svg" alt=""></div>
+                            <p>Secure Shopping</p>
+                          </li>
+                          <li>
+                            <p>Exclusive Customization Service</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="menu_inner wrapper">
+                      <div class="menu_detail">
+                        <h2 class="detail_title">Professional</h2>
+                        <ul class="detail_list">
+                          <li><a class="trans" href="#">Keratin hair extenions</a></li>
+                          <li><a class="trans" href="#">Tape in hair extensions</a></li>
+                          <li><a class="trans" href="#">Weft hair extensions</a></li>
+                          <li><a class="trans" href="#">Bulk hair</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu_detail">
+                        <h2 class="detail_title">Ready to wear</h2>
+                        <ul class="detail_list">
+                          <li><a class="trans" href="#">Clip in</a></li>
+                          <li><a class="trans" href="#">Halo</a></li>
+                          <li><a class="trans" href="#">Pony tail</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu_description">
+                        <div class="description_image"><img src="./assets/images/common/header_img.jpg" alt="Luxury hair extensions"></div>
+                        <div class="description_content">
+                          <h2 class="detail_title">Luxury hair extensions</h2>
+                          <ul class="detail_list">
+                            <li><a class="trans" href="#">Silky, stranger and healthier hair</a></li>
+                            <li><a class="trans" href="#">Make from 1 donor</a></li>
+                            <li><a class="trans" href="#">Advanced hair bleach</a></li>
+                            <li><a class="trans" href="#">Last longevity</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link trans" href="#">WHOLESALE</a></li>
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link trans" href="#">ACCESSORIES</a></li>
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link trans" href="#">BLOG</a></li>
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link trans" href="#">ABOUT US</a></li>
+                <li class="m-menu_item menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-link trans" href="#">CONTACT</a></li>
+              </ul>
+              <div class="header_control is-sp"><span class="header_search">
+                  <form class="header_search_form" action="">
+                    <input class="search_input" type="text" placeholder="Search">
+                    <input class="btn-submit is-sp trans" type="submit" value="Search">
+                  </form></span></div>
+            </nav>
+            <div class="header_control is-pc"><span class="header_search js-header-search"><img class="trans" src="./assets/images/common/ico_search.svg" alt="">
+                <form class="header_search_form" action="">
+                  <input class="search_input" type="text" placeholder="Search">
+                  <input class="btn-submit" type="submit" value="">
+                </form></span><a class="header_user trans" href="#"><img src="./assets/images/common/ico_user.svg" alt=""></a><a class="header_cart trans" href="#js-modal-cart" rel="modal:open"><img src="./assets/images/common/ico_cart.svg" alt=""></a></div>
+          </div>
+        </div>
+      </header>
+      <div class="m-header_service is-pc">
+        <div class="wrapper">
+          <ul class="font-helvetica">
+            <li>
+              <div class="service_icon"><img src="./assets/images/common/ico_shipping.svg" alt=""></div>
+              <p>Fast shipping</p>
+            </li>
+            <li>
+              <div class="service_icon"><img src="./assets/images/common/ico_quality.svg" alt=""></div>
+              <p>Superior Quality</p>
+            </li>
+            <li>
+              <div class="service_icon"><img src="./assets/images/common/ico_secure.svg" alt=""></div>
+              <p>Secure Shopping</p>
+            </li>
+            <li>
+              <p>Exclusive Customization Service</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal modal-cart" id="js-modal-cart">
+        <div class="cart_inner">
+          <h2 class="cart_title">MY SHOPPING BAG <span>( 2 )</span></h2>
+          <div class="view_cart-products-unit">
+            <table class="products-cart">
+              <tr class="item">
+                <td>
+                  <div class="product-detail">
+                    <div class="product-detail-img"><img src="/assets/images/product.png" alt=""></div>
+                    <div class="product-detail-content">
+                      <div class="d-flex">
+                        <p>Invisi Clip - in 22” Espresso 1C</p>
+                        <div class="product-delete">
+                          <button type="button"><img src="/assets/images/viewcart/btn-trash.svg" alt=""></button>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="product-calculate">
+                          <div class="product-quantity">
+                            <div class="product-quantity-minus">
+                              <button class="minus-btn" type="button"></button>
+                            </div>
+                            <div class="product-quantity-number">
+                              <input class="input-update-count" type="text" value="1">
+                            </div>
+                            <div class="product-quantity-plus">
+                              <button class="plus-btn" type="button"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-price">
+                          <div class="price">$ 40.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="item">
+                <td>
+                  <div class="product-detail">
+                    <div class="product-detail-img"><img src="/assets/images/product.png" alt=""></div>
+                    <div class="product-detail-content">
+                      <div class="d-flex">
+                        <p>Invisi Clip - in 22” Espresso 1C</p>
+                        <div class="product-delete">
+                          <button type="button"><img src="/assets/images/viewcart/btn-trash.svg" alt=""></button>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="product-calculate">
+                          <div class="product-quantity">
+                            <div class="product-quantity-minus">
+                              <button class="minus-btn" type="button"></button>
+                            </div>
+                            <div class="product-quantity-number">
+                              <input class="input-update-count" type="text" value="1">
+                            </div>
+                            <div class="product-quantity-plus">
+                              <button class="plus-btn" type="button"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-price">
+                          <div class="price">$ 40.00</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="price_total">
+            <p>SUBTOTAL</p>
+            <p>$ 80.00</p>
+          </div>
+          <div class="modal_footer"><a class="footer_btn is-light" href="#">VIEW CART</a><a class="footer_btn" href="#">CHECK OUT</a></div>
+        </div>
+      </div>
+      <main class="main">
+        <section class="section-whole-sale">
+          <div class="breadcrumbs">
+            <ul class="list-breadcrumbs">
+              <li><a class="trans" href="./">Home</a></li>
+              <li class="bold-arrow"><span class="is-active">Wholesale</span>
+              </li>
+            </ul>
+          </div>
+          <div class="wrapper">
+            <div class="sale_inner">
+              <div class="sale_content">
+                <h1 class="section-title">A prestigious beauty icon</h1>
+                <p class="sale_text">15 years of creative experience with high-quality hair sourced from Vietnam. Beautiful and comfortable wig products, always in line with beauty trends</p>
+                <div class="primary-button"><a href="#">START YOUR JOURNEY</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-sale-detail">
+          <div class="wrapper">
+            <h2 class="detail_title">Are you a...</h2>
+            <div id="tabs">
+              <ul class="heading_tabs">
+                <li><a href="#tabs-1">Wholesaler and Distributor</a></li>
+                <li><a href="#tabs-2">Online Retailer</a></li>
+                <li><a href="#tabs-3">Hair Stylist or Salon Owner</a></li>
+              </ul>
+              <div id="tabs-1">
+                <div class="tabs_content">
+                  <ul class="list-items">
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Consistent Top Product Quality</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Exceptional Production Capacity</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tabs-2">
+                <div class="tabs_content">
+                  <ul class="list-items">
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Consistent Top Product Quality</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Exceptional Production Capacity</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tabs-3">
+                <div class="tabs_content">
+                  <ul class="list-items">
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Consistent Top Product Quality</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Exceptional Production Capacity</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                    <li>
+                      <div class="item-icon"><img src="./assets/images/whole-sale/ico_dollar.svg" alt=""></div>
+                      <h3 class="item_title">Special Discount for Sample Orders</h3>
+                      <p class="item_text">New Times Hair offers a generous discount for your first sample order even if you only order 1 piece. This way you’ll have the opportunity to experience our hair systems with little cost and zero risk to you.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-sale-products">
+          <div class="wrapper">
+            <ul class="product_list">
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Keratin</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Tape in</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Clip in</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Tape in</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Bulk hair</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Pony tail</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Halo</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+              <li>
+                <div class="item_image"><img src="./assets/images/whole-sale/sale_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <p class="detail_label">Blonde</p>
+                  <h2 class="detail_title">Pony tail</h2><a class="detail_link" href="#">See whole collection</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-best-products">
+          <div class="wrapper">
+            <h2 class="products_title">Bestselling Products</h2>
+            <ul class="products_list">
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-best-products">
+          <div class="wrapper">
+            <h2 class="products_title">Your Recently Viewed</h2>
+            <ul class="products_list">
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+              <li class="l-product_item is-seller">
+                <div class="item_image"><img src="./assets/images/product/product_img_01.jpg" alt=""></div>
+                <div class="item_detail">
+                  <h3 class="detail_title">Silk Seam</h3>
+                  <div class="review_star-wrapper">
+                    <ul class="review_star">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <div class="review_star_active" style="width: 50%">
+                      <ul class="review_star is-active">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="detail_text">Our Silk Seam™ features Invisi-Weft™ technology that is 30% thinner than traditional lace wefts...</p>
+                  <div class="detail_footer"><a class="detail_btn" href="#">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 2.05568L13.4444 7.50012H4.40411M14.2222 10.6112H4.88889L3.33333 0.500122H1M11.1111 2.44457H9.16667M9.16667 2.44457H7.22222M9.16667 2.44457V4.38901M9.16667 2.44457V0.500122M5.66667 13.7223C5.66667 14.1519 5.31844 14.5001 4.88889 14.5001C4.45933 14.5001 4.11111 14.1519 4.11111 13.7223C4.11111 13.2928 4.45933 12.9446 4.88889 12.9446C5.31844 12.9446 5.66667 13.2928 5.66667 13.7223ZM14.2222 13.7223C14.2222 14.1519 13.874 14.5001 13.4444 14.5001C13.0149 14.5001 12.6667 14.1519 12.6667 13.7223C12.6667 13.2928 13.0149 12.9446 13.4444 12.9446C13.874 12.9446 14.2222 13.2928 14.2222 13.7223Z" stroke="#F3F4F6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>ADD TO CART</a><a class="more_btn" href="#">LEARN MORE</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-contact-form"><span class="decoration_circle is-white is-right"></span><span class="decoration_circle is-white is-left"></span>
+          <div class="wrapper">
+            <h2 class="form_title">Contact us</h2>
+            <p class="form_text">We will contact you shortly</p>
+            <form class="form_contact">
+              <div class="form-row">
+                <div class="form-item">
+                  <label class="form-label">First name</label>
+                  <div class="form-input-wrapper">
+                    <input class="form-input" type="text" placeholder="Alex">
+                  </div>
+                </div>
+                <div class="form-item">
+                  <label class="form-label">Last name</label>
+                  <div class="form-input-wrapper">
+                    <input class="form-input" type="text" placeholder="Bloggs">
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-item">
+                  <label class="form-label">Phone number</label>
+                  <div class="form-input-wrapper">
+                    <input class="form-input" type="text" placeholder="0123456789">
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-item">
+                  <label class="form-label">Email address</label>
+                  <div class="form-input-wrapper">
+                    <input class="form-input" type="text" placeholder="alex.bloggs@email.com">
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-item">
+                  <label class="form-label">Your message</label>
+                  <div class="form-input-wrapper">
+                    <textarea class="form-input is-textarea" type="text" placeholder="Please enter your message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="primary-btn is-submit">
+                  <button type="submit">Submit message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="m-footer">
+        <div class="wrapper"><a class="footer_logo" href="#"><img src="./assets/images/common/footer_logo.svg" alt="G"></a>
+          <div class="footer_content">
+            <div class="footer_link">
+              <div class="link_block">
+                <h2 class="block_title">Warranty</h2>
+                <ul class="block_list">
+                  <li><a class="trans" href="#">Privacy policy</a></li>
+                  <li><a class="trans" href="#">Refund policy</a></li>
+                  <li><a class="trans" href="#">Payment &amp; Pricing</a></li>
+                  <li><a class="trans" href="#">Return &amp; Exchange Policy</a></li>
+                  <li><a class="trans" href="#">Shipping &amp; Delivery</a></li>
+                </ul>
+              </div>
+              <div class="link_block">
+                <h2 class="block_title">Help &amp; support</h2>
+                <ul class="block_list">
+                  <li><a class="trans" href="#">Reviews</a></li>
+                  <li><a class="trans" href="#">FAQs</a></li>
+                  <li><a class="trans" href="#">Color chart</a></li>
+                  <li><a class="trans" href="#">Texture</a></li>
+                </ul>
+              </div>
+              <div class="link_block">
+                <h2 class="block_title">Company</h2>
+                <ul class="block_list">
+                  <li><a class="trans" href="#">Home</a></li>
+                  <li><a class="trans" href="#">Collections</a></li>
+                  <li><a class="trans" href="#">Products</a></li>
+                  <li><a class="trans" href="#">About us</a></li>
+                  <li><a class="trans" href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer_contact">
+              <h2 class="block_title">CONTACT US</h2>
+              <ul class="contact_list">
+                <li><a class="trans" href="#"><img src="./assets/images/common/ico_facebook.svg" alt=""></a></li>
+                <li><a class="trans" href="#"><img src="./assets/images/common/ico_youtube.svg" alt=""></a></li>
+                <li><a class="trans" href="#"><img src="./assets/images/common/ico_telephone.svg" alt=""></a></li>
+                <li><a class="trans" href="#"><img src="./assets/images/common/ico_email.svg" alt=""></a></li>
+                <li><a class="trans" href="#"><img src="./assets/images/common/ico_app.svg" alt=""></a></li>
+              </ul>
+              <p class="contact_text"><span>Address: </span>1073/23 Cách Mạng Tháng Tám, <br class="is-sp">phường 7, Quận Tân Bình, TP.HCM</p>
+              <p class="contact_text"><span>Phone: </span>0123456789</p>
+            </div>
+            <div class="footer_copyright">
+              <p class="copyright_text">© 2023 GREATEHAIR - All rights reserved.</p>
+              <ul class="copyright_links">
+                <li><a class="trans" href="#">Privacy Policy</a></li>
+                <li><a class="trans" href="#">Terms of Use</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/library/jquery/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="./assets/js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/library/aos/aos.js"></script>
+    <script src="./assets/js/library/select2/select2.min.js"></script>
+    <script src="./assets/js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./assets/js/library/jquery/jquery-migrate.js"></script>
+    <script src="./assets/js/library/infinitescroll/infiniteslidev2.min.js"></script>
+    <script src="./assets/js/library/fancybox/fancybox.umd.js"></script>
+    <script src="./assets/js/library/jquery-star-rating-master/jquery.star-rating.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./assets/js/library/matchheight/jquery.matchHeight.js"></script>
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>

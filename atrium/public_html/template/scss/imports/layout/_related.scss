@@ -1,0 +1,30 @@
+.related {
+  @include bd-top($white);
+  &_posts {
+    --slide-col: 3;
+    @include md {
+      --slide-col: 2;
+    }
+    @include xxs {
+      --slide-col: 1;
+    }
+    .docs_item {
+      aspect-ratio: 1/1;
+    }
+  }
+  &_product {
+    --slide-col: 4;
+    .related {
+      border-top: none;
+    }
+    @include lg {
+      --slide-col: 3;
+    }
+    @include md {
+      --slide-col: 2;
+    }
+    @include xxs {
+      --slide-col: 1;
+    }
+  }
+}

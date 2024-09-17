@@ -1,0 +1,88 @@
+block vars
+    -title = 'Template'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+header.header(class=hdClass)
+    .container2
+        .header_wrap
+            .header_lf
+                .header_mobi.btn-mobi
+                    span.line
+                    span.line  
+                    span.line  
+                a(href="").header_logo
+                    +img("logoHD.svg")
+            .header_ct
+                .header_nav
+                    ul.menu-list
+                        -
+                            const hds = [
+                                {
+                                    title:"Giới thiệu",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Vì sao chọn Sright ? ",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Học tập tại Sright",
+                                    dropdown:true
+                                },
+                                {
+                                    title:"Tuyển sinh",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Tin tức",
+                                    dropdown:false
+
+                                },
+                                {
+                                    title:"Liên hệ",
+                                    dropdown:false
+                                }
+                            ]
+                        each hd , i in hds
+                            if hd.dropdown === true
+                                li.menu-item.dropdown
+                                    a(href="#").menu-link #{hd.title}
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                            else if i == 0
+                                li.menu-item.current-menu-item
+                                    a(href="#").menu-link #{hd.title}
+                            else
+                                li.menu-item
+                                    a(href="#").menu-link #{hd.title}
+            .header_rt
+                a.btn(href="")
+                    span.btn-text Tìm hiểu thêm
+                    span.btn-ic 
+                        +img("icb.png") 
+                .header_lang 
+                    .header_lang--list
+                        label.header_lang--item
+                            input(type="radio" name="lang" value="en")
+                            span.note-text.cl-text VI
+                        label.header_lang--item
+                            input(type="radio" name="lang" checked="checked" value="vi")
+                            span.note-text.cl-text EN
+                .header_search
+                    .header_search--btn.btn-search
+                        img(src="./assets/images/search.svg").open
+                        img(src="./assets/images/ex.svg").close
+                    .header_search--form
+                        form
+                            .header_search--ip
+                                input.form-item-ip(placeholder="Nhập từ khóa")
+                                button.btn
+                                    span.btn-ic 
+                                        +img("search.svg")
+                

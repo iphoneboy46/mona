@@ -1,0 +1,160 @@
+extends layout/layout
+block vars
+    -title = 'chi tiết hỏi đáp'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsGsap,JsGsapScroll]
+    -jsComponents = ['header','gsap','cmt']
+    -cssLibs = [fontAWS,fontAWS2,CssAos]
+    -cssComponents = ["banner","post"]
+    -cssPages = ["forum","contact","news"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    section.question_ct 
+        .container 
+            .question_ct--wrap 
+                .question_ct--box.d-wrap 
+                    .question_ct--lf.d-item
+                        .question_ct--lf-wrap
+                            .question_ct--lf-top 
+                                .question_ct--lf-title 
+                                    .question_ct--lf-title-top
+                                        span.title-lg.cl-white.fw-5 #1
+                                        h2.title-mn.cl-white.fw-6.t-up 
+                                            |Chiếu hình ảnh từ Laptop Dell sang LCD Dell 
+                                            br
+                                            |thì làm sao?
+                                    .question_ct--lf-title-bottom   
+                                        .evaluate_cmt--info 
+                                            .evaluate_cmt--info-lf 
+                                                .evaluate_cmt--info-img 
+                                                    +img("ava.png")
+                                            .evaluate_cmt--info-rt 
+                                                .evaluate_cmt--info-name 
+                                                    p.note-md.fw-7.cl-white Ths. KTS Ngô Thanh Phong
+                                                .evaluate_cmt--info-day 
+                                                    p.note-sm.cl-white3 13/10/2023
+                                        ul.post_actions 
+                                            li.post_action 
+                                                span.ic 
+                                                    +img("pic1.png")
+                                                p.note-sm.cl-white 23 lượt thích
+                                            li.post_action 
+                                                span.ic 
+                                                    +img("pic2.png")
+                                                p.note-sm.cl-white 23 bình luận
+                                .question_ct--lf-content 
+                                    p.note-text.cl-white Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ muốn kết nối Youtube chiếu lên màn hình LCD Dell để lớn hơn các bé xem dễ hơn có được không?
+                                .newsCt_box--useful 
+                                    .newsCt_box--useful-wrap 
+                                        .newsCt_box--useful-lf 
+                                            p.title-mn.t-up.fw-7.cl-white Câu Hỏi HỮU ÍCH?
+                                        .newsCt_box--useful-rt 
+                                            label.likeStyle 
+                                                input(type="checkbox")
+                                                span.ic 
+                                                    i.fal.fa-thumbs-up
+                                            label.likeStyle.dislike 
+                                                input(type="checkbox")
+                                                span.ic 
+                                                    i.fal.fa-thumbs-up
+                            .question_ct--lf-bottom 
+                                .question_ct--lf-bottom-top 
+                                    +btn("ĐĂNG NHẬP ĐỂ BÌNH LUẬN","","","tran2s")
+                                .question_ct--lf-bottom-bottom 
+                                    .question_ct--cmt
+                                            .question_ct--cmt-wrap 
+                                                .question_ct--cmt-box 
+                                                    .question_ct--cmt-list 
+                                                        .question_ct--cmt-item 
+                                                            .cmt
+                                                                .cmt_wrap 
+                                                                    .cmt_lf
+                                                                        .cmt_lf--wrap
+                                                                            .cmt_ava 
+                                                                                +img("ava.png")
+                                                                    .cmt_rt
+                                                                        .cmt_rt--wrap
+                                                                            .cmt_rep 
+                                                                                .cmt_rep--wrap 
+                                                                                    .cmt_rep--top 
+                                                                                        p.note-text.fw-7.cl-second.nameCmt Admin
+                                                                                    .cmt_rep--bottom 
+                                                                                        p.note-sm.cl-white.contentCmt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero sint at cum corrupti officiis ut quaerat optio, fuga odio inventore ea, repudiandae quidem corporis voluptates repellendus. Aspernatur, aliquid blanditiis.
+                                                                            .cmt_rt--content
+                                                                                p.note-md.cl-white.fw-7.name Hanna Nguyễn
+                                                                                p.note-text.content.cl-white Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ muốn kết nối Youtube chiếu lên màn hình LCD Dell để lớn hơn các bé xem dễ hơn có được không?
+                                                                                button.seeMore.note-mn.cl-second Xem thêm
+                                                                            //- nào đăng nhập thì mở ra nha a
+                                                                            //- .cmt_btn 
+                                                                            //-     button.note-text.cl-second.fw-6.btn-rep Trả lời
+                                                        .question_ct--cmt-item 
+                                                            .cmt
+                                                                .cmt_wrap 
+                                                                    .cmt_lf
+                                                                        .cmt_lf--wrap
+                                                                            .cmt_ava 
+                                                                                +img("ava.png")
+                                                                    .cmt_rt
+                                                                        .cmt_rt--wrap
+                                                                            //- nào có tl thì a thêm vô nha
+                                                                            //- .cmt_rep 
+                                                                            //-     .cmt_rep--wrap 
+                                                                            //-         .cmt_rep--top 
+                                                                            //-             p.note-text.fw-7.cl-second.nameCmt Admin2
+                                                                            //-         .cmt_rep--bottom 
+                                                                            //-             p.note-sm.cl-white.contentCmt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam libero sint at cum corrupti officiis ut quaerat optio, fuga odio inventore ea, repudiandae quidem corporis voluptates repellendus. Aspernatur, aliquid blanditiis.2
+                                                                            .cmt_rt--content
+                                                                                p.note-md.cl-white.fw-7.name Hanna Nguyễn
+                                                                                p.note-text.content.cl-white Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ muốn kết nối Youtube chiếu lên màn hình LCD Dell để lớn hơn các bé xem dễ hơn có được không? Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ muốn kết nối Youtube chiếu lên màn hình LCD Dell để lớn hơn các bé xem dễ hơn có được không?
+                                                                                button.seeMore.note-mn.cl-second Xem thêm
+                                                                            //- nào đăng nhập thì mở ra nha a
+                                                                            //- .cmt_btn 
+                                                                            //-     button.note-text.cl-second.fw-6.btn-rep Trả lời
+                                
+                                                    .question_ct--cmt-btn 
+                                                        +btn("XEM THÊM..","","","tran2s")
+                                                .question_ct--cmt-ip 
+                                                    .cmt
+                                                        .cmt_wrap 
+                                                            .cmt_lf
+                                                                .cmt_lf--wrap
+                                                                    .cmt_ava 
+                                                                        +img("ava.png")
+                                                            .cmt_rt
+                                                                .cmt_rt--wrap
+                                                                    .cmt_tl(idCmt="")
+                                                                        .cmt_tl--ex 
+                                                                            i.fas.fa-times
+                                                                        .cmt_tl--wrap 
+                                                                            .cmt_tl--lf 
+                                                                                .cmt_tl--ic 
+                                                                                    i.fas.fa-reply
+                                                                            .cmt_tl--rt 
+                                                                                p.note-text.fw-7.cl-second 
+                                                                                    | Trả lời 
+                                                                                    span.nameTl Admin
+                                                                                p.note-text.cl-white.contentTl Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste veritatis placeat dolorum explicabo, corrupti voluptate adipisci autem ipsam omnis deleniti culpa repellat tempore labore nesciunt sunt aspernatur itaque dolores accusamus!
+                                                                    .cmt_rt--alert 
+                                                                        p.note-md.cl-white.fw-7 Bạn
+                                                                        p.note-text.cl-white Vui lòng đăng nhập hoặc đăng ký để bình luận.
+                                                                    //- khi đăng nhập thành công thì mở html ở ô dưới
+                                                                    //- .cmt_rt--ip 
+                                                                    //-     textarea.form-item-tx(placeholder="Nhập bình luận") 
+                                                    .question_ct--cmt-btn 
+                                                        +btn("GỬI BÌNH LUẬN","","","tran2s")
+                    .question_ct--rt.d-item
+                        .question_ct--rt-wrap 
+                            h2.title-mn.cl-white.fw-6.t-up câu hỏi LIÊN QUAN
+                            .question_ct--rt-list 
+                                .question_ct--rt-item 
+                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                .question_ct--rt-item 
+                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+
+

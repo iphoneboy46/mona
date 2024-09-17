@@ -1,0 +1,17 @@
+
+/*# sourceMappingURL=backdoor.css.map */
+.news_ct--content .twitter-tweet{
+    max-width: unset !important;
+    width: 100% !important;
+}
+
+
+.news_ct--content a{
+    color: #3800A6;
+    font-weight: 600;
+
+}
+
+.news_ct--content a:hover{
+    color: red  !important;
+}

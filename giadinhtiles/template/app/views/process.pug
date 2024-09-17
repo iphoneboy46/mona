@@ -1,0 +1,73 @@
+extends layout/layout
+block vars
+    -title = 'qui trình'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper]
+    -jsComponents = ['header','processPage']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper]
+    -cssComponents = []
+    -cssPages = ["process","contact"]
+
+block container
+    +box-title2("Trang chủ","","Liên hệ","quy trình sản xuất","tic1.png")
+    section.utilities.free-slide
+        .container
+            .utilities_wrap
+                .utilities_title
+                    +box-title("TỔNG QUAN","QUY TRÌNH SẢN XUẤT")
+                    p.note-text.t-center.cl-text Tại Gia Định Tiles, chúng tôi đặt trọng tâm vào yếu tố độc đáo và cá nhân hóa trong từng sản phẩm, đảm bảo mỗi sản phẩm đều phản ánh đúng phong cách, bản sắc và thiết kế riêng biệt của khách hàng.
+
+                .utilities_imgs
+                    .swiper.mySwiper.--center.--loop.--auto
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u1.png" data-fancybox="gallery").utilities_img
+                                    +img("u1.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u2.png" data-fancybox="gallery").utilities_img
+                                    +img("u2.png")
+                            .swiper-slide.d-item
+                                a(href="./assets/images/u3.png" data-fancybox="gallery").utilities_img
+                                    +img("u3.png")
+                    .swiper-pagination
+    section.process_sl 
+        .container 
+            .process_sl--wrap 
+                .process_sl--box.d-wrap 
+                    .process_sl--lf.d-item
+                        .process_sl--lf-wrap
+                            .process_sl--lf-box
+                                .process_sl--lf-list 
+                                    .swiper.mySwiperSllf 
+                                        .swiper-wrapper 
+                                            .swiper-slide 
+                                                .process_sl--lf-item 
+                                                    .process_sl--lf-item-wrap 
+                                                        +box-title("CHUẨN BỊ","VẬT LIỆU TỐT NHẤT")
+                                                        p.note-text.cl-text2.content 
+                                                            |Gia Định Tiles ưu tiên chủ động trong quản lý nguồn nguyên liệu nhằm đảm bảo quá trình sản xuất diễn ra trôi chảy và hiệu quả. Các nguồn nguyên vật liệu từ trong hay ngoài nước đều được lựa chọn kỹ lưỡng để đáp ứng các tiêu chuẩn về chất lượng song đảm bảo hiệu quả chi phí cho doanh nghiệp và khách hàng. Chúng tôi cũng tích cực sử dụng các nguồn nguyên liệu tái chế để thúc đẩy phát triển bền vững và nâng cao hiệu quả sản xuất cho doanh nghiệp..
+                                                            |Gia Định Tiles ưu tiên chủ động trong quản lý nguồn nguyên liệu nhằm đảm bảo quá trình sản xuất diễn ra trôi chảy và hiệu quả. Các nguồn nguyên vật liệu từ trong hay ngoài nước đều được lựa chọn kỹ lưỡng để đáp ứng các tiêu chuẩn về chất lượng song đảm bảo hiệu quả chi phí cho doanh nghiệp và khách hàng. Chúng tôi cũng tích cực sử dụng các nguồn nguyên liệu tái chế để thúc đẩy phát triển bền vững và nâng cao hiệu quả sản xuất cho doanh nghiệp..
+                                            .swiper-slide 
+                                                .process_sl--lf-item 
+                                                    .process_sl--lf-item-wrap 
+                                                        +box-title("CON NGƯỜIỊ","GIADINH TILES")
+                                                        p.note-text.cl-text2.content Gia Định Tiles ưu tiên chủ động trong quản lý nguồn nguyên liệu nhằm đảm bảo quá trình sản xuất diễn ra trôi chảy và hiệu quả. Các nguồn nguyên vật liệu từ trong hay ngoài nước đều được lựa chọn kỹ lưỡng để đáp ứng các tiêu chuẩn về chất lượng song đảm bảo hiệu quả chi phí cho doanh nghiệp và khách hàng. Chúng tôi cũng tích cực sử dụng các nguồn nguyên liệu tái chế để thúc đẩy phát triển bền vững và nâng cao hiệu quả sản xuất cho doanh nghiệp..
+                                    .swiper-scrollbar
+                                    +box-navi("fal fa-arrow-up","fal fa-arrow-down")
+                    .process_sl--rt.d-item
+                        .process_sl--rt-wrap 
+                            .process_sl--rt-list 
+                                .swiper.mySwiperSlrt 
+                                    .swiper-wrapper 
+                                        .swiper-slide
+                                            .process_sl--rt-item 
+                                                .process_sl--rt-img 
+                                                    +img("psl1.png")
+                                        .swiper-slide
+                                            .process_sl--rt-item 
+                                                .process_sl--rt-img 
+                                                    +img("psl2.png")
+

@@ -1,0 +1,131 @@
+extends layout/layout
+block vars
+    -title = 'Tiên ích'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bntc.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up TIỆN ÍCH
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","TIỆN ÍCH")
+    section.tienIch
+        .tienIch_wrap
+            .tienIch_list
+                .tienIch_item.ani
+                    .container
+                        .tienIch_item--wrap.d-wrap
+                            .tienIch_item--lf.d-item
+                                .tienIch_item--lf-wrap
+                                    .tienIch_item--content
+                                        h2.title-md.cl-white.fl-sec Restaurent
+                                        br
+                                        p.note-text  Nhà hàng nằm cạnh bờ biển, mang đến không gian thoáng mát nơi thực khách có thể trải nghiệm nền ẩm thực đa sắc màu, và ngắm nhìn khung cảnh thiên nhiên nguyên sơ. 
+                                        br
+                                        p.note-text Tại đây, quý khách sẽ được thưởng thức những món ngon Á-Âu tinh tuyển, chế biến từ các nguyên liệu tươi ngon của biển cả, hay các loại rau xanh được hái từ vườn của khu nghỉ dưỡng. 
+                                        br
+                                        p.note-text Thực đơn không chỉ là sự kết hợp tài tình của các món ăn, mà còn là sự chăm chút của các đầu bếp, được thổi hồn bằng tất cả tâm huyết và tình nghề.
+                            .tienIch_item--rt.d-item
+                                .tienIch_item--rt-wrap
+                                    .tienIch_item--hover
+                                        .tienIch_item--img
+                                            +img("tienich1.png")
+                                        .tienIch_item--img
+                                            +img("tienich2.png")
+                .tienIch_item.ani
+                    .container
+                        .tienIch_item--wrap.d-wrap
+                            .tienIch_item--lf.d-item
+                                .tienIch_item--lf-wrap
+                                    .tienIch_item--content
+                                        h2.title-md.cl-white.fl-sec Swimming pool
+                                        br
+                                        p.note-text  Nhà hàng nằm cạnh bờ biển, mang đến không gian thoáng mát nơi thực khách có thể trải nghiệm nền ẩm thực đa sắc màu, và ngắm nhìn khung cảnh thiên nhiên nguyên sơ. 
+                                        br
+                                        p.note-text Tại đây, quý khách sẽ được thưởng thức những món ngon Á-Âu tinh tuyển, chế biến từ các nguyên liệu tươi ngon của biển cả, hay các loại rau xanh được hái từ vườn của khu nghỉ dưỡng. 
+                                        br
+                                        p.note-text Thực đơn không chỉ là sự kết hợp tài tình của các món ăn, mà còn là sự chăm chút của các đầu bếp, được thổi hồn bằng tất cả tâm huyết và tình nghề.
+                            .tienIch_item--rt.d-item
+                                .tienIch_item--rt-wrap
+                                    .tienIch_item--hover
+                                        .tienIch_item--img
+                                            +img("tienich2.png")
+                                        .tienIch_item--img
+                                            +img("tienich1.png")
+                .tienIch_item.ani
+                    .container
+                        .tienIch_item--wrap.d-wrap
+                            .tienIch_item--lf.d-item
+                                .tienIch_item--lf-wrap
+                                    .tienIch_item--content
+                                        h2.title-md.cl-white.fl-sec Pick-Up
+                                        br
+                                        p.note-text  Nhà hàng nằm cạnh bờ biển, mang đến không gian thoáng mát nơi thực khách có thể trải nghiệm nền ẩm thực đa sắc màu, và ngắm nhìn khung cảnh thiên nhiên nguyên sơ. 
+                                        br
+                                        p.note-text Tại đây, quý khách sẽ được thưởng thức những món ngon Á-Âu tinh tuyển, chế biến từ các nguyên liệu tươi ngon của biển cả, hay các loại rau xanh được hái từ vườn của khu nghỉ dưỡng. 
+                                        br
+                                        p.note-text Thực đơn không chỉ là sự kết hợp tài tình của các món ăn, mà còn là sự chăm chút của các đầu bếp, được thổi hồn bằng tất cả tâm huyết và tình nghề.
+                            .tienIch_item--rt.d-item
+                                .tienIch_item--rt-wrap
+                                    .tienIch_item--hover
+                                        .tienIch_item--img
+                                            +img("tienich3.png")
+                                        .tienIch_item--img
+                                            +img("tienich2.png")
+                .tienIch_item.ani
+                    .container
+                        .tienIch_item--wrap.d-wrap
+                            .tienIch_item--lf.d-item
+                                .tienIch_item--lf-wrap
+                                    .tienIch_item--content
+                                        h2.title-md.cl-white.fl-sec House Keeping
+                                        br
+                                        p.note-text  Nhà hàng nằm cạnh bờ biển, mang đến không gian thoáng mát nơi thực khách có thể trải nghiệm nền ẩm thực đa sắc màu, và ngắm nhìn khung cảnh thiên nhiên nguyên sơ. 
+                                        br
+                                        p.note-text Tại đây, quý khách sẽ được thưởng thức những món ngon Á-Âu tinh tuyển, chế biến từ các nguyên liệu tươi ngon của biển cả, hay các loại rau xanh được hái từ vườn của khu nghỉ dưỡng. 
+                                        br
+                                        p.note-text Thực đơn không chỉ là sự kết hợp tài tình của các món ăn, mà còn là sự chăm chút của các đầu bếp, được thổi hồn bằng tất cả tâm huyết và tình nghề.
+                            .tienIch_item--rt.d-item
+                                .tienIch_item--rt-wrap
+                                    .tienIch_item--hover
+                                        .tienIch_item--img
+                                            +img("tienich4.png")
+                                        .tienIch_item--img
+                                            +img("tienich3.png")
+                .tienIch_item.ani
+                    .container
+                        .tienIch_item--wrap.d-wrap
+                            .tienIch_item--lf.d-item
+                                .tienIch_item--lf-wrap
+                                    .tienIch_item--content
+                                        h2.title-md.cl-white.fl-sec Gym
+                                        br
+                                        p.note-text  Nhà hàng nằm cạnh bờ biển, mang đến không gian thoáng mát nơi thực khách có thể trải nghiệm nền ẩm thực đa sắc màu, và ngắm nhìn khung cảnh thiên nhiên nguyên sơ. 
+                                        br
+                                        p.note-text Tại đây, quý khách sẽ được thưởng thức những món ngon Á-Âu tinh tuyển, chế biến từ các nguyên liệu tươi ngon của biển cả, hay các loại rau xanh được hái từ vườn của khu nghỉ dưỡng. 
+                                        br
+                                        p.note-text Thực đơn không chỉ là sự kết hợp tài tình của các món ăn, mà còn là sự chăm chút của các đầu bếp, được thổi hồn bằng tất cả tâm huyết và tình nghề.
+                            .tienIch_item--rt.d-item
+                                .tienIch_item--rt-wrap
+                                    .tienIch_item--hover
+                                        .tienIch_item--img
+                                            +img("tienich5.png")
+                                        .tienIch_item--img
+                                            +img("tienich4.png")
+

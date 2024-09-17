@@ -1,0 +1,272 @@
+extends layout/layout
+block vars
+    -title = 'about'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 Giới thiệu
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Giới thiệu")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Công ty & Founder
+                            .swiper-slide.d-item
+                                a(href="").tab_item Vì sao Mầm non Sright ra đời
+                            .swiper-slide.d-item
+                                a(href="").tab_item Triết lý & Phương pháp giáo dục
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Đội ngũ giáo viên
+                    .swiper-scrollbar
+    section.about_team 
+        .about_teeam--wrap
+            .valueAb.peopleInfo2
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                .box-people 
+                                                    .box-people-title 
+                                                        p.title-mn.cl-white.fw-7.t-up FOUNDER
+                                                        p.title-lg.cl-white.fw-7.t-up.fw-8 NGUYỄN THỊ NGỌC THANH
+                                                    .box-people-content 
+                                                        p.note-lg.cl-white.fw-4 Là một người đam mê và tâm huyết hoạt động trong lĩnh vực giáo dục sớm não bộ trẻ, được đào tạo bài bản và có kinh nghiệm làm việc thực tế ở nhiều lĩnh vực chuyên môn. Là nhà đào tạo có hơn 10 năm kinh nghiệm trong lĩnh vực Giáo Dục Sớm chuẩn Khoa Học Não Bộ.
+                                                    .box-people-follow 
+                                                        p.note-lg.cl-white.fw-4 Theo dõi Ngọc Thanh tại:
+                                                        .social
+                                                            ul.social_list
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("pic1.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("pic2.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("pic3.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("pic4.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("pic5.svg")
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("people.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                h2.title-lg.cl-pri.fw-7 
+                                                    |“GIÁO DỤC 
+                                                    |ĐÚNG NGAY TỪ ĐẦU"
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .box-wrap 
+                                                .box-content
+                                                    ul 
+                                                        li.note-lg.cl-pri.fw-4 Top 10 Doanh Nhân Tiêu Biểu Lĩnh Vực Giáo Dục 2023 do Cục Sở Hữu Trí Tuệ VN & Liên Hiệp Khoa Học Doanh Nhân VN đề cử.
+                                                        li.note-lg.cl-pri.fw-4 Thạc Sỹ Khoa Học Công Nghệ RMIT Melbourne, Australia.
+                                                        li.note-lg.cl-pri.fw-4 Former Senior Program Manager tại Intel Products Vietnam với nhiều năm kinh nghiệm trong môi trường quản lý vận hành xuất sắc (Operational Excellence).
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Chương Trình Giáo Dục Sớm PF2B® (Paper Flash To Book) Dạy Trẻ Tự Đọc Sách Đa Ngôn Ngữ từ Thai Kì - 6 Tuổi.
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Phương pháp Giáo Dục Sớm SRIGHT®.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về Khoa Học Não Bộ Trẻ Growing Brain - Zero To Three -Washington DC.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về kỉ luật tích cực cho trẻ Positive Discipline Associataion.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo về Massage Sơ Sinh Quốc Tế IAIM.
+                                                        li.note-lg.cl-pri.fw-4 Chứng chỉ Giáo Dục Sớm Phần Lan - Diploma of Finland Education from CCE
+            .valueAb.peopleTeam
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                .box-people 
+                                                    .box-people-title 
+                                                        p.title-mn.cl-white.fw-7.t-up GIÁO VIÊN
+                                                        p.title-lg.cl-white.fw-7.t-up.fw-8 ĐỒNG CÔNG CHÍ LINH
+                                                    .box-people-content 
+                                                        p.note-lg.cl-white.fw-4 Là một người đam mê và tâm huyết hoạt động trong lĩnh vực giáo dục sớm não bộ trẻ, được đào tạo bài bản và có kinh nghiệm làm việc thực tế ở nhiều lĩnh vực chuyên môn. Là nhà đào tạo có hơn 10 năm kinh nghiệm trong lĩnh vực Giáo Dục Sớm chuẩn Khoa Học Não Bộ.
+                                                    .box-people-follow 
+                                                        p.note-lg.cl-white.fw-4 Theo dõi Ngọc Thanh tại:
+                                                        .social
+                                                            ul.social_list
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic1.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic2.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic3.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic4.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic5.svg")
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("t2.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                .box-people 
+                                                    .box-people-title 
+                                                        p.title-mn.cl-white.fw-7.t-up GIÁO VIÊN
+                                                        p.title-lg.cl-white.fw-7.t-up.fw-8 ĐỒNG CÔNG CHÍ LINH
+                                                    .box-people-content 
+                                                        p.note-lg.cl-white.fw-4 Là một người đam mê và tâm huyết hoạt động trong lĩnh vực giáo dục sớm não bộ trẻ, được đào tạo bài bản và có kinh nghiệm làm việc thực tế ở nhiều lĩnh vực chuyên môn. Là nhà đào tạo có hơn 10 năm kinh nghiệm trong lĩnh vực Giáo Dục Sớm chuẩn Khoa Học Não Bộ.
+                                                    .box-people-follow 
+                                                        p.note-lg.cl-white.fw-4 Theo dõi Ngọc Thanh tại:
+                                                        .social
+                                                            ul.social_list
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic1.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic2.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic3.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic4.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic5.svg")
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("t1.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                .box-people 
+                                                    .box-people-title 
+                                                        p.title-mn.cl-white.fw-7.t-up GIÁO VIÊN
+                                                        p.title-lg.cl-white.fw-7.t-up.fw-8 ĐỒNG CÔNG CHÍ LINH
+                                                    .box-people-content 
+                                                        p.note-lg.cl-white.fw-4 Là một người đam mê và tâm huyết hoạt động trong lĩnh vực giáo dục sớm não bộ trẻ, được đào tạo bài bản và có kinh nghiệm làm việc thực tế ở nhiều lĩnh vực chuyên môn. Là nhà đào tạo có hơn 10 năm kinh nghiệm trong lĩnh vực Giáo Dục Sớm chuẩn Khoa Học Não Bộ.
+                                                    .box-people-follow 
+                                                        p.note-lg.cl-white.fw-4 Theo dõi Ngọc Thanh tại:
+                                                        .social
+                                                            ul.social_list
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic1.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic2.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic3.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic4.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic5.svg")
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("t2.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                .box-people 
+                                                    .box-people-title 
+                                                        p.title-mn.cl-white.fw-7.t-up GIÁO VIÊN
+                                                        p.title-lg.cl-white.fw-7.t-up.fw-8 ĐỒNG CÔNG CHÍ LINH
+                                                    .box-people-content 
+                                                        p.note-lg.cl-white.fw-4 Là một người đam mê và tâm huyết hoạt động trong lĩnh vực giáo dục sớm não bộ trẻ, được đào tạo bài bản và có kinh nghiệm làm việc thực tế ở nhiều lĩnh vực chuyên môn. Là nhà đào tạo có hơn 10 năm kinh nghiệm trong lĩnh vực Giáo Dục Sớm chuẩn Khoa Học Não Bộ.
+                                                    .box-people-follow 
+                                                        p.note-lg.cl-white.fw-4 Theo dõi Ngọc Thanh tại:
+                                                        .social
+                                                            ul.social_list
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic1.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic2.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic3.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic4.svg")
+                                                                li.social_item
+                                                                    a(href="").social_link 
+                                                                        span.social_img
+                                                                            +img("tic5.svg")
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("t1.png")
+                        

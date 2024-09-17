@@ -1,0 +1,139 @@
+.menu_mb
+    .menu_mb--wrap
+        .menu_mb--nav
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"Trang chủ",
+                            dropdown:false
+                        },
+                        {
+                            title:"Giới thiệu",
+                            dropdown:false
+                        },
+                        {
+                            title:"Khách hàng",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tuyển dụng",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tin tức",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tuyển dụng",
+                            dropdown:false
+                        },
+                        {
+                            title:"Kinh nghiệm",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tour",
+                            dropdown:true
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Tour Quảng Bình
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Tour ghép Quảng Bình hằng ngày
+                                        li.menu-item
+                                            a(href="").menu-link Du lịch biển Nhật Lệ - Quảng Bình
+                                        li.menu-item
+                                            a(href="").menu-link Du lịch tâm linh - Quảng Bình
+                                        li.menu-item
+                                            a(href="").menu-link Viếng mộ Đại Tướng Võ Nguyên Giáp
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Du lịch mạo hiểm
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Du lịch mạo hiểm
+                                        li.menu-item
+                                            a(href="").menu-link Du lịch Động Phong Nha
+                                        li.menu-item
+                                            a(href="").menu-link Du lịch Động Thiên Đường
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up THEO DÕI CHÚNG TÔI
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic1.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic2.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic3.png")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up Liên hệ 
+                    p.note-md.cl-second.fw-7.t-up 
+                        |Netin 
+                        strong.cl-pri Travel
+                .address
+                    ul.address_list                
+                        li.address_item
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Địa chỉ: 
+                                a.address_link(href="") 01 Thuận Lý, Nam Lý, Đồng Hới, Quảng Bình
+                        li.address_item
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Điện thoại: 
+                                a.address_link(href="") 02323 850 505
+                        li.address_item
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Mr Cương: 
+                                a.address_link(href="") 0912 356 056
+                        li.address_item
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Email: 
+                                a.address_link(href="") info@quangbinhtravel.vn
+                        li.address_item
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Maps:
+                                a.address_link(href="").map https://g.co/kgs/hrgHUd
+
+.menu_mb--modal
+
+
+.menu_mb.menu-dm
+    .menu_mb--wrap
+        .menu-dm-ex 
+            i.fas.fa-times
+        .menu_mb--title 
+            p.title-sm.cl-pri.fw-6 Danh mục
+        .menu_mb--nav
+            ul.menu-list
+                li.menu-item
+                    a(href="").menu-link Tour ghép Quảng Bình hằng ngày
+                li.menu-item
+                    a(href="").menu-link Du lịch biển Nhật Lệ - Quảng Bình
+                li.menu-item
+                    a(href="").menu-link Du lịch tâm linh - Quảng Bình
+                li.menu-item
+                    a(href="").menu-link Viếng mộ Đại Tướng Võ Nguyên Giáp
+.menu-dm--modal
+
+

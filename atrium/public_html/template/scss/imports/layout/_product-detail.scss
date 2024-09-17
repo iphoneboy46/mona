@@ -1,0 +1,130 @@
+.product-detail {
+  &_slider {
+    .image {
+      @include size(100%);
+      img {
+        @include img-cover;
+      }
+    }
+    .slider-main {
+      --slide-col: 1;
+      .swiper {
+        aspect-ratio: 1/1;
+      }
+    }
+    .slider-nav {
+      --slide-col: 3;
+      margin-top: 2.4rem;
+      .swiper-slide {
+        aspect-ratio: 1/1;
+        cursor: pointer;
+        position: relative;
+        &:after {
+          content: " ";
+          position: absolute;
+          inset: 0.1rem;
+          @include border($white, 0.2rem);
+          @include visible(0);
+          @include transition(all $t);
+        }
+        &-thumb-active {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &_content {
+    .parameter {
+      &-list {
+        padding-left: 1.6rem;
+        @include bd-left(#b3b3b3);
+      }
+    }
+    .material {
+      &-list {
+        @include flex-center-y;
+        flex-wrap: wrap;
+        gap: 1.4rem 2.4rem;
+      }
+    }
+    .price {
+      &-wrap {
+        @include flex-center-y;
+        flex-wrap: wrap;
+        column-gap: 3.2rem;
+      }
+    }
+    .product-guide {
+      color: #999;
+    }
+
+    .btn-addtocart {
+      @extend .btn;
+      height: var(--height-button);
+      padding-left: 2rem;
+      padding-right: 2rem;
+      column-gap: 0.8rem;
+      color: #1a1a1a;
+      background: #e6e6e6;
+    }
+    .button-catalogue {
+      margin-top: 5.6rem;
+      padding-top: 2.4rem;
+      @include bd-top(rgba($white, 0.5));
+    }
+    .btn-catalogue {
+      border: 0.1rem solid rgba(255, 255, 255, 0.2);
+      column-gap: 1.6rem;
+
+      @include hover {
+        .icon {
+          filter: brightness(0) saturate(100%);
+        }
+      }
+    }
+  }
+  &-bot {
+    .list-links {
+      justify-content: flex-start;
+    }
+    .content-item {
+      display: none;
+      padding: 5.9rem 5.4rem 5.6rem;
+      background: #1a1a1a;
+      @include md {
+        padding: 3.2rem;
+      }
+      &.active {
+        display: block;
+      }
+
+      p {
+        color: #ccc;
+      }
+    }
+    .tabs-contents {
+      margin-top: 3.4rem;
+    }
+    .image {
+      aspect-ratio: 408 / 306;
+      @include md-min {
+        max-width: 40.8rem;
+      }
+      img {
+        @include img-cover;
+      }
+    }
+  }
+}
+.parameter {
+  &-list {
+    font-size: var(--body14-fs);
+    line-height: var(--body14-lh);
+  }
+  &-label {
+    color: #999;
+    margin-right: 0.2rem;
+  }
+}

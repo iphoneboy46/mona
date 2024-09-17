@@ -1,0 +1,50 @@
+export default function FullPageModule() {
+  const fullpages = $(".homepage-scroll");
+  const header = $(".header");
+  if (fullpages.length > 0 && $(window).width() >= 1200) {
+    fullpages.fullpage({
+      licenseKey: "gplv3-license",
+      css3: true,
+      scrollingSpeed: 1000,
+      autoScrolling: true,
+      fitToSection: true,
+      fitToSectionDelay: 5000,
+      scrollBar: !0,
+      easing: "easeInOutCubic",
+      easingcss3: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+      loopBottom: !1,
+      loopTop: !1,
+      loopHorizontal: !1,
+      continuousVertical: !1,
+      normalScrollElements: "",
+      scrollOverflow: !0,
+      touchSensitivity: 15,
+      normalScrollElementTouchThreshold: 5,
+      keyboardScrolling: !0,
+      animateAnchor: !0,
+      recordHistory: !0,
+      controlArrows: !1,
+      verticalCentered: !1,
+      resize: !1,
+      paddingTop: "0",
+      paddingBottom: "0",
+      fixedElements: "",
+      responsiveWidth: 0,
+      responsiveHeight: 0,
+      sectionSelector: ".section",
+      slideSelector: ".no",
+      parallax: true,
+      parallaxOptions: {
+        type: "reveal",
+        percentage: 62,
+        property: "translate",
+      },
+      onLeave: function (origin, destination, direction) {},
+      afterLoad: function () {},
+      afterRender: function () {},
+      afterResize: function () {},
+      afterSlideLoad: function () {},
+      onSlideLeave: function () {},
+    });
+  }
+}

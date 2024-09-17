@@ -1,0 +1,199 @@
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img)
+  .post
+    .post_wrap
+      .post_top
+        a(href="").post_img
+          +img(img)
+      .post_bottom
+        p.note-text.date.cl-white 22/08/2024
+        h2.note-md.cl-white.fw-6.title
+          a(href="") Your request for a password reset link has been received
+        a(href="").note-text.link.cl-text2 Xem chi tiết
+
+
+mixin post-td(title)
+  .post_td
+    .post_td--wrap
+      .post_td--top
+        h2.title-mn.cl-text.fw-6 
+          a(href="") #{title}
+        .post_td--infos 
+          .post_td--info 
+            p.note-text Quảng Bình
+          .post_td--info 
+            p.note-text Toàn thời gian
+          .post_td--info 
+            p.note-text 10 - 20 triệu
+          .post_td--info 
+            p.note-text Team sale
+      .post_td--bottom
+        +btn("Ứng tuyển ngay","","fal fa-arrow-right","cl-8")
+        
+
+
+
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+    li
+      span.page-numbers.current 1
+    li
+      a.page-numbers(href='') 2
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 9
+    li
+      a.page-numbers(href='') 10
+    li
+      span.page-numbers.next 
+        i.fas.fa-chevron-right
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin banner-main(img,title,page1,page2,pageCurrent)
+  .banner_main 
+    .banner_main--bg 
+      +img(img)
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--box-top
+            +breadcrumbs(page1,page2,pageCurrent)
+          .banner_main--box-bottom
+            h1.title-sm3.cl-white.fw-6 #{title}
+
+
+
+
+mixin product(boxSale)
+  .pro 
+    .pro_wrap 
+      .pro_top
+        if(boxSale != "")
+          span.product_sb 20% sale
+        .pro_top--thumbs 
+          .swiper.mySwiperProTop 
+            .swiper-wrapper 
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro1.png")
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro1.png")
+              .swiper-slide
+                .pro_top--thumb
+                  +img("pro2.png")
+        .pro_top--imgs 
+          .swiper.mySwiperProBottom 
+            .swiper-wrapper 
+              .swiper-slide
+                .pro_top--img
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--img
+                  +img("pro1.png")
+              .swiper-slide
+                .pro_top--img
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--img
+                  +img("pro2.png")
+              .swiper-slide
+                .pro_top--img
+                  +img("pro1.png")
+              .swiper-slide
+                .pro_top--img
+                  +img("pro2.png")
+          .swiper-scrollbar
+      .pro_bottom
+        .pro_title 
+          a(href="").note-text.cl-white.t-up FULLFACE 
+          h2.note-lg.fw-7.cl-white 
+            a(href="") Nón bảo hiểm thể thao fullface bảo vệ toàn diện
+        .product_price
+          p.product_price-sale 380.000VND
+          p.product_price-normal 300.000 VND
+
+
+mixin product2(boxSale)
+  .pro 
+    .pro_wrap 
+      .pro_top
+        if(boxSale != "")
+          span.product_sb 20% sale
+        .pro_top--thumbs 
+          .pro_top--thumb.popup-btn(data-popup="popup-pk")
+              +img("pro2.png")
+      .pro_bottom
+        .pro_title 
+          a(href="").note-text.cl-white.t-up FULLFACE 
+          h2.note-lg.fw-7.cl-white 
+            a(href="") Nón bảo hiểm thể thao fullface bảo vệ toàn diện

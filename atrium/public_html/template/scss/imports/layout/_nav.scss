@@ -1,0 +1,265 @@
+// css navigator (Menu)
+.menu-overlay {
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  position: fixed;
+  top: var(--height-header);
+  left: 0;
+  @include transition(all $t2 $cubic);
+  z-index: $z-fixed - 50;
+  background-color: $bg-main;
+  @include visible(0);
+  &.active {
+    opacity: 1;
+  }
+}
+.menu-side {
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  position: fixed;
+  top: var(--height-header);
+  left: 0;
+  isolation: isolate;
+  @include transform(translateX(-100%));
+  @include transition(all $t3 $cubic);
+  z-index: $z-fixed;
+  &.active {
+    @include transform(translateX(0));
+    transition-delay: 0.2s;
+  }
+  .menu-overlay {
+    background-color: rgba($bg-main, 0.5);
+    @include fullscreen;
+    z-index: -1;
+  }
+  &-main {
+    background: #262626;
+    max-width: 61.2rem;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 7rem 2.4rem 2.4rem 26.4rem;
+  }
+  &-close {
+    background: $bg-main;
+    @include size(5.9rem, 5.1rem);
+    @include center(flex);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    cursor: pointer;
+    margin-bottom: 8rem;
+    .icon {
+      display: block;
+      margin-top: 1.5rem;
+    }
+  }
+  &-list {
+    .menu {
+      --space-item: 5rem;
+      &-list {
+        > .menu-item {
+          + .menu-item {
+            margin-top: var(--space-item);
+          }
+          &.current-menu-item {
+            > .menu-link {
+              font-size: var(--h2-fs);
+              line-height: var(--h2-lh);
+              color: $white;
+            }
+          }
+          > .menu-link {
+            color: #999;
+            font-size: var(--h3-fs);
+            line-height: var(--h3-lh);
+            > .expand {
+              font-size: var(--h3-fs);
+              line-height: var(--h3-lh);
+            }
+          }
+          @include hover {
+            > .menu-link {
+              color: $white;
+            }
+          }
+          > .submenu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 43.2rem;
+            height: 100%;
+            background: #1a1a1a;
+            padding: 7.2rem 4.9rem;
+            overflow-y: auto;
+            @include transform(translateX(-100%));
+            z-index: -1;
+            @include transition(all $t $cubic);
+            &.active {
+              @include transform(translateX(0));
+            }
+          }
+        }
+      }
+      .submenu {
+        .menu-item {
+          &.active {
+            > .menu-link,
+            > .expand {
+              color: $white;
+            }
+          }
+          + .menu-item {
+            margin-top: 2.4rem;
+          }
+        }
+        .submenu {
+          width: 100%;
+          padding-top: 2.4rem;
+          margin-top: 2.4rem;
+          margin-bottom: 5.6rem;
+          border-top: 0.1rem solid #333;
+          display: none;
+        }
+        .menu-item {
+          flex-wrap: wrap;
+          &.dropdown {
+            .menu-link {
+              width: 100%;
+            }
+          }
+
+          &.current-menu-item {
+            > .menu-link {
+              font-size: var(--h3-fs);
+              line-height: var(--h3-lh);
+            }
+          }
+          > .menu-link {
+            color: #ccc;
+            font-size: var(--h5-fs);
+            line-height: var(--h5-lh);
+            @include xs {
+              font-size: var(--body16-fs);
+              line-height: var(--body16-lh);
+            }
+          }
+        }
+      }
+      &-item {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .expand {
+          @include size(4rem);
+          @include center(flex);
+          cursor: pointer;
+        }
+      }
+      &-link {
+        @include transition(all $t);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+  @include lg {
+    &-main {
+      max-width: 40rem;
+      padding: 7rem 2.4rem 6rem;
+    }
+  }
+  @include md {
+    .menu {
+      --space-item: 3rem;
+    }
+    .menu-side-list .menu-list > .menu-item > .menu-link {
+      font-size: var(--h4-fs);
+      line-height: var(--h4-lh);
+    }
+    .menu-side-list .menu-list > .menu-item.current-menu-item > .menu-link {
+      font-size: var(--h3-fs);
+      line-height: var(--h3-lh);
+    }
+  }
+  @include maxW(880px) {
+    &-main {
+      overflow-y: auto;
+    }
+    &-list {
+      .menu-list {
+        > .menu-item {
+          flex-wrap: wrap;
+          > .submenu {
+            position: static;
+            @include transition(none);
+            width: 100%;
+            padding: 2.4rem;
+            @include transform(translateX(0));
+            z-index: 1;
+            margin-top: 1rem;
+          }
+        }
+        .submenu {
+          display: none;
+          @include transform(translateX(0));
+          @include transition(none);
+        }
+      }
+    }
+  }
+  @include sm {
+    &-main {
+      padding: 5rem 2.4rem 4rem;
+    }
+    &-close {
+      margin-bottom: 4rem;
+    }
+    .menu-side-list .menu-list > .menu-item > .menu-link {
+      font-size: var(--h5-fs);
+      line-height: var(--h5-lh);
+    }
+    .menu-side-list .menu-list > .menu-item.current-menu-item > .menu-link {
+      font-size: var(--h4-fs);
+      line-height: var(--h4e-lh);
+    }
+  }
+  @include maxH(870px) {
+    .menu-side-list .menu {
+      --space-item: 4rem;
+    }
+    .menu-side-close {
+      margin-bottom: 4rem;
+    }
+  }
+  @include maxH(770px) {
+    &-main {
+      padding: 2rem 1.4rem 2rem;
+    }
+    .menu-side-list .menu-list > .menu-item.current-menu-item > .menu-link {
+      font-size: var(--h3-fs);
+      line-height: var(--h3-lh);
+    }
+    .menu-side-list .menu-list > .menu-item > .menu-link {
+      font-size: var(--h4-fs);
+      line-height: var(--h4-lh);
+    }
+  }
+  @include maxH(680px) {
+    .menu-side-list .menu {
+      --space-item: 2rem;
+    }
+    .menu-side-list .menu-list > .menu-item > .expand {
+      font-size: var(--h5-fs);
+      line-height: var(--h5-lh);
+    }
+  }
+}
+
+.menu-is-show {
+  .header--home {
+    background-color: $bg-main !important;
+  }
+}

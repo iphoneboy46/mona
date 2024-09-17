@@ -1,0 +1,33 @@
+extends layout/layout
+block vars
+    -title = 'forgot'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'hidden'
+    -ftClass = 'hidden'
+    -jsLibs = [JsJquery,JsAos]
+    -jsComponents = ['header','Password']
+    -cssLibs = [fontAWS,fontAWS2,CssAos]
+    -cssComponents = []
+    -cssPages = ["sign","contact"]
+
+block container
+    section.bg_tt
+        .bg_tt--bg
+        +img("bg.png")
+    section.sign 
+        .container 
+            .sign_wrap
+                form(action="") 
+                    .sign_box 
+                        .sign_top 
+                            h1.title-lg.cl-white.t-up.t-center.fw-5  Quên mật khẩu
+                        .sign_center 
+                            .sign_form--list 
+                                label.form-item.signStyle
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Nhập email
+                        .sign_bottom
+                            +btn("Gửi","","","trans")
+                            
+

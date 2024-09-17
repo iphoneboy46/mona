@@ -1,0 +1,143 @@
+extends layout/layout
+block vars
+    -title = 'Checkout'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tour
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Khám phá hệ thống Hang động Chà Lòi
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') Thanh toán
+    section.check_out 
+        .container 
+            .check_out--wrap 
+                .check_out--box.d-wrap 
+                    .check_out--box-lf.d-item.d-2 
+                        .check_out--box-lf-wrap 
+                            .check_out--box-form 
+                                .contact_form 
+                                    .contact_form--wrap 
+                                        .contact_form--title 
+                                            h2.title-mn.fw-6.cl-text Thông tin khách hàng
+                                        .contact_form--form 
+                                            form(action="")
+                                                .contact_form--form-wrap 
+                                                    .contact_form--list.d-wrap 
+                                                        .contact_form--item.d-item
+                                                            label.form-item 
+                                                                p.form-item-lb Họ và tên
+                                                                input.form-item-ip(type="text" , placeholder="Nhập họ và tên")
+                                                        .contact_form--item.d-item
+                                                            label.form-item 
+                                                                p.form-item-lb Số điện thoại
+                                                                input.form-item-ip(type="text" , placeholder="Nhập số điện thoại")
+                                                        .contact_form--item.d-item
+                                                            label.form-item 
+                                                                p.form-item-lb Email
+                                                                input.form-item-ip(type="text" , placeholder="Nhập Email")
+                                                        .contact_form--item.d-item
+                                                            label.form-item 
+                                                                p.form-item-lb Nơi bạn xuất phát
+                                                                select.js-op.form-item-op(data-placeholder="Nhu cầu")
+                                                                    option(value="")
+                                                                    option(value="option1") Tp Hồ Chí Minh
+                                                                    option(value="option2") Cũ nhất
+                                                                    option(value="option3") Gần đây
+                                                        .contact_form--item.d-item
+                                                            label.form-item 
+                                                                p.form-item-lb Ghi chú
+                                                                textarea.form-item-tx(type="text" , placeholder="Nhập nội dung bạn cần trao đổi")
+                            .check_out--pay 
+                                .check_out--pay-wrap 
+                                    h2.title-mn.fw-6.cl-text Phương thức thanh toán
+                                    .check_out--pay-list.d-wrap 
+                                        .check_out--pay-item.d-item 
+                                            label.check_out--pay-item-rd
+                                                input(type="radio" name="bank" checked="checked")
+                                                .check_out--pay-item-rd-wrap
+                                                    span.box 
+                                                    span.img 
+                                                        +img("pay1.png")
+                                        .check_out--pay-item.d-item 
+                                            label.check_out--pay-item-rd
+                                                input(type="radio" name="bank")
+                                                .check_out--pay-item-rd-wrap
+                                                    span.box 
+                                                    span.img 
+                                                        +img("pay2.png")
+                                        .check_out--pay-item.d-item 
+                                            label.check_out--pay-item-rd
+                                                input(type="radio" name="bank")
+                                                .check_out--pay-item-rd-wrap
+                                                    span.box 
+                                                    span.img 
+                                                        +img("pay3.png")
+                    .check_out--box-rt.d-item.d-2
+                        .check_out--box-rt-wrap 
+                            .tourCt_infos 
+                                .tourCt_infos--book-list
+                                    .tourCt_infos--book-item
+                                        .tourCt_infos--book-item-wrap 
+                                            .tourCt_infos--top 
+                                                .tourCt_infos--title
+                                                    .rent_ct--contact-title 
+                                                        h4.title-mn.cl-text.fw-6 Thông tin Tour
+                                                    .tourCt_infos--title-lf
+                                                        .tourCt_infos--price
+                                                            p.note-lg.fw-6.cl-text 1.199.000đ
+                                                            p.note-text.cl-text.fw-5 khách ( từ 2 khách trở lên)
+                                                .tourCt_infos--forms 
+                                                    .tourCt_infos--form
+                                                        label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                        p.note-sm.cl-gray9.fw-5 07/07/2024
+                                                    .tourCt_infos--form
+                                                        label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                        p.note-sm.cl-gray9.fw-5 09/07/2024
+                                                    .tourCt_infos--form
+                                                        label.note-smn.fw-7.t-up NGƯỜI LỚN
+                                                        p.note-sm.cl-gray9.fw-5 4 khách
+                                                    .tourCt_infos--form
+                                                        label.note-smn.fw-7.t-up 
+                                                            |< 10 TUỔI (70%)
+                                                        p.note-sm.cl-gray9.fw-5 2 khách
+                                                    .tourCt_infos--form
+                                                        label.note-smn.fw-7.t-up 
+                                                            |< 5 TUỔI (Miễn phí)
+                                                        p.note-sm.cl-gray9.fw-5 1 khách
+                                                .tourCt_infos--total
+                                                    ul.tourCt_infos--list 
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 1.199.000đ x 7 khách
+                                                            p.note-text.content 4.796.000đ
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 839.300đ x 2 khách
+                                                            p.note-text.content 1.678.600đ
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 Ưu đãi hè (10%)
+                                                            p.note-text.content.cl-green2 -840.000đ
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 Phí vệ sinh
+                                                            p.note-text.content 200.000đ
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 Thuế môi trường
+                                                            p.note-text.content 100.000đ
+                                                        li.tourCt_infos--item 
+                                                            p.note-text.title.fw-5 VAT (12%)
+                                                            p.note-text.content 1.007.000đ
+                                                    .tourCt_infos--total-end 
+                                                        p.note-text.title.fw-7 Tổng cộng
+                                                        p.note-text.content.fw-6 8.860.000đ
+                                            .tourCt_infos--bottom
+                                                .tourCt_infos--btns
+                                                    +btn("Quay lại","","","cl-7 btn-back")
+                                                    +btn("Thanh toán ngay","","","")

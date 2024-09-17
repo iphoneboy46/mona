@@ -1,0 +1,208 @@
+@import "../core";
+
+
+.layoutMain {
+    padding-top: var(--size-pd);
+    padding-bottom: var(--size-pd);
+    overflow: hidden;
+
+    &.ab {
+
+        .layoutMain_lf {
+            // width: calc(100% * 5 / 12);
+
+        }
+
+        .layoutMain_rt {
+            // width: calc(100% * 6 / 12);
+
+            &--box {
+                padding-top: calc(100% * 780 / 710);
+
+                @include max(800px) {
+                    padding-top: calc(100% * 720 / 710);
+
+                }
+
+
+                @include max(600px) {
+                    padding-top: 100%;
+                }
+
+            }
+
+            .layoutMain_rt--wrap {
+                margin-right: calc((100% * 0.5 / 12) * -1);
+
+                @include max(1230px){
+                    margin-right: 0;
+                }
+
+            }
+
+            &--font {
+                width: 88%;
+
+
+                @include max(800px){
+                    width: 80%;
+                }
+
+
+                &-img {
+                    padding-top: calc(100% * 646 / 593);
+                    border-color: $color-pri;
+
+                    @include max(600px) {
+                        padding-top: 100%;
+                        border: 0.8rem solid $color-pri;
+    
+    
+                    }
+                }
+            }
+
+            &--back {
+                width: 68%;
+
+                &-tt {
+                    padding-top: calc(100% * 593 / 466);
+                }
+            }
+        }
+
+
+
+    }
+
+    &_wrap {}
+
+    &_box {
+
+        @include max(800px) {
+            flex-direction: column;
+            row-gap: var(--size-pdl);
+        }
+    }
+
+    &_lf {
+        width: calc(100% * 6 / 12);
+
+        @include max(800px) {
+            width: 100%;
+        }
+
+        &--wrap {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    &_rt {
+        flex: 1;
+
+        @include max(800px) {
+            width: 100%;
+        }
+
+
+        &--wrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: calc((100% * 2 / 12) * -1);
+
+            @include max(1230px) {
+                margin-right: 0rem;
+            }
+        }
+
+
+        &--box {
+            padding-top: calc(100% * 780 / 724);
+            display: block;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+
+            @include max(600px) {
+                padding-top: 100%;
+            }
+        }
+
+
+        &--font {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 80%;
+            z-index: 2;
+
+            @include max(600px) {
+                width: 85%;
+            }
+
+            &-img {
+                padding-top: calc(100% * 680 / 596);
+                width: 100%;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1rem solid $color-white;
+
+
+                @include max(600px) {
+                    padding-top: 100%;
+                    border: 0.8rem solid $color-white;
+
+
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &--back {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70%;
+            z-index: 1;
+
+            @include max(600px) {
+                width: 80%;
+            }
+
+            &-tt {
+                padding-top: calc(100% * 631 / 504);
+                width: 100%;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                background: #B7CAD6;
+
+                @include max(600px) {
+                    padding-top: 100%;
+                }
+            }
+        }
+
+
+    }
+
+
+}

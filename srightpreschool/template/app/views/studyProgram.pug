@@ -1,0 +1,146 @@
+extends layout/layout
+block vars
+    -title = 'study'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 HỌC TẬP TẠI SRIGHT
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","HỌC TẬP TẠI SRIGHT")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Chương trình học
+                            .swiper-slide.d-item
+                                a(href="").tab_item Một ngày của bé
+                            .swiper-slide.d-item
+                                a(href="").tab_item Thực đơn
+                            .swiper-slide.d-item
+                                a(href="").tab_item Đồng phục
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chăm sóc sức khoẻ
+                    .swiper-scrollbar
+    section.study_program 
+        .study_program--wrap 
+            .about_info(data-aos="fade-in")
+                .about_info--bgs 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo2.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo3 .png")
+                    .swiper-pagination.custom
+            .valueAb.studyProgram
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                h2.title-lg.cl-pri.fw-7 Chương trình Giáo Dục Sớm SRIGHT chuẩn Khoa học Não bộ bản quyền
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .box-wrap 
+                                                .box-content
+                                                    ul 
+                                                        li.note-lg.cl-pri.fw-4 Là chương trình đầu tiên phát huy tối ưu tiềm năng thiên tài của Não Phải trong giai đoạn 0-6 tuổi và kết hợp cân bằng Não Trái trong giai đoạn 3- 6 tuổi dựa trên Chuẩn Khoa học Não bộ trẻ nhỏ với 10 môn học được thiết kế bài bản, mang tính ứng dụng thực tiễn cao.
+                                                        li.note-lg.cl-pri.fw-4 Được xây dựng riêng theo Phương pháp giáo dục sớm SRIGHT, với 12 vòng chủ đề dựa vào sự phát triển cuộc sống xung quanh trẻ (12 life-expanding based circle of topics ) tăng dần về lượng và chất theo độ tuổi, dạy học dựa trên nguyên lý:
+                                                        li.note-lg.cl-pri.fw-4 REI® Repeat (Lặp lại) - Emotion (Cảm xúc) - Information (Thông tin) = Long Term Memory (Trí nhớ dài hạn), dạy học đề cao chất lượng (quality) hơn số lượng với tiêu chí Học được Làm được (End-Goal Demonstration).
+                                                        li.note-lg.cl-pri.fw-4 Kiến tạo Văn Hóa Đọc sách ngay từ nhỏ dựa trên Chương trình PF2B đã được Cục Sở Hữu Trí Tuệ cấp bản quyền nhằm phát triển năng lực Đọc ngôn ngữ Anh - Việt vượt trội.
+                                                        li.note-lg.cl-pri.fw-4 Xây dựng chân dung SRIGHTer toàn diện về Nhân - Trí - Lực, sẵn sàng bước vào môi trường tiểu học quốc tế/chất lượng cao với tư duy vượt trội, kĩ năng xã hội tốt, thể chất khỏe mạnh và trái tim yêu thương.
+            .study_program--bg(data-aos="fade-in") 
+                .study_program--bg-wrap 
+                    .study_program--bg-img
+                        +img("str.png")
+            .study_program--topic 
+                .container 
+                    .study_program--topic-wrap.d-wrap 
+                        .study_program--topic-lf.d-item(data-aos="fade-right") 
+                            .study_program--topic-lf-wrap 
+                                .box-wrap 
+                                    p.number-text 12
+                                    h2.title-lg.cl-pri.fw-8 
+                                        |Vòng chủ đề dựa vào 
+                                        br
+                                        |sự phát triển 
+                                        br 
+                                        |cuộc sống 
+                                        br 
+                                        |xung quanh trẻ
+                                    p.note-lg.cl-pri Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, itaque necessitatibus? Nesciunt facere soluta eius sunt voluptatibus, dolor quidem. Maiores qui ullam necessitatibus omnis consequuntur illum error placeat voluptatem voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, itaque necessitatibus? Nesciunt facere soluta eius sunt voluptatibus, dolor quidem. Maiores qui ullam necessitatibus omnis consequuntur illum error placeat voluptatem voluptatibus?
+                        .study_program--topic-rt.d-item(data-aos="fade-left") 
+                            .study_program--topic-rt-wrap
+                                .study_program--topic-bg 
+                                    +img("12.png")
+            .study_program--ntl 
+                .container 
+                    .study_program--ntl-wrap.d-wrap 
+                        .study_program--ntl-text
+                            p.note-lg.cl-pri Tặng 100% phí ghi danh và đánh giá đầu vào cho 10 học sinh đầu tiên và 50% cho các học sinh tiếp theo (thủ tục nhập học, kiểm tra sức khỏe với Chuyên gia dinh dưỡng và đánh giá các mốc phát triển theo độ tuổi với giáo viên chuyên môn)
+                        .study_program--ntl-lf.d-item.d-2(data-aos="fade-right") 
+                            .study_program--ntl-lf-wrap 
+                                .study_program--ntl-bg 
+                                    +img("ntl.png")
+                        .study_program--ntl-rt.d-item.d-2(data-aos="fade-left") 
+                            .study_program--ntl-rt-wrap 
+                                .box-wrap 
+                                    .box-content 
+                                        p.note-lg.cl-pri.fw-8 Nhân
+                                        ul
+                                            li.note-bg.cl-pri 
+                                                |Chương trình 
+                                                strong.fw-7 Ethic & Perseverance 
+                                                |(Đạo đức – Nghị lực) phát triển tâm hồn/nhân cách/thông minh vượt khó (AQ)/ thông minh cảm xúc (EQ) cho trẻ.
+                                        br
+                                        p.note-lg.cl-pri.fw-8 Trí
+                                        ul  
+                                            li.note-bg.cl-pri 
+                                                |Chương trình 
+                                                strong.fw-7 Phát Triển Não Trái
+                                                |gồm 4 môn học
+                                                strong.fw-7 STEAM
+                                                | – Phát triển tư duy lập trình (Coding) 4.0 & khoa học ứng dụng từ nhỏ cho trẻ;
+                                                strong.fw-7 Montessori
+                                                |học trực quan với giáo cụ chuẩn quốc tế và lộ trình cá nhân hóa từng trẻ; 
+                                                strong.fw-7 Toán & Khoa Học 
+                                                |dạy bằng Tiếng Anh với giáo viên bản ngữ.
+                                            li.note-text.cl-pri
+                                                |Chương trình 
+                                                strong.fw-7 Phát Triển Não Trái
+                                                |gồm 3 môn học
+                                                strong.fw-7 Não Phải Chuyên Sâu
+                                                | (Linking memory/ Peg Memory...)
+                                                strong.fw-7 PF2B Tiếng Anh Não Phải 
+                                                | (Flash Card, Đọc Sách, Lồng Tiếng, Thuyết trình Mindmap..) &
+                                                strong.fw-7 Cảm thụ Âm Nhạc
+                                                | (Kể chuyện Âm nhạc bằng nhạc cụ & Âm nhạc chuyển động)
+                                        br
+                                        p.note-lg.cl-pri.fw-8 Lực
+                                        ul
+                                            li.note-text.cl-pri
+                                                |Chương trình 
+                                                strong.fw-7 Giáo dục thể chất Gym Kids
+                                                | giúp trẻ tăng cường vận động, phát triển thể chất toàn diện. Các nội dung học tập chính bao gồm Phát triển vận động, Giáo dục Dinh dưỡng và Sức khỏe

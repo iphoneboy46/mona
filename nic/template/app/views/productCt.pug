@@ -1,0 +1,371 @@
+extends layout/layout
+block vars
+    -title = 'Sp chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.product_ct
+        h1 sảm phẩm chi tiết
+        .container
+            .product_ct--wrap.d-wrap 
+                .product_ct--lf.d-item
+                    .product_ct--lf-wrap(data-aos="fade-in")
+                        .product_ct--lf-top
+                            .product_ct--lf-thumbs 
+                                .swiper.mySwiperProCtTop
+                                    .swiper-wrapper 
+                                        .swiper-slide
+                                            a(href="./assets/images/proct.png" data-fancybox="gallery").product_ct--lf-thumb
+                                                img(src="./assets/images/proct.png" alt="" data-magnify-src="./assets/images/proct.png").zoom
+                                        .swiper-slide
+                                            a(href="./assets/images/proct2.png" data-fancybox="gallery").product_ct--lf-thumb
+                                                img(src="./assets/images/proct2.png" alt="" data-magnify-src="./assets/images/proct2.png").zoom
+                                        .swiper-slide
+                                            a(href="./assets/images/proct.png" data-fancybox="gallery").product_ct--lf-thumb
+                                                img(src="./assets/images/proct.png" alt="" data-magnify-src="./assets/images/proct.png").zoom
+                                +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+                        .product_ct--lf-bottom
+                            .product_ct--lf-imgs
+                                .swiper.mySwiperProCtBottom 
+                                    .swiper-wrapper 
+                                        .swiper-slide.d-item.d-3 
+                                            .product_ct--lf-img
+                                                .product_ct--lf-img-wrap
+                                                    +img("proct.png")
+                                        .swiper-slide.d-item.d-3 
+                                            .product_ct--lf-img
+                                                .product_ct--lf-img-wrap
+                                                    +img("proct2.png")
+                                        .swiper-slide.d-item.d-3 
+                                            .product_ct--lf-img
+                                                .product_ct--lf-img-wrap
+                                                    +img("proct.png")
+                                .swiper-scrollbar
+                .product_ct--rt.d-item
+                    .product_ct--rt-wrap
+                        .product_ct--rt-list(data-aos="fade-left")  
+                            .product_ct--rt-item 
+                                .product_ct--rt-title
+                                    .product_ct--rt-title-top
+                                        span.product_sb 20% SALE
+                                    .product_ct--rt-title-bottom
+                                        h2.title-sm2.fw-8.cl-white.fw-i NÓN THỂ THAO FULLFACE 
+                                        .product_price 
+                                            //- .product_price-sale 500.000 VNĐ
+                                            .product_price-normal 300.000 VNĐ
+                                .product_ct--rt-content 
+                                    .product_ct--rt-content-title 
+                                        h3.title-mn.fw-7.fw-i.cl-white Đặc tính sản phẩm
+                                    .product_ct--rt-content-wrap.listInfo 
+                                        ul
+                                            li ECE 22.06 & DOT Safety Certifications
+                                            li Thiết kế thông minh của nón bảo hiểm  Fullface .
+                                            li Công nghệ Nano
+                                            li ECE 22.06 & DOT Safety Certifications
+                                            li Thiết kế thông minh của nón bảo hiểm  Fullface .
+                                            li Công nghệ Nano
+                                    button.title-link.BtnShowInfo Xem thêm
+                            .product_ct--rt-item 
+                                p.title-mn.fw-6.cl-white Màu sắc
+                                .product_ct--colors.d-wrap.free-slide2 
+                                    .swiper.mySwiper 
+                                        .swiper-wrapper 
+                                            .swiper-slide.d-item.d-4
+                                                .product_ct--color
+                                                    label.color
+                                                        input(type="radio" name="color" checked="checked")
+                                                        .color_wrap 
+                                                            .color_img  
+                                                                +img("proct.png")
+                                            .swiper-slide.d-item.d-4
+                                                .product_ct--color
+                                                    label.color
+                                                        input(type="radio" name="color")
+                                                        .color_wrap 
+                                                            .color_img  
+                                                                +img("proct.png")
+                                            .swiper-slide.d-item.d-4
+                                                .product_ct--color
+                                                    label.color
+                                                        input(type="radio" name="color")
+                                                        .color_wrap 
+                                                            .color_img  
+                                                                +img("proct.png")
+                                            .swiper-slide.d-item.d-4
+                                                .product_ct--color
+                                                    label.color
+                                                        input(type="radio" name="color")
+                                                        .color_wrap 
+                                                            .color_img  
+                                                                +img("proct.png")
+                                            .swiper-slide.d-item.d-4
+                                                .product_ct--color
+                                                    label.color
+                                                        input(type="radio" name="color")
+                                                        .color_wrap 
+                                                            .color_img  
+                                                                +img("proct.png")
+                                    .swiper-scrollbar
+                            .product_ct--rt-item 
+                                p.title-mn.fw-6.cl-white Kích thước
+                                .product_ct--sizes.d-wrap 
+                                    .product_ct--size.d-item.d-3 
+                                        label.size
+                                            input(type="radio" name="size" checked="checked")
+                                            .size_wrap
+                                                p.note-text.fw-6.t-up.cl-white.fw-i xs 
+                                                p.note-sm.fw-i.cl-white 54 cm
+                                    .product_ct--size.d-item.d-3 
+                                        label.size
+                                            input(type="radio" name="size")
+                                            .size_wrap
+                                                p.note-text.fw-6.t-up.cl-white.fw-i s 
+                                                p.note-sm.fw-i.cl-white 55-56 cm
+                                    .product_ct--size.d-item.d-3 
+                                        label.size
+                                            input(type="radio" name="size")
+                                            .size_wrap
+                                                p.note-text.fw-6.t-up.cl-white.fw-i m 
+                                                p.note-sm.fw-i.cl-white 57-58 cm
+                                    .product_ct--size.d-item.d-3 
+                                        label.size
+                                            input(type="radio" name="size")
+                                            .size_wrap
+                                                p.note-text.fw-6.t-up.cl-white.fw-i l 
+                                                p.note-sm.fw-i.cl-white 59-60cm
+                                    .product_ct--size.d-item.d-3 
+                                        label.size
+                                            input(type="radio" name="size")
+                                            .size_wrap
+                                                p.note-text.fw-6.t-up.cl-white.fw-i xl 
+                                                p.note-sm.fw-i.cl-white 61-62 cm
+                                a(href="./assets/images/hdSize.jpg" data-fancybox="gallery1").note-text.cl-white.fw-i.fw-5.hdSize Hướng dẫn chọn size
+                            .product_ct--rt-item 
+                                .product_ct--des-list 
+                                    .product_ct--des-item.faq-it 
+                                        .product_ct--des-item-title
+                                            p.title-mn.fw-7.cl-white Mô tả sản phẩm
+                                            span.ic 
+                                                i.fas.fa-chevron-down
+                                        .product_ct--des-item-content.faq-content
+                                            p.note-text.cl-white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias placeat odio, officiis, officia illo repellat corrupti ut, facere voluptas sit ratione? Eos, in ab? Commodi cupiditate tempore velit officiis illo?
+                                    .product_ct--des-item.faq-it 
+                                        .product_ct--des-item-title
+                                            p.title-mn.fw-7.cl-white Chính sách mua hàng
+                                            span.ic 
+                                                i.fas.fa-chevron-down
+                                        .product_ct--des-item-content.faq-content 
+                                            p.note-text.cl-white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias placeat odio, officiis, officia illo repellat corrupti ut, facere voluptas sit ratione? Eos, in ab? Commodi cupiditate tempore velit officiis illo?
+    section.product_story
+        .product_story--bg
+            +img("dm2.png")
+        .container 
+            .product_story--wrap 
+                .product_story--box
+                    .product_story--box-content 
+                        p.note-lg.cl-pri Câu chuyện về
+                        h2.cl-pri.fw-7.title-lg4.cl-white.t-up NIC N06
+                        br
+                        p.note-text.cl-white
+                            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate cumque vel nesciunt dolores vero, totam accusamus quibusdam eligendi hic sed molestias possimus, sunt ad? Possimus placeat labore quisquam ut.
+                            br
+                            br
+                            |Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id accusantium esse, architecto quibusdam molestias illum eum omnis corporis, incidunt odio? Aliquam exercitationem, fugiat doloremque asperiores repudiandae similique eveniet atque.
+    section.product_video(data-aos="fade-in" data-aos-delay="300") 
+        .product_video--wrap 
+            .product_video--box
+                .product_video--bg 
+                    +img("bgvd.png")
+                .product_video--iframe 
+                    iframe(width="1280" height="720" id="youtubeIframe" src="https://www.youtube.com/embed/h3JbEyS__9I?enablejsapi=1" title="Trên tay Bell Qualifier: một chiếc full face giá dễ chịu dành cho người mới" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                .btn-play
+                    .btn-play-tt
+                    .btn-play-btn
+                        i.fas.fa-play
+    section.product_tech.free-slide 
+        .container 
+            .product_tech--wrap 
+                h2.title-md.fw-7.fw-i.cl-white.fl-sec.t-up(data-aos="fade-up") CÔNG NGHỆ NỔI BẬT 
+                .product_tech--list.d-wrap(data-aos="fade-up" data-aos-delay="500")
+                    .swiper.mySwiper
+                        .swiper-wrapper 
+                            -
+                                const tchs = [
+                                    {
+                                        img:"tch1.png",
+                                    },
+                                    {
+                                        img:"tch2.png",
+                                    },
+                                    {
+                                        img:"tch3.png",
+                                    },
+                                    {
+                                        img:"tch4.png",
+                                    }
+                                ]
+                            each tch , i in tchs
+                                .swiper-slide.d-item.d-4 
+                                    .product_tech--item
+                                        .product_tech--item-wrap 
+                                            .product_tech--item-img 
+                                                +img(tch.img)
+                                            ul.product_tech--item-list
+                                                li.product_tech--item-item 
+                                                    span.ic 
+                                                        +img("tchic.png")
+                                                    p.note-text.cl-white Lorem ipsum dolor sit amet consectetur. 
+                                                li.product_tech--item-item 
+                                                    span.ic 
+                                                        +img("tchic.png")
+                                                    p.note-text.cl-white Lorem ipsum dolor sit amet consectetur. 
+                                                li.product_tech--item-item 
+                                                    span.ic 
+                                                        +img("tchic.png")
+                                                    p.note-text.cl-white Lorem ipsum dolor sit amet consectetur. 
+                                                li.product_tech--item-item 
+                                                    span.ic 
+                                                        +img("tchic.png")
+                                                    p.note-text.cl-white Lorem ipsum dolor sit amet consectetur. 
+                    .swiper-pagination
+    section.home_dm.free-slide.ani.proCt
+        .container
+            .home_dm--wrap(data-aos="fade-in" data-aos-delay="300")
+                .home_dm--list.d-wrap
+                    .swiper.mySwiper.--center.--auto.--loop
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href="./assets/images/dm1.png" data-fancybox="gallery3")
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm1.png", alt)
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href="./assets/images/dm2.png" data-fancybox="gallery3")
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm2.png", alt)
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href="./assets/images/dm3.png" data-fancybox="gallery3")
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm3.png", alt)
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href="./assets/images/dm4.png" data-fancybox="gallery3")
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm4.png", alt)
+                    .box-navi
+                        .btn-navi.prev
+                            i.fas.fa-chevron-left
+                        .btn-navi.next
+                            i.fas.fa-chevron-right
+    section.accessory
+        .container 
+            .accessory_wrap.tab-box 
+                .box-title 
+                    h2.title-md.fw-7.fw-i.cl-white.fl-sec.t-up(data-aos="fade-up") PHỤ KIỆN THAY THẾ
+                    .box_filter.free-slide2(data-aos="fade-up" data-aos-delay="500")
+                        .box_filter--list.d-wrap
+                            .swiper.mySwiper 
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item 
+                                        button.box_filter--item.actived(data-id="kcg") 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up kính chắn gió
+                                    .swiper-slide.d-item 
+                                        button.box_filter--item(data-id="tg")  
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up Phụ kiện thông gió
+                                    .swiper-slide.d-item 
+                                        button.box_filter--item(data-id="pkk")  
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up PHỤ KIỆN KHÁC
+                                    .swiper-slide.d-item 
+                                        button.box_filter--item(data-id="all") 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up XEM TẤT CẢ
+                            .swiper-scrollbar
+                .accessory_box(data-aos="fade-up" data-aos-delay="1000")
+                    .accessory_list.d-wrap 
+                        .accessory_item.accItem.d-item.d-5(data-id="kcg") 
+                            +product2("sale")
+                        .accessory_item.accItem.d-item.d-5(data-id="kcg")
+                            +product2("")
+                        .accessory_item.accItem.d-item.d-5(data-id="tg") 
+                            +product2("")
+                        .accessory_item.accItem.d-item.d-5(data-id="pkk") 
+                            +product2("sale")
+                        .accessory_item.accItem.d-item.d-5(data-id="tg") 
+                            +product2("sale")
+                        .accessory_item.accItem.d-item.d-5(data-id="kcg") 
+                            +product2("sale")
+                        .accessory_item.accItem.d-item.d-5(data-id="kcg")
+                            +product2("")
+                        .accessory_item.accItem.d-item.d-5(data-id="tg") 
+                            +product2("")
+                        .accessory_item.accItem.d-item.d-5(data-id="pkk") 
+                            +product2("sale")
+                        .accessory_item.accItem.d-item.d-5(data-id="tg") 
+                            +product2("sale")
+                    //- .accessory_btn(data-aos="fade-up" data-aos-delay="0")
+                    //-     +btn("xem tất cả","","","")
+    section.product_like 
+        .container2 
+            .product_like--wrap 
+                h2.title-md.fw-7.fw-i.cl-white.fl-sec.t-up(data-aos="fade-up") CÓ THỂ BẠN THÍCH
+                .accessory_box.free-slide(data-aos="fade-up" data-aos-delay="500")
+                    .accessory_list.d-wrap 
+                        .swiper.mySwiper
+                            .swiper-wrapper 
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                        .swiper-pagination
+
+
+
+    .popup_main.popup-form(data-popup-id="popup-pk")
+        .popup_main--wrap
+            .popup_main--ex.popup-ex 
+                i.far.fa-times
+            .popup_main--lf 
+                .popup_main--lf-wrap 
+                    .popup_main--lf-img 
+                        +img("imgPop.png")
+            .popup_main--rt 
+                .popup_main--rt-wrap
+                    .popup_main--rt-title 
+                        h2.title-mn.fw-8.cl-white.fw-i NÓN THỂ THAO
+                    .popup_main--rt-content
+                        .product_ct--rt-content 
+                            .product_ct--rt-content-title 
+                                h3.title-mn.fw-7.fw-i.cl-white Đặc tính sản phẩm
+                            .product_ct--rt-content-wrap.listInfo 
+                                ul
+                                    li ECE 22.06 & DOT Safety Certifications
+                                    li Thiết kế thông minh của nón bảo hiểm  Fullface .
+                                    li Công nghệ Nano
+                                    li ECE 22.06 & DOT Safety Certifications
+                                    li Thiết kế thông minh của nón bảo hiểm  Fullface .
+                                    li Công nghệ Nano
+                            button.title-link.BtnShowInfo Xem thêm
+                    .popup_main--rt-btn 
+                        a(href="").btn
+                            span.btn-ic 
+                                i.fas.fa-map-marker-alt
+                            span.btn-text tìm đại lý gần bạn
+    .popup_main--modal.popup-modal

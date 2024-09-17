@@ -1,0 +1,132 @@
+.docs {
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+    .docs_item {
+      grid-row: span 1;
+      &:nth-child(6n - 1) {
+        grid-column: 2/4;
+        aspect-ratio: 792 / 600;
+        grid-row: span 2;
+      }
+      &:nth-child(6n + 1) {
+        grid-column: 1/3;
+        aspect-ratio: 792 / 600;
+        grid-row: span 2;
+      }
+    }
+  }
+  &_item {
+    position: relative;
+
+    &-content {
+      @include center(xy);
+      @include size(100%);
+      text-align: center;
+      @include center(flex);
+      flex-direction: column;
+      pointer-events: none;
+      row-gap: 1.6rem;
+      .title {
+        font-size: var(--h3-fs);
+        line-height: var(--h3-lh);
+      }
+      .b-wrap {
+        position: relative;
+        overflow: hidden;
+        pointer-events: visible;
+        > * {
+          @include transition(transform $t2 $cubic);
+          @include transform(translateY(110%));
+        }
+      }
+    }
+    &-bg {
+      @include size(100%);
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        @include fullscreen;
+        background: linear-gradient(
+          0deg,
+          rgba(26, 26, 26, 0.5),
+          rgba(26, 26, 26, 0.5)
+        );
+        @include visible(0);
+        @include transition(all $t3 $cubic);
+      }
+      img {
+        @include img-cover;
+        @include transition(all 2s $cubic);
+      }
+    }
+    @include hover {
+      .docs_item-content {
+        .b-wrap {
+          > * {
+            @include transform(translateY(0));
+          }
+        }
+      }
+      .docs_item-bg {
+        img {
+          transition-duration: 2s;
+          @include transform(scale(1.2));
+        }
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  @include md {
+    &_grid {
+      gap: 1.2rem;
+    }
+  }
+}
+.box-target-cursor {
+  position: relative;
+}
+.cursor {
+  width: 7rem;
+  height: 7rem;
+  // opacity: 0;
+  z-index: 102;
+  position: fixed;
+  background: #979b99;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  @include center(flex);
+  top: 0;
+  left: 0;
+  .cs-arrow {
+    @include center(xy);
+  }
+  // display: none;
+}
+
+.docs-detail {
+  &_image {
+    aspect-ratio: 1/1;
+    img {
+      @include img-cover;
+    }
+  }
+  &_content {
+    @include md-min {
+      padding-top: 6.2rem;
+      padding-left: 1.6rem;
+    }
+    .desc {
+      margin-top: 2.4rem;
+    }
+    .btn-arrow {
+      margin-top: 3.5rem;
+    }
+  }
+}

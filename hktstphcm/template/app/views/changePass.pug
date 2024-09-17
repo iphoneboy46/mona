@@ -1,0 +1,101 @@
+extends layout/layout
+block vars
+    -title = 'info user change pass'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos]
+    -jsComponents = ['header','Password','uploadCV']
+    -cssLibs = [fontAWS,fontAWS2,CssAos]
+    -cssComponents = []
+    -cssPages = ["admin","contact"]
+
+block container
+    section.bg_tt
+        .bg_tt--bg
+        +img("bg.png")
+    section.layoutAd
+        .container 
+            .layoutAd_wrap 
+                .layoutAd_box.d-wrap 
+                    .layoutAd_box--lf.d-item
+                        .layoutAd_box--lf-wrap 
+                            .layoutAd_box--lf-box
+                                .layoutAd_box--lf-box-item 
+                                    .adAva.btn-upload
+                                        input(type="file").fileUpload
+                                        img(src="./assets/images/ava.png", alt="").img-src
+                                    .layoutAd_box--lf-box-item-content 
+                                        p.note-md.cl-white.fw-6 monamedia
+                                        p.note-sm.cl-white monamedia@gmail.com
+                                .layoutAd_box--lf-box-item 
+                                    ul.layoutAd_box--lf-list 
+                                        li.layoutAd_box--lf-item.actived
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic1.png")
+                                                span.note-text Thông tin tài khoản 
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic2.png")
+                                                span.note-text Quản lý bài viết
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic3.png")
+                                                span.note-text Thay đổi mật khẩu
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic4.png")
+                                                span.note-text Danh sách yêu thích
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic5.png")
+                                                span.note-text Hỗ trợ-Góp ý
+                                .layoutAd_box--lf-box-item 
+                                    .layoutAd_box--lf-item
+                                        a(href="").layoutAd_box--lf-link
+                                            span.ic 
+                                                +img("adic6.png")
+                                            span.note-text Đăng xuất
+                    .layoutAd_box--rt.d-item    
+                        .layoutAd_box--rt-wrap
+                            .layoutAd_box--rt-box
+                                .layoutAd_box--rt-box-item
+                                    p.title-mn.cl-white.t-up.fw-6 thay đổi mật khẩu
+                                    .adAva.btn-upload
+                                        input(type="file").fileUpload
+                                        img(src="./assets/images/ava.png", alt="").img-src
+                                .layoutAd_box--rt-box-item
+                                    .layoutAd_box--rt-form.changePass
+                                        form(action="") 
+                                            .layoutAd_box--rt-form-list.d-wrap
+                                                .layoutAd_box--rt-form-item.d-item 
+                                                    label.form-item.pass
+                                                        p.form-item-lb Mật khẩu hiện tại    
+                                                        .form-item-wrap
+                                                            input(type="password" placeholder="Mật khẩu hiện tại").form-item-ip 
+                                                            span.ic 
+                                                                i.far.fa-eye
+                                                                i.far.fa-eye-slash
+                                                .layoutAd_box--rt-form-item.d-item 
+                                                    label.form-item.pass
+                                                        p.form-item-lb Mật khẩu mới   
+                                                        .form-item-wrap
+                                                            input(type="password" placeholder="Mật khẩu mới").form-item-ip 
+                                                            span.ic 
+                                                                i.far.fa-eye
+                                                                i.far.fa-eye-slash
+                                                .layoutAd_box--rt-form-item.d-item 
+                                                    label.form-item.pass
+                                                        p.form-item-lb Nhập lại mật khẩu mới   
+                                                        .form-item-wrap
+                                                            input(type="password" placeholder="Nhập lại mật khẩu mới").form-item-ip 
+                                                            span.ic 
+                                                                i.far.fa-eye
+                                                                i.far.fa-eye-slash
+                                            +btn("LƯU THAY ĐỔI","","","trans")

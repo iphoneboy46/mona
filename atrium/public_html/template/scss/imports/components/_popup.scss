@@ -1,0 +1,115 @@
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 450;
+  @include center(flex);
+  @include transform(translateY(-1rem));
+  @include visible(0);
+  @include transition(all $t);
+
+  &.is-show {
+    @include visible(1);
+    @include transform(translateY(0));
+    @include transition(all $t);
+  }
+
+  &-content {
+    background-color: $white;
+    position: relative;
+  }
+
+  &-close {
+    --size: 3rem;
+    position: absolute;
+    top: calc(-1 / 2 * var(--size));
+    right: calc(-1 / 2 * var(--size));
+    @include size(var(--size));
+    color: $bg-main;
+    @include center(flex);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &-main {
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  // &-success {
+  //   @include size(100%);
+  //   .popup-close {
+  //     top: 1rem;
+  //     right: 1rem;
+  //   }
+  //   .popup-content {
+  //     @include size(100%);
+  //     @include center(flex);
+  //     background-color: transparent;
+  //     padding: 1rem;
+  //   }
+  //   .popup-main {
+  //     max-width: 85.6rem;
+  //     text-align: center;
+  //     background-color: $white;
+  //     position: relative;
+  //     width: min(100%, 87.6rem);
+  //   }
+  //   .title,
+  //   .desc {
+  //     color: #3a3a3a;
+  //   }
+  //   .title {
+  //     font-size: 3.6rem;
+  //   }
+  //   .desc {
+  //     margin-top: 1.6rem;
+  //   }
+  //   .btn-white {
+  //     margin-top: 3.6rem;
+  //     background-color: $white;
+  //     color: #090909;
+  //     @include hover {
+  //       background: $bg-main;
+  //       color: $white;
+  //     }
+  //   }
+  // }
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .popup-close {
+      position: static;
+      color: $white;
+    }
+  }
+  &-authen {
+    background: $bg-main;
+    @include size(100%);
+    @include center(flex);
+    .popup-content {
+      background-color: transparent;
+    }
+    input[type="password"] {
+      padding-right: 2.6rem;
+    }
+    .form-label {
+      margin-bottom: 1.6rem;
+      display: block;
+    }
+    .field-checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem 7rem;
+    }
+  }
+  &-login {
+    &-form {
+    }
+  }
+  &-signin {
+    &-form {
+    }
+  }
+}

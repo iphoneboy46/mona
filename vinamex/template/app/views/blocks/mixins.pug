@@ -1,0 +1,140 @@
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title,content)
+  .post
+    .post_wrap
+      .post_lf
+        a(href="").post_img
+          +img(img)
+      .post_rt
+        .post_box
+          h3.cl-text.title.fw-6.title-mn
+            a(href="") #{title}
+          .box-info 
+            .box-info-list 
+              .box-info-item 
+                a(href="").note-text.cl-text.fw-6 Admin
+              .box-info-item 
+                p.note-text.cl-text3 12:52 - 20.04.2024
+          p.note-text.cl-gray3.content #{content}
+
+mixin post-td(img,title,han,classCustom)
+  .post_td(class=classCustom)
+    .post_td--wrap
+      .post_td--lf
+        a(href="").post_td--img
+          +img(img)
+      .post_td--rt
+        .post_td--box
+          .post_td--title
+            h3.cl-text.title.fw-7.title-sm2 
+              a(href="") #{title}
+            p.note-text.cl-green.fw-6  #{han}
+          .post_td--content 
+            p.note-text Chúng tôi tìm kiếm những ứng viên năng động, nhiệt huyết và có đam mê với lĩnh vực giáo dục để cùng nhau xây dựng một môi trường học tập và làm việc chuyên nghiệp, hiệu quả.
+          ul.tuyen_dung--infos
+            -
+              const tdics = [
+                {
+                  img:"tdic1.png",
+                  title:"12 triệu - 15 triệu VNĐ"
+                },
+                {
+                  img:"tdic2.png",
+                  title:"2 nhân sự"
+                }
+              ]
+            each tdic , i in tdics
+              li.tuyen_dung--info 
+                span.ic 
+                  +img(tdic.img)
+                p.note-text.fw-7.cl-gray3 #{tdic.title}
+
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+    li
+      span.page-numbers.current 1
+    li
+      a.page-numbers(href='') 2
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 9
+    li
+      a.page-numbers(href='') 10
+    li
+      span.page-numbers.next 
+        i.fas.fa-chevron-right
+
+
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin banner-main(img,title,page1,page2,pageCurrent)
+  .banner_main 
+    .banner_main--bg 
+      +img(img)
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--box-top
+            h1.title-lg.cl-white.fw-6 #{title}
+          .banner_main--box-bottom
+            +breadcrumbs(page1,page2,pageCurrent)

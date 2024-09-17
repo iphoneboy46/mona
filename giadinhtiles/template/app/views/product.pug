@@ -1,0 +1,167 @@
+extends layout/layout
+block vars
+    -title = 'sản phẩm'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper,JsMagnify]
+    -jsComponents = ['header',"product",'popup','tab']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper,CssMagnify]
+    -cssComponents = []
+    -cssPages = ["product","contact"]
+
+block container
+    +box-title2("Trang chủ","","Gạch bông","Gạch bông","")
+    section.productsc 
+        .container 
+            .productsc_wrap 
+                .productsc_box.d-wrap 
+                    .productsc_lf.d-item 
+                        .productsc_lf--wrap 
+                            .productsc_filter
+                                .productsc_filter--ex 
+                                    i.fal.fa-times-circle
+                                .productsc_filter--title
+                                    p.title-sm2.cl-text.fw-6 Bộ lọc tìm kiếm    
+                                .productsc_filter--list 
+                                    .productsc_filter--item 
+                                        label.form-ck-item2 
+                                            input(type="checkbox" name="all" checked="checked")
+                                            .form-ck-item2-wrap
+                                                .form-ck-item2-lf
+                                                    span.box 
+                                                    p.note-text Xem sản phẩm mới nhất
+                                    .productsc_filter--item.faqBox 
+                                        .productsc_filter--item-box.faq-it 
+                                            .productsc_filter--item-top 
+                                                p.note-text.fw-6.cl-pri Loại Gạch
+                                                span.ic 
+                                                    i.far.fa-angle-down
+                                            .productsc_filter--item-bottom.faq-content 
+                                                .form-ck-list2 
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach" checked="checked")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Gạch đá mài
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Gạch gốm nhung  
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Gạch bông
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                    .productsc_filter--item.faqBox 
+                                        .productsc_filter--item-box.faq-it  
+                                            .productsc_filter--item-top 
+                                                p.note-text.fw-6.cl-pri Kích thước
+                                                span.ic 
+                                                    i.far.fa-angle-down
+                                            .productsc_filter--item-bottom.faq-content 
+                                                .form-ck-list2 
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach" checked="checked")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text 60x60
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text 40x120 
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text 45x45
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text 25x75
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                    .productsc_filter--item.faqBox 
+                                        .productsc_filter--item-box.faq-it 
+                                            .productsc_filter--item-top 
+                                                p.note-text.fw-6.cl-pri Hình dáng gạch
+                                                span.ic 
+                                                    i.far.fa-angle-down
+                                            .productsc_filter--item-bottom.faq-content 
+                                                .form-ck-list2 
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach" checked="checked")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Hình vuông
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Hình tròn
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                                    label.form-ck-item2 
+                                                        input(type="checkbox" name="gach")
+                                                        .form-ck-item2-wrap
+                                                            .form-ck-item2-lf
+                                                                span.box 
+                                                                p.note-text Hình chữ nhât
+                                                            .form-ck-item2-rt 
+                                                                p.note-sm.cl-text (20)
+                                button.btn.cl-2 
+                                    span.btn-text Lọc sản phẩm
+                    .productsc_rt.d-item 
+                        .productsc_rt--wrap
+                            .productsc_rt--title 
+                                button.btn-filter
+                                    i.far.fa-filter
+                            .productsc_rt--box 
+                                .productsc_rt--list.d-wrap 
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr1.png","Mới")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr2.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr3.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr4.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr5.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr6.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr7.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr8.png","")
+                                    .productsc_rt--item.d-item.d-3 
+                                        +pro("pr9.png","")
+                                +pagination()
+    .productsc_filter--modal

@@ -1,0 +1,355 @@
+// css img, button, heading, title, input, elements, components...
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+// back ground
+.bg-img-center {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// back to top
+
+.progress-wrap {
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  @include circle(4.6rem);
+  cursor: pointer;
+  display: block;
+  box-shadow: inset 0 0 0 0.2rem rgba(255, 255, 255, 0.2);
+  z-index: $z-fixed;
+  @include visible(0);
+  @include transition(opacity $t linear, transform 1s $cubic);
+  @include transform(translateY(1rem));
+  background-color: $white;
+  &.active-progress {
+    @include visible(1);
+    @include transform(translateY(0));
+    @include transition(opacity $t linear, transform 1s $cubic);
+  }
+  svg {
+    &.progress-circle path {
+      stroke: $primary;
+      stroke-width: 4;
+      @include transition(all $t linear);
+    }
+    path {
+      fill: none;
+    }
+  }
+  i {
+    @include center(xy);
+    color: $primary;
+  }
+  @include sm {
+    right: 2rem;
+    bottom: 2rem;
+    @include size(3.5rem);
+  }
+}
+
+.gItem {
+  cursor: pointer;
+}
+
+.price-new {
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  @include text(600, var(--h3-fs), var(--h3-lh), $white);
+  display: block;
+}
+.price-old {
+  letter-spacing: 0.03em;
+  color: #808080;
+  display: block;
+}
+.price-wrap {
+  &.flex {
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+  }
+  .price-old {
+    margin-top: 0.4rem;
+  }
+}
+.project_links {
+  .list-links {
+    overflow-x: auto;
+    overflow-y: hidden;
+    @include md {
+      justify-content: flex-start;
+    }
+    &::-webkit-scrollbar {
+      height: 0.3rem;
+    }
+    .li {
+      flex-shrink: 0;
+    }
+  }
+}
+.list-links {
+  --g-x: 6rem;
+  @include center(flex);
+  margin-left: calc(-0.5 * var(--g-x));
+  margin-right: calc(-0.5 * var(--g-x));
+  margin-top: calc(var(--space-value) * 14);
+  row-gap: 3.2rem;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+  margin-bottom: -3rem;
+
+  .li {
+    padding-left: calc(0.5 * var(--g-x));
+    padding-right: calc(0.5 * var(--g-x));
+    font-size: var(--h4-fs);
+    line-height: var(--h4-lh);
+    position: relative;
+    &:after {
+      content: "";
+      @include center(x);
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 2rem);
+      bottom: -2rem;
+      background: #d9d9d9;
+      @include circle(0.8rem);
+      @include visible(0);
+      @include transition(all $t);
+    }
+    @include hover {
+      &::after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+    &.active {
+      &:after {
+        opacity: 1;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+  @include lg {
+    --g-x: 4rem;
+  }
+  @include md {
+    --g-x: 2.4rem;
+  }
+  @include sm {
+    --g-x: 1.6rem;
+    .li {
+      font-size: var(--h5-fs);
+      line-height: var(--h5-lh);
+    }
+  }
+}
+
+.mona-content {
+  p {
+    margin-bottom: 1.6rem;
+  }
+  ul {
+    padding-left: 0 !important;
+    li {
+      display: flex;
+      column-gap: 1.2rem;
+      color: #e6e6e6;
+      &:not(:first-child) {
+        margin-top: 1.6rem;
+      }
+
+      &:before {
+        content: "";
+        background-image: url(../img/icon-check-circle.svg);
+        background-repeat: repeat;
+        background-position: center;
+        @include size(3.2rem);
+        display: inline-block;
+        flex-shrink: 0;
+        margin-top: -0.4rem;
+      }
+    }
+  }
+}
+
+.social-share {
+  @include center(flex);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+  column-gap: 2.4rem;
+  margin-top: 6rem;
+  .label {
+    font-size: var(--body14-fs);
+    line-height: var(--body14-lh);
+    font-weight: bold;
+  }
+  .list-social {
+    @include flex-center-y;
+    column-gap: 1.6rem;
+    .link-social {
+      img {
+        width: 2rem;
+      }
+    }
+  }
+}
+
+.a-link {
+  color: $white;
+  font-weight: bold;
+  @include transition(all $t);
+  @include hover {
+    opacity: 0.5;
+  }
+}
+
+.color-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .color-inner {
+    @include size(2.4rem);
+    img {
+      @include img-cover;
+    }
+  }
+}
+
+.select-qty {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+  .select-number {
+    width: 2.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    @include input-hide-spinner;
+    color: #e6e6e6;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+  }
+  .btn-select {
+    @include circle(3.2rem);
+    @include center(flex);
+    outline: none;
+    border: none;
+    background: #333333;
+    @include transition(all $t);
+    @include hover {
+      background: #e6e6e6;
+      color: #333333;
+    }
+  }
+}
+
+.seepassJS {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 0;
+  color: #b3b3b3;
+  @include transition(all $t);
+  cursor: pointer;
+  background-color: transparent;
+  width: 2rem;
+  height: 1.6rem;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.2rem;
+    height: 120%;
+    background-color: currentColor;
+    transform: translateY(-50%) rotate(-45deg);
+    @include transition(transform $t, clip-path $t);
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+  }
+  &.active {
+    &::after {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  @include hover {
+    color: $white;
+  }
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.btn-play {
+  position: relative;
+  width: fit-content;
+  display: block;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    @include border($white);
+    @include animation(btnPlayScale 2s $cubic infinite);
+  }
+  &::after {
+    animation-delay: 0.4s;
+  }
+  img {
+    width: 6.6rem;
+    @include sm {
+      width: 4rem;
+    }
+  }
+}
+
+@include keyframes(btnPlayScale) {
+  0% {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(2));
+    opacity: 0;
+  }
+}
+.woocommerce a.remove {
+  color: $white !important;
+  font-weight: 400;
+}
+.cart_item-close {
+  @include sm {
+    right: 0.8rem;
+  }
+}
+.woocommerce a.remove:hover {
+  background-color: transparent;
+}
+.project-dt,
+.about-head {
+  .title-sc {
+    display: none;
+  }
+}
+
+.text-horiz {
+  pointer-events: none;
+}

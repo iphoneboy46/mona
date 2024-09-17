@@ -1,0 +1,39 @@
+.product-list {
+  &_head {
+    padding-bottom: 2.7rem;
+    @include bd-bot(#333333);
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    .sort-wrap {
+      // margin-left: auto;
+    }
+    @include maxW(426px) {
+      .select-box {
+        &:last-child {
+          .select-options {
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
+    @include xxs {
+      .select-box {
+        width: 100%;
+        .select-options {
+          width: 100%;
+          top: calc(100% + 1rem);
+        }
+      }
+    }
+  }
+  &-row {
+    --g-y: calc(var(--g-x) * 2);
+    @include md {
+      --g-x: 1.6rem;
+    }
+    @include xs {
+      --g-x: 1rem;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+extends layout/layout
+block vars
+    -title = 'GIỚI THIỆU'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper,JsCountUp1,JsCountUp2,JsCountUp3]
+    -jsComponents = ['header','duAn','CountUpModule']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper,CssAos]
+    -cssComponents = ["post","layout"]
+    -cssPages = ["about","contact"]
+
+block container
+    +box-title2("Trang chủ","","GIỚI THIỆU ","GIỚI THIỆU","")
+    section.layoutMain.ab 
+        .container 
+            .layoutMain_wrap
+                .layoutMain_box.d-wrap 
+                    .layoutMain_lf.d-item(data-aos="fade-right") 
+                        .layoutMain_lf--wrap 
+                            .about_intro 
+                                .about_intro--wrap 
+                                    .about_intro--top 
+                                        +box-title("SƠ LƯỢC VỀ","GIADINH TILES")
+                                    .about_intro--center 
+                                        p.note-text.cl-text2 Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại và trí thức sâu rộng là nên tảng giúp Gia Định Tiles vững bước trên con đường của thị trường quốc nội và quốc tế.
+                                    .about_intro--bottom 
+                                        .about_intro--bottom-list.d-wrap 
+                                            .about_intro--bottom-item.d-2.d-item 
+                                                .about_intro--bottom-item-wrap 
+                                                    .about_intro--bottom-item-num
+                                                        p.num 100
+                                                        span.plus +
+                                                    .about_intro--bottom-item-content 
+                                                        p.note-text.t-center.fw-5.cl-text Dự án đã hoàn thành
+                                            .about_intro--bottom-item.d-2.d-item 
+                                                .about_intro--bottom-item-wrap 
+                                                    .about_intro--bottom-item-num
+                                                        p.num 50
+                                                        span.plus +
+                                                    .about_intro--bottom-item-content 
+                                                        p.note-text.t-center.fw-5.cl-text Đối tác trong và ngoài nước
+                    .layoutMain_rt.d-item(data-aos="fade-left") 
+                        .layoutMain_rt--wrap 
+                            .layoutMain_rt--box 
+                                .layoutMain_rt--font
+                                    .layoutMain_rt--font-img
+                                        +img("ab.png")
+                                .layoutMain_rt--back
+                                    .layoutMain_rt--back-tt
+    section.about_hd 
+        .container 
+            .about_hd--wrap 
+                .about_hd--box.d-wrap 
+                    .about_hd--lf.d-item(data-aos="fade-right")
+                        .about_hd--lf-wrap 
+                            .about_hd--lf-img 
+                                +img("abhd.png")
+                    .about_hd--rt.d-item(data-aos="fade-left")
+                        .about_hd--rt-wrap
+                            .about_hd--rt-box 
+                                +box-title("LĨNH VỰC","HOẠT ĐỘNG")
+                                p.note-md.content.cl-white Tại Gia Định Tiles, chúng tôi chuyên sản xuất các sản phẩm gạch bông và terrazzo. Mỗi sản phẩm được thực hiện bởi các nghệ nhân lành nghề tại Việt Nam. đảm bảo sự chỉnh chu và tâm huyết trong từng viên gạch. Chúng tôi tận dụng nguồn nguyên vật liệu từ cả trong và ngoài nước, với tiêu chí chất lượng luôn được ưu tiên hàng đầu. Qua từng giai đoạn sản xuất, chúng tôi không ngừng phát triển và tỉnh chỉnh từ những chỉ tiết nhỏ, nhằm đảm bảo chất lượng bên bi và tối ưu chỉ phí.
+    section.about_cn.free-slide 
+        .container 
+            .about_cn--wrap 
+                .about_cn--box.d-wrap 
+                    .about_cn--lf.d-item(data-aos="fade-right") 
+                        .about_cn--lf-wrap
+                            .about_cn--lf-box 
+                                +box-title("CHỨNG NHẬN","GIADINH TILES")
+                                p.note-md.content.cl-text Gia Định Tiles tự tin với sự phát triển liên tục của mình. Hệ thông sản xuất tuân thủ chuẩn ISO 9001:2015, đảm bảo chất lượng và khả năng cung cấp sản phẩm hoàn hảo đề đáp ứng mọi nhu cầu của khách hàng. 
+                    .about_cn--rt.d-item(data-aos="fade-left") 
+                        .about_cn--rt-wrap
+                            .about_cn--rt-box
+                                .about_cn--rt-list.d-wrap
+                                    .swiper.mySwiper 
+                                        .swiper-wrapper 
+                                            .swiper-slide.d-item.d-2   
+                                                .about_cn--rt-item
+                                                    .about_cn--rt-item-wrap 
+                                                        a(href="./assets/images/cn.png" data-fancybox="cn").about_cn--rt-item-img.gallery 
+                                                            +img("cn.png")
+                                                        p.note-lg.fw-5.cl-pri.t-center ISO 22000:2005
+                                            .swiper-slide.d-item.d-2   
+                                                .about_cn--rt-item
+                                                    .about_cn--rt-item-wrap 
+                                                        a(href="./assets/images/cn.png" data-fancybox="cn").about_cn--rt-item-img.gallery 
+                                                            +img("cn.png")
+                                                        p.note-lg.fw-5.cl-pri.t-center ISO 22000:2005
+                                            .swiper-slide.d-item.d-2   
+                                                .about_cn--rt-item
+                                                    .about_cn--rt-item-wrap 
+                                                        a(href="./assets/images/cn.png" data-fancybox="cn").about_cn--rt-item-img.gallery 
+                                                            +img("cn.png")
+                                                        p.note-lg.fw-5.cl-pri.t-center ISO 22000:2005
+                                    .swiper-pagination
+    section.about_location 
+        .container 
+            .about_location--wrap 
+                .about_location--box.d-wrap 
+                    .about_location--lf.d-item(data-aos="fade-right")
+                        .about_location--lf-wrap 
+                            .about_location--lf-img 
+                                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.2327311131266!2d106.61112604229561!3d10.815633093576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be82ef43459%3A0xade88f06095f9fd0!2zQ8O0bmcgVHkgVE5ISCBL4bu5IFRodeG6rXQgVGnDqnUgxJBp4buDbQ!5e0!3m2!1svi!2s!4v1724934997745!5m2!1svi!2s" width="600" height="450" style="border:0;", allowfullscreen, loading="lazy" referrerpolicy="no-referrer-when-downgrade")
+                    .about_location--rt.d-item(data-aos="fade-left")
+                        .about_location--rt-wrap
+                            .about_location--rt-box 
+                                +box-title("ĐỊA CHỈ","SHOWROOM")
+                                .address_item
+                                    .address_item--ic 
+                                        +img("adic1.png")
+                                    .address_item--content
+                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú

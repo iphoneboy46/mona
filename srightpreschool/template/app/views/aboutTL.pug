@@ -1,0 +1,142 @@
+extends layout/layout
+block vars
+    -title = 'about'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 Giới thiệu
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Giới thiệu")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Công ty & Founder
+                            .swiper-slide.d-item
+                                a(href="").tab_item Vì sao Mầm non Sright ra đời
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Triết lý & Phương pháp giáo dục
+                            .swiper-slide.d-item
+                                a(href="").tab_item Đội ngũ giáo viên
+                    .swiper-scrollbar
+    section.about_tl 
+        .about_tl--wrap 
+            .valueAb.aboutTl
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up Triết lý SRIGHT
+                                                .box-content 
+                                                    p.note-lg SRIGHT® là cách viết kết hợp của:
+                                                    p.note-lg SRIGHT® là cách viết kết hợp của:
+                                                    ul
+                                                        li.note-lg.fw-7 S (Safety – An toàn về cả thể chất và tinh thần)
+                                                        li.note-lg.fw-7 RIGHT (Đúng đắn)
+                                                    p.note-lg Đây là 2 yếu tố có liên quan chặt chẽ tới khoa học não bộ được đề cao trong triết lý giáo dục SRIGHT.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abtl2.png")
+                        .valueAb_item.ani
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up Ý NGHĨA LogO SRIGHT 
+                                                .box-content 
+                                                    p.note-lg Hình ảnh bàn chân bên trái (LEFT) - và chữ RIGHT (bên phải) nhấn mạnh tầm quan trọng của việc phát triển đồng đều 2 bán cầu Não Phải & Não Trái của trẻ trong giai đoạn Vàng 0 -6 tuổi. Đây cũng chính là tâm huyết của nhà sáng lập SRIGHT Preschool: CÙNG NHAU ĐI ĐÚNG TRÊN CON ĐƯỜNG GIÁO DỤC SỚM.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abtl1.png")
+            .about_info.aboutTL
+                .about_info--bgs 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo2.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo3.png")
+                    .swiper-pagination.custom
+                .about_info--wrap
+                    +foot1()
+                    .container
+                        .about_info--box
+                            h3.title-mn.cl-red.fw-8  SLOGAN PHƯƠNG PHÁP SRIGHT
+                            h2.title-lg.fw-8.cl-red DO THE RIGHT THINGS RIGHT AT THE RIGHT TIME - GIÁO DỤC ĐÚNG NGAY TỪ ĐẦU
+                            p.note-lg.cl-red.fw-5 SRIGHT tiếp thu những điều đúng (RIGHT) của các phương pháp Giáo Dục Sớm trên thế giới dựa lý giải và áp dụng của Khoa Học Não Bộ.  SRIGHT hướng đến mục tiêu cụ thể: phát triển về lượng và chất các kết nối tế bào neuron thần kinh của 2 bán cầu não Trái & Phải cho trẻ trong giai đoạn vàng 0-6 tuổi, từ đó đạt được sự phát triển toàn diện nhất về trí não, chính là nền tảng vững chắc nhất để hướng tới hình ảnh em bé SRIGHTer toàn diện về NHÂN - TRÍ - LỰC.
+            .valueAb.aboutTl2
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up 
+                                                    |Phương pháp 
+                                                    br
+                                                    |giáo dục sớm
+                                                .box-content 
+                                                    p.note-lg SRIGHT® được phân tích với các nội dung sau: (đây là kim chỉ nam cho tất cả các hoạt động giáo dục và vận hành/ tổ chức của trường đảm bảo tính xuyên suốt, chặt chẽ cho phương pháp)
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abtl4.png")
+                        .valueAb_item.ani
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up 
+                                                    |Giai đoạn vàng phát triển
+                                                    br 
+                                                    |từng bán cầu não
+                                                .box-content 
+                                                    p.note-lg Hình ảnh bàn chân bên trái (LEFT) - và chữ RIGHT (bên phải) nhấn mạnh tầm quan trọng của việc phát triển đồng đều 2 bán cầu Não Phải & Não Trái của trẻ trong giai đoạn Vàng 0 -6 tuổi. Đây cũng chính là tâm huyết của nhà sáng lập SRIGHT Preschool: CÙNG NHAU ĐI ĐÚNG TRÊN CON ĐƯỜNG GIÁO DỤC SỚM.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abtl3.png")
+            .about_info
+                .about_info--bgs 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo2.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo3.png")
+                    .swiper-pagination.custom

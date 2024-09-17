@@ -1,0 +1,853 @@
+extends layout/layout
+block vars
+    -title = 'Home'
+    -mainClass = ''
+    -bodyClass = 'homePage'
+    -hdClass = ''
+
+block container
+    div(id="fullpage")  
+        section.banner_home.section
+            .banner_home--bg
+                +img("bnh.png")
+            .container
+                .banner_home--wrap
+                    .banner_home--box
+                        .box-title2
+                            .box-title2-box
+                                .box-title2-ic
+                                    +img("ictl.svg")
+                                p.note-sm.cl-white.t-up.t-center.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                            h1.title-lg.cl-white.fl-sec.t-up.t-center 
+                                |Tái Định Nghĩa 
+                                br
+                                |Cuộc Sống Thượng Lưu
+                        
+                        .find_room
+                            .find_room--wrap
+                                .find_room--list.d-wrap
+                                    .find_room--item.d-item
+                                        .find_room--item-wrap.chooseDate1
+                                            .find_room--item-lf
+                                                p.note-mn.cl-third.t-up NGÀY BẮT ĐẦU
+                                                .find_room--item-ip
+                                                    p.note-md.text-date1.fw-5.cl-pri 21/03/2024
+                                                    input(type="text" class="first datepicker")
+                                            .find_room--item-rt
+                                                .find_room--item-ic
+                                                    +img("fric1.svg")
+                                    .find_room--item.d-item
+                                        .find_room--item-wrap.chooseDate2
+                                            .find_room--item-lf
+                                                p.note-mn.cl-third.t-up NGÀY KẾT THÚC
+                                                .find_room--item-ip
+                                                    p.note-md.text-date2.fw-5.cl-pri 21/03/2024
+                                                    input(type="text" class="second datepicker" id="")
+                                            .find_room--item-rt
+                                                .find_room--item-ic
+                                                    +img("fric1.svg")
+                                    .find_room--item.d-item
+                                        .find_room--item-wrap
+                                            .find_room--item-lf
+                                                p.note-mn.cl-third.t-up NGƯỜI LỚN
+                                                .find_room--item-op
+                                                    select.js-op(data-placeholder="Số lượng")
+                                                        option
+                                                        option(value="option1") 01
+                                                        option(value="option2") 02
+                                                        option(value="option3") 03
+                                            .find_room--item-rt
+                                                .find_room--item-ic
+                                                    +img("fric2.svg")
+                                    .find_room--item.d-item
+                                        .find_room--item-wrap
+                                            .find_room--item-lf
+                                                p.note-mn.cl-third.t-up TRẺ EM
+                                                .find_room--item-op
+                                                    select.js-op(data-placeholder="Số lượng")
+                                                        option
+                                                        option(value="option1") 01
+                                                        option(value="option2") 02
+                                                        option(value="option3") 03
+                                            .find_room--item-rt
+                                                .find_room--item-ic
+                                                    +img("fric3.svg")
+                                    .find_room--item.d-item
+                                        .find_room--item-wrap
+                                            +btn("Tìm phòng","","","")
+        section.home_proud.section.hd1
+            .container
+                .home_proud--wrap
+                    .home_proud--box.d-wrap
+                        .home_proud--lf.d-item.d-2
+                            .home_proud--lf-wrap
+                                .box-title2
+                                    .box-title2-box
+                                        .box-title2-ic
+                                            +img("ictl.svg")
+                                        p.note-sm.cl-pri.t-up CÂU CHUYỆN THƯƠNG HIỆU
+                                    h2.title-md.cl-black.fl-sec.t-up Di sản kiêu hãnh giữa lòng Sài Gòn
+                                .home_proud--content
+                                    p.note-sm Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                    br
+                                    p.note-sm Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp. REGIIS – Legend Suites không chỉ là một nơi để sống, mà còn là nơi đầy hứa hẹn để kiến tạo cho bạn một biểu tượng mới cho cuộc sống thượng lưu. Nơi đây lưu giữ những giá trị di sản và trải nghiệm đẳng cấp bậc nhất
+                                .home_proud--btn
+                                    +btn("Tìm hiểu thêm","")
+                        .home_proud--rt.d-item.d-2
+                            .home_proud--rt-wrap
+                                .home_proud--bg
+                                    span.lines
+                                        span.line
+                                        span.line
+                                        span.line
+                                        span.line
+                                        span.line
+                                        span.line
+                                        span.line
+                                        span.line
+                                    .home_proud--img
+                                        +img("hds.png")
+        section.home_value.free-slide.section.hd1
+            .home_value--wrap
+                .home_value--box
+                    .home_value--title
+                        .container
+                            .box-title2
+                                .box-title2-box
+                                    .box-title2-ic
+                                        +img("ictl.svg")
+                                    p.note-sm.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                                h2.title-md.cl-black.fl-sec.t-up.t-center Giá trị độc tôn
+                    .home_value--list
+                        .home_value--bg
+                            +img("hv.jpg")
+                        .home_value--list-wrap
+                            .home_value--imgs
+                                .home_value--img
+                                    +img("hv2.jpeg")
+                                .home_value--img
+                                    +img("hv3.jpeg")
+                                .home_value--img
+                                    +img("hv4.jpeg")
+                                .home_value--img
+                                    +img("hv5.jpeg")
+                                .home_value--img
+                                    +img("hv6.jpeg")
+                            .home_value--items
+                                .swiper.mySwiper.--auto
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .home_value--item
+                                                .home_value--item-wrap
+                                                    .home_value--item-title
+                                                        h3.note-lg.cl-white.t-center.fl-sec Nơi tinh hoa hội tụ
+                                                    .home_value--item-content
+                                                        p.note-sm.cl-white.t-center REGIIS – Legend Suites là thương hiệu tiên phong và số một về dịch vụ quản lý và khai thác căn hộ dịch vụ hạng sang tại Việt Nam. Chúng tôi cam kết mang đến cho quý khách trải nghiệm sống thượng lưu, đẳng cấp và riêng biệt.
+                                                    .home_value--item-btn
+                                                        +btn("Tìm hiểu thêm","","","trans2")
+                                        .swiper-slide
+                                            .home_value--item
+                                                .home_value--item-wrap
+                                                    .home_value--item-title
+                                                        h3.note-lg.cl-white.t-center.fl-sec Thiết kế nội thất thông minh
+                                                    .home_value--item-content
+                                                        p.note-sm.cl-white.t-center REGIIS – Legend Suites là thương hiệu tiên phong và số một về dịch vụ quản lý và khai thác căn hộ dịch vụ hạng sang tại Việt Nam. Chúng tôi cam kết mang đến cho quý khách trải nghiệm sống thượng lưu, đẳng cấp và riêng biệt.
+                                                    .home_value--item-btn
+                                                        +btn("Tìm hiểu thêm","","","trans2")
+                                        .swiper-slide
+                                            .home_value--item
+                                                .home_value--item-wrap
+                                                    .home_value--item-title
+                                                        h3.note-lg.cl-white.t-center.fl-sec Bản giao hưởng kiến trúc
+                                                    .home_value--item-content
+                                                        p.note-sm.cl-white.t-center REGIIS – Legend Suites là thương hiệu tiên phong và số một về dịch vụ quản lý và khai thác căn hộ dịch vụ hạng sang tại Việt Nam. Chúng tôi cam kết mang đến cho quý khách trải nghiệm sống thượng lưu, đẳng cấp và riêng biệt.
+                                                    .home_value--item-btn
+                                                        +btn("Tìm hiểu thêm","","","trans2")
+                                        .swiper-slide
+                                            .home_value--item
+                                                .home_value--item-wrap
+                                                    .home_value--item-title
+                                                        h3.note-lg.cl-white.t-center.fl-sec Trải nghiệm đẳng cấp
+                                                    .home_value--item-content
+                                                        p.note-sm.cl-white.t-center REGIIS – Legend Suites là thương hiệu tiên phong và số một về dịch vụ quản lý và khai thác căn hộ dịch vụ hạng sang tại Việt Nam. Chúng tôi cam kết mang đến cho quý khách trải nghiệm sống thượng lưu, đẳng cấp và riêng biệt.
+                                                    .home_value--item-btn
+                                                        +btn("Tìm hiểu thêm","","","trans2")
+                                        .swiper-slide           
+                                            .home_value--item
+                                                .home_value--item-wrap
+                                                    .home_value--item-title
+                                                        h3.note-lg.cl-white.t-center.fl-sec Dịch vụ hoàng gia
+                                                    .home_value--item-content
+                                                        p.note-sm.cl-white.t-center REGIIS – Legend Suites là thương hiệu tiên phong và số một về dịch vụ quản lý và khai thác căn hộ dịch vụ hạng sang tại Việt Nam. Chúng tôi cam kết mang đến cho quý khách trải nghiệm sống thượng lưu, đẳng cấp và riêng biệt.
+                                                    .home_value--item-btn
+                                                        +btn("Tìm hiểu thêm","","","trans2")
+                    .swiper-pagination
+        section.home_choose.section.hd2.free-slide
+            .container
+                .home_choose--wrap
+                    .box-title2
+                        .box-title2-box
+                            .box-title2-ic
+                                +img("ictl.svg")
+                            p.note-sm.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                        h2.title-md.cl-white.fl-sec.t-up.t-center Lựa chọn không gian đẳng cấp
+                    .home_choose--box
+                        .home_choose--bg
+                            .home_choose--list.d-wrap
+                                .swiper.mySwiper.--center.--loop
+                                    .swiper-wrapper
+                                        .swiper-slide.d-item
+                                            .home_choose--item
+                                                a(href="").home_choose--link
+                                                    span.home_choose--item-bg
+                                                        span.home_choose--item-img
+                                                            +img("c1.png")
+                                                        span.lines
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                    span.home_choose--item-box
+                                                        span.home_choose--item-title
+                                                            h3.title-sm3.cl-white.t-center.fl-sec Junior Suite
+                                                        span.home_choose--item-des
+                                                            ul.utilities_lf--list.d-wrap
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic4.svg")
+                                                                        p.note-text.cl-black2 Area 100m2
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic2.svg")
+                                                                        p.note-text.cl-black2 King’s bed
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic3.svg")
+                                                                        p.note-text.cl-black2 2-4 people
+                                                        ul.home_choose--item-ics
+                                                            li.home_choose--item-ic
+                                                                +img("hcic1.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic2.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic3.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic4.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic5.svg")
+                                                        .room_price 
+                                                            p.room_price--sale 500.000 vnđ/ Đêm
+                                                            p.room_price--normal 900.000 vnđ/ Đêm
+                                                .home_choose--btns
+                                                    +btn("Xem chi tiết","","","trans3")
+                                                    button.btn.popup-btn.cl-3(data-popup="popup-booking") 
+                                                        p.btn-text Đặt phòng
+                                        .swiper-slide.d-item
+                                            .home_choose--item
+                                                a(href="").home_choose--link
+                                                    span.home_choose--item-bg
+                                                        span.home_choose--item-img
+                                                            +img("c2.png")
+                                                        span.lines
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                    span.home_choose--item-box
+                                                        span.home_choose--item-title
+                                                            h3.title-sm3.cl-white.t-center.fl-sec Junior Suite
+                                                        span.home_choose--item-des
+                                                            ul.utilities_lf--list.d-wrap
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic4.svg")
+                                                                        p.note-text.cl-black2 Area 100m2
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic2.svg")
+                                                                        p.note-text.cl-black2 King’s bed
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic3.svg")
+                                                                        p.note-text.cl-black2 2-4 people
+                                                        ul.home_choose--item-ics
+                                                            li.home_choose--item-ic
+                                                                +img("hcic1.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic2.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic3.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic4.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic5.svg")
+                                                        .room_price 
+                                                            p.room_price--sale 500.000 vnđ/ Đêm
+                                                            p.room_price--normal 900.000 vnđ/ Đêm
+                                                .home_choose--btns
+                                                    +btn("Xem chi tiết","","","trans3")
+                                                    button.btn.popup-btn.cl-3(data-popup="popup-booking") 
+                                                        p.btn-text Đặt phòng
+                                        .swiper-slide.d-item
+                                            .home_choose--item
+                                                a(href="").home_choose--link
+                                                    span.home_choose--item-bg
+                                                        span.home_choose--item-img
+                                                            +img("c3.png")
+                                                        span.lines
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                            span.line
+                                                    span.home_choose--item-box
+                                                        span.home_choose--item-title
+                                                            h3.title-sm3.cl-white.t-center.fl-sec Junior Suite
+                                                        span.home_choose--item-des
+                                                            ul.utilities_lf--list.d-wrap
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic4.svg")
+                                                                        p.note-text.cl-black2 Area 100m2
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic2.svg")
+                                                                        p.note-text.cl-black2 King’s bed
+                                                                li.utilities_lf--item.d-item.d-3
+                                                                    .utilities_lf--item-wrap
+                                                                        span.ic
+                                                                            +img("tic3.svg")
+                                                                        p.note-text.cl-black2 2-4 people
+                                                        ul.home_choose--item-ics
+                                                            li.home_choose--item-ic
+                                                                +img("hcic1.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic2.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic3.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic4.svg")
+                                                            li.home_choose--item-ic
+                                                                +img("hcic5.svg")
+                                                        .room_price 
+                                                            p.room_price--sale 500.000 vnđ/ Đêm
+                                                            p.room_price--normal 900.000 vnđ/ Đêm
+                                                .home_choose--btns
+                                                    +btn("Xem chi tiết","","","trans3")
+                                                    button.btn.popup-btn.cl-3(data-popup="popup-booking") 
+                                                        p.btn-text Đặt phòng
+                            .swiper-pagination
+                            +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+        section.home_ser.section.hd1
+            .home_ser--wrap
+                .home_ser--list
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--font
+                                .home_ser--font-img
+                                    +img("hs1.png")
+                                .home_ser--font-title
+                                    h2.title-sm3.fl-sec.t-center.fw-5.cl-white Restaurent
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--back
+                                .box-title2
+                                    .box-title2-box
+                                        .box-title2-ic
+                                            +img("ictl.svg")
+                                        p.note-md.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                                    h2.title-md.cl-black.fl-sec.t-up.t-center Dịch vụ & Tiện ích
+                                .home_ser--back-content
+                                    p.note-sm.t-center.cl-second Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. 
+                                +btn("Tìm hiểu thêm")
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--font
+                                .home_ser--font-img
+                                    +img("hs3.png")
+                                .home_ser--font-title
+                                    h2.title-sm3.fl-sec.t-center.fw-5.cl-white Swimming pool
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--font
+                                .home_ser--font-img
+                                    +img("hs4.png")
+                                .home_ser--font-title
+                                    h2.title-sm3.fl-sec.t-center.fw-5.cl-white Pick-Up
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--font
+                                .home_ser--font-img
+                                    +img("hs5.png")
+                                .home_ser--font-title
+                                    h2.title-sm3.fl-sec.t-center.fw-5.cl-white House Keeping
+                    .home_ser--item
+                        .home_ser--item-wrap
+                            .home_ser--font
+                                .home_ser--font-img
+                                    +img("hs6.png")
+                                .home_ser--font-title
+                                    h2.title-sm3.fl-sec.t-center.fw-5.cl-white Gym
+        section.home_sale.section.hd1
+            .container
+                .home_sale--wrap
+                    .box-title2
+                        .box-title2-box
+                            .box-title2-ic
+                                +img("ictl.svg")
+                            p.note-sm.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                        h2.title-md.cl-black.fl-sec.t-up.t-center ưu đãi đặt biệt
+                    .home_sale--list.d-wrap
+                        .home_sale--item.d-item
+                            .home_sale--item-wrap
+                                .home_sale--item-img
+                                    +img("ud1.png")
+                                .home_sale--item-box
+                                    .home_sale--item-title
+                                        h3.title-sm2.cl-white.fl-sec Expert
+                                    .home_sale--item-btn
+                                        +btn("Xem chi tiết","","","trans2")
+                        .home_sale--item.d-item
+                            .home_sale--item-wrap
+                                .home_sale--item-img
+                                    +img("ud2.png")
+                                .home_sale--item-box
+                                    .home_sale--item-title
+                                        h3.title-sm2.cl-white.fl-sec Sweet couple
+                                    .home_sale--item-btn
+                                        +btn("Xem chi tiết","","","trans2")
+                        .home_sale--item.d-item
+                            .home_sale--item-wrap
+                                .home_sale--item-img
+                                    +img("ud3.png")
+                                .home_sale--item-box
+                                    .home_sale--item-title
+                                        h3.title-sm2.cl-white.fl-sec Oversea Vietnamese
+                                    .home_sale--item-btn
+                                        +btn("Xem chi tiết","","","trans2")
+                        .home_sale--item.d-item
+                            .home_sale--item-wrap
+                                .home_sale--item-img
+                                    +img("ud4.png")
+                                .home_sale--item-box
+                                    .home_sale--item-title
+                                        h3.title-sm2.cl-white.fl-sec Tourist
+                                    .home_sale--item-btn
+                                        +btn("Xem chi tiết","","","trans2")
+                        .home_sale--item.d-item
+                            .home_sale--item-wrap
+                                .home_sale--item-img
+                                    +img("ud5.png")
+                                .home_sale--item-box
+                                    .home_sale--item-title
+                                        h3.title-sm2.cl-white.fl-sec Business trip
+                                    .home_sale--item-btn
+                                        +btn("Xem chi tiết","","","trans2")
+        section.home_alb.section.hd1
+            .home_alb--wrap.tab-box
+                .home_alb--title
+                    .container
+                        .home_alb--title-wrap
+                            .box-title2
+                                .box-title2-box
+                                    .box-title2-ic
+                                        +img("ictl.svg")
+                                    p.note-sm.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                                h2.title-md.cl-black.fl-sec.t-up.t-center hình ảnh & video của chúng tôi
+                            .home_alb--btns
+                                button.btn.trans3.home_alb--btn.tab-btn.actived
+                                    span.btn-text Images
+                                button.btn.trans3.home_alb--btn.tab-btn
+                                    span.btn-text Videos
+                .home_alb--list
+                    .home_alb--item.tab-content.showed
+                        .home_alb--item-wrap
+                            .home_alb--item-slide.d-wrap
+                                .splide
+                                    .splide__slider
+                                        .splide__track
+                                            .splide__list
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i1.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i1.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i2.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i2.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i3.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i3.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i3.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i4.png", alt)
+                            .home_alb--item-slide.d-wrap
+                                .splide
+                                    .splide__slider
+                                        .splide__track
+                                            .splide__list
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i1.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i1.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i2.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i2.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i3.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i3.png", alt)
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img(href="./assets/images/i3.png", data-fancybox="gallery")
+                                                        img(src="./assets/images/i4.png", alt)
+                    .home_alb--item.tab-content
+                        .home_alb--item-wrap
+                            .home_alb--item-slide.d-wrap
+                                .splide
+                                    .splide__slider
+                                        .splide__track
+                                            .splide__list
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i1.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i2.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i3.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i4.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                            .home_alb--item-slide.d-wrap
+                                .splide
+                                    .splide__slider
+                                        .splide__track
+                                            .splide__list
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i1.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i2.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i3.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+                                                .splide__slide.d-item
+                                                    a.home_alb--item-img.vd(href="https://www.youtube.com/watch?v=b_pcHCfW4S4", data-fancybox="gallery")
+                                                        img(src="./assets/images/i4.png", alt)
+                                                        span.btn-play
+                                                            span.btn-play-tt
+                                                            span.btn-play-ic
+                                                                i.fas.fa-play
+        section.home_news.section.hd1
+            .container
+                .home_news--wrap
+                    .box-title2
+                        .box-title2-box
+                            .box-title2-ic
+                                +img("ictl.svg")
+                            p.note-sm.cl-pri.t-up.t-center CÂU CHUYỆN THƯƠNG HIỆU
+                        h2.title-md.cl-black.fl-sec.t-up.t-center Hôm nay chúng tôi có gì mới
+                    .home_news--list
+                        .news_nb--list.d-wrap
+                            .news_nb--item.d-item
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("nnb1.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--note
+                                                    p.note-mn.cl-gray4 Tin tức & sự kiện
+                                                    p.note-mn.cl-gray4 01/04/2024
+                                                h3.title.note-text.cl-second.fl-sec.fw-5
+                                                    a(href="") Tổ chức hội thảo "Du lịch xanh - Xu hướng mới của ngành du lịch"
+                            .news_nb--item.d-item
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("nnb2.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--note
+                                                    p.note-mn.cl-gray4 Tin tức & sự kiện
+                                                    p.note-mn.cl-gray4 01/04/2024
+                                                h3.title.note-text.cl-second.fl-sec.fw-5
+                                                    a(href="") Công cụ tìm kiếm các thông tin trong website.
+                            .news_nb--item.d-item
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("nnb3.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--note
+                                                    p.note-mn.cl-gray4 Tin tức & sự kiện
+                                                    p.note-mn.cl-gray4 01/04/2024
+                                                h3.title.note-text.cl-second.fl-sec.fw-5
+                                                    a(href="") Công cụ tìm kiếm các thông tin trong website.
+                    .home_news--btn
+                        +btn("Xem tất cả","","","")
+        section.home_contact.hd2.section
+            .home_contact--bg
+                +img("bnh.png")
+            .container  
+                .home_contact--wrap.d-wrap
+                    .home_contact--lf.d-item.d-2
+                        .home_contact--lf-wrap
+                            .contact_lf--wrap
+                                .box-title2
+                                    h2.title-md.cl-white.fl-sec.t-up Thông tin liên hệ
+                                    p.note-sm.cl-white2 REGIIS – Legend Suites không chỉ là một nơi để sống, mà còn là nơi đầy hứa hẹn để kiến tạo cho bạn một biểu tượng mới cho cuộc sống thượng lưu
+                                ul.address_list
+                                    li.address_item
+                                        .address_item--ic
+                                            +img("hctic1.svg")
+                                        .address_item--content
+                                            p.note-sm Hoạt động:
+                                            a.address_link(href="") 09:00 AM – 21:00 PM
+                                    li.address_item
+                                        .address_item--ic
+                                            +img("hctic2.svg")
+                                        .address_item--content
+                                            p.note-sm Điện thoại:
+                                            a.address_link(href="") 0123 456 789
+                                    li.address_item
+                                        .address_item--ic
+                                            +img("hctic3.svg")
+                                        .address_item--content
+                                            p.note-sm Địa chỉ:
+                                            a.address_link(href="") 33 Trần Bạch Đằng, Q.2, TP. Thủ Đức, TP. HCM
+                                    li.address_item
+                                        .address_item--ic
+                                            +img("hctic4.svg")
+                                        .address_item--content
+                                            p.note-sm Email:
+                                            a.address_link(href="") info@regiissuites.com
+                    .home_contact--rt.d-item.d-2
+                        .home_contact--rt-wrap
+                            .home_contact--title
+                                h2.title-md.fl-sec.fw-5.cl-pri.t-center Kết nối với chúng tôi
+                            .home_contact--form
+                                form
+                                    .home_contact--list
+                                        .home_contact--item
+                                            .form-item
+                                                label(for="name").form-item-lb Họ và tên
+                                                input#name.form-item-ip(type="text", name="name", placeholder="Họ và tên của bạn")
+                                        .home_contact--item
+                                            .form-item
+                                                label(for="phone").form-item-lb Số điện thoại
+                                                input#phone.form-item-ip(type="text", name="name", placeholder="Số điện thoại của bạn")
+                                        .home_contact--item
+                                            .form-item
+                                                label(for="email").form-item-lb Email
+                                                input#email.form-item-ip(type="text", name="name", placeholder="Email của bạn")
+                                        .home_contact--item
+                                            .form-item
+                                                label(for="note").form-item-lb Lời nhắn
+                                                textarea#note.form-item-tx(type="text", name="name", placeholder="Lời nhắn của bạn")
+                                    +btn("Gửi thông tin","","","")
+        section.home_footer.hd2.section
+            .home_footer--wrap
+                .home_footer--top
+                    .container
+                        .home_footer--top-wrap
+                            .footer_wrap
+                                .footer_top
+                                    .footer_top--wrap
+                                        .footer_title
+                                            .footer_logo
+                                                +img("logoFT.svg")
+                                            p.note-sm.cl-white2.t-center REGIIS – Legend Suites không chỉ là một nơi để sống, mà còn là nơi đầy hứa hẹn để kiến tạo cho bạn một biểu tượng mới cho cuộc sống thượng lưu. Nơi đây lưu giữ những giá trị di sản và trải nghiệm đẳng cấp bậc nhất.
+                                .footer_center
+                                    .footer_center--wrap.d-wrap
+                                        .footer_center--item.d-item
+                                            .footer_center--item-wrap
+                                                p.title-mn.cl-white.fl-sec.fw-5 Menu
+                                                ul.menu-list
+                                                    -
+                                                        const ft3s = [
+                                                            {
+                                                                title:"REGIIS STORY",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Giá trị",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Phòng",
+                                                                dropdown:true
+                                                            },
+                                                            {
+                                                                title:"Tiện ích",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Gói",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"hình ảnh",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Liên hệ",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Tin tức",
+                                                                dropdown:false
+                                                            }
+                                                        ]
+                                                    each ft , i in ft3s
+                                                        li.menu-item
+                                                            a(href="").menu-link #{ft.title}
+                                        .footer_center--item.d-item
+                                            .footer_center--item-wrap
+                                                p.title-mn.cl-white.fl-sec.fw-5.t-center Liên Hệ
+                                                .address
+                                                    ul.address_list
+                                                        li.address_item
+                                                            .address_item--content
+                                                                p.note-sm Hoạt động:
+                                                                a.address_link(href="") 09:00 AM – 21:00 PM
+                                                        li.address_item
+                                                            .address_item--content
+                                                                p.note-sm Điện thoại:
+                                                                a.address_link(href="") 0123 456 789
+                                                        li.address_item
+                                                            .address_item--content
+                                                                p.note-sm Địa chỉ:
+                                                                a.address_link(href="") 33 Trần Bạch Đằng, Q.2, TP. Thủ Đức, TP. HCM
+                                                        li.address_item
+                                                            .address_item--content
+                                                                p.note-sm Email:
+                                                                a.address_link(href="") info@regiissuites.com
+                                                .social
+                                                    ul.social_list
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic1.svg")
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic2.svg")
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic3.svg")
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic4.svg")
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic5.svg")
+                                                        li.social_item
+                                                            a(href="").social_link 
+                                                                span.social_img
+                                                                    +img("sic6.svg")
+                                        .footer_center--item.d-item
+                                            .footer_center--item-wrap
+                                                p.title-mn.cl-white.fl-sec.fw-5 Chính sách
+                                                ul.menu-list
+                                                    -
+                                                        const ft4s = [
+                                                            {
+                                                                title:"Quy định chung",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Giá trị",
+                                                                dropdown:false
+                                                            },
+                                                            {
+                                                                title:"Phòng",
+                                                                dropdown:true
+                                                            },
+                                                            {
+                                                                title:"Tiện ích",
+                                                                dropdown:false
+                                                            },
+                                                            
+                                                        ]
+                                                    each ft , i in ft4s
+                                                        li.menu-item
+                                                            a(href="").menu-link #{ft.title}
+                .home_footer--bottom
+                    .container
+                        .home_footer--bottom-wrap
+                            p.note-mn.cl-white2 © 2024 Regiis. All rights reserved.
+                            .footer_bottom
+                                .footer_bottom--wrap
+                                    .footer_btn
+                                        +btn("Royal Island Commerce","","","trans")
+                                        +btn("Royal Island Company","","","trans")
+
+    .loading
+        .loading_wrap
+            .loading_top
+                .loading_logos
+                    .loading_logo
+                        +img("loading2.svg")
+                    .loading_logo.logo2
+                        +img("loading2.svg")
+                span.loading_line
+            .loading_bottom
+                .loading_title
+                    p.title-sm2.fl-sec.cl-white.t-up.t-center.fw-7 SERVICED APARTMENTS 
+                    p.title-mn.fl-sec.cl-white.t-center 
+                        |Căn hộ dịch vụ
+                        br
+                        |Vị trí vàng - Trung tâm Khu đô thị mới Thủ Thiêm, TP.HCM

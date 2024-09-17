@@ -1,0 +1,87 @@
+extends layout/layout
+block vars
+    -title = 'news'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery, JsAos, JsSwiper,JsAos]
+    -jsComponents = ['header',"scrollAni","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssSwiper,CssAos]
+    -cssComponents = ['banner']
+    -cssPages = ["news","contact"]
+
+block container
+    +banner-main("bnNews.png","Khuyến Mãi & Tin Tức")
+    section.news.free-slide
+        .container 
+            .news_wrap 
+                .news_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n2.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Grab Dine - In
+                                        p.note-text.cl-text2.t-center.content 20% off tổng hoá đơn
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n3.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Gift of the Month
+                                        p.note-text.cl-text2.t-center.content Tặng 1 chai vang trắng 
+                            .swiper-slide.d-3.d-item
+                                .news_link
+                                    a.news_link--img(href="")
+                                        +img("n1.png")
+                                    .news_link--box 
+                                        a(href="").note-lg.title.fw-7.cl-text2.t-center Crab Day Craze
+                                        p.note-text.cl-text2.t-center.content Giảm 50% cho con cua thịt thứ 2  
+                    +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    //- section.banner_qc.ani 
+    //-     .banner_qc--wrap 
+    //-         .banner_qc--img 
+    //-             +img("bnqc.png")
+    section.banner_code 
+        .container 
+            .banner_code--wrap(data-aos="zoom-out") 
+                .banner_code--box.d-wrap 
+                    .banner_code--lf.d-item 
+                        .banner_code--lf-wrap 
+                            .banner_code--lf-top
+                                .banner_code--lf-img 
+                                    +img("bannerLogoCode.png")
+                                .banner_code--lf-content 
+                                    .banner_code--lf-content-top 
+                                        .banner_code--lf-content-top-lf 
+                                            p.note-text(data-lb="BEYOND") BEYOND
+                                        .banner_code--lf-content-top-rt     
+                                            p.title-sm2.cl-white.fw-7.t-up PRIVILEGE
+                                            p.title-sm2.cl-white.fw-7.t-up EXPECTATION
+                                    .banner_code--lf-content-bottom 
+                                        p.note-text
+                                            |Mở Khóa Lợi Ích Quyền Năng 
+                                            strong.fw-7 IN REWARDS
+                                        p.note-md.fw-7.t-up.cl-white
+                                            |GIẢM NGAY
+                                            strong 10 
+                                            |KHI ĐĂNG KÝ TẠI 13 THƯƠNG HIỆU THUỘC IN DINING
+                            .banner_code--lf-bottom 
+                                .banner_code--lf-btns 
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnApp.png")
+                                    a(href="").banner_code--lf-btn
+                                        +img("btnCh.png")
+                    .banner_code--rt.d-item 
+                        .banner_code--rt-wrap
+                            .banner_code--rt-img   
+                                +img("bgcode.png")

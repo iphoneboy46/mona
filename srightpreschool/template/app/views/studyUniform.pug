@@ -1,0 +1,70 @@
+extends layout/layout
+block vars
+    -title = 'study'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 HỌC TẬP TẠI SRIGHT
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","HỌC TẬP TẠI SRIGHT")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chương trình học
+                            .swiper-slide.d-item
+                                a(href="").tab_item Một ngày của bé
+                            .swiper-slide.d-item
+                                a(href="").tab_item Thực đơn
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Đồng phục
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chăm sóc sức khoẻ
+                    .swiper-scrollbar
+    section.study_uniform 
+        .study_uniform--wrap
+            .valueAb.studyUniform
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up sự thoải mái
+                                                .box-content 
+                                                    p.note-lg Đồng phục cho trẻ được Mầm non song ngữ Giáo dục sớm SRIGHT của chúng tôi thiết kế để đảm bảo sự thoải mái, an toàn và tiện lợi cho việc hoạt động hàng ngày. Các kiểu đồng phục cho trẻ bao gồm áo thun polo, áo phông kèm quần short hoặc váy đơn giản, được làm từ chất liệu cotton thoáng khí và dễ giặt. Màu sắc là màu pastel nhẹ nhàng và trung tính tạo cảm giác dễ chịu và gần gũi với trẻ. Đồng phục cũng có in, thêu logo của trung tâm để nhận diện dễ dàng.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("stu1.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up cảm giác gần gũi
+                                                .box-content
+                                                    p.note-lg Các kiểu đồng phục cho trẻ bao gồm áo thun polo, áo phông kèm quần short hoặc váy đơn giản, được làm từ chất liệu cotton thoáng khí và dễ giặt. Màu sắc là màu pastel nhẹ nhàng và trung tính tạo cảm giác dễ chịu và gần gũi với trẻ. Đồng phục cũng có in, thêu logo của trung tâm để nhận diện dễ dàng.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("stu2.png")
+        

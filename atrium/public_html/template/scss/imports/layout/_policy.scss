@@ -1,0 +1,41 @@
+.policy {
+  &_content {
+    margin-top: 6.7rem;
+    background: #1a1a1a;
+    padding: 6.4rem 20.1rem;
+    .content-wrap {
+      .title {
+        font-size: var(--h3-fs);
+        line-height: var(--h3-lh);
+        font-weight: 500;
+        color: #e6e6e6;
+        margin: 2.4rem 0;
+      }
+      p {
+        color: #e6e6e6;
+        margin: 1.6rem 0;
+      }
+    }
+    .content-item {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    @include lg {
+      --px: 6rem;
+      padding: var(--px) calc(var(--px) * 2);
+    }
+    @include md {
+      --px: 4rem;
+      margin-top: 4rem;
+    }
+    @include sm {
+      --px: 2.4rem;
+      margin-top: 2.4rem;
+    }
+    @include xs {
+      --px: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+extends layout/layout
+block vars
+    -title = 'Hình ảnh'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = 'no-bn'
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Home
+                    li.breadcrumbs-item.current
+                        a.breadcrumbs-link(href='') ưU ĐÃi
+    .cate.cus.free-slide2
+        .container
+            .cate_wrap
+                .cate_list.d-wrap
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                label.cate_item
+                                    input(type="radio" name="dm" checked="checked")
+                                    p.note-text TẤT CẢ
+                            .swiper-slide.d-item
+                                label.cate_item
+                                    input(type="radio" name="dm")
+                                    p.note-text PHÒNG
+                            .swiper-slide.d-item
+                                label.cate_item
+                                    input(type="radio" name="dm")
+                                    p.note-text BỮA TỐI THƯƠNG GIA
+                            .swiper-slide.d-item
+                                label.cate_item
+                                    input(type="radio" name="dm")
+                                    p.note-text CHĂM SÓC SỨC KHỎE
+                    .swiper-scrollbar
+    section.gala
+        .container
+            .gala_wrap
+                .gala_list
+                    .gala_item
+                        a.gala_img(href="./assets/images/g1.png" data-fancybox="gallery")
+                            +img("g1.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g2.png" data-fancybox="gallery")
+                            +img("g2.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g3.png" data-fancybox="gallery")
+                            +img("g3.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g4.png" data-fancybox="gallery")
+                            +img("g4.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g5.png" data-fancybox="gallery")
+                            +img("g5.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g6.png" data-fancybox="gallery")
+                            +img("g6.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g7.png" data-fancybox="gallery")
+                            +img("g6.png")
+                    .gala_item
+                        a.gala_img(href="./assets/images/g8.png" data-fancybox="gallery")
+                            +img("g8.png")
+                +pagination()

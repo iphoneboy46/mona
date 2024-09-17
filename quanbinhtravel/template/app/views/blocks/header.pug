@@ -1,0 +1,445 @@
+block vars
+  -title = 'Template'
+  -mainClass = ''
+  -bodyClass = ''
+  -hdClass = ''
+header.header(class=hdClass)
+  .container 
+    .header_wrap
+      .header_lf
+        .header_mobi.btn-mobi
+          span.line
+          span.line  
+          span.line  
+        a(href="").header_logo
+          +img("logoHD.png")
+      .header_ct
+        .header_nav
+          ul.menu-list
+            -
+              const hd1s = [
+                {
+                  title:"Giới thiệu",
+                  dropdown:false,
+                  mega:false
+                },
+                {
+                  title:"Khách hàng",
+                  dropdown:false,
+                  mega:false
+                },
+                {
+                  title:"Tuyển dụng",
+                  dropdown:false,
+                  mega:false
+                },
+                {
+                  title:"Kinh nghiệm",
+                  dropdown:true,
+                  mega:false
+                },
+                {
+                  title:"Tour",
+                  dropdown:false,
+                  mega:true
+                },
+              ]
+            each hd , i in hd1s
+              if hd.dropdown === true && hd.mega === false
+                li.menu-item.dropdown
+                  a(href="#").menu-link #{hd.title}
+                  ul.menu-list
+                    li.menu-item
+                      a(href="").menu-link Item 1
+                    li.menu-item
+                      a(href="").menu-link Item 2
+                    li.menu-item
+                      a(href="").menu-link Item 3
+              else if i == 0
+                li.menu-item.current-menu-item
+                  a(href="#").menu-link #{hd.title}
+              else if hd.dropdown === false && hd.mega === true
+                li.menu-item.dropdown
+                  a(href="#").menu-link #{hd.title}
+                  .menu-mega 
+                    .menu-mega-wrap.d-wrap 
+                      .menu-mega-lf.d-item 
+                        .menu-mega-lf-wrap 
+                          .menu-mega-lf-list 
+                            .menu-mega-lf-item
+                              .menu-mega-lf-item-wrap
+                                p.note-md.fw-6 Tour Quảng Bình
+                                ul.menu-mega-lf-item-list
+                                  li.menu-mega-lf-item-item.menuMegaLf.actived 
+                                    a.menu-mega-lf-item-link(href="") Tour ghép Quảng Bình hằng ngày
+                                  li.menu-mega-lf-item-item.menuMegaLf
+                                    a.menu-mega-lf-item-link(href="") Du lịch biển Nhật Lệ - Quảng Bình
+                                  li.menu-mega-lf-item-item.menuMegaLf
+                                    a.menu-mega-lf-item-link(href="") Du lịch tâm linh - Quảng Bình
+                                  li.menu-mega-lf-item-item.menuMegaLf 
+                                    a.menu-mega-lf-item-link(href="") Viếng mộ Đại Tướng Võ Nguyên Giáp
+                            .menu-mega-lf-item
+                              .menu-mega-lf-item-wrap
+                                p.note-md.fw-6 Du lịch mạo hiểm
+                                ul.menu-mega-lf-item-list
+                                  li.menu-mega-lf-item-item.menuMegaLf
+                                    a.menu-mega-lf-item-link(href="") Du lịch mạo hiểm
+                                  li.menu-mega-lf-item-item.menuMegaLf 
+                                    a.menu-mega-lf-item-link(href="") Du lịch Động Phong Nha
+                                  li.menu-mega-lf-item-item.menuMegaLf 
+                                    a.menu-mega-lf-item-link(href="") Du lịch Động Thiên Đường
+                      .menu-mega-rt.d-item 
+                        .menu-mega-rt-wrap
+                          .menu-mega-rt-list 
+                            .menu-mega-rt-item.menuMegaRt.showed 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg1s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối"
+                                      }
+                                    ]
+                                  each mg , i in mg1s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg2s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 2"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 2"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 2"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 2"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 2"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 2"
+                                      }
+                                    ]
+                                  each mg , i in mg2s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg3s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 3"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 3"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 3"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 3"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 3"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 3"
+                                      }
+                                    ]
+                                  each mg , i in mg3s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg4s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 4"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 4"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 4"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 4"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 4"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 4"
+                                      }
+                                    ]
+                                  each mg , i in mg4s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg5s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 5"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 5"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 5"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 5"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 5"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 5"
+                                      }
+                                    ]
+                                  each mg , i in mg5s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg6s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 6"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 6"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 6"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 6"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 6"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 6"
+                                      }
+                                    ]
+                                  each mg , i in mg6s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                            .menu-mega-rt-item.menuMegaRt 
+                              .menu-mega-rt-item-wrap
+                                ul.menu-mega-rt-item-list.d-wrap
+                                  - 
+                                    const mg7s = [
+                                      {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                      },
+                                      {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                      },
+                                      {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                      },
+                                      {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 7"
+                                      },
+                                      {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 7"
+                                      },
+                                      {
+                                        img:"t6.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 7"
+                                      }
+                                    ]
+                                  each mg , i in mg7s
+                                    li.menu-mega-rt-item-item.d-item.d-3      
+                                      +tour(mg.img,mg.show,mg.best,mg.title)
+                  //- .menu-mega-modal
+              else
+                li.menu-item
+                  a(href="#").menu-link #{hd.title}
+      .header_rt
+        .header_box
+          .header_dm 
+            button.btn.btn-dm
+              span.btn-ic 
+                +img("mnICDM.png")
+              span.btn-text Danh mục
+          .header_lang 
+            .header_lang--title 
+              .header_lang--title-wrap
+                span.ic
+                  +img("langic1.png")
+                p.note-text.cl-text2 VN
+            .header_lang--list 
+              .header_lang--item 
+                a(href="").header_lang--link 
+                  span.ic 
+                    +img("langic2.png")
+                  p.note-text VN
+              .header_lang--item 
+                a(href="").header_lang--link 
+                  span.ic 
+                    +img("langic3.png")
+                  p.note-text EN
+          .header_btn 
+            a.btn(href="")
+              span.btn-ic 
+                +img("hdbtnic.png")
+              span.btn-text Đặt Tour Ngay
+
+
+
+

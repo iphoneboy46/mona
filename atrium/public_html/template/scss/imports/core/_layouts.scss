@@ -1,0 +1,92 @@
+@-ms-viewport {
+  width: device-width;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  @include customscroll();
+}
+textarea,
+input,
+a {
+  color: $body-text;
+}
+html {
+  font-size: 62.5%; // => 10px = 1rem
+  scroll-behavior: smooth;
+  @include minW(2000px) {
+    font-size: 100%;
+  }
+}
+body {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: auto;
+  min-height: 100vh;
+  @include flex-col;
+  font-family: $font-primary;
+  @include text(
+    400,
+    var(--body16-fs),
+    var(--body16-lh),
+    $body-text
+  ); // tuỳ chỉnh
+  background: $bg-main;
+  position: relative;
+  overflow-x: hidden;
+  touch-action: pan-y;
+  &.menu-is-show,
+  &.popup-is-show {
+    overflow: hidden;
+  }
+  .pt-sc,
+  .py-sc {
+    padding-top: var(--padding-section);
+  }
+  .pb-sc,
+  .py-sc {
+    padding-bottom: var(--padding-section);
+  }
+  .pt-sm,
+  .py-sm {
+    padding-top: var(--padding-section-sm);
+  }
+  .pb-sm,
+  .py-sm {
+    padding-bottom: var(--padding-section-sm);
+  }
+
+  main {
+    width: 100%;
+    margin: var(--height-header) auto 0;
+    @include visible;
+  }
+  section {
+    position: relative;
+  }
+  footer {
+    margin-top: auto;
+  }
+  @include xl {
+    // CSS responsive large desktop
+  }
+  @include lg {
+    // CSS responsive  desktop
+  }
+  @include md {
+    // CSS responsive tablet
+  }
+  @include sm {
+    // CSS responsive mobile
+  }
+  @include xs {
+    // CSS responsive small mobile
+  }
+  @include xxs {
+    // CSS responsive smallest mobile
+  }
+}

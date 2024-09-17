@@ -1,0 +1,20 @@
+.swiper.swiperAbtc 
+                            .swiper-wrapper 
+                                .swiper-slide.d-item 
+                                    .about_tc--item 
+                                        .about_tc--link 
+                                            a.about_tc--link-img(href="")
+                                                +img("abtc.png")
+                                            .about_tc--link-wrap 
+                                                h3.note-md.t-up.fw-6.t-center.cl-white 
+                                                    a(href="") LỄ KÝ BẢN GHI NHỚ HỢP TÁC GIỮA HỘI KIẾN TRÚC SƯ THÀNH PHỐ HỒ CHÍ MINH VÀ VIỆN KIẾN TRÚC SƯ HOA KỲ TẠI ĐÔNG NAM Á
+                                                a.link-text(href="") XEM CHI TIẾT
+                                .swiper-slide.d-item 
+                                    .about_tc--item 
+                                        .about_tc--link 
+                                            a.about_tc--link-img(href="")
+                                                +img("abtc.png")
+                                            .about_tc--link-wrap 
+                                                h3.note-md.t-up.fw-6.t-center.cl-white 
+                                                    a(href="") LỄ KÝ BẢN GHI NHỚ HỢP TÁC GIỮA HỘI KIẾN TRÚC SƯ THÀNH PHỐ HỒ CHÍ MINH VÀ VIỆN KIẾN TRÚC SƯ HOA KỲ TẠI ĐÔNG NAM Á
+                                                a.link-text(href="") XEM CHI TIẾT

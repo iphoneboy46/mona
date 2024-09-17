@@ -1,0 +1,182 @@
+extends layout/layout
+block vars
+    -title = 'intro'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.intro_pro 
+        .intro_pro--wrap 
+            .intro_pro--list(id="fullpage") 
+                .intro_pro--item.section 
+                    .intro_pro--item-bg 
+                        +img("introbg.png")
+                    .container 
+                        .intro_pro--item-wrap.d-wrap 
+                            .intro_pro--item-lf.d-item
+                                .intro_pro--item-lf-wrap 
+                                    .intro_pro--box 
+                                        .intro_pro--box-top 
+                                            h3.title-sm2.fw-i.t-up.cl-white GIỚI THIỆU VỀ
+                                            h3.title-lg3.fw-i.t-up.cl-pri.fw-5 FULLFACE Y52 
+                                        .intro_pro--box-center 
+                                            p.note-lg.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights.
+                                        .intro_pro--box-bottom 
+                                            +btn("xem sản phẩm","","","")
+                            .intro_pro--item-rt.d-item 
+                                .intro_pro--item-rt-wrap 
+                                    .intro_pro--img-box
+                                        .intro_pro--img
+                                            +img("i1.png")
+                .intro_pro--item.section 
+                    .intro_pro--item-bg 
+                        +img("introbg.png")
+                    .container 
+                        .intro_pro--item-wrap.d-wrap 
+                            .intro_pro--item-lf.d-item
+                                .intro_pro--item-lf-wrap 
+                                    .intro_pro--box 
+                                        .intro_pro--box-top 
+                                            h3.title-sm2.fw-i.t-up.cl-white GIỚI THIỆU VỀ
+                                            h3.title-lg3.fw-i.t-up.cl-pri.fw-5 FULLFACE Y52 
+                                        .intro_pro--box-center 
+                                            p.note-lg.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights.
+                                        .intro_pro--box-bottom 
+                                            +btn("xem sản phẩm","","","")
+                            .intro_pro--item-rt.d-item 
+                                .intro_pro--item-rt-wrap 
+                                    .intro_pro--img-box
+                                        .intro_pro--img
+                                            +img("i2.png")
+                .intro_pro--item.section 
+                    .intro_pro--item-bg 
+                        +img("introbg.png")
+                    .container 
+                        .intro_pro--item-wrap.d-wrap 
+                            .intro_pro--item-lf.d-item
+                                .intro_pro--item-lf-wrap 
+                                    .intro_pro--box 
+                                        .intro_pro--box-top 
+                                            h3.title-sm2.fw-i.t-up.cl-white GIỚI THIỆU VỀ
+                                            h3.title-lg3.fw-i.t-up.cl-pri.fw-5 FULLFACE Y52 
+                                        .intro_pro--box-center 
+                                            p.note-lg.cl-white A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights.
+                                        .intro_pro--box-bottom 
+                                            +btn("xem sản phẩm","","","")
+                            .intro_pro--item-rt.d-item 
+                                .intro_pro--item-rt-wrap 
+                                    .intro_pro--img-box
+                                        .intro_pro--img
+                                            +img("i3.png")
+                .intro_pro--item.section
+                    .footer
+                        .container
+                            .footer_wrap
+                                .footer_list.d-wrap
+                                    .footer_item.d-item
+                                        .footer_item--wrap
+                                            a(href="").footer_logo 
+                                                +img("logoFT.png")
+                                            p.note-text 
+                                                Your new password must be different from previous used passwords, contain 8 to 16 characters and at least one number 
+                                    .footer_item.d-item
+                                        .footer_item--wrap
+                                            p.note-text.cl-text2.fw-7 Giới thiệu
+                                            ul.menu-list
+                                                -
+                                                    const ft4s = [
+                                                        {
+                                                            title:"Về NIC",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Giá trị cốt lõi",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Liên hệ",
+                                                            dropdown:true
+                                                        },
+                                                    ]
+                                                each ft , i in ft4s
+                                                    li.menu-item
+                                                        a(href="").menu-link #{ft.title}
+                                    .footer_item.d-item
+                                        .footer_item--wrap
+                                            p.note-text.cl-text2.fw-7 Sản phẩm
+                                            ul.menu-list
+                                                -
+                                                    const ft5s = [
+                                                        {
+                                                            title:"Nón bảo hiểm 3/4",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Nón bảo hiểm 1/2",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Nón bảo hiểm Fullface",
+                                                            dropdown:true
+                                                        },
+                                                        {
+                                                            title:"Phụ kiện",
+                                                            dropdown:true
+                                                        }
+                                                    ]
+                                                each ft , i in ft5s
+                                                    li.menu-item
+                                                        a(href="").menu-link #{ft.title}
+                                    .footer_item.d-item
+                                        .footer_item--wrap
+                                            p.note-text.cl-text2.fw-7 Chính sách
+                                            ul.menu-list
+                                                -
+                                                    const ft6s = [
+                                                        {
+                                                            title:"Đại lý",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Bảo mật",
+                                                            dropdown:false
+                                                        },
+                                                        {
+                                                            title:"Bảo hành",
+                                                            dropdown:true
+                                                        },
+                                                    ]
+                                                each ft , i in ft6s
+                                                    li.menu-item
+                                                        a(href="").menu-link #{ft.title}
+                                    .footer_item.d-item
+                                        .footer_item--wrap
+                                            p.note-text.fw-7.cl-text2 Thông tin chung
+                                            .social
+                                                ul.social_list
+                                                    li.social_item
+                                                        a(href="").social_link 
+                                                            span.social_img
+                                                                +img("ftic1.png")
+                                                    li.social_item
+                                                        a(href="").social_link 
+                                                            span.social_img
+                                                                +img("ftic2.png")
+                                                    li.social_item
+                                                        a(href="").social_link 
+                                                            span.social_img
+                                                                +img("ftic3.png")
+                                                    li.social_item
+                                                        a(href="").social_link 
+                                                            span.social_img
+                                                                +img("ftic4.png")
+                                            .footer_form 
+                                                form(action="")
+                                                    .footer_form--wrap 
+                                                        input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                        +btn("Gửi","button","","","")
+                        .footer_bottom 
+                            .container 
+                                .footer_bottom--wrap
+                                    p.note-sm.cl-white.t-center @copy right NIC 2024

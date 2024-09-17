@@ -1,0 +1,133 @@
+footer.footer
+    .container
+        .footer_wrap
+            .footer_top
+                .footer_top--wrap
+                    .footer_title
+                        .footer_logo
+                            +img("logoFT.svg")
+                        p.note-sm.cl-white2.t-center REGIIS – Legend Suites không chỉ là một nơi để sống, mà còn là nơi đầy hứa hẹn để kiến tạo cho bạn một biểu tượng mới cho cuộc sống thượng lưu. Nơi đây lưu giữ những giá trị di sản và trải nghiệm đẳng cấp bậc nhất.
+            .footer_center
+                .footer_center--wrap.d-wrap
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.title-mn.cl-white.fl-sec.fw-5 Menu
+                            ul.menu-list
+                                -
+                                    const fts = [
+                                        {
+                                            title:"REGIIS STORY",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Giá trị",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Phòng",
+                                            dropdown:true
+                                        },
+                                        {
+                                            title:"Tiện ích",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Gói",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"hình ảnh",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Liên hệ",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tin tức",
+                                            dropdown:false
+                                        }
+                                    ]
+                                each ft , i in fts
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.title-mn.cl-white.fl-sec.fw-5.t-center Liên Hệ
+                            .address
+                                ul.address_list
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm Hoạt động:
+                                            a.address_link(href="") 09:00 AM – 21:00 PM
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm Điện thoại:
+                                            a.address_link(href="") 0123 456 789
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm Địa chỉ:
+                                            a.address_link(href="") 33 Trần Bạch Đằng, Q.2, TP. Thủ Đức, TP. HCM
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm Email:
+                                            a.address_link(href="") info@regiissuites.com
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic1.svg")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic2.svg")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic3.svg")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic4.svg")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic5.svg")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic6.svg")
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.title-mn.cl-white.fl-sec.fw-5 Chính sách
+                            ul.menu-list
+                                -
+                                    const ft2s = [
+                                        {
+                                            title:"Quy định chung",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Giá trị",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Phòng",
+                                            dropdown:true
+                                        },
+                                        {
+                                            title:"Tiện ích",
+                                            dropdown:false
+                                        },
+                                        
+                                    ]
+                                each ft , i in ft2s
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+            .footer_bottom
+                .footer_bottom--wrap
+                    .footer_btn
+                        +btn("Royal Island Commerce","","","trans")
+                        +btn("Royal Island Company","","","trans")
+

@@ -1,0 +1,78 @@
+// Library
+@import url("../assets/library/fontawesome/css/all.css");
+@import url("../assets/library/fontawesome/fontawesome/fontawesome.css");
+@import url("../assets/library/aos/aos.css");
+@import url("../assets/library/swiper/swiper-bundle.min.css");
+@import url("../assets/library/select2/select2.min.css");
+@import url("../assets/library/gallery/lightgallery.min.css");
+@import url("../assets/library/fancybox/fancybox.css");
+@import url("../assets/library/scrollFullPage/fullPage.css");
+@import url("../assets/library/splide/splide.min.css");
+
+
+
+
+
+
+// Core
+@import "./core/mixin";
+@import "./core/reset";
+@import "./core/mona";
+@import "./core/variable";
+@import "./core/font";
+@import "./core/base";
+@import "./core/animation";
+
+
+
+// Component
+@import "./components/header";
+@import "./components/footer";
+@import "./components/menu";
+@import "./components/breadcrumb";
+@import "./components/gallery";
+@import "./components/select2";
+@import "./components/linksMain";
+
+
+
+
+
+
+
+// Layout
+@import "./layouts/btn";
+@import "./layouts/component";
+@import "./layouts/distance";
+@import "./layouts/pagi";
+@import "./layouts/text";
+@import "./layouts/banner";
+@import "./layouts/post";
+
+
+
+
+
+
+// Pages
+@import "./pages/home";
+@import "./pages/news";
+@import "./pages/tienIch";
+@import "./pages/contact";
+@import "./pages/about";
+@import "./pages/study";
+@import "./pages/admissions";
+@import "./pages/recruitment";
+@import "./pages/why";
+
+
+
+
+
+
+
+
+
+
+
+

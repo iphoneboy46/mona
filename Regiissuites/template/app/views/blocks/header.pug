@@ -1,0 +1,102 @@
+block vars
+    -title = 'Template'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+header.header(class=hdClass)
+    .container2
+        .header_wrap
+            .header_lf
+                .header_mobi.btn-mobi
+                    span.line
+                    span.line  
+                    span.line  
+                a(href="").header_logo
+                    +img("logoHD.svg")
+            .header_ct
+                .header_nav
+                    ul.menu-list
+                        -
+                            const hds = [
+                                {
+                                    title:"REGIIS STORY",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Giá trị",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Phòng",
+                                    dropdown:true
+                                },
+                                {
+                                    title:"Tiện ích",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Gói",
+                                    dropdown:false
+
+                                },
+                                {
+                                    title:"hình ảnh",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Liên hệ",
+                                    dropdown:false
+                                },
+                                {
+                                    title:"Tin tức",
+                                    dropdown:false
+                                }
+                            ]
+                        each hd , i in hds
+                            if hd.dropdown === true
+                                li.menu-item.dropdown
+                                    a(href="#").menu-link #{hd.title}
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                            else if i == 0
+                                li.menu-item.current-menu-item
+                                    a(href="#").menu-link #{hd.title}
+                            else
+                                li.menu-item
+                                    a(href="#").menu-link #{hd.title}
+                .header_lang
+                    .header_lang--title VI
+                    ul.header_lang--list
+                        li.header_lang--item
+                            a(href="").header_lang--link
+                                span.ic
+                                    +img("vn.png")
+                                span.note-text.cl-text VI
+                        li.header_lang--item
+                            a(href="").header_lang--link
+                                span.ic
+                                    +img("en.png")
+                                span.note-text.cl-text EN
+            .header_rt
+                .header_lang
+                    .header_lang--title VI
+                    ul.header_lang--list
+                        li.header_lang--item
+                            a(href="").header_lang--link
+                                span.ic
+                                    +img("vn.png")
+                                span.note-text.cl-text VI
+                        li.header_lang--item
+                            a(href="").header_lang--link
+                                span.ic
+                                    +img("en.png")
+                                span.note-text.cl-text EN
+                a.btn.popup-btn(href="" data-popup="popup-booking")
+                    span.btn-text đặt phòng ngay
+                    span.btn-ic 
+                        +img("icb.png")

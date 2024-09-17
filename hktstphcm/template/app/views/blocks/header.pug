@@ -1,0 +1,113 @@
+block vars
+    -title = 'Template'
+    -mainClass = 'page-template'
+    -bodyClass = ''
+    -hdClass = ''
+header.header(class=hdClass)
+    .container2 
+        .header_wrap
+            .header_lf
+                .header_mobi.btn-mobi
+                    span.line
+                    span.line  
+                    span.line  
+                a(href="").header_logo
+                    +img("logoHD.png")
+            //- .header_ct
+            //-     .header_nav
+            //-         ul.menu-list
+            //-             -
+            //-                 const hd1s = [
+            //-                     {
+            //-                         title:"giới thiệu",
+            //-                         dropdown:false,
+            //-                         mega:true
+            //-                     },
+            //-                     {
+            //-                         title:"Tin tức sự kiện",
+            //-                         dropdown:false,
+            //-                         mega:false
+            //-                     },
+            //-                     {
+            //-                         title:"văn bản pháp luật",
+            //-                         dropdown:false,
+            //-                         mega:false
+            //-                     },
+            //-                     {
+            //-                         title:"hành nghề",
+            //-                         dropdown:true,
+            //-                         mega:false
+            //-                     },
+            //-                     {
+            //-                         title:"giải thưởng",
+            //-                         dropdown:false,
+            //-                         mega:false
+            //-                     },
+            //-                     {
+            //-                         title:"diễn đàn",
+            //-                         dropdown:false,
+            //-                         mega:false
+            //-                     }
+            //-                 ]
+            //-             each hd , i in hd1s
+            //-                 if hd.dropdown === true && hd.mega === false
+            //-                     li.menu-item.dropdown
+            //-                         a(href="#").menu-link #{hd.title}
+            //-                         ul.menu-list
+            //-                             li.menu-item
+            //-                                 a(href="").menu-link Item 1
+            //-                             li.menu-item
+            //-                                 a(href="").menu-link Item 2
+            //-                             li.menu-item
+            //-                                 a(href="").menu-link Item 3
+            //-                 else if i == 1
+            //-                     li.menu-item.current-menu-item
+            //-                         a(href="#").menu-link #{hd.title}
+            //-                 else
+            //-                     li.menu-item
+            //-                         a(href="#").menu-link #{hd.title}
+            .header_rt
+                .header_box
+                    .header_btn--search
+                        .header_btn--search-ic.btn-search 
+                            +img("searchIC.png")
+                    .header_login 
+                        .header_btn--search-ic
+                            +img("adIC.png")
+                        ul.menu-list
+                            li.menu-item
+                                a.menu-link(href="") Đăng Nhập
+                            li.menu-item
+                                a.menu-link(href="") Đăng Ký
+                    .header_lang 
+                        .header_lang--title 
+                            .header_lang--title-wrap
+                                span.ic 
+                                    +img("vn.png")
+                                p.note-text.cl-white VN
+                        .header_lang--list 
+                            .header_lang--item 
+                                a(href="").header_lang--link 
+                                    span.ic 
+                                        +img("vn.png")
+                                    p.note-text VN
+                            .header_lang--item 
+                                a(href="").header_lang--link 
+                                    span.ic 
+                                        +img("dn.png")
+                                    p.note-text EN
+
+.header_search--box
+    .header_search.header_search--form
+        form(action="") 
+            .header_search--wrap 
+                .header_search--logo 
+                    +img("logoFT.png")
+                .header_search--ip 
+                    input(type="text" placeholder="Nhập nội dung tìm kiếm").form-item-ip
+                    a(href="").header_btn--search-ic 
+                        +img("searchIC.png")
+    .header_search--ex.btn-search-ex
+        i.fas.fa-times
+    .header_search--modal
+

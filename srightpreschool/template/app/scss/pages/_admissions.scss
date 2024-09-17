@@ -1,0 +1,658 @@
+.admissions_program {
+    margin-bottom: calc(var(--size-pd) * -1);
+    overflow: hidden;
+
+    &--wrap {}
+}
+
+.admissions_price {
+    padding-top: var(--size-pdl);
+    padding-bottom: var(--size-pdl);
+
+    @include max(800px){
+        padding-bottom: var(--size-pd);
+    }
+
+    &--wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent32);
+    }
+
+    &--title {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent12);
+    }
+
+
+}
+
+.admissions_table {
+
+    &--content {
+        // width: 100%;
+        // flex: 1;
+
+    }
+
+    table {
+        width: 100%;
+        border-radius: var(--radius0);
+        overflow: hidden;
+        border-collapse: collapse;
+
+
+        tbody {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.4rem;
+        }
+
+        tr {
+            display: flex;
+            column-gap: 0.4rem;
+
+
+
+            th {
+                padding: 2.4rem 2rem;
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.2rem;
+                justify-content: center;
+                align-items: center;
+                background: $color-pri;
+
+                @include max(1200px) {
+                    padding: 2rem 1.6rem;
+
+                }
+
+                @include max(800px) {
+                    padding: 1.6rem 1.2rem;
+
+                }
+
+                @include max(600px) {
+                    padding: 1.2rem 0.8rem;
+
+                }
+
+                .title {
+                    color: $color-white;
+                    @include fz-28;
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                .note {
+                    color: $color-white;
+                    text-align: center;
+                    @include fz-20;
+
+                }
+            }
+
+            td {
+                padding: 2.4rem 2rem;
+                width: 100%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.2rem;
+                justify-content: center;
+                align-items: center;
+                background: $color-white;
+                color: $color-pri;
+                border: 0.1rem solid #E2E8F0;
+                position: relative;
+
+                @include max(600px){
+                    &:not(:last-child){
+                        border-bottom: none !important;
+                    }
+                }
+
+
+
+                &::before {
+                    content: attr(data-label);
+                    @include fz-24;
+                    font-weight: 800;
+                    display: none;
+
+                    width: fit-content;
+                    flex-shrink: 0;
+                    white-space: nowrap;
+
+                    @include max(600px) {
+                        display: block;
+                    }
+                }
+
+                @include max(1200px) {
+                    padding: 2rem 1.6rem;
+
+                }
+
+                @include max(800px) {
+                    padding: 1.6rem 1.2rem;
+
+                }
+
+                @include max(600px) {
+                    padding: 1.2rem 0.8rem;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    column-gap: var(--columnContent24);
+                    flex-wrap: wrap;
+                    row-gap: var(--rowContent12);
+                    align-items: start;
+
+                }
+
+                ul {
+                    margin-left: 2.4rem !important;
+                    list-style: disc;
+
+                    @include max(1200px) {
+                        margin-left: 2rem;
+                    }
+
+                    li {
+                        color: $color-pri;
+                        @include fz-20;
+                    }
+                }
+
+                .text {
+                    @include fz-24;
+                    color: inherit;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-align: center;
+
+                    @include max(600px) {
+                        text-align: end;
+                        @include fz-18;
+                    }
+                }
+
+                .note {
+                    color: $color-pri;
+                    text-align: center;
+                    @include fz-20;
+
+                    @include max(600px) {
+                        text-align: end;
+                        @include fz-16;
+                    }
+                }
+            }
+
+            &:last-child {
+                td {
+                    &:first-child {
+                        border-bottom-left-radius: var(--radius0);
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: var(--radius0);
+                    }
+                }
+            }
+
+            &:first-child {
+                @include max(600px) {
+                    display: none;
+                }
+            }
+
+            &:not(:first-child) {
+                @include max(600px) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+}
+
+.admissions_price--more {
+    padding-top: var(--size-pd);
+    padding-bottom: var(--size-pd);
+
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent24);
+
+        .admissions_table {
+
+            &--content {}
+
+            table {
+                tbody {
+                    @include max(600px) {
+                        row-gap: var(--rowContent4);
+                    }
+
+                    tr {
+                        th {
+                            &:first-child {
+                                width: calc(100% * 4.5 / 12) !important;
+                                flex: unset;
+                            }
+
+                            &:nth-child(2) {
+                                width: 100%;
+                                flex: 1;
+                            }
+
+
+
+                            &:last-child {
+                                width: calc(100% * 4.5 / 12) !important;
+                                flex: unset;
+
+                            }
+
+
+                        }
+
+                        td {
+                            &:first-child {
+                                width: calc(100% * 4.5 / 12) !important;
+                                flex: unset;
+
+                                @include max(600px) {
+                                    width: 100% !important;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                width: 100%;
+                                flex: 1;
+                            }
+
+
+
+                            &:last-child {
+                                width: calc(100% * 4.5 / 12) !important;
+
+                                flex: unset;
+
+                                text-align: start !important;
+
+                                align-items: start;
+
+                                @include max(600px) {
+                                    width: 100% !important;
+                                }
+
+                                .note {
+                                    text-align: start;
+
+                                   
+                                }
+
+                            }
+
+
+                            @include max(600px) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                &::before{
+                                    text-align: center;
+                                    width: 100%;
+                                }
+
+                                .text{
+                                    text-align: center;
+                                }
+
+                                .note{
+                                    text-align: center;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.admissions_qc {
+    margin-bottom: calc(var(--size-pd) * -1);
+
+
+
+    &--wrap {}
+
+    &--ts {
+        padding-top: var(--size-pdl);
+        padding-bottom: var(--size-pdl);
+        background: $color-second;
+        --row: 4.5rem;
+        --num: 2.8rem;
+        --arrow: 0.8rem;
+
+
+
+        @include max(1200px) {
+            --row: 4rem;
+            --num: 2.6rem;
+        }
+
+        @include max(800px) {
+            --row: 3rem;
+            --num: 2.4rem;
+        }
+
+
+        @include max(600px) {
+            --row: 2.6rem;
+            --num: 2rem;
+        }
+
+        &.ani{
+            &.showed{
+                .admissions_qc--ts-wrap {
+                    .title-lg{
+                        clip-path: inset(0 0 0 0);
+                    
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .admissions_qc--ts-wrap {
+                .title-lg{
+                    clip-path: inset(0 100% 0 0);
+                    transition: 1s linear;
+                }
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--rowContent4);
+
+            .swiper-scrollbar {
+                max-width: 40%;
+                margin: 0 auto;
+                height: 0.5rem;
+                background: $color-white;
+                box-shadow: 0 0 0.15rem rgba($color: #000000, $alpha: 0.3);
+                @include max(1200px) {
+                    max-width: 60%;
+
+                }
+            }
+        }
+
+        &-box {
+            max-width: 95%;
+            width: 100%;
+            margin: 0 auto;
+            // padding-bottom: 30rem;
+            overflow: hidden;
+
+            @include max(1024px) {
+                max-width: 100%;
+
+            }
+        }
+
+        &-list {
+            // margin-top: calc((--rowContent4) * -1);
+
+            // margin-top: -4vh;
+            overflow: hidden;
+
+
+            &-wrap {
+                width: calc(100% - var(--arrow));
+                // overflow: hidden;
+                max-width: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(100% - (var(--num) / 2));
+                    left: 0;
+                    width: calc(100% - var(--arrow));
+                    height: 0rem;
+                    border: 0.1rem dashed $color-pri;
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: calc(100% - (var(--arrow) + (var(--num) / 3.1)));
+                    z-index: 0;
+                    right: 0rem;
+                    width: 0;
+                    height: 0;
+                    border-top: 0.4rem solid transparent;
+                    border-bottom: 0.4rem solid transparent;
+                    border-left: 0.8rem solid $color-pri;
+                }
+            }
+
+
+
+            .swiper {
+                overflow: visible;
+                width: fit-content !important;
+                margin: 0 auto !important;
+            }
+
+            .swiper-wrapper {
+                justify-content: space-between;
+            }
+
+            .swiper-slide {
+                // width: calc(25% + 1.6rem);
+                height: auto;
+                width: calc(100% / 4.5);
+
+
+                @include max(800px) {
+                    width: calc(32%);
+                }
+
+                @include max(600px) {
+                    width: calc(35%);
+                }
+
+
+                @include max(460px) {
+                    width: calc(40%);
+                }
+
+                @include max(360px) {
+                    width: calc(50%);
+                }
+
+
+
+                &:not(:first-child) {
+                    margin-left: -7%;
+
+
+                }
+
+                &:nth-child(odd) {
+                    // margin-top: auto;
+
+                    .admissions_qc--ts-item-wrap {
+                        justify-content: end;
+
+                    }
+                }
+
+                &:nth-child(even) {
+                    transform: translateY(calc(100% - var(--num)));
+                    // margin-top: 21rem;
+
+                    .admissions_qc--ts-item {
+                        flex-direction: column-reverse !important;
+                    }
+
+                    .admissions_qc--ts-item-wrap {
+                        flex-direction: column-reverse !important;
+                        justify-content: start;
+
+                    }
+
+                    .admissions_qc--ts-item-top {
+                        flex-direction: column-reverse !important;
+
+                    }
+
+                    .admissions_qc--ts-item-ic {
+
+                        &::before {
+                            bottom: 100% !important;
+                            top: unset;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // &-none{
+            //     height: 30rem;
+            //     width: 100%;
+            // }
+
+            &-wrap {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // justify-content: space-between;
+                row-gap: var(--row);
+            }
+
+            &-content {
+                max-height: 22rem;
+                overflow-y: auto;
+
+                .note-lg {
+                    strong {
+                        font-weight: 600;
+
+                    }
+
+                    @include max(1024px) {
+                        @include fz-16;
+                    }
+                }
+            }
+
+            &-ic {
+                width: 5.6rem;
+                height: 5.6rem;
+                margin: 0 auto;
+
+                position: relative;
+
+                @include max(1200px) {
+                    width: 4.6rem;
+                    height: 4.6rem;
+                }
+
+                @include max(800px) {
+                    width: 3.6rem;
+                    height: 3.6rem;
+                }
+
+                @include max(600px) {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: var(--row);
+                    width: 0rem;
+                    border: 0.1rem dashed $color-pri;
+
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    object-fit: contain;
+                    border-radius: 50%;
+
+                }
+            }
+
+            &-top {
+                display: flex;
+                flex-direction: column;
+                row-gap: var(--rowContent12);
+
+                align-items: center;
+            }
+
+
+            &-bottom {
+                .num {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: var(--num);
+                    height: var(--num);
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background: $color-pri;
+                    margin: 0 auto;
+                    @include fz-12;
+                    padding: 0.2rem;
+                    color: $color-white;
+                    font-weight: 600;
+                    margin: 0 auto;
+                    flex-shrink: 0;
+                    position: relative;
+                    z-index: 2;
+
+                    @include max(600px) {
+                        @include fz-10;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}

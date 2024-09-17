@@ -1,0 +1,143 @@
+extends layout/layout
+block vars
+    -title = 'Career chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tuyển dụng
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') UI/UX Designer   
+    section.career_ct 
+        .container 
+            .career_ct--wrap.d-wrap 
+                .career_ct--lf.d-item   
+                    .career_ct--lf-wrap 
+                        .career_ct--lf-box
+                            .career_ct--lf-top
+                                h2.title-mn.fw-6.cl-text Ứng tuyển ngay
+                                p.note-text.cl-gray3  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            .career_ct--lf-bottom
+                                button.btn.popup-btn(data-popup="popup-td") 
+                                    span.btn-text Ứng tuyển ngay
+                                    span.btn-ic 
+                                        i.fal.fa-arrow-right
+                .career_ct--rt.d-item   
+                    .career_ct--rt-wrap 
+                        .career_ct--rt-content 
+                            h2.title-sm2.fw-7.cl-text UI/UX Designer
+                            br
+                            h3.title-mn.fw-6.cl-text Trách nhiệm chính
+                            br
+                            ul 
+                                li Thiết kế giao diện người dùng (UI) và trải nghiệm người dùng (UX) cho các sản phẩm web và ứng dụng di động.
+                                li Nghiên cứu và phân tích nhu cầu của người dùng để tạo ra các sản phẩm thân thiện và dễ sử dụng.
+                                li Tạo ra các nguyên mẫu, bản vẽ và tài liệu thiết kế chi tiết.
+                                li Thử nghiệm và đánh giá các thiết kế với người dùng để đảm bảo hiệu quả sử dụng.
+                                li Cộng tác với các kỹ sư phần mềm để triển khai các thiết kế.
+                                li Theo dõi các xu hướng thiết kế mới nhất và áp dụng chúng vào các sản phẩm của Xanh SM.
+                            br
+                            h3.title-mn.fw-6.cl-text Yêu cầu
+                            br
+                            ul 
+                                li Có kinh nghiệm 2 năm trở lên làm UI/UX Designer.
+                                li Có trình độ chuyên môn cao về thiết kế UI/UX và các nguyên tắc thiết kế tốt nhất.
+                                li Có khả năng sáng tạo và tư duy phản biện.
+                                li Có kỹ năng giao tiếp và làm việc nhóm tốt.
+                                li Có khả năng làm việc độc lập và quản lý thời gian hiệu quả.
+                                li Có kinh nghiệm sử dụng các công cụ thiết kế như Sketch, Figma, Adobe XD.
+                                li Có hiểu biết về các nguyên tắc lập trình cơ bản.
+                            br
+                            h3.title-mn.fw-6.cl-text Ưu đãi
+                            br
+                            ul 
+                                li Mức lương cạnh tranh và các chế độ phúc lợi tốt.
+                                li Cơ hội làm việc trong một môi trường năng động và sáng tạo.
+                                li Được tham gia vào các dự án sản phẩm thú vị và có ý nghĩa.
+                                li Cơ hội học hỏi và phát triển kỹ năng của bạn.
+    section.career_more 
+        .container 
+            .career_more--wrap
+                .career_more--title
+                    .career_more--title-lf 
+                        h2.title-sm3.fw-6.cl-text Công việc liên quan
+                    .career_more--title-rt 
+                        +btn("Ứng tuyển ngay","","fal fa-arrow-right","")
+                .career_more--list.d-wrap 
+                    -
+                        const ps = [
+                            {
+                                title:"Nhân viên Bán hàng"
+                            },
+                            {
+                                title:"Giám đốc kinh doanh"
+                            },
+                            {
+                                title:"Chuyên viên Marketing"
+                            },
+                            {
+                                title:"Quản trị Website"
+                            },
+                        ]
+                    each p , i in ps
+                        .career_more--item.d-item.d-2
+                            +post-td(p.title)
+    .popup_main.popup-form(data-popup-id="popup-td")
+        .popup_main--wrap
+            .popup_main--ex.popup-ex 
+                i.far.fa-times
+            .popup_main--lf 
+                .popup_main--lf-wrap 
+                    .popup_main--lf-img 
+                        +img("pimg.png")
+            .popup_main--rt 
+                .popup_main--rt-wrap
+                    .popup_main--form
+                        .contact_form 
+                            .contact_form--wrap 
+                                .contact_form--title 
+                                    h2.title-sm2.fw-6.cl-text Ứng tuyển vị trí UI/UX
+                                    p.note-text.cl-gray3 Trở thành thành viên mới tại gia đình Netin Travel
+                                .contact_form--form 
+                                    form(action="")
+                                        .contact_form--form-wrap 
+                                            .contact_form--list.d-wrap 
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Họ và tên
+                                                        input.form-item-ip(type="text" , placeholder="Nhập họ và tên")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Số điện thoại
+                                                        input.form-item-ip(type="text" , placeholder="Nhập số điện thoại")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Email
+                                                        input.form-item-ip(type="text" , placeholder="Nhập Email")
+                                                .contact_form--item.d-item
+                                                    .form-item 
+                                                        p.form-item-lb Tải lên hồ sơ của bạn
+                                                        .form-upload.boxUpload
+                                                            label.form-upload-wrap
+                                                                input.fileUpload(type="file", accept="application/pdf")
+                                                                .form-upload-img
+                                                                    img(src="./assets/images/cl.svg", alt)
+                                                                .form-upload-box
+                                                                    .form-upload-title
+                                                                        p.note-text.cl-text
+                                                                            |Drag & Drop or 
+                                                                            strong Choose file 
+                                                                            |to upload
+                                                                    .form-upload-content
+                                                                        p.note-sm.textChange JPG, GIF or PNG. Max size of 800K
+                                            +btn("Ứng tuyển ngay","","fal fa-arrow-right","")
+    .popup_main--modal.popup-modal
+

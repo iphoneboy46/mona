@@ -1,0 +1,91 @@
+extends layout/layout
+block vars
+    -title = 'tuyển sinh'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 tuyển sinh
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Tuyển sinh")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Quy chế tuyển sinh
+                            .swiper-slide.d-item
+                                a(href="").tab_item Biểu phí & Quy định tài chính
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chương trình ưu đãi
+                    .swiper-scrollbar
+    section.admissions_program 
+        .admissions_program--wrap 
+            .valueAb.admissionsProgram
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up PHÍ GHI DANH, ĐÁNH GIÁ ĐẦU VÀO
+                                                .box-content 
+                                                    p.note-lg Tặng 100% phí ghi danh và đánh giá đầu vào cho 10 học sinh đầu tiên và 50% cho các học sinh tiếp theo (thủ tục nhập học, kiểm tra sức khỏe với Chuyên gia dinh dưỡng và đánh giá các mốc phát triển theo độ tuổi với giáo viên chuyên môn)
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("ap2.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                h2.title-lg.cl-pri.fw-7 HỌC PHÍ (áp dụng cho năm học 2024)
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .box-wrap 
+                                                .box-content
+                                                    ul 
+                                                        li.note-lg.cl-pri.fw-4 Top 10 Doanh Nhân Tiêu Biểu Lĩnh Vực Giáo Dục 2023 do Cục Sở Hữu Trí Tuệ VN & Liên Hiệp Khoa Học Doanh Nhân VN đề cử.
+                                                        li.note-lg.cl-pri.fw-4 Thạc Sỹ Khoa Học Công Nghệ RMIT Melbourne, Australia.
+                                                        li.note-lg.cl-pri.fw-4 Former Senior Program Manager tại Intel Products Vietnam với nhiều năm kinh nghiệm trong môi trường quản lý vận hành xuất sắc (Operational Excellence).
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Chương Trình Giáo Dục Sớm PF2B® (Paper Flash To Book) Dạy Trẻ Tự Đọc Sách Đa Ngôn Ngữ từ Thai Kì - 6 Tuổi.
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Phương pháp Giáo Dục Sớm SRIGHT®.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về Khoa Học Não Bộ Trẻ Growing Brain - Zero To Three -Washington DC.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về kỉ luật tích cực cho trẻ Positive Discipline Associataion.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo về Massage Sơ Sinh Quốc Tế IAIM.
+                                                        li.note-lg.cl-pri.fw-4 Chứng chỉ Giáo Dục Sớm Phần Lan - Diploma of Finland Education from CCE
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up CÁC ƯU ĐÃI KHÁC
+                                                .box-content 
+                                                    ul
+                                                        li.note-lg Tặng bản phân tích Sinh Trắc Học cho bé 
+                                                        li.note-lg Tặng 1 Mũ bảo hiểm SRIGHT cho bé 
+                                                        li.note-lg Tặng 1 Bình nước SRIGHT cho bé 
+                                                        li.note-lg Tặng 1 Dù/ Áo mưa SRIGHT cho phụ huynh
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("ap1.png")

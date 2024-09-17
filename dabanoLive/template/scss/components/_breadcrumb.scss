@@ -1,0 +1,123 @@
+.breadcrumbs {
+    width: fit-content;
+    background: $color-pri;
+    padding: 1.1rem 8rem;
+    border-radius: 10rem;
+    margin: 0 auto 4rem;
+
+    .container {
+        height: auto;
+    }
+
+    &.other {
+        width: 100%;
+        border-radius: unset;
+      
+        margin: 0;
+      
+        z-index: 1;
+
+       
+
+
+        // .breadcrumbs-list {
+        //     @media screen and (max-width: 1200px) {
+        //         justify-content: center;
+        //     }
+        // }
+
+    }
+
+    &.not-search {
+        @media screen and (max-width: 1200px) {
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            padding: 0;
+            height: auto;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        column-gap: 3.2rem;
+
+
+        @media screen and (max-width:800px) {
+        column-gap: 2.4rem;
+           
+        }
+    }
+
+    &-item {
+        position: relative;
+
+
+
+        &.current {
+            .breadcrumbs-link {
+                white-space: unset;
+                pointer-events: none;
+                font-weight: 700;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                max-width: 80vw;
+            }
+        }
+
+        &:not(:last-child) {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -2rem;
+                background-image: url(../assets/images/right-arrow\ 2.svg);
+                width: 1.2rem;
+                height: 1.2rem;
+                transform: translateY(-50%);
+                background-repeat: no-repeat;
+                
+
+                @media screen and (max-width:800px) {
+                    width: 1rem;
+                    
+                    right: -1.5rem;
+                }
+            }
+        }
+    }
+
+    &-link {
+        color: $color-white;
+        @include fz-16;
+        font-style: normal;
+        font-weight: 500;
+        white-space: nowrap;
+
+        // display: block;
+        @include hover {
+            color: $color-second;
+        }
+
+        @media screen and (max-width: 1200px) {
+            @include fz-14;
+        }
+
+        @media screen and (max-width: 600px) {
+            @include fz-12;
+        }
+
+
+    }
+
+    @media screen and (max-width:1200px) {
+        width: 100%;
+        border-radius: 0;
+
+        padding: 1.2rem 0rem;
+    }
+}

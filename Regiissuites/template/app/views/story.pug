@@ -1,0 +1,261 @@
+extends layout/layout
+block vars
+    -title = 'Câu Chuyện'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bns.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up Câu Chuyện
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Câu Chuyện")
+    section.story
+        .story_wrap
+            .story_list
+                .story_item
+                    .story_item--title
+                        .container
+                            .box-title2
+                                .box-title2-box
+                                    .box-title2-ic(data-aos="fade-up")
+                                        +img("ictl.svg")
+                                    p.note-sm.cl-pri.t-up(data-aos="fade-up" data-aos-delay="200") giá trị độc tôn
+                                h2.title-md.cl-black.fl-sec.t-up.t-center(data-aos="fade-up" data-aos-delay="400") 
+                                    |Di sản kiêu hãnh
+                                    br
+                                    |Giữa lòng Sài Gòn
+                                p.note-text.cl-second.t-center(data-aos="fade-up" data-aos-delay="600") Là lựa chọn thông minh và tiện lợi, kết hợp "3 trong 1" nhu cầu: Nghỉ ngơi – Nghỉ dưỡng – Làm việc, lí tưởng cho các chuyến công tác hoặc du lịch ngắn ngày.
+                    .story_item--box.ani
+                        .container
+                            .story_item--wrap.d-wrap
+                                .story_item--lf.d-item
+                                    .story_item--lf-wrap 
+                                        .story_item--lf-list.d-wrap
+                                            .swiper.mySwiperLf
+                                                .swiper-wrapper
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi 2
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi 3
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                            .swiper-pagination
+                                .story_item--rt.d-item
+                                    .story_item--rt-wrap 
+                                        .story_item--rt-list.d-wrap
+                                            .swiper.mySwiperRt
+                                                .swiper-wrapper
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("st1.png")
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("v2.png")
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("v3.png")
+                .story_item
+                    .story_item--title
+                        .container
+                            .box-title2
+                                .box-title2-box
+                                    .box-title2-ic(data-aos="fade-up")
+                                        +img("ictl.svg")
+                                    p.note-sm.cl-pri.t-up(data-aos="fade-up" data-aos-delay="200") giá trị độc tôn
+                                h2.title-md.cl-black.fl-sec.t-up.t-center(data-aos="fade-up" data-aos-delay="400") 
+                                    |Di sản kiêu hãnh
+                                    br
+                                    |Giữa lòng Sài Gòn
+                                p.note-text.cl-second.t-center(data-aos="fade-up" data-aos-delay="600") Là lựa chọn thông minh và tiện lợi, kết hợp "3 trong 1" nhu cầu: Nghỉ ngơi – Nghỉ dưỡng – Làm việc, lí tưởng cho các chuyến công tác hoặc du lịch ngắn ngày.
+                    .story_item--box.ani
+                        .container
+                            .story_item--wrap.d-wrap
+                                .story_item--lf.d-item
+                                    .story_item--lf-wrap 
+                                        .story_item--lf-list.d-wrap
+                                            .swiper.mySwiperLf
+                                                .swiper-wrapper
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi 2
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                                    .swiper-slide.d-item
+                                                        .story_item--lf-item
+                                                            .story_item--lf-content
+                                                                h2.title-sm.cl-black.fl-sec Không gian sống rộng rãi 3
+                                                                p.note-text Hãy tưởng tượng: Bạn thức dậy mỗi buổi sáng bắt đầu một ngày mới đầy hứng khởi với ánh sáng bình mình rực rỡ trên sông Sài Gòn. Khi màn đêm buông xuống, bạn lại được ngắm nhìn trái tim của thành phố lung linh về đêm từ ban công riêng của bạn. Tận hưởng những tiện nghi sang trọng và dịch vụ hoàn hảo như một thành viên với đặc quyền hoàng tộc. Tham gia vào cộng đồng thượng lưu đẳng cấp.
+                                                                br
+                                                                p.note-text Trên bờ sông Sài Gòn lấp lánh, REGIIS – Legend Suites tọa lạc kiêu hãnh như một viên ngọc quý, mang đến tầm nhìn 360 độ toàn cảnh thành phố. Nơi đây, bạn sẽ được chiêm ngưỡng những biểu tượng kiêu hãnh của thành phố như Bitexco, Landmark, khách sạn Hilton... từ ban công của mỗi căn hộ cao cấp
+                                            .swiper-pagination
+                                .story_item--rt.d-item
+                                    .story_item--rt-wrap 
+                                        .story_item--rt-list.d-wrap
+                                            .swiper.mySwiperRt
+                                                .swiper-wrapper
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("st1.png")
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("v2.png")
+                                                    .swiper-slide.d-item
+                                                        .story_item--rt-item
+                                                            .story_item--rt-bg
+                                                                span.lines
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                    span.line
+                                                                .story_item--rt-img
+                                                                    +img("v3.png")
+    section.exclusive.free-slide
+        .container
+            .exclusive_wrap
+                .box-title2
+                    .box-title2-box
+                        .box-title2-ic(data-aos="fade-up")
+                            +img("ictl.svg")
+                        p.note-sm.cl-pri.t-up(data-aos="fade-up" data-aos-delay="200") giá trị độc tôn
+                    h2.title-md.cl-black.fl-sec.t-up.t-center(data-aos="fade-up" data-aos-delay="400") 
+                        |Đặc quyền hoàng gia
+                        br
+                        |REGIIS-LEGEND SUITES
+                    p.note-text.cl-second.t-center(data-aos="fade-up" data-aos-delay="600") REGIIS – Legend Suites không chỉ đơn thuần là căn hộ dịch vụ cao cấp, mà còn là biểu tượng của cuộc sống thượng lưu, nơi kiến tạo những trải nghiệm đẳng cấp hoàng gia
+                .exclusive_list.d-wrap(data-aos="fade-up" data-aos-delay="800")
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide.d-item.d-2
+                                .exclusive_item
+                                    .exclusive_link
+                                        span.exclusive_link--img
+                                            +img("e1.png")
+                                        span.exclusive_link--box
+                                            span.exclusive_link--title
+                                                h3.title-sm2.cl-white.fl-sec Ban quản lý tòa nhà
+                                                h4.title-sm2.cl-gra.fl-sec.fw-7 OPERA RESIDENCE HIGHGATE
+                                            span.exclusive_link--content
+                                                p.note-text.cl-gray Với đội ngũ nhân viên chuyên nghiệp, tận tâm, được đào tạo bài bản về kiến thức và kỹ năng dịch vụ khách hàng cao cấp, REGIIS cam kết mang đến cho quý khách trải nghiệm sống hoàn hảo nhất.
+                            .swiper-slide.d-item.d-2
+                                .exclusive_item
+                                    .exclusive_link
+                                        span.exclusive_link--img
+                                            +img("e2.png")
+                                        span.exclusive_link--box
+                                            span.exclusive_link--title
+                                                h3.title-sm2.cl-white.fl-sec Đội ngũ nhân viên
+                                                h4.title-sm2.cl-gra.fl-sec.fw-7 REGIIS -LEGEND SUITER
+                                            span.exclusive_link--content
+                                                p.note-text.cl-gray Với đội ngũ nhân viên chuyên nghiệp, tận tâm, được đào tạo bài bản về kiến thức và kỹ năng dịch vụ khách hàng cao cấp, REGIIS cam kết mang đến cho quý khách trải nghiệm sống hoàn hảo nhất.
+                            .swiper-slide.d-item.d-2
+                                .exclusive_item
+                                    a(href="").exclusive_link
+                                        span.exclusive_link--img
+                                            +img("e1.png")
+                                        span.exclusive_link--box
+                                            span.exclusive_link--title
+                                                h3.title-sm2.cl-white.fl-sec Đội ngũ nhân viên
+                                                h4.title-sm2.cl-gra.fl-sec.fw-7 REGIIS -LEGEND SUITER
+                                            span.exclusive_link--content
+                                                p.note-text.cl-gray Với đội ngũ nhân viên chuyên nghiệp, tận tâm, được đào tạo bài bản về kiến thức và kỹ năng dịch vụ khách hàng cao cấp, REGIIS cam kết mang đến cho quý khách trải nghiệm sống hoàn hảo nhất.
+                    .swiper-pagination
+

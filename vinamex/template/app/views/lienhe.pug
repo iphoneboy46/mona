@@ -1,0 +1,60 @@
+extends layout/layout
+block vars
+    -title = 'Liên hệ'
+    -mainClass = 'pt'
+    -bodyClass = 'bg-gray'
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh1.png","Liên hệ","Trang chủ","","Liên hệ")
+    section.contact 
+        .container 
+            .contact_wrap 
+                .contact_map 
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.6493192934!2d105.75281912596785!3d20.92642384128422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134529e9c49f0bb%3A0x3db3e76cd67f5ec!2zVHJ1bmcgdMOibSB0aeG6v25nIE5o4bqtdCBWaW5hbWV4!5e0!3m2!1svi!2s!4v1719991502355!5m2!1svi!2s", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")
+                .contact_box
+                    .contact_box--content
+                        .contact_box--wrap.d-wrap 
+                            .contact_box--lf.d-item 
+                                .contact_box--lf-wrap 
+                                    h2.note-lg.fw-7 Liên hệ với chúng tôi
+                                    .contact_form 
+                                        form(action="")
+                                            .contact_form--wrap
+                                                .form-list.d-wrap 
+                                                    .form-item.d-item.d-2 
+                                                        input(type="text" placeholder="Tên của bạn").form-item-ip
+                                                    .form-item.d-item.d-2 
+                                                        input(type="text" placeholder="Email của bạn").form-item-ip
+                                                    .form-item.d-item.d-2 
+                                                        input(type="text" placeholder="Số điện thoại của bạn").form-item-ip
+                                                    .form-item.d-item.d-2 
+                                                        select.js-op(data-placeholder="Gói du học quan tâm")
+                                                            option
+                                                            option(value="option1") 01
+                                                            option(value="option2") 02
+                                                            option(value="option3") 03
+                                                    .form-item.d-item.d-2 
+                                                        textarea(type="text" placeholder="Nội dung cần tư vấn").form-item-tx
+                                                +btn("Gửi thông tin","","fas fa-caret-right","")
+                            .contact_box--rt.d-item 
+                                .contact_box--rt-wrap 
+                                    ul.address_list
+                                        li.address_item
+                                            .address_item--ic
+                                                +img("ctic1.png")
+                                            .address_item--content
+                                                p.note-sm.cl-pri.fw-6 Email
+                                                a.address_link(href="") tuyensinh@vinamex.edu.vn
+                                        li.address_item
+                                            .address_item--ic
+                                                +img("ctic2.png")
+                                            .address_item--content
+                                                p.note-sm.cl-pri.fw-6 Địa chỉ:
+                                                a.address_link(href="") Lô 2, Vị trí 2, Cụm Công nghiệp Thanh Oai, Xã Bích Hòa, Huyện Thanh Oai, Hà Nội
+                                        li.address_item
+                                            .address_item--ic
+                                                +img("ctic3.png")
+                                            .address_item--content
+                                                p.note-sm.cl-pri.fw-6 Số điện thoại
+                                                a.address_link(href="") 0904 840 363

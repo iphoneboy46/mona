@@ -1,0 +1,243 @@
+extends layout/layout
+block vars
+    -title = 'home'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSplide,JsSplideAuto,JsGsap,JsGsapScroll,JsSwiper]
+    -jsComponents = ['header',"home","gsap","splideJS"]
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssAos,CssSplide,CssAos,CssSwiper]
+    -cssComponents = ['banner','post']
+    -cssPages = ["home","news","contact"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    .banner_home 
+        .container 
+            .banner_home--wrap 
+                .banner_home--box 
+                    .banner_home--title(data-aos="fade-in") 
+                        h1.title-lg.cl-white.fw-5.t-center.t-up
+                            |Hội Kiến Trúc Sư
+                            span.title-sm.cl-white.fw-5.t-center.t-up Thành Phố Hồ Chí Minh 
+        .banner_home--splide 
+            .banner_home--splide-wrap 
+                .banner_home--splide-lf 
+                    p.note-md.cl-pri.t-up.fw-7 ĐỐI TÁC ĐỒNG HÀNH
+                .banner_home--splide-rt 
+                    .banner_home--splide-list.d-wrap 
+                        .splide
+                            .splide__slider
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg1.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg2.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg3.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg4.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg5.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg6.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg7.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg8.png")
+                                        .splide__slide.d-item
+                                            .banner_home--splide-item 
+                                                .banner_home--splide-img 
+                                                    +img("lg9.png")
+    section.home_news 
+        .container 
+            .home_new--wrap 
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 Tin mới nhất
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="fade-up") 
+                                    +post("gallery5","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="200")  
+                                    +post("gallery6","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                                .news_item(data-aos="fade-up" data-aos-delay="400")  
+                                    +post("gallery7","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="600")  
+                                    +post("gallery8","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                            .news_box--btn(data-aos="fade-up") 
+                                +btn("XEM THÊM..","","","trans")
+    section.banner_qc.cus
+        .container
+            .banner_qc--wrap(data-aos="zoom-out") 
+                a(href="").banner_qc--img 
+                    +img("qcbg2.png")
+    section.news_kt 
+        .container 
+            .news_kt--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 Tin kiến trúc
+                            +btn("XEM TẤT CẢ BÀI VIẾT","","","tran2s")
+                        .news_box--center(data-aos="fade-up")  
+                            .box_tabs.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1" checked="checked")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up VĂN PHÒNG THIẾT KẾ 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÁC PHẨM KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up QTUXNNKT
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up CHỨNG CHỈ HÀNH NGHỀ KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÍCH ĐIỂM CDP
+                                        .swiper-scrollbar
+                            .box_tabs.cus.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                        .swiper-scrollbar
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="fade-up") 
+                                    +post("gallery1","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="200")  
+                                    +post("gallery2","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                                .news_item(data-aos="fade-up" data-aos-delay="400")  
+                                    +post("gallery3","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="600")  
+                                    +post("gallery4","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                            .news_box--btn(data-aos="fade-up") 
+                                +btn("XEM THÊM..","","","trans")
+    section.home_action
+        .container 
+            .home_action--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 Hoạt động hội viên
+                        .box_login(data-aos="fade-up" )  
+                            .box_login--wrap 
+                                +btn("ĐĂNG NHẬP","","","trans")
+                                p.note-text.cl-white 
+                                    |hoặc 
+                                    a(href="").fw-6.t-up ĐĂNG KÝ HỘI VIÊN 
+                                    |để xem mục này
+                        //- đăng nhập thành công thì hiển thị
+                        //- .news_box--bottom 
+                        //-     .news_list 
+                        //-         .news_item(data-aos="fade-up") 
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="200")  
+                        //-             +post("p1.png","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="400")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="600")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-     .news_box--btn(data-aos="fade-up") 
+                        //-         +btn("XEM THÊM..","","","trans")
+    section.home_team
+        .container 
+            .home_action--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 thông tin hội viên
+                        .box_login 
+                            .box_login--wrap(data-aos="fade-up" )  
+                                +btn("ĐĂNG NHẬP","","","trans")
+                                p.note-text.cl-white 
+                                    |hoặc 
+                                    a(href="").fw-6.t-up ĐĂNG KÝ HỘI VIÊN 
+                                    |để xem mục này
+                        //- đăng nhập thành công thì hiển thị
+                        //- .news_box--bottom 
+                        //-     .news_list 
+                        //-         .news_item(data-aos="fade-up") 
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="200")  
+                        //-             +post("p1.png","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="400")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="600")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-     .news_box--btn(data-aos="fade-up") 
+                        //-         +btn("XEM THÊM..","","","trans")
+    section.home_cs
+        .container 
+            .home_action--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 chính sách hội viên
+                        .box_login(data-aos="fade-up" )  
+                            .box_login--wrap 
+                                +btn("ĐĂNG NHẬP","","","trans")
+                                p.note-text.cl-white 
+                                    |hoặc 
+                                    a(href="").fw-6.t-up ĐĂNG KÝ HỘI VIÊN 
+                                    |để xem mục này
+                        //- đăng nhập thành công thì hiển thị
+                        //- .news_box--bottom 
+                        //-     .news_list 
+                        //-         .news_item(data-aos="fade-up") 
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="200")  
+                        //-             +post("p1.png","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="400")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-         .news_item(data-aos="fade-up" data-aos-delay="600")  
+                        //-             +post("p1.png","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                        //-     .news_box--btn(data-aos="fade-up") 
+                        //-         +btn("XEM THÊM..","","","trans")
+
+
+

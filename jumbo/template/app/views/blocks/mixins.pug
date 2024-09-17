@@ -1,0 +1,167 @@
+
+
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin imgIc(name = "ic.png")
+  img(src="./assets/images/icons/" + name, alt="")
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+    li
+      span.page-numbers.current 1
+    li
+      a.page-numbers(href='') 2
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 9
+    li
+      a.page-numbers(href='') 10
+    li
+      span.page-numbers.next 
+        i.fas.fa-chevron-right
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin banner-main(img,title)
+  .banner_main 
+    .banner_main--bg 
+      +img(img)
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--box-title
+            h1.title-lg.cl-white.fw-7.fl-sec.t-center #{title}
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title,content)
+  .post
+    .post_wrap
+      .post_lf
+        .post_lf--wrap
+          a(href="").post_img
+            +img(img)
+      .post_rt
+        .post_rt--wrap
+          .box-info 
+            .box-info-list 
+              .box-info-item 
+                span.ic 
+                  i.far.fa-user
+                a(href="").note-text.cl-text.fw-6 Admin
+              .box-info-item 
+                span.ic 
+                  i.far.fa-clock
+                p.note-text.cl-text3 12:52 - 20.04.2024
+          .post_box
+            h3.cl-text.title.fw-6.title-mn
+              a(href="") #{title}
+            p.note-text.cl-gray3.content #{content}
+          .post_btn 
+            +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+
+mixin post-td(title)
+  .post_td
+    .post_td--wrap
+      .post_td--top
+        h2.title-mn.cl-text.fw-6 
+          a(href="") #{title}
+        .post_td--infos 
+          .post_td--info 
+            p.note-text Quảng Bình
+          .post_td--info 
+            p.note-text Toàn thời gian
+          .post_td--info 
+            p.note-text 10 - 20 triệu
+          .post_td--info 
+            p.note-text Team sale
+      .post_td--bottom
+        +btn("Ứng tuyển ngay","","fal fa-arrow-right","cl-8")
+
+mixin menuFoodItem(name,best,linkImgFood1,linkImgFood2,index,price,lang1,lang2)
+  .menuFood_item 
+    .menuFood_item--wrap 
+      .menuFood_item--top 
+        .menuFood_item--top-lf 
+          h3.note-text.cl-text.t-up.fw-5 #{name}
+          if(best != "" || linkImgFood1 != "" && linkImgFood2 != "")
+            ul.menuFood_ref--list
+              if(best != "")
+                li.menuFood_ref--item 
+                  .menuFood_ref--item-wrap 
+                    span.ic 
+                      +img("mnfic1.png")
+                    p.note-sm.cl-text3 Best seller
+              if(linkImgFood1 != "" && linkImgFood2 != "")
+                li.menuFood_ref--item 
+                  .menuFood_ref--item-wrap 
+                    span.ic.openImgs 
+                      +img("mnfic2.png")
+                    p.note-sm.cl-text3 Hình ảnh món ăn
+                    .menuFood_ref--imgs.gallery 
+                      a(href=`./assets/images/${linkImgFood1}` data-fancybox=`gallery${index}`).menuFood_ref--img
+                        +img(linkImgFood1)
+                      a(href=`./assets/images/${linkImgFood2}` data-fancybox=`gallery${index}`).menuFood_ref--img
+                        +img(linkImgFood2)
+        .menuFood_item--top-ct 
+          span.line
+        .menuFood_item--top-rt 
+          p.note-text.cl-text #{price}
+      .menuFood_item--bottom 
+        p.note-sm.cl-text3 #{lang1}
+        p.note-sm.cl-text3 #{lang2}

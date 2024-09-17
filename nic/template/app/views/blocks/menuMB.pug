@@ -1,0 +1,102 @@
+.menu_mb
+    .menu_mb--wrap
+        .menu_mb--nav
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"Trang chủ",
+                            dropdown:false
+                        },
+                        {
+                            title:"sản phẩm",
+                            dropdown:true
+                        },
+                        {
+                            title:"tin tức",
+                            dropdown:false
+                        },
+                        {
+                            title:"VỀ NIC",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tin tức",
+                            dropdown:false
+                        },
+                        {
+                            title:"chính sách",
+                            dropdown:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item.dropdown
+                                    a(href="").menu-link item parent
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                                        
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up THEO DÕI CHÚNG TÔI
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic1.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic2.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic3.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic4.png")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up Liên hệ 
+                    p.note-md.cl-pri.fw-7.t-up NIC
+                .address
+                    ul.address_list                
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic1.png")
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-5 Số điện thoại
+                                a.address_link(href="") +1 800 555 2569
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic2.png")
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Số fax
+                                a.address_link(href="") +1 800 555 5455
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic3.png")
+                            .address_item--content
+                                p.note-sm.cl-text2.fw-7 Địa chỉ email
+                                a.address_link(href="") Webflow-info@gmail.com
+            .menu_mb--btn
+                a.btn(href="")
+                    span.btn-text TÌM ĐẠI LÝ
+.menu_mb--modal

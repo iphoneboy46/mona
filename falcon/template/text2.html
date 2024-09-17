@@ -1,0 +1,163 @@
+<div class="sign_cs--form-wrap">
+    <div class="sign_cs--list d-wrap">
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="name">Tên khách hàng</label>
+                </div>
+                <div class="form-ip-ip">
+                    [text* namect id:name placeholder "Thêm tên"]
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="phone">Số điện thoại</label>
+                </div>
+                <div class="form-ip-ip">
+                    [tel* telct id:phone placeholder "Thêm số điện thoại"]
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-ip-ip">
+                    [email* emailct id:email placeholder "Thêm email"]
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="store">Tên cửa hàng</label>
+                </div>
+                <div class="form-ip-ip">
+
+                    [text name_store id:store placeholder "Thêm tên cửa hàng"]
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="address">Địa chỉ cửa hàng</label>
+                </div>
+                <div class="form-ip-ip">
+                    [text add_store id:address placeholder "Thêm địa chỉ"]
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="img">Hình ảnh cừa hàng (Không bắt buộc)</label>
+                </div>
+                <div class="sign_cs--upload free-slide2">
+                    <div class="sign_cs--upload-list d-wrap">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-item">
+                                    <div class="sign_cs--upload-box">
+                                        <span class="sign_cs--close close">
+                                            <i class="far fa-times"></i>
+                                        </span>
+                                        <div
+                                            class="sign_cs--upload-item btn-upload">
+                                            [file img1 class:fileUpload]
+                                            <img class="img-src"
+                                                src="/template/assets/images/uploadCs.png"
+                                                alt
+                                                accept="image/png, image/gif, image/jpeg ,image/svg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-item">
+                                    <div class="sign_cs--upload-box">
+                                        <span class="sign_cs--close close">
+                                            <i class="far fa-times"></i>
+                                        </span>
+                                        <div
+                                            class="sign_cs--upload-item btn-upload">
+                                            [file img2 class:fileUpload]
+                                            <img class="img-src"
+                                                src="/template/assets/images/uploadCs.png"
+                                                alt
+                                                accept="image/png, image/gif, image/jpeg ,image/svg">
+                                        </div>
+                                    </div>
+                                </div> <div class="swiper-slide d-item">
+                                    <div class="sign_cs--upload-box">
+                                        <span class="sign_cs--close close">
+                                            <i class="far fa-times"></i>
+                                        </span>
+                                        <div
+                                            class="sign_cs--upload-item btn-upload">
+                                            [file img3 class:fileUpload]
+                                            <img class="img-src"
+                                                src="/template/assets/images/uploadCs.png"
+                                                alt
+                                                accept="image/png, image/gif, image/jpeg ,image/svg">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide d-item">
+                                    <div class="sign_cs--upload-box">
+                                        <span class="sign_cs--close close">
+                                            <i class="far fa-times"></i>
+                                        </span>
+                                        <div
+                                            class="sign_cs--upload-item btn-upload">
+                                            [file img4 class:fileUpload]
+                                            <img class="img-src"
+                                                src="/template/assets/images/uploadCs.png"
+                                                alt
+                                                accept="image/png, image/gif, image/jpeg ,image/svg">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide d-item">
+                                    <div class="sign_cs--upload-box">
+                                        <span class="sign_cs--close close">
+                                            <i class="far fa-times"></i>
+                                        </span>
+                                        <div
+                                            class="sign_cs--upload-item btn-upload">
+                                            [file img5 class:fileUpload]
+                                            <img class="img-src"
+                                                src="/template/assets/images/uploadCs.png"
+                                                alt
+                                                accept="image/png, image/gif, image/jpeg ,image/svg">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sign_cs--item d-item">
+            <div class="form-ip">
+                <div class="form-ip-label">
+                    <label for="note">Ghi chú</label>
+                </div>
+                <div class="form-ip-ip">
+                    [textarea textareact id:note placeholder "Thêm ghi chú"]
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn">
+        <span class="btn-text">
+            [submit class:d--none]
+            ĐĂNG KÝ ĐẠI LÝ</span>
+    </button>
+</div>

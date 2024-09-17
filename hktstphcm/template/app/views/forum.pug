@@ -1,0 +1,166 @@
+extends layout/layout
+block vars
+    -title = 'diễn đàn kiến trúc'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsGsap,JsGsapScroll]
+    -jsComponents = ['header','gsap']
+    -cssLibs = [fontAWS,fontAWS2,CssAos]
+    -cssComponents = ["banner","post"]
+    -cssPages = ["forum"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    +banner-main("Trang chủ","","diễn đàn kiến trúc","diễn đàn kiến trúc")
+    section.forum_table 
+        .container 
+            .forum_table--wrap 
+                h2.title-mn.cl-white.fw-6.t-up(data-aos="fade-up") CHỦ ĐỀ NỔI BẬT
+                .forum_table--box(data-aos="fade-up") 
+                    table 
+                        thead
+                            tr
+                                th
+                                    p.note-sm.cl-white.t-up.fw-6 CHỦ ĐỀ
+                                th 
+                                    p.note-sm.cl-white.t-up.fw-6 LƯỢT TRUY CẬP
+                                th 
+                                    p.note-sm.cl-white.t-up.fw-6 BÌNH LUẬN
+                                th 
+                                    p.note-sm.cl-white.t-up.fw-6 NỔI BẬT
+                        tbody
+                            tr
+                                td(data-label="CHỦ ĐỀ")  
+                                    a.box-dm(href="") THÔNG BÁO
+                                td(data-label="LƯỢT TRUY CẬP")   
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="BÌNH LUẬN")    
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="NỔI BẬT")   
+                                    .forum_table--info 
+                                        .forum_table--info-ava 
+                                            +img("ava.png")
+                                        p.note-text.cl-white Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023)
+                            tr
+                                td(data-label="CHỦ ĐỀ")   
+                                    a.box-dm(href="") PHÊ BÌNH KIẾN TRÚC
+                                td(data-label="LƯỢT TRUY CẬP")   
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="BÌNH LUẬN")    
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="NỔI BẬT")  
+                                    .forum_table--info 
+                                        .forum_table--info-ava 
+                                            +img("ava.png")
+                                        p.note-text.cl-white Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023)
+                            tr
+                                td(data-label="CHỦ ĐỀ")   
+                                    a.box-dm(href="") HỖ TRỢ- GIẢI ĐÁP
+                                td(data-label="LƯỢT TRUY CẬP")   
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="BÌNH LUẬN")   
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="NỔI BẬT")   
+                                    .forum_table--info 
+                                        .forum_table--info-ava 
+                                            +img("ava.png")
+                                        p.note-text.cl-white Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023)
+                            tr
+                                td(data-label="CHỦ ĐỀ")   
+                                    a.box-dm(href="") QUAN NIỆM THIẾT KẾ
+                                td(data-label="LƯỢT TRUY CẬP")    
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="BÌNH LUẬN")    
+                                    p.note-text.cl-white.t-center 273
+                                td(data-label="NỔI BẬT")    
+                                    .forum_table--info 
+                                        .forum_table--info-ava 
+                                            +img("ava.png")
+                                        p.note-text.cl-white Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023)
+    section.solution
+        .container 
+            .solution_wrap 
+                .solution_title(data-aos="fade-up") 
+                    h2.title-mn.cl-white.fw-6.t-up giải pháp thiết kế
+                    a.box-dm(href="") QUAN NIỆM THIẾT KẾ
+                .solution_box 
+                    .solution_list 
+                        .solution_item(data-aos="fade-up")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="200")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="400")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="600")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                    .solution_btn(data-aos="fade-up") 
+                        a.link-text(href="") XEM TẤT CẢ 
+    section.solution
+        .container 
+            .solution_wrap 
+                .solution_title(data-aos="fade-up") 
+                    h2.title-mn.cl-white.fw-6.t-up giải pháp thiết kế
+                    a.box-dm(href="") QUAN NIỆM THIẾT KẾ
+                .solution_box 
+                    .solution_list 
+                        .solution_item(data-aos="fade-up")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="200")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="400")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_item(data-aos="fade-up" data-aos-delay="600")  
+                            +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                    .solution_btn(data-aos="fade-up") 
+                        a.link-text(href="") XEM TẤT CẢ 
+    section.question 
+        .container 
+            .question_wrap 
+                .question_box.d-wrap 
+                    .question_lf.d-item(data-aos="fade-right")
+                        .question_lf--wrap
+                            .question_lf--title 
+                                h2.title-mn.cl-white.fw-6.t-up câu hỏi cần hỗ trợ giải đáp
+                            .question_lf--box
+                                .question_lf--list 
+                                    .question_lf--item  
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                .question_lf--btn 
+                                    +btn("XEM TẤT CẢ CÂU HỎI","","","tran2s")
+                    .question_rt.d-item
+                        .question_rt--wrap 
+                            .question_rt--box 
+                                .question_rt--item(data-aos="fade-up") 
+                                    h2.title-mn.cl-white.fw-6.t-up liên kết trang
+                                    a.question_rt--img(href="")
+                                        +img("f.png")
+                                .question_rt--item(data-aos="fade-up") 
+                                    h2.title-mn.cl-white.fw-6.t-up Chia sẻ trang
+                                    .social
+                                        ul.social_list
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic1.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic2.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic3.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic4.png")

@@ -1,0 +1,289 @@
+@import "../core";
+
+.banner_home {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: var(--size-pd);
+
+    &--wrap {
+        min-height: calc(100svh - var(--size-hd));
+        display: flex;
+        flex-direction: column;
+
+        @include max(600px){
+            justify-content: center;
+        }
+    }
+
+    &--box {
+        padding: var(--size-hd) 0;
+    }
+
+    &--title {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent0);
+
+        .title-lg {
+            // letter-spacing: 0.5rem;
+
+            @include max(360px){
+                @include fz-20;
+            }
+        }
+
+        span{
+            display: block;
+            line-height: 1.5;
+
+        }
+
+        .title-sm {
+            letter-spacing: 0.8rem;
+
+            @include max(1400px){
+                letter-spacing: 0.3rem;
+            }
+
+            @include max(800px){
+                letter-spacing: normal;
+            }
+
+            @include max(360px){
+                @include fz-18;
+            }
+        }
+    }
+
+    &--splide {
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        width: 100%;
+        background: $color-white;
+
+        opacity: 1;
+        @media screen and (min-width:1200px) {
+
+            animation: anHienSlide 1.2s linear forwards;
+
+            @keyframes anHienSlide {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+
+
+
+
+
+        &.actived {
+            z-index: 1000;
+            transform: translateY(100%);
+            visibility: hidden;
+            position: fixed;
+
+            @keyframes truotLenBanner {
+                0% {
+                    transform: translateY(100%);
+                    visibility: hidden;
+
+
+                }
+
+                100% {
+                    transform: translateY(0);
+                    visibility: visible;
+
+
+                }
+            }
+
+            animation: truotLenBanner 0.5s 0.8s ease forwards;
+            height: 6.5rem;
+
+
+            .banner_home--splide-img {
+                height: 6rem;
+            }
+        }
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            padding: var(--rowContent0) var(--size-pd);
+            column-gap: var(--columnContent32);
+            height: 100%;
+
+            @include max(800px){
+                flex-direction: column;
+                row-gap: var(--rowContent0);
+            padding: var(--rowContent12) 1.6rem;
+
+            }
+        }
+
+        &-lf {
+            min-width: 13%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include max(600px){
+                width: 100%;
+            }
+
+            .note-md {
+                white-space: nowrap;
+            }
+        }
+
+        &-rt {
+            overflow: hidden;
+            width: 100%;
+            flex: 1;
+            @include max(600px){
+                width: 100%;
+            }
+
+        }
+
+        &-list {
+
+            &.d-wrap {
+                margin-left: calc(var(--columnContent24) * -1);
+                margin-right: calc(var(--columnContent24) * -1);
+
+            }
+
+            .splide__list {}
+
+            .splide__slide {
+
+                &.d-item {
+                    // padding-top: 0.1rem;
+                    // padding-bottom: 0.1rem;
+                    padding-left: var(--columnContent24);
+                    padding-right: var(--columnContent24);
+                }
+
+
+                // &:nth-child(9n + 1) {
+                //     .banner_home--splide-img {
+                //         height: 6rem;
+                //     }
+                // }
+
+
+                // &:nth-child(9n + 2) {
+                //     .banner_home--splide-img {
+                //         height: 6rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 3) {
+                //     .banner_home--splide-img {
+                //         height: 6rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 4) {
+                //     .banner_home--splide-img {
+                //         height: 8rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 5) {
+                //     .banner_home--splide-img {
+                //         height: 10rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 6) {
+                //     .banner_home--splide-img {
+                //         height: 6rem;
+                //     }
+                // }
+
+
+                // &:nth-child(9n + 7) {
+                //     .banner_home--splide-img {
+                //         height: 4rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 8) {
+                //     .banner_home--splide-img {
+                //         height: 6rem;
+                //     }
+                // }
+
+                // &:nth-child(9n + 9) {
+                //     .banner_home--splide-img {
+                //         height: 12rem;
+                //     }
+                // }
+
+
+
+
+
+
+            }
+        }
+
+        &-item {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-img {
+            width: auto;
+            // height: 6rem;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding: 0.6rem;
+            // box-shadow: 0 0 0.3rem rgba($color: #000000, $alpha: 0.3);
+            transition: 0.3s linear;
+
+            @include max(800px){
+                height: 6rem;
+            }
+
+            @include hover {
+                img {
+                    transform: scale(0.95);
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain !important;
+                transition: 0.3s linear;
+            }
+        }
+    }
+}
+
+.home_news {
+    overflow: hidden;
+    padding-top: var(--size-pd);
+    padding-bottom: var(--size-pd);
+
+    &--wrap {}
+
+}

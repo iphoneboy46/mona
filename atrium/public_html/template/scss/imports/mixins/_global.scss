@@ -1,0 +1,469 @@
+// MIXINS
+// media hover
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin hover-none {
+  @media (hover: none) {
+    @content;
+  }
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+}
+@mixin transform($args...) {
+  transform: $args;
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+}
+
+@mixin transform-origin($args) {
+  transform-origin: $args;
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  -ms-transform-origin: $args;
+  -o-transform-origin: $args;
+}
+@mixin transition-delay($args) {
+  transition-delay: $args;
+  -webkit-transition-delay: $args;
+  -moz-transition-delay: $args;
+  -ms-transition-delay: $args;
+  -o-transition-delay: $args;
+}
+
+@mixin transition($args...) {
+  transition: $args;
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+}
+
+@mixin text(
+  $font-weight,
+  $font-size,
+  $line-height,
+  $color,
+  $text-transform: none
+) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  text-transform: $text-transform;
+}
+// position
+@mixin pos(
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $pos: absolute,
+  $z-index: null
+) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}
+
+// abs top lef
+@mixin abs-top-left($top: 0, $left: 0) {
+  @include pos($top: $top, $left: $left);
+}
+// abs top right
+@mixin abs-top-right($top: 0, $right: 0) {
+  @include pos($top: $top, $right: $right);
+}
+// abs bot lef
+@mixin abs-bot-left($bottom: 0, $left: 0) {
+  @include pos($bottom: $bottom, $left: $left);
+}
+// abs top right
+@mixin abs-bot-right($bottom: 0, $right: 0) {
+  @include pos($bottom: $bottom, $right: $right);
+}
+// abs dropdown
+@mixin abs-dropdown {
+  @include pos($top: 100%, $left: 0, $z-index: 10);
+}
+@mixin center($param) {
+  @if $param == "y" {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+  } @else if $param == "x" {
+    left: 50%;
+    position: absolute;
+    @include transform(translateX(-50%));
+  } @else if $param == "xy" {
+    @include abs-top-left(50%, 50%);
+    @include transform(translate(-50%, -50%));
+  } @else if $param == "block" {
+    display: block;
+    margin: 0 auto;
+  } @else if $param == "inline" {
+    display: inline-block;
+    @include center(x);
+    position: relative;
+  } @else if $param == "flex" {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } @else if $param == "flex-col" {
+    @include center(flex);
+    flex-direction: column;
+  }
+}
+
+@mixin midimg($maxwidth: initial) {
+  max-width: $maxwidth;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  @include center();
+}
+
+@mixin fullscreen($fixed: false) {
+  @include size(100%);
+  top: 0;
+  left: 0;
+  @if $fixed {
+    position: fixed;
+  } @else {
+    position: absolute;
+  }
+}
+
+@mixin visible($param: 1) {
+  @if $param == 1 {
+    opacity: 1;
+    pointer-events: auto;
+  } @else {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+@mixin br($radius: $base-radius) {
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin br-top($radius: $base-radius) {
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin br-left($radius: $base-radius) {
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin br-right($radius: $base-radius) {
+  border-top-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+  background-clip: padding-box;
+}
+@mixin br-bottom($radius: $base-radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin overtext($lines) {
+  display: -webkit-inline-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+// size
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+// circle
+@mixin circle($size) {
+  @include size($size);
+  @include br(50%);
+}
+// customscroll
+@mixin customscroll($size: 0.3rem, $bgTrack: $bg-main, $bgThumb: $white) {
+  &::-webkit-scrollbar {
+    @include size($size);
+  }
+  &::-webkit-scrollbar-track {
+    background: $bgTrack;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $bgThumb;
+  }
+}
+// pseudo
+@mixin pseudo(
+  $w: 100%,
+  $h: 100%,
+  $pos: absolute,
+  $display: block,
+  $content: "",
+  $bg: null
+) {
+  content: $content;
+  display: $display;
+  position: $pos;
+  background-color: $bg;
+  @include size($w, $h);
+}
+// ratio
+@mixin ratio {
+  $padding: calc(var(--y) / var(--x) * 100%);
+  &:before {
+    content: "";
+    display: block;
+    padding-top: $padding;
+  }
+}
+// image responsive
+@mixin image-responsive($x, $y) {
+  --x: #{$x};
+  --y: #{$y};
+  @include ratio;
+  width: 100%;
+  position: relative;
+  > * {
+    @include abs-top-left();
+    @include img-cover();
+  }
+}
+// placeholder input
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+// input hide spinner
+@mixin input-hide-spinner {
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+}
+// select hide appearance
+@mixin select-hide-appearance {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+// dropdown spacing
+@mixin fake-dropdown-spacing($h) {
+  @include pseudo(100%, $h);
+  @include abs-top-left;
+  @include transform(translateY(calc(100% + #{$h})));
+  background-color: transparent;
+  opacity: 0;
+}
+// arrow
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+  width: 0;
+  height: 0;
+  @if ($direction == left) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+  } @else if ($direction == right) {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  } @else if ($direction == down) {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  } @else {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+  }
+}
+// font-size , line-height
+@mixin size-text($fz, $lh: normal, $lsp: normal) {
+  font-size: $fz * 0.1rem;
+  @if $lh == normal {
+    line-height: normal;
+  } @else {
+    line-height: $lh;
+  }
+  @if $lsp == normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: $lsp;
+  }
+}
+
+// retina images
+@mixin image-2x($image, $w, $h) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $w $h;
+  }
+}
+
+// image cover
+@mixin img-cover {
+  @include size(100%);
+  object-fit: cover;
+}
+
+@mixin border($clr: $line, $w: 0.1rem, $style: solid) {
+  border: $w $style $clr;
+}
+
+@mixin bd-top($clr: $line, $w: 0.1rem, $style: solid) {
+  border-top: $w $style $clr;
+}
+@mixin bd-right($clr: $line, $w: 0.1rem, $style: solid) {
+  border-right: $w $style $clr;
+}
+@mixin bd-bot($clr: $line, $w: 0.1rem, $style: solid) {
+  border-bottom: $w $style $clr;
+}
+@mixin bd-left($clr: $line, $w: 0.1rem, $style: solid) {
+  border-left: $w $style $clr;
+}
+@mixin bb-style($style, $space) {
+  border-bottom: $style;
+  padding-bottom: $space;
+  margin-bottom: $space;
+}
+
+@mixin hover-image-zoom {
+  position: relative;
+  overflow: hidden;
+
+  @include hover {
+    img {
+      @include transform(scale(1.2));
+    }
+  }
+}
+@mixin background-transition($initial, $hover, $inverted: false, $timing: $t) {
+  background: linear-gradient(
+    90deg,
+    $hover 0%,
+    $hover 50%,
+    $initial 50%,
+    $initial 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  @if $inverted {
+    background-position: left bottom;
+  }
+  transition: background-position $timing ease-out;
+
+  &:hover {
+    background-position: left bottom;
+    @if $inverted {
+      background-position: right bottom;
+    }
+  }
+}
+
+// mixin flex
+@mixin flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--g-y));
+  margin-right: calc(-0.5 * var(--g-x));
+  margin-left: calc(-0.5 * var(--g-x));
+  > * {
+    @include make-col-ready();
+  }
+}
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-center-y {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin bg-abs {
+  @include fullscreen;
+  z-index: -1;
+  img {
+    @include img-cover;
+  }
+}
+
+@mixin width($col, $total) {
+  width: $col / $total * 100%;
+}

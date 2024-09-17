@@ -1,0 +1,125 @@
+.recruit {
+  &_list {
+    > .row {
+      --g-y: 4.4rem;
+      @include sm {
+        --g-y: 3.2rem;
+      }
+    }
+  }
+  &_date {
+    margin-top: 1.2rem;
+    background: #1f1f1f;
+    border-radius: 5rem;
+    padding: 0.6rem 1.4rem;
+    color: #f4f4f4;
+    width: fit-content;
+    @include maxW(420px) {
+      font-size: var(--body14-fs);
+    }
+  }
+  .pagination {
+    ul.page-numbers {
+      justify-content: flex-start;
+    }
+  }
+}
+
+.recruit_item {
+  max-width: 29.4rem;
+  padding: 1.6rem;
+  &-head {
+    border-bottom: 0.1rem solid #333;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.6rem;
+    .title {
+      @include text(600, var(--h3-fs), var(--h3-lh), #f4f4f4);
+      a {
+        @include overtext(1);
+      }
+    }
+
+    @include xs {
+      .title {
+        font-size: var(--h5-fs);
+        line-height: var(--h5-lh);
+      }
+    }
+  }
+  &-list {
+    .li {
+      display: flex;
+      column-gap: 1.2rem;
+      &:not(:first-child) {
+        margin-top: 0.8rem;
+      }
+
+      &-icon {
+        @include circle(3.2rem);
+        @include center(flex);
+        background: #1a1a1a;
+        img {
+          width: 50%;
+        }
+      }
+      &-text {
+        font-size: var(--body14-fs);
+        line-height: var(--body14-lh);
+        margin-top: 0.6rem;
+        color: #a8a8a8;
+      }
+    }
+  }
+  @include sm {
+    padding: 0;
+  }
+}
+
+.recruit_detail {
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    border-bottom: 0.1rem solid #333;
+    padding-bottom: 3.2rem;
+    margin-bottom: 3.2rem;
+    .title {
+      font-size: var(--h3-fs);
+      line-height: var(--h3-lh);
+      font-weight: 600;
+    }
+  }
+  &-content {
+    .detail-item {
+      .row {
+        --g-y: 1.2rem;
+      }
+      &:not(:first-child) {
+        margin-top: 9rem;
+        @include lg {
+          margin-top: 5rem;
+        }
+      }
+
+      .c-title {
+        @include width(3, 8);
+      }
+      .c-content {
+        @include width(5, 8);
+      }
+      @include sm {
+        .c-content,
+        .c-title {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &-guide {
+    margin-top: 4.4rem;
+    padding-top: 2.4rem;
+    @include bd-top(#333);
+  }
+}

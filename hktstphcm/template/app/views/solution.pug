@@ -1,0 +1,172 @@
+extends layout/layout
+block vars
+    -title = 'giải pháp thiết kế'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''   
+    -jsLibs = [JsJquery,JsAos,JsGsap,JsGsapScroll,JsQuill,JsSelect2,JsUpQuill]
+    -jsComponents = ['header','gsap','inputEditor','popup',"gsap","select2"]
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssQuill,CssSelect2]
+    -cssComponents = ["banner","post","select2"]
+    -cssPages = ["forum","contact"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    +banner-main("Trang chủ","","giải pháp thiẾt kế","giải pháp thiẾt kế")
+    section.solution
+        .container 
+            .solution_wrap
+                .solution_top(data-aos="fade-up")  
+                    //- đăng nhập thành công thì add class loginSuccess
+                    .solution_login.loginSucess 
+                        .solution_login--wrap
+                            button.btn.tran2s.popup-btn(data-popup="popup-1") 
+                                span.btn-text TẠO BÀI VIẾT CỦA BẠN
+                            p.note-md.cl-red.fw-7 * VUI LÒNG ĐĂNG NHẬP/ĐĂNG KÝ ĐỂ TẠO BÀI VIẾT. 
+                .solution_bottom(data-aos="fade-up")  
+                    .box_filter
+                        .box_filter--list.d-wrap  
+                            .box_filter--item.d-item.d-4 
+                                label.form-item
+                                    p.form-item-lb Tìm kiếm
+                                    input.form-item-ip(placeholder="Nhập nội dung tìm kiếm")
+                            .box_filter--item.d-item.d-4 
+                                label.form-item
+                                    p.form-item-lb Lượt like
+                                    select.js-op.form-item-op(data-placeholder="Lượt like")
+                                        option(value="")
+                                        option(value="option1") demo 1
+                                        option(value="option2") demo 2
+                                        option(value="option3") demo 3
+                            .box_filter--item.d-item.d-4 
+                                label.form-item
+                                    p.form-item-lb Đánh giá
+                                    select.js-op.form-item-op(data-placeholder="Đánh giá")
+                                        option(value="")
+                                        option(value="option1") 2021
+                                        option(value="option2") 2022
+                                        option(value="option3") 2023
+                            .box_filter--item.d-item.d-4 
+                                label.form-item
+                                    +btn("Tìm kiếm","button","","")
+                    .solution_box 
+                        .solution_list 
+                            .solution_item(data-aos="fade-up")  
+                                +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                            .solution_item(data-aos="fade-up" data-aos-delay="200")  
+                                +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                            .solution_item(data-aos="fade-up" data-aos-delay="400")  
+                                +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                            .solution_item(data-aos="fade-up" data-aos-delay="600")  
+                                +post3("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                        .solution_btn(data-aos="fade-up") 
+                            a.link-text(href="") XEM TẤT CẢ 
+    section.question 
+        .container 
+            .question_wrap 
+                .question_box.d-wrap 
+                    .question_lf.d-item(data-aos="fade-right")
+                        .question_lf--wrap
+                            .question_lf--title 
+                                h2.title-mn.cl-white.fw-6.t-up câu hỏi cần hỗ trợ giải đáp
+                                button.btn.tran2s.popup-btn(data-popup="popup-2") 
+                                    span.btn-text TẠO BÀI VIẾT CỦA BẠN
+                            .question_lf--box
+                                .question_lf--list 
+                                    .question_lf--item  
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                    .question_lf--item 
+                                        +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                .question_lf--btn 
+                                    +btn("XEM TẤT CẢ CÂU HỎI","","","tran2s")
+                    .question_rt.d-item
+                        .question_rt--wrap 
+                            .question_rt--box 
+                                .question_rt--item(data-aos="fade-up") 
+                                    h2.title-mn.cl-white.fw-6.t-up liên kết trang
+                                    a.question_rt--img(href="")
+                                        +img("f.png")
+                                .question_rt--item(data-aos="fade-up") 
+                                    h2.title-mn.cl-white.fw-6.t-up Chia sẻ trang
+                                    .social
+                                        ul.social_list
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic1.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic2.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic3.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic4.png")
+    .popup_alert Vui lòng chọn ảnh dưới 2MB
+    .popupBox
+        .popup_main.popup-form(data-popup-id="popup-1")
+            .popup_main--wrap 
+                .popup_main--ex.popup-ex 
+                    i.fal.fa-times-circle
+                .popup_main--form 
+                    form(action="")
+                        .popup_main--form-list 
+                            .popup_main--form-item 
+                                label.form-item
+                                    p.note-md.cl-white.fw-6.t-up CHỦ ĐỀ bài viết
+                                    input(type="text" placeholder="Nhập chủ đề của bài viết của bạn" ).form-item-ip
+                            .popup_main--form-item
+                                label.form-item.quillJS
+                                    p.note-md.cl-white.fw-6.t-up NỘI DUNG bài viết
+                                    #editor-container(data-placeholder="Hãy nhập nội dung bài viết của bạn")
+                        .popup_main--form-ck
+                            label.form-ck-item2 
+                                input(type="checkbox" name="all" checked="checked")
+                                .form-ck-item2-wrap
+                                    .form-ck-item2-lf
+                                        span.box 
+                                        p.note-text 
+                                            |Đồng ý với 
+                                            a(href="").fw-7 chính sách 
+                                            |của hội
+                        .popup_main--form-btn 
+                            +btn("GỬI BÀI VIẾT","","","trans")
+        .popup_main.popup-form(data-popup-id="popup-2")
+            .popup_main--wrap 
+                .popup_main--ex.popup-ex 
+                    i.fal.fa-times-circle
+                .popup_main--form 
+                    form(action="")
+                        .popup_main--form-list 
+                            .popup_main--form-item 
+                                label.form-item
+                                    p.note-md.cl-white.fw-6.t-up CHỦ ĐỀ CÂU HỎI
+                                    input(type="text" placeholder="Nhập chủ đề của bài viết của bạn" ).form-item-ip
+                            .popup_main--form-item
+                                label.form-item.quillJS
+                                    p.note-md.cl-white.fw-6.t-up NỘI DUNG CÂU HỎI
+                                    #editor-container2(data-placeholder2="Hãy nhập nội dung bài viết của bạn")
+                        .popup_main--form-ck
+                            label.form-ck-item2 
+                                input(type="checkbox" name="all" checked="checked")
+                                .form-ck-item2-wrap
+                                    .form-ck-item2-lf
+                                        span.box 
+                                        p.note-text 
+                                            |Đồng ý với 
+                                            a(href="").fw-7 chính sách 
+                                            |của hội
+                        .popup_main--form-btn 
+                            +btn("GỬI BÀI VIẾT","","","trans")
+        .popup_main--modal

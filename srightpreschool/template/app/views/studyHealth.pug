@@ -1,0 +1,92 @@
+extends layout/layout
+block vars
+    -title = 'study'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 HỌC TẬP TẠI SRIGHT
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","HỌC TẬP TẠI SRIGHT")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chương trình học
+                            .swiper-slide.d-item
+                                a(href="").tab_item Một ngày của bé
+                            .swiper-slide.d-item
+                                a(href="").tab_item Thực đơn
+                            .swiper-slide.d-item
+                                a(href="").tab_item Đồng phục
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Chăm sóc sức khoẻ
+                    .swiper-scrollbar
+    section.study_health 
+        .study_health--wrap 
+            .about_info(data-aos="fade-in")
+                .about_info--bgs 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo2.png")
+                            .swiper-slide 
+                                .about_info--bg
+                                    +img("bgInfo3.png")
+                    .swiper-pagination.custom
+            .valueAb.studyHealth 
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                h2.title-lg.cl-pri.fw-7 Chăm sóc sức khỏe đảm bảo sự phát triển toàn diện của trẻ
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .box-wrap 
+                                                .box-content
+                                                    ul 
+                                                        li.note-lg.cl-pri.fw-4 Top 10 Doanh Nhân Tiêu Biểu Lĩnh Vực Giáo Dục 2023 do Cục Sở Hữu Trí Tuệ VN & Liên Hiệp Khoa Học Doanh Nhân VN đề cử.
+                                                        li.note-lg.cl-pri.fw-4 Thạc Sỹ Khoa Học Công Nghệ RMIT Melbourne, Australia.
+                                                        li.note-lg.cl-pri.fw-4 Former Senior Program Manager tại Intel Products Vietnam với nhiều năm kinh nghiệm trong môi trường quản lý vận hành xuất sắc (Operational Excellence).
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Chương Trình Giáo Dục Sớm PF2B® (Paper Flash To Book) Dạy Trẻ Tự Đọc Sách Đa Ngôn Ngữ từ Thai Kì - 6 Tuổi.
+                                                        li.note-lg.cl-pri.fw-4 Nhà Sáng Lập Phương pháp Giáo Dục Sớm SRIGHT®.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về Khoa Học Não Bộ Trẻ Growing Brain - Zero To Three -Washington DC.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo cha mẹ về kỉ luật tích cực cho trẻ Positive Discipline Associataion.
+                                                        li.note-lg.cl-pri.fw-4 Nhà đào tạo về Massage Sơ Sinh Quốc Tế IAIM.
+                                                        li.note-lg.cl-pri.fw-4 Chứng chỉ Giáo Dục Sớm Phần Lan - Diploma of Finland Education from CCE
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap 
+                                                h2.title-lg.fw-8.t-up SỨC KHOẺ TINH THẦN
+                                                .box-content 
+                                                    p.note-lg Chăm sóc sức khỏe cho trẻ mầm non đòi hỏi sự chăm sóc toàn diện và đa chiều từ phía cả trung tâm mầm non Sright và gia đình để đảm bảo sự phát triển và hạnh phúc của trẻ.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("sth.png")
+                        

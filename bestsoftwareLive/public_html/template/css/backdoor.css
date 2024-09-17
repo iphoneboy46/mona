@@ -1,0 +1,225 @@
+vi-VN .home .home-next .title-lg{
+    max-width: none !important;
+}
+
+.post-ct {
+    padding-bottom: 3rem !important;
+}
+
+.post-ct.mona-content blockquote {
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+
+.footer-mona .title {
+    white-space: nowrap;
+}
+
+.footer-mona {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+
+.popmake .btn::after{
+    height: 65% !important;
+}
+
+.popmake .btn::after:hover{
+    height: 75% !important;
+
+}
+
+/* #pum-526{
+    z-index: 1000 !important;
+} */
+
+
+.pum{
+    z-index: 1000 !important;
+}
+
+.pum-theme-508 .pum-container, .pum-theme-default-theme .pum-container{
+    background-color:white !important;
+}
+
+.pum-theme-508,
+.pum-theme-default-theme {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.pum-container.pum-responsive.pum-responsive-medium{
+    width: 50% !important;
+    
+}
+
+.pum-theme-508 .pum-container, .pum-theme-default-theme .pum-container{
+    padding: 4rem !important;
+}
+
+.pum-theme-508 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close{
+    font-size: 2.4rem !important;
+    color: red !important;
+    right: 1% !important;
+}
+
+.home-sync-logo{
+    z-index: 5 !important;
+}
+.btrn-btn{
+    margin-top: 3rem;
+    column-gap: 2rem !important;
+
+   
+}
+
+/* .our-say-item-wrap{
+    height: 100%;
+} */
+
+.home-say-item{
+    height: unset;
+}
+
+.our-say-item-top{
+    height: auto;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.home-say-list .swiper-slide{
+    height: unset;
+}
+.our-say-item-img{
+    margin-top: 0;
+}
+
+.our-say-item-top-rt .title-sm{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.our-say-item-top-box .note-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.service-best-video{
+    padding-top: unset;
+
+}
+
+
+.service-best-video video{
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-best-video img{
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .post-ct.mona-content figure {
+        margin-bottom: 2rem !important;
+    }
+
+    .pum-container.pum-responsive.pum-responsive-medium{
+        width: 70% !important;
+        
+    }
+    
+    .pum-theme-508 .pum-container, .pum-theme-default-theme .pum-container{
+        padding: 3rem !important;
+    }
+
+    .our-say-item-top{
+        height: 100%;
+        border-radius: 2rem;
+        padding: 2rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   
+
+    .pum-container.pum-responsive.pum-responsive-medium{
+        width: 80% !important;
+        
+    }
+    
+    .pum-theme-508 .pum-container, .pum-theme-default-theme .pum-container{
+        padding:3rem 2rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post-ct-lf .title-md {
+        margin-bottom: 0.5rem !important;
+    }
+
+   
+
+    .pum-container.pum-responsive.pum-responsive-medium{
+        width: 90% !important;
+        
+    }
+    
+    .pum-theme-508 .pum-container, .pum-theme-default-theme .pum-container{
+        padding: 4rem 2rem !important;
+    }
+
+    .pum-theme-508 .pum-title, .pum-theme-default-theme .pum-title{
+        margin-bottom: 2rem !important;
+        font-size: 2.4rem !important;
+        
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .footer-fb-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btrn-btn{
+        justify-content: center;
+        
+     }
+
+    .post-ct.mona-content blockquote.wp-block-quote {
+        padding: 1.2rem !important;
+    }
+
+    .footer-mona {
+        justify-content: center;
+    }
+
+    .pum-theme-508 .pum-title, .pum-theme-default-theme .pum-title{
+        margin-bottom: 2rem !important;
+        font-size: 2.4rem !important;
+        text-align: center !important;
+    }
+
+    .pum-container .btn{
+        margin: 2rem auto 0;
+    }
+}
+

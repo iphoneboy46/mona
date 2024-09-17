@@ -1,0 +1,171 @@
+extends layout/layout
+block vars
+    -title = 'Home'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_home.showed
+        .banner_home--btn
+            .btn-scroll.scroll-down
+                .btn-scroll--img
+                    +img("scrollDown.svg")
+        .banner_home--bg 
+            +img("bnh.png")
+        .container 
+            .banner_home--wrap
+                .banner_home--box 
+                    .banner_home--title 
+                        h2.title-sm2.cl-white.fl-sec.t-up SRight
+                        h1.title-lg.cl-white.fw-8 
+                            |Chào mừng 
+                            br
+                            |Quý phụ huynh
+                    p.note-md.cl-white
+                        |Trường mầm non tiên phong xây dựng chương trình học theo đúng 
+                        strong.fw-7 Giai Đoạn Vàng 
+                        |phát triển của từng Bán cầu não Phải & Trái 
+                    +btn("Tìm hiểu ngay","","","")
+    section.valueAb.homePage.des-scroll
+        .valueAb_wrap
+            .valueAb_list
+                .valueAb_item.ani
+                    +foot1()
+                    .container
+                        .valueAb_item--wrap
+                            .valueAb_item--lf
+                                .valueAb_item--lf-wrap
+                                    .box-wrap
+                                        h2.title-lg.fw-8.t-up giới thiệu
+                                        .box-content
+                                            p.note-lg Mầm non song ngữ Giáo dục sớm SRIGHT là một trong những dự án cốt lõi nằm trong hệ thống giáo dục SRIGHT International Education, tiên phong áp dụng Giáo dục sớm Chuẩn khoa học Não Bộ trên thế giới vào độ tuổi vàng 0 - 6 tuổi, nhằm mang lại một môi trường mầm non với chân dung đầu ra học sinh thực sự khác biệt và toàn diện
+                                        +btn("Tìm hiểu thêm","","","")
+                            .valueAb_item--rt
+                                .valueAb_item--rt-wrap
+                                    .valueAb_item--img
+                                        +img("h1.png")
+                .valueAb_item.ani
+                    +foot2()
+                    .container
+                        .valueAb_item--wrap
+                            .valueAb_item--lf
+                                .valueAb_item--lf-wrap
+                                    .box-wrap
+                                        h2.title-lg.fw-8.t-up VÌ SAO CHỌN SRIGHT
+                                        .box-content
+                                            p.note-lg SRIGHT Preschool là trường mầm non đầu tiên tiên phong xây dựng chương trình họcưu việt theo đúng Giai Đoạn Vàng phát triển của từng Bán cầu não Phải & Trái với 10môn học được thiết kế bài bản & chuyên biệt cho từng độ tuổi.SRIGHT Preschool xây dựng mô hình quản lý giáo dục xuất sắc QIPOSS, tự hào vớihình ảnh học sinh SRIGHTer phát triển vượt trội và toàn diện về Nhân - Trí - Lực dựatrên triết lý Giáo Dục Đúng Ngay Từ Đầu.
+                                        +btn("Tìm hiểu thêm","","","")
+                            .valueAb_item--rt
+                                .valueAb_item--rt-wrap
+                                    .valueAb_item--img
+                                        +img("h2.png")
+                .valueAb_item.ani
+                    +foot2()
+                    .container
+                        .valueAb_item--wrap
+                            .valueAb_item--lf
+                                .valueAb_item--lf-wrap
+                                    .box-wrap
+                                        h2.title-lg.fw-8.t-up học tập tại SRIGHT 
+                                        .box-content
+                                            p.note-lg Chương trình Giáo Dục Sớm SRIGHT chuẩn Khoa học Não bộ bản quyền, ứng dụngtinh hoa các phương pháp Giáo Dục Sớm trên thế giới ngay từ 0 tuổi để xây dựngchân dung em bé SRIGHTer phát triển vượt trội & toàn diện.
+                                        +btn("Tìm hiểu thêm","","","")
+                            .valueAb_item--rt
+                                .valueAb_item--rt-wrap
+                                    .valueAb_item--img
+                                        +img("h3.png")
+                .valueAb_item.ani
+                    +foot3()
+                    .container
+                        .valueAb_item--wrap
+                            .valueAb_item--lf
+                                .valueAb_item--lf-wrap
+                                    .box-wrap
+                                        h2.title-lg.fw-8.t-up tuyển sinh
+                                        .box-content
+                                            p.note-lg Sright tiên phong áp dụng Giáo dục sớm Chuẩn khoa học Não Bộ trên thế giới vào độ tuổi vàng 0 - 6 tuổi, nhằm mang lại một môi trường mầm non với chân dung đầu ra học sinh thực sự khác biệt và toàn diện
+                                        +btn("Tìm hiểu thêm","","","")
+                            .valueAb_item--rt
+                                .valueAb_item--rt-wrap
+                                    .valueAb_item--img
+                                        +img("h4.png")
+    section.home_news.free-slide
+        .container
+            .home_news--wrap 
+                .box-title 
+                    h2.title-lg.fw-8.cl-white.t-up(data-aos="fade-right") Tin tức và sự kiện
+                    a.btn(href="" data-aos="fade-left")
+                        span.btn-text Xem tất cả
+                .home_news--list.d-wrap(data-aos="fade-up") 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("n1.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--wrap
+                                                    a.box-dm(href="") Sáng Tạo
+                                                    .news_box--note
+                                                        p.note-sm.cl-pri Minh Tuan
+                                                        p.note-sm.cl-pri 05/12/2023
+                                                h3.title.note-lg.cl-pri.fw-7
+                                                    a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                                p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                                a.text-link(href="") Xem chi tiết
+                            .swiper-slide.d-item.d-3
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("n2.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--wrap
+                                                    a.box-dm(href="") Sáng Tạo
+                                                    .news_box--note
+                                                        p.note-sm.cl-pri Minh Tuan
+                                                        p.note-sm.cl-pri 05/12/2023
+                                                h3.title.note-lg.cl-pri.fw-7
+                                                    a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                                p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                                a.text-link(href="") Xem chi tiết
+                            .swiper-slide.d-item.d-3
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("n3.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--wrap
+                                                    a.box-dm(href="") Sáng Tạo
+                                                    .news_box--note
+                                                        p.note-sm.cl-pri Minh Tuan
+                                                        p.note-sm.cl-pri 05/12/2023
+                                                h3.title.note-lg.cl-pri.fw-7
+                                                    a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                                p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                                a.text-link(href="") Xem chi tiết
+                            .swiper-slide.d-item.d-3
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img("n1.png")
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--wrap
+                                                    a.box-dm(href="") Sáng Tạo
+                                                    .news_box--note
+                                                        p.note-sm.cl-pri Minh Tuan
+                                                        p.note-sm.cl-pri 05/12/2023
+                                                h3.title.note-lg.cl-pri.fw-7
+                                                    a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                                p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                                a.text-link(href="") Xem chi tiết
+                    .swiper-pagination

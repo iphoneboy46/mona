@@ -1,0 +1,189 @@
+extends layout/layout
+block vars
+    -title = 'Chi tiết tuyển dụng'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh1.png","Chi tiết tuyển dụng","Trang chủ","Tuyển dụng","Chi tiết tuyển dụng")
+    section.du_hoc 
+        .container 
+            .du_hoc--wrap.d-wrap 
+                .du_hoc--lf.d-item 
+                    .du_hoc--lf-wrap 
+                        .tuyen_dung--ct 
+                            .tuyen_dung--ct-wrap 
+                                .tuyen_dung--ct-top
+                                    .tuyen_dung--ct-title
+                                        h2.title-sm3.fw-6 Giảng viên Tiếng Anh
+                                        p.note-text.fw-6.cl-green Còn 12 ngày để ứng tuyển
+                                    ul.tuyen_dung--infos
+                                        -
+                                            const tdics = [
+                                                {
+                                                    img:"tdic1.png",
+                                                    title:"12 triệu - 15 triệu VNĐ"
+                                                },
+                                                {
+                                                    img:"tdic2.png",
+                                                    title:"10 nhân sự"
+                                                },
+                                                {
+                                                    img:"tdic3.png",
+                                                    title:"Không yêu cầu kinh nghiệm"
+                                                },
+                                                {
+                                                    img:"tdic4.png",
+                                                    title:"Không yêu cầu bằng cấp"
+                                                }
+                                            ]
+                                        each tdic , i in tdics
+                                            li.tuyen_dung--info 
+                                                span.ic 
+                                                    +img(tdic.img)
+                                                p.note-text.fw-7.cl-gray3 #{tdic.title}
+                                .tuyen_dung--ct-bottom 
+                                    .tuyen_dung--ct-content 
+                                        p.note-text Chúng tôi tìm kiếm những ứng viên năng động, nhiệt huyết và có đam mê với lĩnh vực giáo dục để cùng nhau xây dựng một môi trường học tập và làm việc chuyên nghiệp, hiệu quả. Ứng viên sẽ có cơ hội phát triển nghề nghiệp và tham gia vào các chương trình đào tạo chuyên sâu của chúng tôi.
+                                        br
+                                        +img("img3.png")
+                                        br
+                                        br
+                                        p.note-text Chúng tôi tìm kiếm những ứng viên năng động, nhiệt huyết và có đam mê với lĩnh vực giáo dục để cùng nhau xây dựng một môi trường học tập và làm việc chuyên nghiệp, hiệu quả. Ứng viên sẽ có cơ hội phát triển nghề nghiệp và tham gia vào các chương trình đào tạo chuyên sâu của chúng tôi.
+                                        br
+                                        h3.title-mn.fw-6 Mô tả công việc
+                                        br
+                                        ul 
+                                            li Giảng dạy tiếng Anh cho học viên chuẩn bị du học.
+                                            li Soạn giáo án và chuẩn bị tài liệu giảng dạy phù hợp.
+                                            li Tổ chức và tham gia các buổi hội thảo, tư vấn du học cho học viên.
+                                            li Theo dõi và đánh giá tiến bộ của học viên, cung cấp phản hồi để cải thiện.
+                                            li Theo dõi và đánh giá tiến bộ của học viên, cung cấp phản hồi để cải thiện.
+                                        br
+                                        h3.title-mn.fw-6 Yêu cầu công việc
+                                        br
+                                        ul 
+                                            li Tốt nghiệp Đại học chuyên ngành tiếng Anh, Sư phạm tiếng Anh hoặc các ngành liên quan.
+                                            li Có chứng chỉ giảng dạy tiếng Anh quốc tế (TESOL, CELTA, TEFL) là một lợi thế.
+                                            li Có chứng chỉ giảng dạy tiếng Anh quốc tế (TESOL, CELTA, TEFL) là một lợi thế.
+                                            li Kỹ năng giao tiếp tốt, nhiệt tình, có trách nhiệm và yêu nghề.
+                                            li Khả năng làm việc nhóm và độc lập, sẵn sàng học hỏi và tiếp thu ý kiến phản hồi.
+                                        br
+                                        h3.title-mn.fw-6 Quyền lợi
+                                        br
+                                        ul 
+                                            li Mức lương hấp dẫn, cạnh tranh, thưởng theo hiệu quả công việc.
+                                            li Môi trường làm việc chuyên nghiệp, năng động.
+                                            li Được tham gia các khóa đào tạo nâng cao kỹ năng giảng dạy.
+                                            li Cơ hội thăng tiến và phát triển nghề nghiệp.
+                                        br
+                                        h3.title-mn.fw-6 Hồ sơ bao gồm
+                                        br
+                                        ul 
+                                            li Đơn xin việc.
+                                            li Sơ yếu lý lịch (CV).
+                                            li Bản sao các bằng cấp, chứng chỉ liên quan.
+                                            li Thư giới thiệu (nếu có).
+                                        br
+                                        p.note-text.cl-five.fw-6 Hạn nộp hồ sơ: 30/06/2024
+                                        br
+                                        h3.title-mn.fw-6 Cách thức nộp hồ sơ
+                                        br
+                                        p.note-text 
+                                            |Ứng viên vui lòng gửi hồ sơ qua email: tuyensinh@vinamex.edu.vn hoặc nộp trực tiếp tại địa chỉ: 
+                                            strong.fw-6 CÔNG TY CỔ PHẦN TẬP ĐOÀN GIÁO DỤC VINAMEX -  Lô 2, Vị trí 2, Cụm Công nghiệp Thanh Oai, Xã Bích Hòa, Huyện Thanh Oai, Hà Nội
+                .du_hoc--rt.d-item 
+                    .du_hoc--rt-wrap 
+                        .du_hoc--news 
+                            h2.title-mn.fw-7 Bài viết mới nhất
+                            .du_hoc--news-list
+                                -
+                                    const dh2s = [
+                                        {
+                                            img:"n8.png",
+                                            title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n1.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n2.png",
+                                            title:"Quy trình xét hồ sơ THPT Công lập Úc",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n3.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n4.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n5.png",
+                                            title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n6.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n7.png",
+                                            title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n8.png",
+                                            title:"Trường ĐH Sejong – Nơi nuôi dưỡng những ước mơ",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        }
+                                    ]
+                                each dh , i in dh2s 
+                                    +post(dh.img,dh.title,dh.content)
+    section.post_similar.free-slide 
+        .container
+            .post_similar--wrap 
+                h2.title-sm2.fw-6 Bài viết tương tự
+                .post_similar--list.d-wrap
+                    .swiper.mySwiper 
+                        .swiper-wrapper
+                            -
+                                const simis = [
+                                    {
+                                        img:"td1.png",
+                                        title:"Nhân viên Tư vấn Du học",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td2.png",
+                                        title:"Giảng viên Tiếng Anh",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td3.png",
+                                        title:"Trưởng phòng marketing",
+                                        han:"Hết hạn",
+                                        class:"err"
+                                    },
+                                    {
+                                        img:"td3.png",
+                                        title:"Trưởng phòng marketing",
+                                        han:"Hết hạn",
+                                        class:"err"
+                                    },
+                                ]
+                            each simi , i in simis 
+                                .swiper-slide.d-item.d-3
+                                    .post_similar--item
+                                        +post-td(simi.img,simi.title,simi.han,simi.class)
+                    .swiper-pagination

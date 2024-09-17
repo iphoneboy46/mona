@@ -1,0 +1,340 @@
+extends layout/layout
+block vars
+    -title = 'Vì sao chọn'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_why 
+        .banner_why--bg 
+            +img("bnw.png")
+        .container 
+            .banner_why--wrap
+                .banner_why--box
+                    .banner_main--box
+                        .banner_main--box-top
+                            h1.title-lg2.cl-pri.t-center.t-up.fw-7 Vì sao chọn sright
+                        .banner_main--box-bottom
+                            +breadcrumbs("Home","","Vì sao chọn Sright")
+                    .banner_why--ics 
+                        .banner_why--list.d-wrap 
+                            .banner_why--item.d-item
+                                a(href="#QualityCommitment").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic1.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Quality Commitment
+                            .banner_why--item.d-item
+                                a(href="#Infrastruture").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic2.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Infrastruture
+                            .banner_why--item.d-item
+                                a(href="#Program").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic3.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Program
+                            .banner_why--item.d-item
+                                a(href="#OperationalExcellence").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic4.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Operational Excellence
+                            .banner_why--item.d-item
+                                a(href="#Specialized").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic5.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Specialized
+                            .banner_why--item.d-item
+                                a(href="#SocialResponsibility").banner_why--item-wrap 
+                                    .banner_why--ic
+                                        .banner_why--ic-img
+                                            +img("wic6.svg")
+                                    .banner_why--title 
+                                        p.note-md.t-center.fw-7.cl-pri Social Responsibility
+    section.why 
+        .why_wrap 
+            .valueAb.Why
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani(id="QualityCommitment")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic1.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up QUALITY COMMITMENT
+                                                        h2.title-lg.cl-pri.fw-8.t-up 
+                                                            |Cam kết
+                                                            br 
+                                                            |chất lượng đầu ra
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri SRIGHT Preschool là trường mầm non cam kết chất lượng đầu ra của từng SRIGHTer dựa trên Bộ công cụ tiêu chí đánh giá về các mặt phát triển nhận thức, ngôn ngữ, thể chất, thẩm mỹ và kĩ năng TCXH dựa trên khung chuẩn của Chương Trình GDMN Bộ Giáo Dục.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w1.png")
+                        .valueAb_item.ani(id="Infrastruture")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic2.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up INFRASTRUCTURE
+                                                        h2.title-lg.cl-pri.fw-8.t-up CƠ SỞ VẬT CHẤT
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri 
+                                                            |SRIGHT Preschool được xây dựng mới hoàn toàn với cơ sở vật chất 
+                                                            strong.fw-7 trang bị hiện đại 
+                                                            |& đề cao tính an toàn cho từng SRIGHTer về mặt sức khỏe & tinh thần
+                                                .why_btn 
+                                                    //- button.btn.cl-4.popup-btn(data-popup="popup-why") 
+                                                    //-     span.btn-text Xem chi tiết
+                                                    a.btn.cl-4(href="./assets/images/str.png" data-fancybox="gallery")
+                                                        span.btn-text Xem chi tiết
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w6.png")
+                        .valueAb_item.ani(id="Program")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic3.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up PROGRAM
+                                                        h2.title-lg.cl-pri.fw-8.t-up CHƯƠNG TRÌNH GIÁO DỤC
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri 
+                                                            |Chương trình Giáo Dục Sớm SRIGHT chuẩn Khoa học Não bộ bản quyền, ứng dụng tinh hoa các phương pháp Giáo Dục Sớm trên thế giới ngay từ 0 tuổi để xây dựng chân dung em bé SRIGHTer phát triển vượt trội & toàn diện về 
+                                                            strong.fw-7 Nhân - Trí - Lực
+                                                .why_btn 
+                                                    button.btn.cl-4.popup-btn(data-popup="popup-why") 
+                                                        span.btn-text Xem chi tiết
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w2.png")
+                        .valueAb_item.ani(id="OperationalExcellence")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic4.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up OPERATION EXCELLENT
+                                                        h2.title-lg.cl-pri.fw-8.t-up Mô HÌNH VẬN HÀNH
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri Mô hình vận hành, quản lý & đào tạo giáo dục chuyên nghiệp, xuất sắc dựa trên tiêu chuẩn quốc tế:
+                                                        ul 
+                                                            li 
+                                                                strong.fw-7 Giáo Viên SRIGHT Hạnh Phúc & Chuyên Nghiệp
+                                                                |nắm rõ sinh trắc học của từng bé để thấu hiểu, yêu thương & kết nối với trẻ
+                                                            li 
+                                                                strong.fw-7 Ban Cố Vấn Khoa Học SRIGHT 
+                                                                |với bề dày kinh nghiệm trong tập đoàn quốc tế, trực tiếp đào tạo các giáo viên SRIGHT và quản trị vận hành nhà trường.
+                                                            li 
+                                                                strong.fw-7 Quy trình SRIGHT 
+                                                                |chăm sóc trẻ & hỗ trợ phụ huynh chuyên nghiệp, với cơ sở dữ liệu chuẩn hóa đầy đủ, chi tiết.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w4.png")
+                        .valueAb_item.ani(id="Specialized")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic5.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up SPECIALIZED
+                                                        h2.title-lg.cl-pri.fw-8.t-up LỘ trình cá nhân hoá
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri Lộ trình cá nhân hóa cho từng trẻ, chú trọng 1:1 trong các hoạt động tương tác giữa trẻ, phụ huynh và nhà trường:
+                                                        ul 
+                                                            li 
+                                                                |SRIGHT xây dựng lộ trình giảng dạy & kế hoạch chăm sóc riêng biệt với mục tiêu phát huy điểm mạnh của từng trẻ dựa trên 
+                                                                strong.fw-7 khoa học - sinh trắc học dấu vân tay.
+                                                            li SRIGHT chú trọng việc tương tác thường xuyên 2 chiều trên hình thức 1:1 giữa phụ huynh & nhà trường để mang lại hiệu quả chăm sóc & giáo dục trẻ tốt nhất.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w3.png")
+                        .valueAb_item.ani(id="SocialResponsibility")
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .why_box
+                                                .why_top
+                                                    .why_ic 
+                                                        +img("wic6.svg")
+                                                    .why_title 
+                                                        h3.note-lg.cl-pri.fw-8.t-up Social Responsibility
+                                                        h2.title-lg.cl-pri.fw-8.t-up Trách nhiệm xã hội
+                                                .why_bottom 
+                                                    .why_content 
+                                                        p.note-lg.cl-pri Giáo dục gắn liền với Giá trị nhân văn và Trách nhiệm xã hội:
+                                                        ul 
+                                                            li 
+                                                                |SRIGHT thường xuyên tổ chức các 
+                                                                strong.fw-7 buổi đào tạo phụ huynh 
+                                                                |về các kiến thức khoa học trong nuôi dạy, phát huy tiềm năng của trẻ từ Thai Kì - 6 Tuổi với sự tham gia của Ban Cố Vấn Khoa Học SRIGHT, mục tiêu hướng đến cộng đồng phụ huynh SRIGHT Giáo Dục Đúng Ngay Từ Đầu.
+                                                            li 
+                                                                |SRIGHT tiên phong 
+                                                                strong.fw-7 kiến tạo văn hóa tự đọc sách 
+                                                                |đa ngôn ngữ ngay từ nhỏ cho trẻ, tạo cộng đồng SRIGHTer ham đọc sách - tìm hiểu kiến thức, thay vì dành nhiều thời gian trên các thiết bị điện tử.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("w5.png")
+    .popup_main.popupWhy.popup-form(data-popup-id="popup-why")
+        .popup_main--ex.popup-ex 
+            i.fas.fa-times
+            p.note-lg.cl-white Đóng
+        .popup_main--wrap 
+            .popup_main--why
+                .popup_main--banner 
+                    .why_box
+                        .why_top
+                            .why_ic 
+                                +img("wic2.svg")
+                            .why_title 
+                                h3.note-lg.cl-pri.fw-8.t-up INFRASTRUCTURE
+                                h2.title-lg.cl-pri.fw-8.t-up CƠ SỞ VẬT CHẤT
+                        .why_bottom 
+                            .why_content 
+                                p.note-lg.cl-pri 
+                                    |SRIGHT Preschool được xây dựng mới hoàn toàn với cơ sở vật chất 
+                                    strong.fw-7 trang bị hiện đại 
+                                    |& đề cao tính an toàn cho từng SRIGHTer về mặt sức khỏe & tinh thần
+                .valueAb.WhyPopup
+                    .valueAb_wrap
+                        .valueAb_list
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Ngôi trường “phủ xanh” với nhiều cây bóng mát, bể vầy nước & sân chơi ngoài trời rộng rãi với khu vận động liên hoàn được thiết kế trên tinh thần khoa học não bộ.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp1.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Máy cấp khí tươi , lọc không khí được lắp đặt ở mỗi phòng học đảm bảo nguồn không khí đối lưu tốt trong phòng và lượng O2 tươi mới cung cấp cho não bộ của bé hàng ngày.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp2.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Mỗi phòng học đều trang bị bồn rửa tay diệt khuẩn đảm bảo an toàn sức khỏe cho bé.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp3.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Khu vực Gym Kids được trang bị các thiết bị chuyên biệt để nâng cao sức khỏe thể chất, giúp trẻ tăng cường sức đề kháng, khỏe mạnh, tự tin; đồng thời hỗ trợ phát triển tốt cho trí não.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp4.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Phòng bơi thủy liệu sục khí & massage dành cho trẻ 6 - 12 tháng giúp trẻ tăng cường vận động dưới nước, ăn ngon hơn, chất lượng giấc ngủ tốt hơn, kích thích tốt nhất các giác quan - vận động tinh cho bé.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp5.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Phòng Montessori rộng rãi với giáo cụ đạt tiêu chuẩn quốc tế trang bị đầy đủ ở 5 góc thực hành đáp ứng thời kì nhạy cảm kĩ năng của từng trẻ, rèn luyện tính tự lập và tập trung.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp6.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Phòng Multi-Purposed Room (Đa chức năng) được trang bị công nghệ STEAM và đầy đủ loại nhạc cụ giúp trẻ phát huy khả năng lập trình (Coding), tư duy khoa học và trí tuệ thẩm thấu âm nhạc ngay từ nhỏ.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp7.png")
+                            .valueAb_item
+                                .container
+                                    .valueAb_item--wrap
+                                        .valueAb_item--lf
+                                            .valueAb_item--lf-wrap
+                                                .box-wrap
+                                                    p.note-lg Thư viện sách Anh - Việt được trang bị ở mỗi tầng với các góc đọc sách, góc chơi thư giãn được thiết kế đẹp mắt, thân thiện nhằm xây dựng văn hóa đọc sách ngay từ nhỏ cho trẻ.
+                                        .valueAb_item--rt
+                                            .valueAb_item--rt-wrap
+                                                .valueAb_item--img
+                                                    +img("wp8.png")
+    .popup_main--modal.popup-modal

@@ -1,0 +1,17 @@
+.cate-list {
+  &_item {
+    &:not(:first-child) {
+      margin-top: var(--padding-section);
+    }
+  }
+  &_slider {
+    --slide-col: 4;
+    position: relative;
+    @include lg {
+      --slide-col: 3;
+    }
+    @include md {
+      --slide-col: 2;
+    }
+  }
+}

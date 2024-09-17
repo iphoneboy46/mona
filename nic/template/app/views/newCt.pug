@@ -1,0 +1,115 @@
+extends layout/layout
+block vars
+    -title = 'Tin tức chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.news_ct 
+        .container 
+            .news_ct--wrap.d-wrap 
+                .news_ct--lf.d-item 
+                    .news_ct--lf-wrap 
+                        .news_ct--lf-top 
+                            h2.title-sm.fw-8.cl-white Buying cheap used transmission isn’t as risky as you think
+                            .news_ct--lf-top-box
+                                .box_author 
+                                    .box_author--lf
+                                        .box_author--img 
+                                            +img("author.png")
+                                    .box_author--rt
+                                        p.note-text.cl-pri.fw-7 Admin
+                                        p.note-text.cl-white.fw-4 13/10/2023
+                                .social
+                                    ul.social_list
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic1.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic2.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic3.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic4.png")
+                        .news_ct--lf-bottom 
+                            .news_ct--lf-content 
+                                +img("nct1.png")
+                                br
+                                br
+                                p.note-text.cl-gray2 In the realm of automotive aesthetics, every detail counts. From sleek lines to bold accents, car enthusiasts strive to create a visual statement that reflects their personality and style. One crucial element in this pursuit is the car  front bumper
+                                br
+                                h2.title-mn.cl-white.fw-7 The Vital Role of the Front Bumper
+                                br
+                                p.note-text.cl-gray2 A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. Beyond its functional aspect, the front bumper also contributes to the vehicle’s aesthetics, influencing its overall look and feel. Whether it’s a sleek, minimalist design or an aggressive, sporty appearance, the front bumper sets the tone for the car’s visual identity.
+                                br
+                                +img("nct2.png")
+                                br
+                                br
+                                .box-text “Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies. Magna sit amet purus gravida quis blandit. Arcu cursus vitae congue.“
+                                br
+                                h2.title-mn.cl-white.fw-7 The Vital Role of the Front Bumper
+                                br
+                                p.note-text.cl-gray2 A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. Beyond its functional aspect, the front bumper also contributes to the vehicle’s aesthetics, influencing its overall look and feel. Whether it’s a sleek, minimalist design or an aggressive, sporty appearance, the front bumper sets the tone for the car’s visual identity.
+                            .news_ct--lf-bottom-box 
+                                p.note-text.cl-white Share :
+                                .social
+                                    ul.social_list
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic1.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic2.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic3.png")
+                                        li.social_item
+                                            a(href="").social_link 
+                                                span.social_img
+                                                    +img("ftic4.png")
+                .news_ct--rt.d-item 
+                    .news_ct--rt-wrap 
+                        .box_ml 
+                            .box_ml--wrap 
+                                p.title-mn.fw-7.cl-white.t-up MỤC LỤC
+                                
+    section.post_lq.free-slide 
+        .container 
+            .post_lq--wrap 
+                .post_lq--top 
+                    p.title-md.fw-7.cl-white.t-up BÀI VIẾT LIÊN QUAN
+                .post_lq--bottom 
+                    .post_lq--list.d-wrap 
+                        .swiper.mySwiper 
+                            .swiper-wrapper 
+                                -
+                                    const lqs = [
+                                        {
+                                            img:"ct1.png"
+                                        },
+                                        {
+                                            img:"ct2.png"
+                                        },
+                                        {
+                                            img:"ct3.png"
+                                        },
+                                        {
+                                            img:"ct1.png"
+                                        }
+                                    ]
+                                each lq , i in lqs
+                                    .swiper-slide.d-3.d-item
+                                        .post_lq--item
+                                            +post(lq.img)
+                        .swiper-pagination

@@ -1,0 +1,16 @@
+.cate-intro {
+  &_image {
+    aspect-ratio: 588/441;
+    img {
+      @include img-cover;
+    }
+  }
+  &_content {
+    @include lg-min {
+      padding-left: 2.4rem;
+    }
+    .title-sc {
+      text-transform: initial;
+    }
+  }
+}

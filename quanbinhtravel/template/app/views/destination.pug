@@ -1,0 +1,120 @@
+extends layout/layout
+block vars
+    -title = 'Điểm đến'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bn1.png","Điểm đến","Trang chủ","","Điểm đến")
+    section.destination
+        .box_filter
+            .container
+                .box_filter--wrap 
+                    .box_filter--list.d-wrap 
+                        .box_filter--item.d-item
+                            select.js-op
+                                option(value="op1") Mới nhất
+                                option(value="ơp2") Cũ nhất
+                                option(value="op3") Gần đây
+                    p.note-sm.cl-gray3.result-Page  1 - 9 của 30 kết quả
+        .container  
+            .destination_wrap 
+                .destination_list.d-wrap
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d9.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Vườn Quốc Gia Phong Nha
+                                    br
+                                    |- Kẻ Bàng
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d8.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Hang Thiên Đường - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d7.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Động Chà Vòi - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d6.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Vườn Quốc Gia Phong Nha
+                                    br
+                                    |- Kẻ Bàng
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d5.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Hang Thiên Đường - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d4.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Động Chà Vòi - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d3.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Động Chà Vòi - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d2.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Động Chà Vòi - 
+                                    br
+                                    |Quảng Bình
+                    .destination_item.d-item.d-3 
+                        a(href="").outstanding_link
+                            span.outstanding_img 
+                                +img("d1.png")
+                            span.outstanding_link--title 
+                                h3.title-mn.cl-white.fw-6 
+                                    |Động Chà Vòi - 
+                                    br
+                                    |Quảng Bình
+                +pagination()
+    section.content_custom 
+        .container 
+            .content_custom--wrap 
+                .content_custom--content 
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss
+                    br
+                    a(href="") Khách sạn 5 sao Quảng Bình
+                    a(href="") Khách sạn 4 sao Quảng Bình
+                    a(href="") Khách sạn 3 sao Quảng Bình
+                    a(href="") Khách sạn 2 sao Quảng Bình
+                    a(href="") Khách sạn 1 sao Quảng Bình
+                    br
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss
+
+

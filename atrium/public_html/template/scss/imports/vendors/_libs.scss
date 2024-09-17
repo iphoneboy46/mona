@@ -1,0 +1,112 @@
+// css library
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+// swiper
+
+.swiper {
+  &-slide {
+    width: calc(100% / var(--slide-col));
+    margin-right: var(--slide-gap, 2.4rem);
+  }
+  &-pagination {
+    --swiper-pagination-color: #{$white};
+    --swiper-pagination-bullet-inactive-color: var(--swiper-pagination-color);
+    --swiper-pagination-bullet-horizontal-gap: 1rem;
+    &-bullet {
+      @include size(0.4rem);
+      position: relative;
+      opacity: 1;
+      &::before {
+        content: "";
+        @include circle(2.4rem);
+        @include border(var(--swiper-pagination-color));
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        @include transition(all $t $cubic);
+      }
+      &:after {
+        content: "";
+        @include circle(2.4rem);
+        @include center(xy);
+        cursor: pointer;
+      }
+      &-active {
+        &::before {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+    &.white {
+      --swiper-pagination-color: #{$white};
+    }
+    &.mobile {
+      position: static;
+      margin-top: 2.4rem;
+      @include sm-min {
+        display: none;
+      }
+    }
+  }
+  &-button {
+    @include size(2.4rem);
+    @include center(flex);
+    color: #808080;
+    @include transition(all $t);
+    @include hover {
+      color: #e6e6e6;
+    }
+    &:after {
+      display: none;
+    }
+    &.normal {
+      --space: 2.4rem;
+      &.swiper-button-prev {
+        left: calc(-1 * (var(--space) + 2.4rem));
+      }
+      &.swiper-button-next {
+        right: calc(-1 * (var(--space) + 2.4rem));
+      }
+      @include maxW(1440px) {
+        --space: 0rem;
+      }
+      @include maxW(1260px) {
+        --space: -2.4rem;
+      }
+      @include lg {
+        --space: 2.4rem;
+      }
+      @include maxW(1030px) {
+        --space: 0rem;
+      }
+      @include md {
+        --space: 2.4rem;
+      }
+      @include maxW(800px) {
+        --space: 0rem;
+      }
+      @include sm {
+        display: none;
+      }
+    }
+  }
+}

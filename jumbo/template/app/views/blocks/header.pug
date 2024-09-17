@@ -1,0 +1,39 @@
+block vars
+    -title = 'Template'
+    -mainClass = 'page-template'
+    -bodyClass = ''
+    -hdClass = ''
+header.header(class=hdClass)
+    .container
+        .header_wrap
+            .header_lf
+                .header_mobi.btn-mobi
+                    .header_mobi--line
+                        span.line
+                        span.line 
+                    p.note-text.cl-white.fw-7.t-up Menu
+            .header_ct 
+                a.header_logo(href="")
+                    +img("logoHD.png")
+            .header_rt 
+                .header_lang 
+                    ul.header_lang--list 
+                        li.header_lang--item.actived 
+                            a.header_lang--link(href="") VN  
+                        li.header_lang--item 
+                            a.header_lang--link(href="") EN
+.header_search--box
+    .header_search.header_search--form
+        form(action="") 
+            .header_search--wrap 
+                .header_search--logo 
+                        +img("logoHome.png")
+                .header_search--ip 
+                    input(type="text" placeholder="Nhập nội dung tìm kiếm").form-item-ip
+                    a(href="").header_btn--search-ic 
+                        +img("searchIC.png")
+    .header_search--ex.btn-search-ex
+        i.fas.fa-times
+    .header_search--modal
+
+

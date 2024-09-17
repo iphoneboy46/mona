@@ -1,0 +1,131 @@
+extends layout/layout
+block vars
+    -title = 'Ưu đãi'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bnud.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up ƯU ĐÃI
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","ƯU ĐÃI")
+    .cate.free-slide2
+        .container
+            .cate_wrap
+                .cate_list.d-wrap
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                .cate_item.actived
+                                    a(href="").note-text.cate_link TẤT CẢ
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link PHÒNG
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link BỮA TỐI THƯƠNG GIA
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link CHĂM SÓC SỨC KHỎE
+                    .swiper-scrollbar
+    section.endow_nb
+        .container
+            .endow_nb--wrap
+                h2.title-md.cl-black.t-center.fl-sec Ưu đãi nổi bật
+                .endow_nb--list
+                    .endow_nb--item
+                        +post("p3.png","Authenic Mekong Delta Tour 1 Day","At Circadian, we are committed to providing our clients with exceptional")
+                    .endow_nb--item
+                        +post("p5.png","Join us as we build a tomorrow filled with personalized experiences","At Circadian, we are committed to providing our clients with exceptional")
+                    .endow_nb--item
+                        +post("p1.png","Join us as we build a tomorrow filled with personalized experiences","At Circadian, we are committed to providing our clients with exceptional")
+    section.endow_other
+        .container
+            .endow_other--wrap
+                h2.title-md.cl-black.t-center.fl-sec Ưu đãi khác
+                .endow_other--box
+                    .endow_other--list.d-wrap
+                        -
+                            const p1s = [
+                                {
+                                    img:"p1.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p2.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p3.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p4.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p1.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p2.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p3.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p4.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p1.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p2.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p3.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                },
+                                {
+                                    img:"p4.png",
+                                    title:"Authenic mekong delta Tour 1",
+                                    content:"At Circadian, we are committed to providing our clients with exceptional "
+                                }
+                            ]
+                        each p , i in p1s
+                            .endow_other--item.d-item.d-4
+                                +post(p.img,p.title,p.content)
+                    +pagination()
+

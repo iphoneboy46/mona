@@ -1,0 +1,161 @@
+.history {
+  background: #1a1a1a;
+  position: relative;
+  &_main {
+    position: relative;
+
+    .line {
+      width: 147.1rem;
+      img {
+        width: 100%;
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    .swiper {
+      --slide-col: 1;
+
+      &-slide {
+        position: relative;
+        padding-bottom: 19rem;
+      }
+    }
+
+    .item {
+      @include lg-min {
+        .dot {
+          @include circle(1.6rem);
+          background-color: $white;
+        }
+        width: calc(var(--col-item) / 12 * 100%);
+        position: absolute;
+        &-1 {
+          --col-item: 3;
+          bottom: -1rem;
+          left: 0;
+          .dot {
+            margin-bottom: 1.2rem;
+          }
+          .item-thumb {
+            display: block;
+          }
+          .item-content {
+            margin-top: 19rem;
+            .desc {
+              @include overtext(5);
+            }
+          }
+        }
+        &-2 {
+          --col-item: 4;
+          left: calc(100% / 4);
+          bottom: 14rem;
+          .dot {
+            margin-bottom: 3.5rem;
+          }
+          .item-thumb {
+            display: block;
+          }
+          .item-content {
+            margin-top: 16rem;
+            .desc {
+              @include overtext(5);
+            }
+          }
+        }
+        &-3 {
+          --col-item: 4;
+          top: 5.7rem;
+          left: 50%;
+          .item-content {
+            display: flex;
+            flex-direction: column;
+            .desc {
+              @include overtext(7);
+            }
+          }
+          .dot {
+            order: 2;
+            margin-top: 7.8rem;
+          }
+        }
+        &-4 {
+          --col-item: 4;
+          bottom: 1.5rem;
+          left: calc(8 / 12 * 100%);
+          .dot {
+            margin-bottom: 4rem;
+          }
+          .item-content {
+            .desc {
+              @include overtext(10);
+            }
+          }
+        }
+        &-5 {
+          --col-item: 2;
+          right: 0;
+          top: 13%;
+          text-align: right;
+          .dot {
+            margin-left: auto;
+            margin-bottom: 12rem;
+          }
+          .item-content {
+            .desc {
+              @include overtext(4);
+            }
+          }
+        }
+      }
+      &-thumb {
+        aspect-ratio: 1/1;
+        @include lg-min {
+          width: 20.4rem;
+          display: none;
+        }
+        img {
+          @include img-cover;
+        }
+      }
+      &-content {
+        .numb {
+          font-size: var(--h2-fs);
+          line-height: var(--h2-lh);
+          margin-bottom: 0.8rem;
+        }
+        .desc {
+          opacity: 0.7;
+          @include lg {
+            @include overtext(4);
+          }
+        }
+      }
+    }
+    @include lg {
+      .swiper-slide {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2.4rem;
+        margin-left: -1.2rem;
+        margin-right: -1.2rem;
+        margin-top: 3.2rem;
+        padding-bottom: 0;
+        .item {
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          width: 50%;
+          &-content {
+            padding-top: 1.6rem;
+          }
+        }
+      }
+    }
+    @include xs {
+      .item {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.star {
+    @include flex;
+    align-content: start;
+    align-items: center;
+
+    &-list {
+        // margin-left: -0.8rem;
+        position: relative;
+        height: 2rem;
+    }
+
+    &-flex {
+        @include flex;
+
+        .icon {
+            width: var(--wh);
+            height: var(--wh);
+
+            &:not(:first-child) {
+                margin-left: 0.1rem;
+            }
+        }
+    }
+
+    &-filter {
+        overflow: hidden;
+        position: absolute;
+        @include posi-vertical;
+        left: 0;
+        height: 100%;
+        width: 0;
+    }
+
+    .num {
+        margin-left: 1rem;
+        margin-top: -0.2rem;
+    }
+}
+
+
+.rating {
+    .star {
+        &-list {
+            margin: 0 -0.5rem;
+        }
+
+        color: $color-pri;
+        padding: 0 0.5rem;
+        @include fz-20;
+
+    }
+
+    &-item {
+        width: 2.4rem;
+        flex-shrink: 0;
+
+        &:not(:last-child) {
+            margin-right: 0.6rem;
+        }
+
+        @include max(400px) {
+            width: 1.6rem;
+        }
+    }
+}
+
+.rate {
+
+
+    &-stars {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        flex-direction: row-reverse;
+        justify-content: start;
+
+
+        input {
+            display: none;
+
+            &:checked~label {
+                background-image: url(../assets/images/star-color.svg);
+            }
+        }
+
+        label {
+            cursor: pointer;
+            background-image: url(../assets/images/star-none.svg);
+            width: 4rem;
+            height: 4rem;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: block;
+            transition: all 0.3s linear;
+
+            @media screen and (max-width: 1200px) {
+                width: 3.8rem;
+                height: 3.8rem;
+            }
+
+            @media screen and (max-width: 800px) {
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 3.4rem;
+                height: 3.4rem;
+            }
+
+            @media screen and (max-width: 460px) {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+
+            @include hover {
+                &~label {
+                    background-image: url(../assets/images/star-color.svg);
+                }
+
+                background-image: url(../assets/images/star-color.svg);
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 460px) {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .star {
+        padding-left: 1rem;
+        flex-shrink: 0;
+    }
+
+    .star-flex .icon {
+        width: 4.1rem;
+        height: 4.1rem;
+
+        @media screen and (max-width: 1200px) {
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+
+    &-text {
+        @include fz-24;
+        font-weight: 700;
+        color: $color-pri;
+        display: flex;
+        align-items: center;
+    }
+}

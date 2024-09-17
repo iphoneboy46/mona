@@ -1,0 +1,739 @@
+extends layout/layout
+block vars
+    -title = 'Home'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'bnHome'
+
+block container
+    .banner_home 
+        h1 home
+        .banner_home--wrap 
+            .banner_home--list 
+                .swiper.mySwiperBnHome  
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .banner_home--item
+                                .banner_home--bg 
+                                    +img("bnh1.png")
+                                .container 
+                                    .banner_home--item-wrap 
+                                        .banner_home--item-box 
+                                            .banner_home--item-top 
+                                                .banner_home--item-content 
+                                                    .banner_home--item-content-top 
+                                                        h3.title-lg.title-tt.cl-pri.fl-third  Quảng Bình
+                                                    .banner_home--item-content-bottom 
+                                                        h2.title-lg2.cl-white.fw-6.text-ani Món quà thiên nhiên dành cho bạn
+                                                        .banner_home--item-content-btn
+                                                            +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                        .swiper-slide 
+                            .banner_home--item
+                                .banner_home--bg 
+                                    +img("bn2.png")
+                                .container 
+                                    .banner_home--item-wrap 
+                                        .banner_home--item-box 
+                                            .banner_home--item-top 
+                                                .banner_home--item-content 
+                                                    .banner_home--item-content-top 
+                                                        h3.title-lg.title-tt.cl-pri.fl-third Quảng Bình
+                                                    .banner_home--item-content-bottom 
+                                                        h2.title-lg2.cl-white.fw-6.text-ani Món quà thiên nhiên dành cho bạn 2
+                                                        .banner_home--item-content-btn
+                                                            +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                        .swiper-slide 
+                            .banner_home--item
+                                .banner_home--bg 
+                                    +img("bn3.png")
+                                .container 
+                                    .banner_home--item-wrap 
+                                        .banner_home--item-box 
+                                            .banner_home--item-top 
+                                                .banner_home--item-content 
+                                                    .banner_home--item-content-top 
+                                                        h3.title-lg.title-tt.cl-pri.fl-third  Quảng Bình
+                                                    .banner_home--item-content-bottom 
+                                                        h2.title-lg2.cl-white.fw-6.text-ani Món quà thiên nhiên dành cho bạn 3
+                                                        .banner_home--item-content-btn
+                                                            +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                    .swiper-pagination.num
+            .banner_home--filter
+                .filter_tour
+                    .filter_tour--wrap 
+                        form(action="") 
+                            .filter_tour--list.d-wrap 
+                                .filter_tour--item.d-item
+                                    .filter_tour--op 
+                                        .filter_tour--op-title 
+                                            span.ic 
+                                                i.fal.fa-map-marker-alt
+                                            p.note-sm.cl-text2.fw-7 Tour
+                                        .filter_tour--op-sl 
+                                            select.js-op(data-placeholder="Tìm kiếm địa điểm bạn muốn khám phá")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                                .filter_tour--item.d-item
+                                    .filter_tour--op 
+                                        .filter_tour--op-title 
+                                            span.ic 
+                                                i.fal.fa-map-marker-alt
+                                            p.note-sm.cl-text2.fw-7 Địa điểm khởi hành
+                                        .filter_tour--op-sl 
+                                            select.js-op(data-placeholder="Địa điểm khởi hành")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                            button.filter_tour--btn 
+                                i.far.fa-search
+    section.home_ht.ani 
+        .container 
+            .home_ht--wrap 
+                .home_ht--title 
+                    .home_ht--title-lf(data-aos="fade-right") 
+                        h2.title-sm3.fw-6.cl-text   
+                            strong.cl-green Quảng Bình 
+                            |- những hành trình kỳ thú 
+                    .home_ht--title-rt(data-aos="fade-left")  
+                        p.note-text Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới...
+                .home_ht--box 
+                    .home_ht--list.d-wrap 
+                        -
+                            const phs = [
+                                {
+                                    img:"ht1.png",
+                                    title:"Thuê xe 7 chỗ Quảng Bình chuyên nghiệp",
+                                    content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna.",
+                                    delay:"0",
+                                },
+                                {
+                                    img:"ht2.png",
+                                    title:"Thuê xe 7 chỗ Quảng Bình chuyên nghiệp",
+                                    content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna.",
+                                    delay:"200",
+                                },
+                                {
+                                    img:"ht3.png",
+                                    title:"Thuê xe 7 chỗ Quảng Bình chuyên nghiệp",
+                                    content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna.",
+                                    delay:"400",
+                                },
+                                {
+                                    img:"ht4.png",
+                                    title:"Thuê xe 7 chỗ Quảng Bình chuyên nghiệp",
+                                    content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna.",
+                                    delay:"600",
+                                }
+                            ]
+                        each p , i in phs
+                            .home_ht--item.d-item(data-aos="fade-up" data-aos-delay=`${p.delay}`) 
+                                +post(p.img,p.title,p.content)
+                        //- .home_ht--item.d-item(data-aos="fade-up" data-aos-delay="200") 
+                        //-     .home_ht--link 
+                        //-         .home_ht--link-img 
+                        //-             +img("ht1.png")
+                        //-         .home_ht--link-box
+                        //-             .home_ht--link-box-wrap
+                        //-                 .home_ht--link-top 
+                        //-                     h2.title-mn.fw-6.cl-white 
+                        //-                         a(href="") Khám phá Phong Nha - Kẻ Bàng
+                        //-                     p.note-text.cl-white2 Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới
+                        //-                 .home_ht--link-bottom 
+                        //-                     +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                        //- .home_ht--item.d-item(data-aos="fade-up" data-aos-delay="400") 
+                        //-     .home_ht--link 
+                        //-         .home_ht--link-img 
+                        //-             +img("ht2.png")
+                        //-         .home_ht--link-box
+                        //-             .home_ht--link-box-wrap
+                        //-                 .home_ht--link-top 
+                        //-                     h2.title-mn.fw-6.cl-white 
+                        //-                         a(href="") Khám phá Phong Nha - Kẻ Bàng
+                        //-                     p.note-text.cl-white2 Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới
+                        //-                 .home_ht--link-bottom 
+                        //-                     +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                        //- .home_ht--item.d-item(data-aos="fade-up" data-aos-delay="600") 
+                        //-     .home_ht--link 
+                        //-         .home_ht--link-img 
+                        //-             +img("ht3.png")
+                        //-         .home_ht--link-box
+                        //-             .home_ht--link-box-wrap
+                        //-                 .home_ht--link-top 
+                        //-                     h2.title-mn.fw-6.cl-white 
+                        //-                         a(href="") Khám phá Phong Nha - Kẻ Bàng
+                        //-                     p.note-text.cl-white2 Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới
+                        //-                 .home_ht--link-bottom 
+                        //-                     +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                        //- .home_ht--item.d-item(data-aos="fade-up" data-aos-delay="800") 
+                        //-     .home_ht--link 
+                        //-         .home_ht--link-img 
+                        //-             +img("ht4.png")
+                        //-         .home_ht--link-box
+                        //-             .home_ht--link-box-wrap
+                        //-                 .home_ht--link-top 
+                        //-                     h2.title-mn.fw-6.cl-white 
+                        //-                         a(href="") Khám phá Phong Nha - Kẻ Bàng
+                        //-                     p.note-text.cl-white2 Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới
+                        //-                 .home_ht--link-bottom 
+                        //-                     +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+    section.home_nb
+        .container 
+            .home_nb--wrap
+                .home_nb--top 
+                    .home_nb--top-lf(data-aos="fade-right") 
+                        .home_nb--tab.free-slide2
+                            .home_nb--tab-wrap
+                                .home_nb--tab-list.d-wrap  
+                                    .swiper.mySwiper 
+                                        .swiper-wrapper 
+                                            .swiper-slide.d-item 
+                                                .home_nb--tab-item.actived 
+                                                    .home_nb--tab-item-wrap
+                                                        span.ic 
+                                                            +img("nbic.png")
+                                                        p.note-sm.fw-6.cl-text Tour nổi bật
+                                            .swiper-slide.d-item 
+                                                .home_nb--tab-item
+                                                    .home_nb--tab-item-wrap
+                                                        span.ic 
+                                                            +img("nbic.png")
+                                                        p.note-sm.fw-6.cl-text Tour trong ngày
+                                            .swiper-slide.d-item 
+                                                .home_nb--tab-item
+                                                    .home_nb--tab-item-wrap
+                                                        span.ic 
+                                                            +img("nbic.png")
+                                                        p.note-sm.fw-6.cl-text Tour Quảng Bình
+                                            .swiper-slide.d-item 
+                                                .home_nb--tab-item
+                                                    .home_nb--tab-item-wrap
+                                                        span.ic 
+                                                            +img("nbic.png")
+                                                        p.note-sm.fw-6.cl-text Du lịch mạo hiểm
+                                            .swiper-slide.d-item 
+                                                .home_nb--tab-item
+                                                    .home_nb--tab-item-wrap
+                                                        span.ic 
+                                                            +img("nbic.png")
+                                                        p.note-sm.fw-6.cl-text Team building
+                                    .swiper-scrollbar
+                        h2.title-sm3.fw-6.cl-text Tour Quảng Bình nổi bật
+                    .home_nb--top-rt(data-aos="zoom-in")  
+                        .home_nb--top-rt-img 
+                            +img("nbtt.png")
+                .home_nb--bottom(data-aos="fade-up")
+                    .home_nb--list.d-wrap 
+                        -
+                            const ts = [
+                                {
+                                    img:"t1.png",
+                                    show:"",
+                                    best:"sell",
+                                    title:"Tour Quảng Bình 3N2Đ 7"
+                                },
+                                {
+                                    img:"t2.png",
+                                    show:"",
+                                    best:"sell",
+                                    title:"Tour Quảng Bình 3N2Đ 7"
+                                },
+                                {
+                                    img:"t3.png",
+                                    show:"",
+                                    best:"sell",
+                                    title:"Tour Quảng Bình 3N2Đ 7"
+                                },
+                                {
+                                    img:"t4.png",
+                                    show:"",
+                                    best:"sale",
+                                    title:"Tour Động Phòng Nha - Suối 7"
+                                },
+                                {
+                                    img:"t5.png",
+                                    show:"",
+                                    best:"sale",
+                                    title:"Tour Động Phòng Nha - Suối 7"
+                                },
+                                {
+                                    img:"t6.png",
+                                    show:"",
+                                    best:"sale",
+                                    title:"Tour Động Phòng Nha - Suối 7"
+                                },
+                                {
+                                    img:"t1.png",
+                                    show:"",
+                                    best:"sell",
+                                    title:"Tour Quảng Bình 3N2Đ 7"
+                                },
+                                {
+                                    img:"t1.png",
+                                    show:"",
+                                    best:"sell",
+                                    title:"Tour Quảng Bình 3N2Đ"
+                                },
+                            ]
+                        each t , i in ts
+                            .home_nb--item.d-item.d-4
+                                +tour(t.img,t.show,t.best,t.title)
+    section.why.ani
+        .why_tt
+        .why_bgs 
+            .why_bgs--wrap 
+                .swiper.mySwiperBgs 
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg1.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg2.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg1.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg2.png")
+        .container  
+            .why_wrap 
+                .why_title 
+                    h2.title-sm3.cl-white.title-tt.fw-7
+                        |Tại sao chọn 
+                        strong Netin Travel
+                .why_box.d-wrap 
+                    .why_box--lf.d-item 
+                        .why_box--lf-wrap 
+                            .why_box--lf-list
+                                .why_box--lf-item.faq-it-why 
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top
+                                            span.num.note-sm.cl-white 01
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Tour Quảng Bình đa dạng
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 02
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Chất lượng dịch vụ tốt
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 03
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Lịch trình hấp dẫn
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 04
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Ẩm thực phong phú
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                    .why_box--rt.d-item 
+                        .why_box--rt-wrap 
+                            .why_box--rt-list
+                                .swiper.mySwiperImgs 
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg1.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg2.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg1.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg2.png")
+    section.outstanding.free-slide
+        .container 
+            .outstanding_wrap 
+                .outstanding_title 
+                    .outstanding_title--lf(data-aos="fade-right") 
+                        h2.title-sm3.fw-7.cl-text 
+                            |Địa điểm nổi bật tại 
+                            br
+                            |Quảng Bình
+                    .outstanding_title--rt(data-aos="fade-left")  
+                        p.note-text Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới...
+                .outstanding_list.d-wrap(data-aos="fade-up") 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb1.png")
+                                        span.outstanding_link--title 
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Vườn Quốc Gia Phong Nha
+                                                br
+                                                |- Kẻ Bàng
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb2.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Hang Thiên Đường - 
+                                                br
+                                                |Quảng Bình
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb3.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Động Chà Vòi - 
+                                                br
+                                                |Quảng Bình
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb2.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Hang Thiên Đường - 
+                                                br
+                                                |Quảng Bình
+                    .swiper-pagination
+    section.home_dl.ani
+        .home_dl--tt
+        .home_dl--bg
+            .home_dl--bg-wrap
+                +img("hdl.png")
+        .container 
+            .home_dl--wrap
+                .why_title 
+                    h2.title-sm3.cl-white.title-tt.fw-7
+                        |Tại sao chọn 
+                        strong Netin Travel
+                    +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+                .home_dl--list
+                    -
+                        const ps = [
+                            {
+                                img:"np1.png",
+                                title:"Giá vé tham quan Du lịch Phong Nha Kẻ Bàng 2024",
+                                content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                            },
+                            {
+                                img:"np2.png",
+                                title:"Du lịch Quảng Bình tự túc 3 ngày 2 đêm",
+                                content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                            },
+                            {
+                                img:"np3.png",
+                                title:"Khu du lịch sinh thái Sơn Kiều",
+                                content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                            },
+                        ]
+                    each p , i in ps 
+                        .home_dl--item 
+                            +post(p.img,p.title,p.content)
+    section.about_dg.free-slide 
+        .container 
+            .about_dg--wrap 
+                h2.title-sm3.cl-text.fw-7.t-center(data-aos="fade-up") Đánh giá từ khách hàng
+                .about_dg--gg(data-aos="fade-up") 
+                    .about_dg--gg-wrap 
+                        .about_dg--gg-lf
+                            .about_dg--gg-lf-img 
+                                +img("gg.png")
+                            .about_dg--gg-lf-content 
+                                p.title-sm2.fw-6.cl-gray Google Rating
+                                .about_dg--gg-lf-box 
+                                    p.title-md.fw-7.cl-text 4.8
+                                    .star
+                                        .star-list
+                                            .star-flex.star-empty
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                            .star-flex.star-filter(style="width: 91%;")
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                p.title-mn.cl-gray5 40  reviews
+                        .about_dg--gg-rt 
+                            +btn("WRITE A REVIEW","","","")
+                .about_dg--list.d-wrap(data-aos="fade-up")     
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava1.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava2.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava1.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava2.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                    .swiper-pagination
+    section.home_team 
+        .container 
+            .home_team--wrap 
+                .home_team--title 
+                    .home_team--title-lf(data-aos="fade-right") 
+                        h2.title-sm3.cl-text.fw-7 Team building 2024
+                        p.note-text.cl-gray3 Tổ chức Team building theo cách riêng của bạn!!!!
+                    .home_team--title-rt(data-aos="fade-left") 
+                        +btn("Đăng ký kênh","","fal fa-arrow-right","")
+                .home_team--box(data-aos="fade-up")     
+                    .home_team--box-top 
+                        .home_team--box-top-list.d-wrap 
+                            .swiper.mySwiperTeamTop
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                +img("hte1.png")
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                iframe(width="1280" height="720" src="https://www.youtube.com/embed/ANTaO4iN7Iw?enablejsapi=1" title="Đồng Hới - Quảng Bình | Thành phố biển xinh đẹp [ 4K ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                video(width="320" height="240", controls)
+                                                    source(src="./assets/images/videoTeam.mp4" type="video/mp4")
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                +img("hte1.png")
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                iframe(width="1280" height="720" src="https://www.youtube.com/embed/ANTaO4iN7Iw?enablejsapi=1" title="Đồng Hới - Quảng Bình | Thành phố biển xinh đẹp [ 4K ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                    .swiper-slide.d-item
+                                        .home_team--box-top-item
+                                            .home_team--box-top-item-iyv    
+                                                video(width="320" height="240", controls)
+                                                    source(src="./assets/images/videoTeam.mp4" type="video/mp4")
+                    .home_team--box-bottom
+                        .home_team--box-bottom-list.d-wrap
+                            .swiper.mySwiperTeamBottom 
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte1.png")
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item.ytb 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2 
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte3.png")
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item.vdo 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte2.png")
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte1.png")
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item.ytb 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2 
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte3.png")
+                                    .swiper-slide.d-item.d-3
+                                        .home_team--box-bottom-item.vdo 
+                                            .home_team--box-bottom-item-btns 
+                                                .btn-ytb.btn-play2 
+                                                    +img("playytb.svg")
+                                                .btn-play.btn-play2
+                                                    i.fa-solid.fa-play
+                                            .home_team--box-bottom-item-iyv 
+                                                +img("hte2.png")
+                            .swiper-scrollbar
+

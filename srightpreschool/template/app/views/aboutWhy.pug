@@ -1,0 +1,95 @@
+extends layout/layout
+block vars
+    -title = 'about'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 Giới thiệu
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Giới thiệu")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Công ty & Founder
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Vì sao Mầm non Sright ra đời
+                            .swiper-slide.d-item
+                                a(href="").tab_item Triết lý & Phương pháp giáo dục
+                            .swiper-slide.d-item
+                                a(href="").tab_item Đội ngũ giáo viên
+                    .swiper-scrollbar
+    section.about_why 
+        .about_why--wrap 
+            .valueAb.aboutWhy
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up KHoa hỌC GIÁO DỤC
+                                                .box-content 
+                                                    p.note-lg Mầm non SRIGHT ra đời từ những nghiên cứu khoa học về giáo dục sớm, đặc biệt là khoa học não bộ trẻ, vì não bộ là bộ phận quyết định mọi hành vi - hoạt động của một con người), vận dụng lý thuyết vào thực tế, và đạt được những kết quả thực tiễn thành công vượt trội trên trẻ, của nhà sáng lập cùng các chuyên gia đồng hành (Ban Cố Vấn Khoa Học SRIGHT).
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw1.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up TÂM - TRÍ - LỰC
+                                                .box-content
+                                                    p.note-lg Khoa học hiện đại đã chứng minh mối liên hệ giữa Giáo Dục Sớm và mức độ Hạnh Phúc của một con người. Giáo Dục Sớm là khoản đầu tư mang lại hiệu quả nhất mà ba mẹ có thể dành cho con vì tác động tích cực tới giai đoạn vàng 0- 6 tuổi (giai đoạn não bộ phát triển hoàn thiện đến 95%) cũng như thiết lập nền tảng cả về Tâm Hồn - Trí Tuệ - Thể Lực của một đời người.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw2.png")
+                        .valueAb_item.ani
+                            +foot2()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up TẦM NHÌN
+                                                .box-content 
+                                                    p.note-lg Trở thành mô hình chuẩn trong giáo dục sớm mầm non từ 0 - 6 tuổi: khẳng định đúng vai trò & tầm quan trọng của giáo dục mầm non nói chung và giáo viên mầm non nói riêng.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw3.png")
+                        .valueAb_item.ani
+                            +foot1()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up SỨ MỆNH
+                                                .box-content
+                                                    p.note-lg Tiên phong định hướng giáo dục mầm non theo mô hình Giáo Dục Sớm Chuẩn Khoa học Não Bộ, hướng đến hình ảnh em bé toàn diện về Nhân – Trí – Lực dựa trên quy trình vận hành -quản lý - đào tạo theo chuẩn chất lượng quốc tế.
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw4.png")

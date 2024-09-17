@@ -1,0 +1,70 @@
+
+/*# sourceMappingURL=backdoor.css.map */
+.ser_list .swiper-slide-active ~ .swiper-slide-next .ser_item--box{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% ,-50%) rotate(0) !important;
+    bottom: unset !important;
+}
+
+
+.ser_list .swiper-slide-next + .swiper-slide .ser_item--box{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% ,-50%) rotate(0) !important;
+    bottom: unset !important;
+}
+
+.ser_list .swiper-slide-next + .swiper-slide + .swiper-slide .ser_item--box{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% ,-50%) rotate(0) !important;
+    bottom: unset !important;
+}
+
+
+.ser_list .swiper-slide + .swiper-slide-prev .ser_item--box{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% ,-50%) rotate(0) !important;
+    bottom: unset !important;
+}
+
+.ser_list .swiper-slide .ser_item--box{
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50% ,-50%) rotate(0) !important;
+    bottom: unset !important;
+}
+
+.ser_list .swiper-slide-active .ser_item--box{
+    bottom: 4rem !important;
+    transform: unset !important;
+    top: unset !important;
+    left: unset !important;
+
+}
+
+.ser_item--box .note-text{
+    display: none !important;
+}
+
+@media screen and (max-width:1200px) {
+    .ser_list .swiper-slide-active .ser_item--box{
+        bottom: 3rem !important;
+        transform: unset !important;
+        top: unset !important;
+        left: unset !important;
+    
+    }
+}
+
+@media screen and (max-width:600px) {
+    .ser_list .swiper-slide-active .ser_item--box{
+        bottom: 2rem !important;
+        transform: unset !important;
+        top: unset !important;
+        left: unset !important;
+    
+    }
+}

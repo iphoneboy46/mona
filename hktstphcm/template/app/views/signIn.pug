@@ -1,0 +1,42 @@
+extends layout/layout
+block vars
+    -title = 'sign in'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'hidden'
+    -ftClass = 'hidden'
+    -jsLibs = [JsJquery,JsAos]
+    -jsComponents = ['header','Password']
+    -cssLibs = [fontAWS,fontAWS2,CssAos]
+    -cssComponents = []
+    -cssPages = ["sign","contact"]
+
+block container
+    section.bg_tt
+        .bg_tt--bg
+        +img("bg.png")
+    section.sign 
+        .container 
+            .sign_wrap
+                form(action="") 
+                    .sign_box 
+                        .sign_top 
+                            h1.title-lg.cl-white.t-up.t-center.fw-5 đăng nhập
+                        .sign_center 
+                            .sign_form--list 
+                                label.form-item.signStyle
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Tên đăng nhập
+                                label.form-item.signStyle.pass
+                                    input(type="password").form-item-ip 
+                                    p.form-item-lb Mật khẩu
+                                    span.ic 
+                                        i.far.fa-eye
+                                        i.far.fa-eye-slash
+                            a(href="").cl-white.fw-5 Quên mật khẩu? 
+                        .sign_bottom
+                            +btn("ĐĂNG NHẬP","","","trans")
+                            p.cl-white3.t-center 
+                                |Bạn chưa đăng ký tài khoản? 
+                                a(href="").fw-7.cl-white.t-up  ĐĂNG KÝ NGAY  
+

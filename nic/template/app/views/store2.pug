@@ -1,0 +1,156 @@
+extends layout/layout
+block vars
+    -title = 'Đại lý'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.find
+        .find_map
+            iframe(src="https://www.google.com/maps/d/embed?mid=1UFvWw8Ev01pSEkG1C2ki9VkGBk-tFmY&ehbc=2E312F", width="640", height="480")
+        .find_wrap
+            .find_content
+                .find_box
+                    .find_ip
+                        input#address(type="text", placeholder="Tìm cửa hàng")
+                        button.btn.btn-find
+                            span.btn-text TÌM KIẾM
+                button.btn.cl-7.btn-find
+                    .btn-text DANH SÁCH ĐAI LÝ
+    .find_menu
+        .find_menu--wrap
+            .find_ex
+                i.fas.fa-times
+            .find_box
+                .find_ip
+                    input#address(type="text", placeholder="Địa điểm của bạn...")
+                    button.btn
+                        span.ic 
+                            +img("searchIc.png")
+                .find_result
+                    .find_result--title
+                        .note-md.fw-7.t-up CỬA HÀNG
+                        .note-sm.fl-Segoe Có 5 cửa hàng gần bạn
+                    ul.find_result--list
+                        li.find_result--item.actived
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+                        li.find_result--item
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+                        li.find_result--item
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+                        li.find_result--item
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+                        li.find_result--item
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+                        li.find_result--item
+                            .find_result--item-wrap
+                                .find_result--item-lf
+                                    .find_result--item-img
+                                        img(src="./assets/images/st1.png", alt)
+                                .find_result--item-rt
+                                    p.note-md.fw-7.t-up VIETNAMPHUOT QUẬN 10
+                                    ul.list-address
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/location.png", alt)
+                                            a.link-address(href) 580 Đường 3/2, Phường 6, Quận 10, TP. HCM
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/phone.png", alt)
+                                            a.link-address(href) 0961 859 968
+                                        li.item-address
+                                            span.ic-address
+                                                img(src="./assets/images/mail.png", alt)
+                                            a.link-address(href) www.vietnamphuot.com
+    .find_menu--modal

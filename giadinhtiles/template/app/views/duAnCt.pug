@@ -1,0 +1,188 @@
+extends layout/layout
+block vars
+    -title = 'dự án ct'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper]
+    -jsComponents = ['header','duAn']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper]
+    -cssComponents = ["post","layout"]
+    -cssPages = ["duAn","contact"]
+
+block container
+    +box-title2("Trang chủ","dự án","Chi tiết ","dự án","tic3.png")
+    section.layoutMain 
+        .container 
+            .layoutMain_wrap
+                .layoutMain_box.d-wrap 
+                    .layoutMain_lf.d-item 
+                        .layoutMain_lf--wrap 
+                            .duAn_ct 
+                                .duAn_ct--wrap 
+                                    .duAn_ct--top 
+                                        p.note-text.fw-6.cl-text Khách hàng
+                                        h2.title-sm.fl-sec.fw-6.cl-pri Park Hyatt Phú Quốc
+                                    .duAn_ct--center
+                                        p.note-text.cl-white2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry .Lorem Ipsum is   dummy text of the printing and typesetting industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry .Lorem Ipsum is   dummy text of the printing and typesetting industry
+                                    .duAn_ct--bottom 
+                                        .duAn_ct--bottom-list.d-wrap 
+                                            .duAn_ct--bottom-item.d-2.d-item 
+                                                .duAn_ct--bottom-item-wrap
+                                                    .duAn_ct--bottom-item-lf
+                                                        span.ic 
+                                                            +img("dctic1.png")
+                                                    .duAn_ct--bottom-item-rt
+                                                        p.note-sm.cl-white2 Loại hình
+                                                        p.note-text.fw-7.cl-text Chung cư
+                                            .duAn_ct--bottom-item.d-2.d-item 
+                                                .duAn_ct--bottom-item-wrap
+                                                    .duAn_ct--bottom-item-lf
+                                                        span.ic 
+                                                            +img("dctic2.png")
+                                                    .duAn_ct--bottom-item-rt
+                                                        p.note-sm.cl-white2 Vị trí
+                                                        p.note-text.fw-7.cl-text Thành phố Hồ Chí Minh
+                                            .duAn_ct--bottom-item.d-2.d-item 
+                                                .duAn_ct--bottom-item-wrap
+                                                    .duAn_ct--bottom-item-lf
+                                                        span.ic 
+                                                            +img("dctic3.png")
+                                                    .duAn_ct--bottom-item-rt
+                                                        p.note-sm.cl-white2 Thời gian
+                                                        p.note-text.fw-7.cl-text 2024
+                                            .duAn_ct--bottom-item.d-2.d-item 
+                                                .duAn_ct--bottom-item-wrap
+                                                    .duAn_ct--bottom-item-lf
+                                                        span.ic 
+                                                            +img("dctic3.png")
+                                                    .duAn_ct--bottom-item-rt
+                                                        p.note-sm.cl-white2 Kích thước
+                                                        p.note-text.fw-7.cl-text 100m2
+                    .layoutMain_rt.d-item
+                        .layoutMain_rt--wrap 
+                            .layoutMain_rt--box 
+                                .layoutMain_rt--font
+                                    .layoutMain_rt--font-img
+                                        +img("psl2.png")
+                                .layoutMain_rt--back
+                                    .layoutMain_rt--back-tt
+    section.duAn_alb 
+        .container 
+            .duAn_alb--wrap 
+                .duAn_alb--box
+                    .duAn_alb--list
+                        .swiper.mySwiperAlb 
+                            .swiper-wrapper 
+                                .swiper-slide 
+                                    .duAn_alb--item 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").gallery.duAn_alb--img 
+                                            +img("alb1.png")
+                                .swiper-slide 
+                                    .duAn_alb--item 
+                                        a(href="./assets/images/alb2.png" data-fancybox="gallery").gallery.duAn_alb--img 
+                                            +img("alb2.png")
+                                .swiper-slide 
+                                    .duAn_alb--item 
+                                        a(href="./assets/images/alb3.png" data-fancybox="gallery").gallery.duAn_alb--img 
+                                            +img("alb3.png")
+                                .swiper-slide 
+                                    .duAn_alb--item 
+                                        a(href="./assets/images/alb4.png" data-fancybox="gallery").gallery.duAn_alb--img 
+                                            +img("alb4.png")
+                                .swiper-slide 
+                                    .duAn_alb--item 
+                                        a(href="./assets/images/alb5.png" data-fancybox="gallery").gallery.duAn_alb--img 
+                                            +img("alb5.png")
+                        .swiper-pagination
+                        +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+    section.duAn_other.free-slide 
+        .container 
+            .duAn_other--wrap 
+                h2.title-sm3.fl-sec.cl-text.t-center.fw-7.t-up dự án KHÁC
+                .duAn_other--box 
+                    .duAn_other--list.d-wrap 
+                        .swiper.mySwiper
+                            .swiper-wrapper 
+                                .swiper-slide.d-item.d-3
+                                    .duAn_other--item
+                                        .post 
+                                            .post_wrap 
+                                                a(href="").post_img
+                                                    +img("o1.png")
+                                                .post_box
+                                                    .post_box--top
+                                                        h2.title-mn.cl-white.fw-7.fl-sec 
+                                                            a(href="") Park Hyatt Phú Quốc
+                                                    .post_box--bottom
+                                                        .address_item
+                                                            .address_item--ic 
+                                                                +img("adic1.png")
+                                                            .address_item--content
+                                                                a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                        .post_box--bottom-content
+                                                            p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                        a.btn(href="")
+                                                            span.btn-text CHI TIẾT DỰ ÁN
+                                .swiper-slide.d-item.d-3
+                                    .duAn_other--item
+                                        .post 
+                                            .post_wrap 
+                                                a(href="").post_img
+                                                    +img("o2.png")
+                                                .post_box
+                                                    .post_box--top
+                                                        h2.title-mn.cl-white.fw-7.fl-sec 
+                                                            a(href="") Park Hyatt Phú Quốc
+                                                    .post_box--bottom
+                                                        .address_item
+                                                            .address_item--ic 
+                                                                +img("adic1.png")
+                                                            .address_item--content
+                                                                a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                        .post_box--bottom-content
+                                                            p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                        a.btn(href="")
+                                                            span.btn-text CHI TIẾT DỰ ÁN
+                                .swiper-slide.d-item.d-3
+                                    .duAn_other--item
+                                        .post 
+                                            .post_wrap 
+                                                a(href="").post_img
+                                                    +img("o3.png")
+                                                .post_box
+                                                    .post_box--top
+                                                        h2.title-mn.cl-white.fw-7.fl-sec 
+                                                            a(href="") Park Hyatt Phú Quốc
+                                                    .post_box--bottom
+                                                        .address_item
+                                                            .address_item--ic 
+                                                                +img("adic1.png")
+                                                            .address_item--content
+                                                                a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                        .post_box--bottom-content
+                                                            p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                        a.btn(href="")
+                                                            span.btn-text CHI TIẾT DỰ ÁN
+                                .swiper-slide.d-item.d-3
+                                    .duAn_other--item
+                                        .post 
+                                            .post_wrap 
+                                                a(href="").post_img
+                                                    +img("o1.png")
+                                                .post_box
+                                                    .post_box--top
+                                                        h2.title-mn.cl-white.fw-7.fl-sec 
+                                                            a(href="") Park Hyatt Phú Quốc
+                                                    .post_box--bottom
+                                                        .address_item
+                                                            .address_item--ic 
+                                                                +img("adic1.png")
+                                                            .address_item--content
+                                                                a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                        .post_box--bottom-content
+                                                            p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                        a.btn(href="")
+                                                            span.btn-text CHI TIẾT DỰ ÁN
+                        .swiper-pagination

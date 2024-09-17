@@ -1,0 +1,199 @@
+extends layout/layout
+block vars
+    -title = 'news'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 Góc tin tức
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Góc tin tức")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Góc tin tức
+                            .swiper-slide.d-item
+                                a(href="").tab_item Góc chia sẻ
+                            .swiper-slide.d-item
+                                a(href="").tab_item Tuyển dụng
+                    .swiper-scrollbar
+    section.news_all 
+        .container
+            .news_all--wrap 
+                .news_all--list.d-wrap 
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n1.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n2.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n3.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n1.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n2.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n3.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n1.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n2.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                    .news_all--item.d-item.d-3 
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("n3.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--wrap
+                                            .news_box--dm
+                                                a.box-dm(href="") Sáng Tạo
+                                            .news_box--note
+                                                p.note-sm.cl-pri Minh Tuan
+                                                p.note-sm.cl-pri 05/12/2023
+                                        h3.title.note-lg.cl-pri.fw-7
+                                            a(href="") Công Nghệ và Sáng Tạo: Làm Sao Lập Trình Giúp Trẻ Phát Triển Tư Duy?
+                                        p.note-text.cl-pri.content Không chỉ là kỹ năng, lập trình còn giúp trẻ phát triển tư duy sáng tạo. Bài viết sẽ trình bày những lợi ích tinh thần và cách mà lập trình thúc đẩy tư duy sáng tạo cho trẻ em. 
+                                        a.text-link(href="") Xem chi tiết
+                +pagination()

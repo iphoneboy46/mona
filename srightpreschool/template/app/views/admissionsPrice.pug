@@ -1,0 +1,180 @@
+extends layout/layout
+block vars
+    -title = 'tuyển sinh'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 tuyển sinh
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Tuyển sinh")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item Quy chế tuyển sinh
+                            .swiper-slide.d-item
+                                a(href="").tab_item Biểu phí & Quy định tài chính
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Chương trình ưu đãi
+                    .swiper-scrollbar
+    section.admissions_price 
+        .container 
+            .admissions_price--wrap 
+                .admissions_price--title 
+                    h2.title-lg.cl-pri.fw-8.t-center.t-up HỌC PHÍ CHÍNH KHÓA
+                    p.note-lg.t-center.cl-pri Năm học 2024-2025 tại SRIGHT Preschool bao gồm 12 tháng học (từ 01/06/2024 đến 30/05/2025)
+                .admissions_table 
+                    table
+                        tbody 
+                            <tr>
+                                <th>
+                                    p.title Hệ đào tạo
+                                </th>
+                                <th>
+                                    p.title Kỳ 3 tháng (VNĐ)
+                                    p.note Giảm 5%
+                                </th>
+                                <th>
+                                    p.title Kỳ 6 tháng (VNĐ)
+                                    p.note Giảm 8%
+                                </th>
+                                <th>
+                                    p.title Cả năm (VNĐ)
+                                    p.note Giảm 10%
+                                </th>
+                            </tr>
+                            <tr>
+                                <td data-label="Hệ đào tạo">
+                                    div.admissions_table--content
+                                        p.text 
+                                            |Song nGữ
+                                            br 
+                                            |chất lượng cao
+                                </td>
+                                <td data-label="Kỳ 3 tháng (VNĐ)">
+                                    div.admissions_table--content
+                                        p.text 27.502.500
+                                </td>
+                                <td data-label="Kỳ 6 tháng (VNĐ)">
+                                    div.admissions_table--content
+                                        p.text 27.502.500
+                                </td>
+                                <td data-label="Cả năm (VNĐ)">
+                                    div.admissions_table--content
+                                        p.text 27.502.500
+                                </td>
+                            </tr>
+                .admissions_price--content 
+                    p.note-lg.cl-pri.t-center 
+                        strong.fw-7 Lưu ý: 
+                        |Mức học phí áp dụng cho các năm học tiếp theo có thể thay đổi theo quy định tài chính của SRIGHT Preschool. Khi có sự thay đổi học phí, SRIGHT Preschool sẽ gửi thông báo cho Phụ huynh trước khi áp dụng.
+    section.admissions_price--more 
+        .container 
+            .admissions_price--more-wrap 
+                h2.title-lg.cl-pri.fw-8.t-center.t-up Các khoản phí khác
+                .admissions_table 
+                    table
+                        tbody 
+                            <tr>
+                                <th>
+                                    p.title Loại phí
+                                </th>
+                                <th>
+                                    p.title 
+                                        |học phí / tháng 
+                                        br
+                                        |(vnđ)
+                                </th>
+                                <th>
+                                    p.title chi tiết khoản phí
+                                </th>
+                            </tr>
+                            <tr>
+                                <td data-label="Loại phí">
+                                    div.admissions_table--content
+                                        p.text Phí ghi danh và đánh giá đầu vào
+                                        p.note (đóng 1 lần duy nhất lúc nhập học)
+                                </td>
+                                <td  data-label="Học phí / tháng(vnđ)">
+                                    div.admissions_table--content
+                                        p.text 3.000.000
+                                </td>
+                                <td data-label="Chi tiết khoản phí">
+                                    div.admissions_table--content
+                                        p.note Tặng 100% phí ghi danh đánh giá đầu vào cho 10 bé đầu tiên & 50% cho các bé tiếp theo. 
+                                        p.note.fw-7 Khoản phí bao gồm: 
+                                        ul 
+                                            li Kiểm tra sức khoẻ với Chuyên gia dinh dưỡng. 
+                                            li Đánh giá mốc phát triển theo độ tuổi với Giáo viên chuyên môn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Loại phí">
+                                    div.admissions_table--content
+                                        p.text Phí ghi danh và đánh giá đầu vào
+                                        p.note (đóng 1 lần duy nhất lúc nhập học)
+                                </td>
+                                <td  data-label="Học phí / tháng(vnđ)">
+                                    div.admissions_table--content
+                                        p.text 3.000.000
+                                </td>
+                                <td data-label="Chi tiết khoản phí">
+                                    div.admissions_table--content
+                                        p.note Tặng 100% phí ghi danh đánh giá đầu vào cho 10 bé đầu tiên & 50% cho các bé tiếp theo. 
+                                        p.note.fw-7 Khoản phí bao gồm: 
+                                        ul 
+                                            li Kiểm tra sức khoẻ với Chuyên gia dinh dưỡng. 
+                                            li Đánh giá mốc phát triển theo độ tuổi với Giáo viên chuyên môn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Loại phí">
+                                    div.admissions_table--content
+                                        p.text Phí ghi danh và đánh giá đầu vào
+                                        p.note (đóng 1 lần duy nhất lúc nhập học)
+                                </td>
+                                <td  data-label="Học phí / tháng(vnđ)">
+                                    div.admissions_table--content
+                                        p.text 3.000.000
+                                </td>
+                                <td data-label="Chi tiết khoản phí">
+                                    div.admissions_table--content
+                                        p.note Tặng 100% phí ghi danh đánh giá đầu vào cho 10 bé đầu tiên & 50% cho các bé tiếp theo. 
+                                        p.note.fw-7 Khoản phí bao gồm: 
+                                        ul 
+                                            li Kiểm tra sức khoẻ với Chuyên gia dinh dưỡng. 
+                                            li Đánh giá mốc phát triển theo độ tuổi với Giáo viên chuyên môn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Loại phí">
+                                    div.admissions_table--content
+                                        p.text Phí ghi danh và đánh giá đầu vào
+                                        p.note (đóng 1 lần duy nhất lúc nhập học)
+                                </td>
+                                <td  data-label="Học phí / tháng(vnđ)">
+                                    div.admissions_table--content
+                                        p.text 3.000.000
+                                </td>
+                                <td data-label="Chi tiết khoản phí">
+                                    div.admissions_table--content
+                                        p.note Tặng 100% phí ghi danh đánh giá đầu vào cho 10 bé đầu tiên & 50% cho các bé tiếp theo. 
+                                        p.note.fw-7 Khoản phí bao gồm: 
+                                        ul 
+                                            li Kiểm tra sức khoẻ với Chuyên gia dinh dưỡng. 
+                                            li Đánh giá mốc phát triển theo độ tuổi với Giáo viên chuyên môn
+                                </td>
+                            </tr>

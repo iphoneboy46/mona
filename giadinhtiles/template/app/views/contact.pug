@@ -1,0 +1,176 @@
+extends layout/layout
+block vars
+    -title = 'liên hệ '
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper]
+    -jsComponents = ['header','tab']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper]
+    -cssComponents = []
+    -cssPages = [ "contact"]
+
+block container
+    +box-title2("Trang chủ","","Liên hệ","Liên hệ","tic2.png")
+    section.contact 
+        .container 
+            .contact_wrap.d-wrap 
+                .contact_lf.d-item.d-2 
+                    .contact_lf--wrap 
+                        .contact_lf--list
+                            .contact_lf--item 
+                                .contact_lf--item-wrap 
+                                    h2.title-mn.fw-7.cl-white.t-up.fl-sec CHÚNG TÔI SẴN SÀNG HỖ TRỢ BẠN 
+                                    p.note-md.cl-text3 We know how important it is to receive your order in a timely manner, which is why we strive to ship all orders within 24 hours.
+                            .contact_lf--item
+                                .contact_lf--item-wrap 
+                                    .address
+                                        ul.address_list                
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic1.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-5 Số điện thoại
+                                                    a.address_link(href="") +1 800 555 2569
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic2.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-7 Email
+                                                    a.address_link(href="") +sales@giadinh.vn
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic3.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-7 Địa chỉ công ty
+                                                    a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                            .contact_lf--item
+                                .contact_lf--item-wrap
+                                    p.note-lg.cl-white.fw-6 Giờ mở cửa
+                                    .address.hourOP
+                                        ul.address_list                
+                                            li.address_item
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-5 Thứ 2 - Thứ 6
+                                                    p.address_link 08:00 AM - 08:00 PM
+                            .contact_lf--item
+                                .contact_lf--item-wrap
+                                    p.note-text.cl-white Theo dõi chúng tôi tại
+                                    .social
+                                        ul.social_list
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic1.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic2.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("sic3.png")
+                .contact_rt.d-item.d-2 
+                    .contact_rt--wrap 
+                        h2.title-sm2.fw-6.cl-pri.cl-2.t-up LIÊN HỆ NGAY VỚI CHÚNG TÔI
+                        .contact_rt--box.tab-box 
+                            .box_tabs.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    .box_tabs--item.tab-btn.actived 
+                                                        .box_tabs--item-wrap 
+                                                            p.note-text.cl-pri.t-up KHÁCH HÀNG CÁ NHÂN
+                                                .swiper-slide.d-item
+                                                    .box_tabs--item.tab-btn 
+                                                        .box_tabs--item-wrap 
+                                                            p.note-text.cl-pri.t-up KHÁCH HÀNG DOANH NGHIỆP
+                                        .swiper-scrollbar
+                            .contact_rt--list
+                                .contact_rt--item.tab-content.showed
+                                    .contact_rt--form 
+                                        form(action="")
+                                            .contact_rt--form-wrap 
+                                                .contact_rt--form-list
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Họ và tên
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập họ của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Email
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập email của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Số điện thoại
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Nội dung cần trao đổi
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập nội dung của bạn").form-item-ip
+                                                    .contact_rt--form-item
+                                                        .form-item
+                                                            p.note-text.cl-text Chúng tôi có thể liên hệ với bạn qua:
+                                                            .form-ck-list 
+                                                                label.form-ck-item 
+                                                                    input(type="radio" name="ct" checked="checked")
+                                                                    span.box 
+                                                                    p.note-text.cl-white2 Email
+                                                                label.form-ck-item 
+                                                                    input(type="radio" name="ct")
+                                                                    span.box 
+                                                                    p.note-text.cl-white2 Điện thoại
+                                                +btn("GỬI NGAY","button","","")
+                                .contact_rt--item.tab-content
+                                    .contact_rt--form 
+                                        form(action="")
+                                            .contact_rt--form-wrap 
+                                                .contact_rt--form-list
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Họ và tên
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập họ của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Email
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập email của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Số điện thoại
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                    .contact_rt--form-item 
+                                                        label.form-item
+                                                            p.form-item-lb 
+                                                                |Nội dung cần trao đổi
+                                                                strong *
+                                                            input(type="text" placeholder="Nhập nội dung của bạn").form-item-ip
+                                                    .contact_rt--form-item
+                                                        .form-item
+                                                            p.note-text.cl-text Chúng tôi có thể liên hệ với bạn qua:
+                                                            .form-ck-list 
+                                                                label.form-ck-item 
+                                                                    input(type="radio" name="ct" checked="checked")
+                                                                    span.box 
+                                                                    p.note-text.cl-white2 Email
+                                                                label.form-ck-item 
+                                                                    input(type="radio" name="ct")
+                                                                    span.box 
+                                                                    p.note-text.cl-white2 Điện thoại
+                                                +btn("GỬI NGAY","button","","")

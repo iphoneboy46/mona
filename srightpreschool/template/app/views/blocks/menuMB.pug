@@ -1,0 +1,102 @@
+.menu_mb
+    .menu_mb--wrap
+        .menu_mb--nav
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"Giới thiệu",
+                            dropdown:false
+                        },
+                        {
+                            title:"Vì sao chọn Sright ?",
+                            dropdown:false
+                        },
+                        {
+                            title:"Học tập tại Sright",
+                            dropdown:true
+                        },
+                        {
+                            title:"Tuyển sinh",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tin tức",
+                            dropdown:false
+                        },
+                        {
+                            title:"Liên hệ",
+                            dropdown:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item
+                                    a(href="").menu-link Item 1
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Item 2
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                                li.menu-item
+                                    a(href="").menu-link Item 3
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up THEO DÕI CHÚNG TÔI
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic1.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic2.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic3.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic4.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic5.svg")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up Liên hệ 
+                    p.note-md.cl-pri.fw-7.t-up srightpreschool
+                .address
+                    ul.address_list
+                        li.address_item
+                            .address_item--content
+                                p.note-text Điện thoại:
+                                a.address_link(href="") (84+) 866017784
+                        li.address_item
+                            .address_item--content
+                                p.note-text Địa chỉ:
+                                a.address_link(href="") M1-12 The Manhattan Glory, Vinhomes Grandpark, Thủ Đức, Thủ Đức, Vietnam
+                        li.address_item
+                            .address_item--content
+                                p.note-text Email:
+                                a.address_link(href="") Srightpreschool@gmail.com
+            .menu_mb--btn
+                +btn("Tìm hiểu thêm","","","")
+.menu_mb--modal

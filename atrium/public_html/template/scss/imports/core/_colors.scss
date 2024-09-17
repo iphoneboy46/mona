@@ -1,0 +1,13 @@
+@each $cl-name, $cl-vl in $theme-colors {
+  .c-current {
+    color: currentColor;
+  }
+  .c-#{$cl-name} {
+    color: $cl-vl;
+  }
+}
+@each $cl-name, $cl-vl in $theme-bg {
+  .bg-#{$cl-name} {
+    background-color: $cl-vl;
+  }
+}

@@ -1,0 +1,240 @@
+.links-main {
+    position: fixed;
+    bottom: 5cqh;
+    right: 1%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 800;
+    pointer-events: none;
+    visibility: hidden;
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .links-main-item {
+            margin-bottom: 2rem;
+            cursor: pointer;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            @include hover {
+                .link-items {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .link-items-phone {
+                    width: 18rem;
+                }
+
+                .link-items-phone-text {
+                    transform: translate(0%, 0%) scale(1);
+                    opacity: 1;
+                }
+            }
+
+            .link-items-phone {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                width: 0rem;
+                height: 4rem;
+                border-radius: 50%;
+                top: -4rem;
+                left: 0rem;
+
+                transition: all 0.3s ease-in-out;
+                // @media screen and (max-width: 1500px) {
+                //     flex-direction: row-reverse;
+                // }
+
+                &-text {
+                    position: absolute;
+                    width: 100%;
+                    background-color: $color-pri;
+                    border-radius: 10rem;
+                    font-weight: 700;
+                    @include fz-14;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: #ffffff;
+                    transition: all 0.3s ease-in-out;
+                    // left: -50%;
+                    // transform: translate(0%, 0%) scale(0);
+                    padding: 1rem 2rem 1rem 5rem;
+                    z-index: 4;
+                    opacity: 0;
+                    white-space: nowrap;
+
+                    left: -77.5%;
+                    padding: 1rem 4rem 1rem 2rem;
+                    transform: translate(20%, 0%) scale(0);
+                }
+
+                &-img {
+                    width: 4rem;
+                    height: 4rem;
+                    position: relative;
+                    z-index: 5;
+                    background-color: $color-pri;
+                    border: 0.5rem solid $color-pri;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-shrink: 0;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 4.8rem;
+                        height: 4.8rem;
+                        border-radius: 50%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 0.1rem solid $color-pri;
+                        z-index: -1;
+                        opacity: 0;
+
+                        animation: phongTo 1s infinite linear backwards;
+
+                        @keyframes phongTo {
+                            0% {
+                                transform: translate(-50%, -50%) scale(0);
+                                opacity: 0;
+                            }
+                            40% {
+                                transform: translate(-50%, -50%) scale(0.4);
+                                opacity: 0.4;
+                            }
+
+                            80% {
+                                transform: translate(-50%, -50%) scale(0.8);
+                                opacity: 0.8;
+                            }
+
+                            100% {
+                                transform: translate(-50%, -50%) scale(1);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: 50%;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 0.1rem solid $color-pri;
+                        z-index: -1;
+                        opacity: 0;
+                        animation: phongTo2 1s infinite linear backwards;
+
+                        @keyframes phongTo2 {
+                            0% {
+                                transform: translate(-50%, -50%) scale(0);
+                                opacity: 0;
+                            }
+                            30% {
+                                transform: translate(-50%, -50%) scale(0.4);
+                                opacity: 0.4;
+                            }
+
+                            50% {
+                                transform: translate(-50%, -50%) scale(0.8);
+                                opacity: 0.8;
+                            }
+
+                            100% {
+                                transform: translate(-50%, -50%) scale(1);
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        position: relative;
+                        z-index: 10;
+                        animation: phoneRing 0.8s linear infinite;
+                    }
+                }
+            }
+
+            .link-items {
+                width: 4rem;
+                height: 4rem;
+
+                position: relative;
+
+                display: block;
+                img {
+                    transition: all 0.3s linear;
+                    z-index: 4;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .link-top {
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $color-white;
+                box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.3);
+                transition: all 0.3s linear;
+                @include hover {
+                    transform: translateY(-5%);
+                    background-color: $color-pri;
+
+                    img {
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+                            brightness(103%) contrast(103%);
+                    }
+                }
+
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    animation: truotLenArr 1s linear infinite;
+                    @keyframes truotLenArr {
+                        0% {
+                            transform: translateY(0);
+                        }
+
+                        50% {
+                            transform: translateY(10%);
+                        }
+
+                        100% {
+                            transform: translateY(0%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: visible;
+    }
+}
+
+
+
+

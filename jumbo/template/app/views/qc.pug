@@ -1,0 +1,146 @@
+extends layout/layout
+block vars
+    -title = 'qc'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery, JsSwiper,JsAos,JsFancybox]
+    -jsComponents = ['header',"qc","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssSwiper,CssFancybox,CssAos]
+    -cssComponents = ['banner']
+    -cssPages = ["qc","contact"]
+
+block container
+    +banner-main("bnNews.png","Thực Đơn")
+    section.qc
+        .qc_wrap 
+            .qc_box
+                .qc_box--lf(data-aos="fade-right")
+                    .qc_box--lf-wrap 
+                        .qc_box--lf-list 
+                            .swiper.mySwiperQcLf 
+                                .swiper-wrapper 
+                                    .swiper-slide 
+                                        .qc_box--lf-item.vdjs
+                                            .qc_box--lf-item-wrap
+                                                button.btn-play.vdbtnjs
+                                                    .btn-play-tt
+                                                    .btn-play-btn
+                                                        i.fas.fa-play
+                                                .qc_box--lf-bg.vdbgjs
+                                                    +img("qcbg.png")
+                                                .qc_box--lf-img
+                                                    video(width="320" height="240", controls)
+                                                        source(src="./assets/images/food.mp4" type="video/mp4")
+                                    .swiper-slide 
+                                        .qc_box--lf-item
+                                            .qc_box--lf-img
+                                                +img("qcimg1.png")
+                                    .swiper-slide 
+                                        .qc_box--lf-item.vdjs
+                                            .qc_box--lf-item-wrap
+                                                button.btn-play.vdbtnjs
+                                                    .btn-play-tt
+                                                    .btn-play-btn
+                                                        i.fas.fa-play
+                                                .qc_box--lf-bg.vdbgjs
+                                                    +img("qcimg2.png")
+                                                .qc_box--lf-img
+                                                    video(width="320" height="240", controls)
+                                                        source(src="./assets/images/food2.mp4" type="video/mp4")
+                                    .swiper-slide 
+                                        .qc_box--lf-item.ytbjs
+                                            .qc_box--lf-item-wrap
+                                                button.btn-play.ytbbtnjs
+                                                    .btn-play-tt
+                                                    .btn-play-btn
+                                                        i.fas.fa-play
+                                                .qc_box--lf-bg.ytbbgjs
+                                                    +img("qcimg3.png")
+                                                .qc_box--lf-img
+                                                    iframe(width="1280" height="720" id="youtubeIframe" src="https://www.youtube.com/embed/MiMaKBF8Us8?enablejsapi=1" title="Jumbo Seafood Vietnam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                .qc_box--rt(data-aos="fade-left")
+                    .qc_box--rt-wrap
+                        .qc_box--rt-box
+                            .qc_box--rt-logo 
+                                +img("qvlogo.png")
+                            .qc_box--rt-list 
+                                .qc_box--rt-item.showed
+                                    .qc_box--rt-item-wrap
+                                        .qc_box--rt-item-content
+                                            h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Cua Sốt Tiêu
+                                            p.note-text.t-center.cl-text2 Được áp chảo với bơ và hỗn hợp tiêu đặc biệt, món ăn làm dậy lên vị tiêu thơm nồng và vị ngọt của thịt cua tươi ngon, mềm mượt. Cua Sốt Tiêu hứa hẹn mang đến cho bạn một trải nghiệm ẩm thực lay động mọi giác quan
+                                .qc_box--rt-item
+                                    .qc_box--rt-item-wrap
+                                        .qc_box--rt-item-content
+                                            h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Mì ý tôm sốt bơ tỏi
+                                            p.note-text.t-center.cl-text2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptate sequi corporis itaque iste debitis? Dolore, voluptatibus, maiores eveniet hic eaque labore aliquid sed ullam cumque, voluptates atque ex possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex itaque culpa doloribus pariatur delectus ipsum neque accusamus odit molestias! Quasi, alias accusantium pariatur cupiditate cumque mollitia voluptatibus. Eaque, nulla!
+                                .qc_box--rt-item
+                                    .qc_box--rt-item-wrap
+                                        .qc_box--rt-item-content
+                                            h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Hàu sống tái chanh
+                                            p.note-text.t-center.cl-text2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat nemo aut ut adipisci quia! Nihil libero maiores necessitatibus, ab suscipit, repudiandae itaque inventore obcaecati, a nisi et repellat. Deserunt!
+                                .qc_box--rt-item
+                                    .qc_box--rt-item-wrap
+                                        .qc_box--rt-item-content
+                                            h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Giới thiệu nhà hàng
+                                            p.note-text.t-center.cl-text2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat nemo aut ut adipisci quia! Nihil libero maiores necessitatibus, ab suscipit, repudiandae itaque inventore obcaecati, a nisi et repellat. Deserunt!
+                            +box-navi("fas fa-chevron-left","fas fa-chevron-right") 
+    section.qc_menu
+        .qc_menu--con(data-aos="fade-in")
+            .qc_menu--bg 
+                +img("qcmnbg.png")
+            .container
+                .qc_menu--wrap 
+                    .qc_menu--box 
+                        h2.title-sm3.fw-7.cl-white.fl-sec.t-center Thực đơn
+                        p.note-text.cl-white.t-center Đến với Việt Nam, JUMBO Seafood vẫn giữ được vẹn nguyên công thức bí truyền nguyên bản từ Singapore, với mong muốn nâng tầm trải nghiệm ẩm thực đến với thực khách. Mọi hương vị tuyệt mỹ đều được tái hiện trọn vẹn thông qua bàn tay khéo léo, tài hoa của bếp trưởng người Singapore với hơn 30 năm kinh nghiệm trong nghề. 
+                        +btn("Xem Thực đơn","","","tran2s")
+    section.qc_alb.free-slide 
+        .qc_alb--wrap
+            .qc_alb--list.d-wrap(data-aos="fade-up") 
+                .swiper.mySwiper.--auto 
+                    .swiper-wrapper 
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb1.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb1.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua Sốt Ớt
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb2.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb2.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Mực không biết
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb3.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb3.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua không biết
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb3.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb4.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Chả không biết
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb1.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb1.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Cua Sốt Ớt
+                        .swiper-slide.d-item.d-4 
+                            .qc_alb--item 
+                                a(href="./assets/images/qcalb2.png" data-fancybox="gallery").qc_alb--link
+                                    span.qc_alb--link-img 
+                                        +img("qcalb2.png")
+                                    span.qc_alb--link-box 
+                                        h2.title-mn.cl-white.t-center Mực không biết
+                +box-navi("fas fa-chevron-left","fas fa-chevron-right")

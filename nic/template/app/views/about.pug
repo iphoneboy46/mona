@@ -1,0 +1,191 @@
+extends layout/layout
+block vars
+    -title = 'About'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container 
+    .aboutWrap(id="fullpage")
+        section.about_logo.section 
+            .about_logo--bg 
+                +img("ablg.png")
+            .container 
+                .about_logo--wrap 
+                    .about_logo--img 
+                        +img("abimg.png")
+        section.about_intro.section
+            .about_intro--bg 
+                +img("cimg3.png")
+            .container 
+                .about_intro--wrap 
+                    .about_intro--content 
+                        h2.title-md.fw-7.cl-text.fw-i.t-up Giới thiệu chung
+                        p.note-lg.cl-text NIC (Trust and Quality) thương hiệu nón bảo hiểm cao cấp, xây dựng niềm tin của khách hàng dựa trên giá trị cốt lõi - chất lượng. Sinh ra với sứ mệnh bảo vệ, NIC mang đến sự an toàn, đẳng cấp và tinh tế. Mỗi sản phẩm của NIC là sự kết hợp hoàn hảo giữa chất liệu bền bỉ, thiết kế tinh xảo, tiện ích hiện đại.
+        section.about_hd.section
+            .container 
+                .about_hd--wrap
+                    .about_hd--box.d-wrap
+                        .about_hd--lf.d-item
+                            .about_hd--lf-wrap
+                                .about_hd--lf-box
+                                    .about_hd--lf-content
+                                        h2.title-md.fw-7.cl-pri.fw-i.t-up Lĩnh vực hoạt động
+                                        p.note-lg.cl-white.scroll-main NIC - thương hiệu nón bảo hiểm uy tín với tinh thần kiên trì theo đuổi giá trị bảo vệ bền bỉ. Chúng tôi cho cung cấp, phân phối những sản phẩm chất lượng cao, bảo vệ sự an toàn và thể hiện phong thái mạnh mẽ của những tay lái cừ khôi.
+                        .about_hd--rt.d-item
+                            .about_hd--rt-wrap  
+                                .about_hd--rt-img
+                                    +img("abhd.png")
+        section.about_tq.section 
+            .about_tq--bg 
+                +img("abtq.png")
+            .container 
+                .about_tq--wrap
+                    .about_tq--content
+                        h2.title-md.fw-7.cl-pri.fw-i.t-up Trust and Quality
+        section.about_hd.tlkd.section
+            .container 
+                .about_hd--wrap
+                    .about_hd--box.d-wrap
+                        .about_hd--lf.d-item
+                            .about_hd--lf-wrap
+                                .about_hd--lf-box
+                                    .about_hd--lf-content
+                                        h2.title-md.fw-7.cl-pri.fw-i.t-up Triết lý kinh doanh
+                                        p.note-lg.cl-white.scroll-main 
+                                            | 1. Sử dụng nguyên liệu chất lượng cao, kiểm soát quy trình sản xuất chặt chẽ
+                                            br
+                                            br
+                                            | 2. Tối ưu hóa giá trị sản phẩm về chất lượng, kiểu dáng, tính năng, phù hợp với nhu cầu sử dụng của người dùng
+                                            br
+                                            br
+                                            | 3. Lợi ích của khách hàng là ưu tiên trong mọi ưu tiên, tạo nên sự hài lòng từ dịch vụ bán hàng đến chất lượngsản phẩm
+                                            br
+                                            br
+                                            | 4. Duy trì đạo đức kinh doanh, sử dụng uy tín thương hiệu là lợi thế cạnh tranh
+                                            br
+                                            br
+                                            | 5. Tạo mối quan hệ hợp tác win - win với các đối tác, khách hàng để cùng nhau phát triển và đạt được thành công chung
+                        .about_hd--rt.d-item
+                            .about_hd--rt-wrap  
+                                .about_hd--rt-img
+                                    +img("tlkd.png")
+        section.about_intro.section
+            .about_intro--bg 
+                +img("cimg3.png")
+            .container 
+                .about_intro--wrap 
+                    .about_intro--content 
+                        h2.title-md.fw-7.cl-text.fw-i.t-up Văn hoá doanh nghiệp
+                        p.note-lg.cl-text Mọi thành viên của doanh nghiệp đều tin tưởng vào sức mạnh của sự sáng tạo. Trong hành trình phát triển của công ty, chúng tôi cùng đoàn kết hướng về mục tiêu chung là hết lòng phục vụ khách hàng, từ đó vững tâm thực hiện sứ mệnh thương hiệu.
+        section.about_footer.section
+            .footer
+                .container
+                    .footer_wrap
+                        .footer_list.d-wrap
+                            .footer_item.d-item
+                                .footer_item--wrap
+                                    a(href="").footer_logo 
+                                        +img("logoFT.png")
+                                    p.note-text 
+                                        Your new password must be different from previous used passwords, contain 8 to 16 characters and at least one number 
+                            .footer_item.d-item
+                                .footer_item--wrap
+                                    p.note-text.cl-text2.fw-7 Giới thiệu
+                                    ul.menu-list
+                                        -
+                                            const ft4s = [
+                                                {
+                                                    title:"Về NIC",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Giá trị cốt lõi",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Liên hệ",
+                                                    dropdown:true
+                                                },
+                                            ]
+                                        each ft , i in ft4s
+                                            li.menu-item
+                                                a(href="").menu-link #{ft.title}
+                            .footer_item.d-item
+                                .footer_item--wrap
+                                    p.note-text.cl-text2.fw-7 Sản phẩm
+                                    ul.menu-list
+                                        -
+                                            const ft5s = [
+                                                {
+                                                    title:"Nón bảo hiểm 3/4",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Nón bảo hiểm 1/2",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Nón bảo hiểm Fullface",
+                                                    dropdown:true
+                                                },
+                                                {
+                                                    title:"Phụ kiện",
+                                                    dropdown:true
+                                                }
+                                            ]
+                                        each ft , i in ft5s
+                                            li.menu-item
+                                                a(href="").menu-link #{ft.title}
+                            .footer_item.d-item
+                                .footer_item--wrap
+                                    p.note-text.cl-text2.fw-7 Chính sách
+                                    ul.menu-list
+                                        -
+                                            const ft6s = [
+                                                {
+                                                    title:"Đại lý",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Bảo mật",
+                                                    dropdown:false
+                                                },
+                                                {
+                                                    title:"Bảo hành",
+                                                    dropdown:true
+                                                },
+                                            ]
+                                        each ft , i in ft6s
+                                            li.menu-item
+                                                a(href="").menu-link #{ft.title}
+                            .footer_item.d-item
+                                .footer_item--wrap
+                                    p.note-text.fw-7.cl-text2 Thông tin chung
+                                    .social
+                                        ul.social_list
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic1.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic2.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic3.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic4.png")
+                                    .footer_form 
+                                        form(action="")
+                                            .footer_form--wrap 
+                                                input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                +btn("Gửi","button","","","")
+                .footer_bottom 
+                    .container 
+                        .footer_bottom--wrap
+                            p.note-sm.cl-white.t-center @copy right NIC 2024

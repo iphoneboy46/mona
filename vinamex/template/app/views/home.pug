@@ -1,0 +1,652 @@
+extends layout/layout
+block vars
+    -title = 'trang chu'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'bnHome'
+
+block container
+    .banner_home
+        .banner_home--list
+            .swiper.mySwiperBnHome 
+                .swiper-wrapper 
+                    .swiper-slide
+                        .banner_home--item
+                            .banner_home--bg 
+                                +img("bnHome.png")    
+                            .container 
+                                .banner_home--wrap
+                                    .banner_home--box 
+                                        h1.banner_home--title 
+                                            p.title-top.title.text-ani Du học dễ dàng
+                                            p.title-bottom.title.text-ani cùng Vinamex Edu
+                                        .banner_home--btn
+                                            +btn("Liên hệ ngay","","fas fa-caret-right","cl-2")
+                    .swiper-slide
+                        .banner_home--item
+                            .banner_home--bg 
+                                +img("bnHome.png")    
+                            .container 
+                                .banner_home--wrap
+                                    .banner_home--box 
+                                        h1.banner_home--title 
+                                            p.title-top.title.text-ani Du học dễ dàng
+                                            p.title-bottom.title.text-ani cùng Vinamex Edu 2
+                                        .banner_home--btn
+                                            +btn("Liên hệ ngay","","fas fa-caret-right","cl-2")
+            .swiper-pagination
+    section.about_welcome
+        .container 
+            .about_welcome--wrap.d-wrap 
+                .about_welcome--lf.d-item
+                    .about_welcome--lf-wrap(data-aos="zoom-in")   
+                        .about_welcome--imgs 
+                            .about_welcome--img 
+                                +img("abw1.png")
+                            .about_welcome--img 
+                                +img("abw2.png")
+                            .about_welcome--img 
+                                +img("abw3.png")
+                .about_welcome--rt.d-item
+                    .about_welcome--rt-wrap 
+                        .about_welcome--content 
+                            h2.title-sm2.fw-7.cl-five(data-aos="fade-up") 
+                                |Chào mừng bạn đến
+                                br
+                                |VINAMEX EDU
+                            p.note-text(data-aos="fade-up") Châm ngôn của chúng tôi là "kiến tạo ước mơ" và chúng tôi cam kết không ngừng nỗ lực để mang đến những trải nghiệm du học và đào tạo tốt nhất cho sinh viên Việt Nam. VINAMEX EDU hy vọng sẽ tiếp tục nhận được sự ủng hộ và tin tưởng từ quý vị, để cùng nhau xây dựng những chặng đường mới, vững chắc và thành công trong tương lai.
+                            .about_welcome--btn(data-aos="fade-up")
+                                +btn("Xem chi tiết","","fas fa-caret-right","trans")
+    section.about_des 
+        .container 
+            .about_des--wrap 
+                ul.about_des--list.d-wrap
+                    -
+                        const abds = [
+                            {
+                                img:"abd1.png",
+                                title:"Du học",
+                                content:"Nhật, Hàn, Úc,  Đức, Canada, Mỹ",
+                                delay:0,
+                            },
+                            {
+                                img:"abd2.png",
+                                title:"Đào tạo ngoại ngữ",
+                                content:"Nhật, Hàn, Anh, Đức",
+                                delay:200,
+                            },
+                            {
+                                img:"abd3.png",
+                                title:"Các loại hình biên phiên dịch đa ngôn ngữ",
+                                content:"",
+                                delay:400,
+                            },
+                        ]
+                    each abd , i in abds
+                        li.about_des--item.d-item.d-3(data-aos="zoom-in" data-aos-delay=`${abd.delay}`) 
+                            .about_des--item-wrap 
+                                .about_des--item-lf 
+                                    span.ic 
+                                        +img(abd.img)
+                                .about_des--item-rt 
+                                    h2.title-mn.fw-6 #{abd.title}
+                                    p.note-text #{abd.content}
+    section.home_dh(data-aos="fade-in") 
+        .container 
+            .home_dh--wrap.d-wrap 
+                .home_dh--lf.d-item
+                    .home_dh--ics 
+                        .home_dh--ic.showed 
+                            +img("hdhic1.png")
+                        .home_dh--ic 
+                            +img("hdhic2.png")
+                        .home_dh--ic 
+                            +img("hdhic3.png")
+                        .home_dh--ic 
+                            +img("hdhic4.png")
+                        .home_dh--ic 
+                            +img("hdhic5.png")
+                        .home_dh--ic 
+                            +img("hdhic6.png")
+                        .home_dh--ic 
+                            +img("hdhic6.png")
+                    .home_dh--lf-wrap 
+                        .home_dh--lf-list 
+                            .swiper.mySwiperLf 
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh1.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh2.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh3.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh4.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh5.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh6.png")
+                                    .swiper-slide
+                                        .home_dh--lf-item 
+                                            .home_dh--lf-img
+                                                +img("hdh6.png")
+                        +box-navi("fas fa-caret-left","fas fa-caret-right")
+                .home_dh--rt.d-item
+                    .home_dh--rt-wrap 
+                        .home_dh--rt-top
+                            .home_dh--rt-top-list.d-wrap 
+                                .swiper.mySwiperRtTop 
+                                    .swiper-wrapper
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC HÀN QUỐC
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC Nhật bản
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC úc
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC mỹ
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC đức
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC canada
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-top-item 
+                                                .home_dh--rt-top-item-wrap 
+                                                    h2.title-sm2.cl-second.fw-7.t-up DU HỌC canada
+                                                    p.note-text.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú).
+                                                    +btn("Tìm hiểu thêm","","fas fa-caret-right","cl-2")
+                        .home_dh--rt-bottom
+                            .home_dh--rt-bottom-list.d-wrap 
+                                .swiper.mySwiperRtBottom 
+                                    .swiper-wrapper
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh1.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Hàn Quốc
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh2.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Nhật Bản
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh3.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Úc
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh4.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Mỹ
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh5.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Đức
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh6.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Canada
+                                        .swiper-slide.d-item
+                                            .home_dh--rt-bottom-item
+                                                .home_dh--rt-bottom-item-wrap
+                                                    .home_dh--rt-bottom-item-img 
+                                                        +img("hdh6.png")
+                                                    .home_dh--rt-bottom-item-title 
+                                                        p.note-sm.cl-white.t-center Canada
+                                .swiper-scrollbar
+    section.home_news 
+        .container 
+            .home_news--wrap 
+                .title_main
+                    h2.title-sm2.cl-five.fw-7.t-center(data-aos="fade-up") Tin tức - Hoạt động 
+                    p.note-text.cl-gray3.t-center(data-aos="fade-up" data-aos-delay="500") Theo dõi các tin tức mới nhất về chương trình du học 
+                .home_news--box(data-aos="fade-up" data-aos-delay="1000")
+                    .home_news--list.d-wrap 
+                        -
+                            const hns = [
+                                {
+                                    img:"hn1.png",
+                                    title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                    content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                },
+                                {
+                                    img:"hn2.png",
+                                    title:"Việt Nam và vùng Kyushu của Nhật Bản thúc đẩy hợp tác về nguồn nhân lực",
+                                    content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                },
+                                {
+                                    img:"hn3.png",
+                                    title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn4.png",
+                                    title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn5.png",
+                                    title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, góp phần xoá đói giảm nghèo",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn3.png",
+                                    title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn4.png",
+                                    title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn5.png",
+                                    title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, góp phần xoá đói giảm nghèo",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn3.png",
+                                    title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn4.png",
+                                    title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                },
+                                {
+                                    img:"hn5.png",
+                                    title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, góp phần xoá đói giảm nghèo",
+                                    content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                                }
+                            ]
+                        each hn , i in hns 
+                            .home_news--item.d-item.d-3 
+                                +post(hn.img,hn.title,hn.content)
+                    +btn("Xem tất cả","","fas fa-caret-right","trans")
+    section.home_teams.free-slide 
+        .home_teams--wrap 
+            .title_main
+                h2.title-sm2.cl-five.fw-7.t-center(data-aos="fade-up") Đội ngũ giảng viên 
+                p.note-text.cl-gray3.t-center(data-aos="fade-up" data-aos-delay="500") Đội ngũ đào tạo và xử lý hồ sơ dày dặn kinh nghiệm
+            .home_teams--box(data-aos="fade-up" data-aos-delay="1000") 
+                .home_teams--list.d-wrap 
+                    .swiper.mySwiper.--auto
+                        .swiper-wrapper 
+                            -
+                                const ts = [
+                                    {
+                                        img:"t5.png",
+                                        pos:"Giảng viên",
+                                        name:"Ngô Thị Mỹ Anh"
+                                    },
+                                    {
+                                        img:"t4.png",
+                                        pos:"Giám đốc nhân sự",
+                                        name:"Nguyễn Trọng Minh"
+                                    },
+                                    {
+                                        img:"t2.png",
+                                        pos:"CEO & Founder",
+                                        name:"Đồng Công Chí Linh"
+                                    },
+                                    {
+                                        img:"t3.png",
+                                        pos:"Giảng viên",
+                                        name:"Huỳnh Tú Anh"
+                                    },
+                                    {
+                                        img:"t1.png",
+                                        pos:"Giảng viên",
+                                        name:"Nguyễn Thành Công"
+                                    },
+                                    {
+                                        img:"t3.png",
+                                        pos:"Giảng viên",
+                                        name:"Huỳnh Tú Anh"
+                                    },
+                                    {
+                                        img:"t1.png",
+                                        pos:"Giảng viên",
+                                        name:"Nguyễn Thành Công"
+                                    }
+                                ]
+                            each t  , i in ts
+                                .swiper-slide.d-item.d-5
+                                    .home_teams--item
+                                        .home_teams--item-wrap 
+                                            a(href="").home_teams--item-img 
+                                                +img(t.img)
+                                            .home_teams--item-box 
+                                                .home_teams--item-top 
+                                                    p.note-text.cl-five.t-center #{t.pos} 
+                                                    a(href="").name.title-mn.fw-6.t-center #{t.name}
+                                                .home_teams--item-center 
+                                                    p.note-text.t-center 
+                                                        |Sự hài lòng của khách hàng là
+                                                        br
+                                                        |niềm hạnh phúc của tôi.
+                                                .home_teams--item-bottom 
+                                                    .social
+                                                        ul.social_list
+                                                            li.social_item
+                                                                a(href="").social_link 
+                                                                    span.social_img
+                                                                        +img("te1.png")
+                                                            li.social_item
+                                                                a(href="").social_link 
+                                                                    span.social_img
+                                                                        +img("te2.png")
+                                                            li.social_item
+                                                                a(href="").social_link 
+                                                                    span.social_img
+                                                                        +img("te3.png")
+                                                            li.social_item
+                                                                a(href="").social_link 
+                                                                    span.social_img
+                                                                        +img("te4.png")
+                    .swiper-pagination
+                +btn("Xem tất cả","","fas fa-caret-right","trans")
+    section.about_why.my-none
+        .about_why--bg
+            +img("abwbg.png")
+        .container 
+            .about_why--wrap 
+                .about_why--list.d-wrap 
+                    .about_why--item.d-item.d-4(data-aos="fade-right" data-aos-delay="0")
+                        .about_why--item-wrap 
+                            .about_why--item-content 
+                                h2.title-sm2.cl-second.fw-7 Vì sao nên chọn chúng tôi?
+                                p.note-text.cl-white VINAMEX EDU với trách nhiệm và sứ mệnh cao cả, không ngừng hỗ trợ và khích lệ sinh viên Việt Nam thực hiện ước mơ du học và phát triển kỹ năng ngoại ngữ.
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="200")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic1.png")
+                                p.note-text.t-center.cl-white Đội ngũ đào tạo và xử lý hồ sơ dày dặn kinh nghiệm
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="400")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic2.png")
+                                p.note-text.t-center.cl-white Cơ sở vật chất hiện đại, đầy đủ thiết bị hỗ trợ học tập
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="600")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic5.png")
+                                p.note-text.t-center.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="800")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic4.png")
+                                p.note-text.t-center.cl-white Tư vấn, hỗ trợ sinh viên học tập và sinh sống trong quá trình du học
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="1000")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic3.png")
+                                p.note-text.t-center.cl-white Cung cấp và tư vấn các dịch vụ trọn gói, thủ tục cần thiết đi du học
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="1200")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic6.png")
+                                p.note-text.t-center.cl-white Tỉ lệ đậu Visa cao trên 90%
+    section.want.my-none
+        .want_bg 
+            +img("wbg.png")
+        .container
+            .want_wrap 
+                .want_box 
+                    .want_logo 
+                        +img("logoHD.png")
+                    .want_content 
+                        h2.title-sm2.fw-7.t-center.cl-five 
+                            |Bạn muốn đi du học 
+                            br
+                            |nhưng không biết bắt đầu từ đâu?
+                        p.note-text.t-center Liên hệ với chúng tôi để được tư vấn nhanh nhất
+                    .want_btn 
+                        +btn("Liên hệ ngay","","fas fa-caret-right","trans")
+    section.home_said.free-slide 
+        .container 
+            .home_said--wrap 
+                .home_said--title 
+                    .home_said--title-lf(data-aos="fade-right") 
+                        .about_why--item-content 
+                            h2.title-sm2.cl-second.fw-7 Học viên nói gì về chúng tôi?
+                            p.note-text.cl-white 
+                                |VINAMEX EDU cam kết mang đến những dịch vụ tư vấn 
+                                br
+                                |và hỗ trợ du học toàn diện và hỗ trợ sau khi đến đất nước mới.
+                    .home_said--title-rt(data-aos="fade-left")  
+                        +box-navi("fas fa-caret-left","fas fa-caret-right")
+                .home_said--list.d-wrap(data-aos="fade-up") 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-2
+                                .home_said--item 
+                                    .home_said--item-wrap 
+                                        .home_said--item-lf 
+                                            .home_said--item-lf-wrap
+                                                .home_said--item-img 
+                                                    +img("hs1.png")
+                                        .home_said--item-rt 
+                                            .home_said--item-rt-wrap
+                                                span.ic 
+                                                    +img("phay.svg")
+                                                .home_said--item-content 
+                                                    p.note-text Nhờ sự giúp đỡ tận tình và chuyên nghiệp, hành trình định cư của tôi trở nên dễ dàng và thuận lợi hơn rất nhiều. Tôi chân thành cảm ơn Vinamex Edu và hy vọng trung tâm sẽ tiếp tục giúp đỡ nhiều người khác thực hiện ước mơ của mình
+                                                .about_letter--author
+                                                    .about_letter--author-img 
+                                                        +img("author.png")
+                                                    .about_letter--author-content
+                                                        p.note-lg.fw-7 Trương Hoàng Ý
+                                                        p.note-sm Du học sinh Hàn Quốc
+                            .swiper-slide.d-item.d-2
+                                .home_said--item 
+                                    .home_said--item-wrap 
+                                        .home_said--item-lf 
+                                            .home_said--item-lf-wrap
+                                                .home_said--item-img 
+                                                    +img("hs2.png")
+                                        .home_said--item-rt 
+                                            .home_said--item-rt-wrap
+                                                span.ic 
+                                                    +img("phay.svg")
+                                                .home_said--item-content 
+                                                    p.note-text Khi nghĩ về hành trình du học của mình, từ những ngày đầu tiên khi tôi còn bỡ ngỡ và lo lắng về việc chuẩn bị hồ sơ du học, đến lúc đặt chân đến nước Hàn xinh đẹp, Vinamex Edu vẫn luôn ở bên cạnh, đồng hành và hỗ trợ tôi tận tình.
+                                                .about_letter--author
+                                                    .about_letter--author-img 
+                                                        +img("author.png")
+                                                    .about_letter--author-content
+                                                        p.note-lg.fw-7 Trương Hoàng Ý
+                                                        p.note-sm Du học sinh Hàn Quốc
+                            .swiper-slide.d-item.d-2
+                                .home_said--item 
+                                    .home_said--item-wrap 
+                                        .home_said--item-lf 
+                                            .home_said--item-lf-wrap
+                                                .home_said--item-img 
+                                                    +img("hs1.png")
+                                        .home_said--item-rt 
+                                            .home_said--item-rt-wrap
+                                                span.ic 
+                                                    +img("phay.svg")
+                                                .home_said--item-content 
+                                                    p.note-text Nhờ sự giúp đỡ tận tình và chuyên nghiệp, hành trình định cư của tôi trở nên dễ dàng và thuận lợi hơn rất nhiều. Tôi chân thành cảm ơn Vinamex Edu và hy vọng trung tâm sẽ tiếp tục giúp đỡ nhiều người khác thực hiện ước mơ của mình
+                                                .about_letter--author
+                                                    .about_letter--author-img 
+                                                        +img("author.png")
+                                                    .about_letter--author-content
+                                                        p.note-lg.fw-7 Trương Hoàng Ý
+                                                        p.note-sm Du học sinh Hàn Quốc
+                    .swiper-pagination.custom
+    section.home_partner.free-slide
+        .container 
+            .home_partner--wrap 
+                .title_main
+                    h2.title-sm2.cl-five.fw-7.t-center(data-aos="fade-up") Đối tác của chúng tôi
+                    p.note-text.cl-gray3.t-center(data-aos="fade-up" data-aos-delay="500") 
+                        |Bao gồm các trường đại học hàng đầu tại Nhật Bản, Hàn Quốc, Đức, Úc, Canada và Mỹ ,
+                        br
+                        |cùng các tập đoàn lớn trong nhiều ngành nghề khác nhau
+                .home_partner--list.d-wrap(data-aos="fade-up" data-aos-delay="1000") 
+                    .swiper.mySwiper.--auto 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p1.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p2.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p3.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p4.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p5.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p4.png")
+                            .swiper-slide.d-item.d-5
+                                .home_partner--item 
+                                    .home_partner--item-wrap 
+                                        .home_partner--item-img 
+                                            +img("p5.png")
+                    .swiper-pagination
+    section.home_albums.free-slide 
+        .home_albums--wrap 
+            .home_albums--lf(data-aos="fade-right")
+                .home_albums--lf-wrap 
+                    .home_albums--title 
+                        .home_albums--title-img 
+                            +img("homeAblf.png")
+                        .home_albums--title-content 
+                            h2.title-sm2.fw-7.cl-white
+                                |Thư viện 
+                                br
+                                |hình ảnh / video
+            .home_albums--rt(data-aos="fade-in")
+                .home_albums--rt-wrap 
+                    .home_albums--rt-list.d-wrap 
+                        .swiper.mySwiper 
+                            .swiper-wrapper
+                                .swiper-slide.d-item
+                                    .home_albums--rt-item 
+                                        .home_albums--rt-item-wrap 
+                                            .home_albums--rt-item-imgs.gallery
+                                                a(href="./assets/images/alb1.png" data-fancybox="gallery1").home_albums--rt-item-img 
+                                                    +img("alb1.png")
+                                                a(href="./assets/images/alb2.png" data-fancybox="gallery1").home_albums--rt-item-img 
+                                                    +img("alb2.png")
+                                            .home_albums--rt-item-content 
+                                                h3.note-sm.t-center.cl-gray3 Câu chuyện Thực tập sinh của Vinamex Edu tại xứ sở "hoa anh đào"
+                                .swiper-slide.d-item
+                                    .home_albums--rt-item 
+                                        .home_albums--rt-item-wrap 
+                                            .home_albums--rt-item-imgs.gallery
+                                                a(href="./assets/images/alb2.png" data-fancybox="gallery2").home_albums--rt-item-img 
+                                                    +img("alb2.png")
+                                                a(href="./assets/images/alb3.png" data-fancybox="gallery2").home_albums--rt-item-img 
+                                                    +img("alb3.png")
+                                            .home_albums--rt-item-content 
+                                                h3.note-sm.t-center.cl-gray3 Vinh danh 12 “Doanh nghiệp xuất khẩu lao động tiêu biểu” năm 2023
+                                .swiper-slide.d-item
+                                    .home_albums--rt-item 
+                                        .home_albums--rt-item-wrap
+                                            .home_albums--rt-item-imgs.gallery
+                                                a(href="./assets/images/alb3.png" data-fancybox="gallery3").home_albums--rt-item-img 
+                                                    +img("alb3.png")
+                                                a(href="./assets/images/alb4.png" data-fancybox="gallery3").home_albums--rt-item-img 
+                                                    +img("alb4.png")
+                                            .home_albums--rt-item-content 
+                                                h3.note-sm.t-center.cl-gray3 Hoạt động ngoại khóa của Học Viên Vinamex Miền Nam tháng 10/2023
+                                .swiper-slide.d-item
+                                    .home_albums--rt-item 
+                                        .home_albums--rt-item-wrap
+                                            .home_albums--rt-item-imgs.gallery
+                                                a(href="./assets/images/alb4.png" data-fancybox="gallery4").home_albums--rt-item-img 
+                                                    +img("alb4.png")
+                                                a(href="./assets/images/alb5.png" data-fancybox="gallery4").home_albums--rt-item-img 
+                                                    +img("alb5.png")
+                                            .home_albums--rt-item-content 
+                                                h3.note-sm.t-center.cl-gray3 Vinh danh 12 “Doanh nghiệp xuất khẩu lao động tiêu biểu” năm 2023
+                                .swiper-slide.d-item
+                                    .home_albums--rt-item 
+                                        .home_albums--rt-item-wrap
+                                            .home_albums--rt-item-imgs.gallery 
+                                                a(href="./assets/images/alb5.png" data-fancybox="gallery5").home_albums--rt-item-img 
+                                                    +img("alb5.png")
+                                                a(href="./assets/images/alb1.png" data-fancybox="gallery5").home_albums--rt-item-img 
+                                                    +img("alb1.png")
+                                            .home_albums--rt-item-content 
+                                                h3.note-sm.t-center.cl-gray3 Vinh danh 12 “Doanh nghiệp xuất khẩu lao động tiêu biểu” năm 2023

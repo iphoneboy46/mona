@@ -1,0 +1,164 @@
+footer.footer
+    .footer_wrap
+        .footer_top 
+            .container
+                a.footer_logo(href="")
+                    +img("logoFT.png")
+        .footer_center
+            .container
+                .footer_center--wrap.d-wrap
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.note-text.fw-7.cl-text2 Quảng Bình Travel
+                            .address
+                                ul.address_list                
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Địa chỉ: 
+                                            a.address_link(href="") 01 Thuận Lý, Nam Lý, Đồng Hới, Quảng Bình
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Điện thoại: 
+                                            a.address_link(href="") 02323 850 505
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Mr Cương: 
+                                            a.address_link(href="") 0912 356 056
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Email: 
+                                            a.address_link(href="") info@quangbinhtravel.vn
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Maps:
+                                            a.address_link(href="").map https://g.co/kgs/hrgHUd
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic3.png")
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.note-text.cl-text2.fw-7 Thông tin hữu ích
+                            ul.menu-list
+                                -
+                                    const fts = [
+                                        {
+                                            title:"Du lịch Quảng Bình",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du lịch Phong Nha",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du lịch Việt Nam",
+                                            dropdown:true
+                                        },
+                                        {
+                                            title:"Tour Quảng Bình đi",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Hướng dẫn đặt Tour",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Phương thức thanh toán",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Chính sách bảo mật",
+                                            dropdown:false
+                                        }
+                                    ]
+                                each ft , i in fts
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.note-text.cl-text2.fw-7 Thông tin hữu ích
+                            ul.menu-list
+                                -
+                                    const ft2s = [
+                                        {
+                                            title:"Tour Quảng Bình",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tour thám hiểm hang Chà Lòi",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tour trekking vượt Thác Dương Cầm",
+                                            dropdown:true
+                                        }
+                                    ]
+                                each ft , i in ft2s
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+                    .footer_center--item.d-item
+                        .footer_center--item-wrap
+                            p.note-text.fw-7.cl-text2 Thông tin chung
+                            .address
+                                ul.address_list                
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Chủ quản:
+                                            p.address_link Công ty TNHH NETIN
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Người đại diện: 
+                                            p.address_link Ông Trần Xuân Cương
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 MST:
+                                            p.address_link 3101004542 cấp ngày 08/12/2011
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Nơi cấp:
+                                            p.address_link Sở kế hoạch đầu tư Quảng Bình
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Lĩnh vực:
+                                            p.address_link Đại lý du lịch
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-sm.cl-text2.fw-7 Giấy phép KDLQ quốc tế: 
+                                            p.address_link 44-019/TCDL- GPLHQT do Tổng cục Du lịch cấp
+        .footer_bottom
+            .container
+                .footer_bottom--wrap
+                    .footer_bottom--top 
+                        ul.footer_banks 
+                            li.footer_bank 
+                                .footer_bank--img 
+                                    +img("b1.png")
+                            li.footer_bank 
+                                .footer_bank--img 
+                                    +img("b2.png")
+                            li.footer_bank 
+                                .footer_bank--img 
+                                    +img("b3.png")
+                        ul.footer_alerts 
+                            li.footer_alert 
+                                .footer_alert--img 
+                                    +img("al1.png")
+                            li.footer_alert 
+                                .footer_alert--img 
+                                    +img("al2.png")
+                    .footer_bottom--bottom
+                        .footer_bottom--bottom-wrap
+                            p.note-sm.cl-text2.t-center.fw-6 Designed and developed by
+                            .footer_bottom--bottom-mona 
+                                +img("Signature2.png")
+

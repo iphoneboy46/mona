@@ -1,0 +1,137 @@
+.brand {
+  &-item {
+  }
+}
+
+.brand-item {
+  &:nth-child(odd) {
+    .brand-item_content {
+      .text-horiz {
+        transform: translateX(50%);
+        @include maxW(1670px) {
+          right: 25%;
+        }
+        @include maxW(1360px) {
+          top: 50%;
+        }
+        @include xs {
+          right: 100%;
+        }
+      }
+    }
+  }
+  &:nth-child(even) {
+    background: #1a1a1a;
+    .row {
+      flex-direction: row-reverse;
+    }
+    .brand-item_image {
+      @include md-min {
+        margin-left: auto;
+      }
+    }
+    .brand-item_content {
+      .text-horiz {
+        left: 63%;
+        bottom: -2rem;
+        top: unset;
+        color: #262626;
+      }
+    }
+  }
+  &_image {
+    max-width: 51rem;
+    aspect-ratio: 1/1;
+    position: relative;
+    z-index: 10;
+    img {
+      @include img-cover;
+    }
+    @include md {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &_content {
+    .desc {
+      margin-top: 2.4rem;
+      opacity: 0.7;
+    }
+    .bottom {
+      margin-top: 5rem;
+      position: relative;
+      .text-horiz {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include lg {
+          top: 57%;
+          left: 52%;
+        }
+      }
+    }
+    .links {
+      &-title {
+        color: #cccccc;
+      }
+      .list-links {
+        --g-x: 3.2rem;
+        margin-top: 1.6rem;
+        justify-content: flex-start;
+        .li {
+          font-size: var(--h5-fs);
+          line-height: var(--h5-lh);
+          &-link {
+            color: #999999;
+
+            @include hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .btn-main {
+      margin-top: 7.7rem;
+      @include lg {
+        margin-top: 5rem;
+      }
+      @include xs {
+        margin-top: 2.4rem;
+      }
+    }
+    @include maxW(420px) {
+      .text-horiz {
+        position: static !important;
+        @include transform(none !important);
+        margin-top: 2.4rem;
+      }
+    }
+  }
+}
+
+.text-horiz {
+  color: #1a1a1a;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  @include lg {
+    font-size: 3rem;
+  }
+  .text-bot {
+    margin-left: 7rem;
+    margin-top: 0.6rem;
+    @include lg-min {
+      @include transform(translateX(100%));
+      opacity: 0;
+    }
+  }
+  .text-head {
+    @include lg-min {
+      @include transform(translateX(-100%));
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+:root {
+  --font-pri: "SVN-Poppins";
+  --font-sec: "Playfair Display";
+  --size-hd: 8.8rem;
+
+  --size-pd: 4rem;
+  --size-pdl: 8rem;
+
+  --radius12: 1.2rem;
+  --radius0: 0.8rem;
+
+  --size-pdh: 9rem;
+
+
+  --columnContent36: 3.6rem;
+  --columnContent32: 3.2rem;
+  --columnContent24: 2.4rem;
+  --columnContent2: 2rem;
+  --columnContent12: 1.2rem;
+  --columnContent16: 1.6rem;
+  --columnContent0: 0.8rem;
+
+  --rowContent04: 0.4rem;
+  --rowContent0: 0.8rem;
+  --rowContent2: 2rem;
+  --rowContent12: 1.2rem;
+  --rowContent14: 1.4rem;
+  --rowContent16: 1.6rem;
+  --rowContent24: 2.4rem;
+  --rowContent32: 3.2rem;
+  --rowContent36: 3.6rem;
+  --rowContent4: 4rem;
+
+
+
+
+
+  @include max(1200px) {
+    --size-hd: 7rem;
+
+
+    --size-pd: 3rem;
+    --size-pdl: 6rem;
+
+    --radius12: 0.8rem;
+    --radius0: 0.4rem;
+
+    --columnContent36: 3rem;
+    --columnContent32: 2.4rem;
+    --columnContent24: 2rem;
+    --columnContent12: 1rem;
+    --columnContent16: 1.2rem;
+    --columnContent0: 0.6rem;
+
+
+    --rowContent0: 0.6rem;
+    --rowContent2: 1.6rem;
+    --rowContent12: 1rem;
+    --rowContent14: 1rem;
+    --rowContent16: 1.2rem;
+    --rowContent24: 2rem;
+    --rowContent32: 2.4rem;
+    --rowContent36: 3rem;
+    --rowContent4: 3rem;
+
+  }
+
+
+  @include max(800px) {
+    --size-hd: 7rem;
+
+
+    --size-pd: 2.4rem;
+    --size-pdl: 4.4rem;
+
+    --columnContent36: 2.4rem;
+    --columnContent32: 2rem;
+    --columnContent24: 1.6rem;
+    --columnContent12: 0.8rem;
+    --columnContent16: 1rem;
+    --columnContent0: 0.6rem;
+
+
+    --rowContent0: 0.6rem;
+    --rowContent2: 1.4rem;
+    --rowContent12: 0.8rem;
+    --rowContent14: 0.8rem;
+    --rowContent16: 1rem;
+    --rowContent24: 1.6rem;
+    --rowContent32: 2rem;
+    --rowContent36: 2.4rem;
+
+
+  }
+
+  @include max(600px) {
+    --size-hd: 6.5rem;
+
+    --size-pd: 2rem;
+    --size-pdl: 4rem;
+
+    --radius12: 0.6rem;
+    --radius0: 0.2rem;
+
+    --columnContent36: 2rem;
+    --columnContent32: 1.6rem;
+    --columnContent24: 1.2rem;
+    --columnContent12: 0.6rem;
+    --rowContent14: 0.6rem;
+    --columnContent16: 0.8rem;
+    --columnContent0: 0.4rem;
+
+
+    --rowContent0: 0.4rem;
+    --rowContent2: 1rem;
+    --rowContent12: 0.6rem;
+    --rowContent16: 0.8rem;
+    --rowContent24: 1.2rem;
+    --rowContent32: 1.6rem;
+    --rowContent36: 2rem;
+    --rowContent4: 2rem;
+
+
+  }
+
+  @include max(460px) {
+    --size-hd: 6.5rem;
+
+    --size-pd: 1.6rem;
+    --size-pdl: 3.2rem;
+
+    --radius12: 0.6rem;
+    --radius0: 0.2rem;
+
+    --rowContent4: 1.6rem;
+
+  }
+
+}
+
+$color-pri: #af8c3e;
+$color-second: #0f172a;
+$color-third: #334155;
+
+$color-text: #0f172a;
+$color-text2: #0f172a;
+
+
+$color-white: #ffffff;
+$color-white2: #cbd5e1;
+
+
+
+$color-black: #000000;
+$color-black2: #181818;
+
+
+$color-gray: #d8dce3;
+$color-gray2: #64748b;
+$color-gray3: #777777;
+$color-gray4: #475569;
+
+
+
+@mixin max($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}

@@ -1,0 +1,105 @@
+extends layout/layout
+block vars
+    -title = 'Contact'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.contact 
+        .container 
+            .contact_wrap.d-wrap 
+                .contact_lf.d-item.d-2 
+                    .contact_lf--wrap 
+                        .contact_lf--list
+                            .contact_lf--item 
+                                .contact_lf--item-wrap 
+                                    h2.title-sm3.fw-7.cl-white.fw-i.t-up  CHÚNG TÔI SẴN SÀNG HỖ TRỢ BẠN 24/7
+                            .contact_lf--item
+                                .contact_lf--item-wrap 
+                                    .address
+                                        ul.address_list                
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic1.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-5 Số điện thoại
+                                                    a.address_link(href="") +1 800 555 2569
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic2.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-7 Số fax
+                                                    a.address_link(href="") +1 800 555 5455
+                                            li.address_item
+                                                .address_item--ic 
+                                                    +img("adic3.png")
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-7 Địa chỉ email
+                                                    a.address_link(href="") Webflow-info@gmail.com
+                            .contact_lf--item
+                                .contact_lf--item-wrap
+                                    p.note-text.cl-white Giờ mở cửa
+                                    .address.hourOP
+                                        ul.address_list                
+                                            li.address_item
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-5 Thứ 2 - Thứ 6
+                                                    p.address_link 08:00 AM - 08:00 PM
+                                            li.address_item
+                                                .address_item--content
+                                                    p.note-sm.cl-text2.fw-7 Thứ 7
+                                                    p.address_link 08:00 AM - 05:00 PM
+                            .contact_lf--item
+                                .contact_lf--item-wrap
+                                    p.note-text.cl-white Giờ mở cửa
+                                    .social
+                                        ul.social_list
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic1.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic2.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic3.png")
+                                            li.social_item
+                                                a(href="").social_link 
+                                                    span.social_img
+                                                        +img("ftic4.png")
+                .contact_rt.d-item.d-2 
+                    .contact_rt--wrap 
+                        h2.title-sm3.fw-7.cl-white.fw-i.t-up LIÊN HỆ NGAY VỚI CHÚNG TÔI
+                        .contact_rt--form 
+                            form(action="")
+                                .contact_rt--form-wrap 
+                                    .contact_rt--form-list.d-wrap 
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Họ 
+                                                input(type="text" placeholder="Nhập họ của bạn").form-item-ip
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Tên 
+                                                input(type="text" placeholder="Nhập tên của bạn").form-item-ip
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Email
+                                                input(type="text" placeholder="Nhập email của bạn").form-item-ip
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Số điện thoại
+                                                input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Vấn đề cần hỗ trợ
+                                                input(type="text" placeholder="Nhập nội dung của bạn").form-item-ip
+                                        .contact_rt--form-item.d-item 
+                                            label.form-item
+                                                p.form-item-lb Nội dung của bạn
+                                                textarea(type="text" placeholder="Nhập nội dung của bạn").form-item-tx
+                                    +btn("Gửi","button","","")

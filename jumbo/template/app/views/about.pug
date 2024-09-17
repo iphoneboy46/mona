@@ -1,0 +1,584 @@
+extends layout/layout
+block vars
+    -title = 'about'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox, JsSwiper,JsSplide,JsSplideAuto]
+    -jsComponents = ['header',"about","splideJS","popup"]
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper,CssAos,CssSplide]
+    -cssComponents = ['banner']
+    -cssPages = ["about","contact"]
+
+block container
+    +banner-main("bnNews.png","Về Chúng Tôi")
+    section.about_imgs 
+        .about_imgs--wrap 
+            .about_imgs--top 
+                .container 
+                    .about_imgs--top-wrap
+                        .about_imgs--top-lf(data-aos="fade-right")
+                            h2.title-sm3.fw-7.cl-pri.fl-sec Jumbo Seafood Vietnam
+                        .about_imgs--top-rt(data-aos="fade-left") 
+                            +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+            .about_imgs--bottom 
+                .about_imgs--bottom-wrap(data-aos="fade-up") 
+                    .about_imgs--bottom-list 
+                        .swiper.mySwiperAbImgs 
+                            .swiper-wrapper     
+                                .swiper-slide 
+                                    .about_imgs--bottom-item.vdjs 
+                                        .about_imgs--bottom-item-wrap 
+                                            button.btn-play.vdbtnjs
+                                                .btn-play-tt
+                                                .btn-play-btn
+                                                    i.fas.fa-play
+                                            .about_imgs--bottom-item-bg.vdbgjs
+                                                +img("abi.png")
+                                            .about_imgs--bottom-item-img
+                                                video(width="320" height="240", controls)
+                                                    source(src="./assets/images/food.mp4" type="video/mp4")
+                                            .about_imgs--bottom-item-text 
+                                                p.note-lg.t-center.cl-white 6A Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, TP. HCM
+                                .swiper-slide 
+                                    .about_imgs--bottom-item.ytbjs 
+                                        .about_imgs--bottom-item-wrap 
+                                            button.btn-play.ytbbtnjs
+                                                .btn-play-tt
+                                                .btn-play-btn
+                                                    i.fas.fa-play
+                                            .about_imgs--bottom-item-bg.ytbbgjs
+                                                +img("abi1.png")
+                                            .about_imgs--bottom-item-img
+                                                iframe(width="1280" height="720" id="youtubeIframe" src="https://www.youtube.com/embed/MiMaKBF8Us8?enablejsapi=1" title="Jumbo Seafood Vietnam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                                            .about_imgs--bottom-item-text 
+                                                p.note-lg.t-center.cl-white 6A Trần Hưng Đạo, Phường Phạm Ngũ Lão, Quận 1, TP. HCM 2
+    section.about_intro 
+        .container 
+            .about_intro--wrap 
+                .about_intro--box.d-wrap 
+                    .about_intro--lf.d-item(data-aos="fade-right") 
+                        .about_intro--lf-wrap 
+                            h2.title-sm3.fw-7.cl-pri.fl-sec Từ Nhà Hàng Nhỏ  Đến Huyền Thoại Ẩm Thực Hải Sản Singapore
+                            p.note-text.cl-text 
+                                |Được thành lập từ năm 1987, JUMBO Seafood bắt đầu từ những nhà hàng nhỏ ở East Coast Seafood Center. Nhà hàng đã sớm giành được sự tin tưởng và dần trở thành nơi cung cấp, phục vụ hải sản tươi sống bật nhất. Một trong những món ăn làm nên thương hiệu nổi tiếng là Cua Sốt Ớt và Cua Sốt Tiêu Đen kiểu Singapore đã chinh phục được người dân bản địa và những thực khách sành ăn nước ngoài.
+                                br
+                                br
+                                |JUMBO Seafood tự hào mang đến cho thực khách nền văn hoá ẩm thực tốt nhất đến từ Đảo Quốc Sư Tử với sự hoà quyện từ nền văn hoá đa sắc tộc của nơi đây. 
+                    .about_intro--rt.d-item(data-aos="fade-in" data-aos-delay="500") 
+                        .about_intro--rt-wrap 
+                            .about_intro--rt-bg 
+                                +img("abitbg.png")
+                            p.note-text.cl-text2.t-center Nhà hàng Jumbo Seafood đầu tiên ở Singapore
+    section.about_location 
+        .container 
+            .about_location--wrap 
+                .about_location--box.d-wrap 
+                    .about_location--box-lf.d-item(data-aos="fade-right")  
+                        .about_location--box-lf-wrap 
+                            .about_location--box-lf-list 
+                                .swiper.mySwiperAblflc  
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            .about_location--box-lf-item 
+                                                .about_location--box-lf-item-img 
+                                                    +img("bk1.png")
+                                        .swiper-slide 
+                                            .about_location--box-lf-item 
+                                                .about_location--box-lf-item-img 
+                                                    +img("bk2.png")
+                                        .swiper-slide 
+                                            .about_location--box-lf-item 
+                                                .about_location--box-lf-item-img 
+                                                    +img("bk3.png")
+                                .swiper-pagination
+                    .about_location--box-rt.d-item(data-aos="fade-left")  
+                        .about_location--box-rt-wrap
+                            .about_location--box-rt-box
+                                .about_location--box-rt-list
+                                    .about_location--box-rt-item.showed
+                                        .about_location--box-rt-item-wrap
+                                            .about_location--box-rt-item-content 
+                                                h2.title-sm3.fw-7.cl-pri.fl-sec 
+                                                    |Jumbo Seafood
+                                                    br
+                                                    |Nguyễn Đình Chiểu
+                                                p.note-text.cl-text2 Chi nhánh Nguyễn Đình Chiểu được ví như một “Đảo quốc Singapore thu nhỏ” giữa lòng thành phố. Ngay từ khi bước chân vào, thực khách sẽ nhìn thấy biểu tượng đặc trưng của Singapore - tượng “Sư tử đá” cùng mảng không gian xanh thoáng đãng tạo nét đặc trưng riêng cho nhà hàng. Nội thất sang trọng cùng ánh sáng ấm áp tạo nên chiều sâu cho không gian. Nơi đây mang đến cho thực khách cảm giác thư thái, thoải mái như hòa mình vào thiên nhiên. 
+                                    .about_location--box-rt-item
+                                        .about_location--box-rt-item-wrap
+                                            .about_location--box-rt-item-content 
+                                                h2.title-sm3.fw-7.cl-pri.fl-sec 
+                                                    |Jumbo Seafood
+                                                    br
+                                                    |Đồng Khởi
+                                                p.note-text.cl-text2 Chi nhánh Đồng Khởi được ví như một “Đảo quốc Singapore thu nhỏ” giữa lòng thành phố. Ngay từ khi bước chân vào, thực khách sẽ nhìn thấy biểu tượng đặc trưng của Singapore - tượng “Sư tử đá” cùng mảng không gian xanh thoáng đãng tạo nét đặc trưng riêng cho nhà hàng. Nội thất sang trọng cùng ánh sáng ấm áp tạo nên chiều sâu cho không gian. Nơi đây mang đến cho thực khách cảm giác thư thái, thoải mái như hòa mình vào thiên nhiên.
+                                    .about_location--box-rt-item
+                                        .about_location--box-rt-item-wrap
+                                            .about_location--box-rt-item-content 
+                                                h2.title-sm3.fw-7.cl-pri.fl-sec 
+                                                    |Jumbo Seafood
+                                                    br
+                                                    |Trần Hưng Đạo
+                                                p.note-text.cl-text2 Chi nhánh Trần Hưng Đạo được ví như một “Đảo quốc Singapore thu nhỏ” giữa lòng thành phố. Ngay từ khi bước chân vào, thực khách sẽ nhìn thấy biểu tượng đặc trưng của Singapore - tượng “Sư tử đá” cùng mảng không gian xanh thoáng đãng tạo nét đặc trưng riêng cho nhà hàng. Nội thất sang trọng cùng ánh sáng ấm áp tạo nên chiều sâu cho không gian. Nơi đây mang đến cho thực khách cảm giác thư thái, thoải mái như hòa mình vào thiên nhiên.
+                                +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    section.about_food 
+        .about_food--wrap
+            .about_food--box(data-aos="fade-in")
+                .about_food--box-lf
+                    .about_food--box-lf-wrap
+                        .about_food--box-lf-box.vdjs
+                            button.btn-play.vdbtnjs
+                                .btn-play-tt
+                                .btn-play-btn
+                                    i.fas.fa-play
+                            .about_food--box-lf-bg.vdbgjs
+                                +img("abf.png")
+                            .about_food--box-lf-img
+                                video(width="320" height="240", controls)
+                                    source(src="./assets/images/food.mp4" type="video/mp4")
+                .about_food--box-rt
+                    .about_food--box-rt-wrap
+                        .about_food--box-rt-box
+                            .about_food--box-rt-logo 
+                                +img("abflogo.png")
+                            .about_food--box-rt-content 
+                                p.note-text.t-center.cl-white 
+                                    strong.fw-4.cl-pri Cua Sốt Ớt 
+                                    |là một trong những đại diện phải ánh rõ sự pha trộn giữa nền ẩm thực Malay, Ấn Độ (với ớt, nghệ, sả, quả lai), Trung Quốc (các loại tương, đậu lên men) và sốt cà, là hương vị khoái khẩu của người phương Tây.
+                                br
+                                p.note-text.t-center.cl-white Với cua tươi được nằm trong một hỗn hợp sốt kết hợp từ hơn mười loại gia vị của Châu Á, món ăn mang đến vị cay nhẹ cùng một ít vị ngọt và trứng càng tôn lên vị tươi ngon của thịt cua. Với thành phần và hương vị kết hợp từ các nền văn hoá khác nhau, đây là món ăn đặc trưng để thể hiện nền văn hoá ẩm thực đặc biệt đa dạng của Singapore 
+    section.about_prize
+        .about_prize--wrap
+            .about_prize--title(data-aos="fade-in")
+                h2.note-lg.fw-7.cl-pri.t-center Các giải thưởng danh giá mà Cua Sốt Ớt đạt được
+            .about_prize--splide.d-wrap(data-aos="fade-in" data-aos-delay="800")
+                .about_prize--splide-wrap
+                    .splide
+                        .splide__slider
+                            .splide__track
+                                .splide__list
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt8.png")
+                                            p.note-text.t-center.cl-text 
+                                                |Superbrands
+                                                br
+                                                |Singapore’s Choice
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gh2.png")
+                                            p.note-text.t-center.cl-text Certificate of Popularity 2019
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt3.png")
+                                            p.note-text.t-center.cl-text Best of Singapore 2018
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt1.png")
+                                            p.note-text.t-center.cl-text    
+                                                |Singapore’sTop Restaurants 
+                                                br
+                                                |2018 - 2019
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt4.png")
+                                            p.note-text.t-center.cl-text Excellent Service Award 2018
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt9.png")
+                                            p.note-text.t-center.cl-text 
+                                                |Chope
+                                                br
+                                                |Diners’ Choice Award 2017
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt5.png")
+                                            p.note-text.t-center.cl-text 
+                                                |TripAdvisor
+                                                br
+                                                |Certificate of Excellence 2017
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt6.png")
+                                            p.note-text.t-center.cl-text Ctrip Food Award 2016
+                                    .splide__slide.d-item
+                                        .about_prize--splide-item 
+                                            .about_prize--splide-img 
+                                                +img("gt7.png")
+                                            p.note-text.t-center.cl-text Championship Series 2006
+    section.about_team 
+        .about_team--wrap 
+            .about_team--box 
+                .about_team--box-lf(data-aos="fade-right") 
+                    .about_team--box-lf-wrap 
+                        .about_team--box-lf-list 
+                            .swiper.mySwiperTeamLf 
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        .about_team--box-lf-item 
+                                            .about_team--box-lf-img
+                                                +img("t1.png")
+                                    .swiper-slide
+                                        .about_team--box-lf-item 
+                                            .about_team--box-lf-img
+                                                +img("t3.png")
+                .about_team--box-ct(data-aos="zoom-in") 
+                    .about_team--box-ct-wrap 
+                        .about_team--box-ct-box 
+                            .about_team--box-ct-list 
+                                .about_team--box-ct-item.showed 
+                                    .about_team--box-ct-item-wrap 
+                                        h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Đội Ngũ Đầu Bếp
+                                        p.note-text.t-center.cl-black Dưới sự hướng dẫn của bếp trưởng tài năng Choi Tit, "Lan tỏa hương vị đặc sắc của ẩm thực Singapore đến với khách hàng Việt Nam" là triết lý luôn được thúc đẩy mạnh mẽ trong bếp của JUMBO Seafood. Mỗi món ăn đều được làm từ trái tim và sự nhiệt thành của các đầu bếp, với hy vọng mang đến trải nghiệm ẩm thực toàn diện cho quý khách hàng.
+                                .about_team--box-ct-item 
+                                    .about_team--box-ct-item-wrap 
+                                        h2.title-sm3.fw-7.cl-pri.fl-sec.t-center Đội Ngũ Nhân Viên
+                                        p.note-text.t-center.cl-black Dưới sự hướng dẫn của bếp trưởng tài năng Choi Tit, "Lan tỏa hương vị đặc sắc của ẩm thực Singapore đến với khách hàng Việt Nam" là triết lý luôn được thúc đẩy mạnh mẽ trong bếp của JUMBO Seafood. Mỗi món ăn đều được làm từ trái tim và sự nhiệt thành của các đầu bếp, với hy vọng mang đến trải nghiệm ẩm thực toàn diện cho quý khách hàng.
+                            +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+                .about_team--box-rt(data-aos="fade-left") 
+                    .about_team--box-rt-wrap 
+                        .about_team--box-rt-list 
+                            .swiper.mySwiperTeamRt 
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        .about_team--box-rt-item 
+                                            .about_team--box-rt-img
+                                                +img("t2.png")
+                                    .swiper-slide
+                                        .about_team--box-rt-item 
+                                            .about_team--box-rt-img
+                                                +img("t4.png")
+    section.about_restau 
+        .container 
+            .about_restau--wrap 
+                h2.title-sm3.fw-7.cl-pri.fl-sec.t-center(data-aos="fade-down") Các nhà hàng Jumbo Seafood trên thế giới 
+                .about_restau--list.d-wrap 
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up SINGAPORE
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up SINGAPORE
+                            .about_restau--item-lt
+                                -
+                                    const res1 = [
+                                        {
+                                            name:"East Coast Seafood Centre",
+                                            name2:"東海岸海鮮中心",
+                                            address:"Block 1206 East Coast Parkway, #01-07/08, East Coast Seafood Centre, Singapore 449883",
+                                            phone:"Tel: +65 6442 3435"
+                                        },
+                                        {
+                                            name:"Riverside Point",
+                                            name2:"河濱坊",
+                                            address:"30 Merchant Road, #01-01/02, Riverside Point, Singapore 058282",
+                                            phone:"Tel: +65 6532 3435"
+                                        },
+                                        {
+                                            name:"The Riverwalk",
+                                            name2:"河畔",
+                                            address:"20 Upper Circular Road, #B1-48,The Riverwalk, Singapore 058416",
+                                            phone:"Tel: +65 6534 3435"
+                                        },
+                                        {
+                                            name:"Dempsey Hill",
+                                            name2:"登喜丘",
+                                            address:"Block 11 Dempsey Road, #01-16,Dempsey Hill, Singapore 249673",
+                                            phone:"Tel: +65 6479 3435"
+                                        },
+                                        {
+                                            name:"ION Orchard",
+                                            name2:"愛雍•烏節",
+                                            address:"2 Orchard Turn, #04-09/10,ION Orchard, Singapore 238801",
+                                            phone:"Tel: +65 6737 3435"
+                                        },
+                                        {
+                                            name:"Jewel Changi Airport",
+                                            name2:"星耀樟宜",
+                                            address:"78 Airport Boulevard, #03-202/203/204,Singapore 819666",
+                                            phone:"Tel: +65 6388 3435"
+                                        },
+                                    ]
+                                each res , i in res1
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up THƯỢNG HẢI
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up SHANGHAI
+                            .about_restau--item-lt
+                                -
+                                    const res2 = [
+                                        {
+                                            name:"iapm Mall",
+                                            name2:"環貿 iapm 商場",
+                                            address:"999 Huaihai Middle Road, iapm L5-502, Xu Hui District, Shanghai 200030, China",
+                                            phone:"Tel: +86 21 6466 3435"
+                                        },
+                                        {
+                                            name:"IFC Mall",
+                                            name2:"上海國金中心商場",
+                                            address:"8 Century Avenue IFC,L3-10 Pudong New District, Shanghai 200000, China",
+                                            phone:"Tel: +86 21 6895 3977"
+                                        },
+                                        {
+                                            name:"Raffles City",
+                                            name2:"上海来福士广场",
+                                            address:"No. 268 Middle Xizang Road L6-02 Huangpu District, Shanghai 200001, China",
+                                            phone:"Tel: +86 21 6418 3435"
+                                        },
+                                        {
+                                            name:"L’Avenue Mall",
+                                            name2:"尚嘉中心店",
+                                            address:"99 Xian Xia Road, L’Avenue Mall LG1-LG101, Changning District, Shanghai 200051, China",
+                                            phone:"Tel: +86 21 6218 3035"
+                                        }
+                                    ]
+                                each res , i in res2
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up ĐÀI BẮC
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up TAIPEI
+                            .about_restau--item-lt
+                                -
+                                    const res3 = [
+                                        {
+                                            name:"Shin Kong Mitsukoshi Xinyi Place A8",
+                                            name2:"新光三越信义新天地",
+                                            address:"No. 12 Songgao Road, Xinyi District, 3F Taipei City 11073, Taiwan",
+                                            phone:"Tel: +886 2 2720 7333"
+                                        }
+                                    ]
+                                each res , i in res3
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up ĐÀI TRUNG
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up TAICHUNG
+                            .about_restau--item-lt
+                                -
+                                    const res4 = [
+                                        {
+                                            name:"Shin Kong Mitsukoshi Zhonggang",
+                                            name2:"河濱坊",
+                                            address:"30 Merchant Road, #01-01/02 Riverside Point, Singapore 058282",
+                                            phone:"Tel: +65 6532 3435"
+                                        }
+                                    ]
+                                each res , i in res4
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res2.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up BẮC KINH
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up BEIJING
+                            .about_restau--item-lt
+                                -
+                                    const res5 = [
+                                        {
+                                            name:"Beijing SKP Mall",
+                                            name2:"北京 SKP 商場",
+                                            address:"87 Jian Guo Road, Beijing SKP L6-D6005, Chaoyang District, Beijing 100025, China",
+                                            phone:"Tel: +86 10 6501 3435 "
+                                        }
+                                    ]
+                                each res , i in res5
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up TÂY AN
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up XI'AN
+                            .about_restau--item-lt
+                                -
+                                    const res6 = [
+                                        {
+                                            name:"Xi’an SKP Mall",
+                                            name2:"西安 SKP 商場",
+                                            address:"261 North Chang’an Road, Xi’an SKP, Tower A, L11-1102, Beilin District, Xi’an, China",
+                                            phone:"Tel: +86 29 8932 3435"
+                                        }
+                                    ]
+                                each res , i in res6
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up HÀN QUỐC
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up SEOUL
+                            .about_restau--item-lt
+                                -
+                                    const res7 = [
+                                        {
+                                            name:"Dogok Academy Plaza",
+                                            name2:"",
+                                            address:"B1, 21, Eonju-ro 30-gil,Gangnam-gu, Seoul, Republic of Korea 06292",
+                                            phone:"Tel: +82 578 6653 6655"
+                                        }
+                                    ]
+                                each res , i in res7
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up HÀN QUỐC
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up ILSAN
+                            .about_restau--item-lt
+                                -
+                                    const res8 = [
+                                        {
+                                            name:"Didim Town",
+                                            name2:"",
+                                            address:"573, Gyeongui-ro Ilsandong-gu,Goyang-si, Gyeonggi-do,Republic of Korea 410-828",
+                                            phone:"Tel: +82 031 922 8383"
+                                        }
+                                    ]
+                                each res , i in res8
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up PHÚC CHÂU
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up FUZHOU
+                            .about_restau--item-lt
+                                -
+                                    const res9 = [
+                                        {
+                                            name:"Fuzhou Dongbai Centre",
+                                            name2:"福州东百中心",
+                                            address:"110 Bayiqi North Road, Dongbai Centre C1, Unit 301, Gulou District, Fujian Province, Fuzhou 350001",
+                                            phone:"Tel: +86 591 8353 3435"
+                                        }
+                                    ]
+                                each res , i in res9
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up THÁI LAN
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up BANGKOK
+                            .about_restau--item-lt
+                                -
+                                    const res10 = [
+                                        {
+                                            name:"ICONSIAM",
+                                            name2:"(Ground floor, Icon Luxe Zone)",
+                                            address:"299 Soi Charoen Nakhon 5, Khlong Ton Sai,Khlong San, Bangkok, Thailand",
+                                            phone:"Tel: +669 9110 5888"
+                                        }
+                                    ]
+                                each res , i in res10
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+                    .about_restau--item(data-aos="zoom-in").d-item 
+                        .about_restau--item-wrap
+                            .about_restau--item-title 
+                                h3.cl-five.fw-4.note-lg.t-center.t-up VIỆT NAM
+                                h3.cl-five.fw-4.title-mn.t-center.fw-7.t-up HỒ CHÍ MINH
+                            .about_restau--item-lt
+                                -
+                                    const res11 = [
+                                        {
+                                            name:"Đồng Khởi",
+                                            name2:"",
+                                            address:"1st Floor, 2-4-6 Dong Khoi, Ben Nghe Ward, District 1, Ho Chi Minh, Vietnam 710000",
+                                            phone:"Tel: +0084 838 239 796"
+                                        },
+                                        {
+                                            name:"Nguyễn Đình Chiểu",
+                                            name2:"",
+                                            address:"172 Nguyen Dinh Chieu, Ward 6, District 3, Ho Chi Minh, Vietnam 710000",
+                                            phone:"Tel: +0084 896 889 778"
+                                        },
+                                        {
+                                            name:"Trần Hưng Đạo",
+                                            name2:"",
+                                            address:"6A Tran Hung Dao, Pham Ngu Lao Ward, District 1, Ho Chi Minh, Vietnam 710000",
+                                            phone:"Tel: +0084 937 077 833"
+                                        },
+                                    ]
+                                each res , i in res11
+                                    .about_restau--item-it
+                                        .about_restau--item-it-wrap 
+                                            h4.note-text.cl-text.t-center #{res.name}
+                                            if res.name2 != ""
+                                                p.note-sm.cl-gray6.t-center #{res.name2}
+                                            a.note-sm.cl-gray6.t-center.address(href="") #{res.address}
+                                            a.note-sm.cl-gray6.t-center.phone(href="") #{res.phone}
+
+
+
+
+
+
+
+

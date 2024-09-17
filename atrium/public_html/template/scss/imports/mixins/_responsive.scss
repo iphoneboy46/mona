@@ -1,0 +1,112 @@
+// large desktop
+@mixin xl {
+  @media screen and (max-width: $xl-max) {
+    @content;
+  }
+}
+// desktop
+@mixin lg {
+  @media screen and (max-width: $lg-max) {
+    @content;
+  }
+}
+// tablet
+@mixin md {
+  @media screen and (max-width: $md-max) {
+    @content;
+  }
+}
+// mobile
+@mixin sm {
+  @media screen and (max-width: $sm-max) {
+    @content;
+  }
+}
+// small mobile
+@mixin xs {
+  @media (max-width: $xs-max) {
+    @content;
+  }
+}
+// smallest mobile
+@mixin xxs {
+  @media (max-width: $xxs-max) {
+    @content;
+  }
+}
+// min width
+// large desktop
+@mixin xl-min {
+  @media screen and (min-width: $xl-min) {
+    @content;
+  }
+}
+// desktop
+@mixin lg-min {
+  @media screen and (min-width: $lg-min) {
+    @content;
+  }
+}
+// tablet
+@mixin md-min {
+  @media screen and (min-width: $md-min) {
+    @content;
+  }
+}
+// mobile
+@mixin sm-min {
+  @media screen and (min-width: $sm-min) {
+    @content;
+  }
+}
+// small mobile
+@mixin xs-min {
+  @media (min-width: $xs-min) {
+    @content;
+  }
+}
+// smallest mobile
+@mixin xxs-min {
+  @media (min-width: $xxs-min) {
+    @content;
+  }
+}
+// desktop landscape
+@mixin lgX {
+  @media screen and (max-width: $lg-max) and (orientation: landscape) {
+    @content;
+  }
+}
+// tablet landscape
+@mixin mdX {
+  @media screen and (max-width: $md-max) and (orientation: landscape) {
+    @content;
+  }
+}
+// mobile landscape
+@mixin smX {
+  @media screen and (max-width: $sm-max) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin maxW($args) {
+  @media (max-width: $args) {
+    @content;
+  }
+}
+@mixin minW($args) {
+  @media (min-width: $args) {
+    @content;
+  }
+}
+@mixin minH($args) {
+  @media (min-height: $args) {
+    @content;
+  }
+}
+@mixin maxH($args) {
+  @media (max-height: $args) {
+    @content;
+  }
+}

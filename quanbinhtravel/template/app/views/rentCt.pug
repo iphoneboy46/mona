@@ -1,0 +1,183 @@
+extends layout/layout
+block vars
+    -title = 'Renct chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tin tức 
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') Thuê xe 7 chỗ Quảng Bình chuyên nghiệp
+    section.rent_ct 
+        .container 
+            .rent_ct--wrap.d-wrap 
+                .rent_ct--lf.d-item 
+                    .rent_ct--lf-wrap 
+                        .rent_ct--lf-title
+                            .rent_ct--lf-title-top 
+                                h2.title-sm2.cl-text.fw-6 Thuê xe 7 chỗ Quảng Bình chuyên nghiệp
+                            .rent_ct--lf-title-bottom
+                                .box-info 
+                                    .box-info-list 
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-user
+                                            a(href="").note-text.cl-text.fw-6 Admin
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-clock
+                                            p.note-text.cl-text3 12:52 - 20.04.2024
+                                ul.tour_infos
+                                    li.tour_info 
+                                        .tour_star
+                                            span.ic 
+                                                i.fas.fa-star
+                                            p.note-sm.cl-text2.fw-6 5.0
+                                    li.tour_info 
+                                        .tour_dg 
+                                        a(href="").note-sm.cl-text2.fw-6 7 Đánh giá
+                        .rent_ct--lf-content
+                            p.note-text Là đơn vị lữ hành uy tín và lâu năm trong hoạt động du lịch tại Quảng Bình, chúng tôi cung cấp các dịch vụ tour Quảng Bình trọn gói cũng như đặt khách sạn Quảng Bình, dịch vụ team building Quảng Bình và Gala dinner. Chúng tôi cung cấp dịch vụ thuê xe du lịch Quảng Bình từ 4 chỗ đến 45 chỗ.
+                            br
+                            +img("txct.png")
+                            br
+                            br
+                            p.note-text Khách sạn Sam Quảng Bình được đưa vào khai thác du lịch tháng 04 năm 2021. Đây là một trong những khách sạn đạt tiêu chuẩn 4 sao tại thành phố Đồng Hới. Địa điểm thích hợp cho du khách đến du lịch Quảng Bình hay tham gia các hội nghị, hội thảo.
+                            br
+                            h2.title-mn.fw-6.cl-text Bảng giá thuê xe 7 chỗ Quảng Bình cập nhật 2024
+                            br
+                            .tourCt_note--table 
+                                table 
+                                    thead
+                                        tr
+                                            th 
+                                                p.note-text.fw-7.cl-text Cung đường thuê xe	
+                                            th 
+                                                p.note-text.fw-7.cl-text Giá thuê xe
+                                    tbody
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Đồng Hới – Động Thiên Đường- Động Phong Nha ( Khứ hồi)
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 1.200.000 vnđ
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Đồng Hới – Động Thiên Đường – Hang Tối( Suối Moọc)
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 1.200.000 vnđ
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Đồng Hới – Động Thiên Đường – Hang Tối( Suối Moọc)	
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 1.500.000 vnđ
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Động Thiên Đường – Viếng Mộ Đại tướng Võ Nguyên Giáp – Đá Nhảy	
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 1.500.000 vnđ
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Sân bay/ Ga Đồng Hới/ Khách sạn Đồng Hới – Động Phong Nha	
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 800.000 vnđ
+                                        tr
+                                            td(data-label="Cung đường thuê xe") 
+                                                p.note-text.cl-gray3 Xe 7 chỗ đưa đón Ga và Sân Bay Đồng Hới	
+                                            td(data-label="Giá thuê xe")
+                                                p.note-text.cl-gray3 300.000 vnđ
+                        .news_ct--social 
+                            p.note-text Chia sẻ bài viết:
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic3.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic4.png")
+                        .contact_form 
+                            .contact_form--wrap 
+                                .contact_form--title 
+                                    h2.title-sm2.fw-6.cl-text Liên hệ đặt xe
+                                    p.note-text.cl-gray3 Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!
+                                .contact_form--form 
+                                    form(action="")
+                                        .contact_form--form-wrap 
+                                            .contact_form--list.d-wrap 
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Họ và tên
+                                                        input.form-item-ip(type="text" , placeholder="Nhập họ và tên")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Số điện thoại
+                                                        input.form-item-ip(type="text" , placeholder="Nhập số điện thoại")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Email
+                                                        input.form-item-ip(type="text" , placeholder="Nhập Email")
+                                                .contact_form--item.d-item
+                                                    label.form-item 
+                                                        p.form-item-lb Nội dung trao đổi
+                                                        textarea.form-item-tx(type="text" , placeholder="Nhập nội dung bạn cần trao đổi")
+                                            +btn("Liên hệ ngay","","fal fa-arrow-right","")
+                .rent_ct--rt.d-item 
+                    .rent_ct--rt-wrap
+                        .rent_ct--contact 
+                            .rent_ct--contact-wrap 
+                                .rent_ct--contact-top 
+                                    .rent_ct--contact-title 
+                                        h4.title-mn.cl-text.fw-6 Thuê xe
+                                .rent_ct--contact-bottom 
+                                    .rent_ct--contact-bottom-lf
+                                        .rent_ct--contact-content
+                                            p.note-sm.cl-gray3 Giá
+                                            p.note-lg.fw-6.cl-text Liên hệ
+                                    .rent_ct--contact-bottom-rt
+                                        span.ic 
+                                            +img("phoneLinkMain.svg")
+                                        .rent_ct--contact-content
+                                            p.note-sm.cl-gray3 Hỗ trợ
+                                            a.note-lg.fw-6.cl-pri(href="")  09123 56056
+                        .rent_ct--rt-box
+                            h2.title-mn.cl-text.fw-6 Bài viết liên quan
+                            .rent_ct--rt-list 
+                                -
+                                    const ncts = [
+                                        {
+                                            img:"tx.png",
+                                            title:"Thuê xe 7 chỗ Quảng Bình",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        },
+                                        {
+                                            img:"tx.png",
+                                            title:"Thuê xe 7 chỗ Quảng Bình",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        },
+                                        {
+                                            img:"tx.png",
+                                            title:"Thuê xe 7 chỗ Quảng Bình",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        }
+                                    ]
+                                each nct , i in ncts 
+                                    .rent_ct--rt-item
+                                        +post(nct.img,nct.title,nct.content)

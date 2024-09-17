@@ -1,0 +1,550 @@
+extends layout/layout
+block vars
+    -title = 'about'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'bnAbout'
+
+block container
+    section.about_albums 
+        .about_albums--wrap
+            .breadcrumbs.other
+                .container
+                    .breadcrumbs-wrap
+                        ul.breadcrumbs-list
+                            li.breadcrumbs-item
+                                a.breadcrumbs-link(href='') Trang chủ  
+                            li.breadcrumbs-item.current-item
+                                a.breadcrumbs-link(href='') Về chúng tôi
+            .about_albums--box
+                .about_albums--list 
+                    .swiper.mySwiperAlb
+                        .swiper-wrapper 
+                            .swiper-slide
+                                .about_albums--item 
+                                    .about_albums--img 
+                                        +img("ab1.png")
+                            .swiper-slide
+                                .about_albums--item 
+                                    .about_albums--img 
+                                        +img("ab2.png")
+                            .swiper-slide
+                                .about_albums--item 
+                                    .about_albums--img 
+                                        +img("ab3.png")
+                    .swiper-pagination.num
+    section.about_company 
+        .container 
+            .about_company--wrap.d-wrap 
+                .about_company--lf.d-item.d-2(data-aos="fade-right") 
+                    .about_company--lf-wrap 
+                        .about_company--lf-content 
+                            .about_company--box 
+                                h2.title-sm3.cl-text.fw-7 Công ty du lịch Netin
+                                p.note-text.cl-gray 
+                                    |Được thành lập từ tháng 9 năm 2011, 
+                                    strong.fw-7.cl-text Công ty Du lịch NETIN 
+                                    |là một trong những đơn vị chuyên nghiệp trong lĩnh vực lữ hành, đặc biệt là các tuyến du lịch về miền Trung nói chung và Du lịch Quảng Bình nói riêng. Tôn chỉ hoạt động, kinh doanh của Công ty ngay từ đầu là lấy sự hài lòng, cảm tình của khách hàng đề làm mục tiêu phấn đấu.
+                            +btn("Trải nghiệm dịch vụ","","fal fa-arrow-right","")
+                        .about_company--lf-img 
+                            +img("dg.png")
+                .about_company--rt.d-item.d-2(data-aos="fade-left")  
+                    .about_company--rt-wrap
+                        .about_company--rt-img 
+                            +img("abc.png")
+    section.about_tour 
+        .about_tour--wrap
+            .about_tour--top 
+                .container 
+                    .about_tour--top-wrap.d-wrap 
+                        .about_tour--top-lf.d-item
+                            .about_tour--top-lf-wrap 
+                                .about_tour--slide.d-wrap
+                                    .about_tour--slide-wrap
+                                        .splide
+                                            .splide__slider
+                                                .splide__track
+                                                    .splide__list
+                                                        .splide__slide.d-item
+                                                            a.about_tour--slide-img(href="./assets/images/abt1.png" data-fancybox="gallery")
+                                                                img(src="./assets/images/abt1.png", alt)
+                                                        .splide__slide.d-item
+                                                            a.about_tour--slide-img(href="./assets/images/abt2.png" data-fancybox="gallery")
+                                                                img(src="./assets/images/abt2.png", alt)
+                                                        .splide__slide.d-item
+                                                            a.about_tour--slide-img(href="./assets/images/abt3.png" data-fancybox="gallery")
+                                                                img(src="./assets/images/abt3.png", alt)
+                                                        .splide__slide.d-item
+                                                            a.about_tour--slide-img(href="./assets/images/abt4.png" data-fancybox="gallery")
+                                                                img(src="./assets/images/abt4.png", alt)
+                        .about_tour--top-rt.d-item(data-aos="fade-up")
+                            .about_tour--top-rt-wrap
+                                .about_company--lf-content 
+                                    .about_company--box 
+                                        h2.title-sm3.cl-text.fw-7 Chuyên các Tour Quảng Bình
+                                        p.note-text.cl-gray 
+                                            |Với chính sách đa dạng hóa sản phẩm du lịch Quảng Bình, phục vụ tận tình và luôn mong muốn quý khách thực sự cảm nhận được sự khác biệt khi tham gia từng chuyến du lịch Quảng Bình.
+                                            br
+                                            |Luôn luôn sáng tạo, luôn luôn đổi mới, phục vụ những sản phẩm mà quý khách mong muốn đã trở thành tâm nguyện, cũng như phương châm của công ty chúng tôi.
+                                    +btn("Trải nghiệm dịch vụ","","fal fa-arrow-right","")
+            .about_tour--bottom 
+                .about_tour--bottom-wrap
+                    .about_tour--slide.d-wrap
+                        .about_tour--slide-wrap
+                            .splide
+                                .splide__slider
+                                    .splide__track
+                                        .splide__list
+                                            .splide__slide.d-item
+                                                a.about_tour--slide-img(href="./assets/images/abt1.png" data-fancybox="gallery")
+                                                    img(src="./assets/images/abt1.png", alt)
+                                            .splide__slide.d-item
+                                                a.about_tour--slide-img(href="./assets/images/abt2.png" data-fancybox="gallery")
+                                                    img(src="./assets/images/abt2.png", alt)
+                                            .splide__slide.d-item
+                                                a.about_tour--slide-img(href="./assets/images/abt3.png" data-fancybox="gallery")
+                                                    img(src="./assets/images/abt3.png", alt)
+                                            .splide__slide.d-item
+                                                a.about_tour--slide-img(href="./assets/images/abt4.png" data-fancybox="gallery")
+                                                    img(src="./assets/images/abt4.png", alt)
+    section.environment.td
+        .environment_wrap 
+            .environment_title 
+                .container
+                    .environment_title--wrap
+                        .environment_title--lf(data-aos="fade-right") 
+                            h2.title-sm2.fw-7.cl-text Môi trường tại Netin Travel
+                        .environment_title--rt(data-aos="fade-left") 
+                            p.note-text.cl-gray3 Lorem ipsum dolor sit amet consectetur. Id sollicitudin libero ac malesuada faucibus facilisi sagittis amet facilisis.
+            .environment_content(data-aos="zoom-out")
+                .container2
+                    .environment_content--wrap 
+                        .environment_list
+                            .environment_item.showed 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+    section.about_dg.free-slide 
+        .container 
+            .about_dg--wrap 
+                h2.title-sm3.cl-text.fw-7.t-center(data-aos="fade-up") Đánh giá từ khách hàng
+                .about_dg--gg(data-aos="fade-up") 
+                    .about_dg--gg-wrap 
+                        .about_dg--gg-lf
+                            .about_dg--gg-lf-img 
+                                +img("gg.png")
+                            .about_dg--gg-lf-content 
+                                p.title-sm2.fw-6.cl-gray Google Rating
+                                .about_dg--gg-lf-box 
+                                    p.title-md.fw-7.cl-text 4.8
+                                    .star
+                                        .star-list
+                                            .star-flex.star-empty
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                                img.icon(src="./assets/images/star-none.svg", alt)
+                                            .star-flex.star-filter(style="width: 91%;")
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                                img.icon(src="./assets/images/star-color.svg", alt)
+                                p.title-mn.cl-gray5 40  reviews
+                        .about_dg--gg-rt 
+                            +btn("WRITE A REVIEW","","","")
+                .about_dg--list.d-wrap(data-aos="fade-up")     
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava1.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava2.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava1.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                            .swiper-slide.d-item.d-3
+                                .about_dg--item 
+                                    .evaluate_cmt--item 
+                                        .evaluate_cmt--item-top 
+                                            .evaluate_cmt--info 
+                                                .evaluate_cmt--info-lf 
+                                                    .evaluate_cmt--info-img 
+                                                        +img("ava2.png")
+                                                .evaluate_cmt--info-rt 
+                                                    .evaluate_cmt--info-name 
+                                                        p.note-text.fw-5.cl-text Chí Linh
+                                                        span.ic 
+                                                            +img("tikBlue.svg")
+                                                    .evaluate_cmt--info-day 
+                                                        p.note-sm.cl-gray3  2 days ago
+                                        .evaluate_cmt--item-center 
+                                            .star
+                                                .star-list
+                                                    .star-flex.star-empty
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                        img.icon(src="./assets/images/star-none.svg", alt)
+                                                    .star-flex.star-filter(style="width: 91%;")
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                                        img.icon(src="./assets/images/star-color.svg", alt)
+                                        .evaluate_cmt--item-bottom 
+                                            .evaluate_cmt--content 
+                                                p.note-text.cl-gray3  Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor. Turpis tempor elementum ultrices ut id cum odio. Varius ipsum ac viverra et. 
+                                        a(href="").cl-gray5.note-sm Read more 
+                    .swiper-pagination
+    section.content_custom 
+        .container 
+            .content_custom--wrap 
+                .content_custom--content 
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss
+                    br
+                    a(href="") Khách sạn 5 sao Quảng Bình
+                    a(href="") Khách sạn 4 sao Quảng Bình
+                    a(href="") Khách sạn 3 sao Quảng Bình
+                    a(href="") Khách sạn 2 sao Quảng Bình
+                    a(href="") Khách sạn 1 sao Quảng Bình
+                    br
+                    p Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss
+    section.outstanding.free-slide
+        .container 
+            .outstanding_wrap 
+                .outstanding_title 
+                    .outstanding_title--lf(data-aos="fade-right") 
+                        h2.title-sm3.fw-7.cl-text 
+                            |Địa điểm nổi bật tại 
+                            br
+                            |Quảng Bình
+                    .outstanding_title--rt(data-aos="fade-left")  
+                        p.note-text Du lịch Quảng Bình bí ẩn và bất tận. Bạn sẽ được trải nghiệm những điều thú vị từ Hang động tại Phong Nha Kẻ Bàng hay Biển Nhật Lệ tại Đồng Hới...
+                .outstanding_list.d-wrap(data-aos="fade-up")  
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb1.png")
+                                        span.outstanding_link--title 
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Vườn Quốc Gia Phong Nha
+                                                br
+                                                |- Kẻ Bàng
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb2.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Hang Thiên Đường - 
+                                                br
+                                                |Quảng Bình
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb3.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Động Chà Vòi - 
+                                                br
+                                                |Quảng Bình
+                            .swiper-slide.d-item.d-3 
+                                .outstanding_item 
+                                    a(href="").outstanding_link
+                                        span.outstanding_img 
+                                            +img("nb2.png")
+                                        span.outstanding_link--title
+                                            h3.title-mn.cl-white.fw-6 
+                                                |Hang Thiên Đường - 
+                                                br
+                                                |Quảng Bình
+                    .swiper-pagination
+    section.why.ani
+        .why_tt
+        .why_bgs 
+            .why_bgs--wrap 
+                .swiper.mySwiperBgs 
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg1.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg2.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg1.png")
+                        .swiper-slide 
+                            .why_bg
+                                .why_bg--img 
+                                    +img("wbg2.png")
+        .container  
+            .why_wrap 
+                .why_title 
+                    h2.title-sm3.cl-white.title-tt.fw-7
+                        |Tại sao chọn 
+                        strong Netin Travel
+                .why_box.d-wrap 
+                    .why_box--lf.d-item 
+                        .why_box--lf-wrap 
+                            .why_box--lf-list
+                                .why_box--lf-item.faq-it-why 
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top
+                                            span.num.note-sm.cl-white 01
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Tour Quảng Bình đa dạng
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 02
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Chất lượng dịch vụ tốt
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 03
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Lịch trình hấp dẫn
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                                .why_box--lf-item.faq-it-why  
+                                    .why_box--lf-item-wrap 
+                                        .why_box--lf-item-top 
+                                            span.num.note-sm.cl-white 04
+                                            .why_box--lf-item-title 
+                                                h3.title-mn.cl-white.fw-6 Ẩm thực phong phú
+                                                span.ic 
+                                                    i.fal.fa-arrow-down
+                                        .why_box--lf-item-bottom 
+                                            .why_box--lf-item-content.faq-content-why
+                                                p.note-sm.cl-gray2 Tất cả các điểm đến hấp dẫn của Du lịch Quảng Bình sẽ được chúng tôi cập nhật đến Du khách, các Tour Quảng Bình đa dạng và phong phú về điểm đến và thời gian tham quan. Quý khách có thể đặt các Tour Quảng Bình trên website của chúng tôi.
+                    .why_box--rt.d-item 
+                        .why_box--rt-wrap 
+                            .why_box--rt-list
+                                .swiper.mySwiperImgs 
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg1.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg2.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg1.png")
+                                        .swiper-slide 
+                                            .why_box--rt-item 
+                                                .why_box--rt-img 
+                                                    +img("wimg2.png")
+

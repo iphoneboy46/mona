@@ -1,0 +1,491 @@
+.banner-main {
+    width: 100%;
+    position: relative;
+    min-height: 54rem;
+    height: auto;
+    margin-bottom: 5rem;
+
+    &.about {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 3rem;
+        min-height: 40rem;
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: 2rem;
+        min-height: 30rem;
+    }
+
+    @media screen and (max-width: 460px) {
+        margin-bottom: 2rem;
+        min-height: 25rem;
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(253, 133, 62, 0) 40.74%, #ff8f4d 100%);
+        z-index: 1;
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    &-wrap {
+        padding-bottom: 9.8rem;
+
+        @media screen and (max-width: 1200px) {
+            padding-bottom: 4.8rem;
+        }
+
+        @media screen and (max-width: 460px) {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &-title {
+        @include fz-64;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: $color-white;
+
+        @media screen and (max-width: 460px) {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.banner-home {
+    width: 100%;
+    height: calc(100vw * 750 / 1728);
+    position: relative;
+
+    @media screen and (max-width: 460px) {
+        height: calc(100vw * 460 / 460);
+    }
+
+    &-wrap {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-tabs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+       
+        bottom: 1.5vw;
+        right: 2vw;
+        z-index: 2;
+        width: 12vw;
+
+        @media screen and (max-width: 1024px) {
+            width: 16vw;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 18vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            right: 2vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            width: 24vw;
+            bottom: 3vw;
+            right: 2vw;
+        }
+
+    
+
+        @media screen and (max-width: 360px) {
+            width: 26vw;
+            right: 2vw;
+        }
+    }
+
+    &-tab {
+        font-family: "Oswald";
+        cursor: pointer;
+        font-size: 1vw;
+        font-weight: 700;
+        padding: 0.3vw 0;
+        width: 100%;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+        &:not(:last-child) {
+            border-bottom: 0.1vw solid rgba($color: $color-second, $alpha: 0.1);
+        }
+
+        @include hover {
+            .banner-home-tab-text {
+                color: $color-pri;
+            }
+            border-color: $color-pri;
+        }
+
+        &-text {
+            position: relative;
+            color: $color-second;
+            transform: translateX(45%);
+            transition: all 0.3s linear;
+            pointer-events: visible;
+            @media screen and (max-width:460px) {
+                transform: translateX(30%);
+            }
+
+            @media screen and (max-width:460px) {
+                transform: translateX(25%);
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 1.4vw;
+            padding: 0.4vw 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 1.6vw;
+            padding: 0.5vw 0;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 2.4vw;
+            padding: 0.6vw 0;
+        }
+
+        @media screen and (max-width: 360px) {
+            font-size: 3vw;
+            padding: 0.8vw 0;
+        }
+
+        &.actived {
+            color: $color-pri;
+            border-color: $color-pri;
+            pointer-events: none;
+            .banner-home-tab-text {
+                transform: translateX(0%);
+                color: $color-pri;
+            }
+        }
+    }
+
+    .swiper {
+        height: 100%;
+    }
+
+    @keyframes shutters {
+        0% {
+          clip-path: polygon(0% 0%, 20% 0%, 20% 100%, 20% 100%, 20% 0%, 40% 0%, 40% 100%, 40% 100%, 40% 0%, 60% 0%, 60% 100%, 60% 100%, 60% 0%, 80% 0%, 80% 100%, 80% 100%, 80% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+        100% {
+          clip-path: polygon(20% 0%, 20% 0%, 20% 100%, 40% 100%, 40% 0%, 40% 0%, 40% 100%, 60% 100%, 60% 0%, 60% 0%, 60% 100%, 80% 100%, 80% 0%, 80% 0%, 80% 100%, 100% 100%, 100% 0%, 100% 0%, 100% 100%, 20% 100%);
+        }
+      }
+
+   
+    .swiper-slide {
+        height: auto;
+    }
+
+    .swiper-slide-active {
+        .banner-home-img{
+            img{
+                animation: 1.5s shutters linear reverse;
+             
+            }
+        }
+
+        .banner-home-img-mb{
+            img{
+                animation: 1.5s shutters linear reverse;
+             
+            }
+        }
+
+     
+        .banner-home-box{
+            animation: anHienBanner 1.5s linear forwards;
+            animation-delay: 1.5s;
+        }
+
+        
+     
+    }
+
+    &-item {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+     
+        @media screen and (max-width: 460px) {
+            align-items: start;
+        }
+    }
+
+    .btn-buy {
+        width: 10vw;
+        height: 3vw;
+        min-width: unset;
+        column-gap: 0.5vw;
+
+        @media screen and (max-width: 1500px) {
+            width: 12vw;
+            height: 4vw;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 14vw;
+            height: 4.5vw;
+            column-gap: 1vw;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 16vw;
+            height: 4.5vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 18vw;
+            height: 5vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            width: 24vw;
+            height: 8vw;
+        }
+
+        @media screen and (max-width: 360px) {
+            width: 30vw;
+            height: 10vw;
+        }
+
+        &-ic {
+            width: 1.5vw;
+            height: 1.5vw;
+
+            @media screen and (max-width: 1500px) {
+                width: 1.8vw;
+                height: 1.8vw;
+            }
+
+            @media screen and (max-width: 800px) {
+                width: 2vw;
+                height: 2vw;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 2.4vw;
+                height: 2.4vw;
+            }
+
+            @media screen and (max-width: 460px) {
+                width: 3.2vw;
+                height: 3.2vw;
+            }
+
+            @media screen and (max-width: 360px) {
+                width: 3.6vw;
+                height: 3.6vw;
+            }
+        }
+
+        &-text {
+            font-size: 1vw;
+            line-height: normal;
+            @media screen and (max-width: 1500px) {
+                font-size: 1.2vw;
+            }
+
+            @media screen and (max-width: 800px) {
+                font-size: 1.3vw;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 1.6vw;
+            }
+
+            @media screen and (max-width: 460px) {
+                font-size: 2.4vw;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 2.8vw;
+            }
+        }
+    }
+
+    &-content {
+        max-width: 35vw;
+
+        @media screen and (max-width: 1400px) {
+            max-width: 40vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            max-width: unset;
+        }
+    }
+
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+
+
+    &-img {
+        width: 100%;
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        @media screen and (max-width: 460px) {
+            display: none;
+        }
+
+        img {
+           
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+ 
+
+    &-img-mb {
+        width: 100%;
+        display: none;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        @media screen and (max-width: 460px) {
+            display: block;
+        }
+        img {
+          
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+  
+    @keyframes anHienBanner {
+        0%{
+            
+            opacity: 0;
+        }
+
+        50%{
+           
+            opacity: 0.5;
+        }
+
+        100%{
+            
+            opacity: 1;
+        }
+    }
+
+
+    &-note {
+        font-family: "Nunito";
+        font-size: 2vw;
+        font-weight: 600;
+        color: $color-second;
+        margin-bottom: 1vw;
+
+       
+
+        @media screen and (max-width: 1400px) {
+            font-size: 2.5vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 3.5vw;
+        }
+    }
+
+    &-title {
+        font-size: 4vw;
+        font-weight: 600;
+
+        color: $color-pri;
+        line-height: 1.2;
+        margin-bottom: 1vw;
+    
+        @media screen and (max-width: 1400px) {
+            font-size: 4vw;
+        }
+        @media screen and (max-width: 800px) {
+            margin-bottom: 1.5vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 9vw;
+            margin-bottom: 2vw;
+        }
+    }
+
+    &-text {
+        font-size: 1vw;
+        margin-bottom: 2vw;
+
+        @media screen and (max-width: 1500px) {
+            font-size: 1.5vw;
+        }
+
+        @media screen and (max-width: 800px) {
+            font-size: 2vw;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 3vw;
+        }
+    }
+
+    &-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 5;
+        transition: all 0.5s linear;
+        opacity: 0;
+
+        @media screen and (max-width:460px) {
+            margin-top: 6vw;
+        }
+    }
+}

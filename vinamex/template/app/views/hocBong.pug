@@ -1,0 +1,173 @@
+extends layout/layout
+block vars
+    -title = 'Học bổng'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh1.png","Học bổng","Trang chủ","","Học bổng")
+    section.du_hoc 
+        .container 
+            .du_hoc--wrap.d-wrap 
+                .du_hoc--lf.d-item 
+                    .du_hoc--lf-wrap 
+                        .du_hoc--list 
+                            -
+                                const dhs = [
+                                    {
+                                        img:"dh1.png",
+                                        title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh2.png",
+                                        title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh3.png",
+                                        title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, góp phần xoá đói giảm nghèo",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh4.png",
+                                        title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh5.png",
+                                        title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh6.png",
+                                        title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh7.png",
+                                        title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, góp phần xoá đói giảm nghèo",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh8.png",
+                                        title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh9.png",
+                                        title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                    {
+                                        img:"dh10.png",
+                                        title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                        content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                    },
+                                ]
+                            each dh , i in dhs 
+                                +post(dh.img,dh.title,dh.content)
+                        +pagination()
+                .du_hoc--rt.d-item 
+                    .du_hoc--rt-wrap 
+                        .du_hoc--nation
+                            h2.title-mn.fw-7 Học bổng từ các nước
+                            ul.du_hoc--nation-list 
+                                -
+                                    const nas = [
+                                        {
+                                            img:"na6.png",
+                                            title:"Học bổng Hàn Quốc"
+                                        },
+                                        {
+                                            img:"na1.png",
+                                            title:"Học bổng Úc"
+                                        },
+                                        {
+                                            img:"na2.png",
+                                            title:"Học bổng Canada"
+                                        },
+                                        {
+                                            img:"na3.png",
+                                            title:"Học bổng Nhật Bản"
+                                        },
+                                        {
+                                            img:"na4.png",
+                                            title:"Học bổng Mỹ"
+                                        },
+                                        {
+                                            img:"na5.png",
+                                            title:"Học bổng Đức"
+                                        },
+                                        {
+                                            img:"na7.png",
+                                            title:"Học bổng khác"
+                                        }
+                                    ]
+                                each na , i in nas
+                                    if i == 0
+                                        li.du_hoc--nation-item.actived 
+                                            a.du_hoc--nation-link(href="")
+                                                span.ic 
+                                                    +img(na.img)
+                                                span.note-text.cl-text.fw-7 #{na.title}
+                                    else 
+                                        li.du_hoc--nation-item 
+                                            a.du_hoc--nation-link(href="")
+                                                span.ic 
+                                                    +img(na.img)
+                                                span.note-text.cl-text.fw-7 #{na.title}
+                        .du_hoc--news 
+                            h2.title-mn.fw-7 Bài viết mới nhất
+                            .du_hoc--news-list
+                                -
+                                    const dh2s = [
+                                        {
+                                            img:"n8.png",
+                                            title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n1.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n2.png",
+                                            title:"Quy trình xét hồ sơ THPT Công lập Úc",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n3.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n4.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n5.png",
+                                            title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n6.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n7.png",
+                                            title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n8.png",
+                                            title:"Trường ĐH Sejong – Nơi nuôi dưỡng những ước mơ",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        }
+                                    ]
+                                each dh , i in dh2s 
+                                    +post(dh.img,dh.title,dh.content)

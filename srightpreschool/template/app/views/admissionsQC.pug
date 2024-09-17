@@ -1,0 +1,157 @@
+extends layout/layout
+block vars
+    -title = 'tuyển sinh'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bgMain.png")
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        h1.title-lg2.cl-white.t-center.t-up.fw-7 tuyển sinh
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","Tuyển sinh")
+    .tab.free-slide2 
+        .container 
+            .tab_wrap
+                .tab_list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item
+                                a(href="").tab_item.actived Quy chế tuyển sinh
+                            .swiper-slide.d-item
+                                a(href="").tab_item Biểu phí & Quy định tài chính
+                            .swiper-slide.d-item
+                                a(href="").tab_item Chương trình ưu đãi
+                    .swiper-scrollbar
+    section.admissions_qc
+        .admissions_qc--wrap 
+            .valueAb.admissionsQC
+                .valueAb_wrap
+                    .valueAb_list
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up 
+                                                    |Đối tượng 
+                                                    br
+                                                    |tuyển sinh
+                                                .box-content 
+                                                    p.note-lg Mầm non Song Ngữ Giáo Dục Sớm SRIGHT Preschool tổ chức tuyển sinh trẻ độ tuổi mầm non từ 6 tháng – 6 tuổi
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw1.png")
+                        .valueAb_item.ani
+                            +foot3()
+                            .container
+                                .valueAb_item--wrap
+                                    .valueAb_item--lf
+                                        .valueAb_item--lf-wrap
+                                            .box-wrap
+                                                h2.title-lg.fw-8.t-up Thời gian học
+                                                .box-content
+                                                    p.note-lg Từ thứ 2 đến thứ 6 hàng tuần, nhà trường đón học sinh từ 7h00 và trả học sinh từ 16h00 – 17h00 hàng ngày
+                                    .valueAb_item--rt
+                                        .valueAb_item--rt-wrap
+                                            .valueAb_item--img
+                                                +img("abw3.png")
+            .admissions_qc--ts.free-slide2.ani 
+                .container 
+                    .admissions_qc--ts-wrap 
+                        h2.title-lg.cl-pri.fw-8.t-center.t-up QUY TRÌNH TUYỂN SINH
+                        .admissions_qc--ts-box(data-aos="fade-up")
+                            .admissions_qc--ts-list
+                                .admissions_qc--ts-list-wrap
+                                    .swiper.mySwiper.--auto
+                                        .swiper-wrapper 
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |Phụ huynh 
+                                                                    strong đăng ký thông tin 
+                                                                    |cho trẻ theo mẫu quy định của SRIGHT Preschool
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts1.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 01
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |SRIGHT Preschool 
+                                                                    strong kiểm tra hồ sơ đăng ký 
+                                                                    |và gửi thông báo hướng dẫn ghi danh khi đạt điều kiện tuyển sinh
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts2.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 02
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |Phụ huynh 
+                                                                    strong hoàn thành thủ tục 
+                                                                    |ghi danh cho trẻ
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts3.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 03 
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |Trẻ tham gia 
+                                                                    strong tư vấn sức khỏe 
+                                                                    |với Chuyên gia dinh dưỡng, tham gia đánh giá cùng Giáo viên chuyên môn, thực hiện Phân Tích Sinh trắc học. Phụ huynh tham gia 
+                                                                    strong tư vấn 1:1 
+                                                                    |với Hội đồng tuyển sinh.
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts1.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 04
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |Phụ huynh hoàn thành thủ tục nhập học cho trẻ sau khi trẻ có 
+                                                                    strong kết quả đạt đánh giá
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts5.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 05
+                                            .swiper-slide
+                                                .admissions_qc--ts-item 
+                                                    .admissions_qc--ts-item-wrap
+                                                        .admissions_qc--ts-item-top
+                                                            .admissions_qc--ts-item-content 
+                                                                p.note-lg.cl-pri.t-center.fw-4
+                                                                    |Trẻ 
+                                                                    strong nhập học 
+                                                                    |chính thức theo quy định của SRIGHT Preschool
+                                                            .admissions_qc--ts-item-ic 
+                                                                +img("ts6.svg")
+                                                        .admissions_qc--ts-item-bottom
+                                                            p.num 06
+                        .swiper-scrollbar

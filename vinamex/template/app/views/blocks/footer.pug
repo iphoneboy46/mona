@@ -1,0 +1,118 @@
+footer.footer
+    .footer_wrap
+        .footer_top
+            .container
+                .footer_top--wrap.d-wrap
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            p.note-md.cl-white.fw-6 Về Vinamex Edu
+                            ul.menu-list
+                                -
+                                    const fts = [
+                                        {
+                                            title:"Giới thiệu",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Học bổng",
+                                            dropdown:true
+                                        },
+                                        {
+                                            title:"Trại hè",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Học ngoại ngữ",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tuyển dụng",
+                                            dropdown:false
+                                        }
+                                    ]
+                                each ft , i in fts
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            a.footer_logo(href="")
+                                +img("logoFT.png")
+                            .address
+                                ul.address_list                
+                                    li.address_item
+                                        .address_item--content
+                                            a.address_link(href="") 0904 840 363
+                                    li.address_item
+                                        .address_item--content
+                                            a.address_link(href="") Lô 2, Vị trí 2, Cụm Công nghiệp Thanh Oai, Xã Bích Hòa, Huyện Thanh Oai, Hà Nội
+                                    li.address_item
+                                        .address_item--content
+                                            a.address_link(href="") tuyensinh@vinamex.edu.vn
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic3.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic4.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("ftic5.png")
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            p.note-md.cl-white.fw-6 Chương trình du học
+                            ul.menu-list
+                                -
+                                    const ft2s = [
+                                        {
+                                            title:"Du học Nhật Bản",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học Hàn Quốc",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học Mỹ",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học Úc",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học Canada",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Du học Đức",
+                                            dropdown:false
+                                        }
+                                    ]
+                                each ft , i in ft2s
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+        .footer_bottom
+            .container
+                .footer_bottom--wrap
+                    p.note-sm.cl-white.t-center.fw-6 
+                        |Copyright © 2024 
+                        strong.cl-second Vinamex Edu. 
+                        |All rights reserved.
+

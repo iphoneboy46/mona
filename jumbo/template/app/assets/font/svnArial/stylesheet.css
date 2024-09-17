@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'SVN-Arial';
+    src: url('SVN-ArialBold.eot');
+    src: url('SVN-ArialBold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-ArialBold.woff2') format('woff2'),
+        url('SVN-ArialBold.woff') format('woff'),
+        url('SVN-ArialBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SVN-Arial';
+    src: url('SVN-ArialRegular.eot');
+    src: url('SVN-ArialRegular.eot?#iefix') format('embedded-opentype'),
+        url('SVN-ArialRegular.woff2') format('woff2'),
+        url('SVN-ArialRegular.woff') format('woff'),
+        url('SVN-ArialRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'SVN-Arial';
+    src: url('SVN-ArialItalic.eot');
+    src: url('SVN-ArialItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-ArialItalic.woff2') format('woff2'),
+        url('SVN-ArialItalic.woff') format('woff'),
+        url('SVN-ArialItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 3';
+    src: url('SVN-Arial3.eot');
+    src: url('SVN-Arial3.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial3.woff2') format('woff2'),
+        url('SVN-Arial3.woff') format('woff'),
+        url('SVN-Arial3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 3';
+    src: url('SVN-Arial3italic.eot');
+    src: url('SVN-Arial3italic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial3italic.woff2') format('woff2'),
+        url('SVN-Arial3italic.woff') format('woff'),
+        url('SVN-Arial3italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial';
+    src: url('SVN-ArialBoldItalic.eot');
+    src: url('SVN-ArialBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-ArialBoldItalic.woff2') format('woff2'),
+        url('SVN-ArialBoldItalic.woff') format('woff'),
+        url('SVN-ArialBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 2';
+    src: url('SVN-Arial2bolditalic.eot');
+    src: url('SVN-Arial2bolditalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial2bolditalic.woff2') format('woff2'),
+        url('SVN-Arial2bolditalic.woff') format('woff'),
+        url('SVN-Arial2bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 3';
+    src: url('SVN-Arial3bold.eot');
+    src: url('SVN-Arial3bold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial3bold.woff2') format('woff2'),
+        url('SVN-Arial3bold.woff') format('woff'),
+        url('SVN-Arial3bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 2';
+    src: url('SVN-Arial2.eot');
+    src: url('SVN-Arial2.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial2.woff2') format('woff2'),
+        url('SVN-Arial2.woff') format('woff'),
+        url('SVN-Arial2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 2';
+    src: url('SVN-Arial2bold.eot');
+    src: url('SVN-Arial2bold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial2bold.woff2') format('woff2'),
+        url('SVN-Arial2bold.woff') format('woff'),
+        url('SVN-Arial2bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 3';
+    src: url('SVN-Arial3bolditalic.eot');
+    src: url('SVN-Arial3bolditalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial3bolditalic.woff2') format('woff2'),
+        url('SVN-Arial3bolditalic.woff') format('woff'),
+        url('SVN-Arial3bolditalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Arial 2';
+    src: url('SVN-Arial2italic.eot');
+    src: url('SVN-Arial2italic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Arial2italic.woff2') format('woff2'),
+        url('SVN-Arial2italic.woff') format('woff'),
+        url('SVN-Arial2italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

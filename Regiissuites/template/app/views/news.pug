@@ -1,0 +1,137 @@
+extends layout/layout
+block vars
+    -title = 'news'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main.room
+        .banner_main--bg
+            .banner_main--img
+                +img("bnn.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up TIN TỨC
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","TIN TỨC")
+    .cate.free-slide2
+        .container
+            .cate_wrap
+                .cate_list.d-wrap
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                .cate_item.actived
+                                    a(href="").note-text.cate_link TẤT CẢ
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link PHÒNG
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link BỮA TỐI THƯƠNG GIA
+                            .swiper-slide.d-item
+                                .cate_item
+                                    a(href="").note-text.cate_link CHĂM SÓC SỨC KHỎE
+                    .swiper-scrollbar
+    section.news_nb
+        .container
+            .news_nb--wrap
+                h2.title-md.cl-black.t-center.fl-sec Tin nổi bật
+                .news_nb--list.d-wrap
+                    .news_nb--item.d-item
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("nnb1.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--note
+                                            p.note-mn.cl-gray4 Tin tức & sự kiện
+                                            p.note-mn.cl-gray4 01/04/2024
+                                        h3.title.note-text.cl-second.fl-sec.fw-5
+                                            a(href="") Tổ chức hội thảo "Du lịch xanh - Xu hướng mới của ngành du lịch"
+                    .news_nb--item.d-item
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("nnb2.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--note
+                                            p.note-mn.cl-gray4 Tin tức & sự kiện
+                                            p.note-mn.cl-gray4 01/04/2024
+                                        h3.title.note-text.cl-second.fl-sec.fw-5
+                                            a(href="") Công cụ tìm kiếm các thông tin trong website.
+                    .news_nb--item.d-item
+                        .news
+                            .news_wrap
+                                .news_top
+                                    a(href="").news_img
+                                        +img("nnb3.png")
+                                .news_bottom
+                                    .news_box
+                                        .news_box--note
+                                            p.note-mn.cl-gray4 Tin tức & sự kiện
+                                            p.note-mn.cl-gray4 01/04/2024
+                                        h3.title.note-text.cl-second.fl-sec.fw-5
+                                            a(href="") Công cụ tìm kiếm các thông tin trong website.
+    section.news_other
+        .container
+            .news_other--wrap
+                h2.title-md.cl-black.t-center.fl-sec Tin tức khác
+                .news_other--box
+                    .news_other--list.d-wrap
+                        -
+                            const nws = [
+                                {
+                                    img:"no1.png"
+                                },
+                                {
+                                    img:"no2.png"
+                                },
+                                {
+                                    img:"no3.png"
+                                },
+                                {
+                                    img:"no4.png"
+                                },
+                                {
+                                    img:"no5.png"
+                                },
+                                {
+                                    img:"no6.png"
+                                },
+                                {
+                                    img:"no7.png"
+                                },
+                                {
+                                    img:"no8.png"
+                                }
+                            ]
+                        each nw , i in nws
+                            .news_other--item.d-item.d-4
+                                .news
+                                    .news_wrap
+                                        .news_top
+                                            a(href="").news_img
+                                                +img(nw.img)
+                                        .news_bottom
+                                            .news_box
+                                                .news_box--note
+                                                    p.note-mn.cl-gray4 Tin tức & sự kiện
+                                                h3.title.note-text.cl-second.fl-sec.fw-5
+                                                    a(href="") Công cụ tìm kiếm các thông tin trong website.
+                    +pagination()

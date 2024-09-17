@@ -1,0 +1,125 @@
+.menu_mb
+    .menu_mb--ex
+        i.far.fa-times
+    .menu_mb--wrap
+        .menu_mb--nav
+            a.menu_mb--logo(href="")
+                +img("logoFT.png")
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"Trang chủ",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"Giới thiệu",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"Tin tức sự kiện",
+                            dropdown:true,
+                            search:false
+                        },
+                        {
+                            title:"văn bản pháp luật",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"hành nghề",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"giải thưởng",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"diễn đàn",
+                            dropdown:false,
+                            search:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Menu 1
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Menu 2
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                    else if mb.search === true
+                        li.menu-item.btn-search
+                            a(href="#").menu-link #{mb.title}
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-text.cl-text Theo dõi chúng tôi tại
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic1.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic2.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic3.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic4.png")
+            .menu_mb--info-item
+                .address
+                    ul.address_list
+                        li.address_item
+                            p.note-md.fw-7.cl-gray6 Email
+                            .address_item--content
+                                a.address_link(href="")  hkts@tphcm.gov.vn
+                        li.address_item
+                            p.note-md.fw-7.cl-gray6 Địa chỉ
+                            .address_item--content
+                                a.address_link(href="") 88 Mạc Đĩnh Chi, phường Đa Kao, quận 1, TP. Hồ Chí Minh
+                        li.address_item
+                            p.note-md.fw-7.cl-gray6 Điện thoại:
+                            .address_item--content
+                                a.address_link(href="") (84-28) 38291908 
+                                a.address_link(href="") 38273035
+                        li.address_item
+                            p.note-md.fw-7.cl-gray6 Fax:
+                            .address_item--content
+                                a.address_link(href="") (84-28) 38225657           
+            .menu_mb--info-item
+                +btn("Tìm Kiếm","button","","btn-search")
+.menu_mb--modal

@@ -1,0 +1,139 @@
+.recruitment {
+    padding-bottom: var(--size-pd);
+
+
+}
+
+.recruitment_intro {
+    padding-top: var(--size-pdl);
+    padding-bottom: var(--size-pdl);
+
+
+    &--wrap {}
+}
+
+.recruitment_all {
+    // padding-top: var(--size-pd);
+
+    &--wrap {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent4);
+
+        .page-numbers {
+            justify-content: center;
+        }
+    }
+
+    &--list {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent2);
+    }
+
+
+    &--item {
+        display: flex;
+        flex-direction: column;
+        border-radius: var(--radius0);
+        overflow: hidden;
+
+        &.actived {
+            .recruitment_all--top {
+                .recruitment_all--btn {
+                    .note-lg {
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            display: block;
+                            animation: fadeIn 0.5s linear;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    &--top {
+        display: flex;
+        padding: 1.2rem;
+        column-gap: var(--columnContent12);
+        justify-content: space-between;
+        background: $color-pri;
+
+
+    }
+
+    &--bottom {
+        border: 0.1rem solid #E2E8F0;
+        border-radius: 0 0 var(--radius0) var(--radius0);
+        border-top: none;
+        display: none;
+
+        &-wrap {
+            padding: 1.2rem 2.4rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--rowContent32);
+
+            @include max(1200px) {
+                padding: 1rem 2rem;
+
+            }
+
+            @include max(800px) {
+                padding: 1rem 1.6rem;
+
+            }
+
+            @include max(600px) {
+                padding: 1rem 1.2rem;
+
+            }
+
+            .btn {
+                @include max(600px) {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &--content {
+        ul {
+            margin-left: 2.6rem !important;
+            list-style: disc;
+
+            @include max(1200px) {
+                margin-left: 2.4rem !important;
+
+            }
+
+            @include max(800px) {
+                margin-left: 2rem !important;
+
+            }
+        }
+    }
+
+    &--title {}
+
+
+    &--btn {
+        position: relative;
+        cursor: pointer;
+
+        .note-lg {
+            white-space: nowrap;
+
+            &:last-child {
+                display: none;
+            }
+
+        }
+    }
+}

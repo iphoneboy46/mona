@@ -1,0 +1,263 @@
+extends layout/layout
+block vars
+    -title = 'giới thiệu về hội'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsSwiper,JsGsap,JsGsapScroll,JsCaro]
+    -jsComponents = ['header','gsap','about',"scrollAni"]
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssSwiper,CssCaro,CssCaro2]
+    -cssComponents = ["banner","post"]
+    -cssPages = ["about"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    +banner-main2("Trang chủ","","Giới thiệu về hội","giới thiệu về hội")
+    section.about_imgs 
+        .container 
+            .about_imgs--wrap(data-aos="zoom-out" data-aos-delay="1200") 
+                .about_imgs--list
+                    .swiper.mySwiperAbImgs 
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                .about_imgs--item 
+                                    .about_imgs--img 
+                                        +img("abimg1.png")
+                            .swiper-slide 
+                                .about_imgs--item 
+                                    .about_imgs--img 
+                                        +img("bg.png")
+                            .swiper-slide 
+                                .about_imgs--item 
+                                    .about_imgs--img 
+                                        +img("p4.png")
+                    .swiper-pagination
+    section.about_intro 
+        .container 
+            .about_intro--wrap 
+                .about_intro--box
+                    .about_intro--list.d-wrap 
+                        .about_intro--item.d-item.d-2(data-aos="zoom-in" ) 
+                            .about_intro--item-wrap
+                                .about_intro--item-box
+                                    .about_intro--item-lf 
+                                        span.ic 
+                                            +img("abic1.png")
+                                    .about_intro--item-rt 
+                                        h2.note-md.cl-second.fw-6.t-up NHIỆM VỤ CỦA HỘI
+                                        p.note-text.cl-white Tập hợp kiến trúc sư tại TP.HCM để phát triển và tư vấn cho thành phố về kiến trúc-quy hoạch
+                        .about_intro--item.d-item.d-2(data-aos="zoom-in" ) 
+                            .about_intro--item-wrap
+                                .about_intro--item-box
+                                    .about_intro--item-lf 
+                                        span.ic 
+                                            +img("abic2.png")
+                                    .about_intro--item-rt 
+                                        h2.note-md.cl-second.fw-6.t-up MỤC ĐÍCH
+                                        p.note-text.cl-white Tập hợp kiến trúc sư tại TP.HCM để phát triển và tư vấn cho thành phố về kiến trúc-quy hoạch
+                        .about_intro--item.d-item.d-2(data-aos="zoom-in" )  
+                            .about_intro--item-wrap
+                                .about_intro--item-box
+                                    .about_intro--item-lf 
+                                        span.ic 
+                                            +img("abic1.png")
+                                    .about_intro--item-rt 
+                                        h2.note-md.cl-second.fw-6.t-up NHIỆM VỤ CỦA HỘI
+                                        p.note-text.cl-white Tập hợp kiến trúc sư tại TP.HCM để phát triển và tư vấn cho thành phố về kiến trúc-quy hoạch
+                        .about_intro--item.d-item.d-2(data-aos="zoom-in" )  
+                            .about_intro--item-wrap
+                                .about_intro--item-box
+                                    .about_intro--item-lf 
+                                        span.ic 
+                                            +img("abic2.png")
+                                    .about_intro--item-rt 
+                                        h2.note-md.cl-second.fw-6.t-up MỤC ĐÍCH
+                                        p.note-text.cl-white Tập hợp kiến trúc sư tại TP.HCM để phát triển và tư vấn cho thành phố về kiến trúc-quy hoạch
+    section.about_qt 
+        .container 
+            .about_qt--wrap
+                .about_qt--top
+                    .about_qt--top-title 
+                        h2.title-mn.cl-white.fw-6.t-up(data-aos="fade-up") QUÁ TRÌNH HÌNH THÀNH HỘI KTS TPHCM
+                    .about_qt--top-wrap(data-aos="fade-up") 
+                        .about_qt--top-list.d-wrap 
+                            .swiper.mySwiperQtTop 
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item 
+                                        .about_qt--top-item 
+                                            .about_qt--top-item-wrap 
+                                                .about_qt--top-item-lf 
+                                                    .about_qt--top-item-lf-img
+                                                        +img("qt.png ")
+                                                .about_qt--top-item-rt 
+                                                    .about_qt--top-item-rt-content 
+                                                        h3.note-md.cl-second.fw-6.t-up 1981 - CỘT MỐC ĐÁNH DẤU SỰ RA ĐỜI CỦA HỘI KTS TPHCM
+                                                        p.note-text.cl-white 
+                                                            |Từ đó, Hội KTS TP HCM trở thành một chi hội đông đảo và quan trọng trong tổ chức Hội KTS Việt Nam, một tổ chức nghề nghiệp thống nhất cả nước dành cho tất cả anh em KTS khắp mọi miền đất nước. 
+                                                            |Đây thực sự là một điều đáng quý, một ước mơ chỉ một đất nước độc lập và thống nhất mới làm được. Là một người dân Việt, mọi KTS Việt, có trong và ngoài nước, không ai là không hãnh diện về sự kiện này.
+                                                    +btn("XEM THÊM..","","","tran2s")
+                                    .swiper-slide.d-item 
+                                        .about_qt--top-item 
+                                            .about_qt--top-item-wrap 
+                                                .about_qt--top-item-lf 
+                                                    .about_qt--top-item-lf-img
+                                                        +img("qt.png ")
+                                                .about_qt--top-item-rt 
+                                                    .about_qt--top-item-rt-content 
+                                                        h3.note-md.cl-second.fw-6.t-up 2001 - CỘT MỐC ĐÁNH DẤU SỰ RA ĐỜI CỦA HỘI KTS TPHCM
+                                                        p.note-text.cl-white 
+                                                            |Từ đó, Hội KTS TP HCM trở thành một chi hội đông đảo và quan trọng trong tổ chức Hội KTS Việt Nam, một tổ chức nghề nghiệp thống nhất cả nước dành cho tất cả anh em KTS khắp mọi miền đất nước. 
+                                                            |Đây thực sự là một điều đáng quý, một ước mơ chỉ một đất nước độc lập và thống nhất mới làm được. Là một người dân Việt, mọi KTS Việt, có trong và ngoài nước, không ai là không hãnh diện về sự kiện này.
+                                                    +btn("XEM THÊM..","","","tran2s")
+                                    .swiper-slide.d-item 
+                                        .about_qt--top-item 
+                                            .about_qt--top-item-wrap 
+                                                .about_qt--top-item-lf 
+                                                    .about_qt--top-item-lf-img
+                                                        +img("qt.png ")
+                                                .about_qt--top-item-rt 
+                                                    .about_qt--top-item-rt-content 
+                                                        h3.note-md.cl-second.fw-6.t-up 2011 - CỘT MỐC ĐÁNH DẤU SỰ RA ĐỜI CỦA HỘI KTS TPHCM
+                                                        p.note-text.cl-white 
+                                                            |Từ đó, Hội KTS TP HCM trở thành một chi hội đông đảo và quan trọng trong tổ chức Hội KTS Việt Nam, một tổ chức nghề nghiệp thống nhất cả nước dành cho tất cả anh em KTS khắp mọi miền đất nước. 
+                                                            |Đây thực sự là một điều đáng quý, một ước mơ chỉ một đất nước độc lập và thống nhất mới làm được. Là một người dân Việt, mọi KTS Việt, có trong và ngoài nước, không ai là không hãnh diện về sự kiện này.
+                                                    +btn("XEM THÊM..","","","tran2s")
+                                    .swiper-slide.d-item 
+                                        .about_qt--top-item 
+                                            .about_qt--top-item-wrap 
+                                                .about_qt--top-item-lf 
+                                                    .about_qt--top-item-lf-img
+                                                        +img("qt.png ")
+                                                .about_qt--top-item-rt 
+                                                    .about_qt--top-item-rt-content 
+                                                        h3.note-md.cl-second.fw-6.t-up 2021 - CỘT MỐC ĐÁNH DẤU SỰ RA ĐỜI CỦA HỘI KTS TPHCM
+                                                        p.note-text.cl-white 
+                                                            |Từ đó, Hội KTS TP HCM trở thành một chi hội đông đảo và quan trọng trong tổ chức Hội KTS Việt Nam, một tổ chức nghề nghiệp thống nhất cả nước dành cho tất cả anh em KTS khắp mọi miền đất nước. 
+                                                            |Đây thực sự là một điều đáng quý, một ước mơ chỉ một đất nước độc lập và thống nhất mới làm được. Là một người dân Việt, mọi KTS Việt, có trong và ngoài nước, không ai là không hãnh diện về sự kiện này.
+                                                    +btn("XEM THÊM..","","","tran2s")
+                .about_qt--bottom(data-aos="fade-up")
+                    span.lineTT
+                        span.lineTT-Arrow
+                    .about_qt--bottom-list.d-wrap
+                        .swiper.mySwiperQtBottom 
+                            .swiper-wrapper 
+                                .swiper-slide.d-item
+                                    .about_qt--bottom-item 
+                                        .about_qt--bottom-item-wrap 
+                                            .about_qt--bottom-item-top 
+                                                p.title-sm.cl-white3.fw-5.t-center 1981
+                                            .about_qt--bottom-item-center 
+                                                span.around
+                                            .about_qt--bottom-item-bottom 
+                                                p.note-md.cl-white.fw-6.t-up.t-center THÀNH LẬP HỘI KTS TPHCM THÀNH LẬP HỘI KTS TPHCM
+                                .swiper-slide.d-item
+                                    .about_qt--bottom-item 
+                                        .about_qt--bottom-item-wrap 
+                                            .about_qt--bottom-item-top 
+                                                p.title-sm.cl-white3.fw-5.t-center 2001
+                                            .about_qt--bottom-item-center 
+                                                span.around
+                                            .about_qt--bottom-item-bottom 
+                                                p.note-md.cl-white.fw-6.t-up.t-center THÀNH LẬP HỘI KTS TPHCM THÀNH LẬP HỘI KTS TPHCM THÀNH LẬP HỘI KTS TPHCM
+                                .swiper-slide.d-item
+                                    .about_qt--bottom-item 
+                                        .about_qt--bottom-item-wrap 
+                                            .about_qt--bottom-item-top 
+                                                p.title-sm.cl-white3.fw-5.t-center 2011
+                                            .about_qt--bottom-item-center 
+                                                span.around
+                                            .about_qt--bottom-item-bottom 
+                                                p.note-md.cl-white.fw-6.t-up.t-center THÀNH LẬP HỘI KTS TPHCM
+                                .swiper-slide.d-item
+                                    .about_qt--bottom-item 
+                                        .about_qt--bottom-item-wrap 
+                                            .about_qt--bottom-item-top 
+                                                p.title-sm.cl-white3.fw-5.t-center 2021
+                                            .about_qt--bottom-item-center 
+                                                span.around
+                                            .about_qt--bottom-item-bottom 
+                                                p.note-md.cl-white.fw-6.t-up.t-center THÀNH LẬP HỘI KTS TPHCM
+
+                        
+    section.banner_qc.cus
+        .container
+            .banner_qc--wrap(data-aos="zoom-out") 
+                a(href="").banner_qc--img 
+                    +img("qcbg2.png")
+    section.about_tc 
+        .container 
+            .about_tc--wrap 
+                h2.title-mn.cl-white.fw-6.t-up.t-center(data-aos="fade-up") Thành tích
+                .about_tc--box.d-wrap(data-aos="zoom-out" data-aos-delay="500")  
+                    .about_tc--list.owl-carousel.owl-theme
+                        .about_tc--item.d-item.item
+                            .about_tc--item-wrap
+                                .about_tc--link 
+                                    .about_tc--link-img
+                                        +img("abtc.png")
+                                    .about_tc--link-wrap 
+                                        h3.note-md.t-up.fw-6.t-center.cl-white 
+                                            a(href="") LỄ KÝ BẢN GHI NHỚ HỢP TÁC GIỮA HỘI KIẾN TRÚC SƯ THÀNH PHỐ HỒ CHÍ MINH VÀ VIỆN KIẾN TRÚC SƯ HOA KỲ TẠI ĐÔNG NAM Á
+                                        a.link-text(href="") XEM CHI TIẾT
+                        .about_tc--item.d-item.item
+                            .about_tc--item-wrap
+                                .about_tc--link 
+                                    .about_tc--link-img
+                                        +img("abtc.png")
+                                    .about_tc--link-wrap 
+                                        h3.note-md.t-up.fw-6.t-center.cl-white 
+                                            a(href="") LỄ KÝ BẢN GHI NHỚ HỢP TÁC GIỮA HỘI KIẾN TRÚC SƯ THÀNH PHỐ HỒ CHÍ MINH VÀ VIỆN KIẾN TRÚC SƯ HOA KỲ TẠI ĐÔNG NAM Á
+                                        a.link-text(href="") XEM CHI TIẾT
+                        .about_tc--item.d-item.item
+                            .about_tc--item-wrap
+                                .about_tc--link 
+                                    .about_tc--link-img
+                                        +img("abtc.png")
+                                    .about_tc--link-wrap 
+                                        h3.note-md.t-up.fw-6.t-center.cl-white 
+                                            a(href="") LỄ KÝ BẢN GHI NHỚ HỢP TÁC GIỮA HỘI KIẾN TRÚC SƯ THÀNH PHỐ HỒ CHÍ MINH VÀ VIỆN KIẾN TRÚC SƯ HOA KỲ TẠI ĐÔNG NAM Á
+                                        a.link-text(href="") XEM CHI TIẾT
+    section.about_dv
+        .container 
+            .about_dv--wrap 
+                .about_dv--box.d-wrap 
+                    .about_dv--lf.d-item(data-aos="fade-right")
+                        .about_dv--lf-wrap 
+                            h2.title-mn.cl-white.fw-6.t-up CÁC ĐƠN VỊ ĐỒNG HÀNH
+                            p.note-text.cl-white Trong năm 2023, Hội Kiến trúc sư đã tổ chức nhiều sự kiện, hoạt động chuyên môn cho giới kiến trúc sư nhằm nâng cao kiến thức nghề nghiệp rất thiết thực, bổ ích, có ý nghĩa và nhận được sự hưởng ứng tham gia của rất nhiều kiến trúc sư hội viên, các kiến trúc sư các tỉnh thành trong cả nước.
+                    .about_dv--rt.d-item(data-aos="fade-left")
+                        .about_dv--rt-wrap
+                            .about_dv--rt-list 
+                                .about_dv--rt-item 
+                                    h3.note-md.fw-6.t-up.cl-second NHÀ TÀI TRỢ BẠCH KIM
+                                    .about_dv--rt-ics 
+                                        .about_dv--rt-ic
+                                            +img("lg2.png")
+                                        .about_dv--rt-ic
+                                            +img("lg1.png")
+                                        .about_dv--rt-ic
+                                            +img("lg3.png")
+                                .about_dv--rt-item 
+                                    h3.note-md.fw-6.t-up.cl-second NHÀ TÀI TRỢ VÀNG
+                                    .about_dv--rt-ics 
+                                        .about_dv--rt-ic
+                                            +img("lg4.png")
+                                        .about_dv--rt-ic
+                                            +img("lg5.png")
+                                        .about_dv--rt-ic
+                                            +img("lg6.png")
+                                .about_dv--rt-item 
+                                    h3.note-md.fw-6.t-up.cl-second NHÀ TÀI TRỢ BẠC
+                                    .about_dv--rt-ics 
+                                        .about_dv--rt-ic
+                                            +img("lg7.png")
+                                        .about_dv--rt-ic
+                                            +img("lg8.png")
+                                        .about_dv--rt-ic
+                                            +img("lg9.png")
+                                        .about_dv--rt-ic
+                                            +img("lg10.png")
+

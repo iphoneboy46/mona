@@ -1,0 +1,109 @@
+extends layout/layout
+block vars
+    -title = 'Tin tin chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tin tức 
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') Du lịch mạo hiểm an toàn - an tâm bức phá
+    section.news_ct 
+        .container 
+            .news_ct--wrap.d-wrap 
+                .news_ct--lf.d-item 
+                    .news_ct--lf-wrap 
+                        .news_ct--lf-title
+                            .news_ct--lf-title-top 
+                                h2.title-sm2.cl-text.fw-6 Du lịch mạo hiểm an toàn - an tâm bức phá
+                            .news_ct--lf-title-bottom
+                                .box-info 
+                                    .box-info-list 
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-user
+                                            a(href="").note-text.cl-text.fw-6 Admin
+                                        .box-info-item 
+                                            span.ic 
+                                                i.far.fa-clock
+                                            p.note-text.cl-text3 12:52 - 20.04.2024
+                        .news_ct--lf-content
+                            p.note-text Đối với những người đam mê trải nghiệm du lịch mới lạ, những chuyến đi thoát ra khỏi lối tham quan đã quá quen thuộc của tour du lịch truyền thống đang là một lựa chọn hot được ưa chuộng và săn đón rất nhiều.
+                            br
+                            +img("nct1.png")
+                            br
+                            br
+                            p.note-text Đối với những người đam mê trải nghiệm du lịch mới lạ, những chuyến đi thoát ra khỏi lối tham quan đã quá quen thuộc của tour du lịch truyền thống đang là một lựa chọn hot được ưa chuộng và săn đón rất nhiều. Đặc biệt, với sự phát hiện của nhiều hang động hùng vĩ giữa núi rừng đất Việt như Hố Sụt Kong, Hang Hung Thoòng,  Hang Sơn Đoòng,... Loại hình tour du lịch mạo hiểm khám phá rừng núi, hang động, trải nghiệm hòa mình vào thiên nhiên hoang dã đang trở thành một xu hướng mới trong giới xê dịch. 
+                            br
+                            +img("nct2.png")
+                            br
+                            br
+                            p.note-text Tuy nhiên, khi tham gia tour du lịch mạo hiểm, còn nhiều người vẫn cảm thấy e ngại về mức độ an toàn của mô hình du lịch mới này và chưa rõ cách để giữ an toàn khi dấn thân vào môi trường khắc nghiệt.
+                            br
+                            +img("nct3.png")
+                            br
+                            br
+                            p.note-text Việc gì khó, hãy đã có Jungle Boss lo! Là một trong những đơn vị hàng đầu Việt Nam ở lĩnh vực tour du lịch mạo hiểm, Jungle Boss luôn hướng đến mang tới những trải nghiệm ấn tượng đỉnh cao, và hỗ trợ du khách trong hành trình vượt qua giới hạn của bản thân mình một cách an toàn. Sau đây là một số TIP DU LỊCH MẠO HIỂM AN TOÀN tham khảo đến từ Jungle Boss: 
+                        .news_ct--social 
+                            p.note-text Chia sẻ bài viết:
+                            .social
+                                ul.social_list
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic1.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic2.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic3.png")
+                                    li.social_item
+                                        a(href="").social_link 
+                                            span.social_img
+                                                +img("sic4.png")
+                .news_ct--rt.d-item 
+                    .news_ct--rt-wrap
+                        .news_ct--rt-top 
+                            .box_ml 
+                                .box_ml--wrap 
+                                    h2.title-mn.cl-text.fw-6 Mục lục
+                        .news_ct--rt-bottom
+                            h2.title-mn.cl-text.fw-6 Bài viết liên quan
+                            .news_ct--rt-list 
+                                -
+                                    const ncts = [
+                                        {
+                                            img:"np1.png",
+                                            title:"Giá vé tham quan Du lịch Phong Nha Kẻ Bàng 2024",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        },
+                                        {
+                                            img:"np2.png",
+                                            title:"Du lịch Quảng Bình tự túc 3 ngày 2 đêm",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        },
+                                        {
+                                            img:"np3.png",
+                                            title:"Khu du lịch sinh thái Sơn Kiều",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        },
+                                        {
+                                            img:"np4.png",
+                                            title:"Ghé thăm các địa điểm hấp dẫn của Quảng Bình dịp 30 tháng 4",
+                                            content:"Lorem ipsum dolor sit amet consectetur. Cursus sed nibh mauris sit convallis at volutpat ultrices suscipit. Senectus orci in elit ac magna."
+                                        }
+                                    ]
+                                each nct , i in ncts 
+                                    .news_ct--rt-item
+                                        +post(nct.img,nct.title,nct.content)

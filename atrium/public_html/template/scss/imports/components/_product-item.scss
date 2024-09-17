@@ -1,0 +1,95 @@
+.product-item {
+  @include flex-col;
+  height: 100%;
+  &_thumb {
+    position: relative;
+    &::after {
+      content: "";
+      @include fullscreen;
+      background: linear-gradient(
+        0deg,
+        rgba(26, 26, 26, 0.56),
+        rgba(26, 26, 26, 0.56)
+      );
+      @include visible(0);
+      @include transition(all $t $cubic);
+    }
+    .thumb-wrap {
+      aspect-ratio: 1/1;
+      position: relative;
+      overflow: hidden;
+      img {
+        @include img-cover;
+        @include transition(all 2s $cubic);
+      }
+    }
+    .cta-inner {
+      @include center(xy);
+      @include flex-center-y;
+      z-index: 10;
+      column-gap: 0.8rem;
+      .btn-wrap {
+        @include visible(0);
+        @include transition(all $t $cubic);
+        &:first-child {
+          @include transform(translateX(-3rem));
+        }
+        &:last-child {
+          @include transform(translateX(3rem));
+        }
+      }
+      .btn-inner {
+        @include circle(4rem);
+        @include center(flex);
+        @include border($white);
+      }
+    }
+
+    @include hover {
+      &::after {
+        opacity: 1;
+      }
+      .thumb-wrap img {
+        @include transform(scale(1.1));
+      }
+      .cta-inner {
+        .btn-wrap {
+          @include transform(translate(0, 0));
+          @include visible(1);
+        }
+      }
+    }
+    @include hover-none {
+      .cta-inner {
+        .btn-wrap {
+          @include transform(translate(0, 0) !important);
+          @include visible(1);
+        }
+      }
+    }
+  }
+  &_content {
+    padding-top: 1.2rem;
+    flex: 1;
+    @include flex-col;
+
+    .title {
+      &-link {
+        color: #e6e6e6;
+        @include overtext(1);
+        @include transition(all $t $cubic);
+        @include hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .desc {
+      color: #b3b3b3;
+      @include overtext(2);
+    }
+    .price-wrap {
+      margin-top: auto;
+      margin-top: 0.6rem;
+    }
+  }
+}

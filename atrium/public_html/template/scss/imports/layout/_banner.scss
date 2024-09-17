@@ -1,0 +1,9 @@
+.banner {
+  &_single {
+    aspect-ratio: 1730/588;
+    // min-height: 30rem;
+  }
+  &_bg {
+    @include size(100%);
+  }
+}

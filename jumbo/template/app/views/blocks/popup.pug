@@ -1,0 +1,37 @@
+.popupBox
+    .popup_main.popup-form(data-popup-id="popup-1").showed
+        .popup_main--wrap 
+            .popup_main--ex.popup-ex 
+                i.far.fa-times
+            .popup_main--box.d-wrap 
+                .popup_main--lf.d-item
+                    .popup_main--lf-wrap 
+                        .popup_main--lf-list 
+                            .swiper.mySwiperPopup
+                                .swiper-wrapper 
+                                    .swiper-slide 
+                                        .popup_main--lf-item 
+                                            .popup_main--lf-img 
+                                                +img("n1.png")
+                                    .swiper-slide 
+                                        .popup_main--lf-item 
+                                            .popup_main--lf-img 
+                                                +img("n2.png")
+                                    .swiper-slide 
+                                        .popup_main--lf-item 
+                                            .popup_main--lf-img 
+                                                +img("n3.png")
+                            +box-navi("fas fa-arrow-left","fas fa-arrow-right")
+                .popup_main--rt.d-item
+                    .popup_main--rt-wrap
+                        .popup_main--rt-title 
+                            h2.title-sm2.fw-6.cl-pri.fw-6.fl-sec DEAL XANH ĐÓN HÈ – Deal mát lành cho hè oi ả tại MARINA
+                        .popup_main--rt-content
+                            p.cl-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, animi! Id atque quasi quas, fuga eius accusamus! Repudiandae molestiae, natus dolor modi quod distinctio magni reiciendis hic. Velit, totam distinctio.
+                            br
+                            p.cl-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, animi! Id atque quasi quas, fuga eius accusamus! Repudiandae molestiae, natus dolor modi quod distinctio magni reiciendis hic. Velit, totam distinctio.
+                            br
+                            p.cl-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, animi! Id atque quasi quas, fuga eius accusamus! Repudiandae molestiae, natus dolor modi quod distinctio magni reiciendis hic. Velit, totam distinctio.
+                        .popup_main--rt-btn 
+                            +btn("Đặt bàn ngay","","","")
+    .popup_main--modal

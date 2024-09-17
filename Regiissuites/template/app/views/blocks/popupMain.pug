@@ -1,0 +1,90 @@
+.popup_main.popup-form(data-popup-id="popup-booking") 
+    .popup_main--wrap
+        .popup_main--ex.popup-ex 
+            i.fas.fa-times
+        .popup_main--top 
+            p.title-sm3.cl-pri.fw-7.fl-sec.t-center Kết nối với chúng tôi
+        .popup_main--bottom 
+            .popup_main--form 
+                form(action="")
+                    .popup_main--list
+                        .popup_main--item
+                            .form-item
+                                label(for="name").form-item-lb 
+                                    |Họ và tên
+                                    strong *
+                                input#name.form-item-ip(type="text" name="name" placeholder="Họ và tên của bạn")
+                        .popup_main--item
+                            .form-item
+                                label(for="phone").form-item-lb 
+                                    |Số điện thoại
+                                    strong *
+                                input#phone.form-item-ip(type="text" name="name" placeholder="Số điện thoại của bạn")
+                        .popup_main--item
+                            .form-item
+                                label(for="email").form-item-lb Email
+                                input#email.form-item-ip(type="text" name="name" placeholder="Email của bạn")
+                        .popup_main--item
+                            .form-item
+                                label(for="startDate").form-item-lb Ngày bắt đầu
+                                .find_room--item-wrap.chooseDate3
+                                    .find_room--item-lf
+                                        .find_room--item-ip
+                                            p.note-md.text-date3.fw-5.cl-pri 21/03/2024
+                                            input(type="text" class="third datepicker")
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric1.svg")
+                        .popup_main--item
+                            .form-item
+                                label(for="endDate").form-item-lb Ngày kết thúc
+                                .find_room--item-wrap.chooseDate4
+                                    .find_room--item-lf
+                                        .find_room--item-ip
+                                            p.note-md.text-date4.fw-5.cl-pri 21/03/2024
+                                            input(type="text" class="four datepicker" id="")
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric1.svg")
+                        .popup_main--item
+                            .form-item
+                                label(for="adult").form-item-lb Người lớn
+                                .find_room--item-wrap
+                                    .find_room--item-lf
+                                        .find_room--item-op
+                                            select.js-op(data-placeholder="Số lượng")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric2.svg")
+                        .popup_main--item
+                            .form-item
+                                label(for="children").form-item-lb Trẻ em
+                                .find_room--item-wrap
+                                    .find_room--item-lf
+                                        .find_room--item-op
+                                            select.js-op(data-placeholder="Số lượng")
+                                                option
+                                                option(value="option1") 01
+                                                option(value="option2") 02
+                                                option(value="option3") 03
+                                    .find_room--item-rt
+                                        .find_room--item-ic
+                                            +img("fric2.svg")
+                        .popup_main--item
+                            .form-item.op
+                                label(for="room").form-item-lb Loại phòng
+                                select.js-op(data-placeholder="Loại phòng")
+                                    option
+                                    option(value="option1") Vip 1
+                                    option(value="option2") Vip 2
+                                    option(value="option3") Vip 3
+                        .popup_main--item
+                            .form-item
+                                label(for="note").form-item-lb Lời nhắn
+                                textarea#note.form-item-tx(type="text" name="name" placeholder="Lời nhắn của bạn")
+                    +btn("Gửi thông tin","","","cl-3")
+.popup_main--modal.popup-modal

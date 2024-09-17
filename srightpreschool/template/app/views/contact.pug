@@ -1,0 +1,58 @@
+extends layout/layout
+block vars
+    -title = 'Liên hệ'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = 'no-bn'
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Home
+                    li.breadcrumbs-item.current
+                        a.breadcrumbs-link(href='') Liên Hệ
+    section.contact
+        .container
+            .contact_box
+                .contact_wrap.d-wrap
+                    .contact_lf.d-item.d-2
+                        .contact_lf--wrap
+                            .box-title2
+                                .box-title2-box
+                                    .box-title2-ic
+                                        +img("ictl.svg")
+                                    p.note-sm.cl-pri.t-up giới thiệu sơ lược
+                                h2.title-md.cl-black.fl-sec.t-up Thông tin liên hệ
+                                p.note-sm.cl-second REGIIS – Legend Suites không chỉ là một nơi để sống, mà còn là nơi đầy hứa hẹn để kiến tạo cho bạn một biểu tượng mới cho cuộc sống thượng lưu
+                            ul.address_list
+                                li.address_item
+                                    .address_item--ic
+                                        +img("ctic1.svg")
+                                    .address_item--content
+                                        p.note-sm Hoạt động:
+                                        a.address_link(href="") 09:00 AM – 21:00 PM
+                                li.address_item
+                                    .address_item--ic
+                                        +img("ctic2.svg")
+                                    .address_item--content
+                                        p.note-sm Điện thoại:
+                                        a.address_link(href="") 0123 456 789
+                                li.address_item
+                                    .address_item--ic
+                                        +img("ctic3.svg")
+                                    .address_item--content
+                                        p.note-sm Địa chỉ:
+                                        a.address_link(href="") 33 Trần Bạch Đằng, Q.2, TP. Thủ Đức, TP. HCM
+                                li.address_item
+                                    .address_item--ic
+                                        +img("ctic4.svg")
+                                    .address_item--content
+                                        p.note-sm Email:
+                                        a.address_link(href="") info@regiissuites.com
+                    .contact_rt.d-item.d-2
+                        .contact_rt--wrap
+                            .contact_map
+                                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4387004515634!2d106.71157017583836!3d10.777673159169042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f5062caa6df%3A0x75dcf4c42fbdb01c!2zMzMgxJAuIFRy4bqnbiBC4bqhY2ggxJDhurFuZywgQW4gS2jDoW5oLCBRdeG6rW4gMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1715333727657!5m2!1svi!2s", width="600", height="450", style="border:0;", allowfullscreen, loading="lazy", referrerpolicy="no-referrer-when-downgrade")

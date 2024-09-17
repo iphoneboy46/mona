@@ -1,0 +1,20 @@
+@import "../core";
+
+
+.cs {
+    padding-top: var(--size-pd);
+    padding-bottom: var(--size-pd);
+
+    &_wrap {
+        min-height: calc(100svh - var(--size-hd) - calc(var(--size-pd) * 3));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: var(--rowContent16);
+    }
+
+    &_content {
+        color: $color-white;
+    }
+
+}

@@ -1,0 +1,113 @@
+extends layout/layout
+block vars
+    -title = 'Tin tức Chi Tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = 'no-bn'
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Home
+                    li.breadcrumbs-item.current
+                        a.breadcrumbs-link(href='') TIN TỨC
+    .newsCt
+        section.newsCt_post
+            .container
+                .newsCt_wrap
+                    .newsCt_banner
+                        .newsCt_banner--img
+                            +img("nctbn.png")
+                        .newsCt_banner--content
+                            p.note-md “Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Diam phasellus vestibulum lorem sed risus ultricies. Magna sit amet purus gravida quis blandit. Arcu cursus vitae congue.“
+                    .newsCt_box
+                        .newsCt_title
+                            h2.title-sm3.cl-black2.fl-sec.fw-7.t-center 
+                                |Join us as we build a tomorrow filled 
+                                br
+                                |with personalized experiences
+                            .news_box--note
+                                p.note-mn.cl-gray4 Nguyen Hue
+                                p.note-mn.cl-gray4 22/08/2023
+                        .newsCt_content
+                            p.note-text Has developed into the world's leading corporation, with the vision of providing environmentally friendly heating and clean water solutions. The desire to protect the green Earth has always been the driving force behind Ariston's constant creativity. From design to production process, all Ariston activities are aimed at saving energy and protecting the environment. With the desire to contribute to the preservation of the green planet through the development and supply of environmentally friendly products.
+                            br
+                            iframe(width="1280", height="720", src="https://www.youtube.com/embed/--ssdU5DeoQ", title="ST REGIS | HONG KONG\'s BEST LUXURY HOTEL (Full Tour + Presidential Suite)", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", referrerpolicy="strict-origin-when-cross-origin", allowfullscreen)
+                            br
+                            ul.list_img.d-wrap
+                                li.item_img.d-item.d-4
+                                    .item_img--img
+                                        +img("nctimg1.png")
+                                li.item_img.d-item.d-4
+                                    .item_img--img
+                                        +img("nctimg2.png")
+                                li.item_img.d-item.d-4
+                                    .item_img--img
+                                        +img("nctimg3.png")
+                                li.item_img.d-item.d-4
+                                    .item_img--img
+                                        +img("nctimg4.png")
+                            p.note-text Has developed into the world's leading corporation, with the vision of providing environmentally friendly heating and clean water solutions. The desire to protect the green Earth has always been the driving force behind Ariston's constant creativity. From design to production process, all Ariston activities are aimed at saving energy and protecting the environment. With the desire to contribute to the preservation of the green planet through the development and supply of environmentally friendly products.
+                            br
+                            p.note-text Has developed into the world's leading corporation, with the vision of providing environmentally friendly heating and clean water solutions. The desire to protect the green Earth has always been the driving force behind Ariston's constant creativity. From design to production process, all Ariston activities are aimed at saving energy and protecting the environment. With the desire to contribute to the preservation of the green planet through the development and supply of environmentally friendly products.
+                        .shareSocial
+                            .shareSocial_wrap
+                                p.note-sm Chia sẻ bài viết
+                                    ul.shareSocial_list
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic1.svg")
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic2.svg")
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic3.svg")
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic4.svg")
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic5.svg")
+                                        li.shareSocial_item
+                                            a(href="").shareSocial_link
+                                                +img("ic6.svg")
+        section.endowCt_more.free-slide
+            .container
+                .endowCt_more--wrap
+                    .box-title
+                        h2.title-md.fl-sec.fw-4 Có thể bạn quan tâm
+                        a(href="").link-text2 Xem tất cả
+                    .endowCt_more--list.d-wrap
+                        .swiper.mySwiper
+                            .swiper-wrapper
+                                -
+                                    const ms = [
+                                        {
+                                            img:"nqt1.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"nqt2.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"nqt3.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        },
+                                        {
+                                            img:"p4.png",
+                                            title:"Authenic mekong delta Tour 1",
+                                            content:"At Circadian, we are committed to providing our clients with exceptional "
+                                        }
+                                    ]
+                                each m , i in ms
+                                    .swiper-slide.d-item.d-3
+                                        +post(m.img,m.title,m.content)
+                        .swiper-pagination

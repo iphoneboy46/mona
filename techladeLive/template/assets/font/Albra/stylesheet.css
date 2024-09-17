@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'Albra Book TRIAL Black TRIAL';
+    src: url('AlbraBookTRIAL-Black.eot');
+    src: url('AlbraBookTRIAL-Black.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Black.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Black.woff') format('woff'),
+        url('AlbraBookTRIAL-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Black TRIAL';
+    src: url('AlbraDisplayTRIAL-Black.eot');
+    src: url('AlbraDisplayTRIAL-Black.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Black.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Black.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Book TRIAL Bold TRIAL';
+    src: url('AlbraBookTRIAL-Bold.eot');
+    src: url('AlbraBookTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Bold.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Bold.woff') format('woff'),
+        url('AlbraBookTRIAL-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Book TRIAL Medium TRIAL';
+    src: url('AlbraBookTRIAL-Medium.eot');
+    src: url('AlbraBookTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Medium.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Medium.woff') format('woff'),
+        url('AlbraBookTRIAL-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Book TRIAL Light TRIAL';
+    src: url('AlbraBookTRIAL-Light.eot');
+    src: url('AlbraBookTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Light.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Light.woff') format('woff'),
+        url('AlbraBookTRIAL-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Book TRIAL Semi TRIAL';
+    src: url('AlbraBookTRIAL-Semi.eot');
+    src: url('AlbraBookTRIAL-Semi.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Semi.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Semi.woff') format('woff'),
+        url('AlbraBookTRIAL-Semi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Black It TRIAL';
+    src: url('AlbraDisplayTRIAL-BlackItalic.eot');
+    src: url('AlbraDisplayTRIAL-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-BlackItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-BlackItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-BlackItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Book TRIAL TRIAL';
+    src: url('AlbraBookTRIAL-Regular.eot');
+    src: url('AlbraBookTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AlbraBookTRIAL-Regular.woff2') format('woff2'),
+        url('AlbraBookTRIAL-Regular.woff') format('woff'),
+        url('AlbraBookTRIAL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Light TRIAL';
+    src: url('AlbraDisplayTRIAL-Light.eot');
+    src: url('AlbraDisplayTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Light.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Light.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Bold TRIAL';
+    src: url('AlbraDisplayTRIAL-Bold.eot');
+    src: url('AlbraDisplayTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Bold.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Bold.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Medium It TRIAL';
+    src: url('AlbraDisplayTRIAL-MediumItalic.eot');
+    src: url('AlbraDisplayTRIAL-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-MediumItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-MediumItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Medium TRIAL';
+    src: url('AlbraDisplayTRIAL-Medium.eot');
+    src: url('AlbraDisplayTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Medium.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Medium.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Light It TRIAL';
+    src: url('AlbraDisplayTRIAL-LightItalic.eot');
+    src: url('AlbraDisplayTRIAL-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-LightItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-LightItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL';
+    src: url('AlbraDisplayTRIAL-BoldItalic.eot');
+    src: url('AlbraDisplayTRIAL-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-BoldItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-BoldItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL';
+    src: url('AlbraDisplayTRIAL-RegularItalic.eot');
+    src: url('AlbraDisplayTRIAL-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-RegularItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-RegularItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL TRIAL';
+    src: url('AlbraDisplayTRIAL-Regular.eot');
+    src: url('AlbraDisplayTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Regular.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Regular.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Sm It TRIAL';
+    src: url('AlbraDisplayTRIAL-SemiItalic.eot');
+    src: url('AlbraDisplayTRIAL-SemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-SemiItalic.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-SemiItalic.woff') format('woff'),
+        url('AlbraDisplayTRIAL-SemiItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Display TRIAL Semi TRIAL';
+    src: url('AlbraDisplayTRIAL-Semi.eot');
+    src: url('AlbraDisplayTRIAL-Semi.eot?#iefix') format('embedded-opentype'),
+        url('AlbraDisplayTRIAL-Semi.woff2') format('woff2'),
+        url('AlbraDisplayTRIAL-Semi.woff') format('woff'),
+        url('AlbraDisplayTRIAL-Semi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Medium It TRIAL';
+    src: url('AlbraGroteskTRIAL-MediumItalic.eot');
+    src: url('AlbraGroteskTRIAL-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-MediumItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-MediumItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Light It TRIAL';
+    src: url('AlbraGroteskTRIAL-LightItalic.eot');
+    src: url('AlbraGroteskTRIAL-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-LightItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-LightItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL TRIAL';
+    src: url('AlbraGroteskTRIAL-Regular.eot');
+    src: url('AlbraGroteskTRIAL-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Regular.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Regular.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL';
+    src: url('AlbraGroteskTRIAL-BoldItalic.eot');
+    src: url('AlbraGroteskTRIAL-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-BoldItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-BoldItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Bold TRIAL';
+    src: url('AlbraGroteskTRIAL-Bold.eot');
+    src: url('AlbraGroteskTRIAL-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Bold.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Bold.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Black TRIAL';
+    src: url('AlbraGroteskTRIAL-Black.eot');
+    src: url('AlbraGroteskTRIAL-Black.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Black.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Black.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Light TRIAL';
+    src: url('AlbraGroteskTRIAL-Light.eot');
+    src: url('AlbraGroteskTRIAL-Light.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Light.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Light.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Medium TRIAL';
+    src: url('AlbraGroteskTRIAL-Medium.eot');
+    src: url('AlbraGroteskTRIAL-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Medium.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Medium.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Black It TRIAL';
+    src: url('AlbraGroteskTRIAL-BlackItalic.eot');
+    src: url('AlbraGroteskTRIAL-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-BlackItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-BlackItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-BlackItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Semi TRIAL';
+    src: url('AlbraGroteskTRIAL-Semi.eot');
+    src: url('AlbraGroteskTRIAL-Semi.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-Semi.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-Semi.woff') format('woff'),
+        url('AlbraGroteskTRIAL-Semi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL Sm It TRIAL';
+    src: url('AlbraGroteskTRIAL-SemiItalic.eot');
+    src: url('AlbraGroteskTRIAL-SemiItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-SemiItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-SemiItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-SemiItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albra Grotesk TRIAL';
+    src: url('AlbraGroteskTRIAL-RegularItalic.eot');
+    src: url('AlbraGroteskTRIAL-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('AlbraGroteskTRIAL-RegularItalic.woff2') format('woff2'),
+        url('AlbraGroteskTRIAL-RegularItalic.woff') format('woff'),
+        url('AlbraGroteskTRIAL-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

@@ -1,0 +1,4221 @@
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-2 {
+    margin-bottom: 0.2rem;
+}
+
+.mb-2s {
+    &:not(:last-child) {
+        margin-bottom: 0.2rem;
+    }
+}
+
+.mb-4 {
+    margin-bottom: 0.4rem;
+}
+
+.mb-4s {
+    &:not(:last-child) {
+        margin-bottom: 0.4rem;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-5s {
+    &:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.mb-6 {
+    margin-bottom: 0.6rem;
+}
+
+.mb-6s {
+    &:not(:last-child) {
+        margin-bottom: 0.6rem;
+    }
+}
+
+.mb-8 {
+    margin-bottom: 0.8rem;
+}
+
+.mb-8s {
+    &:not(:last-child) {
+        margin-bottom: 0.8rem;
+    }
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mb-10s {
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+}
+
+.mb-12 {
+    margin-bottom: 1.2rem;
+}
+
+.mb-12s {
+    &:not(:last-child) {
+        margin-bottom: 1.2rem;
+    }
+}
+
+.mb-14 {
+    margin-bottom: 1.4rem;
+}
+
+.mb-14s {
+    &:not(:last-child) {
+        margin-bottom: 1.4rem;
+    }
+}
+
+.mb-16 {
+    margin-bottom: 1.6rem;
+}
+
+.mb-16s {
+    &:not(:last-child) {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.mb-18 {
+    margin-bottom: 1.8rem;
+}
+
+.mb-18s {
+    &:not(:last-child) {
+        margin-bottom: 1.8rem;
+    }
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-20s {
+    &:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+
+.mb-24 {
+    margin-bottom: 2.4rem;
+}
+
+.mb-24s {
+    &:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.mb-26 {
+    margin-bottom: 2.6rem;
+}
+
+.mb-26s {
+    &:not(:last-child) {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.mb-28 {
+    margin-bottom: 2.8rem;
+}
+
+.mb-28s {
+    &:not(:last-child) {
+        margin-bottom: 2.8rem;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
+.mb-30s {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-32 {
+    margin-bottom: 3.2rem;
+}
+
+.mb-32s {
+    &:not(:last-child) {
+        margin-bottom: 3.2rem;
+    }
+}
+
+.mb-34 {
+    margin-bottom: 3.4rem;
+}
+
+.mb-34s {
+    &:not(:last-child) {
+        margin-bottom: 3.4rem;
+    }
+}
+
+.mb-36 {
+    margin-bottom: 3.6rem;
+}
+
+.mb-36s {
+    &:not(:last-child) {
+        margin-bottom: 3.6rem;
+    }
+}
+
+.mb-38 {
+    margin-bottom: 3.8rem;
+}
+
+.mb-38s {
+    &:not(:last-child) {
+        margin-bottom: 3.8rem;
+    }
+}
+
+.mb-40 {
+    margin-bottom: 4rem;
+    @include max(1200px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.mb-40s {
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+
+        @include max(1200px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+   
+}
+
+.mb-42 {
+    margin-bottom: 4.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.1rem;
+    }
+}
+
+.mb-42s {
+    &:not(:last-child) {
+        margin-bottom: 4.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.1rem;
+        }
+    }
+}
+
+.mb-44 {
+    margin-bottom: 4.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.mb-44s {
+    &:not(:last-child) {
+        margin-bottom: 4.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+}
+
+.mb-46 {
+    margin-bottom: 4.6rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.3rem;
+    }
+}
+
+.mb-46s {
+    &:not(:last-child) {
+        margin-bottom: 4.6rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.3rem;
+        }
+    }
+
+}
+
+.mb-48 {
+    margin-bottom: 4.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.mb-48s {
+    &:not(:last-child) {
+        margin-bottom: 4.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+   
+}
+
+.mb-50 {
+    margin-bottom: 5rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.mb-50s {
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+}
+
+.mb-52 {
+    margin-bottom: 5.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.6rem;
+    }
+}
+
+.mb-52s {
+    &:not(:last-child) {
+        margin-bottom: 5.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.6rem;
+        }
+    }
+
+}
+
+.mb-54 {
+    margin-bottom: 5.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.7rem;
+    }
+}
+
+
+.mb-54s {
+    &:not(:last-child) {
+        margin-bottom: 5.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.7rem;
+        }
+    }
+
+}
+
+.mb-56 {
+    margin-bottom: 5.6rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.8rem;
+    }
+}
+
+.mb-56s {
+    &:not(:last-child) {
+        margin-bottom: 5.6rem;
+        
+        @include max(1200px) {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    
+}
+
+
+.mb-58 {
+    margin-bottom: 5.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 2.9rem;
+    }
+}
+
+.mb-58s {
+    &:not(:last-child) {
+        margin-bottom: 5.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 2.9rem;
+        }
+    }
+}
+
+.mb-60 {
+    margin-bottom: 6rem;
+
+    @include max(1200px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-60s {
+    &:not(:last-child) {
+        margin-bottom: 6rem;
+
+        @include max(1200px) {
+            margin-bottom: 3rem;
+        }
+    }
+
+   
+}
+
+.mb-62 {
+    margin-bottom: 6.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.1rem;
+    }
+}
+
+.mb-62s {
+    &:not(:last-child) {
+        margin-bottom: 6.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.1rem;
+        }
+    }
+
+    
+}
+
+
+.mb-64 {
+    margin-bottom: 6.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.2rem;
+    }
+}
+
+.mb-64s {
+    &:not(:last-child) {
+        margin-bottom: 6.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.2rem;
+        }
+    }
+
+
+}
+
+.mb-68 {
+    margin-bottom: 6.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.4rem;
+    }
+}
+
+.mb-68s {
+    &:not(:last-child) {
+        margin-bottom: 6.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.4rem;
+        }
+    }
+
+  
+}
+
+
+
+.mb-70 {
+    margin-bottom: 7rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.mb-70s {
+    &:not(:last-child) {
+        margin-bottom: 7rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+   
+}
+
+
+
+.mb-72 {
+    margin-bottom: 7.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.6rem;
+    }
+}
+
+.mb-72s {
+    &:not(:last-child) {
+        margin-bottom: 7.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.6rem;
+        }
+    }
+
+   
+}
+
+
+.mb-74 {
+    margin-bottom: 7.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.7rem;
+    }
+}
+
+.mb-72s {
+    &:not(:last-child) {
+        margin-bottom: 7.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.7rem;
+        }
+    }
+
+   
+}
+
+.mb-76 {
+    margin-bottom: 7.6rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.8rem;
+    }
+}
+
+.mb-76s {
+    &:not(:last-child) {
+        margin-bottom: 7.6rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.8rem;
+        }
+    }
+
+  
+}
+
+.mb-78 {
+    margin-bottom: 7.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 3.9rem;
+    }
+}
+
+.mb-78s {
+    &:not(:last-child) {
+        margin-bottom: 7.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 3.9rem;
+        }
+
+    
+    }
+
+}
+
+
+
+.mb-80 {
+    margin-bottom: 8rem;
+
+    @include max(1200px) {
+        margin-bottom: 4rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.mb-80s {
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+
+        @include max(1200px) {
+            margin-bottom: 4rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
+.mb-82 {
+    margin-bottom: 8.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.1rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.mb-82s {
+    &:not(:last-child) {
+        margin-bottom: 8.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.1rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+   
+}
+
+.mb-84 {
+    margin-bottom: 8.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.2rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.mb-84s {
+    &:not(:last-child) {
+        margin-bottom: 8.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.2rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    
+}
+
+.mb-86 {
+    margin-bottom: 8.6rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.3rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.3rem;
+    }
+}
+
+.mb-86s {
+    &:not(:last-child) {
+        margin-bottom: 8.6rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.3rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.3rem;
+        }
+    }
+
+  
+}
+
+.mb-88 {
+    margin-bottom: 8.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.4rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.2rem;
+    }
+    
+}
+
+.mb-88s {
+    &:not(:last-child) {
+        margin-bottom: 8.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.4rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.2rem;
+        }
+    }
+}
+
+
+.mb-90 {
+    margin-bottom: 9rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.5rem;
+    }
+
+    @include max(1200px) {
+        margin-bottom: 2.2rem;
+    }
+}
+
+.mb-90s {
+    &:not(:last-child) {
+        margin-bottom: 9rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.5rem;
+        }
+
+        @include max(1200px) {
+            margin-bottom: 2.2rem;
+        }
+    }
+
+   
+}
+
+.mb-92 {
+    margin-bottom: 9.2rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.6rem;
+    }
+
+    
+    @include max(600px) {
+        margin-bottom: 2.3rem;
+    }
+}
+
+.mb-92s {
+    &:not(:last-child) {
+        margin-bottom: 9.2rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.6rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.3rem;
+        }
+    }
+
+   
+}
+
+.mb-94 {
+    margin-bottom: 9.4rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.7rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.3rem;
+    }
+}
+
+.mb-94s {
+    &:not(:last-child) {
+        margin-bottom: 9.4rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.7rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.3rem;
+        }
+    }
+
+   
+}
+
+.mb-96 {
+    margin-bottom: 9.6rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.8rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.mb-96s {
+    &:not(:last-child) {
+        margin-bottom: 9.6rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.8rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    
+}
+
+.mb-98 {
+    margin-bottom: 9.8rem;
+
+    @include max(1200px) {
+        margin-bottom: 4.9rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.mb-98s {
+    &:not(:last-child) {
+        margin-bottom: 9.8rem;
+
+        @include max(1200px) {
+            margin-bottom: 4.9rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    
+}
+
+
+.mb-100 {
+    margin-bottom: 10rem;
+
+    @include max(1200px) {
+        margin-bottom: 5rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.mb-100s {
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+
+        @include max(1200px) {
+            margin-bottom: 5rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+.mb-120 {
+    margin-bottom: 12rem;
+
+    @include max(1200px) {
+        margin-bottom: 6rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 3rem;
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-120s {
+    &:not(:last-child) {
+        margin-bottom: 12rem;
+
+        @include max(1200px) {
+            margin-bottom: 6rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 3rem;
+        }
+
+        @include max(460px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.mb-140 {
+    margin-bottom: 14rem;
+
+    @include max(1200px) {
+        margin-bottom: 7rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 3.5rem;
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-140s {
+    &:not(:last-child) {
+        margin-bottom: 14rem;
+
+        @include max(1200px) {
+            margin-bottom: 7rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-160 {
+    margin-bottom: 16rem;
+
+    @include max(1200px) {
+        margin-bottom: 8rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 4rem;
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-160s {
+    &:not(:last-child) {
+        margin-bottom: 16rem;
+
+        @include max(1200px) {
+            margin-bottom: 8rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 4rem;
+        }
+
+        @include max(460px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.mb-180 {
+    margin-bottom: 18rem;
+
+    @include max(1200px) {
+        margin-bottom: 9rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 4.5rem;
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-180s {
+    &:not(:last-child) {
+        margin-bottom: 18rem;
+
+        @include max(1200px) {
+            margin-bottom: 9rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 4.5rem;
+        }
+
+        @include max(460px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.mb-200 {
+    margin-bottom: 20rem;
+
+    @include max(1200px) {
+        margin-bottom: 10rem;
+    }
+
+    @include max(600px) {
+        margin-bottom: 5rem;
+    }
+
+    @include max(460px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.mb-200s {
+    &:not(:last-child) {
+        margin-bottom: 20rem;
+
+        @include max(1200px) {
+            margin-bottom: 10rem;
+        }
+
+        @include max(600px) {
+            margin-bottom: 5rem;
+        }
+
+        @include max(460px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+
+//
+
+
+
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-2 {
+    margin-top: 0.2rem;
+}
+
+.mt-2s {
+    &:not(:last-child) {
+        margin-top: 0.2rem;
+    }
+}
+
+.mt-4 {
+    margin-top: 0.4rem;
+}
+
+.mt-4s {
+    &:not(:last-child) {
+        margin-top: 0.4rem;
+    }
+}
+
+.mt-5 {
+    margin-top: 0.5rem;
+}
+
+.mt-5s {
+    &:not(:last-child) {
+        margin-top: 0.5rem;
+    }
+}
+
+.mt-6 {
+    margin-top: 0.6rem;
+}
+
+.mt-6s {
+    &:not(:last-child) {
+        margin-top: 0.6rem;
+    }
+}
+
+.mt-8 {
+    margin-top: 0.8rem;
+}
+
+.mt-8s {
+    &:not(:last-child) {
+        margin-top: 0.8rem;
+    }
+}
+
+.mt-10 {
+    margin-top: 1rem;
+}
+
+.mt-10s {
+    &:not(:last-child) {
+        margin-top: 1rem;
+    }
+}
+
+.mt-12 {
+    margin-top: 1.2rem;
+}
+
+.mt-12s {
+    &:not(:last-child) {
+        margin-top: 1.2rem;
+    }
+}
+
+.mt-14 {
+    margin-top: 1.4rem;
+}
+
+.mt-14s {
+    &:not(:last-child) {
+        margin-top: 1.4rem;
+    }
+}
+
+.mt-16 {
+    margin-top: 1.6rem;
+}
+
+.mt-16s {
+    &:not(:last-child) {
+        margin-top: 1.6rem;
+    }
+}
+
+.mt-18 {
+    margin-top: 1.8rem;
+}
+
+.mt-18s {
+    &:not(:last-child) {
+        margin-top: 1.8rem;
+    }
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mt-20s {
+    &:not(:last-child) {
+        margin-top: 2rem;
+    }
+}
+
+.mt-24 {
+    margin-top: 2.4rem;
+}
+
+.mt-24s {
+    &:not(:last-child) {
+        margin-top: 2.4rem;
+    }
+}
+
+.mt-26 {
+    margin-top: 2.6rem;
+}
+
+.mt-26s {
+    &:not(:last-child) {
+        margin-top: 2.6rem;
+    }
+}
+
+.mt-28 {
+    margin-top: 2.8rem;
+}
+
+.mt-28s {
+    &:not(:last-child) {
+        margin-top: 2.8rem;
+    }
+}
+
+.mt-30 {
+    margin-top: 3rem;
+}
+
+.mt-30s {
+    &:not(:last-child) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-32 {
+    margin-top: 3.2rem;
+}
+
+.mt-32s {
+    &:not(:last-child) {
+        margin-top: 3.2rem;
+    }
+}
+
+.mt-34 {
+    margin-top: 3.4rem;
+}
+
+.mt-34s {
+    &:not(:last-child) {
+        margin-top: 3.4rem;
+    }
+}
+
+.mt-36 {
+    margin-top: 3.6rem;
+}
+
+.mt-36s {
+    &:not(:last-child) {
+        margin-top: 3.6rem;
+    }
+}
+
+.mt-38 {
+    margin-top: 3.8rem;
+}
+
+.mt-38s {
+    &:not(:last-child) {
+        margin-top: 3.8rem;
+    }
+}
+
+.mt-40 {
+    margin-top: 4rem;
+    @include max(1200px) {
+        margin-top: 2rem;
+    }
+}
+
+.mt-40s {
+    &:not(:last-child) {
+        margin-top: 4rem;
+
+        @include max(1200px) {
+            margin-top: 2rem;
+        }
+    }
+
+   
+}
+
+.mt-42 {
+    margin-top: 4.2rem;
+
+    @include max(1200px) {
+        margin-top: 2.1rem;
+    }
+}
+
+.mt-42s {
+    &:not(:last-child) {
+        margin-top: 4.2rem;
+
+        @include max(1200px) {
+            margin-top: 2.1rem;
+        }
+    }
+}
+
+.mt-44 {
+    margin-top: 4.4rem;
+
+    @include max(1200px) {
+        margin-top: 2.2rem;
+    }
+}
+
+.mt-44s {
+    &:not(:last-child) {
+        margin-top: 4.4rem;
+
+        @include max(1200px) {
+            margin-top: 2.2rem;
+        }
+    }
+
+}
+
+.mt-46 {
+    margin-top: 4.6rem;
+
+    @include max(1200px) {
+        margin-top: 2.3rem;
+    }
+}
+
+.mt-46s {
+    &:not(:last-child) {
+        margin-top: 4.6rem;
+
+        @include max(1200px) {
+            margin-top: 2.3rem;
+        }
+    }
+
+}
+
+.mt-48 {
+    margin-top: 4.8rem;
+
+    @include max(1200px) {
+        margin-top: 2.4rem;
+    }
+}
+
+.mt-48s {
+    &:not(:last-child) {
+        margin-top: 4.8rem;
+
+        @include max(1200px) {
+            margin-top: 2.4rem;
+        }
+    }
+
+   
+}
+
+.mt-50 {
+    margin-top: 5rem;
+
+    @include max(1200px) {
+        margin-top: 2.5rem;
+    }
+}
+
+.mt-50s {
+    &:not(:last-child) {
+        margin-top: 5rem;
+
+        @include max(1200px) {
+            margin-top: 2.5rem;
+        }
+    }
+
+}
+
+.mt-52 {
+    margin-top: 5.2rem;
+
+    @include max(1200px) {
+        margin-top: 2.6rem;
+    }
+}
+
+.mt-52s {
+    &:not(:last-child) {
+        margin-top: 5.2rem;
+
+        @include max(1200px) {
+            margin-top: 2.6rem;
+        }
+    }
+
+}
+
+.mt-54 {
+    margin-top: 5.4rem;
+
+    @include max(1200px) {
+        margin-top: 2.7rem;
+    }
+}
+
+
+.mt-54s {
+    &:not(:last-child) {
+        margin-top: 5.4rem;
+
+        @include max(1200px) {
+            margin-top: 2.7rem;
+        }
+    }
+
+}
+
+.mt-56 {
+    margin-top: 5.6rem;
+
+    @include max(1200px) {
+        margin-top: 2.8rem;
+    }
+}
+
+.mt-56s {
+    &:not(:last-child) {
+        margin-top: 5.6rem;
+        
+        @include max(1200px) {
+            margin-top: 2.8rem;
+        }
+    }
+
+    
+}
+
+
+.mt-58 {
+    margin-top: 5.8rem;
+
+    @include max(1200px) {
+        margin-top: 2.9rem;
+    }
+}
+
+.mt-58s {
+    &:not(:last-child) {
+        margin-top: 5.8rem;
+
+        @include max(1200px) {
+            margin-top: 2.9rem;
+        }
+    }
+}
+
+.mt-60 {
+    margin-top: 6rem;
+
+    @include max(1200px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-60s {
+    &:not(:last-child) {
+        margin-top: 6rem;
+
+        @include max(1200px) {
+            margin-top: 3rem;
+        }
+    }
+
+   
+}
+
+.mt-62 {
+    margin-top: 6.2rem;
+
+    @include max(1200px) {
+        margin-top: 3.1rem;
+    }
+}
+
+.mt-62s {
+    &:not(:last-child) {
+        margin-top: 6.2rem;
+
+        @include max(1200px) {
+            margin-top: 3.1rem;
+        }
+    }
+
+    
+}
+
+
+.mt-64 {
+    margin-top: 6.4rem;
+
+    @include max(1200px) {
+        margin-top: 3.2rem;
+    }
+}
+
+.mt-64s {
+    &:not(:last-child) {
+        margin-top: 6.4rem;
+
+        @include max(1200px) {
+            margin-top: 3.2rem;
+        }
+    }
+
+
+}
+
+.mt-68 {
+    margin-top: 6.8rem;
+
+    @include max(1200px) {
+        margin-top: 3.4rem;
+    }
+}
+
+.mt-68s {
+    &:not(:last-child) {
+        margin-top: 6.8rem;
+
+        @include max(1200px) {
+            margin-top: 3.4rem;
+        }
+    }
+
+  
+}
+
+
+
+.mt-70 {
+    margin-top: 7rem;
+
+    @include max(1200px) {
+        margin-top: 3.5rem;
+    }
+}
+
+.mt-70s {
+    &:not(:last-child) {
+        margin-top: 7rem;
+
+        @include max(1200px) {
+            margin-top: 3.5rem;
+        }
+    }
+
+   
+}
+
+
+
+.mt-72 {
+    margin-top: 7.2rem;
+
+    @include max(1200px) {
+        margin-top: 3.6rem;
+    }
+}
+
+.mt-72s {
+    &:not(:last-child) {
+        margin-top: 7.2rem;
+
+        @include max(1200px) {
+            margin-top: 3.6rem;
+        }
+    }
+
+   
+}
+
+
+.mt-74 {
+    margin-top: 7.4rem;
+
+    @include max(1200px) {
+        margin-top: 3.7rem;
+    }
+}
+
+.mt-72s {
+    &:not(:last-child) {
+        margin-top: 7.4rem;
+
+        @include max(1200px) {
+            margin-top: 3.7rem;
+        }
+    }
+
+   
+}
+
+.mt-76 {
+    margin-top: 7.6rem;
+
+    @include max(1200px) {
+        margin-top: 3.8rem;
+    }
+}
+
+.mt-76s {
+    &:not(:last-child) {
+        margin-top: 7.6rem;
+
+        @include max(1200px) {
+            margin-top: 3.8rem;
+        }
+    }
+
+  
+}
+
+.mt-78 {
+    margin-top: 7.8rem;
+
+    @include max(1200px) {
+        margin-top: 3.9rem;
+    }
+}
+
+.mt-78s {
+    &:not(:last-child) {
+        margin-top: 7.8rem;
+
+        @include max(1200px) {
+            margin-top: 3.9rem;
+        }
+
+    
+    }
+
+}
+
+
+
+.mt-80 {
+    margin-top: 8rem;
+
+    @include max(1200px) {
+        margin-top: 4rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2rem;
+    }
+}
+
+.mt-80s {
+    &:not(:last-child) {
+        margin-top: 8rem;
+
+        @include max(1200px) {
+            margin-top: 4rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2rem;
+        }
+    }
+
+}
+
+.mt-82 {
+    margin-top: 8.2rem;
+
+    @include max(1200px) {
+        margin-top: 4.1rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2rem;
+    }
+}
+
+.mt-82s {
+    &:not(:last-child) {
+        margin-top: 8.2rem;
+
+        @include max(1200px) {
+            margin-top: 4.1rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2rem;
+        }
+    }
+
+   
+}
+
+.mt-84 {
+    margin-top: 8.4rem;
+
+    @include max(1200px) {
+        margin-top: 4.2rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.2rem;
+    }
+}
+
+.mt-84s {
+    &:not(:last-child) {
+        margin-top: 8.4rem;
+
+        @include max(1200px) {
+            margin-top: 4.2rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.2rem;
+        }
+    }
+
+    
+}
+
+.mt-86 {
+    margin-top: 8.6rem;
+
+    @include max(1200px) {
+        margin-top: 4.3rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.3rem;
+    }
+}
+
+.mt-86s {
+    &:not(:last-child) {
+        margin-top: 8.6rem;
+
+        @include max(1200px) {
+            margin-top: 4.3rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.3rem;
+        }
+    }
+
+  
+}
+
+.mt-88 {
+    margin-top: 8.8rem;
+
+    @include max(1200px) {
+        margin-top: 4.4rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.2rem;
+    }
+    
+}
+
+.mt-88s {
+    &:not(:last-child) {
+        margin-top: 8.8rem;
+
+        @include max(1200px) {
+            margin-top: 4.4rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.2rem;
+        }
+    }
+}
+
+
+.mt-90 {
+    margin-top: 9rem;
+
+    @include max(1200px) {
+        margin-top: 4.5rem;
+    }
+
+    @include max(1200px) {
+        margin-top: 2.2rem;
+    }
+}
+
+.mt-90s {
+    &:not(:last-child) {
+        margin-top: 9rem;
+
+        @include max(1200px) {
+            margin-top: 4.5rem;
+        }
+
+        @include max(1200px) {
+            margin-top: 2.2rem;
+        }
+    }
+
+   
+}
+
+.mt-92 {
+    margin-top: 9.2rem;
+
+    @include max(1200px) {
+        margin-top: 4.6rem;
+    }
+
+    
+    @include max(600px) {
+        margin-top: 2.3rem;
+    }
+}
+
+.mt-92s {
+    &:not(:last-child) {
+        margin-top: 9.2rem;
+
+        @include max(1200px) {
+            margin-top: 4.6rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.3rem;
+        }
+    }
+
+   
+}
+
+.mt-94 {
+    margin-top: 9.4rem;
+
+    @include max(1200px) {
+        margin-top: 4.7rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.3rem;
+    }
+}
+
+.mt-94s {
+    &:not(:last-child) {
+        margin-top: 9.4rem;
+
+        @include max(1200px) {
+            margin-top: 4.7rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.3rem;
+        }
+    }
+
+   
+}
+
+.mt-96 {
+    margin-top: 9.6rem;
+
+    @include max(1200px) {
+        margin-top: 4.8rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.4rem;
+    }
+}
+
+.mt-96s {
+    &:not(:last-child) {
+        margin-top: 9.6rem;
+
+        @include max(1200px) {
+            margin-top: 4.8rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.4rem;
+        }
+    }
+
+    
+}
+
+.mt-98 {
+    margin-top: 9.8rem;
+
+    @include max(1200px) {
+        margin-top: 4.9rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.4rem;
+    }
+}
+
+.mt-98s {
+    &:not(:last-child) {
+        margin-top: 9.8rem;
+
+        @include max(1200px) {
+            margin-top: 4.9rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.4rem;
+        }
+    }
+
+    
+}
+
+
+.mt-100 {
+    margin-top: 10rem;
+
+    @include max(1200px) {
+        margin-top: 5rem;
+    }
+
+    @include max(600px) {
+        margin-top: 2.5rem;
+    }
+}
+
+.mt-100s {
+    &:not(:last-child) {
+        margin-top: 10rem;
+
+        @include max(1200px) {
+            margin-top: 5rem;
+        }
+
+        @include max(600px) {
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+.mt-120 {
+    margin-top: 12rem;
+
+    @include max(1200px) {
+        margin-top: 6rem;
+    }
+
+    @include max(600px) {
+        margin-top: 3rem;
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-120s {
+    &:not(:last-child) {
+        margin-top: 12rem;
+
+        @include max(1200px) {
+            margin-top: 6rem;
+        }
+
+        @include max(600px) {
+            margin-top: 3rem;
+        }
+
+        @include max(460px) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.mt-140 {
+    margin-top: 14rem;
+
+    @include max(1200px) {
+        margin-top: 7rem;
+    }
+
+    @include max(600px) {
+        margin-top: 3.5rem;
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-140s {
+    &:not(:last-child) {
+        margin-top: 14rem;
+
+        @include max(1200px) {
+            margin-top: 7rem;
+        }
+
+        @include max(600px) {
+            margin-top: 3.5rem;
+        }
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-160 {
+    margin-top: 16rem;
+
+    @include max(1200px) {
+        margin-top: 8rem;
+    }
+
+    @include max(600px) {
+        margin-top: 4rem;
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-160s {
+    &:not(:last-child) {
+        margin-top: 16rem;
+
+        @include max(1200px) {
+            margin-top: 8rem;
+        }
+
+        @include max(600px) {
+            margin-top: 4rem;
+        }
+
+        @include max(460px) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.mt-180 {
+    margin-top: 18rem;
+
+    @include max(1200px) {
+        margin-top: 9rem;
+    }
+
+    @include max(600px) {
+        margin-top: 4.5rem;
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-180s {
+    &:not(:last-child) {
+        margin-top: 18rem;
+
+        @include max(1200px) {
+            margin-top: 9rem;
+        }
+
+        @include max(600px) {
+            margin-top: 4.5rem;
+        }
+
+        @include max(460px) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.mt-200 {
+    margin-top: 20rem;
+
+    @include max(1200px) {
+        margin-top: 10rem;
+    }
+
+    @include max(600px) {
+        margin-top: 5rem;
+    }
+
+    @include max(460px) {
+        margin-top: 3rem;
+    }
+}
+
+.mt-200s {
+    &:not(:last-child) {
+        margin-top: 20rem;
+
+        @include max(1200px) {
+            margin-top: 10rem;
+        }
+
+        @include max(600px) {
+            margin-top: 5rem;
+        }
+
+        @include max(460px) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+
+// padding-top
+
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pt-2 {
+    padding-top: 0.2rem;
+}
+
+.pt-2s {
+    &:not(:last-child) {
+        padding-top: 0.2rem;
+    }
+}
+
+.pt-4 {
+    padding-top: 0.4rem;
+}
+
+.pt-4s {
+    &:not(:last-child) {
+        padding-top: 0.4rem;
+    }
+}
+
+.pt-5 {
+    padding-top: 0.5rem;
+}
+
+.pt-5s {
+    &:not(:last-child) {
+        padding-top: 0.5rem;
+    }
+}
+
+.pt-6 {
+    padding-top: 0.6rem;
+}
+
+.pt-6s {
+    &:not(:last-child) {
+        padding-top: 0.6rem;
+    }
+}
+
+.pt-8 {
+    padding-top: 0.8rem;
+}
+
+.pt-8s {
+    &:not(:last-child) {
+        padding-top: 0.8rem;
+    }
+}
+
+.pt-10 {
+    padding-top: 1rem;
+}
+
+.pt-10s {
+    &:not(:last-child) {
+        padding-top: 1rem;
+    }
+}
+
+.pt-12 {
+    padding-top: 1.2rem;
+}
+
+.pt-12s {
+    &:not(:last-child) {
+        padding-top: 1.2rem;
+    }
+}
+
+.pt-14 {
+    padding-top: 1.4rem;
+}
+
+.pt-14s {
+    &:not(:last-child) {
+        padding-top: 1.4rem;
+    }
+}
+
+.pt-16 {
+    padding-top: 1.6rem;
+}
+
+.pt-16s {
+    &:not(:last-child) {
+        padding-top: 1.6rem;
+    }
+}
+
+.pt-18 {
+    padding-top: 1.8rem;
+}
+
+.pt-18s {
+    &:not(:last-child) {
+        padding-top: 1.8rem;
+    }
+}
+
+.pt-20 {
+    padding-top: 2rem;
+}
+
+.pt-20s {
+    &:not(:last-child) {
+        padding-top: 2rem;
+    }
+}
+
+.pt-24 {
+    padding-top: 2.4rem;
+}
+
+.pt-24s {
+    &:not(:last-child) {
+        padding-top: 2.4rem;
+    }
+}
+
+.pt-26 {
+    padding-top: 2.6rem;
+}
+
+.pt-26s {
+    &:not(:last-child) {
+        padding-top: 2.6rem;
+    }
+}
+
+.pt-28 {
+    padding-top: 2.8rem;
+}
+
+.pt-28s {
+    &:not(:last-child) {
+        padding-top: 2.8rem;
+    }
+}
+
+.pt-30 {
+    padding-top: 3rem;
+}
+
+.pt-30s {
+    &:not(:last-child) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-32 {
+    padding-top: 3.2rem;
+}
+
+.pt-32s {
+    &:not(:last-child) {
+        padding-top: 3.2rem;
+    }
+}
+
+.pt-34 {
+    padding-top: 3.4rem;
+}
+
+.pt-34s {
+    &:not(:last-child) {
+        padding-top: 3.4rem;
+    }
+}
+
+.pt-36 {
+    padding-top: 3.6rem;
+}
+
+.pt-36s {
+    &:not(:last-child) {
+        padding-top: 3.6rem;
+    }
+}
+
+.pt-38 {
+    padding-top: 3.8rem;
+}
+
+.pt-38s {
+    &:not(:last-child) {
+        padding-top: 3.8rem;
+    }
+}
+
+.pt-40 {
+    padding-top: 4rem;
+    @include max(1200px) {
+        padding-top: 2rem;
+    }
+}
+
+.pt-40s {
+    &:not(:last-child) {
+        padding-top: 4rem;
+
+        @include max(1200px) {
+            padding-top: 2rem;
+        }
+    }
+
+   
+}
+
+.pt-42 {
+    padding-top: 4.2rem;
+
+    @include max(1200px) {
+        padding-top: 2.1rem;
+    }
+}
+
+.pt-42s {
+    &:not(:last-child) {
+        padding-top: 4.2rem;
+
+        @include max(1200px) {
+            padding-top: 2.1rem;
+        }
+    }
+}
+
+.pt-44 {
+    padding-top: 4.4rem;
+
+    @include max(1200px) {
+        padding-top: 2.2rem;
+    }
+}
+
+.pt-44s {
+    &:not(:last-child) {
+        padding-top: 4.4rem;
+
+        @include max(1200px) {
+            padding-top: 2.2rem;
+        }
+    }
+
+}
+
+.pt-46 {
+    padding-top: 4.6rem;
+
+    @include max(1200px) {
+        padding-top: 2.3rem;
+    }
+}
+
+.pt-46s {
+    &:not(:last-child) {
+        padding-top: 4.6rem;
+
+        @include max(1200px) {
+            padding-top: 2.3rem;
+        }
+    }
+
+}
+
+.pt-48 {
+    padding-top: 4.8rem;
+
+    @include max(1200px) {
+        padding-top: 2.4rem;
+    }
+}
+
+.pt-48s {
+    &:not(:last-child) {
+        padding-top: 4.8rem;
+
+        @include max(1200px) {
+            padding-top: 2.4rem;
+        }
+    }
+
+   
+}
+
+.pt-50 {
+    padding-top: 5rem;
+
+    @include max(1200px) {
+        padding-top: 2.5rem;
+    }
+}
+
+.pt-50s {
+    &:not(:last-child) {
+        padding-top: 5rem;
+
+        @include max(1200px) {
+            padding-top: 2.5rem;
+        }
+    }
+
+}
+
+.pt-52 {
+    padding-top: 5.2rem;
+
+    @include max(1200px) {
+        padding-top: 2.6rem;
+    }
+}
+
+.pt-52s {
+    &:not(:last-child) {
+        padding-top: 5.2rem;
+
+        @include max(1200px) {
+            padding-top: 2.6rem;
+        }
+    }
+
+}
+
+.pt-54 {
+    padding-top: 5.4rem;
+
+    @include max(1200px) {
+        padding-top: 2.7rem;
+    }
+}
+
+
+.pt-54s {
+    &:not(:last-child) {
+        padding-top: 5.4rem;
+
+        @include max(1200px) {
+            padding-top: 2.7rem;
+        }
+    }
+
+}
+
+.pt-56 {
+    padding-top: 5.6rem;
+
+    @include max(1200px) {
+        padding-top: 2.8rem;
+    }
+}
+
+.pt-56s {
+    &:not(:last-child) {
+        padding-top: 5.6rem;
+        
+        @include max(1200px) {
+            padding-top: 2.8rem;
+        }
+    }
+
+    
+}
+
+
+.pt-58 {
+    padding-top: 5.8rem;
+
+    @include max(1200px) {
+        padding-top: 2.9rem;
+    }
+}
+
+.pt-58s {
+    &:not(:last-child) {
+        padding-top: 5.8rem;
+
+        @include max(1200px) {
+            padding-top: 2.9rem;
+        }
+    }
+}
+
+.pt-60 {
+    padding-top: 6rem;
+
+    @include max(1200px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-60s {
+    &:not(:last-child) {
+        padding-top: 6rem;
+
+        @include max(1200px) {
+            padding-top: 3rem;
+        }
+    }
+
+   
+}
+
+.pt-62 {
+    padding-top: 6.2rem;
+
+    @include max(1200px) {
+        padding-top: 3.1rem;
+    }
+}
+
+.pt-62s {
+    &:not(:last-child) {
+        padding-top: 6.2rem;
+
+        @include max(1200px) {
+            padding-top: 3.1rem;
+        }
+    }
+
+    
+}
+
+
+.pt-64 {
+    padding-top: 6.4rem;
+
+    @include max(1200px) {
+        padding-top: 3.2rem;
+    }
+}
+
+.pt-64s {
+    &:not(:last-child) {
+        padding-top: 6.4rem;
+
+        @include max(1200px) {
+            padding-top: 3.2rem;
+        }
+    }
+
+
+}
+
+.pt-68 {
+    padding-top: 6.8rem;
+
+    @include max(1200px) {
+        padding-top: 3.4rem;
+    }
+}
+
+.pt-68s {
+    &:not(:last-child) {
+        padding-top: 6.8rem;
+
+        @include max(1200px) {
+            padding-top: 3.4rem;
+        }
+    }
+
+  
+}
+
+
+
+.pt-70 {
+    padding-top: 7rem;
+
+    @include max(1200px) {
+        padding-top: 3.5rem;
+    }
+}
+
+.pt-70s {
+    &:not(:last-child) {
+        padding-top: 7rem;
+
+        @include max(1200px) {
+            padding-top: 3.5rem;
+        }
+    }
+
+   
+}
+
+
+
+.pt-72 {
+    padding-top: 7.2rem;
+
+    @include max(1200px) {
+        padding-top: 3.6rem;
+    }
+}
+
+.pt-72s {
+    &:not(:last-child) {
+        padding-top: 7.2rem;
+
+        @include max(1200px) {
+            padding-top: 3.6rem;
+        }
+    }
+
+   
+}
+
+
+.pt-74 {
+    padding-top: 7.4rem;
+
+    @include max(1200px) {
+        padding-top: 3.7rem;
+    }
+}
+
+.pt-72s {
+    &:not(:last-child) {
+        padding-top: 7.4rem;
+
+        @include max(1200px) {
+            padding-top: 3.7rem;
+        }
+    }
+
+   
+}
+
+.pt-76 {
+    padding-top: 7.6rem;
+
+    @include max(1200px) {
+        padding-top: 3.8rem;
+    }
+}
+
+.pt-76s {
+    &:not(:last-child) {
+        padding-top: 7.6rem;
+
+        @include max(1200px) {
+            padding-top: 3.8rem;
+        }
+    }
+
+  
+}
+
+.pt-78 {
+    padding-top: 7.8rem;
+
+    @include max(1200px) {
+        padding-top: 3.9rem;
+    }
+}
+
+.pt-78s {
+    &:not(:last-child) {
+        padding-top: 7.8rem;
+
+        @include max(1200px) {
+            padding-top: 3.9rem;
+        }
+
+    
+    }
+
+}
+
+
+
+.pt-80 {
+    padding-top: 8rem;
+
+    @include max(1200px) {
+        padding-top: 4rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2rem;
+    }
+}
+
+.pt-80s {
+    &:not(:last-child) {
+        padding-top: 8rem;
+
+        @include max(1200px) {
+            padding-top: 4rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2rem;
+        }
+    }
+
+}
+
+.pt-82 {
+    padding-top: 8.2rem;
+
+    @include max(1200px) {
+        padding-top: 4.1rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2rem;
+    }
+}
+
+.pt-82s {
+    &:not(:last-child) {
+        padding-top: 8.2rem;
+
+        @include max(1200px) {
+            padding-top: 4.1rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2rem;
+        }
+    }
+
+   
+}
+
+.pt-84 {
+    padding-top: 8.4rem;
+
+    @include max(1200px) {
+        padding-top: 4.2rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.2rem;
+    }
+}
+
+.pt-84s {
+    &:not(:last-child) {
+        padding-top: 8.4rem;
+
+        @include max(1200px) {
+            padding-top: 4.2rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.2rem;
+        }
+    }
+
+    
+}
+
+.pt-86 {
+    padding-top: 8.6rem;
+
+    @include max(1200px) {
+        padding-top: 4.3rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.3rem;
+    }
+}
+
+.pt-86s {
+    &:not(:last-child) {
+        padding-top: 8.6rem;
+
+        @include max(1200px) {
+            padding-top: 4.3rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.3rem;
+        }
+    }
+
+  
+}
+
+.pt-88 {
+    padding-top: 8.8rem;
+
+    @include max(1200px) {
+        padding-top: 4.4rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.2rem;
+    }
+    
+}
+
+.pt-88s {
+    &:not(:last-child) {
+        padding-top: 8.8rem;
+
+        @include max(1200px) {
+            padding-top: 4.4rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.2rem;
+        }
+    }
+}
+
+
+.pt-90 {
+    padding-top: 9rem;
+
+    @include max(1200px) {
+        padding-top: 4.5rem;
+    }
+
+    @include max(1200px) {
+        padding-top: 2.2rem;
+    }
+}
+
+.pt-90s {
+    &:not(:last-child) {
+        padding-top: 9rem;
+
+        @include max(1200px) {
+            padding-top: 4.5rem;
+        }
+
+        @include max(1200px) {
+            padding-top: 2.2rem;
+        }
+    }
+
+   
+}
+
+.pt-92 {
+    padding-top: 9.2rem;
+
+    @include max(1200px) {
+        padding-top: 4.6rem;
+    }
+
+    
+    @include max(600px) {
+        padding-top: 2.3rem;
+    }
+}
+
+.pt-92s {
+    &:not(:last-child) {
+        padding-top: 9.2rem;
+
+        @include max(1200px) {
+            padding-top: 4.6rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.3rem;
+        }
+    }
+
+   
+}
+
+.pt-94 {
+    padding-top: 9.4rem;
+
+    @include max(1200px) {
+        padding-top: 4.7rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.3rem;
+    }
+}
+
+.pt-94s {
+    &:not(:last-child) {
+        padding-top: 9.4rem;
+
+        @include max(1200px) {
+            padding-top: 4.7rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.3rem;
+        }
+    }
+
+   
+}
+
+.pt-96 {
+    padding-top: 9.6rem;
+
+    @include max(1200px) {
+        padding-top: 4.8rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.4rem;
+    }
+}
+
+.pt-96s {
+    &:not(:last-child) {
+        padding-top: 9.6rem;
+
+        @include max(1200px) {
+            padding-top: 4.8rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.4rem;
+        }
+    }
+
+    
+}
+
+.pt-98 {
+    padding-top: 9.8rem;
+
+    @include max(1200px) {
+        padding-top: 4.9rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.4rem;
+    }
+}
+
+.pt-98s {
+    &:not(:last-child) {
+        padding-top: 9.8rem;
+
+        @include max(1200px) {
+            padding-top: 4.9rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.4rem;
+        }
+    }
+
+    
+}
+
+
+.pt-100 {
+    padding-top: 10rem;
+
+    @include max(1200px) {
+        padding-top: 5rem;
+    }
+
+    @include max(600px) {
+        padding-top: 2.5rem;
+    }
+}
+
+.pt-100s {
+    &:not(:last-child) {
+        padding-top: 10rem;
+
+        @include max(1200px) {
+            padding-top: 5rem;
+        }
+
+        @include max(600px) {
+            padding-top: 2.5rem;
+        }
+    }
+}
+
+.pt-120 {
+    padding-top: 12rem;
+
+    @include max(1200px) {
+        padding-top: 6rem;
+    }
+
+    @include max(600px) {
+        padding-top: 3rem;
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-120s {
+    &:not(:last-child) {
+        padding-top: 12rem;
+
+        @include max(1200px) {
+            padding-top: 6rem;
+        }
+
+        @include max(600px) {
+            padding-top: 3rem;
+        }
+
+        @include max(460px) {
+            padding-top: 3rem;
+        }
+    }
+}
+
+.pt-140 {
+    padding-top: 14rem;
+
+    @include max(1200px) {
+        padding-top: 7rem;
+    }
+
+    @include max(600px) {
+        padding-top: 3.5rem;
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-140s {
+    &:not(:last-child) {
+        padding-top: 14rem;
+
+        @include max(1200px) {
+            padding-top: 7rem;
+        }
+
+        @include max(600px) {
+            padding-top: 3.5rem;
+        }
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-160 {
+    padding-top: 16rem;
+
+    @include max(1200px) {
+        padding-top: 8rem;
+    }
+
+    @include max(600px) {
+        padding-top: 4rem;
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-160s {
+    &:not(:last-child) {
+        padding-top: 16rem;
+
+        @include max(1200px) {
+            padding-top: 8rem;
+        }
+
+        @include max(600px) {
+            padding-top: 4rem;
+        }
+
+        @include max(460px) {
+            padding-top: 3rem;
+        }
+    }
+}
+
+.pt-180 {
+    padding-top: 18rem;
+
+    @include max(1200px) {
+        padding-top: 9rem;
+    }
+
+    @include max(600px) {
+        padding-top: 4.5rem;
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-180s {
+    &:not(:last-child) {
+        padding-top: 18rem;
+
+        @include max(1200px) {
+            padding-top: 9rem;
+        }
+
+        @include max(600px) {
+            padding-top: 4.5rem;
+        }
+
+        @include max(460px) {
+            padding-top: 3rem;
+        }
+    }
+}
+
+.pt-200 {
+    padding-top: 20rem;
+
+    @include max(1200px) {
+        padding-top: 10rem;
+    }
+
+    @include max(600px) {
+        padding-top: 5rem;
+    }
+
+    @include max(460px) {
+        padding-top: 3rem;
+    }
+}
+
+.pt-200s {
+    &:not(:last-child) {
+        padding-top: 20rem;
+
+        @include max(1200px) {
+            padding-top: 10rem;
+        }
+
+        @include max(600px) {
+            padding-top: 5rem;
+        }
+
+        @include max(460px) {
+            padding-top: 3rem;
+        }
+    }
+}
+
+
+// padding-bottom;
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.pb-2 {
+    padding-bottom: 0.2rem;
+}
+
+.pb-2s {
+    &:not(:last-child) {
+        padding-bottom: 0.2rem;
+    }
+}
+
+.pb-4 {
+    padding-bottom: 0.4rem;
+}
+
+.pb-4s {
+    &:not(:last-child) {
+        padding-bottom: 0.4rem;
+    }
+}
+
+.pb-5 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-5s {
+    &:not(:last-child) {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.pb-6 {
+    padding-bottom: 0.6rem;
+}
+
+.pb-6s {
+    &:not(:last-child) {
+        padding-bottom: 0.6rem;
+    }
+}
+
+.pb-8 {
+    padding-bottom: 0.8rem;
+}
+
+.pb-8s {
+    &:not(:last-child) {
+        padding-bottom: 0.8rem;
+    }
+}
+
+.pb-10 {
+    padding-bottom: 1rem;
+}
+
+.pb-10s {
+    &:not(:last-child) {
+        padding-bottom: 1rem;
+    }
+}
+
+.pb-12 {
+    padding-bottom: 1.2rem;
+}
+
+.pb-12s {
+    &:not(:last-child) {
+        padding-bottom: 1.2rem;
+    }
+}
+
+.pb-14 {
+    padding-bottom: 1.4rem;
+}
+
+.pb-14s {
+    &:not(:last-child) {
+        padding-bottom: 1.4rem;
+    }
+}
+
+.pb-16 {
+    padding-bottom: 1.6rem;
+}
+
+.pb-16s {
+    &:not(:last-child) {
+        padding-bottom: 1.6rem;
+    }
+}
+
+.pb-18 {
+    padding-bottom: 1.8rem;
+}
+
+.pb-18s {
+    &:not(:last-child) {
+        padding-bottom: 1.8rem;
+    }
+}
+
+.pb-20 {
+    padding-bottom: 2rem;
+}
+
+.pb-20s {
+    &:not(:last-child) {
+        padding-bottom: 2rem;
+    }
+}
+
+.pb-24 {
+    padding-bottom: 2.4rem;
+}
+
+.pb-24s {
+    &:not(:last-child) {
+        padding-bottom: 2.4rem;
+    }
+}
+
+.pb-26 {
+    padding-bottom: 2.6rem;
+}
+
+.pb-26s {
+    &:not(:last-child) {
+        padding-bottom: 2.6rem;
+    }
+}
+
+.pb-28 {
+    padding-bottom: 2.8rem;
+}
+
+.pb-28s {
+    &:not(:last-child) {
+        padding-bottom: 2.8rem;
+    }
+}
+
+.pb-30 {
+    padding-bottom: 3rem;
+}
+
+.pb-30s {
+    &:not(:last-child) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-32 {
+    padding-bottom: 3.2rem;
+}
+
+.pb-32s {
+    &:not(:last-child) {
+        padding-bottom: 3.2rem;
+    }
+}
+
+.pb-34 {
+    padding-bottom: 3.4rem;
+}
+
+.pb-34s {
+    &:not(:last-child) {
+        padding-bottom: 3.4rem;
+    }
+}
+
+.pb-36 {
+    padding-bottom: 3.6rem;
+}
+
+.pb-36s {
+    &:not(:last-child) {
+        padding-bottom: 3.6rem;
+    }
+}
+
+.pb-38 {
+    padding-bottom: 3.8rem;
+}
+
+.pb-38s {
+    &:not(:last-child) {
+        padding-bottom: 3.8rem;
+    }
+}
+
+.pb-40 {
+    padding-bottom: 4rem;
+    @include max(1200px) {
+        padding-bottom: 2rem;
+    }
+}
+
+.pb-40s {
+    &:not(:last-child) {
+        padding-bottom: 4rem;
+
+        @include max(1200px) {
+            padding-bottom: 2rem;
+        }
+    }
+
+   
+}
+
+.pb-42 {
+    padding-bottom: 4.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.1rem;
+    }
+}
+
+.pb-42s {
+    &:not(:last-child) {
+        padding-bottom: 4.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.1rem;
+        }
+    }
+}
+
+.pb-44 {
+    padding-bottom: 4.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.2rem;
+    }
+}
+
+.pb-44s {
+    &:not(:last-child) {
+        padding-bottom: 4.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.2rem;
+        }
+    }
+
+}
+
+.pb-46 {
+    padding-bottom: 4.6rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.3rem;
+    }
+}
+
+.pb-46s {
+    &:not(:last-child) {
+        padding-bottom: 4.6rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.3rem;
+        }
+    }
+
+}
+
+.pb-48 {
+    padding-bottom: 4.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.4rem;
+    }
+}
+
+.pb-48s {
+    &:not(:last-child) {
+        padding-bottom: 4.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.4rem;
+        }
+    }
+
+   
+}
+
+.pb-50 {
+    padding-bottom: 5rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.pb-50s {
+    &:not(:last-child) {
+        padding-bottom: 5rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.5rem;
+        }
+    }
+
+}
+
+.pb-52 {
+    padding-bottom: 5.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.6rem;
+    }
+}
+
+.pb-52s {
+    &:not(:last-child) {
+        padding-bottom: 5.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.6rem;
+        }
+    }
+
+}
+
+.pb-54 {
+    padding-bottom: 5.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.7rem;
+    }
+}
+
+
+.pb-54s {
+    &:not(:last-child) {
+        padding-bottom: 5.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.7rem;
+        }
+    }
+
+}
+
+.pb-56 {
+    padding-bottom: 5.6rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.8rem;
+    }
+}
+
+.pb-56s {
+    &:not(:last-child) {
+        padding-bottom: 5.6rem;
+        
+        @include max(1200px) {
+            padding-bottom: 2.8rem;
+        }
+    }
+
+    
+}
+
+
+.pb-58 {
+    padding-bottom: 5.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 2.9rem;
+    }
+}
+
+.pb-58s {
+    &:not(:last-child) {
+        padding-bottom: 5.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 2.9rem;
+        }
+    }
+}
+
+.pb-60 {
+    padding-bottom: 6rem;
+
+    @include max(1200px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-60s {
+    &:not(:last-child) {
+        padding-bottom: 6rem;
+
+        @include max(1200px) {
+            padding-bottom: 3rem;
+        }
+    }
+
+   
+}
+
+.pb-62 {
+    padding-bottom: 6.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.1rem;
+    }
+}
+
+.pb-62s {
+    &:not(:last-child) {
+        padding-bottom: 6.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.1rem;
+        }
+    }
+
+    
+}
+
+
+.pb-64 {
+    padding-bottom: 6.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.2rem;
+    }
+}
+
+.pb-64s {
+    &:not(:last-child) {
+        padding-bottom: 6.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.2rem;
+        }
+    }
+
+
+}
+
+.pb-68 {
+    padding-bottom: 6.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.4rem;
+    }
+}
+
+.pb-68s {
+    &:not(:last-child) {
+        padding-bottom: 6.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.4rem;
+        }
+    }
+
+  
+}
+
+
+
+.pb-70 {
+    padding-bottom: 7rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.5rem;
+    }
+}
+
+.pb-70s {
+    &:not(:last-child) {
+        padding-bottom: 7rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+   
+}
+
+
+
+.pb-72 {
+    padding-bottom: 7.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.6rem;
+    }
+}
+
+.pb-72s {
+    &:not(:last-child) {
+        padding-bottom: 7.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.6rem;
+        }
+    }
+
+   
+}
+
+
+.pb-74 {
+    padding-bottom: 7.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.7rem;
+    }
+}
+
+.pb-72s {
+    &:not(:last-child) {
+        padding-bottom: 7.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.7rem;
+        }
+    }
+
+   
+}
+
+.pb-76 {
+    padding-bottom: 7.6rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.8rem;
+    }
+}
+
+.pb-76s {
+    &:not(:last-child) {
+        padding-bottom: 7.6rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.8rem;
+        }
+    }
+
+  
+}
+
+.pb-78 {
+    padding-bottom: 7.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 3.9rem;
+    }
+}
+
+.pb-78s {
+    &:not(:last-child) {
+        padding-bottom: 7.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 3.9rem;
+        }
+
+    
+    }
+
+}
+
+
+
+.pb-80 {
+    padding-bottom: 8rem;
+
+    @include max(1200px) {
+        padding-bottom: 4rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2rem;
+    }
+}
+
+.pb-80s {
+    &:not(:last-child) {
+        padding-bottom: 8rem;
+
+        @include max(1200px) {
+            padding-bottom: 4rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2rem;
+        }
+    }
+
+}
+
+.pb-82 {
+    padding-bottom: 8.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.1rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2rem;
+    }
+}
+
+.pb-82s {
+    &:not(:last-child) {
+        padding-bottom: 8.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.1rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2rem;
+        }
+    }
+
+   
+}
+
+.pb-84 {
+    padding-bottom: 8.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.2rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.2rem;
+    }
+}
+
+.pb-84s {
+    &:not(:last-child) {
+        padding-bottom: 8.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.2rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.2rem;
+        }
+    }
+
+    
+}
+
+.pb-86 {
+    padding-bottom: 8.6rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.3rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.3rem;
+    }
+}
+
+.pb-86s {
+    &:not(:last-child) {
+        padding-bottom: 8.6rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.3rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.3rem;
+        }
+    }
+
+  
+}
+
+.pb-88 {
+    padding-bottom: 8.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.4rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.2rem;
+    }
+    
+}
+
+.pb-88s {
+    &:not(:last-child) {
+        padding-bottom: 8.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.4rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.2rem;
+        }
+    }
+}
+
+
+.pb-90 {
+    padding-bottom: 9rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.5rem;
+    }
+
+    @include max(1200px) {
+        padding-bottom: 2.2rem;
+    }
+}
+
+.pb-90s {
+    &:not(:last-child) {
+        padding-bottom: 9rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.5rem;
+        }
+
+        @include max(1200px) {
+            padding-bottom: 2.2rem;
+        }
+    }
+
+   
+}
+
+.pb-92 {
+    padding-bottom: 9.2rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.6rem;
+    }
+
+    
+    @include max(600px) {
+        padding-bottom: 2.3rem;
+    }
+}
+
+.pb-92s {
+    &:not(:last-child) {
+        padding-bottom: 9.2rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.6rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.3rem;
+        }
+    }
+
+   
+}
+
+.pb-94 {
+    padding-bottom: 9.4rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.7rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.3rem;
+    }
+}
+
+.pb-94s {
+    &:not(:last-child) {
+        padding-bottom: 9.4rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.7rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.3rem;
+        }
+    }
+
+   
+}
+
+.pb-96 {
+    padding-bottom: 9.6rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.8rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.4rem;
+    }
+}
+
+.pb-96s {
+    &:not(:last-child) {
+        padding-bottom: 9.6rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.8rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.4rem;
+        }
+    }
+
+    
+}
+
+.pb-98 {
+    padding-bottom: 9.8rem;
+
+    @include max(1200px) {
+        padding-bottom: 4.9rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.4rem;
+    }
+}
+
+.pb-98s {
+    &:not(:last-child) {
+        padding-bottom: 9.8rem;
+
+        @include max(1200px) {
+            padding-bottom: 4.9rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.4rem;
+        }
+    }
+
+    
+}
+
+
+.pb-100 {
+    padding-bottom: 10rem;
+
+    @include max(1200px) {
+        padding-bottom: 5rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.pb-100s {
+    &:not(:last-child) {
+        padding-bottom: 10rem;
+
+        @include max(1200px) {
+            padding-bottom: 5rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 2.5rem;
+        }
+    }
+}
+
+.pb-120 {
+    padding-bottom: 12rem;
+
+    @include max(1200px) {
+        padding-bottom: 6rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 3rem;
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-120s {
+    &:not(:last-child) {
+        padding-bottom: 12rem;
+
+        @include max(1200px) {
+            padding-bottom: 6rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 3rem;
+        }
+
+        @include max(460px) {
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+.pb-140 {
+    padding-bottom: 14rem;
+
+    @include max(1200px) {
+        padding-bottom: 7rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 3.5rem;
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-140s {
+    &:not(:last-child) {
+        padding-bottom: 14rem;
+
+        @include max(1200px) {
+            padding-bottom: 7rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 3.5rem;
+        }
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-160 {
+    padding-bottom: 16rem;
+
+    @include max(1200px) {
+        padding-bottom: 8rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 4rem;
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-160s {
+    &:not(:last-child) {
+        padding-bottom: 16rem;
+
+        @include max(1200px) {
+            padding-bottom: 8rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 4rem;
+        }
+
+        @include max(460px) {
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+.pb-180 {
+    padding-bottom: 18rem;
+
+    @include max(1200px) {
+        padding-bottom: 9rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 4.5rem;
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-180s {
+    &:not(:last-child) {
+        padding-bottom: 18rem;
+
+        @include max(1200px) {
+            padding-bottom: 9rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 4.5rem;
+        }
+
+        @include max(460px) {
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+.pb-200 {
+    padding-bottom: 20rem;
+
+    @include max(1200px) {
+        padding-bottom: 10rem;
+    }
+
+    @include max(600px) {
+        padding-bottom: 5rem;
+    }
+
+    @include max(460px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.pb-200s {
+    &:not(:last-child) {
+        padding-bottom: 20rem;
+
+        @include max(1200px) {
+            padding-bottom: 10rem;
+        }
+
+        @include max(600px) {
+            padding-bottom: 5rem;
+        }
+
+        @include max(460px) {
+            padding-bottom: 3rem;
+        }
+    }
+}

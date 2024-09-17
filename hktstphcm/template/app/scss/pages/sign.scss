@@ -1,0 +1,120 @@
+@import "../core";
+
+
+.sign {
+    position: relative;
+
+
+    &_form{
+
+        &--list{
+            display: flex;
+            flex-direction: column;
+            row-gap: var(--rowContent16);
+        }
+
+        
+        &--list2{
+         
+            display: none;
+
+            &-wrap{
+                display: flex;
+                flex-direction: column;
+                row-gap: var(--rowContent16);
+            }
+        }
+
+        &--cb{
+            &-list{
+                row-gap: var(--rowContent12);
+            }
+        }
+      
+    }
+
+   
+
+    &_wrap {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form{
+            width: 100%;
+            display: block;
+        }
+
+        #formForgot{
+            .mona-error-primary{
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    &_box{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent32);
+        width: fit-content;
+        // width: 100%;
+        min-width: 45rem;
+        margin: 0 auto;
+        padding: var(--size-pd) 0;
+        @include max(800px){
+            min-width: unset;
+            width: 100%;
+            max-width: 80%;
+        }
+
+        @include max(600px){
+            min-width: unset;
+            width: 100%;
+            max-width: 90%;
+        }
+
+        @include max(360px){
+            min-width: unset;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+   
+
+    &_top{
+
+    }
+
+    &_center{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent16);
+        // max-height: 75svh;
+        // overflow-y: auto;
+        // overflow-x: hidden;
+
+        .mona-error-primary{
+            display: none;
+            font-weight: 700;
+        }
+
+        
+    }
+
+    &_bottom{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--rowContent0);
+
+        .btn{
+            width: 100%;
+        }
+    }
+}
+

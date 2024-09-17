@@ -1,0 +1,52 @@
+   let allAvailableDates = [];
+        let dateMap = {}; // Lưu trữ mapping ngày bắt đầu và kết thúc
+
+        // Hàm fetchAvailableDates để lấy tất cả các ngày hợp lệ
+        function fetchAvailableDates() {
+            fetch('https://run.mocky.io/v3/20e8e946-e5cc-4b24-8f7a-57643404785e') // Thay URL bằng URL API giả lập của bạn
+                .then(response => response.json())
+                .then(data => {
+                    console.log("API Data:", data); // Kiểm tra dữ liệu nhận được
+                    allAvailableDates = [];
+                    dateMap = {};
+
+                    data.forEach(event => {
+                        let startDate = moment(event.date_start);
+                        let endDate = moment(event.date_end);
+                        allAvailableDates.push(startDate.format('YYYY-MM-DD'));
+                        dateMap[startDate.format('YYYY-MM-DD')] = endDate.format('YYYY-MM-DD');
+                    });
+
+                    // initializeDateRangePicker();
+                })
+                .catch(error => console.error('Error fetching dates:', error));
+        }
+
+        // Hàm khởi tạo daterangepicker
+        function initializeDateRangePicker() {
+            $('#datepicker').daterangepicker({
+                singleDatePicker: true,
+                // autoUpdateInput: false,
+                isInvalidDate: function (date) {
+                    return !allAvailableDates.includes(date.format('YYYY-MM-DD'));
+                },
+                locale: {
+                    format: 'YYYY-MM-DD'
+                }
+            });
+
+            $('#datepicker').on('apply.daterangepicker', function (ev, picker) {
+                const selectedDate = picker.startDate.format('YYYY-MM-DD');
+                if (dateMap[selectedDate]) {
+                   console.log(dateMap[selectedDate]);
+                } else {
+                   
+                }
+            });
+
+            // Khởi tạo dữ liệu lần đầu
+            fetchAvailableDates();
+        }
+
+        // Khởi tạo datepicker lần đầu tiên
+        initializeDateRangePicker();

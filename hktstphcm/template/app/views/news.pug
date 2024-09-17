@@ -1,0 +1,175 @@
+extends layout/layout
+block vars
+    -title = 'TIn tức-sự kiện'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsSwiper,JsGsap,JsGsapScroll,JsFancybox]
+    -jsComponents = ['header','gsap']
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssSwiper,CssFancybox]
+    -cssComponents = ["banner","post"]
+    -cssPages = ["news"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    +banner-main("Trang chủ","","TIn tức-sự kiện","TIn tức-sự kiện")
+    section.banner_qc
+        .container
+            .banner_qc--wrap(data-aos="zoom-out" data-aos-delay="1200") 
+                .banner_qc--img 
+                    +img("qcbg.png")
+    section.news_new.free-slide 
+        .container 
+            .news_new--wrap
+                h2.title-mn.cl-white.fw-6.t-up(data-aos="fade-up") Tin TỨC MỚI NHẤT
+                .news_new--box 
+                    .news_new--list.d-wrap(data-aos="fade-up") 
+                        .swiper.mySwiper.--loop.--auto 
+                            .swiper-wrapper 
+                                .swiper-slide.d-item.d-2 
+                                    .news_new--item 
+                                        +post("gallery9","Hội KTS Việt Nam ký kết hợp tác năm 2024 với Công ty CP kinh doanh gạch ốp lát Viglacera")
+                                .swiper-slide.d-item.d-2 
+                                    .news_new--item 
+                                        +post("gallery10","Hội KTS Việt Nam ký kết hợp tác năm 2024 với Công ty CP kinh doanh gạch ốp lát Viglacera")
+                                .swiper-slide.d-item.d-2 
+                                    .news_new--item 
+                                        +post("gallery11","Hội KTS Việt Nam ký kết hợp tác năm 2024 với Công ty CP kinh doanh gạch ốp lát Viglacera")
+                                .swiper-slide.d-item.d-2 
+                                    .news_new--item 
+                                        +post("gallery12","Hội KTS Việt Nam ký kết hợp tác năm 2024 với Công ty CP kinh doanh gạch ốp lát Viglacera")
+                        +box-navi("fas fa-angle-left","fas fa-angle-right")
+                    .news_new--btn(data-aos="fade-up")   
+                        +btn("XEM THÊM..","","","tran2s")
+    section.news_kt 
+        .container 
+            .news_kt--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 Tin kiến trúc
+                            +btn("XEM TẤT CẢ BÀI VIẾT","","","tran2s")
+                        .news_box--center(data-aos="fade-up")  
+                            .box_tabs.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1" checked="checked")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up VĂN PHÒNG THIẾT KẾ 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÁC PHẨM KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up QTUXNNKT
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up CHỨNG CHỈ HÀNH NGHỀ KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter1")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÍCH ĐIỂM CDP
+                                        .swiper-scrollbar
+                            .box_tabs.cus.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                        .swiper-scrollbar
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="fade-up") 
+                                    +post("gallery1","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="200")  
+                                    +post("gallery2","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                                .news_item(data-aos="fade-up" data-aos-delay="400")  
+                                    +post("gallery3","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="600")  
+                                    +post("gallery4","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                            .news_box--btn(data-aos="fade-up") 
+                                +btn("XEM THÊM..","","","trans")
+    section.news_tt 
+        .container 
+            .news_tt--wrap
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up" ) 
+                            h2.title-mn.cl-white.t-up.fw-6 thông TIN VỀ hội
+                            +btn("XEM TẤT CẢ BÀI VIẾT","","","tran2s")
+                        .news_box--center(data-aos="fade-up")  
+                            .box_tabs.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2" checked="checked")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up VĂN PHÒNG THIẾT KẾ 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÁC PHẨM KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up QTUXNNKT
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up CHỨNG CHỈ HÀNH NGHỀ KIẾN TRÚC
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up TÍCH ĐIỂM CDP
+                                        .swiper-scrollbar
+                            .box_tabs.cus.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GÓC NHÌN
+                                        .swiper-scrollbar
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="fade-up") 
+                                    +post("gallery5","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="200")  
+                                    +post("gallery6","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                                .news_item(data-aos="fade-up" data-aos-delay="400")  
+                                    +post("gallery7","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="600")  
+                                    +post("gallery8","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                            .news_box--btn(data-aos="fade-up") 
+                                +btn("XEM THÊM..","","","trans")
+

@@ -1,0 +1,44 @@
+.breadcrumb {
+  &-list {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    overflow-x: auto;
+    @include flex-center-y;
+    border-top: 0.1rem solid #262626;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &-item {
+    flex-shrink: 0;
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        display: inline-block;
+        @include size(0.8rem);
+        @include transform(rotate(45deg));
+        background: #404040;
+      }
+    }
+    &.current-item {
+      .breadcrumb-link {
+        opacity: 1;
+      }
+    }
+  }
+  &-link {
+    @include transition(all $t);
+    font-size: var(--body14-fs);
+    line-height: 1.2;
+    margin-right: 0.8rem;
+    opacity: 0.5;
+
+    @include hover {
+      opacity: 1;
+    }
+  }
+}

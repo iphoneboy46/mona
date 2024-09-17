@@ -1,0 +1,26 @@
+extends layout/layout
+block vars
+    -title = 'Career chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.error_page 
+        .container 
+            .error_page--wrap 
+                .error_page--box.d-wrap 
+                    .error_page--lf.d-item 
+                        .error_page--lf-wrap
+                            .error_page--lf-top 
+                                p.title-md.cl-pri.fw-7 Oops!
+                            .error_page--lf-center 
+                                p.title-sm3.cl-text.fw-7 Không tìm thấy trang
+                                p.note-lg.cl-text Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.
+                            .error_page--lf-bottom 
+                                +btn("Về trang chủ","","fal fa-arrow-right","")
+                    .error_page--rt.d-item 
+                        .error_page--rt-wrap 
+                            .error_page--rt-img 
+                                +img("errbg.png")
+                

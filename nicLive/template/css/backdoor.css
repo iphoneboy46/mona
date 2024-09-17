@@ -1,0 +1,43 @@
+
+/*# sourceMappingURL=backdoor.css.map */
+
+@media screen and (max-width:1200px) {
+    .banner_home--item.txt .banner_home--bg::before{
+        display: none;
+    }
+
+    .header{
+        background: #000;
+        border-bottom: 0.2rem solid #f26428;
+    }
+
+    .header_mobi .line{
+        background: #fff;
+    }
+
+    .header_btn--search-ic img{
+        filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(21%) hue-rotate(6deg) brightness(106%) contrast(106%) !important;
+    }
+
+    .header_logo img{
+        filter: brightness(0) saturate(100%) invert(95%) sepia(95%) saturate(21%) hue-rotate(6deg) brightness(106%) contrast(106%) !important;
+    }
+
+    .header .header_lang--title-wrap .note-text{
+        color: #fff;
+    }
+
+    .header .header_btn .btn-text{
+        color: #fff;
+    }
+
+    .header_btn .btn-ic i{
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .home_qc--item-bg::before{
+        display: none;
+    }
+}

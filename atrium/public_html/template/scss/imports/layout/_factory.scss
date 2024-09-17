@@ -1,0 +1,58 @@
+.factory {
+  --col-content: calc(486 / 1464 * 100%);
+  --col-image: calc(100% - var(--col-content));
+  .container-cust {
+    max-width: calc(100vw - ((100vw - 120rem) / 2));
+  }
+  .col-content {
+    width: var(--col-content);
+  }
+  .col-image {
+    width: var(--col-image);
+  }
+  &_image {
+    padding-right: 7.8rem;
+    padding-left: 5rem;
+    position: relative;
+    .image {
+      aspect-ratio: 1/1;
+      img {
+        @include img-cover;
+      }
+      &-1 {
+        max-width: 61.7%;
+      }
+      &-2 {
+        position: absolute;
+        right: 7.8rem;
+        top: 3.6rem;
+        width: 36.7%;
+        @include xs {
+          right: 4rem;
+        }
+      }
+    }
+  }
+  &_content {
+    padding-top: 3.6rem;
+    color: #cccccc;
+  }
+  @include lg {
+    .container-cust {
+      padding-left: calc(var(--container-padding-x) * 0.5);
+      padding-right: calc(var(--container-padding-x) * 0.5);
+    }
+    &_image {
+      padding-right: 3.2rem;
+      padding-left: 1.2rem;
+    }
+  }
+  @include md {
+    --col-content: 100%;
+    --col-image: 100%;
+    &_image {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title,content)
+  .post
+    .post_wrap
+      .post_top
+        a(href="").post_img
+          +img(img)
+      .post_bottom
+        .post_box
+          h3.cl-black2.title.fw-5.note-text 
+            a(href="") #{title}
+          p.note-sm.cl-gray3.content #{content}
+        a(href="").note-text.fw-6.cl-pri.link View post
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+    li
+      span.page-numbers.current 01
+    li
+      a.page-numbers(href='') 02
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 08
+    li
+      span.page-numbers.next 
+        i.fas.fa-chevron-right
+
+
+
+
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin foot1()
+  .foot.foot1
+    .foot_img 
+      +img("foot1.svg")
+
+mixin foot2()
+  .foot.foot2
+    .foot_img 
+      +img("foot2.svg")
+
+mixin foot3()
+  .foot.foot3
+    .foot_img 
+      +img("foot3.svg")

@@ -1,0 +1,228 @@
+extends layout/layout
+block vars
+    -title = 'Giới thiệu'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh1.png","Giới thiệu","Trang chủ","","Giới thiệu")
+    section.about_welcome
+        .container 
+            .about_welcome--wrap.d-wrap 
+                .about_welcome--lf.d-item
+                    .about_welcome--lf-wrap(data-aos="zoom-in")  
+                        .about_welcome--imgs 
+                            .about_welcome--img
+                                +img("abw1.png")
+                            .about_welcome--img 
+                                +img("abw2.png")
+                            .about_welcome--img 
+                                +img("abw3.png")
+                .about_welcome--rt.d-item
+                    .about_welcome--rt-wrap 
+                        .about_welcome--content 
+                            h2.title-sm2.fw-7.cl-five(data-aos="fade-up") 
+                                |Chào mừng bạn đến
+                                br
+                                |VINAMEX EDU
+                            p.note-text(data-aos="fade-up") Châm ngôn của chúng tôi là "kiến tạo ước mơ" và chúng tôi cam kết không ngừng nỗ lực để mang đến những trải nghiệm du học và đào tạo tốt nhất cho sinh viên Việt Nam. VINAMEX EDU hy vọng sẽ tiếp tục nhận được sự ủng hộ và tin tưởng từ quý vị, để cùng nhau xây dựng những chặng đường mới, vững chắc và thành công trong tương lai.
+    section.about_des 
+        .container 
+            .about_des--wrap 
+                ul.about_des--list.d-wrap
+                    -
+                        const abds = [
+                            {
+                                img:"abd1.png",
+                                title:"Du học",
+                                content:"Nhật, Hàn, Úc,  Đức, Canada, Mỹ",
+                                delay:0,
+                            },
+                            {
+                                img:"abd2.png",
+                                title:"Đào tạo ngoại ngữ",
+                                content:"Nhật, Hàn, Anh, Đức",
+                                delay:200,
+                            },
+                            {
+                                img:"abd3.png",
+                                title:"Các loại hình biên phiên dịch đa ngôn ngữ",
+                                content:"",
+                                delay:400,
+                            },
+                        ]
+                    each abd , i in abds
+                        li.about_des--item.d-item.d-3(data-aos="zoom-in" data-aos-delay=`${abd.delay}`) 
+                            .about_des--item-wrap 
+                                .about_des--item-lf 
+                                    span.ic 
+                                        +img(abd.img)
+                                .about_des--item-rt 
+                                    h2.title-mn.fw-6 #{abd.title}
+                                    p.note-text #{abd.content}
+    section.about_letter
+        .about_letter--bg(data-aos="zoom-out")  
+            +img("thuBg.png")
+        .about_letter--box
+            .container 
+                .about_letter--wrap(data-aos="fade-in")
+                    .about_letter--content 
+                        h2.title-sm2.cl-five.fw-6 Thư ngỏ
+                        br
+                        p.note-text Công ty Cổ phần Tập đoàn Giáo dục VINAMEX (VINAMEX EDU) xin gửi lời chào trân trọng và lời chúc sức khỏe, hạnh phúc và thành công đến quý đối tác và khách hàng.
+                        br
+                        p.note-text VINAMEX EDU với trách nhiệm và sứ mệnh cao cả, không ngừng hỗ trợ và khích lệ sinh viên Việt Nam thực hiện ước mơ du học và phát triển kỹ năng ngoại ngữ. Chúng tôi tự hào là đối tác đáng tin cậy của hàng ngàn sinh viên, đồng hành cùng họ trên con đường khám phá tri thức và trải nghiệm du học tại Nhật Bản, Hàn Quốc, Đức, Úc, Canada và Mỹ.
+                        br
+                        p.note-text VINAMEX EDU cam kết mang đến những dịch vụ tư vấn và hỗ trợ du học toàn diện, từ quá trình lựa chọn trường, chuẩn bị hồ sơ, đến quá trình hòa nhập và hỗ trợ sau khi đến đất nước mới. Đội ngũ chuyên viên tư vấn của chúng tôi luôn sẵn lòng hỗ trợ bạn trong việc chọn lựa trường học và chương trình phù hợp với nhu cầu và mục tiêu của mỗi người. Ngoài ra, chúng tôi còn cung cấp các chương trình đào tạo ngoại ngữ đa dạng, từ tiếng Nhật, Hàn, Anh, Đức đến các khóa phiên dịch chuyên nghiệp, giúp bạn nắm vững kỹ năng ngôn ngữ và phát triển sự nghiệp trong môi trường quốc tế.
+                        br
+                        p.note-text Châm ngôn của chúng tôi là "kiến tạo ước mơ" và chúng tôi cam kết không ngừng nỗ lực để mang đến những trải nghiệm du học và đào tạo tốt nhất cho sinh viên Việt Nam. VINAMEX EDU hy vọng sẽ tiếp tục nhận được sự ủng hộ và tin tưởng từ quý vị, để cùng nhau xây dựng những chặng đường mới, vững chắc và thành công trong tương lai.
+                        br
+                        p.note-text Trân trọng cảm ơn sự tin tưởng và đồng hành của quý vị!
+                    .about_letter--author
+                        .about_letter--author-img 
+                            +img("author.png")
+                        .about_letter--author-content
+                            p.note-text.title Tổng giám đốc
+                            p.note-text.name.fw-7.t-up ĐỖ XUÂN CHIẾN
+    section.about_why
+        .about_why--bg
+            +img("abwbg.png")
+        .container 
+            .about_why--wrap 
+                .about_why--list.d-wrap 
+                    .about_why--item.d-item.d-4(data-aos="fade-right" data-aos-delay="0")
+                        .about_why--item-wrap 
+                            .about_why--item-content 
+                                h2.title-sm2.cl-second.fw-7 Vì sao nên chọn chúng tôi?
+                                p.note-text.cl-white VINAMEX EDU với trách nhiệm và sứ mệnh cao cả, không ngừng hỗ trợ và khích lệ sinh viên Việt Nam thực hiện ước mơ du học và phát triển kỹ năng ngoại ngữ.
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="200")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic1.png")
+                                p.note-text.t-center.cl-white Đội ngũ đào tạo và xử lý hồ sơ dày dặn kinh nghiệm
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="400")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic2.png")
+                                p.note-text.t-center.cl-white Cơ sở vật chất hiện đại, đầy đủ thiết bị hỗ trợ học tập
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="600")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic5.png")
+                                p.note-text.t-center.cl-white Chương trình học bổng lên đến 80% tại các trường danh tiếng
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="800")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic4.png")
+                                p.note-text.t-center.cl-white Tư vấn, hỗ trợ sinh viên học tập và sinh sống trong quá trình du học
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="1000")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic3.png")
+                                p.note-text.t-center.cl-white Cung cấp và tư vấn các dịch vụ trọn gói, thủ tục cần thiết đi du học
+                    .about_why--item.d-item.d-4(data-aos="fade-up" data-aos-delay="1200")
+                        .about_why--item-wrap 
+                            .about_why--item-box 
+                                span.ic 
+                                    +img("wic6.png")
+                                p.note-text.t-center.cl-white Tỉ lệ đậu Visa cao trên 90%
+    section.about_cv
+        .about_cv--wrap 
+            .about_ts.ani 
+                .container 
+                    .about_ts--wrap.d-wrap 
+                        .about_ts--lf.d-item
+                            .about_ts--lf-wrap 
+                                .about_ts--lf-img
+                                    +img("ts.png")
+                        .about_ts--rt.d-item
+                            .about_ts--rt-wrap
+                                .about_ts--rt-box
+                                    .about_ts--rt-list 
+                                        .about_ts--rt-item
+                                            .about_ts--rt-item-wrap 
+                                                .about_ts--rt-item-title 
+                                                    span.around
+                                                        span.around-Cung
+                                                        span.around-tt
+                                                    .about_ts--rt-item-title-wrap
+                                                        span.ic 
+                                                            +img("tsic1.png")
+                                                        h2.title-sm2.fw-7.cl-five Tầm nhìn
+                                                .about_ts--rt-item-content 
+                                                    p.note-text Tạo nền tảng vững chắc để các bạn trẻ Việt Nam có thể mở rộng tầm nhìn của mình ra thế giới. VINAMEX EDU hướng đến việc nằm trong Top đầu thương hiệu cung cấp dịch vụ Đào tạo và Tư vấn du học sang các nước phát triển tại Việt Nam, mở ra cơ hội phát triển cho hàng triệu người Việt Nam. VINAMEX EDU không chỉ giúp các bạn trẻ tiếp cận được với học vị cao hơn mà còn giúp họ phát triển kỹ năng mềm và hiểu biết đa văn hóa.
+                                        .about_ts--rt-item
+                                            .about_ts--rt-item-wrap 
+                                                .about_ts--rt-item-title 
+                                                    span.around
+                                                        span.around-Cung
+                                                        span.around-tt
+                                                    .about_ts--rt-item-title-wrap
+                                                        span.ic 
+                                                            +img("tsic2.png")
+                                                        h2.title-sm2.fw-7.cl-five Sứ mệnh
+                                                .about_ts--rt-item-content 
+                                                    p.note-text VINAMEX EDU là cầu nối giáo dục quốc tế, giúp các bạn trẻ Việt Nam tiếp cận chương trình du học chất lượng tại các trường uy tín ở hật Bản, Hàn Quốc, Đức, Úc, Canada và Mỹ. Đồng thời, chúng tôi cam kết cung cấp dịch vụ đào tạo chất lượng, đảm bảo học viên đạt mục tiêu đầu ra trong thời gian ngắn nhất. Tạo nhiều cộng đồng giao lưu giá trị văn hóa giữa các nước. Gắn kết mối quan hệ bền vững Việt Nam - quốc tế.
+            .about_core.free-slide 
+                .container 
+                    .about_core--wrap 
+                        .about_core--title 
+                            span.ic(data-aos="fade-up") 
+                                +img("coreic.png")
+                            h2.title-sm2.cl-five.fw-7.t-center(data-aos="fade-up")  Giá trị cốt lõi
+                            p.note-text.t-center(data-aos="fade-up") Giá trị cốt lõi mà Vinamex Edu muốn mang đến cho khách hàng của mình gồm: Uy tín, Trách nhiệm, Tốc độ và Hiệu quả 
+                        .about_core--list.d-wrap 
+                            .swiper.mySwiper.--auto 
+                                .swiper-wrapper 
+                                    -
+                                        const cs = [
+                                            {
+                                                title:"Uy tín",
+                                                content:"Mang đến thông tin rõ ràng và giải pháp thực tế, cam kết thực hiện mục tiêu chính xác.",
+                                                delay:0
+                                            },
+                                            {
+                                                title:"Trách nhiệm",
+                                                content:"Luôn lắng nghe và thấu hiểu mọi nhu cầu của học viên và phụ huynh, xử lý thông tin nhanh chóng và trách nhiệm.",
+                                                delay:200
+                                            },
+                                            {
+                                                title:"Tốc độ",
+                                                content:"Thực hiện yêu cầu ngay lập tức, với thái độ khẩn trương và tận tâm đối với học viên.",
+                                                delay:400
+                                            },
+                                            {
+                                                title:"Hiệu quả",
+                                                content:"Chất lượng dịch vụ và sự hài lòng của khách hàng là ưu tiên hàng đầu, đồng lòng góp sức để đưa công ty tới thành công.",
+                                                delay:600
+                                            }
+                                        ]
+                                    each c , i in cs
+                                        .swiper-slide.d-4.d-item
+                                            .about_core--item(data-aos="fade-up" data-aos-delay=`${c.delay}`) 
+                                                .about_core--item-wrap 
+                                                    h3.note-lg.fw-6.t-center.cl-second #{c.title}
+                                                    p.note-text.t-center.cl-white #{c.content}
+                            .swiper-pagination
+    section.want
+        .want_bg 
+            +img("wbg.png")
+        .container
+            .want_wrap 
+                .want_box 
+                    .want_logo 
+                        +img("logoHD.png")
+                    .want_content 
+                        h2.title-sm2.fw-7.t-center.cl-five 
+                            |Bạn muốn đi du học 
+                            br
+                            |nhưng không biết bắt đầu từ đâu?
+                        p.note-text.t-center Liên hệ với chúng tôi để được tư vấn nhanh nhất
+                    .want_btn 
+                        +btn("Liên hệ ngay","","fas fa-caret-right","trans")

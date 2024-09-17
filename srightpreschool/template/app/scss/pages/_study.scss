@@ -1,0 +1,280 @@
+.study_program {
+    margin-bottom: calc(var(--size-pd) * -1);
+    overflow: hidden;
+
+    &--wrap {}
+
+    &--bg {
+        &-wrap {}
+
+         &-img {
+        //     padding-top: calc(100% * 987 / 1728);
+            width: 100%;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+
+            img {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+
+    &--topic {
+        overflow: hidden;
+        padding-top: var(--size-pd);
+        padding-bottom: var(--size-pd);
+
+        @include max(800px){
+        padding-top: var(--size-pdl);
+
+        }
+
+        &-wrap {
+            @include max(800px) {
+                flex-direction: column;
+                row-gap: var(--rowContent4);
+            }
+        }
+
+        &-lf {
+            width: calc(100% * 6 / 12);
+
+            @include max(800px) {
+                width: 100%;
+            }
+
+            &-wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+
+                .box-wrap {
+                    padding: var(--size-pd) 0;
+
+                    .title-lg{
+                        @include max(1200px){
+                            br{
+                                display: none;
+                            }
+                        }
+
+                        @include max(600px){
+                            text-align: center;
+                        }
+                    }
+
+                    .number-text{
+                        
+                        @include max(600px){
+                            text-align: center !important;
+                        }
+                    }
+
+                    @include max(800px){
+                        padding: 0 !important;
+                    }
+
+                }
+            }
+        }
+
+        &-rt {
+            flex: 1;
+
+            @include max(800px) {
+
+                width: 100%;
+            }
+
+            &-wrap {
+                margin-right: calc((100vw - 120rem) / -3.5);
+
+                @include max(1230px) {
+
+                    margin-right: -1.6rem;
+                }
+
+                @include max(800px) {
+
+                    margin-right: 0rem;
+                }
+
+            }
+        }
+
+        &-bg {
+            padding-top: calc(100% * 650 / 688);
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+            }
+        }
+    }
+
+    &--ntl {
+        padding-top: var(--size-pdl);
+        padding-bottom: var(--size-pdl);
+        background: $color-second;
+
+        &-wrap {
+            align-items: center;
+
+            @include max(800px) {
+                flex-direction: column;
+                row-gap: var(--rowContent4);
+            }
+        }
+
+        &-bg {
+            padding-top: calc(100% * 513 / 520);
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: block;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-lf {
+            @include max(800px) {
+                width: 100%;
+            }
+        }
+
+        &-rt {
+            @include max(800px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.study_oneDay {
+    padding-top: var(--size-pd);
+
+    &--wrap {}
+
+    &--bg {
+        // padding-top: calc(100% * 798 / 1216);
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: var(--radius12);
+
+        @include hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.2);
+            z-index: 1;
+            opacity: 0;
+            transition: 0.3s linear;
+        }
+
+        img {
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+}
+
+.study_menu {
+    padding-top: var(--size-pd);
+
+    &--wrap {}
+
+    &--bg {
+        padding-top: calc(100% * 1458 / 1216);
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        border-radius: var(--radius12);
+
+        @include hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #000000, $alpha: 0.2);
+            z-index: 1;
+            opacity: 0;
+            transition: 0.3s linear;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.study_uniform {
+    margin-bottom: calc(var(--size-pd) * -1);
+    overflow: hidden;
+
+    &-wrap {}
+}
+
+.study_health {
+    margin-bottom: calc(var(--size-pd) * -1);
+    overflow: hidden;
+
+    &-wrap {}
+}

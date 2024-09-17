@@ -1,0 +1,94 @@
+footer.footer
+    .container
+        .footer_wrap
+            .footer_top
+                .footer_top--wrap.d-wrap
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            .footer_title
+                                .footer_logo
+                                    +img("logoFT.svg")
+                                p.note-text.cl-white 
+                                    |Bằng cách đăng ký theo dõi, quý phụ huynh sẽnhận được những tin tức, sự kiện và thông báo trong tương lai từ 
+                                    a(href="").fw-7 SRIGHT
+                            .footer_form
+                                form
+                                    .footer_form--wrap
+                                        input.form-item-ip(placeholder="Vui lòng điền địa chỉ email")
+                                        +btn("Đăng ký","","","")
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            p.note-lg.cl-white.fw-6 Địa chỉ
+                            a.note-text(href="").cl-white M1-12 The Manhattan Glory, Vinhomes Grandpark, Thủ Đức, Thủ Đức, Vietnam
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            p.note-lg.cl-white.fw-6 Hỗ trợ
+                            .address
+                                ul.address_list
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-text Phone:
+                                            a.address_link(href="") (84+) 866017784
+                                    li.address_item
+                                        .address_item--content
+                                            p.note-text Email:
+                                            a.address_link(href="") Srightpreschool@gmail.com
+
+                    .footer_top--item.d-item
+                        .footer_top--item-wrap
+                            p.note-lg.cl-white.fw-6 Liên kết hữu ích
+                            ul.menu-list
+                                -
+                                    const ft2s = [
+                                        {
+                                            title:"Về chúng tôi",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Chương Trình Học",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Chăm sóc",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"Tin tức",
+                                            dropdown:false
+                                        },
+                                        {
+                                            title:"FAQs",
+                                            dropdown:false
+                                        },
+                                    ]
+                                each ft , i in ft2s
+                                    li.menu-item
+                                        a(href="").menu-link #{ft.title}
+            .footer_bottom
+                .footer_bottom--wrap
+                    .footer_mona
+                        p.note-sm.cl-white © All Right Reserved 
+                        +img("monaFT.svg")
+                    .social
+                        ul.social_list
+                            li.social_item
+                                a(href="").social_link 
+                                    span.social_img
+                                        +img("sic1.svg")
+                            li.social_item
+                                a(href="").social_link 
+                                    span.social_img
+                                        +img("sic2.svg")
+                            li.social_item
+                                a(href="").social_link 
+                                    span.social_img
+                                        +img("sic3.svg")
+                            li.social_item
+                                a(href="").social_link 
+                                    span.social_img
+                                        +img("sic4.svg")
+                            li.social_item
+                                a(href="").social_link 
+                                    span.social_img
+                                        +img("sic5.svg")
+

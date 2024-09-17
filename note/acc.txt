@@ -1,0 +1,116 @@
+section.accessory
+        .container2 
+            .accessory_wrap.tab-box 
+                .box-title 
+                    h2.title-md.fw-7.fw-i.cl-white.fl-sec.t-up(data-aos="fade-up") PHỤ KIỆN THAY THẾ
+                    .box_filter.free-slide2(data-aos="fade-up" data-aos-delay="500")
+                        .box_filter--list.d-wrap
+                            .swiper.mySwiper 
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item 
+                                        .box_filter--item.tab-btn.actived 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up kính chắn gió
+                                    .swiper-slide.d-item 
+                                        .box_filter--item.tab-btn 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up Phụ kiện thông gió
+                                    .swiper-slide.d-item 
+                                        .box_filter--item.tab-btn 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up PHỤ KIỆN KHÁC
+                                    .swiper-slide.d-item 
+                                        .box_filter--item.tab-btn 
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up XEM TẤT CẢ
+                            .swiper-scrollbar
+                .accessory_box(data-aos="fade-up" data-aos-delay="1000")
+                    .accessory_list.d-wrap 
+                        .accessory_items.free-slide.tab-content.showed
+                            .accessory_items--wrap
+                                .swiper.mySwiper
+                                    .swiper-wrapper 
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                .swiper-pagination
+                                .accessory_btn(data-aos="fade-up" data-aos-delay="0")
+                                    +btn("xem tất cả","","","")
+                        .accessory_items.free-slide.tab-content
+                            .accessory_items--wrap
+                                .swiper.mySwiper
+                                    .swiper-wrapper 
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                .swiper-pagination
+                                .accessory_btn(data-aos="fade-up" data-aos-delay="0")
+                                    +btn("xem tất cả","","","")
+                        .accessory_items.free-slide.tab-content
+                            .accessory_items--wrap
+                                .swiper.mySwiper
+                                    .swiper-wrapper 
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                .swiper-pagination
+                                .accessory_btn(data-aos="fade-up" data-aos-delay="0")
+                                    +btn("xem tất cả","","","")
+                        .accessory_items.free-slide.tab-content
+                            .accessory_items--wrap
+                                .swiper.mySwiper
+                                    .swiper-wrapper 
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                        .swiper-slide.d-item.d-4 
+                                            .accessory_item 
+                                                +product2("sale")
+                                .swiper-pagination
+                                .accessory_btn(data-aos="fade-up" data-aos-delay="0")
+                                    +btn("xem tất cả","","","")

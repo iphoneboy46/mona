@@ -1,0 +1,571 @@
+extends layout/layout
+block vars
+    -title = 'Tour chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .breadcrumbs.other
+        .container
+            .breadcrumbs-wrap
+                ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Trang chủ  
+                    li.breadcrumbs-item
+                        a.breadcrumbs-link(href='') Tin tức 
+                    li.breadcrumbs-item.current-item
+                        a.breadcrumbs-link(href='') Khám phá hệ thống Hang động Chà Lòi
+    section.tourCt 
+        .container 
+            .tourCt_wrap 
+                .tourCt_top
+                    .tourCt_top--wrap
+                        .news_ct--lf-title
+                            .news_ct--lf-title-top 
+                                h2.title-sm2.cl-text.fw-6 Khám phá hệ thống Hang động Chà Lòi
+                            .news_ct--lf-title-bottom
+                                ul.tour_infos
+                                    li.tour_info 
+                                        .tour_star
+                                            span.ic 
+                                                i.fas.fa-star
+                                            p.note-sm.cl-text2.fw-6 5.0
+                                    li.tour_info 
+                                        .tour_dg 
+                                            a(href="").note-sm.cl-text2.fw-6 7 Đánh giá
+                                    li.tour_info 
+                                        .tour_day 
+                                            p.note-sm.cl-gray5 Quảng Bình, Việt Nam
+                                a.btn
+                                    span.btn-ic 
+                                        +img("share.svg")
+                                    span.btn-text Chia sẻ
+                        .tourCt_albums 
+                            .tourCt_albums--list 
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+                                .tourCt_albums--item
+                                    .tourCt_albums--item-wrap.gallery 
+                                        a(href="./assets/images/alb1.png" data-fancybox="gallery").tourCt_albums--img 
+                                            +img("alb1.png")
+
+                            .tourCt_albums--btn 
+                                button.btn.cl-7 
+                                    span.btn-ic 
+                                        +img("albic.svg")
+                                    span.btn-text Xem tất cả hình ảnh
+                .tourCt_bottom  
+                    .tourCt_bottom--wrap.d-wrap 
+                        .tourCt_bottom--lf.d-item 
+                            .tourCt_bottom--lf-wrap 
+                                .tourCt_box 
+                                    .tourCt_box--list.d-wrap 
+                                        .tourCt_box--item.d-item.d-2 
+                                            .tourCt_box--item-wrap 
+                                                .tourCt_box--item-lf 
+                                                    span.ic 
+                                                        +img("tic1.png")
+                                                .tourCt_box--item-rt 
+                                                    p.note-text.cl-text.fw-6 Khởi hành
+                                                    p.note-sm.cl-gray Từ Hồ Chí Minh
+                                        .tourCt_box--item.d-item.d-2 
+                                            .tourCt_box--item-wrap 
+                                                .tourCt_box--item-lf 
+                                                    span.ic 
+                                                        +img("tic1.png")
+                                                .tourCt_box--item-rt 
+                                                    p.note-text.cl-text.fw-6 Điểm đến
+                                                    p.note-sm.cl-gray Hang Chà Vòi, Khám phá Quảng Bình
+                                        .tourCt_box--item.d-item.d-2 
+                                            .tourCt_box--item-wrap 
+                                                .tourCt_box--item-lf 
+                                                    span.ic 
+                                                        +img("tic2.png")
+                                                .tourCt_box--item-rt 
+                                                    p.note-text.cl-text.fw-6 Thời gian
+                                                    p.note-sm.cl-gray 1 ngày, trong ngày
+                                .box_tabs.free-slide2
+                                    .box_tabs--wrap 
+                                        .box_tabs--list.tab-scrolls.d-wrap 
+                                            .swiper.mySwiper 
+                                                .swiper-wrapper 
+                                                    .swiper-slide.d-item 
+                                                        a(href="#intro").box_tabs--item.tab-scroll.actived 
+                                                            p.note-text.title.cl-text Giới thiệu
+                                                    .swiper-slide.d-item 
+                                                        a(href="#schedule").box_tabs--item.tab-scroll 
+                                                            p.note-text.title.cl-text Lịch trình
+                                                            span.box-nb 2024
+                                                    .swiper-slide.d-item 
+                                                        a(href="#noteDk").box_tabs--item.tab-scroll 
+                                                            p.note-text.title.cl-text Chú ý và điều khoản
+                                            .swiper-scrollbar
+                                .tourCt_bottom--lf-content
+                                    .tourCt_bottom--lf-content-wrap.parent-wrapper(id="intro")
+                                        .tourCt_bottom--lf-content-title
+                                            h3.note-lg.fw-6.cl-pri Giới thiệu
+                                        .tourCt_bottom--lf-content-text
+                                            p.note-text Đến với hành trình tour khám phá hệ thống Hang Chà Lòi 1 ngày quý khách sẽ trong vai trò mình là một nhà thám hiểm hang động, được công ty du lịch cung cấp thiết bị đèn pin đội đầu, nón bảo hiểm, với sự dẫn dắt, chuẩn bị chu đáo đến từ đội poster và hướng dẫn viên dày dặn kinh nghiệm từ công ty du lịch sẽ đưa du khách đi từ bất ngờ này đến bất ngờ khác.
+                                            br
+                                            +img("tct1.png")
+                                            br
+                                            br
+                                            p.note-text Điều thú vị không chỉ là trải qua các hoạt động: lăn, lê, bò, trườn. Mà hơn hết khi đặt chân đến đây chính bạn mới thực sự nhận ra có nhiều điều phi thường chỉ có thiên nhiên tạo hóa mới làm được, không thể là con người tạo ra những hang động. Những âm thanh của những tiếng nước chảy róc rách trong hang động.
+                                            br
+                                            +img("tct2.png")
+                                            br
+                                            br
+                                            p.note-text Với một khoảng không gian vô cùng rộng lớn, quý khách sẽ cùng lắng động trong chốc lát khi được nghỉ ngơi tận hưởng bầu không khí trong lành, nhường lại cho một chút suy tư, chút bộc bạch trong lòng với những bản nhạc thiền cất lên giúp cho cả bạn và tôi cùng lắng động cái tôi trong chính quãng đường, về quãng thời gian trước đây, là lúc những cái bắt tay, những cái ôm khoảng cách dần xóa bỏ, nhường lại cho tình yêu thương, sự giúp đỡ, tiếng cười nói trong suốt cả hành trình dù phía trước ta có bao nhiêu thử thách đi chăng nữa.
+                                            br
+                                            p.note-text Đến với hành trình tour khám phá hệ thống Hang Chà Lòi 1 ngày quý khách sẽ trong vai trò mình là một nhà thám hiểm hang động, được công ty du lịch cung cấp thiết bị đèn pin đội đầu, nón bảo hiểm, với sự dẫn dắt, chuẩn bị chu đáo đến từ đội poster và hướng dẫn viên dày dặn kinh nghiệm từ công ty du lịch sẽ đưa du khách đi từ bất ngờ này đến bất ngờ khác.
+                                            br
+                                            +img("tct1.png")
+                                            br
+                                            br
+                                            p.note-text Điều thú vị không chỉ là trải qua các hoạt động: lăn, lê, bò, trườn. Mà hơn hết khi đặt chân đến đây chính bạn mới thực sự nhận ra có nhiều điều phi thường chỉ có thiên nhiên tạo hóa mới làm được, không thể là con người tạo ra những hang động. Những âm thanh của những tiếng nước chảy róc rách trong hang động.
+                                            br
+                                            +img("tct2.png")
+                                            br
+                                            br
+                                            p.note-text Với một khoảng không gian vô cùng rộng lớn, quý khách sẽ cùng lắng động trong chốc lát khi được nghỉ ngơi tận hưởng bầu không khí trong lành, nhường lại cho một chút suy tư, chút bộc bạch trong lòng với những bản nhạc thiền cất lên giúp cho cả bạn và tôi cùng lắng động cái tôi trong chính quãng đường, về quãng thời gian trước đây, là lúc những cái bắt tay, những cái ôm khoảng cách dần xóa bỏ, nhường lại cho tình yêu thương, sự giúp đỡ, tiếng cười nói trong suốt cả hành trình dù phía trước ta có bao nhiêu thử thách đi chăng nữa.
+                                    .tourCt_bottom--lf-content-btn 
+                                        button.btn.btn-see-more
+                                            span.btn-text Xem thêm
+                                            span.btn-ic 
+                                                i.far.fa-chevron-down
+                                        button.btn.btn-exit-more
+                                            span.btn-text Rút gọn
+                                            span.btn-ic 
+                                                i.far.fa-chevron-up
+                                .tourCt_schedule(id="schedule")
+                                    .tourCt_schedule--wrap
+                                        .tourCt_schedule--title
+                                            h3.note-lg.fw-6.cl-pri Lịch trình
+                                        .tourCt_schedule--list 
+                                            .tourCt_schedule--item
+                                                .tourCt_schedule--item-wrap 
+                                                    .tourCt_schedule--item-lf 
+                                                        span.ic 
+                                                            i.fal.fa-check
+                                                    .tourCt_schedule--item-rt 
+                                                        .tourCt_schedule--item-rt-top 
+                                                            h4.note-lg.fw-6.cl-text Khởi hành
+                                                            p.note-text.cl-gray 7 giờ 30 sáng
+                                                        .tourCt_schedule--item-rt-bottom 
+                                                            .tourCt_schedule--item-rt-content
+                                                                p.note-text 09h20: Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.
+                                                                p.note-text Đoàn sẽ đến bia Di tích lịch sử tổng trạm thông tin A72 , nơi được giao nhiệm vụ đảm bảo thông tin liên lạc cho chiến trường Miền Nam với nhiều mệnh lệnh quan trọng được truyền trong hang đá này. Sau đó, quý khách đến với hành trình khám phá hang Chà Lòi. Tại đây du khách sẻ trải nghiệm nhiều hoạt động và cung bậc cảm xúc khác nhau như  đi bộ, bò, leo trèo, bơi lội trải nghiệm với hành trình hơn 4km đi trong hang. Du khách cũng đến với sân khấu dã chiến của bộ đội trong chiến tranh Việt Nam.
+                                                                p.note-text Trong hành trình khám phá này du khách sẽ được chụp nhiều bức hình khám phá đẹp trong hang. Ngoài chiêm ngưỡng hệ thống thạch nhũ tráng lệ cũng như trải nghiệm khám phá mạo hiểm, du khách sẽ đến với con đường hầm tình yêu tuyệt đẹp.
+                                            .tourCt_schedule--item
+                                                .tourCt_schedule--item-wrap 
+                                                    .tourCt_schedule--item-lf 
+                                                        span.ic 
+                                                            p.note-text 1
+                                                    .tourCt_schedule--item-rt 
+                                                        .tourCt_schedule--item-rt-top 
+                                                            h4.note-lg.fw-6.cl-text Chinh phục hang Chà Lòi
+                                                            p.note-text.cl-gray 7 giờ 30 sáng
+                                                        .tourCt_schedule--item-rt-bottom 
+                                                            .tourCt_schedule--item-rt-content
+                                                                p.note-text 09h20: Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.
+                                                                p.note-text Đoàn sẽ đến bia Di tích lịch sử tổng trạm thông tin A72 , nơi được giao nhiệm vụ đảm bảo thông tin liên lạc cho chiến trường Miền Nam với nhiều mệnh lệnh quan trọng được truyền trong hang đá này. Sau đó, quý khách đến với hành trình khám phá hang Chà Lòi. Tại đây du khách sẻ trải nghiệm nhiều hoạt động và cung bậc cảm xúc khác nhau như  đi bộ, bò, leo trèo, bơi lội trải nghiệm với hành trình hơn 4km đi trong hang. Du khách cũng đến với sân khấu dã chiến của bộ đội trong chiến tranh Việt Nam.
+                                                                p.note-text Trong hành trình khám phá này du khách sẽ được chụp nhiều bức hình khám phá đẹp trong hang. Ngoài chiêm ngưỡng hệ thống thạch nhũ tráng lệ cũng như trải nghiệm khám phá mạo hiểm, du khách sẽ đến với con đường hầm tình yêu tuyệt đẹp.
+                                            .tourCt_schedule--item
+                                                .tourCt_schedule--item-wrap 
+                                                    .tourCt_schedule--item-lf 
+                                                        span.ic 
+                                                            p.note-text 2
+                                                    .tourCt_schedule--item-rt 
+                                                        .tourCt_schedule--item-rt-top 
+                                                            h4.note-lg.fw-6.cl-text Check in thung lũng tình yêu
+                                                            p.note-text.cl-gray 7 giờ 30 sáng
+                                                        .tourCt_schedule--item-rt-bottom 
+                                                            .tourCt_schedule--item-rt-content
+                                                                p.note-text 09h20: Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.
+                                                                p.note-text Đoàn sẽ đến bia Di tích lịch sử tổng trạm thông tin A72 , nơi được giao nhiệm vụ đảm bảo thông tin liên lạc cho chiến trường Miền Nam với nhiều mệnh lệnh quan trọng được truyền trong hang đá này. Sau đó, quý khách đến với hành trình khám phá hang Chà Lòi. Tại đây du khách sẻ trải nghiệm nhiều hoạt động và cung bậc cảm xúc khác nhau như  đi bộ, bò, leo trèo, bơi lội trải nghiệm với hành trình hơn 4km đi trong hang. Du khách cũng đến với sân khấu dã chiến của bộ đội trong chiến tranh Việt Nam.
+                                                                p.note-text Trong hành trình khám phá này du khách sẽ được chụp nhiều bức hình khám phá đẹp trong hang. Ngoài chiêm ngưỡng hệ thống thạch nhũ tráng lệ cũng như trải nghiệm khám phá mạo hiểm, du khách sẽ đến với con đường hầm tình yêu tuyệt đẹp.
+                                            .tourCt_schedule--item
+                                                .tourCt_schedule--item-wrap 
+                                                    .tourCt_schedule--item-lf 
+                                                        span.ic 
+                                                            p.note-text 3
+                                                    .tourCt_schedule--item-rt 
+                                                        .tourCt_schedule--item-rt-top 
+                                                            h4.note-lg.fw-6.cl-text Kết tour
+                                                            p.note-text.cl-gray 7 giờ 30 sáng
+                                                        .tourCt_schedule--item-rt-bottom 
+                                                            .tourCt_schedule--item-rt-content
+                                                                p.note-text 09h20: Quý khách đến với trung tâm điều hành của công ty ở bản cây Sung. Tại trung tâm điều hành du khách được trang bị đèn Pin, giày, dép và găng tay chuyên dụng và các thiết bị cần thiết để phục vụ thám hiểm hang động. Du khách được nghe hướng dẫn của hướng dẫn viên về sử dụng thiết bị cũng như một số quy tắc khám phá hang động. Sau đó đoàn trải nghiệm nét độc đáo của Hang Nước một hang nhỏ nhưng có nhiều dấu ấn trong chiến tranh Việt Nam.
+                                                                p.note-text Đoàn sẽ đến bia Di tích lịch sử tổng trạm thông tin A72 , nơi được giao nhiệm vụ đảm bảo thông tin liên lạc cho chiến trường Miền Nam với nhiều mệnh lệnh quan trọng được truyền trong hang đá này. Sau đó, quý khách đến với hành trình khám phá hang Chà Lòi. Tại đây du khách sẻ trải nghiệm nhiều hoạt động và cung bậc cảm xúc khác nhau như  đi bộ, bò, leo trèo, bơi lội trải nghiệm với hành trình hơn 4km đi trong hang. Du khách cũng đến với sân khấu dã chiến của bộ đội trong chiến tranh Việt Nam.
+                                                                p.note-text Trong hành trình khám phá này du khách sẽ được chụp nhiều bức hình khám phá đẹp trong hang. Ngoài chiêm ngưỡng hệ thống thạch nhũ tráng lệ cũng như trải nghiệm khám phá mạo hiểm, du khách sẽ đến với con đường hầm tình yêu tuyệt đẹp.
+                                .tourCt_note(id="noteDk") 
+                                    .tourCt_note--wrap 
+                                        .tourCt_note--title 
+                                            h3.note-lg.fw-6.cl-pri Chú ý và điều khoản
+                                        .tourCt_note--table 
+                                            table 
+                                                thead
+                                                    tr
+                                                        th 
+                                                            p.note-text.fw-7.cl-text Số lượng khách
+                                                        th 
+                                                            p.note-text.fw-7.cl-text Giá Tour
+                                                tbody
+                                                    tr
+                                                        td(data-label="Số lượng khách") 
+                                                            p.note-text.cl-gray3 2 khách trở lên 
+                                                        td(data-label="Giá Tour")
+                                                            p.note-text.cl-gray3 1.650.000đ/khách
+                                        .tourCt_note--include
+                                            .tourCt_note--include-wrap 
+                                                h4.note-text.fw-6.cl-text Giá bao gồm
+                                                .tourCt_note--include-list.d-wrap 
+                                                    -
+                                                        const ils = [
+                                                            {
+                                                                img:"i1.png",
+                                                                title:"Xe vận chuyển chất lượng cao điều hoà suốt tuyến"
+                                                            },
+                                                            {
+                                                                img:"i2.png",
+                                                                title:"Quà tặng du lịch: Mũ Netin Travel"
+                                                            },
+                                                            {
+                                                                img:"i3.png",
+                                                                title:"Hướng dẫn viên nhiệt tình, kinh nghiệm"
+                                                            },
+                                                            {
+                                                                img:"i4.png",
+                                                                title:"Thiết bị thám hiểm"
+                                                            },
+                                                            {
+                                                                img:"i5.png",
+                                                                title:"Hướng dẫn viên nhiệt tình, kinh nghiệm"
+                                                            },
+                                                            {
+                                                                img:"i6.png",
+                                                                title:"Bảo hiểm du lịch (20.000.000vnđ/vụ)"
+                                                            },
+                                                            {
+                                                                img:"i7.png",
+                                                                title:"Porters chuyên nghiệp vận chuyển, gửi hàng hóa"
+                                                            }
+                                                        ]
+                                                    each il , i in ils
+                                                        .tourCt_note--include-item.d-item.d-2 
+                                                            .tourCt_note--include-item-wrap 
+                                                                span.ic 
+                                                                    +img(il.img)
+                                                                p.note-sm.cl-text #{il.title}
+                                        .tourCt_note--alert 
+                                            .tourCt_note--alert-wrap
+                                                h4.note-text.fw-6.cl-text Lưu ý
+                                                .tourCt_note--alert-list 
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Tour hoạt động
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 Quanh năm trừ những ngày bão lũ
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Thời gian hành trình tour	
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 1 ngày
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Mức độ mạo hiểm	
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 1 ngàyTrung bình (8km), phù hợp với người năng động
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Khởi hành		
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 Hàng ngày
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Số lượng khách		
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 Từ 2 khách – 30khách
+                                                    .tourCt_note--alert-item
+                                                        .tourCt_note--alert-item-wrap 
+                                                            .tourCt_note--alert-item-lf 
+                                                                p.note-text.fw-6.cl-gray3 Giới hạn độ tuổi tham gia tour
+                                                            .tourCt_note--alert-item-rt 
+                                                                p.note-text.cl-gray3 Từ 8 tuổi trở lên
+                                        .tourCt_note--table 
+                                            table 
+                                                thead
+                                                    tr
+                                                        th 
+                                                            p.note-text.fw-7.cl-text Chúng tôi sẽ cung cấp	
+                                                        th 
+                                                            p.note-text.fw-7.cl-text Bạn cần chuẩn bị
+                                                tbody
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Thiết bị thám hiểm hang động và thiết bị an toàn 
+                                                        td(data-label="Bạn cần chuẩn bị")
+                                                            p.note-text.cl-gray3 1 bộ quần áo dài nhanh khô, thuận tiện trong chuyến đi
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Giày đi bộ ( size 36 đến 46)
+                                                        td(data-label="Bạn cần chuẩn bị")
+                                                            p.note-text.cl-gray3 Khăn tắm
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Bữa trưa và nước
+                                                        td(data-label="Bạn cần chuẩn bị")
+                                                            p.note-text.cl-gray3 1 đôi giày leo núi chuyên dụng ( có hoặc không)
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Hướng dẫn viên
+                                                        td(data-label="Bạn cần chuẩn bị")
+                                                            p.note-text.cl-gray3 1 bộ áo quần để thay trong chuyến đi 1 đôi vớ, tất dài và dày
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Đội ngũ đầu bếp
+                                                        td(data-label="Bạn cần chuẩn bị")
+                                                            p.note-text.cl-gray3 Đồ dùng cá nhân: kem chống nắng, mũ, máy ảnh, đồ lót, đồ dùng vệ sinh 
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Nhà vệ sinh thân thiện với môi trường
+                                                    tr
+                                                        td(data-label="Chúng tôi sẽ cung cấp") 
+                                                            p.note-text.cl-gray3 Túi cấp cứu và thiết bị cứu hộ
+                        .tourCt_bottom--rt.d-item 
+                            .tourCt_bottom--rt-wrap 
+                                .tourCt_infos 
+                                    .tourCt_infos--book-list
+                                        .tourCt_infos--book-item.showed
+                                            .tourCt_infos--book-item-wrap 
+                                                .tourCt_infos--top 
+                                                    .tourCt_infos--title 
+                                                        p.note-lg.fw-6.cl-text Đặt lịch chuyến đi
+                                                    .tourCt_infos--dates 
+                                                        .tourCt_infos--date
+                                                            p.note-text.fw-6.cl-text Ngày khởi hành
+                                                            .tourCt_infos--date-wrap 
+                                                                .tourCt_infos--date-lf 
+                                                                    .tourCt_infos--date-ip
+                                                                        input(type="text" id="datepicker")
+                                                                .tourCt_infos--date-rt
+                                                                    .tourCt_infos--date-ic 
+                                                                        +img("lich.png")
+                                                        .tourCt_infos--date
+                                                            p.note-text.fw-6.cl-text Ngày kết thúc
+                                                            .tourCt_infos--date-wrap
+                                                                .tourCt_infos--date-lf 
+                                                                    .tourCt_infos--date-ip
+                                                                        p.note-sm.text-date2.fw-5.cl-text 21/03/2024
+                                                                .tourCt_infos--date-rt
+                                                                    .tourCt_infos--date-ic 
+                                                                        +img("lich.png")
+                                                .tourCt_infos--bottom
+                                                    .tourCt_infos--btns
+                                                        +btn("Quay lại","","","cl-7 btn-back")
+                                                        +btn("Đặt Tour Ngay","","","btn-next")
+                                        .tourCt_infos--book-item
+                                            .tourCt_infos--book-item-wrap 
+                                                .tourCt_infos--top 
+                                                    .tourCt_infos--title 
+                                                        .tourCt_infos--title-lf
+                                                            p.note-lg.fw-6.cl-text Đặt lịch chuyến đi
+                                                    .tourCt_infos--forms2 
+                                                        .tourCt_infos--form2
+                                                            label.note-sm.fw-7.t-up NGƯỜI LỚN
+                                                            input(type="text" placeholder="Số lượng").form-item-ip 
+                                                        .tourCt_infos--form2
+                                                            label.note-sm.fw-7.t-up 
+                                                                |< 10 TUỔI (70%)
+                                                            input(type="text" placeholder="Số lượng").form-item-ip 
+                                                        .tourCt_infos--form2
+                                                            label.note-sm.fw-7.t-up 
+                                                                |< 5 TUỔI (Miễn phí)
+                                                            input(type="text" placeholder="Số lượng").form-item-ip 
+                                                        .tourCt_infos--form2
+                                                            label.note-sm.fw-7.t-up Ghi chú
+                                                            textarea(type="text" placeholder="Để lại lời nhắn của bạn").form-item-tx 
+                                                .tourCt_infos--bottom
+                                                    .tourCt_infos--btns
+                                                        +btn("Quay lại","","","cl-7 btn-back")
+                                                        +btn("Đặt Tour Ngay","","","btn-next")
+                                        .tourCt_infos--book-item
+                                            .tourCt_infos--book-item-wrap 
+                                                .tourCt_infos--top 
+                                                    .tourCt_infos--title 
+                                                        .tourCt_infos--title-lf
+                                                            p.note-lg.fw-6.cl-text Đặt lịch chuyến đi
+                                                    .tourCt_infos--forms 
+                                                        .tourCt_infos--form
+                                                            label.note-smn.fw-7.t-up NGÀY KHỞI HÀNH
+                                                            p.note-sm.cl-gray9.fw-5 07/07/2024
+                                                        .tourCt_infos--form
+                                                            label.note-smn.fw-7.t-up NGÀY KẾT THÚC
+                                                            p.note-sm.cl-gray9.fw-5 09/07/2024
+                                                        .tourCt_infos--form
+                                                            label.note-smn.fw-7.t-up NGƯỜI LỚN
+                                                            p.note-sm.cl-gray9.fw-5 4 khách
+                                                        .tourCt_infos--form
+                                                            label.note-smn.fw-7.t-up 
+                                                                |< 10 TUỔI (70%)
+                                                            p.note-sm.cl-gray9.fw-5 2 khách
+                                                        .tourCt_infos--form
+                                                            label.note-smn.fw-7.t-up 
+                                                                |< 5 TUỔI (Miễn phí)
+                                                            p.note-sm.cl-gray9.fw-5 1 khách
+                                                    .tourCt_infos--total
+                                                        ul.tourCt_infos--list 
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 1.199.000đ x 7 khách
+                                                                p.note-text.content 4.796.000đ
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 839.300đ x 2 khách
+                                                                p.note-text.content 1.678.600đ
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 Ưu đãi hè (10%)
+                                                                p.note-text.content.cl-green2 -840.000đ
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 Phí vệ sinh
+                                                                p.note-text.content 200.000đ
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 Thuế môi trường
+                                                                p.note-text.content 100.000đ
+                                                            li.tourCt_infos--item 
+                                                                p.note-text.title.fw-5 VAT (12%)
+                                                                p.note-text.content 1.007.000đ
+                                                        .tourCt_infos--total-end 
+                                                            p.note-text.title.fw-7 Tổng cộng
+                                                            p.note-text.content.fw-6 8.860.000đ
+                                                .tourCt_infos--bottom
+                                                    .tourCt_infos--btns
+                                                        +btn("Quay lại","","","cl-7 btn-back")
+                                                        +btn("Đặt Tour Ngay","","","btn-next")
+    section.question 
+        .container 
+            .question_wrap 
+                h2.title-sm2.cl-text.fw-6.t-center Câu hỏi thường gặp
+                .question_list 
+                    .question_item.faq-it 
+                        .question_item--wrap 
+                            .question_item--top 
+                                .question_item--title 
+                                    h3.note-text.fw-6.cl-text 1. Mùa nào đẹp nhất để du lịch Quảng Bình?
+                                    span.ic 
+                                        i.fas.fa-chevron-right
+                            .question_item--bottom.faq-content 
+                                .question_item--content
+                                    p.note-sm.cl-gray3  Với nhiều địa điểm tham quan hấp dẫn, bạn nên dành ít nhất 3-5 ngày để du lịch Quảng Bình. Nếu bạn có nhiều thời gian, bạn có thể tham khảo lịch trình 7-10 ngày để khám phá trọn vẹn vẻ đẹp của vùng đất này.
+                    .question_item.faq-it 
+                        .question_item--wrap 
+                            .question_item--top 
+                                .question_item--title 
+                                    h3.note-text.fw-6.cl-text 2. Nên đi du lịch Quảng Bình bao nhiêu ngày?
+                                    span.ic 
+                                        i.fas.fa-chevron-right
+                            .question_item--bottom.faq-content 
+                                .question_item--content
+                                    p.note-sm.cl-gray3  Với nhiều địa điểm tham quan hấp dẫn, bạn nên dành ít nhất 3-5 ngày để du lịch Quảng Bình. Nếu bạn có nhiều thời gian, bạn có thể tham khảo lịch trình 7-10 ngày để khám phá trọn vẹn vẻ đẹp của vùng đất này.
+                    .question_item.faq-it 
+                        .question_item--wrap 
+                            .question_item--top 
+                                .question_item--title 
+                                    h3.note-text.fw-6.cl-text 3. Di chuyển đến Quảng Bình bằng cách nào?
+                                    span.ic 
+                                        i.fas.fa-chevron-right
+                            .question_item--bottom.faq-content 
+                                .question_item--content
+                                    p.note-sm.cl-gray3  Với nhiều địa điểm tham quan hấp dẫn, bạn nên dành ít nhất 3-5 ngày để du lịch Quảng Bình. Nếu bạn có nhiều thời gian, bạn có thể tham khảo lịch trình 7-10 ngày để khám phá trọn vẹn vẻ đẹp của vùng đất này.
+                    .question_item.faq-it 
+                        .question_item--wrap 
+                            .question_item--top 
+                                .question_item--title 
+                                    h3.note-text.fw-6.cl-text 4. Nên ở đâu khi du lịch Quảng Bình?
+                                    span.ic 
+                                        i.fas.fa-chevron-right
+                            .question_item--bottom.faq-content 
+                                .question_item--content
+                                    p.note-sm.cl-gray3  Với nhiều địa điểm tham quan hấp dẫn, bạn nên dành ít nhất 3-5 ngày để du lịch Quảng Bình. Nếu bạn có nhiều thời gian, bạn có thể tham khảo lịch trình 7-10 ngày để khám phá trọn vẹn vẻ đẹp của vùng đất này.
+    section.tour_more.free-slide 
+        .container 
+            .tour_more--wrap 
+                .tour_more--title 
+                    h2.title-sm3.fw-6.cl-text Tour liên quan
+                    +btn("Xem tất cả","","fal fa-arrow-right","")
+                .tour_more--list.d-wrap 
+                    .swiper.mySwiper.--auto 
+                        .swiper-wrapper
+                            -
+                                const ms = [
+                                    {
+                                        img:"t1.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                    },
+                                    {
+                                        img:"t2.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                    },
+                                    {
+                                        img:"t3.png",
+                                        show:"",
+                                        best:"sell",
+                                        title:"Tour Quảng Bình 3N2Đ 7"
+                                    },
+                                    {
+                                        img:"t4.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 7"
+                                    },
+                                    {
+                                        img:"t5.png",
+                                        show:"",
+                                        best:"sale",
+                                        title:"Tour Động Phòng Nha - Suối 7"
+                                    },
+                                ]
+                            each m , i in ms
+                                .swiper-slide.d-item.d-4 
+                                    .tour_more--item 
+                                        +tour(m.img,m.show,m.best,m.title)
+                    .swiper-pagination
+

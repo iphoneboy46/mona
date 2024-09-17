@@ -1,0 +1,116 @@
+.menu_mb
+    .menu_mb--wrap
+        .menu_mb--nav
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"REGIIS STORY",
+                            dropdown:false
+                        },
+                        {
+                            title:"Giá trị",
+                            dropdown:false
+                        },
+                        {
+                            title:"Phòng",
+                            dropdown:true
+                        },
+                        {
+                            title:"Tiện ích",
+                            dropdown:false
+                        },
+                        {
+                            title:"Gói",
+                            dropdown:false
+                        },
+                        {
+                            title:"hình ảnh",
+                            dropdown:false
+                        },
+                        {
+                            title:"Liên hệ",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tin tức",
+                            dropdown:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item
+                                    a(href="").menu-link Item 1
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Item 2
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                                li.menu-item
+                                    a(href="").menu-link Item 3
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up THEO DÕI CHÚNG TÔI
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic1.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic2.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic3.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic4.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic5.svg")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic6.svg")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up Liên hệ 
+                    p.note-md.cl-pri.fw-7.t-up Regiissuites
+                .address
+                    ul.address_list
+                        li.address_item
+                            .address_item--content
+                                p.note-sm Hoạt động:
+                                a.address_link(href="") 09:00 AM – 21:00 PM
+                        li.address_item
+                            .address_item--content
+                                p.note-sm Điện thoại:
+                                a.address_link(href="") 0123 456 789
+                        li.address_item
+                            .address_item--content
+                                p.note-sm Địa chỉ:
+                                a.address_link(href="") 33 Trần Bạch Đằng, Q.2, TP. Thủ Đức, TP. HCM
+                        li.address_item
+                            .address_item--content
+                                p.note-sm Email:
+                                a.address_link(href="") info@regiissuites.com
+.menu_mb--modal

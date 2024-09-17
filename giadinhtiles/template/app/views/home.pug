@@ -1,0 +1,316 @@
+extends layout/layout
+block vars
+    -title = 'home'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper,JsCountUp1,JsCountUp2,JsCountUp3]
+    -jsComponents = ['header',"home","CountUpModule"]
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssAos,CssSwiper]
+    -cssComponents = ['banner',"layout"]
+    -cssPages = ["home","contact","about","product"]
+
+block container
+    .banner_home
+        h1 Home
+        .banner_home--wrap 
+            .banner_home--list 
+                .swiper.mySwiperBnHome 
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            .banner_home--item 
+                                .banner_home--item-bg 
+                                    +img("bnh1.png")
+                                .container 
+                                    .banner_home--item-wrap 
+                                        .banner_home--item-box 
+                                            .banner_home--item-lf 
+                                                p.title-sm2.cl-white Chào mừng đến với
+                                                h2.fw-7.cl-white.title-lg2.fl-sec.t-up GIA ĐỊNH tiles
+                                            .banner_home--item-rt 
+                                                +btn("TÌM HIỂU THÊM","","","")
+                        .swiper-slide 
+                            .banner_home--item 
+                                .banner_home--item-bg 
+                                    +img("bnh2.png")
+                                .container 
+                                    .banner_home--item-wrap 
+                                        .banner_home--item-box 
+                                            .banner_home--item-lf 
+                                                p.title-sm2.cl-white Chào mừng đến với
+                                                h2.fw-7.cl-white.title-lg2.fl-sec.t-up GIA ĐỊNH tiles 2
+                                            .banner_home--item-rt 
+                                                +btn("TÌM HIỂU THÊM","","","")
+                .swiper-pagination
+    section.layoutMain.ab 
+        .container 
+            .layoutMain_wrap
+                .layoutMain_box.d-wrap 
+                    .layoutMain_lf.d-item(data-aos="fade-right") 
+                        .layoutMain_lf--wrap 
+                            .about_intro 
+                                .about_intro--wrap 
+                                    .about_intro--top 
+                                        +box-title("SƠ LƯỢC VỀ","GIADINH TILES")
+                                    .about_intro--center 
+                                        p.note-text.cl-text2 Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại và trí thức sâu rộng là nên tảng giúp Gia Định Tiles vững bước trên con đường của thị trường quốc nội và quốc tế.
+                                    .about_intro--bottom 
+                                        .about_intro--bottom-list.d-wrap 
+                                            .about_intro--bottom-item.d-2.d-item 
+                                                .about_intro--bottom-item-wrap 
+                                                    .about_intro--bottom-item-num
+                                                        p.num 100
+                                                        span.plus +
+                                                    .about_intro--bottom-item-content 
+                                                        p.note-text.t-center.fw-5.cl-text Dự án đã hoàn thành
+                                            .about_intro--bottom-item.d-2.d-item 
+                                                .about_intro--bottom-item-wrap 
+                                                    .about_intro--bottom-item-num
+                                                        p.num 50
+                                                        span.plus +
+                                                    .about_intro--bottom-item-content 
+                                                        p.note-text.t-center.fw-5.cl-text Đối tác trong và ngoài nước
+                    .layoutMain_rt.d-item(data-aos="fade-left") 
+                        .layoutMain_rt--wrap 
+                            .layoutMain_rt--box 
+                                .layoutMain_rt--font
+                                    .layoutMain_rt--font-img
+                                        +img("ab.png")
+                                .layoutMain_rt--back
+                                    .layoutMain_rt--back-tt
+    section.home_sp.free-slide 
+        .container 
+            .home_sp--wrap 
+                .home_sp--box.d-wrap 
+                    .home_sp--lf.d-item(data-aos="zoom-out")
+                        .home_sp--lf-wrap
+                            .home_sp--lf-box 
+                                .home_sp--lf-list.d-wrap  
+                                    .swiper.mySwiperSpBox.--auto.--loop 
+                                        .swiper-wrapper 
+                                            .swiper-slide.d-2.d-item 
+                                                .home_sp--lf-item 
+                                                    .home_sp--lf-item-wrap 
+                                                        .home_sp--lf-item-img 
+                                                            +img("hpr1.png")
+                                                        .home_sp--lf-item-box 
+                                                            h3.title-sm.fw-6.cl-white.t-up 
+                                                                a(href="") CEMENT TILE 
+                                                            p.note-md.cl-white.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights.
+                                                            a(href="").link Xem tất cả
+                                            .swiper-slide.d-2.d-item 
+                                                .home_sp--lf-item 
+                                                    .home_sp--lf-item-wrap 
+                                                        .home_sp--lf-item-img 
+                                                            +img("hpr2.png")
+                                                        .home_sp--lf-item-box 
+                                                            h3.title-sm.fw-6.cl-white.t-up 
+                                                                a(href="") TERRAZZO
+                                                            p.note-md.cl-white.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine
+                                                            a.link(href="")  Xem tất cả
+                                            .swiper-slide.d-2.d-item 
+                                                .home_sp--lf-item 
+                                                    .home_sp--lf-item-wrap 
+                                                        .home_sp--lf-item-img 
+                                                            +img("hpr1.png")
+                                                        .home_sp--lf-item-box 
+                                                            h3.title-sm.fw-6.cl-white.t-up 
+                                                                a(href="") CEMENT TILE 
+                                                            p.note-md.cl-white.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights.
+                                                            a(href="").link Xem tất cả
+                                    .swiper-pagination
+                    .home_sp--rt.d-item(data-aos="fade-left")
+                        .home_sp--rt-wrap 
+                            .home_sp--rt-box 
+                                +box-title("SƠ LƯỢC VỀ","GIADINH TILES")
+                                p.note-md.cl-text3 .content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine, radiator, and headlights. 
+                                +btn("LIÊN HỆ NGAY","","","cl-3")
+    section.home_nb 
+        .container 
+            .home_nb--wrap 
+                .home_nb--box.d-wrap 
+                    .home_nb--lf.d-item(data-aos="fade-right")
+                        .home_nb--lf-wrap 
+                            .home_nb--lf-box
+                                .home_nb--lf-list
+                                    .home_nb--lf-item.actived 
+                                        .home_nb--lf-item-box
+                                            +box-title("NỔI BẬT","SẢN PHẨM HÀNG ĐẦU")
+                                            p.note-md.cl-text.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine 
+                                    .home_nb--lf-item 
+                                        .home_nb--lf-item-box
+                                            +box-title("NỔI BẬT","SẢN PHẨM HÀNG ĐẦU 2")
+                                            p.note-md.cl-text.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine 
+                                    .home_nb--lf-item 
+                                        .home_nb--lf-item-box
+                                            +box-title("NỔI BẬT","SẢN PHẨM HÀNG ĐẦU 3")
+                                            p.note-md.cl-text.content A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision, it helps protect vital components such as the engine 
+                                    .swiper-pagination
+                    .home_nb--rt.d-item
+                        .home_nb--rt-wrap 
+                            .home_nb--rt-box
+                                .home_nb--rt-list
+                                    .swiper.mySwiperNbrt 
+                                        .swiper-wrapper 
+                                            .swiper-slide 
+                                                .home_nb--rt-item 
+                                                    a(href="./assets/images/proct1.png" data-fancybox="hnb").home_nb--rt-item-img.gallery 
+                                                        +img("proct1.png")
+                                                    .home_nb--rt-item-title 
+                                                        p.note-lg.fw-5.cl-white Zinc - 4x4 - Single 
+                                            .swiper-slide 
+                                                .home_nb--rt-item 
+                                                    a(href="./assets/images/proct2.png" data-fancybox="hnb").home_nb--rt-item-img.gallery 
+                                                        +img("proct2.png")
+                                                    .home_nb--rt-item-title 
+                                                        p.note-lg.fw-5.cl-white Zinc - 6x6 - Single 
+                                            .swiper-slide 
+                                                .home_nb--rt-item 
+                                                    a(href="./assets/images/proct3.png" data-fancybox="hnb").home_nb--rt-item-img.gallery 
+                                                        +img("proct3.png")
+                                                    .home_nb--rt-item-title 
+                                                        p.note-lg.fw-5.cl-white Zinc - 8x8 - Single 
+                                    +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+    section.home_da 
+        .container 
+            .home_da--wrap
+                .box_title
+                    .box_title--wrap 
+                        p.title-sm2.t-up.fw-5.box_title--note.cl-pri(data-aos="fade-up") ĐỒNG HÀNH CÙNG
+                        h2.box_title--title.title-md.cl-text.t-up.fw-7.fl-sec(data-aos="fade-up" data-aos-delay="200") DỰ ÁN CỦA CHÚNG TÔI
+                .home_da--box 
+                    .home_da--filter.free-slide2(data-aos="fade-up" data-aos-delay="400") 
+                        .home_da--filter-list.d-wrap 
+                            .swiper.mySwiper 
+                                .swiper-wrapper 
+                                    .swiper-slide.d-item 
+                                        .home_da--filter-item.actived 
+                                            .home_da--filter-item-wrap 
+                                                p.note-md.cl-white2 Rừng cọ Ecopark
+                                    .swiper-slide.d-item
+                                        .home_da--filter-item 
+                                            .home_da--filter-item-wrap 
+                                                p.note-md.cl-white2 Hòa bình Green city
+                                    .swiper-slide.d-item
+                                        .home_da--filter-item 
+                                            .home_da--filter-item-wrap 
+                                                p.note-md.cl-white2 Candle hotel
+                                    .swiper-slide.d-item
+                                        .home_da--filter-item 
+                                            .home_da--filter-item-wrap 
+                                                p.note-md.cl-white2 187 Tây Sơn
+                                    .swiper-slide.d-item
+                                        .home_da--filter-item 
+                                            .home_da--filter-item-wrap 
+                                                p.note-md.cl-white2 Santa Barbara hotel
+                            .swiper-scrollbar
+                    .home_da--list(data-aos="fade-up" data-aos-delay="600")
+                        .home_da--list-wrap
+                            .swiper.mySwiperHda 
+                                .swiper-wrapper 
+                                    .swiper-slide 
+                                        .home_da--item 
+                                            .home_da--item-wrap 
+                                                .home_da--item-img 
+                                                    +img("hda1.png")
+                                                .home_da--item-box 
+                                                    .home_da--item-tt 
+                                                    .home_da--item-content 
+                                                        h3.title-mn.cl-pri.t-center.fw-6 
+                                                            a(href="") Chung cư cư  rừng cọ Ecopark
+                                                        p.note-text.cl-white2.t-center.content Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi  Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi
+                                                        a(href="").link XEM CHI TIẾT
+                                    .swiper-slide 
+                                        .home_da--item 
+                                            .home_da--item-wrap 
+                                                .home_da--item-img 
+                                                    +img("hda2.png")
+                                                .home_da--item-box 
+                                                    .home_da--item-tt 
+                                                    .home_da--item-content 
+                                                        h3.title-mn.cl-pri.t-center.fw-6 
+                                                            a(href="") Chung cư rừng cọ Ecopark 2
+                                                        p.note-text.cl-white2.t-center.content Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi, kết hợp với việc bảo vệ môi trường và tạo ra một cộng đồng bền vững.
+                                                        a(href="").link XEM CHI TIẾT
+                                    .swiper-slide 
+                                        .home_da--item 
+                                            .home_da--item-wrap 
+                                                .home_da--item-img 
+                                                    +img("hda3.png")
+                                                .home_da--item-box 
+                                                    .home_da--item-tt 
+                                                    .home_da--item-content 
+                                                        h3.title-mn.cl-pri.t-center.fw-6 
+                                                            a(href="") Chung cư rừng cọ Ecopark 3
+                                                        p.note-text.cl-white2.t-center.content Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi, kết hợp với việc bảo vệ môi trường và tạo ra một cộng đồng bền vững.
+                                                        a(href="").link XEM CHI TIẾT
+                                    .swiper-slide 
+                                        .home_da--item 
+                                            .home_da--item-wrap 
+                                                .home_da--item-img 
+                                                    +img("hda3.png")
+                                                .home_da--item-box 
+                                                    .home_da--item-tt 
+                                                    .home_da--item-content 
+                                                        h3.title-mn.cl-pri.t-center.fw-6 
+                                                            a(href="") Chung cư rừng cọ Ecopark 4
+                                                        p.note-text.cl-white2.t-center.content Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi, kết hợp với việc bảo vệ môi trường và tạo ra một cộng đồng bền vững.
+                                                        a(href="").link XEM CHI TIẾT
+                                    .swiper-slide 
+                                        .home_da--item 
+                                            .home_da--item-wrap 
+                                                .home_da--item-img 
+                                                    +img("hda3.png")
+                                                .home_da--item-box 
+                                                    .home_da--item-tt 
+                                                    .home_da--item-content 
+                                                        h3.title-mn.cl-pri.t-center.fw-6 
+                                                            a(href="") Chung cư rừng cọ Ecopark 5
+                                                        p.note-text.cl-white2.t-center.content Với kiến trúc hiện đại, Chung cư Rừng Cọ mang đến không gian sống thoải mái và tiện nghi, kết hợp với việc bảo vệ môi trường và tạo ra một cộng đồng bền vững.
+                                                        a(href="").link XEM CHI TIẾT
+                        +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+    section.home_tb.free-slide 
+        .container2 
+            .home_tb--wrap 
+                .box_title
+                    .box_title--wrap 
+                        p.title-sm2.t-up.fw-5.box_title--note.cl-pri(data-aos="fade-up") SẢN PHẨM
+                        h2.box_title--title.title-md.cl-text.t-up.fw-7.fl-sec(data-aos="fade-up" data-aos-delay="200") TRƯNG BÀY TẠI CỬA HÀNG
+                .home_tb--box(data-aos="zoom-out" data-aos-delay="400") 
+                    .home_tb--list.d-wrap 
+                        .swiper.mySwiper.--auto.--loop 
+                            .swiper-wrapper 
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr9.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr6.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr3.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr4.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr5.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr3.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr4.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr6.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr7.png","")
+                                .swiper-slide.d-item
+                                    .home_tb--item 
+                                        +pro("pr8.png","")
+                        +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+                    .swiper-pagination
+                        

@@ -1,0 +1,77 @@
+extends layout/layout
+block vars
+    -title = 'sign up'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = 'hidden'
+    -ftClass = 'hidden'
+    -jsLibs = [JsJquery,JsAos,JsDate]
+    -jsComponents = ['header','Password','Date','sign']
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssDate]
+    -cssComponents = []
+    -cssPages = ["sign","contact"]
+
+block container
+    section.bg_tt
+        .bg_tt--bg
+        +img("bg.png")
+    section.sign 
+        .container 
+            .sign_wrap
+                form(action="") 
+                    .sign_box 
+                        .sign_top 
+                            h1.title-lg.cl-white.t-up.t-center.fw-5 đăng ký
+                        .sign_center 
+                            .sign_form--list
+                                label.form-item.signStyle
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Họ và tên *
+                                label.form-item.signStyle
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Số điện thoại *
+                                label.form-item.signStyle.hv-no-hidden
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Mã hội viên *
+                                label.form-item.signStyle
+                                    input(type="text").form-item-ip 
+                                    p.form-item-lb Email *
+                                label.form-item.signStyle.pass
+                                    input(type="password").form-item-ip 
+                                    p.form-item-lb Mật khẩu
+                                    span.ic 
+                                        i.far.fa-eye
+                                        i.far.fa-eye-slash
+                            .sign_form--list2
+                                .sign_form--list2-wrap
+                                    label.form-item.signStyle
+                                        input(type="text").form-item-ip 
+                                        p.form-item-lb Nghề nghiệp *
+                                    label.form-item.signStyle.choose-date
+                                        input.date#datepicker.form-item-ip(type="text", readonly, placeholder="Ngày sinh của bạn")
+                                    label.form-item.signStyle
+                                        input(type="text").form-item-ip 
+                                        p.form-item-lb Căn cước công dân *
+                            .sign_form--cb  
+                                .sign_form--cb-list.d-wrap 
+                                    .sign_form--cb-item.d-item
+                                        label.form-ck-item2 
+                                            input(type="radio" name="hv" checked="checked" value="yes")
+                                            .form-ck-item2-wrap
+                                                .form-ck-item2-lf
+                                                    span.box 
+                                                    p.note-text Đã là hội viên
+                                    .sign_form--cb-item.d-item
+                                        label.form-ck-item2 
+                                            input(type="radio" name="hv"  value="no")
+                                            .form-ck-item2-wrap
+                                                .form-ck-item2-lf
+                                                    span.box 
+                                                    p.note-text Chưa là hội viên
+                            p.cl-white3 
+                                |Bạn đã có tài khoản?
+                                a(href="").fw-7.cl-white.t-up  ĐĂNG NHẬP NGAY 
+                        .sign_bottom
+                            +btn("ĐĂNG KÝ","","","trans")
+                            
+

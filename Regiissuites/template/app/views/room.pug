@@ -1,0 +1,111 @@
+extends layout/layout
+block vars
+    -title = 'Chi tiết phòng'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    .banner_main
+        .banner_main--bg
+            .banner_main--img
+                +img("bnr.png")
+            .banner_main--tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+                span.line-tt
+        .container
+            .banner_main--wrap
+                .banner_main--box
+                    .banner_main--box-top
+                        .banner_main--logo
+                            +img("logoBn.svg")
+                        p.note-banner Chào Mừng Bạn Đến Với Regiis Suites
+                        h1.title-lg.cl-white.fl-sec.t-center.t-up PHÒNG
+                    .banner_main--box-bottom
+                        +breadcrumbs("Home","","PHÒNG")
+    section.room_list
+        .container
+            .room_list--box
+                .room_list--wrap.d-wrap
+                    -
+                        const rms = [
+                                {
+                                    img:"r.png",
+                                    title:"Junior Suite",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                                {
+                                    img:"r2.png",
+                                    title:"Family",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                                {
+                                    img:"rm1.png",
+                                    title:"Senior Suite",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                                {
+                                    img:"rm2.png",
+                                    title:"Executive Suite",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                                {
+                                    img:"r3.png",
+                                    title:"Senior Suite",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                                {
+                                    img:"r4.png",
+                                    title:"Executive Suite",
+                                    note:"At Circadian, we are committed to providing our  "
+                                },
+                            ]
+                    each rm , i in rms
+                        .room_item.d-item.d-2
+                            +room(rm.img,rm.title,rm.note)
+                +pagination()
+    section.room_intro.free-slide
+        .container
+            .room_intro--wrap.d-wrap
+                .room_intro--lf.d-item
+                    .room_intro--lf-wrap
+                        .box-title2
+                            .box-title2-box
+                                p.note-sm.cl-pri.t-up giới thiệu sơ lược
+                            h2.title-md.cl-black.fl-sec.t-up Every room includes
+                .room_intro--rt.d-item
+                    .room_intro--rt-wrap
+                        .room_intro--list.d-wrap
+                            .swiper.mySwiper.--auto
+                                .swiper-wrapper
+                                    .swiper-slide.d-item.d-3
+                                        .room_intro--item
+                                            .room_intro--item-wrap
+                                                .room_intro--ic
+                                                    +img("ri1.svg")
+                                                p.title-sm.cl-third.t-center Mini bar
+                                    .swiper-slide.d-item.d-3
+                                        .room_intro--item
+                                            .room_intro--item-wrap
+                                                .room_intro--ic
+                                                    +img("ri2.svg")
+                                                p.title-sm.cl-third.t-center Free Wifi
+                                    .swiper-slide.d-item.d-3
+                                        .room_intro--item
+                                            .room_intro--item-wrap
+                                                .room_intro--ic
+                                                    +img("ri3.svg")
+                                                p.title-sm.cl-third.t-center Refrigerator
+                                    .swiper-slide.d-item.d-3
+                                        .room_intro--item
+                                            .room_intro--item-wrap
+                                                .room_intro--ic
+                                                    +img("ri1.svg")
+                                                p.title-sm.cl-third.t-center Mini bar
+                            .swiper-pagination
+                            
+
+
+

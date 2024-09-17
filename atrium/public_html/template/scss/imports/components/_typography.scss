@@ -1,0 +1,43 @@
+// utilities class
+strong {
+  font-weight: bold;
+}
+$heading: (h1, h2, h3, h4, h5, h6);
+@each $key in $heading {
+  .#{$key} {
+    font-size: var(--#{$key}-fs);
+    line-height: var(--#{$key}-lh);
+  }
+}
+
+// css heading
+.heading {
+  font-weight: 600;
+}
+
+// css body text
+$body: (14);
+@each $key in $body {
+  .bd-#{$key} {
+    font-size: var(--body#{$key}-fs);
+    line-height: var(--body#{$key}-lh);
+  }
+}
+
+.title-sc {
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+  text-transform: uppercase;
+  &.t-normal {
+    text-transform: initial;
+  }
+  &.h3 {
+    font-size: var(--h3-fs);
+    line-height: var(--h3-lh);
+  }
+}
+.sub-sc {
+  font-size: var(--h3-fs);
+  line-height: var(--h3-lh);
+  text-transform: uppercase;
+}

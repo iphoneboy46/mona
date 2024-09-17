@@ -1,0 +1,137 @@
+extends layout/layout
+block vars
+    -title = 'Tuyển dụng'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh1.png","Tuyển dụng","Trang chủ","","Tuyển dụng")
+    section.du_hoc 
+        .container 
+            .du_hoc--wrap.d-wrap 
+                .du_hoc--lf.d-item 
+                    .du_hoc--lf-wrap 
+                        .tuyen_dung--list
+                            -
+                                const tds = [
+                                    {
+                                        img:"td1.png",
+                                        title:"Nhân viên Tư vấn Du học",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td2.png",
+                                        title:"Giảng viên Tiếng Anh",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td3.png",
+                                        title:"Trưởng phòng marketing",
+                                        han:"Hết hạn",
+                                        class:"err"
+                                    },
+                                    {
+                                        img:"td4.png",
+                                        title:"Nhân viên thiết kế",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td1.png",
+                                        title:"Nhân viên Tư vấn Du học",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td2.png",
+                                        title:"Giảng viên Tiếng Anh",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td3.png",
+                                        title:"Trưởng phòng marketing",
+                                        han:"Hết hạn",
+                                        class:"err"
+                                    },
+                                    {
+                                        img:"td4.png",
+                                        title:"Nhân viên thiết kế",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td1.png",
+                                        title:"Nhân viên Tư vấn Du học",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    },
+                                    {
+                                        img:"td2.png",
+                                        title:"Giảng viên Tiếng Anh",
+                                        han:"Còn 12 ngày để ứng tuyển",
+                                        class:""
+                                    }
+                                ]
+                            each td , i in tds 
+                                +post-td(td.img,td.title,td.han,td.class)
+                        +pagination()
+                .du_hoc--rt.d-item 
+                    .du_hoc--rt-wrap 
+                        .du_hoc--news 
+                            h2.title-mn.fw-7 Bài viết mới nhất
+                            .du_hoc--news-list
+                                -
+                                    const dh2s = [
+                                        {
+                                            img:"n8.png",
+                                            title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n1.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n2.png",
+                                            title:"Quy trình xét hồ sơ THPT Công lập Úc",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n3.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n4.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n5.png",
+                                            title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n6.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n7.png",
+                                            title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n8.png",
+                                            title:"Trường ĐH Sejong – Nơi nuôi dưỡng những ước mơ",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        }
+                                    ]
+                                each dh , i in dh2s 
+                                    +post(dh.img,dh.title,dh.content)
+        

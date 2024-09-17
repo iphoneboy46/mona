@@ -1,0 +1,210 @@
+extends layout/layout
+block vars
+    -title = 'du hoc ct'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bannerdh2.png","Du học Hàn Quốc","Trang chủ","","Du học Hàn Quốc")
+    section.du_hoc.post-tt 
+        .container 
+            .du_hoc--wrap.d-wrap 
+                .du_hoc--lf.d-item 
+                    .du_hoc--lf-wrap
+                        .du_hoc--content-title 
+                            h2.title-sm3.fw-6 KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH
+                            .box-info 
+                                .box-info-list 
+                                    .box-info-item 
+                                        a(href="").note-text.cl-text.fw-6 Admin
+                                    .box-info-item 
+                                        p.note-text.cl-text3 12:52 - 20.04.2024
+                        .du_hoc--content 
+                            p.note-text Là một quốc gia nổi tiếng với những sản phẩm chất lượng hàng đầu, giáo dục cũng được xem như một niềm tự hào của Đức – với người Đức “Made in Germany” chính là danh dự và niềm tự hào của họ. Có thể chính vì nguyên nhân này mà du học Đức vẫn luôn nằm trong top quan tâm hàng đầu của các học sinh sinh viên Việt Nam cũng như trên thế giới. IUBH là một trong những trường Đại học nổi bật của Đức với chuyên ngành đào tạo về Kinh tế - IUBH đánh giá cao những người hành động vì tương lai của chính mình và có tinh thần khởi nghiệp.
+                            p.note-text Học bổng 50% học phí đến từ IUBH – chính là lời mời hấp dẫn nhất mà ngôi trường này dành tặng đến bạn – nếu bạn chứng minh được tinh thần học tập và mong muốn phát triển bản thân của mình.
+                            br
+                            +img("img1.png")
+                            br
+                            br
+                            p.note-text Bạn có khát khao được khởi nghiệp và muốn tham gia vào môi trường học tập chuyên nghiệp của IUBH? Hãy kể cho chúng tôi nghe câu chuyện về hành trình học tập và sự phát triển của cá nhân bạn. Đừng ngại sáng tạo, hãy thể hiện theo cách của bạn và rinh học bổng liền tay nhé!
+                            br
+                            h3.title-mn.fw-6 HỒ SƠ HỌC BỔNG CỦA TRƯỜNG IUBH BAO GỒM:
+                            br
+                            p.note-text 1. Nộp hồ sơ xin học (hồ sơ cá nhân+ học tập) và nhận thư chấp thuận học của trường. Blue Ocean sẽ hỗ trợ bạn hết mình trong việc apply thư mời của trường
+                            p.note-text 2. Gửi bài viết của bạn với tiêu đề: Đức  - miền đất trải đầy cơ hội (“Germany, Land of Opportunities”) sau khi có thư mời học chính thức.
+                            p.note-text 3. Giành học bổng từ 20% - 30% - 50% học phí
+                            br
+                            p.note-text 
+                                strong.t-up CHƯƠNG TRÌNH ÁP DỤNG:
+                                |Tất cả các khóa học on- campus học tại khuôn viên trường đại học
+                            br
+                            +img("img2.png")
+                            br
+                            br
+                            h3.title-mn.fw-6 Hệ thống giáo dục
+                            br
+                            p.note-text Dưới đây là các cấp bậc trong hệ thống giáo dục giúp cho các du học sinh tại Hàn Quốc dễ dàng nắm bắt và theo kịp chương trình:
+                            ul 
+                                li  Tiểu học: (6 năm bắt buộc)
+                                li  THCS: (3 năm, bắt đầu từ 13 tuổi)
+                                li  PTTH: (3 năm, bắt đầu từ 16 tuổi)
+                                li  Cao đẳng: (2 -3 năm) hoặc Đại học  (4 - 6 năm)
+                                li  Đào tạo sau Đại Học (Thạc sĩ: 2 – 3 năm, tiến sĩ: 3 năm)
+                            p.note-text Là một quốc gia nổi tiếng với những sản phẩm chất lượng hàng đầu, giáo dục cũng được xem như một niềm tự hào của Đức – với người Đức “Made in Germany” chính là danh dự và niềm tự hào của họ. Có thể chính vì nguyên nhân này mà du học Đức vẫn luôn nằm trong top quan tâm hàng đầu của các học sinh sinh viên Việt Nam cũng như trên thế giới. IUBH là một trong những trường Đại học nổi bật của Đức với chuyên ngành đào tạo về Kinh tế - IUBH đánh giá cao những người hành động vì tương lai của chính mình và có tinh thần khởi nghiệp.
+                            p.note-text Học bổng 50% học phí đến từ IUBH – chính là lời mời hấp dẫn nhất mà ngôi trường này dành tặng đến bạn – nếu bạn chứng minh được tinh thần học tập và mong muốn phát triển bản thân của mình.
+                .du_hoc--rt.d-item 
+                    .du_hoc--rt-wrap 
+                        .du_hoc--nation
+                            h2.title-mn.fw-7 Du học tại các nước
+                            ul.du_hoc--nation-list 
+                                -
+                                    const nas = [
+                                        {
+                                            img:"na6.png",
+                                            title:"Du học Hàn Quốc"
+                                        },
+                                        {
+                                            img:"na1.png",
+                                            title:"Du học Úc"
+                                        },
+                                        {
+                                            img:"na2.png",
+                                            title:"Du học Canada"
+                                        },
+                                        {
+                                            img:"na3.png",
+                                            title:"Du học Nhật Bản"
+                                        },
+                                        {
+                                            img:"na4.png",
+                                            title:"Du học Mỹ"
+                                        },
+                                        {
+                                            img:"na5.png",
+                                            title:"Du học Đức"
+                                        },
+                                    ]
+                                each na , i in nas
+                                    if i == 0
+                                        li.du_hoc--nation-item.actived 
+                                            a.du_hoc--nation-link(href="")
+                                                span.ic 
+                                                    +img(na.img)
+                                                span.note-text.cl-text.fw-7 #{na.title}
+                                    else 
+                                        li.du_hoc--nation-item 
+                                            a.du_hoc--nation-link(href="")
+                                                span.ic 
+                                                    +img(na.img)
+                                                span.note-text.cl-text.fw-7 #{na.title}
+                        .du_hoc--news 
+                            h2.title-mn.fw-7 Bài viết mới nhất
+                            .du_hoc--news-list
+                                -
+                                    const dh2s = [
+                                        {
+                                            img:"n8.png",
+                                            title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n1.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n2.png",
+                                            title:"Quy trình xét hồ sơ THPT Công lập Úc",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n3.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n4.png",
+                                            title:"Nhật Bản: Cánh cửa cho tương lai - hành trình đặc biệt",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n5.png",
+                                            title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n6.png",
+                                            title:"DU HỌC HÀN QUỐC DỄ DÀNG VÀ TIỆN LỢI VỚI DIỆN VISA THẲNG",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n7.png",
+                                            title:"KHỞI NGHIỆP TẠI ĐỨC VỚI HỌC BỔNG 50% HỌC PHÍ TỪ ĐẠI HỌC IUBH",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        },
+                                        {
+                                            img:"n8.png",
+                                            title:"Trường ĐH Sejong – Nơi nuôi dưỡng những ước mơ",
+                                            content:"Nhật Bản là một trong những điểm đến phổ biến cho người lao động từ nhiều quốc gia trên thế giới. Với nền kinh tế phát triển và hệ thống bảo hiểm xã hội toàn diện, người lao động tại đây được hưởng nhiều quyền lợi và chế độ phúc lợi đáng kể."
+                                        }
+                                    ]
+                                each dh , i in dh2s 
+                                    +post(dh.img,dh.title,dh.content)
+    section.post_similar 
+        .container
+            .post_similar--wrap 
+                h2.title-sm2.fw-6 Bài viết tương tự
+                .post_similar--list.d-wrap
+                    -
+                        const simis = [
+                            {
+                                img:"s1.png",
+                                title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            },
+                            {
+                                img:"s2.png",
+                                title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            },
+                            {
+                                img:"s3.png",
+                                title:"Quy trình xét hồ sơ THPT Công lập Úc",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            },
+                            {
+                                img:"s4.png",
+                                title:"Xuất khẩu lao động Nhật Bản: Chế độ phúc lợi của người lao động",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            },
+                            {
+                                img:"s5.png",
+                                title:"Các thủ tục du học Hàn Quốc mà các du học sinh cần biết",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            },
+                            {
+                                img:"s6.png",
+                                title:"Huế đẩy mạnh đưa người lao động đi làm việc ở nước ngoài, xoá đói giảm nghèo",
+                                content:"Chương trình học bổng lên đến 80% tại các trường danh tiếng của HQ cho các bạn đã có chứng chỉ Topik (tùy thuộc vào năng lực của học sinh). Học viên trước khi sang HQ sẽ được đào tạo tiếng Hàn, luyện phỏng vấn, đào tạo định hướng, kỹ năng mềm miễn phí từ 03 đến 06 tháng tại Trung tâm (có chỗ ở nội trú)."
+                            }
+                        ]
+                    each simi , i in simis 
+                        .post_similar--item.d-3.d-item
+                            +post(simi.img,simi.title,simi.content)
+    section.want
+        .want_bg 
+            +img("wbg.png")
+        .container
+            .want_wrap 
+                .want_box 
+                    .want_logo 
+                        +img("logoHD.png")
+                    .want_content 
+                        h2.title-sm2.fw-7.t-center.cl-five 
+                            |Bạn muốn đi du học 
+                            br
+                            |nhưng không biết bắt đầu từ đâu?
+                        p.note-text.t-center Liên hệ với chúng tôi để được tư vấn nhanh nhất
+                    .want_btn 
+                        +btn("Liên hệ ngay","","fas fa-caret-right","trans")

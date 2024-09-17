@@ -1,0 +1,142 @@
+.chinh-sach {
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+    @media screen and (max-width: 1200px) {
+        padding-top: 4.4rem;
+        padding-bottom: 4.4rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    &-wrap {
+        // align-items: start;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
+
+    &-lf {
+        width: calc(3 * 100% / 12);
+
+        @media screen and (max-width: 800px) {
+            width: 30%;
+
+
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+
+
+        }
+    
+        &-wrap {
+            margin-top: 2.8rem;
+            position: sticky;
+            top: 10rem;
+
+            @media screen and (max-width: 600px) {
+                margin-top: 0;
+            }
+        }
+
+        .title-sm {
+            margin-bottom: 1.2rem;
+
+            @media screen and (max-width:460px) {
+                text-align: start;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            // row-gap: 0.5rem;
+            border-left: 0.3rem solid #ebebeb;
+        }
+
+        &-item {
+            color: $color-second;
+            font-weight: 500;
+            padding: 0.5rem;
+            transition: all 0.3s linear;
+            cursor: pointer;
+            position: relative;
+            @include hover {
+                color: $color-pri;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -0.3rem;
+                width: 0.3rem;
+                height: 100%;
+                background-color: $color-pri;
+                opacity: 0;
+            }
+
+            &.actived {
+                // border-left: 0.3rem solid $color-pri;
+                color: $color-pri;
+                font-weight: 500;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &-rt {
+        flex: 1;
+        width: 100%;
+
+        @media screen and (max-width: 600px) {
+            .mb-20{
+                margin-bottom: 1rem;
+            }
+        }
+       
+
+        &-list {
+        }
+
+        &-item {
+            // display: none;
+
+            // &.actived {
+            //     display: block;
+            // }
+            // transition:all 0.5s linear;
+
+            // animation: truotLen 0.5s linear ;
+            // @keyframes truotLen {
+            //     0% {
+            //         opacity: 0;
+            //         transform: translateY(50%);
+                   
+            //     }
+
+            //     50% {
+            //         opacity: 0.5;
+            //         transform: translateY(25%);
+                    
+            //     }
+
+            //     100% {
+            //         opacity: 1;
+
+            //         transform: translateY(0);
+            //     }
+            // }
+            font-weight: 400;
+            color: $color-black;
+        }
+    }
+}

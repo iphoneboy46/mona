@@ -1,0 +1,152 @@
+extends layout/layout
+block vars
+    -title = 'home'
+    -mainClass = 'pt'
+    -bodyClass = 'homePage'
+    -hdClass = ''
+
+block container
+    .banner_home
+        h1 nic
+        .banner_home--wrap 
+            .banner_home--list 
+                .swiper.mySwiperBnHome 
+                    .swiper-wrapper 
+                        .swiper-slide
+                            .banner_home--item.txt 
+                                .banner_home--title 
+                                    .banner_home--title-text SAMPLE NIC
+                                .banner_home--bg
+                                    .banner_home--bg-img
+                                        +img("bnh.png")
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--bg
+                                    .banner_home--bg-img
+                                        +img("bnh1.png")
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--bg
+                                    .banner_home--bg-img
+                                        +img("bnh2.png")
+                        .swiper-slide
+                            .banner_home--item.txt 
+                                .banner_home--title 
+                                    .banner_home--title-text SAMPLE NIC
+                                .banner_home--bg
+                                    .banner_home--bg-img
+                                        +img("bnh.png")
+                        .swiper-slide
+                            .banner_home--item 
+                                .banner_home--bg
+                                    .banner_home--bg-img
+                                        video(autoplay, muted , loop , playsinline)
+                                            source(src="./assets/images/bnhvd.mp4" type="video/mp4")
+                .swiper-pagination                           
+    section.home_dm.free-slide.ani.homePG
+        .container2
+            .home_dm--wrap(data-aos="fade-in" data-aos-delay="300")
+                .home_dm--list.d-wrap
+                    .swiper.mySwiper.--center.--loop.--auto
+                        .swiper-wrapper
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href)
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm1.png", alt)
+                                        span.home_dm--title
+                                            h3.title-sm2.cl-white.fl-sec.fw-7.fw-i Fullface
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href)
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm2.png", alt)
+                                        span.home_dm--title
+                                            h3.title-sm2.cl-white.fl-sec.fw-7.fw-i 3/4
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href)
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm3.png", alt)
+                                        span.home_dm--title
+                                            h3.title-sm2.cl-white.fl-sec.fw-7.fw-i 1/2
+                            .swiper-slide.d-item
+                                .home_dm--item
+                                    a.home_dm--link(href)
+                                        span.home_dm--img
+                                            img(src="./assets/images/dm4.png", alt)
+                                        span.home_dm--title
+                                            h3.title-sm2.cl-white.fl-sec.fw-7.fw-i PHỤ KIỆN
+                    .box-navi
+                        .btn-navi.prev
+                            i.fas.fa-chevron-left
+                        .btn-navi.next
+                            i.fas.fa-chevron-right
+    section.home_nb
+        .container2 
+            .home_nb--wrap 
+                h2.title-md.fw-7.cl-white.fl-sec.t-up.t-center(data-aos="fade-up") SẢN PHẨM NỔI BẬT
+                .accessory_box.free-slide(data-aos="fade-up" data-aos-delay="500")
+                    .accessory_list.d-wrap 
+                        .swiper.mySwiper
+                            .swiper-wrapper 
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                                .swiper-slide.d-item.d-4 
+                                    .accessory_item 
+                                        +product("sale")
+                        .swiper-pagination
+    section.home_qc 
+        .home_qc--wrap 
+            .home_qc--list 
+                .home_qc--item.ani 
+                    .home_qc--item-bg 
+                        +img("hqc1.png")
+                    .container 
+                        .home_qc--item-wrap
+                            .home_qc--item-box 
+                                .home_qc--item-title 
+                                    h3.title-sm3.cl-white.fw-8.fw-i.t-up.fl-sec CÔNG NGHỆ 
+                                    h2.title-lg2.cl-white.fw-8.fw-i.t-up.fl-sec NANO
+                                .home_qc--item-content 
+                                    p.note-lg.fw-4.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                                .home_qc--item-btn 
+                                    +btn("TÌM HIỂU THÊM","","","cl-2")
+                .home_qc--item.ani 
+                    .home_qc--item-bg 
+                        +img("hqc2.png")
+                    .container 
+                        .home_qc--item-wrap
+                            .home_qc--item-box 
+                                .home_qc--item-title 
+                                    h3.title-sm3.cl-white.fw-8.fw-i.t-up.fl-sec SẮP RA MẮT
+                                    h2.title-lg2.cl-white.fw-8.fw-i.t-up.fl-sec T19
+                                .home_qc--item-content 
+                                    p.note-lg.fw-4.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                                .home_qc--item-btn 
+                                    +btn("TÌM HIỂU THÊM","","","cl-2")
+                .home_qc--item.ani 
+                    .home_qc--item-bg 
+                        +img("hqc3.png")
+                    .container 
+                        .home_qc--item-wrap
+                            .home_qc--item-box 
+                                .home_qc--item-title 
+                                    h3.title-sm3.cl-white.fw-8.fw-i.t-up.fl-sec SINCE
+                                    h2.title-lg2.cl-white.fw-8.fw-i.t-up.fl-sec 1993
+                                .home_qc--item-content 
+                                    p.note-lg.fw-4.cl-white.fl-sec You’ve only seen the tip of the iceberg. Enable JavaScript to uncover the full, hidden treasures of our website. 
+                                .home_qc--item-btn 
+                                    +btn("TÌM HIỂU THÊM","","","cl-2")
+
+

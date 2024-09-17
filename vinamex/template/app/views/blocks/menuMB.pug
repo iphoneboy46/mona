@@ -1,0 +1,105 @@
+.menu_mb
+    .menu_mb--wrap
+        .menu_mb--nav
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"Trang chủ",
+                            dropdown:false
+                        },
+                        {
+                            title:"Giới thiệu",
+                            dropdown:false
+                        },
+                        {
+                            title:"Du học",
+                            dropdown:true
+                        },
+                        {
+                            title:"Học bổng",
+                            dropdown:false
+                        },
+                        {
+                            title:"Trại hè",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tuyển dụng",
+                            dropdown:false
+                        },
+                        {
+                            title:"Tin tức",
+                            dropdown:false
+                        },
+                        {
+                            title:"Liên hệ",
+                            dropdown:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item
+                                    a(href="").menu-link Item 1
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Item 2
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item 1
+                                        li.menu-item
+                                            a(href="").menu-link Item 2
+                                        li.menu-item
+                                            a(href="").menu-link Item 3
+                                li.menu-item
+                                    a(href="").menu-link Item 3
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up THEO DÕI CHÚNG TÔI
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic1.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic2.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic3.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic4.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("ftic5.png")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-lg.cl-text.fw-7.t-up Liên hệ 
+                    p.note-md.cl-second.fw-7.t-up Vinamex Edu
+                .address
+                    ul.address_list
+                        li.address_item
+                            .address_item--content
+                                a.address_link(href="") 0904 840 363
+                        li.address_item
+                            .address_item--content
+                                a.address_link(href="") Lô 2, Vị trí 2, Cụm Công nghiệp Thanh Oai, Xã Bích Hòa, Huyện Thanh Oai, Hà Nội
+                        li.address_item
+                            .address_item--content
+                                a.address_link(href="") tuyensinh@vinamex.edu.vn
+.menu_mb--modal

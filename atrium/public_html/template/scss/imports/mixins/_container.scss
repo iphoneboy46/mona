@@ -1,0 +1,36 @@
+@mixin make-container() {
+  width: 100%;
+  padding-left: calc(var(--container-padding-x) * 0.5);
+  padding-right: calc(var(--container-padding-x) * 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container,
+.container-fluid {
+  @include make-container();
+  @include xs-min {
+    max-width: 54rem;
+  }
+  @include sm-min {
+    max-width: 72rem;
+  }
+  @include md-min {
+    max-width: 96rem;
+  }
+
+  @include lg-min {
+    max-width: $container-width;
+  }
+}
+.container-lg {
+  @include lg {
+    max-width: 100%;
+  }
+}
+.container-fluid {
+  @include sm-min {
+    padding-right: calc(var(--container-padding-x));
+    padding-left: calc(var(--container-padding-x));
+  }
+}

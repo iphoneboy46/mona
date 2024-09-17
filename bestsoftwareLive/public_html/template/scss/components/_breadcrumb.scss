@@ -1,0 +1,101 @@
+.breadcrumbs {
+    width: fit-content;
+    margin: 0 -1.2rem;
+    .container {
+        height: auto;
+    }
+
+    &.other {
+        width: 100%;
+        border-radius: unset;
+
+        margin: 0;
+
+        z-index: 1;
+        background: $color-four;
+        padding: 1.1rem 0rem;
+        // border-radius: 10rem;
+        margin: 0 auto 0rem;
+
+        // .breadcrumbs-list {
+        //     @media screen and (max-width: 1200px) {
+        //         justify-content: center;
+        //     }
+        // }
+    }
+
+    &.not-search {
+        @media screen and (max-width: 1200px) {
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            padding: 0;
+            height: auto;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        column-gap: 2.4rem;
+
+        @media screen and (max-width:410px) {
+            flex-wrap: wrap;
+            row-gap: 0.1rem;
+        }
+    }
+
+    &-item {
+        position: relative;
+
+        &.current {
+            .breadcrumbs-link {
+                white-space: unset;
+                pointer-events: none;
+                font-weight: 500;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                max-width: 80vw;
+                color: $color-white;
+            }
+        }
+
+        &:not(:last-child) {
+            &::before {
+                content: "/";
+                position: absolute;
+                color: $color-gray2;
+                right: -1.6rem;
+            }
+        }
+    }
+
+    &-link {
+        color: $color-white;
+        @include fz-16;
+        font-style: normal;
+        font-weight: 500;
+        white-space: nowrap;
+        color: $color-gray2;
+        // display: block;
+        font-family: "IBM Plex Sans";
+        @include hover {
+            color: #1edfee;
+        }
+
+        @media screen and (max-width: 1200px) {
+            @include fz-14;
+        }
+
+        @media screen and (max-width: 600px) {
+            @include fz-12;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}

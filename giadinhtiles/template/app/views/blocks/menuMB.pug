@@ -1,0 +1,124 @@
+.menu_mb
+    .menu_mb--ex
+        i.far.fa-times
+    .menu_mb--wrap
+        .menu_mb--nav
+            a.menu_mb--logo(href="")
+                +img("logoHD.png")
+            ul.menu-list
+                -
+                    const mbs = [
+                        {
+                            title:"GIỚI THIỆU",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"GẠCH BÔNG",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"GẠCH GỐM NHUNG",
+                            dropdown:true,
+                            search:false
+                        },
+                        {
+                            title:"GẠCH ĐÁ MÀI",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"DỰ ÁN",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"Khuyến mãi",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"QUY TRÌNH SẢN XUẤT",
+                            dropdown:false,
+                            search:false
+                        },
+                        {
+                            title:"LIÊN HỆ",
+                            dropdown:false,
+                            search:false
+                        }
+                    ]
+                each mb , i in mbs
+                    if mb.dropdown === true
+                        li.menu-item.dropdown
+                            a(href="#").menu-link #{mb.title}
+                            ul.menu-list
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Menu 1
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 1
+                                li.menu-item.dropdown
+                                    a(href="").menu-link Menu 2
+                                    ul.menu-list
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                                        li.menu-item
+                                            a(href="").menu-link Item Menu 2
+                    else if mb.search === true
+                        li.menu-item.btn-search
+                            a(href="#").menu-link #{mb.title}
+                    else if i == 0
+                        li.menu-item.current-menu-item
+                            a(href="#").menu-link #{mb.title}
+                    else
+                        li.menu-item
+                            a(href="#").menu-link #{mb.title}
+        .menu_mb--info
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-text.cl-text.fw-6 Theo dõi chúng tôi tại
+                .social
+                    ul.social_list
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic1.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic2.png")
+                        li.social_item
+                            a(href="").social_link 
+                                span.social_img
+                                    +img("sic3.png")
+            .menu_mb--info-item
+                .menu_mb--info-title
+                    p.note-text.cl-text.fw-6 Liên hệ
+                .address
+                    ul.address_list
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic1.png")
+                            .address_item--content
+                                a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic2.png")
+                            .address_item--content
+                                a.address_link(href="") sales@giadinh.vn
+                        li.address_item
+                            .address_item--ic 
+                                +img("adic3.png")
+                            .address_item--content
+                                a.address_link(href="") +84 283 816 5395             
+.menu_mb--modal

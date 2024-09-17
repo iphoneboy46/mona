@@ -1,0 +1,249 @@
+extends layout/layout
+block vars
+    -title = 'sản phẩm ct'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSwiper,JsMagnify]
+    -jsComponents = ['header',"product",'popup','tab']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSwiper,CssMagnify]
+    -cssComponents = []
+    -cssPages = ["product","contact"]
+
+block container
+    section.box-breadcrumbs
+        .container 
+            .box-breadcrumbs-wrap 
+                +breadcrumbs("Trang chủ","Gạch bông","Zinc - 4x4 - Single")
+    section.productCt
+        .container 
+            .productCt_Wrap 
+                .productCt_box.d-wrap 
+                    .productCt_lf.d-item 
+                        .productCt_lf--wrap 
+                            .productCt_lf--imgs     
+                                .swiper.mySwiperProImgs
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct1.png")
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct2.png")
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct3.png")
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct1.png")
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct2.png")
+                                        .swiper-slide 
+                                            .productCt_lf--img
+                                                .productCt_lf--img-img 
+                                                    +img("proct1.png")
+                                .swiper-scrollbar
+                            .productCt_lf--thumbs 
+                                .swiper.mySwiperProThumbs 
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct1.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct1.png" data-magnify-src="./assets/images/proct1.png").zoom 
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct2.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct2.png" data-magnify-src="./assets/images/proct2.png").zoom 
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct3.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct3.png" data-magnify-src="./assets/images/proct3.png").zoom 
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct1.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct1.png" data-magnify-src="./assets/images/proct1.png").zoom
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct2.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct2.png" data-magnify-src="./assets/images/proct2.png").zoom
+                                        .swiper-slide 
+                                            .productCt_lf--thumb
+                                                a(href="./assets/images/proct1.png" data-fancybox="gallery" ).productCt_lf--thumb-img 
+                                                    img(src="./assets/images/proct1.png" data-magnify-src="./assets/images/proct1.png").zoom
+                            .productCt_lf--btn 
+                                +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+                    .productCt_rt.d-item 
+                        .productCt_rt--wrap
+                            .productCt_rt--box
+                                .productCt_rt--title
+                                    h2.title-sm2.cl-text.fw-5.fl-sec Zinc - 4x4 - Single 
+                                .productCt_rt--content 
+                                    p.note-text.cl-text2.listInfo A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision A car’s front bumper serves as the first line of defence against minor impacts and collisions. Designed to absorb and dissipate the force of a collision..
+                                    .productCt_rt--btns
+                                        button.title-link.BtnShowInfo Xem thêm
+                                        button.title-link.BtnHiddenInfo Rút gọn
+                                .productCt_rt--info 
+                                    .productCt_rt--info-list 
+                                        .productCt_rt--info-item 
+                                            .productCt_rt--info-item-lf 
+                                                p.note-text.cl-text.fw-6 Mã sản phẩm
+                                            .roductCt_rt--info-item-rt 
+                                                p.note-text.cl-text.cl-white2 MG.ABC
+                                        .productCt_rt--info-item 
+                                            .productCt_rt--info-item-lf 
+                                                p.note-text.cl-text.fw-6 Màu sắc
+                                            .roductCt_rt--info-item-rt 
+                                                .box-colors
+                                                    .box-color
+                                                        +img("cl.png")
+                                        .productCt_rt--info-item 
+                                            .productCt_rt--info-item-lf 
+                                                p.note-text.cl-text.fw-6 Size
+                                            .roductCt_rt--info-item-rt 
+                                                p.note-text.cl-text.fw-6 60x60 
+                                .productCt_rt--btn 
+                                    button.btn.popup-btn(data-popup="popup-1") 
+                                        span.btn-text LIÊN HỆ VỚI CHÚNG TÔI
+    section.product_lq.free-slide 
+        .container2 
+            .product_lq--wrap 
+                h2.title-sm3.fw-5.cl-pri.t-center.t-up.fl-sec SẢN PHẨM LIÊN QUAN
+                .product_lq--list.d-wrap 
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-4 
+                                .product_lq--item 
+                                    +pro("pr1.png","Mới")
+                            .swiper-slide.d-item.d-4 
+                                .product_lq--item 
+                                    +pro("pr2.png","Mới")
+                            .swiper-slide.d-item.d-4 
+                                .product_lq--item 
+                                    +pro("pr3.png","Mới")
+                            .swiper-slide.d-item.d-4 
+                                .product_lq--item 
+                                    +pro("pr4.png","Mới")
+                            .swiper-slide.d-item.d-4 
+                                .product_lq--item 
+                                    +pro("pr5.png","Mới")
+                    +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+                .swiper-pagination
+                    
+
+
+
+    .popupBox
+        .popup_main.popup-form(data-popup-id="popup-1")
+            .popup_main--wrap 
+                .popup_main--ex.popup-ex 
+                    i.fal.fa-times-circle
+                .contact_rt--wrap 
+                    h2.title-sm2.fw-6.cl-pri.cl-2.t-up LIÊN HỆ NGAY VỚI CHÚNG TÔI
+                    .contact_rt--box.tab-box 
+                        .box_tabs.free-slide2
+                            .box_tabs--wrap
+                                .box_tabs--list.d-wrap
+                                    .swiper.mySwiper 
+                                        .swiper-wrapper 
+                                            .swiper-slide.d-item
+                                                .box_tabs--item.tab-btn.actived 
+                                                    .box_tabs--item-wrap 
+                                                        p.note-text.cl-pri.t-up KHÁCH HÀNG CÁ NHÂN
+                                            .swiper-slide.d-item
+                                                .box_tabs--item.tab-btn 
+                                                    .box_tabs--item-wrap 
+                                                        p.note-text.cl-pri.t-up KHÁCH HÀNG DOANH NGHIỆP
+                                    .swiper-scrollbar
+                        .contact_rt--list
+                            .contact_rt--item.tab-content.showed
+                                .contact_rt--form 
+                                    form(action="")
+                                        .contact_rt--form-wrap 
+                                            .contact_rt--form-list
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Họ và tên
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập họ của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Email
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập email của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Số điện thoại
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Nội dung cần trao đổi
+                                                            strong *
+                                                        textarea(type="text" placeholder="Nhập nội dung của bạn").form-item-tx
+                                                .contact_rt--form-item
+                                                    .form-item
+                                                        p.note-text.cl-text Chúng tôi có thể liên hệ với bạn qua:
+                                                        .form-ck-list 
+                                                            label.form-ck-item 
+                                                                input(type="radio" name="ct" checked="checked")
+                                                                span.box 
+                                                                p.note-text.cl-white2 Email
+                                                            label.form-ck-item 
+                                                                input(type="radio" name="ct")
+                                                                span.box 
+                                                                p.note-text.cl-white2 Điện thoại
+                                            +btn("GỬI NGAY","button","","")
+                            .contact_rt--item.tab-content
+                                .contact_rt--form 
+                                    form(action="")
+                                        .contact_rt--form-wrap 
+                                            .contact_rt--form-list
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Họ và tên
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập họ của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Email
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập email của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Số điện thoại
+                                                            strong *
+                                                        input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                                .contact_rt--form-item 
+                                                    label.form-item
+                                                        p.form-item-lb 
+                                                            |Nội dung cần trao đổi
+                                                            strong *
+                                                        textarea(type="text" placeholder="Nhập nội dung của bạn").form-item-tx
+                                                .contact_rt--form-item
+                                                    .form-item
+                                                        p.note-text.cl-text Chúng tôi có thể liên hệ với bạn qua:
+                                                        .form-ck-list 
+                                                            label.form-ck-item 
+                                                                input(type="radio" name="ct" checked="checked")
+                                                                span.box 
+                                                                p.note-text.cl-white2 Email
+                                                            label.form-ck-item 
+                                                                input(type="radio" name="ct")
+                                                                span.box 
+                                                                p.note-text.cl-white2 Điện thoại
+                                            +btn("GỬI NGAY","button","","")
+        .popup_main--modal

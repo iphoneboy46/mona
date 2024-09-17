@@ -1,0 +1,28 @@
+.pagination {
+  margin-top: 4rem;
+  ul.page-numbers {
+    @include center(flex);
+    flex-wrap: wrap;
+    li {
+    }
+    li > * {
+      @include transition(all $t);
+      font-size: 1.4rem;
+      line-height: 1.2;
+      @include center(flex);
+      color: #666666;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      border-right: 0.1rem solid #333;
+    }
+    li > span,
+    li > *:hover {
+      @include transition(all $t);
+      color: $white;
+    }
+    .next,
+    .prev {
+      border: none;
+    }
+  }
+}

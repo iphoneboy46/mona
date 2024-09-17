@@ -1,0 +1,151 @@
+extends layout/layout
+block vars
+    -title = 'Tin tức'
+    -mainClass = 'pt newsCTPage'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container 
+    .box_tabs.free-slide2 
+        .container 
+            .box_tabs--wrap 
+                .box_tabs--list.d-wrap
+                    .swiper.mySwiper 
+                        .swiper-wrapper 
+                            .swiper-slide.d-item.d-3
+                                a(href="").box_tabs--item.actived
+                                    .box_tabs--item-wrap 
+                                        p.title-sm2.fw-6.t-up SỰ KIỆN
+                            .swiper-slide.d-item.d-3
+                                a(href="").box_tabs--item
+                                    .box_tabs--item-wrap 
+                                        p.title-sm2.fw-6.t-up TIN TỨC
+                            .swiper-slide.d-item.d-3
+                                a(href="").box_tabs--item
+                                    .box_tabs--item-wrap 
+                                        p.title-sm2.fw-6.t-up HOẠT ĐỘNG CÔNG TY
+                    .swiper-scrollbar
+    section.news_banner 
+        .container 
+            .news_banner--wrap 
+                .news_banner--box 
+                    .news_banner--box-wrap.d-wrap 
+                        .news_banner--box-lf.d-item 
+                            .news_banner--box-lf-wrap 
+                                h2.title-md.cl-white.fw-8.t-up SỰ KIỆN NỔI BẬT 
+                                .news_banner--box-lf-inner
+                                    .news_banner--lf-list 
+                                        .swiper.mySwiperNewsLf(dir="rtl")
+                                            .swiper-wrapper 
+                                                .swiper-slide
+                                                    .news_banner--lf-item 
+                                                        .post
+                                                            a(href="https://www.youtube.com/watch?v=oWeCvUip-rM" data-fancybox="gallery4").btn-play
+                                                                .btn-play-tt
+                                                                .btn-play-btn
+                                                                    i.fas.fa-play
+                                                            .post_wrap
+                                                                .post_top
+                                                                    a(href="").post_img
+                                                                        +img("nctb1.png")
+                                                                .post_bottom
+                                                                    p.note-text.date.cl-white 22/08/2024
+                                                                    h2.note-md.cl-white.fw-6.title
+                                                                        a(href="") Your request for a password reset link has been received
+                                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                                                .swiper-slide
+                                                    .news_banner--lf-item 
+                                                        .post
+                                                            .post_wrap
+                                                                .post_top
+                                                                    a(href="").post_img
+                                                                        +img("nctb2.png")
+                                                                .post_bottom
+                                                                    p.note-text.date.cl-white 22/08/2024
+                                                                    h2.note-md.cl-white.fw-6.title
+                                                                        a(href="") Your request for a password reset link has been received 2
+                                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                                                .swiper-slide
+                                                    .news_banner--lf-item 
+                                                        .post
+                                                            .post_wrap
+                                                                .post_top
+                                                                    a(href="").post_img
+                                                                        +img("nctb3.png")
+                                                                .post_bottom
+                                                                    p.note-text.date.cl-white 22/08/2024
+                                                                    h2.note-md.cl-white.fw-6.title
+                                                                        a(href="") Your request for a password reset link has been received 3
+                                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                        .news_banner--box-rt.d-item 
+                            .news_banner--box-rt-wrap
+                                .news_banner--rt-list 
+                                    .news_banner--rt-item.showed 
+                                        .post
+                                            .post_wrap
+                                                .post_top
+                                                    a(href="").post_img
+                                                        +img("nctb1.png")
+                                                .post_bottom
+                                                    p.note-text.date.cl-white 22/08/2024
+                                                    h2.note-md.cl-white.fw-6.title
+                                                        a(href="") Your request for a password reset link has been received.
+                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                                    .news_banner--rt-item 
+                                        .post
+                                            .post_wrap
+                                                .post_top
+                                                    a(href="").post_img
+                                                        +img("nctb2.png")
+                                                .post_bottom
+                                                    a(href="https://www.youtube.com/watch?v=oWeCvUip-rM" data-fancybox="gallery4").btn-play
+                                                        .btn-play-tt
+                                                        .btn-play-btn
+                                                            i.fas.fa-play
+                                                    p.note-text.date.cl-white 22/08/2024
+                                                    h2.note-md.cl-white.fw-6.title
+                                                        a(href="") Your request for a password reset link has been received 2.
+                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                                    .news_banner--rt-item 
+                                        .post
+                                            .post_wrap
+                                                .post_top
+                                                    a(href="").post_img
+                                                        +img("nctb3.png")
+                                                .post_bottom
+                                                    p.note-text.date.cl-white 22/08/2024
+                                                    h2.note-md.cl-white.fw-6.title
+                                                        a(href="") Your request for a password reset link has been received 3.
+                                                    a(href="").note-text.link.cl-text2 Xem chi tiết
+                .swiper-pagination.custom      
+                +box-navi("fas fa-chevron-left","fas fa-chevron-right")
+    section.news 
+        .container 
+            .news_wrap
+                .news_box 
+                    .news_list.d-wrap 
+                        - 
+                            const ns = [
+                                {
+                                    img:"nct1.png"
+                                },
+                                {
+                                    img:"nct2.png"
+                                },
+                                {
+                                    img:"ct2.png"
+                                },
+                                {
+                                    img:"nct4.png"
+                                },
+                                {
+                                    img:"nct5.png"
+                                },
+                                {
+                                    img:"nct6.png"
+                                }
+                            ]
+                        each n , i in ns 
+                            .news_item.d-item.d-3 
+                                +post(n.img)
+                    +pagination()

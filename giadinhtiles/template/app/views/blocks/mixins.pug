@@ -1,0 +1,218 @@
+
+
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin imgIc(name = "ic.png")
+  img(src="./assets/images/icons/" + name, alt="")
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+    li
+      span.page-numbers.current 1
+    li
+      a.page-numbers(href='') 2
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 9
+    li
+      a.page-numbers(href='') 10
+    li
+      span.page-numbers.next 
+        i.fas.fa-chevron-right
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin banner-main(page1,page2,pageCurrent,title)
+  .banner_main 
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--breadcrumbs(data-aos="fade-in" data-aos-delay="400")
+            +breadcrumbs(page1,page2,pageCurrent)
+          .banner_main--box-title(data-aos="fade-in" data-aos-delay="800")
+            h1.title-lg.cl-white.fw-5.fl-sec.t-center.t-up #{title}
+
+mixin banner-main2(page1,page2,pageCurrent,title)
+  .banner_main.aboutPage 
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--breadcrumbs(data-aos="fade-in" data-aos-delay="400")
+            +breadcrumbs(page1,page2,pageCurrent)
+          .banner_main--box-title(data-aos="fade-in" data-aos-delay="800")
+            h1.title-lg.cl-white.fw-5.fl-sec.t-center.t-up #{title}
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title)
+  .post
+    .post_wrap.d-wrap
+      .post_lf.d-item 
+        .post_lf--wrap 
+          p.note-sm.cl-white3.fw-5 17/07/2024 15:30PM 
+          ul.post_actions 
+            li.post_action 
+              span.ic 
+                +img("pic1.png")
+              p.note-sm.cl-white 23 lượt thích
+            li.post_action 
+              span.ic 
+                +img("pic2.png")
+              p.note-sm.cl-white 23 bình luận
+      .post_ct.d-item  
+        .post_ct--wrap
+          a.post_img(href="") 
+            +img(img)
+      .post_rt.d-item 
+        .post_rt--wrap
+          a.box-dm(href="") GÓC NHÌN
+          a.note-md.cl-white.fw-5(href="")  #{title}
+          a(href="").link-text XEM TIẾP 
+
+mixin post2(img,title)
+  .post2
+    .post2_wrap
+      .post2_ic 
+        +img("hcic.png")
+      .post2_bg
+        +img(img)
+      .post2_box
+        .post2_box--top
+          p.note-sm.cl-white.t-up GIẢI ĐỒNG, GIẢI THƯỞNG KIẾN TRÚC QUỐC GIA 2022
+          a.note-md.cl-white.fw-6(href="")  #{title}
+        .post2_box--bottom
+          a(href="").link-text XEM CHI TIẾT DỰ ÁN
+
+
+  .post3
+    .post3_wrap.d-wrap
+      .post3_lf.d-item 
+        .post3_lf--wrap 
+          p.note-sm.cl-white.fw-6 #1
+      .post3_ct.d-item 
+        .post3_ct--wrap
+          a.post3_img(href="") 
+            +img(img)
+      .post3_rt.d-item 
+        .post3_rt--wrap
+          .post3_rt--top 
+            p.note-sm.cl-white3 07.08.2024 05:30PM
+            ul.post3_actions 
+              li.post3_action 
+                span.ic 
+                  +img("pic1.png")
+                p.note-sm.cl-white 23
+              li.post3_action 
+                span.ic 
+                  +img("pic2.png")
+                p.note-sm.cl-white 23
+          .post3_rt--bottom 
+            a(href="").note-md.cl-white.fw-6 #{title} 
+            p.note-text.cl-white Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ Tôi có mua 1 máy Dell Inspiron 5301 và 1 màn hình LCD Dell P2719H cũng gần đây, cho cháu xem Youtube thì màn hình hơi nhỏ 
+
+
+mixin post-td(title)
+  .post_td
+    .post_td--wrap
+      .post_td--top
+        h2.title-mn.cl-text.fw-6 
+          a(href="") #{title}
+        .post_td--infos 
+          .post_td--info 
+            p.note-text Quảng Bình
+          .post_td--info 
+            p.note-text Toàn thời gian
+          .post_td--info 
+            p.note-text 10 - 20 triệu
+          .post_td--info 
+            p.note-text Team sale
+      .post_td--bottom
+        +btn("Ứng tuyển ngay","","fal fa-arrow-right","cl-8")
+
+mixin box-title(note,title)
+  .box_title
+    .box_title--wrap 
+      p.title-sm2.t-up.fw-5.box_title--note.cl-pri #{note}
+      h2.box_title--title.title-md.cl-text.t-up.fw-7.fl-sec #{title}
+        
+
+mixin box-title2(page1,page2,pageCurrent,title,img)
+  .box_title2
+    .container
+      .box_title2--wrap 
+        +breadcrumbs(page1,page2,pageCurrent)
+        .box_title2--box 
+          h1.title-lg2.cl-text.fw-6.fl-sec.t-up #{title}
+          if(img != "")
+            .box_title2--ic 
+              +img(img)
+
+mixin pro(img,news)
+  .pro
+    .pro_wrap 
+      .pro_top
+        if(news != "")
+          span.pro_new #{news}
+        a.pro_img(href="")
+          +img(img)
+        .pro_btn
+          +btn("CHI TIẾT SẢN PHẨM","","","cl-2")
+      .pro_bottom 
+        h2.note-md.t-up.fw-5.cl-text4.title 
+          a(href="") Tên sản phẩm
+        p.note-sm.fw-3.cl-white2.content Mã SP | 60x60 

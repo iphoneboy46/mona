@@ -1,0 +1,40 @@
+.news-detail {
+  &_content {
+    color: rgba($color: $white, $alpha: 0.7);
+    .desc-head {
+    }
+    .row {
+      align-items: center;
+    }
+    .item {
+      &:not(:first-child) {
+        margin-top: 4rem;
+      }
+      &:nth-child(even) {
+        .row {
+          flex-direction: row-reverse;
+        }
+      }
+      &:last-child {
+        .item-content {
+          text-align: center;
+        }
+      }
+
+      &-image {
+        aspect-ratio: 1/1;
+        img {
+          @include img-cover;
+        }
+      }
+      &-title {
+        font-size: var(--h3-fs);
+        line-height: var(--h3-lh);
+        font-weight: 600;
+      }
+      &-desc {
+        margin-top: 2.4rem;
+      }
+    }
+  }
+}

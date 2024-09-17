@@ -1,0 +1,36 @@
+extends layout/layout
+block vars
+    -title = 'Career chi tiết'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.orderSuccess
+        .container 
+            .orderSuccess_wrap 
+                .orderSuccess_box 
+                    .orderSuccess_top 
+                        .orderSuccess_ic 
+                            +img("check3.png")
+                    .orderSuccess_center
+                        .orderSuccess_title 
+                            p.title-sm3.fw-6.cl-text.t-center Đơn hàng của bạn đã hoàn tất!
+                            p.note-text.cl-gray3.t-center Cảm ơn bạn đã sử dụng dịch vụ của chúng tôi, kiểm tra email của bạn để nắm thông tin chi tiết chuyến đi
+                        .orderSuccess_list 
+                            .orderSuccess_item 
+                                p.note-lg.cl-text.fw-6 Ngày đặt
+                                p.note-text.cl-gray3 01/07/2024 
+                            .orderSuccess_item 
+                                p.note-lg.cl-text.fw-6 Số khách
+                                p.note-text.cl-gray3 7 khách
+                            .orderSuccess_item 
+                                p.note-lg.cl-text.fw-6 Tổng thanh toán
+                                p.note-text.cl-gray3 8.860.000đ
+                            .orderSuccess_item 
+                                p.note-lg.cl-text.fw-6 Thanh toán
+                                p.note-text.cl-gray3 Onepay 
+                    .orderSuccess_bottom 
+                        .orderSuccess_btns 
+                            +btn("Tiếp túc khám phá","","fal fa-arrow-right","")
+                            +btn("Chi tiết chuyến đi","","","cl-7")

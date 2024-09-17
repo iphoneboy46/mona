@@ -1,0 +1,174 @@
+extends layout/layout
+block vars
+    -title = 'Manager post'
+    -mainClass = ''
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsSwiper,JsQuill,JsUpQuill]
+    -jsComponents = ['header','Password','uploadCV','popup','inputEditor','admin']
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssSwiper,CssQuill]
+    -cssComponents = ["post"]
+    -cssPages = ["admin","contact"]
+
+block container
+    section.bg_tt
+        .bg_tt--bg
+        +img("bg.png")
+    section.layoutAd
+        .container 
+            .layoutAd_wrap 
+                .layoutAd_box.d-wrap 
+                    .layoutAd_box--lf.d-item
+                        .layoutAd_box--lf-wrap 
+                            .layoutAd_box--lf-box
+                                .layoutAd_box--lf-box-item 
+                                    .adAva.btn-upload
+                                        input(type="file").fileUpload
+                                        img(src="./assets/images/ava.png" alt="").img-src
+                                    .layoutAd_box--lf-box-item-content 
+                                        p.note-md.cl-white.fw-6 monamedia
+                                        p.note-sm.cl-white monamedia@gmail.com
+                                .layoutAd_box--lf-box-item 
+                                    ul.layoutAd_box--lf-list 
+                                        li.layoutAd_box--lf-item.actived
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic1.png")
+                                                span.note-text Thông tin tài khoản 
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic2.png")
+                                                span.note-text Quản lý bài viết
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic3.png")
+                                                span.note-text Thay đổi mật khẩu
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic4.png")
+                                                span.note-text Danh sách yêu thích
+                                        li.layoutAd_box--lf-item
+                                            a(href="").layoutAd_box--lf-link
+                                                span.ic 
+                                                    +img("adic5.png")
+                                                span.note-text Hỗ trợ-Góp ý
+                                .layoutAd_box--lf-box-item 
+                                    .layoutAd_box--lf-item
+                                        a(href="").layoutAd_box--lf-link
+                                            span.ic 
+                                                +img("adic6.png")
+                                            span.note-text Đăng xuất
+                    .layoutAd_box--rt.d-item    
+                        .layoutAd_box--rt-wrap
+                            .layoutAd_box--rt-box
+                                .layoutAd_box--rt-post 
+                                    .layoutAd_box--rt-post-title 
+                                        p.title-mn.cl-white.t-up.fw-6 quản lý bài viết
+                                    .layoutAd_box--rt-post-wrap
+                                        .layoutAd_box--rt-post-box
+                                            .box_tabs.free-slide2
+                                                .box_tabs--wrap
+                                                    .box_tabs--list.d-wrap
+                                                        .swiper.mySwiper 
+                                                            .swiper-wrapper 
+                                                                .swiper-slide.d-item
+                                                                    label.box_tabs--item 
+                                                                        input(type="radio" name="filter1" checked="checked")
+                                                                        .box_tabs--item-wrap 
+                                                                            p.note-md.cl-white.t-up ĐANG CHỜ DUYỆT
+                                                                .swiper-slide.d-item
+                                                                    label.box_tabs--item 
+                                                                        input(type="radio" name="filter1")
+                                                                        .box_tabs--item-wrap 
+                                                                            p.note-md.cl-white.t-up ĐÃ DUYỆT
+                                                                .swiper-slide.d-item
+                                                                    label.box_tabs--item 
+                                                                        input(type="radio" name="filter1")
+                                                                        .box_tabs--item-wrap 
+                                                                            p.note-md.cl-white.t-up QTUXNNKT
+                                                                .swiper-slide.d-item
+                                                                    label.box_tabs--item 
+                                                                        input(type="radio" name="filter1")
+                                                                        .box_tabs--item-wrap 
+                                                                            p.note-md.cl-white.t-up BỊ TỪ CHỐI
+                                                        .swiper-scrollbar
+                                            .layoutAd_box--rt-post-list 
+                                                .layoutAd_box--rt-post-item 
+                                                    label.layoutAd_box--rt-post-item-action
+                                                        input(type="checkbox")
+                                                        span.ic 
+                                                            i.far.fa-ellipsis-v
+                                                        ul.actionList 
+                                                            li.actionItem 
+                                                                button.actionBtn.popup-btn(data-popup="popup-1") Chỉnh sửa
+                                                            li.actionItem 
+                                                                button.actionBtn.btn-delete  Xóa
+                                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                                .layoutAd_box--rt-post-item 
+                                                    label.layoutAd_box--rt-post-item-action
+                                                        input(type="checkbox")
+                                                        span.ic 
+                                                            i.far.fa-ellipsis-v
+                                                        ul.actionList 
+                                                            li.actionItem 
+                                                                button.actionBtn.popup-btn(data-popup="popup-1") Chỉnh sửa
+                                                            li.actionItem 
+                                                                button.actionBtn.btn-delete Xóa
+                                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                                .layoutAd_box--rt-post-item 
+                                                    label.layoutAd_box--rt-post-item-action
+                                                        input(type="checkbox")
+                                                        span.ic 
+                                                            i.far.fa-ellipsis-v
+                                                        ul.actionList 
+                                                            li.actionItem 
+                                                                button.actionBtn.popup-btn(data-popup="popup-1") Chỉnh sửa
+                                                            li.actionItem 
+                                                                button.actionBtn.btn-delete  Xóa
+                                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                                .layoutAd_box--rt-post-item 
+                                                    label.layoutAd_box--rt-post-item-action
+                                                        input(type="checkbox")
+                                                        span.ic 
+                                                            i.far.fa-ellipsis-v
+                                                        ul.actionList 
+                                                            li.actionItem 
+                                                                button.actionBtn.popup-btn(data-popup="popup-1") Chỉnh sửa
+                                                            li.actionItem 
+                                                                button.actionBtn.btn-delete  Xóa
+                                                    +post4("p6.png","Thông báo chương trình đào tạo phát triển nghề nghiệp liên tục (CPD 3-2023) dành cho KTS hành nghề - ngày 26-27/5/2023")
+                                        +pagination()
+    .popup_alert Vui lòng chọn ảnh dưới 2MB
+    .popupBox
+        .popup_main.popup-form(data-popup-id="popup-1")
+            .popup_main--wrap 
+                .popup_main--ex.popup-ex 
+                    i.fal.fa-times-circle
+                .popup_main--form 
+                    form(action="")
+                        .popup_main--form-list 
+                            .popup_main--form-item 
+                                label.form-item
+                                    p.note-md.cl-white.fw-6.t-up CHỦ ĐỀ CÂU HỎI
+                                    input(type="text" placeholder="Nhập chủ đề của bài viết của bạn" ).form-item-ip
+                            .popup_main--form-item
+                                label.form-item.quillJS
+                                    p.note-md.cl-white.fw-6.t-up NỘI DUNG CÂU HỎI
+                                    #editor-container(data-placeholder="Hãy nhập nội dung bài viết của bạn")
+                        .popup_main--form-ck
+                            label.form-ck-item2 
+                                input(type="checkbox" name="all" checked="checked")
+                                .form-ck-item2-wrap
+                                    .form-ck-item2-lf
+                                        span.box 
+                                        p.note-text 
+                                            |Đồng ý với 
+                                            a(href="").fw-7 chính sách 
+                                            |của hội
+                        .popup_main--form-btn 
+                            +btn("GỬI BÀI VIẾT","","","trans")
+        .popup_main--modal

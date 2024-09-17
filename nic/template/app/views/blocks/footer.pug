@@ -1,0 +1,113 @@
+footer.footer
+    .container
+        .footer_wrap
+            .footer_list.d-wrap
+                .footer_item.d-item
+                    .footer_item--wrap
+                        a(href="").footer_logo 
+                            +img("logoFT.png")
+                        p.note-text 
+                            Your new password must be different from previous used passwords, contain 8 to 16 characters and at least one number 
+                        
+                .footer_item.d-item
+                    .footer_item--wrap
+                        p.note-text.cl-text2.fw-7 Giới thiệu
+                        ul.menu-list
+                            -
+                                const fts = [
+                                    {
+                                        title:"Về NIC",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Giá trị cốt lõi",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Liên hệ",
+                                        dropdown:true
+                                    },
+                                ]
+                            each ft , i in fts
+                                li.menu-item
+                                    a(href="").menu-link #{ft.title}
+                .footer_item.d-item
+                    .footer_item--wrap
+                        p.note-text.cl-text2.fw-7 Sản phẩm
+                        ul.menu-list
+                            -
+                                const ft2s = [
+                                    {
+                                        title:"Nón bảo hiểm 3/4",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Nón bảo hiểm 1/2",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Nón bảo hiểm Fullface",
+                                        dropdown:true
+                                    },
+                                    {
+                                        title:"Phụ kiện",
+                                        dropdown:true
+                                    }
+                                ]
+                            each ft , i in ft2s
+                                li.menu-item
+                                    a(href="").menu-link #{ft.title}
+                .footer_item.d-item
+                    .footer_item--wrap
+                        p.note-text.cl-text2.fw-7 Chính sách
+                        ul.menu-list
+                            -
+                                const ft3s = [
+                                    {
+                                        title:"Đại lý",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Bảo mật",
+                                        dropdown:false
+                                    },
+                                    {
+                                        title:"Bảo hành",
+                                        dropdown:true
+                                    },
+                                ]
+                            each ft , i in ft3s
+                                li.menu-item
+                                    a(href="").menu-link #{ft.title}
+                .footer_item.d-item
+                    .footer_item--wrap
+                        p.note-text.fw-7.cl-text2 Thông tin chung
+                        .footer_form 
+                            form(action="")
+                                .footer_form--wrap 
+                                    input(type="text" placeholder="Nhập số điện thoại của bạn").form-item-ip
+                                    +btn("Gửi","button","","","")
+                        p.note-mn.cl-text.fw-i Đăng ký để nhận thông tin liên lạc về các sản phẩm dịch vụ, cửa hàng, sự kiện và các vấn đề đáng quan tâm ở NIC
+                        .social
+                            ul.social_list
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("ftic1.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("ftic2.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("ftic3.png")
+                                li.social_item
+                                    a(href="").social_link 
+                                        span.social_img
+                                            +img("ftic4.png")
+                        
+    .footer_bottom 
+        .container 
+            .footer_bottom--wrap
+                p.note-sm.cl-white.t-center @copy right NIC 2024

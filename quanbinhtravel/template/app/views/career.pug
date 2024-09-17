@@ -1,0 +1,159 @@
+extends layout/layout
+block vars
+    -title = 'Career'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    +banner-main("bn1.png","Tuyển dụng","Trang chủ","","Tuyển dụng")
+    section.environment.td
+        .environment_wrap 
+            .environment_title 
+                .container
+                    .environment_title--wrap
+                        .environment_title--lf 
+                            h2.title-sm2.fw-7.cl-text Môi trường tại Netin Travel
+                        .environment_title--rt 
+                            p.note-text.cl-gray3 Lorem ipsum dolor sit amet consectetur. Id sollicitudin libero ac malesuada faucibus facilisi sagittis amet facilisis.
+            .environment_content
+                .container2
+                    .environment_content--wrap 
+                        .environment_list
+                            .environment_item.showed 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+                            .environment_item 
+                                .environment_link 
+                                    .environment_link--bg 
+                                        +img("e1.png")
+                                    a(href="").environment_link--btn 
+                                        span.ic 
+                                            i.fas.fa-arrow-right
+                                        p.note-lg.cl-white.fw-7 Chi tiết 
+                                    .environment_link--content 
+                                        .environment_link--content-wrap 
+                                            h2.title-sm2.cl-white.fw-7.title 
+                                                a(href="") "Mỗi hành trình của bạn, là sứ mệnh của chúng tôi"
+                                            p.note-text.content.cl-white2 Bạn Hằng Du Mục - Tourguide tại Netin Travel
+    section.experience.td 
+        .container 
+            .experience_wrap 
+                .experience_top
+                    .box-search 
+                        form(action="")
+                            .box-search-wrap
+                                input.form-item-ip(type="text" placeholder="Nhập từ khóa tìm kiếm")
+                                button.filter_tour--btn 
+                                    i.far.fa-search
+                    p.note-sm.cl-gray3.result-Page  1 - 9 của 30 kết quả
+                .experience_bottom 
+                    .experience_list.d-wrap
+                        -
+                            const ps = [
+                                {
+                                    title:"Nhân viên Bán hàng"
+                                },
+                                {
+                                    title:"Giám đốc kinh doanh"
+                                },
+                                {
+                                    title:"Chuyên viên Marketing"
+                                },
+                                {
+                                    title:"Quản trị Website"
+                                },
+                                {
+                                    title:"Nhân viên Bán hàng"
+                                },
+                                {
+                                    title:"Giám đốc kinh doanh"
+                                },
+                                {
+                                    title:"Chuyên viên Marketing"
+                                },
+                                {
+                                    title:"Quản trị Website"
+                                } 
+                            ]
+                        each p , i in ps
+                            .experience_item.d-item.d-2 
+                                    .experience_item--wrap 
+                                        +post-td(p.title)
+                    +pagination()
+                    

@@ -1,0 +1,20 @@
+.text-ani{
+    span.word {
+        opacity: 0;
+        transform: translateY(20%);
+
+       
+    }
+
+    @keyframes chuNoiChay {
+        0% {
+            transform: translateY(20%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

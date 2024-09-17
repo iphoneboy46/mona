@@ -1,0 +1,27 @@
+.success {
+  background-color: $white;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  .textbox {
+    text-align: center;
+  }
+  .title,
+  .desc {
+    color: #3a3a3a;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+  .desc {
+    margin-top: 1.6rem;
+  }
+  .btn-white {
+    margin-top: 3.6rem;
+    background-color: $white;
+    color: #090909;
+    @include hover {
+      background: $bg-main;
+      color: $white;
+    }
+  }
+}

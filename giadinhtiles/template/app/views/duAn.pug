@@ -1,0 +1,225 @@
+extends layout/layout
+block vars
+    -title = 'dự án'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsFancybox,JsSelect2,JsSwiper]
+    -jsComponents = ['header','select2','duAn']
+    -cssLibs = [fontAWS,fontAWS2,CssFancybox,CssSelect2,CssSwiper]
+    -cssComponents = ['select2',"post"]
+    -cssPages = ["duAn","contact"]
+
+block container
+    .banner_duAn
+        .banner_duAn--bg 
+            +img("bnda.png")
+        .container
+            .banner_duAn--wrap
+                .banner_duAn--box 
+                    h1.title-lg2.cl-white.t-center.fw-7.t-up.fl-sec DỰ ÁN
+                    .banner_duAn--filter 
+                        .banner_duAn--filter-form 
+                            form(action="") 
+                                .banner_duAn--filter-list.d-wrap 
+                                    .banner_duAn--filter-item.d-item 
+                                        .form-item
+                                            span.form-item-ic     
+                                                +img("searchIC.png")
+                                            input.form-item-ip(
+                                                type="text"
+                                                placeholder="Tìm kiếm...")
+                                    .banner_duAn--filter-item.d-item 
+                                        .form-item
+                                            select.js-op.form-item-op(data-placeholder="Lĩnh vực")
+                                                option(value="")
+                                                option(value="option1") demo 1
+                                                option(value="option2") demo 2
+                                                option(value="option3") demo 3
+                                    .banner_duAn--filter-item.d-item 
+                                        .form-item
+                                            select.js-op.form-item-op(data-placeholder="Thành phố")
+                                                option(value="")
+                                                option(value="option1") demo 1
+                                                option(value="option2") demo 2
+                                                option(value="option3") demo 3
+                                    .banner_duAn--filter-item.d-item
+                                        .form-item
+                                            +btn("TÌM KIẾM","","","")
+    section.box-breadcrumbs.cus
+        .container 
+            .box-breadcrumbs-wrap 
+                +breadcrumbs("Trang chủ","","Dự án")
+    section.duAn
+        section.duAn_nb 
+            .container 
+                .duAn_nb--wrap 
+                    +box-title("DỰ ÁN NỔI BẬT","GIA ĐỊNH TILES")
+                    .duAn_nb--box 
+                        .duAn_nb--list 
+                            .swiper.mySwiperDuAn 
+                                .swiper-wrapper 
+                                    .swiper-slide
+                                        .duAn_nb--item 
+                                            .post 
+                                                .post_wrap 
+                                                    a(href="").post_img
+                                                        +img("da1.png")
+                                                    .post_box
+                                                        .post_box--top
+                                                            h2.title-mn.cl-white.fw-7.fl-sec 
+                                                                a(href="") Park Hyatt Phú Quốc
+                                                        .post_box--bottom
+                                                            .address_item
+                                                                .address_item--ic 
+                                                                    +img("adic1.png")
+                                                                .address_item--content
+                                                                    a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                            .post_box--bottom-content
+                                                                p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                            a.btn(href="")
+                                                                span.btn-text CHI TIẾT DỰ ÁN
+                                    .swiper-slide
+                                        .duAn_nb--item 
+                                            .post 
+                                                .post_wrap 
+                                                    a(href="").post_img
+                                                        +img("bnda.png")
+                                                    .post_box
+                                                        .post_box--top
+                                                            h2.title-mn.cl-white.fw-7.fl-sec 
+                                                                a(href="") Park Hyatt Phú Quốc 2
+                                                        .post_box--bottom
+                                                            .address_item
+                                                                .address_item--ic 
+                                                                    +img("adic1.png")
+                                                                .address_item--content
+                                                                    a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                            .post_box--bottom-content
+                                                                p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                            a.btn(href="")
+                                                                span.btn-text CHI TIẾT DỰ ÁN
+                            .swiper-pagination 
+                            +box-navi("fal fa-arrow-left","fal fa-arrow-right")
+        section.duAn_more 
+            .container 
+                .duAn_more--wrap 
+                    h2.title-md.cl-text.t-up.fl-sec.fw-7 DỰ ÁN KHÁC
+                    .duAn_more--box 
+                        .duAn_more--list.d-wrap 
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="")  Park Hyatt Phú Quốc  Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="") Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="") Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="") Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="") Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                            .duAn_more--item.d-item.d-3
+                                .post.postJs 
+                                    .post_wrap 
+                                        a(href="").post_img
+                                            +img("p1.png")
+                                        .post_box
+                                            .post_box--top
+                                                h2.title-mn.cl-white.fw-7.fl-sec 
+                                                    a(href="") Park Hyatt Phú Quốc
+                                            .post_box--bottom
+                                                .address_item
+                                                    .address_item--ic 
+                                                        +img("adic1.png")
+                                                    .address_item--content
+                                                        a.address_link(href="") L4 Tòa Nhà Vạn Đạt, Lô II-1, Đường CN8, KCN Tân Bình, P.Tây Thạnh, Q.Tân Phú
+                                                .post_box--bottom-content
+                                                    p.note-text.cl-white Năm 2017, tinh thân đam mê và lòng tin kiên định từ ban lãnh đạo, với hơn 25 năm trải nghiệm tỉnh hoa, đã đánh thức Gia Định Tiles. Chúng tôi khởi đầu với mục tiêu: sản xuất những viên gạch bông và gạch terrazzo tinh tế. Sự hòa quyện giữa sáng tạo hiện đại...
+                                                a.btn(href="")
+                                                    span.btn-text CHI TIẾT DỰ ÁN
+                        +pagination()

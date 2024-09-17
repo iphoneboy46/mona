@@ -1,0 +1,217 @@
+mixin img(name = "banner.jpg")
+  img(src="./assets/images/" + name, alt="")
+
+
+mixin btn(name,button,classIc,type)
+  if(button != "button")
+    a.btn(href="",class=type)
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)  
+  else
+    button.btn(class=type) 
+      span.btn-text #{name}
+      if(classIc)
+        span.btn-ic
+          i(class=classIc)
+
+
+mixin Popup(classCustom)
+  .popup(class=classCustom, data-popup="")
+    .popup-wrapper 
+      block
+
+
+
+mixin breadcrumbs(page1,page2,pageCurrent)
+  .breadcrumbs
+    ul.breadcrumbs-list
+      if (page2 == "")
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}
+      else 
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page1}  
+        li.breadcrumbs-item
+          a.breadcrumbs-link(href='') #{page2}   
+        li.breadcrumbs-item.current-item
+          a.breadcrumbs-link(href='') #{pageCurrent}  
+
+
+
+
+
+mixin post(img,title,content)
+  .post
+    .post_wrap
+      .post_lf
+        .post_lf--wrap
+          a(href="").post_img
+            +img(img)
+      .post_rt
+        .post_rt--wrap
+          .box-info 
+            .box-info-list 
+              .box-info-item 
+                span.ic 
+                  i.far.fa-user
+                a(href="").note-text.cl-text.fw-6 Admin
+              .box-info-item 
+                span.ic 
+                  i.far.fa-clock
+                p.note-text.cl-text3 12:52 - 20.04.2024
+          .post_box
+            h3.cl-text.title.fw-6.title-mn
+              a(href="") #{title}
+            p.note-text.cl-gray3.content #{content}
+          .post_btn 
+            +btn("Khám phá ngay","","fal fa-arrow-right","cl-8")
+
+mixin post-td(title)
+  .post_td
+    .post_td--wrap
+      .post_td--top
+        h2.title-mn.cl-text.fw-6 
+          a(href="") #{title}
+        .post_td--infos 
+          .post_td--info 
+            p.note-text Quảng Bình
+          .post_td--info 
+            p.note-text Toàn thời gian
+          .post_td--info 
+            p.note-text 10 - 20 triệu
+          .post_td--info 
+            p.note-text Team sale
+      .post_td--bottom
+        +btn("Ứng tuyển ngay","","fal fa-arrow-right","cl-8")
+
+
+mixin tour(img,show,best,title)
+  .tour 
+    .tour_wrap
+      .tour_top
+        if show == ""
+          .tour_top--box
+            if best == "sale"
+              .tour_sb.sale 
+                span.ic 
+                  +img("saleic.svg")
+                p.note-mn Sale 50%
+            else if best == ""
+              .tour_sb.sale 
+                span.ic 
+                  +img("saleic.svg")
+                p.note-mn Sale 50%
+              .tour_sb.best 
+                span.ic 
+                  +img("bestic.svg")
+                p.note-mn Best seller
+            else 
+              .tour_sb.best 
+                span.ic 
+                  +img("bestic.svg")
+                p.note-mn Best seller
+        a(href="").tour_img
+          +img(img)
+      .tour_bottom 
+        h2.note-lg.fw-7.cl-text.title 
+          a(href="") #{title}
+        ul.tour_infos
+          li.tour_info 
+            .tour_star
+              span.ic 
+                i.fas.fa-star
+              p.note-sm.cl-text2.fw-6 5.0
+          li.tour_info 
+            .tour_dg 
+              a(href="").note-sm.cl-text2.fw-6 7 Đánh giá
+          li.tour_info 
+            .tour_day 
+              p.note-sm.cl-gray5 3 ngày 2 đêm
+        .tour_content 
+          p.note-sm.cl-gray3 Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor.
+        .tour_price 
+          p.tour_price--normal 1.199.000đ
+          p.tour_price--sale 1.900.000đ
+        .tour_start
+          p.note-sm.cl-gray3.fw-6 Ngày khởi hành gần nhất
+          .tour_start--box 
+            p.note-sm.cl-white 22/06/2024
+        .tour_btn
+          +btn("Đặt tour ngay","","fal fa-arrow-right","cl-7")
+
+
+
+mixin tour2(img,title)
+  .tour 
+    .tour_wrap
+      .tour_top
+        a(href="").tour_img
+          +img(img)
+      .tour_bottom
+        .tour_star--box 
+          p.note-mn.cl-white.fw-6.t-center Khách sạn 5 sao 
+        h2.note-lg.fw-7.cl-text.title 
+          a(href="") #{title}
+        ul.tour_infos
+          li.tour_info 
+            .tour_star
+              span.ic 
+                i.fas.fa-star
+              p.note-sm.cl-text2.fw-6 5.0
+          li.tour_info 
+            .tour_dg 
+              a(href="").note-sm.cl-text2.fw-6 7 Đánh giá
+
+        .tour_content 
+          p.note-sm.cl-gray3 Lorem ipsum dolor sit amet consectetur. Diam tincidunt eu magna vitae dolor interdum mattis vestibulum auctor.
+        .tour_btn
+          +btn("Chi tiết","","fal fa-arrow-right","cl-7")
+
+
+
+mixin pagination()
+  ul.page-numbers
+    li
+      span.page-numbers.prev 
+        i.fas.fa-chevron-left
+        p.note-text Trước
+    li
+      span.page-numbers.current 1
+    li
+      a.page-numbers(href='') 2
+    li
+      a.page-numbers(href='') ...
+    li
+      a.page-numbers(href='') 9
+    li
+      a.page-numbers(href='') 10
+    li
+      span.page-numbers.next 
+        p.note-text Tiếp
+        i.fas.fa-chevron-right
+
+
+
+mixin box-navi(leftIc,rightIc)
+  .box-navi
+    .btn-navi.prev 
+      i(class=leftIc)
+    .btn-navi.next 
+      i(class=rightIc)
+
+
+mixin banner-main(img,title,page1,page2,pageCurrent)
+  .banner_main 
+    .banner_main--bg 
+      +img(img)
+    .container  
+      .banner_main--wrap 
+        .banner_main--box
+          .banner_main--box-top
+            +breadcrumbs(page1,page2,pageCurrent)
+          .banner_main--box-bottom
+            h1.title-sm3.cl-white.fw-6 #{title}

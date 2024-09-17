@@ -1,0 +1,113 @@
+extends layout/layout
+block vars
+    -title = 'giải thưởng'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+    -ftClass = ''
+    -jsLibs = [JsJquery,JsAos,JsSwiper,JsGsap,JsGsapScroll,JsFancybox,JsSelect2]
+    -jsComponents = ['header','gsap','select2']
+    -cssLibs = [fontAWS,fontAWS2,CssAos,CssSwiper,CssFancybox,CssSelect2]
+    -cssComponents = ["banner","post","select2"]
+    -cssPages = ["news","contact"]
+
+block container
+    section.bg_tt.custom.bgGsap
+        .bg_tt--bg
+        +img("bg.png")
+    +banner-main("Trang chủ","","giải thưởng","giải thưởng")
+    section.news 
+        .container 
+            .news_wrap 
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up") 
+                            h2.title-mn.cl-white.t-up.fw-6 THÔNG TIN CÁC GIẢI THƯỞNG KIẾN TRÚC
+                        .news_box--center(data-aos="fade-up" )  
+                            .box_filter
+                                .box_filter--list.d-wrap  
+                                    .box_filter--item.d-item.d-4 
+                                        label.form-item
+                                            p.form-item-lb Tên giải thương 
+                                            input.form-item-ip(placeholder="Nhập tên giải thưởng")
+                                    .box_filter--item.d-item.d-4 
+                                        label.form-item
+                                            p.form-item-lb Khu vực
+                                            select.js-op.form-item-op(data-placeholder="Khu vực")
+                                                option(value="")
+                                                option(value="option1") demo 1
+                                                option(value="option2") demo 2
+                                                option(value="option3") demo 3
+                                    .box_filter--item.d-item.d-4 
+                                        label.form-item
+                                            p.form-item-lb Năm
+                                            select.js-op.form-item-op(data-placeholder="Năm")
+                                                option(value="")
+                                                option(value="option1") 2021
+                                                option(value="option2") 2022
+                                                option(value="option3") 2023
+                                    .box_filter--item.d-item.d-4 
+                                        label.form-item
+                                            +btn("Tìm kiếm","button","","")
+                                            
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="fade-up") 
+                                    +post("gallery1","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="200")  
+                                    +post("gallery2","10 KTS với phong cách đặc trưng: Dấu ấn độc bản khó trộn lẫn")
+                                .news_item(data-aos="fade-up" data-aos-delay="400")  
+                                    +post("gallery3","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                                .news_item(data-aos="fade-up" data-aos-delay="600")  
+                                    +post("gallery4","Cửu Long Trại Thành: Ký ức của hơn 300 khu tập thể không biết đến ánh nắng mặt trời")
+                            .news_box--btn(data-aos="fade-up") 
+                                +btn("XEM THÊM..","","","trans")
+    section.news_save 
+        .container  
+            .news_save--wrap 
+                .news_box 
+                    .news_box--wrap
+                        .news_box--top(data-aos="fade-up") 
+                            h2.title-mn.cl-white.t-up.fw-6 bộ sưu tập các tác phẩm kiến trúc đoạt giải theo từng năm
+                        .news_box--center(data-aos="fade-up" )  
+                            .box_tabs.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2" checked="checked")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up 2022
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up 2023
+                                                .swiper-slide.d-item
+                                                    label.box_tabs--item 
+                                                        input(type="radio" name="filter2")
+                                                        .box_tabs--item-wrap 
+                                                            p.note-md.cl-white.t-up 2024
+                                        .swiper-scrollbar
+                            .box_tabs.cus.free-slide2
+                                .box_tabs--wrap
+                                    .box_tabs--list.d-wrap
+                                        .swiper.mySwiper 
+                                            .swiper-wrapper 
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GIẢI THƯỞNG KIẾN TRÚC QUỐC GIA 2022-2023
+                                                .swiper-slide.d-item
+                                                    a.box-dm(href="") GIẢI THƯỞNG LOA THÀNH 2024
+                                        .swiper-scrollbar
+                        .news_box--bottom 
+                            .news_list 
+                                .news_item(data-aos="zoom-in") 
+                                    +post2("p4.png","Khu du lịch nghỉ dưỡng, phát triển thể chất kết hợp vui chơi, thể thao Lộc Bình")
+                                .news_item(data-aos="zoom-in" data-aos-delay="200")  
+                                    +post2("p5.png","Khu du lịch nghỉ dưỡng, phát triển thể chất kết hợp vui chơi, thể thao Lộc Bình")
+                                .news_item(data-aos="zoom-in" data-aos-delay="400")  
+                                    +post2("p4.png","Khu du lịch nghỉ dưỡng, phát triển thể chất kết hợp vui chơi, thể thao Lộc Bình")
+                                .news_item(data-aos="zoom-in" data-aos-delay="600")  
+                                    +post2("p4.png","Khu du lịch nghỉ dưỡng, phát triển thể chất kết hợp vui chơi, thể thao Lộc Bình")

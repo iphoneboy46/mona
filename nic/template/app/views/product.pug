@@ -1,0 +1,208 @@
+extends layout/layout
+block vars
+    -title = 'Sp'
+    -mainClass = 'pt'
+    -bodyClass = ''
+    -hdClass = ''
+
+block container
+    section.product 
+        .container2 
+            .product_wrap 
+                .box-title 
+                    h2.title-md.fw-7.fw-i.cl-white.fl-sec.t-up SẢN PHẨM
+                    button.btn.btnFilter
+                        span.btn-ic 
+                            i.far.fa-filter
+                        span.btn-text Bộ lọc sản phẩm
+                .product_box 
+                    .product_list.d-wrap 
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("")
+                        .product_item.d-item.d-4 
+                            +product("sale")
+                    +pagination()
+    .boxFilter
+        .product_filter 
+            .product_filter--wrap 
+                .product_filter--top 
+                    button.btn
+                        span.btn-ic 
+                            i.fal.fa-redo
+                        span.btn-text Đặt lại 
+                    p.title-sm3.fw-7.fw-i.cl-white.fl-sec.t-up BỘ LỌC 
+                    button.product_filter--ex.btnFilterEx
+                        i.fas.fa-times
+                .product_filter--center
+                    .product_filter--list
+                        .product_filter--item
+                            .product_filter--item-wrap 
+                                p.title-mn.fw-6.cl-white.t-up PHÂN LOẠI
+                                .product_filter--item-list
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="pl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                        .product_filter--item
+                            .product_filter--item-wrap 
+                                p.title-mn.fw-6.cl-white.t-up MÀU SẮC
+                                .product_filter--item-list
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                        .product_filter--item
+                            .product_filter--item-wrap 
+                                p.title-mn.fw-6.cl-white.t-up KÍCH THƯỚC
+                                .product_filter--item-list
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="kt" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                        .product_filter--item
+                            .product_filter--item-wrap 
+                                p.title-mn.fw-6.cl-white.t-up CHẤT LIỆU
+                                .product_filter--item-list
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up ID SELECT
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up QES
+                                    .product_filter--item-item 
+                                        label.box_filter--item 
+                                            input(type="radio" name="cl2" checked="checked")
+                                            .box_filter--item-wrap 
+                                                p.note-md.cl-white.t-up OPEL
+                        .product_filter--item
+                            .product_filter--item-wrap 
+                                p.title-mn.fw-6.cl-white.t-up CHẤT LIỆU
+                                .box-range-slider
+                                    .wr-box-range-slider
+                                        .wr-slider-track
+                                            .slider-track(style="left: 0%; right: 100%;")
+                                        input.slider-1.mona-input-fiter(type="range", name="price_min", min="0", max="10000000", value="0")
+                                        input.slider-2.mona-input-fiter(type="range", name="price_max", min="0", max="10000000", value="10.000.000")
+                                    .wr-range-val
+                                        span.range-val-1 0đ
+                                        span.range-val-2 5000000đ
+                .product_filter--bottom 
+                    +btn("tìm kiếm ngay","","","")
+        .product_filter--modal
